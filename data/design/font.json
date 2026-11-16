@@ -1,0 +1,12 @@
+{
+  "family": "Shanhe Serif",
+  "upstream": "Noto Serif SC",
+  "source": "https://github.com/google/fonts/tree/main/ofl/notoserifsc",
+  "license": "SIL Open Font License 1.1",
+  "characters": 1792,
+  "bytes": 541048,
+  "weights": [
+    400,
+    600
+  ]
+}

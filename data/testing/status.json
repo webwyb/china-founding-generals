@@ -1,0 +1,29 @@
+{
+  "scope": "H5 and PC web",
+  "automated": {
+    "types": "passed",
+    "data": "passed",
+    "functionality": "passed",
+    "filterCombinations": 186,
+    "parserRegressions": 9,
+    "cardCompositions": 3228,
+    "portraitCompositions": 2350,
+    "build": "passed"
+  },
+  "browserInteraction": "not-run-awaiting-explicit-local-access-authorization",
+  "realDevices": "not-run",
+  "factReview": {
+    "complete": false,
+    "pendingPeople": 190,
+    "pendingFields": {
+      "birth": 148,
+      "death": 34,
+      "hometown": 3,
+      "province": 3,
+      "grantYear": 16
+    },
+    "unresolvedItems": 204,
+    "rejectedIdentitySources": 9,
+    "policy": "Unresolved values are withheld from factual display, timelines and cards."
+  }
+}

@@ -1,0 +1,672 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "normalized": [
+      {
+        "from": "File:Zhu_De.jpg",
+        "to": "File:Zhu De.jpg"
+      },
+      {
+        "from": "File:Xu_Xiangqian.jpg",
+        "to": "File:Xu Xiangqian.jpg"
+      },
+      {
+        "from": "File:Su_Yu_1955_formal.jpg",
+        "to": "File:Su Yu 1955 formal.jpg"
+      },
+      {
+        "from": "File:Xu_Haidong.jpg",
+        "to": "File:Xu Haidong.jpg"
+      },
+      {
+        "from": "File:Hong_Xuezhi.jpg",
+        "to": "File:Hong Xuezhi.jpg"
+      },
+      {
+        "from": "File:Zhang_Zhen_1955.jpg",
+        "to": "File:Zhang Zhen 1955.jpg"
+      }
+    ],
+    "pages": {
+      "26396100": {
+        "pageid": 26396100,
+        "ns": 6,
+        "title": "File:Chenqihan.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 10930,
+            "width": 200,
+            "height": 245,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Chenqihan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chenqihan.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/wiki/Special:Redirect/page/26396100",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-10-04 03:23:02",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Chenqihan",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD China|Generals of the Chinese People's Liberation Army|People of the Chinese People's Liberation Army|PD-old missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "陈奇涵上将，中国人民解放军开国上将。",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1955",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.m16.cn/021-jshl/pp-05.html\">共和国五十五上将照片</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Chinese government",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "To uploader: <b>Please provide where the image was first published and who created it or held its copyright.</b>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "11786335": {
+        "pageid": 11786335,
+        "ns": 6,
+        "title": "File:Hong Xuezhi.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 9212,
+            "width": 200,
+            "height": 245,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Hong_Xuezhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Hong_Xuezhi.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/wiki/Special:Redirect/page/11786335",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-10-15 02:50:01",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Hong Xuezhi",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD China|Hong Xuezhi|PD-old missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "​洪学智授衔照",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1955",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://www.1927-08-01.com/admmin/UploadFile/20061124122044670.jpg\">http://www.1927-08-01.com/admmin/UploadFile/20061124122044670.jpg</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "中国人民解放军",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "To uploader: <b>Please provide where the image was first published and who created it or held its copyright.</b>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "14319510": {
+        "pageid": 14319510,
+        "ns": 6,
+        "title": "File:Su Yu 1955 formal.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 17770,
+            "width": 300,
+            "height": 409,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Su_Yu_1955_formal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Su_Yu_1955_formal.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/wiki/Special:Redirect/page/14319510",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-02-16 17:18:38",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Su Yu 1955 formal",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD China|Su Yu|Template Unknown (author)|Type 55 uniforms of the People's Liberation Army|PD-old missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The General of Army Su Yu in 1955.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1955",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://big5.china.com/gate/big5/culture.china.com/zh_cn/history/lead/11022885/20091020/15672426.html\">中華網 China. Com : 揭開“共和國第一大將”粟裕授銜的真相</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "To uploader: <b>Please provide where the image was first published and who created it or held its copyright.</b>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "8166170": {
+        "pageid": 8166170,
+        "ns": 6,
+        "title": "File:Xu Haidong.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 30330,
+            "width": 300,
+            "height": 369,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Xu_Haidong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Xu_Haidong.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/wiki/Special:Redirect/page/8166170",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-02-16 17:32:10",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Xu Haidong",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD China|Xu Haidong|Works copyrighted in the U.S.|Template Unknown (author)|PD-old missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Xu Haidong (simplified Chinese: 徐海东; traditional Chinese: 徐海東; pinyin: Xú Hǎidōng) (June 17, 1900-March 25, 1970) was a Grand General in the People's Liberation Army of China.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1950s<div style=\"display: none;\">date QS:P,+1950-00-00T00:00:00Z/8</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://www.stnn.cc/reveal/200907/t20090708_1060198.html\">http://www.stnn.cc/reveal/200907/t20090708_1060198.html</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "To uploader: <b>Please provide where the image was first published and who created it or held its copyright.</b>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "7485042": {
+        "pageid": 7485042,
+        "ns": 6,
+        "title": "File:Xu Xiangqian.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 78392,
+            "width": 600,
+            "height": 796,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Xu_Xiangqian.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Xu_Xiangqian.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/wiki/Special:Redirect/page/7485042",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-01-18 01:20:17",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Xu Xiangqian",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD China|Xu Xiangqian|Works copyrighted in the U.S.|Images with extracted images|Standard portraits of the ten Marshals",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Xu Xiangqian",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1955",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4850864.html\">http://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4850864.html</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "​《<a href=\"https://zh.wikipedia.org/wiki/%E6%96%B0%E5%8D%8E%E7%A4%BE\" class=\"extiw\" title=\"zh:新华社\">新华社</a>》记者 齐观山",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "11788146": {
+        "pageid": 11788146,
+        "ns": 6,
+        "title": "File:Zhang Zhen 1955.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 75037,
+            "width": 250,
+            "height": 315,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Zhang_Zhen_1955.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Zhang_Zhen_1955.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/wiki/Special:Redirect/page/11788146",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-07-25 22:25:08",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Zhang Zhen 1955",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD China|Lieutenant Generals of the People's Liberation Army (China)|Zhang Zhen (general)|PD-old missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "​1955年张震被授予中将军衔",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1955",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://imgsrc.baidu.com/baike/abpic/item/ae82673139a4010eeac4af2e.jpg\">http://imgsrc.baidu.com/baike/abpic/item/ae82673139a4010eeac4af2e.jpg</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "中国人民解放军",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "To uploader: <b>Please provide where the image was first published and who created it or held its copyright.</b>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "8198721": {
+        "pageid": 8198721,
+        "ns": 6,
+        "title": "File:Zhu De.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 137058,
+            "width": 1024,
+            "height": 1430,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Zhu_De.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Zhu_De.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/wiki/Special:Redirect/page/8198721",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-07-01 03:45:34",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Zhu De",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD China|Zhu De|Works copyrighted in the U.S.|Files allowed to be overwritten by everyone|Standard portraits of the ten Marshals|PD-old missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Zhū Dé (Chinese: 朱德; pinyin: Zhū Dé; Wade-Giles: Chu Teh; zi: Yùjiē 玉阶; 1 December 1886 – 6 July 1976) was a Chinese Communist military leader and statesman. He is regarded as the founder of the Chinese Red Army (the forerunner of the People's Liberation Army) and the tactician who engineered the revolution from which emerged the People's Republic of China.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1955-09-??",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://www.todayonhistory.com/upic/200908/23/BA16386593.jpg\">http://www.todayonhistory.com/upic/200908/23/BA16386593.jpg</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "​《<a href=\"https://zh.wikipedia.org/wiki/%E6%96%B0%E5%8D%8E%E7%A4%BE\" class=\"extiw\" title=\"zh:新华社\">新华社</a>》记者 齐观山",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "To uploader: <b>Please provide where the image was first published and who created it or held its copyright.</b>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

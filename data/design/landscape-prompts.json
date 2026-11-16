@@ -1,0 +1,180 @@
+{
+  "generator": "built-in image_gen",
+  "stylePrompt": "Create ONE refined Chinese ink-and-mineral-color landscape illustration for a respectful historical memorial website. Wide horizontal 3:2 composition, no people except tiny distant unidentifiable figures if essential to the landscape. Contemporary shan shui painting on subtle uncoated ivory paper, muted blue-green ink #446f73, deep graphite #273f45 and restrained mineral ochre, soft natural light, calm spacious atmosphere, precise traditional brushwork, natural readable landmark silhouettes, with mist and some breathing space in the upper part. Painterly rather than photographic. No typography, no Chinese characters, no labels, no logo, no frame, no watermark. A decorative present-day regional landscape, not a historical event. Subject: ",
+  "regions": [
+    {
+      "province": "江西",
+      "id": "jiangxi",
+      "landmark": "庐山",
+      "scene": "Lushan, with the Three Step Waterfall descending through steep pine-covered granite cliffs in mist."
+    },
+    {
+      "province": "湖北",
+      "id": "hubei",
+      "landmark": "长江三峡",
+      "scene": "The Three Gorges of the Yangtze River, a sweeping jade-blue river winding between dramatically tall layered cliffs, tiny traditional sailboat far away."
+    },
+    {
+      "province": "湖南",
+      "id": "hunan",
+      "landmark": "张家界",
+      "scene": "Zhangjiajie, recognisable slender sandstone pillar mountains with pine trees on their tops, floating layers of mist between the pillars."
+    },
+    {
+      "province": "安徽",
+      "id": "anhui",
+      "landmark": "黄山",
+      "scene": "Huangshan, recognisable pale granite mountain peaks with the famous spreading Welcoming Pine and a sea of clouds."
+    },
+    {
+      "province": "河南",
+      "id": "henan",
+      "landmark": "嵩山",
+      "scene": "Mount Song and the Shaolin Temple, a small authentic traditional temple and a few stone pagodas below the broad rugged Songshan mountain range."
+    },
+    {
+      "province": "四川",
+      "id": "sichuan",
+      "landmark": "峨眉山",
+      "scene": "Mount Emei, the Golden Summit temple as a small golden-roofed architectural accent on a high wooded mountain above a vast sea of clouds, no giant statue."
+    },
+    {
+      "province": "山东",
+      "id": "shandong",
+      "landmark": "泰山",
+      "scene": "Mount Tai, imposing rounded granite summit ridges and an old stone stairway ascending toward the small red Nantianmen Gate near the summit, sunrise through thin mist."
+    },
+    {
+      "province": "福建",
+      "id": "fujian",
+      "landmark": "武夷山",
+      "scene": "Wuyi Mountains, the Nine Bend River winding beneath the recognisable sheer rounded reddish Tianyou Peak cliffs, a small distant bamboo raft."
+    },
+    {
+      "province": "河北",
+      "id": "hebei",
+      "landmark": "山海关",
+      "scene": "Shanhaiguan, the Great Wall at Laolongtou running across the land and into the calm Bohai Sea, a traditional square watchtower on the stone sea wall."
+    },
+    {
+      "province": "陕西",
+      "id": "shaanxi",
+      "landmark": "华山",
+      "scene": "Mount Hua, spectacular narrow pale granite ridges and steep sheer peaks, pine trees clinging to rocks, a tiny ancient pavilion perched on the ridge."
+    },
+    {
+      "province": "山西",
+      "id": "shanxi",
+      "landmark": "五台山",
+      "scene": "Mount Wutai, five softly receding mountain terraces around an ancient temple ensemble with the recognisable elegant white Tibetan-style stupa at Tayuan Temple."
+    },
+    {
+      "province": "辽宁",
+      "id": "liaoning",
+      "landmark": "千山",
+      "scene": "Qianshan near Anshan, many softly pointed rocky mountain peaks covered in pines, an old grey-roofed mountain monastery tucked among the wooded hills."
+    },
+    {
+      "province": "广东",
+      "id": "guangdong",
+      "landmark": "丹霞山",
+      "scene": "Danxia Mountain, layered red sandstone cliffs and flat-topped red rock towers reflected in a calm winding river, subtropical trees."
+    },
+    {
+      "province": "江苏",
+      "id": "jiangsu",
+      "landmark": "苏州园林",
+      "scene": "A classical Suzhou garden, white walls, dark tiled roofs, an elegant moon gate, Taihu scholar rocks, a lotus pond and a small traditional waterside pavilion."
+    },
+    {
+      "province": "广西",
+      "id": "guangxi",
+      "landmark": "桂林漓江",
+      "scene": "The Li River in Guilin, distinctive lush conical karst peaks in layered blue-green mist reflected in still river water, a tiny bamboo raft."
+    },
+    {
+      "province": "浙江",
+      "id": "zhejiang",
+      "landmark": "杭州西湖",
+      "scene": "West Lake in Hangzhou, the recognisable Leifeng Pagoda across a wide misty lake, willow branches in the foreground and a delicate old arched stone bridge."
+    },
+    {
+      "province": "甘肃",
+      "id": "gansu",
+      "landmark": "敦煌莫高窟",
+      "scene": "Dunhuang Mogao Caves, the recognisable red nine-storey wooden pavilion facade built against a warm sandstone cliff, sparse poplars and desert mountains."
+    },
+    {
+      "province": "西藏",
+      "id": "xizang",
+      "landmark": "布达拉宫",
+      "scene": "The Potala Palace in Lhasa, recognisable white stepped palace walls with the red central palace on Marpo Ri hill, distant clear Himalayan peaks."
+    },
+    {
+      "province": "云南",
+      "id": "yunnan",
+      "landmark": "玉龙雪山",
+      "scene": "Jade Dragon Snow Mountain, its recognisable jagged snow-covered summits above dark blue-green pines and the turquoise waters of Blue Moon Valley."
+    },
+    {
+      "province": "北京",
+      "id": "beijing",
+      "landmark": "长城",
+      "scene": "The Great Wall at Mutianyu, an authentic Ming stone Great Wall winding along layered forested mountain ridges with square crenellated watchtowers receding into morning mist."
+    },
+    {
+      "province": "新疆",
+      "id": "xinjiang",
+      "landmark": "天山天池",
+      "scene": "Heavenly Lake in the Tianshan mountains, a clear turquoise alpine lake framed by tall spruce trees, snowy Bogda Peak in the distance."
+    },
+    {
+      "province": "吉林",
+      "id": "jilin",
+      "landmark": "长白山天池",
+      "scene": "Changbai Mountain Heaven Lake, the recognisable deep-blue circular volcanic caldera lake enclosed by bare pale cliffs with remnants of snow, expansive quiet sky."
+    },
+    {
+      "province": "黑龙江",
+      "id": "heilongjiang",
+      "landmark": "五大连池",
+      "scene": "Wudalianchi, low dark volcanic cones rising behind a chain of quiet blue lakes, textured lava rocks and silver birch trees in the foreground."
+    },
+    {
+      "province": "内蒙古",
+      "id": "neimenggu",
+      "landmark": "呼伦贝尔草原",
+      "scene": "The Hulunbuir grassland, vast rolling jade-green grassland with a meandering river, a very small white traditional Mongolian yurt far away under a wide pale sky."
+    },
+    {
+      "province": "天津",
+      "id": "tianjin",
+      "landmark": "蓟州独乐寺",
+      "scene": "Dule Temple in Jizhou, Tianjin, its authentic ancient Guanyin Pavilion with two visible storeys and broad traditional grey-tiled hipped roofs, modest temple courtyard and ancient pine trees."
+    },
+    {
+      "province": "贵州",
+      "id": "guizhou",
+      "landmark": "黄果树瀑布",
+      "scene": "Huangguoshu Waterfall, the recognisable broad powerful white waterfall pouring over a wide limestone cliff into a blue-green pool, lush trees and drifting spray."
+    },
+    {
+      "province": "海南",
+      "id": "hainan",
+      "landmark": "天涯海角",
+      "scene": "Tianya Haijiao in Hainan, smooth large rounded granite boulders on a tranquil turquoise tropical shoreline, a few coconut palms, no writing on the rocks."
+    },
+    {
+      "province": "宁夏",
+      "id": "ningxia",
+      "landmark": "沙坡头",
+      "scene": "Shapotou in Ningxia, sweeping pale golden sand dunes meeting the broad blue-green Yellow River, distant low mountains and sparse riverside poplars."
+    },
+    {
+      "province": "上海",
+      "id": "shanghai",
+      "landmark": "豫园",
+      "scene": "Yuyuan Garden in Shanghai, the recognisable traditional Huxinting teahouse with russet columns and elegant upturned roofs beside the zigzag bridge over a still reflecting pond."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-17",
+  "records": 4733,
+  "file": "profiles.jsonl",
+  "sha256": "5fbb7b80bb57a1ad3d49e9ca15dadec1661fd469b0b5ccc65d3b7955e96a2405",
+  "description": "机器抽取的事实、影像地址及字段出处快照；不含完整网页正文，不代表全量人工史料审校。",
+  "refreshCommand": "python scripts/build_catalog.py --refresh-evidence"
+}

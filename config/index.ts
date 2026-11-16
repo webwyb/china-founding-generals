@@ -1,4 +1,5 @@
 import { defineConfig } from '@tarojs/cli'
+import { resolve } from 'node:path'
 
 export default defineConfig<'vite'>({
   projectName: 'shanhe-youming',
@@ -19,7 +20,7 @@ export default defineConfig<'vite'>({
   cache: { enable: false },
   plugins: [],
   copy: {
-    patterns: [],
+    patterns: [{ from: resolve(__dirname, '../public'), to: 'static' }],
     options: {}
   },
   defineConstants: {},

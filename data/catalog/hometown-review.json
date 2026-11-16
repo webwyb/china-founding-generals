@@ -1,0 +1,401 @@
+[
+  {
+    "id": "p0071",
+    "name": "乌兰夫",
+    "currentPlace": "内蒙古土默特旗塔布赛村",
+    "currentRegion": "内蒙古",
+    "placeKind": "出生地",
+    "status": "source-wording-retained",
+    "versions": {
+      "内蒙古": [
+        {
+          "place": "内蒙古土默特旗塔布赛村",
+          "url": "https://cpc.people.com.cn/GB/64162/126778/127857/7537530.html"
+        }
+      ],
+      "绥远": [
+        {
+          "place": "绥远土默特旗",
+          "url": "https://zh.wikipedia.org/wiki/%E4%B9%8C%E5%85%B0%E5%A4%AB"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p0229",
+    "name": "韩练成",
+    "currentPlace": "宁夏固原县",
+    "currentRegion": "宁夏",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "宁夏": [
+        {
+          "place": "宁夏固原县",
+          "url": "https://zh.wikipedia.org/wiki/%E9%9F%A9%E7%BB%83%E6%88%90"
+        },
+        {
+          "place": "宁夏固原县",
+          "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7587809.html"
+        }
+      ],
+      "甘肃": [
+        {
+          "place": "甘肃固原",
+          "url": "https://taihangsummit.com/47460-2/2/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p0262",
+    "name": "于权伸",
+    "currentPlace": "籍贯待核实",
+    "currentRegion": "地域待核实",
+    "placeKind": "籍贯",
+    "status": "withheld",
+    "versions": {
+      "吉林": [
+        {
+          "place": "吉林省辽源市东辽县建安镇香泉村",
+          "url": "https://www.krzzjn.com/show-2872-128440.html"
+        }
+      ],
+      "辽宁": [
+        {
+          "place": "辽宁西丰",
+          "url": "https://zh.wikipedia.org/wiki/%E4%BA%8E%E6%AC%8A%E4%BC%B8"
+        },
+        {
+          "place": "辽宁西丰",
+          "url": "https://taihangsummit.com/47460-2/3/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p0268",
+    "name": "马白山",
+    "currentPlace": "海南省澄迈县",
+    "currentRegion": "海南",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "海南": [
+        {
+          "place": "海南省澄迈县",
+          "url": "https://www.krzzjn.com/show-2872-128446.html"
+        }
+      ],
+      "广东": [
+        {
+          "place": "广东澄迈",
+          "url": "https://taihangsummit.com/47460-2/3/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p0544",
+    "name": "肖永银",
+    "currentPlace": "河南新县",
+    "currentRegion": "河南",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "河南": [
+        {
+          "place": "河南新县",
+          "url": "https://zh.wikipedia.org/wiki/%E8%82%96%E6%B0%B8%E9%93%B6"
+        }
+      ],
+      "湖北": [
+        {
+          "place": "湖北黄安",
+          "url": "https://taihangsummit.com/47460-2/3/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p0545",
+    "name": "肖全夫",
+    "currentPlace": "河南商城",
+    "currentRegion": "河南",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "河南": [
+        {
+          "place": "河南商城",
+          "url": "https://zh.wikipedia.org/wiki/%E8%90%A7%E5%85%A8%E5%A4%AB"
+        }
+      ],
+      "湖北": [
+        {
+          "place": "湖北黄安",
+          "url": "https://taihangsummit.com/47460-2/3/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p0558",
+    "name": "吴世安",
+    "currentPlace": "湖北黄安",
+    "currentRegion": "湖北",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "湖北": [
+        {
+          "place": "湖北黄安",
+          "url": "https://zh.wikipedia.org/wiki/%E5%90%B4%E4%B8%96%E5%AE%89_%281911%E5%B9%B4%29"
+        }
+      ],
+      "河南": [
+        {
+          "place": "河南新县",
+          "url": "https://taihangsummit.com/47460-2/3/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p0654",
+    "name": "张秀川",
+    "currentPlace": "河北省深县",
+    "currentRegion": "河北",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "河北": [
+        {
+          "place": "河北省深县",
+          "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E7%A7%80%E5%B7%9D"
+        }
+      ],
+      "湖北": [
+        {
+          "place": "湖北深县",
+          "url": "https://taihangsummit.com/47460-2/3/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p0657",
+    "name": "张希钦",
+    "currentPlace": "山东省东明县",
+    "currentRegion": "山东",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "山东": [
+        {
+          "place": "山东省东明县",
+          "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%B8%8C%E9%92%A6_%28%E5%B0%91%E5%B0%86%29"
+        }
+      ],
+      "河南": [
+        {
+          "place": "河南东明",
+          "url": "https://taihangsummit.com/47460-2/3/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p0693",
+    "name": "陈发洪",
+    "currentPlace": "河南永城",
+    "currentRegion": "河南",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "河南": [
+        {
+          "place": "河南永城",
+          "url": "https://zh.wikipedia.org/wiki/%E9%99%88%E5%8F%91%E6%B4%AA"
+        }
+      ],
+      "安徽": [
+        {
+          "place": "安徽霍丘",
+          "url": "https://taihangsummit.com/47460-2/3/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p1138",
+    "name": "李际泰",
+    "currentPlace": "籍贯待核实",
+    "currentRegion": "地域待核实",
+    "placeKind": "籍贯",
+    "status": "withheld",
+    "versions": {
+      "山东": [
+        {
+          "place": "山东省武城县城关三里庄",
+          "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%99%85%E6%B3%B0"
+        }
+      ],
+      "河北": [
+        {
+          "place": "河北定兴",
+          "url": "https://taihangsummit.com/47460-2/4/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p1159",
+    "name": "吴克之",
+    "currentPlace": "海南琼山",
+    "currentRegion": "海南",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "海南": [
+        {
+          "place": "海南琼山",
+          "url": "https://www.krzzjn.com/show-2872-135298.html"
+        }
+      ],
+      "广东": [
+        {
+          "place": "广东琼山",
+          "url": "https://taihangsummit.com/47460-2/4/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p1203",
+    "name": "胡炜",
+    "currentPlace": "河南省新蔡县余店乡",
+    "currentRegion": "河南",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "河南": [
+        {
+          "place": "河南省新蔡县余店乡",
+          "url": "https://www.krzzjn.com/show-2872-135355.html"
+        }
+      ],
+      "湖南": [
+        {
+          "place": "湖南新蔡",
+          "url": "https://taihangsummit.com/47460-2/4/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p1272",
+    "name": "鲍奇辰",
+    "currentPlace": "籍贯待核实",
+    "currentRegion": "地域待核实",
+    "placeKind": "籍贯",
+    "status": "withheld",
+    "versions": {
+      "山东": [
+        {
+          "place": "山东临清",
+          "url": "https://zh.wikipedia.org/wiki/%E9%B2%8D%E5%A5%87%E8%BE%B0"
+        }
+      ],
+      "河北": [
+        {
+          "place": "河北临江",
+          "url": "https://taihangsummit.com/47460-2/4/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p1303",
+    "name": "王德",
+    "currentPlace": "天津蓟县",
+    "currentRegion": "天津",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "天津": [
+        {
+          "place": "天津蓟县",
+          "url": "https://web.archive.org/web/20120111213640id_/http://dangshi.people.com.cn/GB/165617/165618/166491/167909/12291064.html"
+        }
+      ],
+      "河北": [
+        {
+          "place": "河北蓟县",
+          "url": "https://taihangsummit.com/47460-2/5/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p1393",
+    "name": "孙俊人",
+    "currentPlace": "江苏省松江县",
+    "currentRegion": "江苏",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "江苏": [
+        {
+          "place": "江苏省松江县",
+          "url": "https://web.archive.org/web/20120111123256id_/http://dangshi.people.com.cn/GB/165617/165618/166491/167909/11908795.html"
+        }
+      ],
+      "上海": [
+        {
+          "place": "上海松江",
+          "url": "https://taihangsummit.com/47460-2/5/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  },
+  {
+    "id": "p1575",
+    "name": "戚先初",
+    "currentPlace": "安徽金寨",
+    "currentRegion": "安徽",
+    "placeKind": "籍贯",
+    "status": "source-wording-retained",
+    "versions": {
+      "安徽": [
+        {
+          "place": "安徽金寨",
+          "url": "https://zh.wikipedia.org/wiki/%E6%88%9A%E5%85%88%E5%88%9D"
+        }
+      ],
+      "河南": [
+        {
+          "place": "河南商城",
+          "url": "https://taihangsummit.com/47460-2/5/"
+        }
+      ]
+    },
+    "note": "历史行政区划、原籍、出生地及迁居地须分别辨识；本报告不以省名不同直接认定某一来源错误。"
+  }
+]

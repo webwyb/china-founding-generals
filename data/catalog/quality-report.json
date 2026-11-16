@@ -1,0 +1,87 @@
+{
+  "updatedAt": "2026-11-17",
+  "total": 1614,
+  "byRank": {
+    "元帅": 10,
+    "大将": 10,
+    "上将": 57,
+    "中将": 177,
+    "少将": 1360
+  },
+  "profiles": 1614,
+  "portraits": 1172,
+  "missing": {
+    "portrait": 442
+  },
+  "sourcePages": 3125,
+  "sourceRecords": 4733,
+  "sourceDifferences": 206,
+  "homonyms": {
+    "张英": [
+      {
+        "id": "p1169",
+        "birth": 1914,
+        "grantYear": 1961
+      },
+      {
+        "id": "p1462",
+        "birth": 1916,
+        "grantYear": 1964
+      }
+    ],
+    "李元": [
+      {
+        "id": "p0467",
+        "birth": 1894,
+        "grantYear": 1955
+      },
+      {
+        "id": "p1402",
+        "birth": 1917,
+        "grantYear": 1964
+      }
+    ],
+    "李道之": [
+      {
+        "id": "p0523",
+        "birth": 1911,
+        "grantYear": 1955
+      },
+      {
+        "id": "p1424",
+        "birth": 1916,
+        "grantYear": 1964
+      }
+    ],
+    "罗斌": [
+      {
+        "id": "p0733",
+        "birth": 1915,
+        "grantYear": 1955
+      },
+      {
+        "id": "p1284",
+        "birth": 1914,
+        "grantYear": 1962
+      }
+    ]
+  },
+  "rosterCorrections": {
+    "陈士渠": "陈士榘",
+    "周恒": "周桓",
+    "陈仁麟": "陈仁麒",
+    "黄新延": "黄新廷",
+    "何延一": "何廷一",
+    "延懋": "廷懋",
+    "吴詠湘": "吴咏湘"
+  },
+  "pendingFields": {
+    "birth": 148,
+    "death": 34,
+    "hometown": 3,
+    "province": 3,
+    "grantYear": 16
+  },
+  "pendingPeople": 190,
+  "rejectedIdentitySources": 9
+}

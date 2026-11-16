@@ -1,0 +1,816 @@
+[
+  {
+    "id": "p0009",
+    "name": "聂荣臻",
+    "before": {
+      "file": "p0009.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/126780/7490472.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/09/F200807091511451046988015.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 130,
+      "height": 176,
+      "sha256": "311f797fa615887dbc9ec728c30120c2125788f1a96ccb3af36b21f62e386ecb"
+    },
+    "after": {
+      "file": "p0009.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Marshal_Nie_Rongzhen.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Marshal_Nie_Rongzhen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 321,
+      "height": 405,
+      "sha256": "875908d5132a8298abcb397f0030da5afe395b5472970210a9039489e22efa52"
+    }
+  },
+  {
+    "id": "p0010",
+    "name": "叶剑英",
+    "before": {
+      "file": "p0010.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/09/F200807091515171965755861.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 131,
+      "height": 176,
+      "sha256": "9aa2cfa1458f08cf2b11acae00bb72b11703edda52b7eb03fd8ade0cd71e74fa"
+    },
+    "after": {
+      "file": "p0010.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ye_Jianying.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Ye_Jianying.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 400,
+      "height": 534,
+      "sha256": "80121619b59c5bac530c2a4d7a16c0f823885d6c8eafe67890f60a1a7b997ec6"
+    }
+  },
+  {
+    "id": "p0020",
+    "name": "张云逸",
+    "before": {
+      "file": "p0020.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127855/7537178.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807210956592926869042.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 206,
+      "height": 250,
+      "sha256": "b9bf849e18925eebbed268cdb6c90f26185897e35d82fc324264cd6046c21781"
+    },
+    "after": {
+      "file": "p0020.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Zhang-yunyi.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Zhang-yunyi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 412,
+      "height": 500,
+      "sha256": "a57eee4428592c0e9e52e6b66037bff99d2457bb2701882b22b9e68c2a3924b8"
+    }
+  },
+  {
+    "id": "p0021",
+    "name": "萧克",
+    "before": {
+      "file": "p0021.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538974.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211408551280729165.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 196,
+      "height": 250,
+      "sha256": "1bc8e75c96a97ed5df7e202fc6e0cba6417747ae81a950d1f03ac5c95859f88c"
+    },
+    "after": {
+      "file": "p0021.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Xiaoke1955.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Xiaoke1955.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 494,
+      "height": 640,
+      "sha256": "8937f36c8e49320d405f4222254c885a647474473cb67d2d60f2c90cbaba6362"
+    }
+  },
+  {
+    "id": "p0028",
+    "name": "彭绍辉",
+    "before": {
+      "file": "p0028.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538966.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211407512865381952.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "6f1be3968c7ea8c075178ef2f60270ea172c6d8ddf9e480d5b0a6b04e2e894eb"
+    },
+    "after": {
+      "file": "p0028.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pengshaohui.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Pengshaohui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 370,
+      "height": 500,
+      "sha256": "aaca903b8d947684c65d752df0d9319a805e45a4f1b46e09a1ccf45ec9de389e"
+    }
+  },
+  {
+    "id": "p0030",
+    "name": "杨成武",
+    "before": {
+      "file": "p0030.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538135.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/28/F200807280851272081217422.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 167,
+      "height": 204,
+      "sha256": "deddf59d91ad5db6321c4eaf01f6e1fbac300a5f5c455a4fd67550b26cc5d841"
+    },
+    "after": {
+      "file": "p0030.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Yangchengwu.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Yangchengwu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 400,
+      "height": 543,
+      "sha256": "0cafbb0380142ad71b3356cc00b6e29f92c6b5e9617922ff08c1cb8c5a422cdb"
+    }
+  },
+  {
+    "id": "p0032",
+    "name": "周士第",
+    "before": {
+      "file": "p0032.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538728.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211339283023330740.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "a1e88de3dc0732d1d827a277c6b0f7ee5cd7186fced4ac171032ad0875f1d12c"
+    },
+    "after": {
+      "file": "p0032.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Zhoushidi.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Zhoushidi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 386,
+      "height": 500,
+      "sha256": "3bc6b741d7792ab682a1e8cbe889996788edf8eb9c33014c2a7d86f0a6cee154"
+    }
+  },
+  {
+    "id": "p0035",
+    "name": "杨至成",
+    "before": {
+      "file": "p0035.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538155.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211120069421298662.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "18560178f9cf1551f7e5a714f09c22cd374d1e482e479f76531ff50f306ed936"
+    },
+    "after": {
+      "file": "p0035.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Yangzhicheng.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Yangzhicheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 300,
+      "height": 407,
+      "sha256": "81727edd1688801c9b2ed18d73f7f8bb48b652e9b06e13289c5869c551f46ea9"
+    }
+  },
+  {
+    "id": "p0036",
+    "name": "陈再道",
+    "before": {
+      "file": "p0036.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538681.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211336062252931918.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "792b24609c0e9a6485dece9e80cae8d3b93ebf6737c1a2f699f99fe23247270f"
+    },
+    "after": {
+      "file": "p0036.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Chen_Zaidao2.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Chen_Zaidao2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 500,
+      "height": 668,
+      "sha256": "e2582603b7544b90633fa59c9880d8d8510569e5d8052d25364077f2d4f51a45"
+    }
+  },
+  {
+    "id": "p0038",
+    "name": "王宏坤",
+    "before": {
+      "file": "p0038.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7537459.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211017031599630887.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 272,
+      "sha256": "fd1b77dde8494f568a714d723cff0151c13afce523ca85c5f3d9eff07bc66c61"
+    },
+    "after": {
+      "file": "p0038.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wang_hongkun.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Wang_hongkun.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 500,
+      "height": 655,
+      "sha256": "d04420a6b3bdde97921ad76a84954102ceb4c8f514dbe17ed4654df1906075d4"
+    }
+  },
+  {
+    "id": "p0039",
+    "name": "苏振华",
+    "before": {
+      "file": "p0039.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538117.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211115292479524980.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "c28dd036fff4e4e274ad2499ab0853a293c4c46349292df46a13d247133df52f"
+    },
+    "after": {
+      "file": "p0039.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Su_Zhenhua.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Su_Zhenhua.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 500,
+      "height": 608,
+      "sha256": "305a9f2e6e58c9f78092a05bdf74fb7fd1db922b83eb49b117c1367c540a392b"
+    }
+  },
+  {
+    "id": "p0041",
+    "name": "韩先楚",
+    "before": {
+      "file": "p0041.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538952.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211405312328028282.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "b49c0d46826b0f3e8c394d2077b43dc2b6d2c88e91f2e304b10c5edf11de055b"
+    },
+    "after": {
+      "file": "p0041.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Hanxianchu.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Hanxianchu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 350,
+      "height": 427,
+      "sha256": "abf0664349b6854aad8a9bf6c3e46e1be31010472f1b185f1a339620597de730"
+    }
+  },
+  {
+    "id": "p0045",
+    "name": "吕正操",
+    "before": {
+      "file": "p0045.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7537803.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211044442733618908.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 198,
+      "height": 250,
+      "sha256": "271f0c0bbeba3496e0efca6ea7dcf51ce2ccd9e53b67a869c3e0f9a7afd747e0"
+    },
+    "after": {
+      "file": "p0045.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%90%95%E6%AD%A3%E6%93%8D.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E5%90%95%E6%AD%A3%E6%93%8D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 400,
+      "height": 572,
+      "sha256": "85a4f746393b9b5ce3e953a12ab2565694d6568c4c990bbe5af6cc7b504e6534"
+    }
+  },
+  {
+    "id": "p0048",
+    "name": "甘泗淇",
+    "before": {
+      "file": "p0048.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7537635.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211029122145683722.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 261,
+      "sha256": "8f5ee0681508a92b634bc19e908fca79fc2f9f78d344a2206b5278a7c3618746"
+    },
+    "after": {
+      "file": "p0048.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Gan_siqi.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Gan_siqi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 400,
+      "height": 478,
+      "sha256": "a8847be1c29b1ef47d96ad49095394b6fe97182c4c3cbca7ac1473910c8b0246"
+    }
+  },
+  {
+    "id": "p0049",
+    "name": "宋任穷",
+    "before": {
+      "file": "p0049.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538515.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211317232840416815.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 194,
+      "height": 246,
+      "sha256": "37ec268bfe4fbef2bc5c3a68d8cca415ec929cb831884e090e03e9b559eaf3d4"
+    },
+    "after": {
+      "file": "p0049.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Songrenqiong.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Songrenqiong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 350,
+      "height": 443,
+      "sha256": "fc1938b49d06df61e9855d52dce68a7129701c950130496a1ff1ffb207a7a004"
+    }
+  },
+  {
+    "id": "p0050",
+    "name": "赖传珠",
+    "before": {
+      "file": "p0050.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538956.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211406332660759622.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "e35b8c4c0b21f2861304db504050efcdad71dcf07d21a859e5020a9f94bc0c1f"
+    },
+    "after": {
+      "file": "p0050.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Laichuanzhu.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Laichuanzhu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 366,
+      "height": 450,
+      "sha256": "330e31940173cc8db282f51741012ae98330bfdf4900ab282316c8f29be11f79"
+    }
+  },
+  {
+    "id": "p0052",
+    "name": "陈锡联",
+    "before": {
+      "file": "p0052.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538676.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211334102377663261.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "02e30b9de19380aa6e449748804fb9476520d30253145ac37a285207e72bc825"
+    },
+    "after": {
+      "file": "p0052.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Chenxillian.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Chenxillian.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 269,
+      "height": 350,
+      "sha256": "3cd9b77f3bb4a1bfce0d27cf8d7e4156e497668bbc8f049925b4c20c251c0b8c"
+    }
+  },
+  {
+    "id": "p0053",
+    "name": "韦国清",
+    "before": {
+      "file": "p0053.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7537521.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211020592104930487.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 261,
+      "sha256": "f5c002b081cf61e6bd9109b2aac5c0940acc67455bc6e5de16a1ee1000de2c8d"
+    },
+    "after": {
+      "file": "p0053.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Weiguoqing.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Weiguoqing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 500,
+      "height": 660,
+      "sha256": "28dc745667f4aab185cc763d811a072ea0b6b5aa9dd85e3a08cc062460e4808a"
+    }
+  },
+  {
+    "id": "p0054",
+    "name": "陈士榘",
+    "before": {
+      "file": "p0054.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538663.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211333072280386642.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "2df63c90f4e9ff59c713e89c12464953da9caa416a84e0412c3be3a736dd6935"
+    },
+    "after": {
+      "file": "p0054.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Chenshiqu.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Chenshiqu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 300,
+      "height": 372,
+      "sha256": "6ae6f63819e16bd0feaeab723f75658911d8815fccc46d0d80c16636cf3807c5"
+    }
+  },
+  {
+    "id": "p0055",
+    "name": "陈伯钧",
+    "before": {
+      "file": "p0055.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538597.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211325549221209232.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "173ffa0866a95037a94a9b5cddfd69c38db1ccb8a2a17e074aa484978cf2308c"
+    },
+    "after": {
+      "file": "p0055.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Chen_Bojun.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Chen_Bojun.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 470,
+      "height": 641,
+      "sha256": "0f4281bfb9d1d785d05f3a3e91eeff0f21b979a4822c48fb27f9c33bdd9605ad"
+    }
+  },
+  {
+    "id": "p0057",
+    "name": "宋时轮",
+    "before": {
+      "file": "p0057.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538525.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211318311944286551.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "ad699f516c10a7abe8482a11cb0d6e265e76e2c1c043cb75c90d0b8a1c71095c"
+    },
+    "after": {
+      "file": "p0057.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Song_Shilun1955.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Song_Shilun1955.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 500,
+      "height": 627,
+      "sha256": "f89863b5e98d5806b3d8b6e430e11ad2c4b2f73b56b06d4354a1ae8ef4441c55"
+    }
+  },
+  {
+    "id": "p0058",
+    "name": "朱良才",
+    "before": {
+      "file": "p0058.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538033.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211107442211130367.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 261,
+      "sha256": "dedcb68aac297dc5f3398e6d2203d62374eebc36b65d375c9e29a96fdd4cc3e5"
+    },
+    "after": {
+      "file": "p0058.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Zhu_liangcai.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Zhu_liangcai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 258,
+      "height": 350,
+      "sha256": "947708eed78c514fb71079da5032984d90ac04ae63ebb1832a2e6dec250cc42c"
+    }
+  },
+  {
+    "id": "p0061",
+    "name": "叶飞",
+    "before": {
+      "file": "p0061.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538025.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211106231968025746.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "9fd295dbbf3e0f7c980f5ac37ebc60d2705794ebbac4c99ef56319cd81111d6e"
+    },
+    "after": {
+      "file": "p0061.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B6%E9%A3%9E%E4%B8%8A%E5%B0%86%E6%8E%88%E8%A1%94%E7%85%A7.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/%E5%8F%B6%E9%A3%9E%E4%B8%8A%E5%B0%86%E6%8E%88%E8%A1%94%E7%85%A7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 319,
+      "height": 458,
+      "sha256": "db8537af054a6b0ef1553ca1127dd624d2c881ece5a5eed1a069a88ef3d54a2b"
+    }
+  },
+  {
+    "id": "p0062",
+    "name": "杨得志",
+    "before": {
+      "file": "p0062.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538144.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211119033832116889.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "6eca54095d2b6fb985c73f2a4bb8e15d757a07794bcc2a494e2dd98550d65de1"
+    },
+    "after": {
+      "file": "p0062.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Yangdezhi.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Yangdezhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 500,
+      "height": 636,
+      "sha256": "b19b4914edc4ab0811f35cafd189e41650405d77b42edfb55ca012e9db8b0fbd"
+    }
+  },
+  {
+    "id": "p0063",
+    "name": "王新亭",
+    "before": {
+      "file": "p0063.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7537510.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211020082587355288.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "024fe7d481f494fe29211c3ce3d2d3e3533662c639a7a5f4193601c7036c9a47"
+    },
+    "after": {
+      "file": "p0063.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wangxinting1955.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Wangxinting1955.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 500,
+      "height": 676,
+      "sha256": "65f909e439305ef3554a622c61244c2d759500125d76708aba8db0c601a5343d"
+    }
+  },
+  {
+    "id": "p0064",
+    "name": "黄永胜",
+    "before": {
+      "file": "p0064.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7592773.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/31/F200807311530082120119204.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "469ae8053de2decb66b07a4a8f074f28dc8698642abd175e725913354e6f7cd7"
+    },
+    "after": {
+      "file": "p0064.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Huang_Yongsheng.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/01/Huang_Yongsheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 286,
+      "height": 350,
+      "sha256": "b4345bf213b9fdb9747716a6b84fa4febf066d8a3cd748ba7586fb3c83b801f0"
+    }
+  },
+  {
+    "id": "p0067",
+    "name": "贺炳炎",
+    "before": {
+      "file": "p0067.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538756.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211344163435273731.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "a5005dffccc89d55200e589e0de983f5ecb5b1581ac961cf7c28af2dcd376260"
+    },
+    "after": {
+      "file": "p0067.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Hebingyan1955.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Hebingyan1955.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 344,
+      "height": 500,
+      "sha256": "9b6bbbd8d42670ceee52b26ac00581b0b83c737ef3afa49483430671c47638b9"
+    }
+  },
+  {
+    "id": "p0071",
+    "name": "乌兰夫",
+    "before": {
+      "file": "p0071.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7537530.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211022229745560994.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "1f604b7bb02a26388ed42dc995f40731d34633bf0013fd5173c31494ae8be2dd"
+    },
+    "after": {
+      "file": "p0071.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ulanhu1955.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ulanhu1955.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 500,
+      "height": 693,
+      "sha256": "e8c19cf6785780011309a30fa434fa7bf08517ac4a19b585a1634efaa71462bc"
+    }
+  },
+  {
+    "id": "p0072",
+    "name": "周桓",
+    "before": {
+      "file": "p0072.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538696.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211337121748032429.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 261,
+      "sha256": "b9fca3d3536d436b259fafc7f26799fbfb19efb96712847d944fa9a91bc2d835"
+    },
+    "after": {
+      "file": "p0072.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Zhou_Huan.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Zhou_Huan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 281,
+      "height": 368,
+      "sha256": "190ef555a14bc6108547b2c2c3b54d82185ea863d2f6cdcd59bf05b1309cb569"
+    }
+  },
+  {
+    "id": "p0077",
+    "name": "李聚奎",
+    "before": {
+      "file": "p0077.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538467.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211312003113223187.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 195,
+      "height": 260,
+      "sha256": "4808a590c68f686374bd804157ce068ae8f5cb8365c1a7a65f2866214592da23"
+    },
+    "after": {
+      "file": "p0077.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Li_Jukui.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Li_Jukui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 500,
+      "height": 643,
+      "sha256": "c3df767fa0852d3a0c2fc0f67c3ed822c4198f30518a84f8bb30862f8ff2961e"
+    }
+  },
+  {
+    "id": "p0012",
+    "name": "黄克诚",
+    "before": {
+      "file": "p0012.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127855/7537011.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807210948161535016629.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 194,
+      "height": 275,
+      "sha256": "f13e4fb5ea480fbb9d83be37506edcf890cf21df6cb57c32c1e96cb6e1beecc5"
+    },
+    "after": {
+      "file": "p0012.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Huang_Kecheng.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Huang_Kecheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 354,
+      "height": 500,
+      "sha256": "3955204c18cf7cef8db5684df276b36c55597dc5f1a160a8414877b2aa69e52d"
+    }
+  },
+  {
+    "id": "p0013",
+    "name": "谭政",
+    "before": {
+      "file": "p0013.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127855/7537065.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807210952183089630877.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 197,
+      "height": 250,
+      "sha256": "ba29a18feeee04224f36db84ff91269962285ecf6ccfcfe1a258e8695139ec2d"
+    },
+    "after": {
+      "file": "p0013.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tan_Zheng.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Tan_Zheng.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 375,
+      "height": 521,
+      "sha256": "124e42c8b130e8e38f32bb2cd9a9ea9334e080dccce0387aee525e5d20fcd443"
+    }
+  },
+  {
+    "id": "p0018",
+    "name": "许光达",
+    "before": {
+      "file": "p0018.jpg",
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127855/7537271.html",
+      "downloadUrl": "https://cpc.people.com.cn/mediafile/200807/21/F200807211002352076028397.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 175,
+      "height": 250,
+      "sha256": "4826c7a6f1e91873f4738d6e36ffe68ff37fe3e51a61617c7aa25255116861c4"
+    },
+    "after": {
+      "file": "p0018.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Xu_Guangda.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Xu_Guangda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 350,
+      "height": 500,
+      "sha256": "197d9b90b109b8a278c7b1b3dcb737b31d9d70db05be9d21273818bd364b1439"
+    }
+  },
+  {
+    "id": "p0322",
+    "name": "尤太忠",
+    "before": {
+      "file": "p0322.jpg",
+      "source": "https://www.krzzjn.com/show-3156-160545.html",
+      "downloadUrl": "https://www.krzzjn.com/uploadfile/2026/0814/20260814172042155.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 229,
+      "height": 300,
+      "sha256": "fbaecbdcbbd96457204a9a310779c620d5bd3b53ce87417da5d8119d9db28876"
+    },
+    "after": {
+      "file": "p0322.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:You_Taizhong1955.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/You_Taizhong1955.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 388,
+      "height": 496,
+      "sha256": "9d5177a6067fab1031eb8d3530c93c55c3f980459d35272ec6c9128ea80c4953"
+    }
+  },
+  {
+    "id": "p0337",
+    "name": "邓兆祥",
+    "before": {
+      "file": "p0337.jpg",
+      "source": "https://www.krzzjn.com/show-3156-161092.html",
+      "downloadUrl": "https://www.krzzjn.com/uploadfile/2026/0814/20260814172556748.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 235,
+      "height": 338,
+      "sha256": "714b58e59333a6674156e894531ef911f28319ed8c09530a84da2483fbc5a289"
+    },
+    "after": {
+      "file": "p0337.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%82%93%E5%85%86%E7%A5%A5%E6%B5%B7%E5%86%9B%E5%B0%91%E5%B0%86.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/%E9%82%93%E5%85%86%E7%A5%A5%E6%B5%B7%E5%86%9B%E5%B0%91%E5%B0%86.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 440,
+      "height": 587,
+      "sha256": "0fc05413b82bb6a7927f259376b80253639bb4154d1a839817ceec5eac0be858"
+    }
+  },
+  {
+    "id": "p0339",
+    "name": "邓家泰",
+    "before": {
+      "file": "p0339.jpg",
+      "source": "https://www.krzzjn.com/show-3156-161098.html",
+      "downloadUrl": "https://www.krzzjn.com/uploadfile/2026/0814/20260814172600921.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 259,
+      "height": 350,
+      "sha256": "09e7822f993f5581bdc532d3914459a97218a9860bbf4c8fa8ce6445f1205f76"
+    },
+    "after": {
+      "file": "p0339.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%82%93%E5%AE%B6%E6%B3%B0.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/%E9%82%93%E5%AE%B6%E6%B3%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "width": 391,
+      "height": 600,
+      "sha256": "fb70face5c1ce6bc5c36e692ac64463723f3197007a07841e867de1de62d8a14"
+    }
+  },
+  {
+    "id": "p0340",
+    "name": "孔飞",
+    "before": {
+      "file": "p0340.jpg",
+      "source": "https://www.krzzjn.com/show-3156-160960.html",
+      "downloadUrl": "https://www.krzzjn.com/uploadfile/2026/0814/20260814172439748.jpg",
+      "license": "来源页未标明开放许可",
+      "width": 164,
+      "height": 228,
+      "sha256": "c5b3eeaccb9a3593a26c9aea82575e64b8122a18615b9d758ce3a208af1d85c2"
+    },
+    "after": {
+      "file": "p0340.png",
+      "source": "https://commons.wikimedia.org/wiki/File:KongFeiGeneral2.png",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/KongFeiGeneral2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "width": 770,
+      "height": 1096,
+      "sha256": "bb598bc2ad1570ed562503cc3750ec5370ea761b3584ef57c2108dc79ba3b76b"
+    }
+  }
+]

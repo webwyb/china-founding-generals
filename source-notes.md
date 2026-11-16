@@ -1,14 +1,69 @@
-# 人物样本与肖像来源
+# 全量人物档案与肖像来源
 
-整理日期：2026-11-16。此版本包含 **8 位人物体验样本**，用于验证浏览、家乡筛选、人物故事与纪念卡交互，**不构成完整的 1614 人名录**。
+整理日期：2026-11-17。已收录 **1614 位开国将帅**，保留原有8篇精选故事，并按相同页面结构补入其他人物的基本档案、生平简述、人生节点与来源链接。共有 **1172位人物的本地历史肖像、442个明确标注的肖像占位**。
+
+## 全量整理方法
+
+姓名与军衔底册采用[中红网开国将帅名录](https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html)及其第二页，逐项保留1614个档案，不按姓名去重。四对同名人物（李元、李道之、罗斌、张英）依据出生年与授衔年分开匹配，路由ID独立。
+
+个体生平优先采用中国共产党新闻网人物资料，补充[抗日战争纪念网少将资料](https://www.krzzjn.com/list-3156-1.html)、[晋衔少将资料](https://www.krzzjn.com/list-3157-1.html)及其人物传记。已下线的人民网资料在可访问时查阅公开历史存档。维基百科与维基数据用于补充缺项，维基数据只关联已经确认身份的百科条目，不通过同名直接套用。
+
+少量缺失的籍贯和年份由[太行英雄网按籍贯排序的名录](https://taihangsummit.com/47460-2/)第1至5页补充。这是二次编录，优先级低于个体生平；采集时同时识别有“籍”和无“籍”的地区标题。缺项另以新华社、地方政府和档案机构资料核对，结果及出处存于 `data/catalog/reviewed-facts.json`。
+
+原名录的“陈士渠、周恒、陈仁麟、黄新延、何延一、延懋”按人民网人物资料及官方目录核为“陈士榘、周桓、陈仁麒、黄新廷、何廷一、廷懋”。“吴詠湘”按岳阳市政府资料统一为“吴咏湘”。原写法仍作为检索别名，不另外占人数。其他无法仅凭写法确认的姓名不自动替换。
+
+前台文字由日期、地点、任职、入伍及入党等事实重新组织，不复制发布完整传记。生卒只记录年份，不由享年或虚岁反推出生年。地点区分“籍贯”与“出生地”，保存来源所载历史地名；不统一臆改为现行政区。人生节点只写有年份依据的事实，籍贯不会被自动写成出生地。
+
+本轮核查记录206项来源差异，其中204项未核定，涉及190人。未核定的出生年、逝世年、授衔年及3人的地域信息，不再作为定值发布；详情、名录、时间轴和纪念卡统一处理。贾乾瑞出生年的1915/1916分歧亦改为“待核实”，不再暂取其中一年。差异及出处见 `data/catalog/source-conflicts.json` 与 `pending-review.json`，字段级出处见 `field-provenance.json`。完成全量基本档案录入不等于所有内容均已完成史学人工审定。
+
+已修正的典型问题包括：周仁杰资料中的1970—1977为任职区间，逝世年应据[人物原文](https://cpc.people.com.cn/GB/64162/126778/130393/7587642.html)记为2001年；杨得志、刘先胜在安源煤矿的工作经历不能作为江西籍贯；开国少将李平、朱光不能混入同名后期将领的籍贯；史进前晋衔年依据[人民网人物资料](https://politics.people.com.cn/n/2015/0203/c1001-26500875-24.html)校正为1961年。9条身份不符的来源排除记录在 `rejected-identities.json`。解析回归用例见 `scripts/test_catalog_parser.py`，修正及暂缓发布前后值见 `data/testing/factual-corrections.json`。
+
+地域交叉核查见 `hometown-review.json`。历史省县变动、原籍、出生地及迁居地应分别辨识，不以省名不同直接判定某一来源错误。页面地区按所采用来源的历史记载归类，不能当作按今日行政区划计算的将帅人数统计。
+
+新增照片来自已匹配身份的人物资料页和 Wikimedia 免费影像条目，保存原始文件，未进行AI修复、替换或重绘。部分JPEG含MPF附加帧，文件原样保留，以浏览器可读取的主JPEG展示。每张照片的来源、原下载地址、尺寸、SHA-256和许可说明在 `data/catalog/portraits.json`。来源页未标明开放许可的照片按原型研究素材记录，不统一宣称公共领域。
+
+占位图 `src/assets/portrait-placeholder.svg` 是统一剪影，明确写有“历史肖像待补”。占位包括未取得可用照片、身份不能确认、重复图像和来源临时限流或下载失败等情况，不代表历史上没有照片。采集遵守限流提示，不关闭TLS校验，不以他人的肖像补缺。
+
+## 地域景观配图
+
+本轮新增29幅省级地区代表景观，使用内置image_gen逐张生成，统一为淡青绿水墨设色。它们是装饰性的当代地域文化意象，不作为人物到访、居住或作战地点的史料。人物历史肖像与景观在版面上分别呈现，没有对人物进行AI生成、替换或重绘。
+
+省份对应关系在 `src/data/landscapes.ts`，完整提示词在 `data/design/landscape-prompts.json`，WebP发布文件、原稿哈希及大小在 `data/design/landscape-assets.json`。PNG原稿在 `design/landscapes/` 中随Git保留。字体采用Google Fonts官方仓库的Noto Serif SC，经子集化后以Shanhe Serif为内部名称，保留SIL Open Font License 1.1全文；可选TTF源的固定官方版本和SHA见 `font-upstream.json`。
+
+## 更新与复核
+
+核心文件为 `src/data/catalog.generated.json`、`data/catalog/people.csv`、`quality-report.json`、`missing-fields.json`、`source-conflicts.json`、`portraits.json`。CSV包括生平简述、资料差异和逐人来源，适合人工校订；原始网络正文只在忽略的 `.cache/catalog/` 中。为换机继续开发，4733条机器抽取事实及出处已保存为 `data/catalog/evidence/` 的版本化快照。默认生成使用该快照，显式 `--refresh-evidence` 才重新解析原文缓存；详见 `docs/DATA_PIPELINE.md`。
+
+安装 `scripts/requirements-catalog.txt` 后可按需要运行以下命令。已下载页面会复用缓存；联网采集的可用率随源站变化。
+
+```sh
+python3 scripts/catalog_sources.py roster
+python3 scripts/catalog_sources.py discover 3156
+python3 scripts/catalog_sources.py discover 3157
+python3 scripts/catalog_sources.py discover 2872
+python3 scripts/catalog_sources.py collect cpc
+python3 scripts/catalog_sources.py collect memorial
+python3 scripts/collect_wikipedia.py
+python3 scripts/collect_compendium.py
+python3 scripts/build_catalog.py
+python3 scripts/collect_wiki_details.py
+python3 scripts/enrich_wikidata.py
+python3 scripts/collect_archived_profiles.py
+python3 scripts/build_catalog.py
+python3 scripts/collect_portraits.py
+python3 scripts/build_catalog.py
+npm run validate:data
+```
+
+`reviewed-facts.json` 是带出处的人工核对覆盖层，优先于自动提取字段；数据脚本按身份匹配合并，保留原有精选人物ID。校验覆盖1614人及军衔人数、重名、基本字段、年份范围、人生节点顺序、地区标题解析、本地图片与重复照片、报告统计一致性。
 
 ## 数据口径
 
 - 人物故事是依据下列资料撰写的简短介绍，并非史料逐字摘录。人物详情保留直接资料链接，便于读者进一步阅读。
 - `birth` / `death` 只记录公历年份，避免虚岁、周岁以及具体日期的不同记法混入前台。
 - `rank` 记录开国授衔时期的军衔。张震在 1955 年获中将，1988 年获上将，因此本版筛选项归为“中将”；洪学智的两次上将授衔在故事与年表中分别记录。
-- `province` 与 `hometown` 采用当前常用地域归属，服务于家乡入口。例如洪学智出生地当时属河南商城，今属安徽金寨；徐海东出生地旧属黄陂，今属湖北大悟。
-- 并未根据网络海报采用对全部将帅的绝对化评价。后续完整名录需要逐人核对姓名、籍贯、授衔及生卒资料。
+- 原有8位精选人物采用已核对的常用地域归属。例如洪学智出生地当时属河南商城，今属安徽金寨；徐海东出生地旧属黄陂，今属湖北大悟。其他人物保留各自来源记载。
+- 没有根据网络海报采用对全部将帅的绝对化评价。
 
 ## 生平与故事依据
 
@@ -44,8 +99,10 @@
 
 李贞原图地址：`https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200810/10453081/images/3532511761f04aa191f37526dc4b8f3b.jpg`。下载后未进行 AI 修复或重绘，前台使用同一套图片样式处理。
 
+2026-11-17图片展示优化：所有H5肖像与纪念卡均按完整源图等比放入画框，不使用人像滤镜或额外裁切。37张公开目录肖像换为经比较后更清晰的原始来源文件，记录见 `data/design/portrait-upgrades.json`；较大但模糊、遮挡或拍摄展板的候选不替换。原照片备份留在 `.cache/portrait-quality/previous/`，未进行AI补脸、重绘或生成细节。分辨率不足的历史资料仍保留原图，详情页显示实际像素并允许查看完整原文件。
+
 特别核对：Commons 的 `File:Li Zhen.jpg` 描述实际指向男性 **李震（1914—1973）**，与女性 **李贞（1908—1990）** 不是同一人。本版没有使用该同名文件。
 
 ## 完整名录范围参考
 
-[《学习时报》 / 中国共产党新闻网：将军从这里走出打天下……](https://cpc.people.com.cn/n1/2023/0424/c443712-32671924.html)采用“1614 名开国将帅”的口径。该总数是项目计划收录范围，不是当前样本数据量。
+[《学习时报》 / 中国共产党新闻网：将军从这里走出打天下……](https://cpc.people.com.cn/n1/2023/0424/c443712-32671924.html)采用“1614 名开国将帅”的口径，与当前实际档案数量一致。

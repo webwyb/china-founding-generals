@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "people": 1614,
+  "filterCombinations": 186,
+  "checks": [
+    "全部军衔与省份的组合筛选",
+    "姓名、异体写法、多词组合及无结果",
+    "全1614人分批浏览无遗漏或重复",
+    "地区直达与畸形编码容错",
+    "铭记增删、持久保存与损坏数据恢复",
+    "名录状态、阅读位置与禁用存储",
+    "来源冲突在列表和导出资料中统一待核实",
+    "导航、连续浏览与直达页返回逻辑",
+    "HTTPS复制、拒绝后的兼容降级、异常清理与本地链接提示"
+  ],
+  "method": "Production modules bundled for Node with explicit storage/navigation/clipboard adapters; no browser interaction or device simulation."
+}

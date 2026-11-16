@@ -1,4 +1,7 @@
 import Taro from '@tarojs/taro'
+import { renderMemorialCard } from './cardRenderer'
+import { containImage } from './imageGeometry'
+import { lifeYears } from '../data/historyLabels'
 
 /** Keep the exporter independent from the catalogue so it works with future data sources. */
 export interface ShareCardData {
@@ -6,14 +9,18 @@ export interface ShareCardData {
   name: string
   rank: string
   hometown: string
-  birth: number | string
-  death: number | string
+  birth: number | string | null
+  death: number | string | null
   portrait: string
   tagline: string
+  province?: string
+  fieldNote?: string
+  pendingFields?: string[]
 }
 
 export interface ShareResult {
   message: string
+  imageUrl?: string
 }
 
 export const MEMORIAL_CANVAS_ID = 'memorial-canvas'
@@ -99,11 +106,13 @@ function paintCard(painter: CardPainter, person: ShareCardData): void {
   painter.font(16)
   painter.text(person.rank, 300, 487)
   painter.fill(COLORS.ink)
-  painter.font(person.name.length > 4 ? 40 : 49, 'serif')
+  let nameSize = person.name.length > 4 ? 40 : 49
+  painter.font(nameSize, 'serif')
+  while (painter.measure(person.name) > 488 && nameSize > 22) painter.font(--nameSize, 'serif')
   painter.text(person.name, 300, 546)
   painter.font(18)
   painter.fill(COLORS.muted)
-  painter.text(`${person.birth} — ${person.death}`, 300, 582)
+  painter.text(lifeYears(person), 300, 582)
 
   painter.font(16)
   const places = wrapText(painter, person.hometown, 440, 2)
@@ -129,80 +138,6 @@ function paintCard(painter: CardPainter, person: ShareCardData): void {
   painter.text('人物纪念卡 · 生平与史料出处请见人物页', 300, 856)
 }
 
-function coverCrop(sourceWidth: number, sourceHeight: number, width: number, height: number) {
-  const scale = Math.max(width / sourceWidth, height / sourceHeight)
-  const cropWidth = width / scale
-  const cropHeight = height / scale
-  return {
-    sx: (sourceWidth - cropWidth) / 2,
-    // Historical portraits usually place the head in the upper part of the photograph.
-    sy: (sourceHeight - cropHeight) * 0.24,
-    sw: cropWidth,
-    sh: cropHeight,
-  }
-}
-
-async function saveBrowserCard(person: ShareCardData): Promise<ShareResult> {
-  const image = await new Promise<HTMLImageElement>((resolve, reject) => {
-    const portrait = new Image()
-    const timeout = window.setTimeout(() => reject(new Error('肖像加载较慢，请稍后重试。')), 15000)
-    portrait.onload = () => { window.clearTimeout(timeout); resolve(portrait) }
-    portrait.onerror = () => { window.clearTimeout(timeout); reject(new Error('肖像暂未加载成功，请稍后重试。')) }
-    // Local bundled portraits are same-origin. crossOrigin also supports a future public CDN.
-    portrait.crossOrigin = 'anonymous'
-    portrait.src = person.portrait
-  })
-  const canvas = document.createElement('canvas')
-  canvas.width = CANVAS_WIDTH * 2
-  canvas.height = CANVAS_HEIGHT * 2
-  const context = canvas.getContext('2d')
-  if (!context) throw new Error('当前浏览器暂不支持生成纪念卡。')
-  context.scale(2, 2)
-  context.textBaseline = 'alphabetic'
-  const painter: CardPainter = {
-    fill: (color) => { context.fillStyle = color },
-    stroke: (color) => { context.strokeStyle = color },
-    lineWidth: (width) => { context.lineWidth = width },
-    rect: (x, y, width, height) => context.fillRect(x, y, width, height),
-    frame: (x, y, width, height) => context.strokeRect(x, y, width, height),
-    line: (x1, y1, x2, y2) => {
-      context.beginPath()
-      context.moveTo(x1, y1)
-      context.lineTo(x2, y2)
-      context.stroke()
-    },
-    font: (size, family = 'sans') => {
-      context.font = `${size}px ${family === 'serif' ? '"Noto Serif SC", "Songti SC", "SimSun", serif' : '"PingFang SC", "Microsoft YaHei", sans-serif'}`
-    },
-    align: (value) => { context.textAlign = value },
-    text: (value, x, y) => context.fillText(value, x, y),
-    measure: (value) => context.measureText(value).width,
-    portrait: (x, y, width, height) => {
-      const crop = coverCrop(image.naturalWidth, image.naturalHeight, width, height)
-      context.save()
-      context.filter = 'grayscale(1)'
-      context.drawImage(image, crop.sx, crop.sy, crop.sw, crop.sh, x, y, width, height)
-      context.restore()
-    },
-  }
-  paintCard(painter, person)
-
-  const imageUrl = canvas.toDataURL('image/png')
-  if (/MicroMessenger|iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-    // Mobile in-app browsers often ignore the download attribute. Their image viewer
-    // offers the familiar long-press save action instead of reporting a false download.
-    await Taro.previewImage({ current: imageUrl, urls: [imageUrl] })
-    return { message: '纪念卡已打开，可长按图片保存。' }
-  }
-  const anchor = document.createElement('a')
-  anchor.href = imageUrl
-  anchor.download = `山河有名-${person.name}.png`
-  document.body.appendChild(anchor)
-  anchor.click()
-  anchor.remove()
-  return { message: '纪念卡已生成，请在浏览器下载中查看。' }
-}
-
 async function saveMiniProgramCard(person: ShareCardData): Promise<ShareResult> {
   // getImageInfo resolves bundled assets to a canvas-readable local path.
   const image = await Taro.getImageInfo({ src: person.portrait })
@@ -224,8 +159,8 @@ async function saveMiniProgramCard(person: ShareCardData): Promise<ShareResult> 
     text: (value, x, y) => context.fillText(value, x, y),
     measure: (value) => context.measureText(value).width,
     portrait: (x, y, width, height) => {
-      const crop = coverCrop(image.width, image.height, width, height)
-      context.drawImage(image.path, crop.sx, crop.sy, crop.sw, crop.sh, x, y, width, height)
+      const target = containImage(image, { x, y, width, height })
+      context.drawImage(image.path, 0, 0, image.width, image.height, target.x, target.y, target.width, target.height)
     },
   }
   paintCard(painter, person)
@@ -268,7 +203,7 @@ function errorMessage(error: unknown): string {
 /** Call only from an explicit save button. The function does not request permission on load. */
 export async function saveMemorialCard(person: ShareCardData): Promise<ShareResult> {
   try {
-    if (process.env.TARO_ENV === 'h5') return await saveBrowserCard(person)
+    if (process.env.TARO_ENV === 'h5') return { imageUrl: await renderMemorialCard(person), message: '纪念卡已生成，可长按图片保存或下载PNG。' }
     if (process.env.TARO_ENV === 'weapp') return await saveMiniProgramCard(person)
     throw new Error('当前平台暂不支持保存纪念卡。')
   } catch (error) {
@@ -296,11 +231,17 @@ async function browserCopy(value: string): Promise<void> {
   textarea.setAttribute('readonly', '')
   textarea.style.position = 'fixed'
   textarea.style.opacity = '0'
+  const previous = document.activeElement as HTMLElement | null
   document.body.appendChild(textarea)
-  textarea.select()
-  textarea.setSelectionRange(0, value.length)
-  const copied = document.execCommand('copy')
-  textarea.remove()
+  let copied = false
+  try {
+    textarea.select()
+    textarea.setSelectionRange(0, value.length)
+    copied = document.execCommand('copy')
+  } finally {
+    textarea.remove()
+    previous?.focus({ preventScroll: true })
+  }
   if (!copied) throw new Error('浏览器未允许复制，请从地址栏复制人物页链接。')
 }
 

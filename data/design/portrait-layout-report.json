@@ -1,0 +1,385 @@
+{
+  "portraits": 1172,
+  "themes": 2,
+  "portraitCompositions": 2344,
+  "extremeRatioCompositions": 6,
+  "compositions": 2350,
+  "clippingErrors": 0,
+  "distortionErrors": 0,
+  "originalsWithShortSideBelow200": 53,
+  "lowResolutionOriginals": [
+    {
+      "id": "p0022",
+      "name": "李达",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538050.html"
+    },
+    {
+      "id": "p0029",
+      "name": "张爱萍",
+      "width": 193,
+      "height": 242,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538535.html"
+    },
+    {
+      "id": "p0033",
+      "name": "郭天民",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538747.html"
+    },
+    {
+      "id": "p0034",
+      "name": "周纯全",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538720.html"
+    },
+    {
+      "id": "p0040",
+      "name": "刘亚楼",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7537784.html"
+    },
+    {
+      "id": "p0042",
+      "name": "李涛",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538090.html"
+    },
+    {
+      "id": "p0043",
+      "name": "傅秋涛",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538944.html"
+    },
+    {
+      "id": "p0046",
+      "name": "傅钟",
+      "width": 195,
+      "height": 261,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538918.html"
+    },
+    {
+      "id": "p0047",
+      "name": "萧华",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538817.html"
+    },
+    {
+      "id": "p0051",
+      "name": "刘震",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7537657.html"
+    },
+    {
+      "id": "p0056",
+      "name": "钟期光",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538850.html"
+    },
+    {
+      "id": "p0059",
+      "name": "董其武",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538875.html"
+    },
+    {
+      "id": "p0060",
+      "name": "唐亮",
+      "width": 195,
+      "height": 261,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538776.html"
+    },
+    {
+      "id": "p0065",
+      "name": "李天佑",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538494.html"
+    },
+    {
+      "id": "p0066",
+      "name": "陈明仁",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538605.html"
+    },
+    {
+      "id": "p0068",
+      "name": "阎红彦",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538978.html"
+    },
+    {
+      "id": "p0069",
+      "name": "谢富治",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7592801.html"
+    },
+    {
+      "id": "p0070",
+      "name": "陶峙岳",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538793.html"
+    },
+    {
+      "id": "p0073",
+      "name": "杨勇",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538126.html"
+    },
+    {
+      "id": "p0074",
+      "name": "李志民",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538506.html"
+    },
+    {
+      "id": "p0075",
+      "name": "赵尔陆",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7538836.html"
+    },
+    {
+      "id": "p0076",
+      "name": "王建安",
+      "width": 195,
+      "height": 260,
+      "source": "https://cpc.people.com.cn/GB/64162/126778/127857/7537496.html"
+    },
+    {
+      "id": "p0311",
+      "name": "王振祥",
+      "width": 136,
+      "height": 188,
+      "source": "https://www.krzzjn.com/show-3156-160652.html"
+    },
+    {
+      "id": "p0329",
+      "name": "方国华",
+      "width": 190,
+      "height": 274,
+      "source": "https://www.krzzjn.com/show-3156-161074.html"
+    },
+    {
+      "id": "p0350",
+      "name": "龙飞虎",
+      "width": 193,
+      "height": 256,
+      "source": "https://www.krzzjn.com/show-3156-160828.html"
+    },
+    {
+      "id": "p0384",
+      "name": "朱虚之",
+      "width": 100,
+      "height": 155,
+      "source": "https://www.krzzjn.com/show-3156-160412.html"
+    },
+    {
+      "id": "p0481",
+      "name": "李士才",
+      "width": 190,
+      "height": 285,
+      "source": "https://www.krzzjn.com/show-3156-160909.html"
+    },
+    {
+      "id": "p0555",
+      "name": "吴涛",
+      "width": 184,
+      "height": 272,
+      "source": "https://www.krzzjn.com/show-3156-160634.html"
+    },
+    {
+      "id": "p0820",
+      "name": "贺吉祥",
+      "width": 161,
+      "height": 234,
+      "source": "https://www.krzzjn.com/show-3156-161017.html"
+    },
+    {
+      "id": "p0860",
+      "name": "郭宝珊",
+      "width": 107,
+      "height": 161,
+      "source": "https://www.krzzjn.com/show-3156-161046.html"
+    },
+    {
+      "id": "p0865",
+      "name": "高体乾",
+      "width": 88,
+      "height": 130,
+      "source": "https://www.krzzjn.com/show-3156-161056.html"
+    },
+    {
+      "id": "p0939",
+      "name": "蒋克诚",
+      "width": 134,
+      "height": 218,
+      "source": "https://www.krzzjn.com/show-3156-160966.html"
+    },
+    {
+      "id": "p1046",
+      "name": "潘寿才",
+      "width": 166,
+      "height": 234,
+      "source": "https://www.krzzjn.com/show-3156-160785.html"
+    },
+    {
+      "id": "p1237",
+      "name": "黄厚",
+      "width": 90,
+      "height": 133,
+      "source": "https://www.krzzjn.com/show-3157-161431.html"
+    },
+    {
+      "id": "p1272",
+      "name": "鲍奇辰",
+      "width": 117,
+      "height": 168,
+      "source": "https://www.krzzjn.com/show-3157-161505.html"
+    },
+    {
+      "id": "p1269",
+      "name": "訾修林",
+      "width": 114,
+      "height": 171,
+      "source": "https://www.krzzjn.com/show-3157-161163.html"
+    },
+    {
+      "id": "p1379",
+      "name": "刘国辅",
+      "width": 111,
+      "height": 161,
+      "source": "https://www.krzzjn.com/show-3157-161365.html"
+    },
+    {
+      "id": "p1391",
+      "name": "许志奋",
+      "width": 83,
+      "height": 124,
+      "source": "https://www.krzzjn.com/show-3157-161244.html"
+    },
+    {
+      "id": "p1447",
+      "name": "吴仕宏",
+      "width": 159,
+      "height": 241,
+      "source": "https://www.krzzjn.com/show-3157-161268.html"
+    },
+    {
+      "id": "p1470",
+      "name": "张水发",
+      "width": 144,
+      "height": 208,
+      "source": "https://www.krzzjn.com/show-3157-161206.html"
+    },
+    {
+      "id": "p1492",
+      "name": "陈云中",
+      "width": 107,
+      "height": 158,
+      "source": "https://www.krzzjn.com/show-3157-161490.html"
+    },
+    {
+      "id": "p1496",
+      "name": "陈炎清",
+      "width": 125,
+      "height": 184,
+      "source": "https://www.krzzjn.com/show-3157-161491.html"
+    },
+    {
+      "id": "p1515",
+      "name": "周庆鸣",
+      "width": 183,
+      "height": 279,
+      "source": "https://www.krzzjn.com/show-3157-161172.html"
+    },
+    {
+      "id": "p0078",
+      "name": "丁秋生",
+      "width": 195,
+      "height": 262,
+      "source": "https://commons.wikimedia.org/wiki/File:Dingqiusheng.jpg"
+    },
+    {
+      "id": "p0079",
+      "name": "万毅",
+      "width": 195,
+      "height": 262,
+      "source": "https://commons.wikimedia.org/wiki/File:Wanyi.jpg"
+    },
+    {
+      "id": "p0082",
+      "name": "王近山",
+      "width": 195,
+      "height": 270,
+      "source": "https://commons.wikimedia.org/wiki/File:Wangjshan1955.jpg"
+    },
+    {
+      "id": "p0087",
+      "name": "王道邦",
+      "width": 195,
+      "height": 262,
+      "source": "https://commons.wikimedia.org/wiki/File:Wangdaobang.jpg"
+    },
+    {
+      "id": "p0089",
+      "name": "王紫峰",
+      "width": 195,
+      "height": 262,
+      "source": "https://commons.wikimedia.org/wiki/File:Wangzifeng.jpg"
+    },
+    {
+      "id": "p0090",
+      "name": "韦杰",
+      "width": 195,
+      "height": 262,
+      "source": "https://commons.wikimedia.org/wiki/File:Weijie.jpg"
+    },
+    {
+      "id": "p0091",
+      "name": "文年生",
+      "width": 195,
+      "height": 268,
+      "source": "https://commons.wikimedia.org/wiki/File:Wenniansheng.jpg"
+    },
+    {
+      "id": "p0092",
+      "name": "方强",
+      "width": 165,
+      "height": 200,
+      "source": "https://commons.wikimedia.org/wiki/File:Fang_Qiang.jpg"
+    },
+    {
+      "id": "p0093",
+      "name": "方正平",
+      "width": 195,
+      "height": 262,
+      "source": "https://commons.wikimedia.org/wiki/File:Fangzhengping.jpg"
+    },
+    {
+      "id": "lizhen",
+      "name": "李贞",
+      "width": 123,
+      "height": 150,
+      "source": "https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200810/t20081017_1977961.html"
+    }
+  ],
+  "smallestOriginalSide": 83,
+  "method": "Decode local originals and run the production Canvas renderer; verify full-source draw bounds and rasterized source corners. No browser access."
+}

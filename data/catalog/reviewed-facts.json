@@ -1,0 +1,494 @@
+{
+  "p0126": {
+    "facts": {
+      "death": 1957
+    },
+    "sources": [
+      {
+        "title": "人民网 · 朵噶·彭措饶杰人物资料",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7586907.html"
+      }
+    ]
+  },
+  "p0562": {
+    "facts": {
+      "hometown": "湖南湘阴（今汨罗）",
+      "province": "湖南",
+      "hometownType": "籍贯"
+    },
+    "sources": [
+      {
+        "title": "岳阳市人民政府 · 吴咏湘",
+        "url": "https://yueyang.gov.cn/mobile/23190/49359/49382/content_201608.html"
+      }
+    ]
+  },
+  "p0620": {
+    "facts": {
+      "hometown": "江西会昌",
+      "province": "江西",
+      "hometownType": "籍贯"
+    },
+    "sources": [
+      {
+        "title": "宋玉琳 · 基本资料",
+        "url": "https://bkso.baidu.com/item/宋玉琳/7981"
+      }
+    ]
+  },
+  "p0623": {
+    "facts": {
+      "hometown": "安徽金寨",
+      "province": "安徽",
+      "hometownType": "籍贯"
+    },
+    "sources": [
+      {
+        "title": "太行英雄网 · 宋维轼（栻）籍贯资料",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ]
+  },
+  "p0865": {
+    "facts": {
+      "hometown": "辽宁建平",
+      "province": "辽宁",
+      "hometownType": "籍贯"
+    },
+    "sources": [
+      {
+        "title": "人民网 · 辽宁义勇军走出两位开国将军",
+        "url": "https://dangshi.people.com.cn/n/2015/0920/c85037-27609595.html"
+      }
+    ]
+  },
+  "p1462": {
+    "facts": {
+      "hometown": "辽宁盖县",
+      "province": "辽宁",
+      "hometownType": "籍贯"
+    },
+    "sources": [
+      {
+        "title": "新华社 · 张英同志逝世",
+        "url": "https://www.xinhuanet.com/politics/2015-12/09/c_128512673.htm"
+      }
+    ]
+  },
+  "p1522": {
+    "facts": {
+      "hometown": "河北藁城",
+      "province": "河北",
+      "hometownType": "籍贯"
+    },
+    "sources": [
+      {
+        "title": "维基百科 · 宗凤洲籍贯资料",
+        "url": "https://zh.wikipedia.org/wiki/宗凤洲"
+      }
+    ]
+  },
+  "p1548": {
+    "facts": {
+      "death": 2015,
+      "hometown": "陕西朝邑（今大荔）",
+      "province": "陕西",
+      "hometownType": "籍贯",
+      "partyYear": 1935,
+      "enlist": {
+        "year": 1934,
+        "text": "参加中国工农红军。"
+      },
+      "career": {
+        "year": 1938,
+        "text": "任东进抗日挺进纵队第六支队特派员。"
+      }
+    },
+    "sources": [
+      {
+        "title": "新华社 · 贾乾瑞同志逝世",
+        "url": "https://www.xinhuanet.com/politics/2015-12/01/c_1117322400.htm"
+      },
+      {
+        "title": "抗日战争纪念网 · 贾乾瑞（据将帅名录）",
+        "url": "https://www.krzzjn.com/show-1469-96080.html"
+      }
+    ],
+    "note": "出生年份存在1915、1916两种记载，暂不列定值；逝世年份及履历依据新华社消息。"
+  },
+  "p0025": {
+    "facts": {
+      "grantYear": 1955
+    },
+    "sources": [
+      {
+        "title": "湖南省档案局 · 王震",
+        "url": "https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200609/t20060928_1977915.html"
+      }
+    ]
+  },
+  "p0118": {
+    "facts": {
+      "grantYear": 1955
+    },
+    "sources": [
+      {
+        "title": "茶陵融媒 · 长征途中模范师长刘转连",
+        "url": "https://www.clnews.cn/content/2016/09/07/6551455.html"
+      }
+    ]
+  },
+  "p0206": {
+    "facts": {
+      "grantYear": 1955
+    },
+    "sources": [
+      {
+        "title": "国防部 · 独臂将军晏福生",
+        "url": "https://www.mod.gov.cn/gfbw/gfjy_index/xjdx/4915240.html"
+      }
+    ]
+  },
+  "p0282": {
+    "facts": {
+      "grantYear": 1955
+    },
+    "sources": [
+      {
+        "title": "中国政府网 · 开国少将名录",
+        "url": "https://www.gov.cn/test/2009-02/02/content_1219470.htm"
+      }
+    ]
+  },
+  "p0369": {
+    "facts": {
+      "grantYear": 1955
+    },
+    "sources": [
+      {
+        "title": "中国政府网 · 开国少将名录",
+        "url": "https://www.gov.cn/test/2009-02/02/content_1219470.htm"
+      }
+    ]
+  },
+  "hongxuezhi": {
+    "facts": {
+      "grantYear": 1955
+    },
+    "sources": [
+      {
+        "title": "人民网 · 洪学智",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/127857/7538760.html"
+      }
+    ]
+  },
+  "chenqihan": {
+    "facts": {
+      "grantYear": 1955
+    },
+    "sources": [
+      {
+        "title": "人民网 · 陈奇涵",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/127857/7538650.html"
+      }
+    ]
+  },
+  "p0609": {
+    "facts": {
+      "province": "湖北",
+      "hometown": "湖北黄安（今红安）",
+      "hometownType": "籍贯"
+    },
+    "sources": [
+      {
+        "title": "维基百科 · 况玉纯",
+        "url": "https://zh.wikipedia.org/wiki/况玉纯"
+      }
+    ]
+  },
+  "p1328": {
+    "facts": {
+      "province": "河北",
+      "hometown": "河北霸县",
+      "hometownType": "籍贯"
+    },
+    "sources": [
+      {
+        "title": "北京日报 · 文击将军专访",
+        "url": "https://peking.bjd.com.cn/content/s62e9fb49e4b0f80526933afb.html"
+      }
+    ]
+  },
+  "p0181": {
+    "facts": {
+      "death": 2001
+    },
+    "verifiedFields": [
+      "death"
+    ],
+    "sources": [
+      {
+        "title": "中国共产党新闻网 · 周仁杰人物资料",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7587642.html"
+      }
+    ],
+    "note": "逝世年据人物资料明确记载校正为2001年；1970—1977为任职区间，不是生卒日期。"
+  },
+  "p0377": {
+    "facts": {
+      "hometown": "山东聊城",
+      "province": "山东",
+      "hometownType": "籍贯"
+    },
+    "verifiedFields": [
+      "hometown",
+      "province"
+    ],
+    "sources": [
+      {
+        "title": "山东宣传网 · 朱光将军纪念活动（郑家镇）",
+        "url": "https://www.sdxc.gov.cn/jzyl/agzyjyjd/202010/t20201028_11627682.htm"
+      }
+    ],
+    "note": "本档案为炮兵将领朱光；与1922年出生、山东长清籍的同名空军将领分别辨识。"
+  },
+  "p0468": {
+    "facts": {
+      "hometown": "福建上杭",
+      "province": "福建",
+      "hometownType": "籍贯"
+    },
+    "verifiedFields": [
+      "hometown",
+      "province"
+    ],
+    "sources": [
+      {
+        "title": "上杭县人民政府 · 白砂镇乡镇介绍",
+        "url": "https://www.shanghang.gov.cn/xz/bsz/xzjs/"
+      }
+    ],
+    "note": "本档案为开国少将、民航总局原副局长李平，与1925年出生、山东蓬莱籍的同名中将分别辨识。"
+  },
+  "p1092": {
+    "facts": {
+      "grantYear": 1961
+    },
+    "verifiedFields": [
+      "grantYear"
+    ],
+    "sources": [
+      {
+        "title": "人民网 · 史进前（原名蒲恒温）",
+        "url": "https://politics.people.com.cn/n/2015/0203/c1001-26500875-24.html"
+      }
+    ],
+    "note": "少将晋衔年依据人民网人物资料校正为1961年。"
+  },
+  "lizhen": {
+    "facts": {
+      "birth": 1908
+    },
+    "verifiedFields": [
+      "birth"
+    ],
+    "sources": [
+      {
+        "title": "共产党员网 · 李贞生平（CCTV国家记忆）",
+        "url": "https://www.12371.cn/2022/03/13/ARTI1647136155695546.shtml"
+      }
+    ]
+  },
+  "p0062": {
+    "facts": {
+      "hometown": "湖南省醴陵县南洋桥（今属株洲）",
+      "province": "湖南",
+      "hometownType": "出生地"
+    },
+    "verifiedFields": [
+      "hometown",
+      "province"
+    ],
+    "sources": [
+      {
+        "title": "中国共产党新闻网 · 杨得志人物资料",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/127857/7538144.html"
+      },
+      {
+        "title": "人民网 · 杨得志上将专题（生年另载1910年）",
+        "url": "https://dangshi.people.com.cn/GB/170835/175802/"
+      },
+      {
+        "title": "环球人物 · 杨得志（生年载1911年）",
+        "url": "https://paper.people.com.cn/hqrw/html/2014-04/26/content_1422526.htm"
+      }
+    ],
+    "additionalEvidence": {
+      "birth": [
+        {
+          "value": 1910,
+          "url": "https://dangshi.people.com.cn/GB/170835/175802/"
+        }
+      ]
+    },
+    "note": "出生地依据人物资料记载；曾在江西安源煤矿做工，不将工作地点作为籍贯。"
+  },
+  "p0116": {
+    "facts": {
+      "hometown": "湖南省湘潭县石潭区",
+      "province": "湖南",
+      "hometownType": "出生地"
+    },
+    "verifiedFields": [
+      "hometown",
+      "province"
+    ],
+    "sources": [
+      {
+        "title": "中国共产党新闻网 · 刘先胜人物资料",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7586935.html"
+      }
+    ],
+    "note": "出生地依据人物资料；江西安源为早年工作地点。"
+  },
+  "p0262": {
+    "disputedFields": {
+      "hometown": [
+        {
+          "value": "吉林省辽源市东辽县建安镇香泉村",
+          "urls": [
+            "https://www.krzzjn.com/show-2872-128440.html"
+          ]
+        },
+        {
+          "value": "辽宁西丰",
+          "urls": [
+            "https://zh.wikipedia.org/wiki/%E4%BA%8E%E6%AC%8A%E4%BC%B8"
+          ]
+        },
+        {
+          "value": "辽宁西丰",
+          "urls": [
+            "https://taihangsummit.com/47460-2/3/"
+          ]
+        }
+      ],
+      "province": [
+        {
+          "value": "吉林",
+          "urls": [
+            "https://www.krzzjn.com/show-2872-128440.html"
+          ]
+        },
+        {
+          "value": "辽宁",
+          "urls": [
+            "https://zh.wikipedia.org/wiki/%E4%BA%8E%E6%AC%8A%E4%BC%B8",
+            "https://taihangsummit.com/47460-2/3/"
+          ]
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "地域记载核查 · 于权伸",
+        "url": "https://www.krzzjn.com/show-2872-128440.html"
+      },
+      {
+        "title": "地域记载核查 · 于权伸",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%8E%E6%AC%8A%E4%BC%B8"
+      },
+      {
+        "title": "地域记载核查 · 于权伸",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "note": "地域记载存在差异，尚不足以确定同一出生地或籍贯的准确归属；本页及纪念卡暂不列地域定值。"
+  },
+  "p1138": {
+    "disputedFields": {
+      "hometown": [
+        {
+          "value": "山东省武城县城关三里庄",
+          "urls": [
+            "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%99%85%E6%B3%B0"
+          ]
+        },
+        {
+          "value": "河北定兴",
+          "urls": [
+            "https://taihangsummit.com/47460-2/4/"
+          ]
+        }
+      ],
+      "province": [
+        {
+          "value": "山东",
+          "urls": [
+            "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%99%85%E6%B3%B0"
+          ]
+        },
+        {
+          "value": "河北",
+          "urls": [
+            "https://taihangsummit.com/47460-2/4/"
+          ]
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "地域记载核查 · 李际泰",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%99%85%E6%B3%B0"
+      },
+      {
+        "title": "地域记载核查 · 李际泰",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      }
+    ],
+    "note": "地域记载存在差异，尚不足以确定同一出生地或籍贯的准确归属；本页及纪念卡暂不列地域定值。"
+  },
+  "p1272": {
+    "disputedFields": {
+      "hometown": [
+        {
+          "value": "山东临清",
+          "urls": [
+            "https://zh.wikipedia.org/wiki/%E9%B2%8D%E5%A5%87%E8%BE%B0"
+          ]
+        },
+        {
+          "value": "河北临江",
+          "urls": [
+            "https://taihangsummit.com/47460-2/4/"
+          ]
+        }
+      ],
+      "province": [
+        {
+          "value": "山东",
+          "urls": [
+            "https://zh.wikipedia.org/wiki/%E9%B2%8D%E5%A5%87%E8%BE%B0"
+          ]
+        },
+        {
+          "value": "河北",
+          "urls": [
+            "https://taihangsummit.com/47460-2/4/"
+          ]
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "地域记载核查 · 鲍奇辰",
+        "url": "https://zh.wikipedia.org/wiki/%E9%B2%8D%E5%A5%87%E8%BE%B0"
+      },
+      {
+        "title": "地域记载核查 · 鲍奇辰",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      }
+    ],
+    "note": "地域记载存在差异，尚不足以确定同一出生地或籍贯的准确归属；本页及纪念卡暂不列地域定值。"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "family": "Noto Serif SC",
+  "repository": "https://github.com/google/fonts",
+  "commit": "2e61f4355afd22b801791b0df176065082423b87",
+  "downloadUrl": "https://raw.githubusercontent.com/google/fonts/2e61f4355afd22b801791b0df176065082423b87/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf",
+  "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
+  "license": "SIL Open Font License 1.1",
+  "requiredFor": "Changing the Chinese font subset only; normal development and static QA use the committed WOFF2."
+}

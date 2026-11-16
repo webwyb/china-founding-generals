@@ -3,6 +3,13 @@ dist/
 .npm-cache/
 .taro/
 .swc/
+.cache/
+.venv/
+__pycache__/
+*.py[cod]
+test-results/
+playwright-report/
+.env
 *.log
 .DS_Store
 project.private.config.json

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="600" viewBox="0 0 480 600">
+  <rect width="480" height="600" fill="#e4e3d8"/>
+  <rect x="22" y="22" width="436" height="556" fill="none" stroke="#c6cabb"/>
+  <path d="M106 428c3-80 52-128 134-128s131 48 134 128" fill="#c3c9ba"/>
+  <circle cx="240" cy="207" r="72" fill="#c3c9ba"/>
+  <path d="M170 199h140M157 183l24-25 59-15 59 15 24 25" fill="none" stroke="#b2bba8" stroke-width="8"/>
+  <path d="M215 349l25 29 25-29M240 378v48" fill="none" stroke="#b2bba8" stroke-width="4"/>
+  <path d="M204 467h72" stroke="#963f34" stroke-width="2"/>
+  <text x="240" y="510" text-anchor="middle" font-family="serif" font-size="23" letter-spacing="4" fill="#65745e">历史肖像待补</text>
+  <text x="240" y="548" text-anchor="middle" font-family="sans-serif" font-size="13" letter-spacing="5" fill="#7a8472">山河有名</text>
+</svg>

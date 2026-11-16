@@ -8,9 +8,9 @@ export default defineAppConfig({
   window: {
     navigationStyle: 'custom',
     navigationBarTitleText: '山河有名',
-    navigationBarBackgroundColor: '#f6f2e9',
+    navigationBarBackgroundColor: '#f4f7f3',
     navigationBarTextStyle: 'black',
-    backgroundColor: '#f6f2e9',
+    backgroundColor: '#f4f7f3',
     backgroundTextStyle: 'dark'
   }
 })

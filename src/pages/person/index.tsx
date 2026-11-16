@@ -1,41 +1,88 @@
 import { useEffect, useState } from 'react'
-import { Image, Text, View } from '@tarojs/components'
+import { Text, View } from '@tarojs/components'
+import Taro, { useDidShow, useRouter, useShareAppMessage } from '@tarojs/taro'
 import Button from '../../components/Button'
-import Taro, { useRouter, useShareAppMessage } from '@tarojs/taro'
+import Icon from '../../components/Icon'
+import Landscape from '../../components/Landscape'
+import Portrait from '../../components/Portrait'
+import Dialog from '../../components/Dialog'
 import Shell, { openPage, openSource, returnTo } from '../../components/Shell'
 import PersonTile from '../../components/PersonTile'
-import { people } from '../../data/people'
+import { people, lifeYears } from '../../data/people'
+import { getProvinceLandscape } from '../../data/landscapes'
 import { getRemembered, toggleRemembered } from '../../services/collection'
+
+const missingLabels: Record<string, string> = { birth: '出生年份', death: '逝世年份', grantYear: '授衔年份', hometown: '籍贯或出生地', province: '地域归属', biography: '详细生平', portrait: '历史肖像' }
 
 export default function PersonPage() {
   const { params } = useRouter()
   const person = people.find(item => item.id === params.id)
   const [remembered, setRemembered] = useState(() => person ? getRemembered().includes(person.id) : false)
+  const [showPortrait, setShowPortrait] = useState(false)
+  const [portraitSize, setPortraitSize] = useState<{ width: number; height: number } | null>(null)
+  useEffect(() => { setShowPortrait(false); setPortraitSize(null) }, [person?.id])
   useEffect(() => { setRemembered(person ? getRemembered().includes(person.id) : false) }, [person?.id])
-  useShareAppMessage(() => ({ title: person ? `我想让你记住这个名字：${person.name}｜山河有名` : '山河有名', path: person ? `/pages/person/index?id=${person.id}` : '/pages/index/index' }))
-  if (!person) return <Shell><View className='container empty-state'><Text className='empty-title serif'>这份人物档案暂未收录</Text><Button className='primary-button' onClick={() => openPage('explore')}>返回将帅名录</Button></View></Shell>
+  useDidShow(() => { if (process.env.TARO_ENV === 'h5' && person) document.title = `${person.name} · ${person.rank}｜山河有名` })
+  useShareAppMessage(() => ({ title: person ? `记住这个名字：${person.name}｜山河有名` : '山河有名', path: person ? `/pages/person/index?id=${person.id}` : '/pages/index/index' }))
+  if (!person) return <Shell><View className='container empty-state'><Text className='empty-title serif'>暂未找到这份人物档案</Text><Text className='empty-copy'>可以返回名录，按姓名或家乡重新查找。</Text><Button className='primary-button' onClick={() => openPage('explore')}>返回将帅名录<Icon name='back' /></Button></View></Shell>
+  const landscape = getProvinceLandscape(person.province)
   const related = people.filter(item => item.id !== person.id).sort((a, b) => Number(b.province === person.province) - Number(a.province === person.province)).slice(0, 3)
+  const makeCard = () => openPage('card', `id=${person.id}`)
   function remember() {
     try {
       const next = toggleRemembered(person!.id)
       setRemembered(next)
-      Taro.showToast({ title: next ? '这个名字，记住了' : '已移出本机铭记记录', icon: 'none' })
-    } catch { Taro.showToast({ title: '本机存储暂不可用，请稍后再试', icon: 'none' }) }
+      Taro.showToast({ title: next ? '已记住这个名字' : '已移出我的铭记', icon: 'none' })
+    } catch { Taro.showToast({ title: '未能保存，请稍后重试', icon: 'none' }) }
   }
-  return <Shell active='explore'>
+  return <Shell active='explore' fixedActions>
     <View className='container person-main'>
-      <Button className='back-link text-link' onClick={() => returnTo('explore')}>← 返回将帅名录</Button>
-      <View className='person-feature'>
-        <View className='person-photo-frame'><Image className='person-main-photo' src={person.portrait} mode='aspectFill' /><View className='photo-frame-caption'><Text>历史影像</Text><Text>山河有名 · 人物档案</Text></View></View>
-        <View className='person-feature-copy'><Text className='eyebrow'>A NAME TO REMEMBER</Text><View className='person-name-row'><Text className='person-name serif'>{person.name}</Text><Text className='rank-stamp'>{person.rank}</Text></View><Text className='person-years'>{person.birth} — {person.death}</Text><View className='person-hometown'><Text className='detail-label'>家乡</Text><Text>{person.hometown}</Text></View><Text className='person-tagline serif'>{person.tagline}</Text><View className='person-actions'><Button className='primary-button' onClick={() => openPage('card', `id=${person.id}`)}>制作人物纪念卡 <Text>↗</Text></Button><Button className={`remember-button ${remembered ? 'remembered' : ''}`} onClick={remember}>{remembered ? '✓ 已记住这个名字' : '＋ 记住这个名字'}</Button></View><Text className='scope-note'>铭记记录仅保存在当前设备。</Text></View>
+      <View className='profile-navigation'><Button className='back-link text-link' onClick={() => returnTo('explore')}><Icon name='back' />将帅名录</Button><Text>{person.rank}人物档案</Text></View>
+      {landscape && <View className='profile-landscape'>
+        <Landscape landscape={landscape} eager />
+        <View className='landscape-heading'><Text className='landscape-overline'>家乡山河</Text><Text className='landscape-province serif'>{person.province}</Text><Text className='landscape-place'>{landscape.landmark}</Text></View>
+        <Text className='landscape-signature'>山河意象 · {landscape.landmark}</Text>
+      </View>}
+      <View className={`person-feature ${landscape ? 'with-landscape' : ''}`}>
+        <View className='person-photo-frame'>
+          <Button className='portrait-open' disabled={person.portraitMissing} onClick={() => setShowPortrait(true)} aria-label={`查看${person.name}的完整历史肖像`} aria-expanded={showPortrait} aria-controls='portrait-dialog'>
+            <Portrait className='person-main-photo' src={person.portrait} name={person.name} eager onLoad={setPortraitSize} />
+          </Button>
+          <View className='photo-frame-caption'><Text>{person.portraitMissing ? '历史肖像待补' : '历史肖像'}</Text>{!person.portraitMissing && <Button className='portrait-view-link' onClick={() => setShowPortrait(true)}>查看原图<Icon name='search' /></Button>}</View>
+        </View>
+        <View className='person-feature-copy'>
+          <Text className='profile-introduction'>记住一个名字，走近一段历史</Text>
+          <View className='person-name-row'><Text className='person-name serif'>{person.name}</Text><Text className='rank-stamp'>{person.rank}</Text></View>
+          <Text className='person-years'>{lifeYears(person)}</Text>
+          <View className='person-hometown'><Text className='detail-label'>{person.hometownType || '家乡'}</Text><Text>{person.hometown}</Text>{!person.pendingFields?.includes('province') && <Button className='hometown-jump text-link' onClick={() => openPage('explore', `province=${encodeURIComponent(person.province)}`)} aria-label={`浏览${person.province}籍将帅`}><Icon name='external' /></Button>}</View>
+          <Text className='person-tagline serif'>{person.tagline}</Text>
+          <View className='person-actions'><Button className='primary-button' onClick={makeCard}>制作人物纪念卡<Icon name='external' /></Button><Button className={`remember-button ${remembered ? 'remembered' : ''}`} onClick={remember} aria-pressed={remembered}><Icon name={remembered ? 'check' : 'bookmark'} />{remembered ? '已记住这个名字' : '记住这个名字'}</Button></View>
+          <Text className='scope-note'>铭记记录保存在当前设备，可在名录中再次找到。</Text>
+          {!!person.pendingFields?.length && <Text className='missing-data-note'>资料待核实：{person.pendingFields.map(key => missingLabels[key] || key).join('、')}。记载差异与出处见下方说明。</Text>}
+          {!!person.missingFields?.filter(key => !person.pendingFields?.includes(key)).length && <Text className='missing-data-note'>资料待补：{person.missingFields.filter(key => !person.pendingFields?.includes(key)).map(key => missingLabels[key] || key).join('、')}。</Text>}
+        </View>
       </View>
       <View className='person-reading-layout'>
-        <View className='story-column'><Text className='eyebrow'>ONE LIFE, ONE STORY</Text><Text className='story-heading serif'>一生中的一页</Text><Text className='person-story'>{person.story}</Text><View className='story-end-mark'>山河有名 / 铭记来路</View>
-          <View className='source-section'><Text className='source-heading'>史料与影像出处</Text>{person.sources.map((source, index) => <Button className='source-row' key={source.url} onClick={() => openSource(source.url)}><Text>{String(index + 1).padStart(2, '0')} · {source.title}</Text><Text>↗</Text></Button>)}<Button className='source-row' onClick={() => openSource(person.imageSource)}><Text>肖像 · 历史照片来源</Text><Text>↗</Text></Button><Text className='source-note'>人物介绍为据来源整理的简述。点击以上条目可查阅原文与历史影像出处。</Text></View>
+        <View className='story-column'>
+          <Text className='story-heading serif'>{person.dataStatus === 'roster' ? '人物档案' : person.id.startsWith('p') ? '生平记要' : '一生中的一页'}</Text>
+          <Text className='person-story serif'>{person.story}</Text>
+          {person.fieldNote && <View className='historical-note'><Text className='historical-note-title'>资料说明</Text><Text>{person.fieldNote}</Text></View>}
+          <details className='source-section'><summary className='source-heading'>查阅史料与影像出处<span className='source-count'>{person.sources.length + (person.imageSource ? 1 : 0)} 项<Icon name='down' /></span></summary>
+            {person.sources.map(source => <Button className='source-row' key={source.url} onClick={() => openSource(source.url)}><Text>{source.title}</Text><Icon name='external' /></Button>)}
+            {person.imageSource && <Button className='source-row' onClick={() => openSource(person.imageSource)}><Text>历史肖像来源</Text><Icon name='external' /></Button>}
+            <Text className='source-note'>生平简述据以上资料整理，点击可查阅原文。页面景观为家乡地域文化意象。</Text>
+          </details>
         </View>
         <View className='timeline-column'><Text className='timeline-title serif'>人生足迹</Text><View className='timeline'>{person.timeline.map((item, index) => <View className='timeline-item' key={`${item.year}-${index}`}><View className='timeline-dot' /><Text className='timeline-year'>{item.year}</Text><Text className='timeline-text'>{item.text}</Text></View>)}</View></View>
       </View>
-      <View className='related-section'><View className='section-heading'><View><Text className='eyebrow'>THE NEXT NAME</Text><Text className='section-title serif'>再走近一个名字</Text></View></View><View className='featured-grid'>{related.map((item, index) => <PersonTile key={item.id} person={item} index={index} />)}</View></View>
+      <View className='related-section'><View className='section-heading'><View><Text className='eyebrow'>继续认识</Text><Text className='section-title serif'>山河之间，还有这些名字</Text></View></View><View className='featured-grid'>{related.map((item, index) => <PersonTile key={item.id} person={item} index={index} />)}</View></View>
     </View>
+    <View className='profile-action-bar'><Button className={`remember-button ${remembered ? 'remembered' : ''}`} onClick={remember} aria-pressed={remembered}><Icon name={remembered ? 'check' : 'bookmark'} />{remembered ? '已铭记' : '铭记'}</Button><Button className='primary-button' onClick={makeCard}>制作纪念卡<Icon name='external' /></Button></View>
+    {showPortrait && <Dialog className='portrait-dialog' titleId='portrait-dialog-title' onClose={() => setShowPortrait(false)}>
+      <View className='portrait-dialog-heading'><Text id='portrait-dialog-title'>{person.name} · 历史肖像</Text><Button className='export-close' onClick={() => setShowPortrait(false)} aria-label='关闭历史肖像'><Icon name='close' /></Button></View>
+      <View id='portrait-dialog' className='portrait-original-stage'><Portrait className='portrait-original' src={person.portrait} name={person.name} eager /></View>
+      <View className='portrait-original-caption'><Text>完整原图{portraitSize ? ` · ${portraitSize.width} × ${portraitSize.height} 像素` : ''}</Text><Text>保留历史影像原貌，清晰度取决于原始资料。</Text></View>
+      <a className='portrait-original-link text-link' href={person.portrait} target='_blank' rel='noreferrer'>打开原图查看细节<Icon name='external' /></a>
+    </Dialog>}
   </Shell>
 }

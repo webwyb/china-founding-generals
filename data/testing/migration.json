@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-17",
+  "status": "passed",
+  "method": "Copied Git source candidates to an isolated directory, installed fresh Node and Python dependencies, then ran the full check. No original node_modules, .venv, .cache or dist was copied. This is a local restore test, not a second physical machine or browser test.",
+  "environment": {
+    "platform": "darwin",
+    "architecture": "arm64",
+    "node": "22.9.0",
+    "npm": "10.8.3",
+    "python": "3.13.3"
+  },
+  "commands": [
+    { "command": "npm ci", "exitCode": 0 },
+    { "command": "npm run setup:python", "exitCode": 0 },
+    { "command": "npm run check", "exitCode": 0 }
+  ],
+  "checks": [
+    "typecheck",
+    "data:verify (9 byte-identical generated outputs)",
+    "validate:data",
+    "validate:functions (186 filter combinations and all 1614 people)",
+    "validate:design (29 landscape source and release assets)",
+    "test:catalog (9 parser regression cases)",
+    "validate:portraits (1172 portraits, 2 styles and 6 extreme ratios)",
+    "validate:cards (3228 compositions)",
+    "build (H5)"
+  ],
+  "executionNote": "The H5 compiler required normal host permissions because the restricted macOS environment failed in system-configuration. The successful full check exited with code 0.",
+  "remoteCi": "Configured separately in .github/workflows/ci.yml; this local report does not assert that remote CI or other operating systems have passed.",
+  "limitations": [
+    "PC and mobile browser/device acceptance remains pending in QA.md.",
+    "204 disputed historical fields remain withheld pending review.",
+    "npm dependency audit baseline remains documented in docs/HANDOFF.md."
+  ]
+}

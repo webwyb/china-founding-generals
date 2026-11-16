@@ -1,0 +1,263 @@
+{
+  "henan": {
+    "file": "henan.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 460518,
+    "originalBytes": 3463431,
+    "sha256": "84159c0a32ec01db2b4e4ae532b8d190023e295a31083949359880a31854a78c",
+    "originalSha256": "b673bb83d2f26c644ed4cd607bddbde022165d3f45bb6d33f50437ab607b6357"
+  },
+  "hubei": {
+    "file": "hubei.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 376332,
+    "originalBytes": 3173368,
+    "sha256": "e5cfb4cdc3d4acf459bb995b532c199e0719b5ec4ba0fadac526e1076e84b68c",
+    "originalSha256": "e54a94101e77996c96cad1e598645a2124f433ddf2cf846b4bde77d73342e615"
+  },
+  "hunan": {
+    "file": "hunan.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 390346,
+    "originalBytes": 3157657,
+    "sha256": "029f77f982d68b81e80ef73aad8567a228db7370a617320b3d2cc2f844ef35f9",
+    "originalSha256": "73683f153b3f7316c83f0a36161970e7322829906cf129f1347d4e02c1a29f99"
+  },
+  "jiangxi": {
+    "file": "jiangxi.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 417676,
+    "originalBytes": 3331530,
+    "sha256": "dee386200e06fb905e2d3037ced05e6ab11ef9b4fc93284bd56c3ee6f090d2e1",
+    "originalSha256": "9d2a59999673cd21ca2c4dd81c0d3af6ec792a69cc00da44024cbf3ffd4691ed"
+  },
+  "anhui": {
+    "file": "anhui.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 324364,
+    "originalBytes": 2944980,
+    "sha256": "60bcb8ef85c3f567cb1a4690bed52a3d5fbe2e95433eef3bc5edcf2bff143f03",
+    "originalSha256": "4b9714609cb1a41b27d574612750e407f69e924084ebb078cf443d521459a5b8"
+  },
+  "fujian": {
+    "file": "fujian.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 478202,
+    "originalBytes": 3481080,
+    "sha256": "71c65b045193e327c70f16edee1c37e5b55da496dc17fed8960b8ab5027c744a",
+    "originalSha256": "8da3e16906e20ab6a4a956049c9f3016027fafd0beb853d324fb65126b890bbb"
+  },
+  "guangdong": {
+    "file": "guangdong.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 438488,
+    "originalBytes": 3248808,
+    "sha256": "6d84d8ddde3d463cecdb8af891b4a35ef2a7a0c3e4e0d8029065b40862eed7bf",
+    "originalSha256": "51b40801427c464a6e958ba2e07ac52811f2112099c11f0b923e1f750ba655e0"
+  },
+  "hebei": {
+    "file": "hebei.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 340432,
+    "originalBytes": 3035307,
+    "sha256": "882bcbe9372d6d6edd4507d0fe9eb8a030ecbcb9892a4d9f9805925c18143449",
+    "originalSha256": "25d0207af6411df0b8d2ef1b9256b5c7085f691dfc954b0f297ab4e2eda01405"
+  },
+  "jiangsu": {
+    "file": "jiangsu.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 500622,
+    "originalBytes": 3585660,
+    "sha256": "c955bc0378c0d79dc864b957e8906d166cb3573e9a69835341d74f87f7264dd2",
+    "originalSha256": "0144eb4ab307920203b2979e1553b5a46a2e6e9f1a791b8c9d2376921b588e86"
+  },
+  "liaoning": {
+    "file": "liaoning.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 432612,
+    "originalBytes": 3324302,
+    "sha256": "bc508299961edc37c6c10c64957c00cf0bac71feb516ed697054f740f48a25ce",
+    "originalSha256": "4acbeaac246d83314d0cb984fc01d0d11215971997e3684dcb243a85268bffe1"
+  },
+  "shaanxi": {
+    "file": "shaanxi.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 398346,
+    "originalBytes": 3207413,
+    "sha256": "1ac77e249e20e49a1d2dbae6a5b6ca78e97cce036889004d8951804e7e9d5973",
+    "originalSha256": "542cbebe669fa823a565398b818659546b8066ee98235fadd26b6e303fc2d1a0"
+  },
+  "shandong": {
+    "file": "shandong.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 385110,
+    "originalBytes": 3166287,
+    "sha256": "2e0590f85ce8059943944804899d247fa36ed5f5ce2481d581f9e6b47bd8f589",
+    "originalSha256": "ba759f8aca9d28d2fefdb64c596e3303826b4fde5c2065786d2995875ba82d4c"
+  },
+  "shanxi": {
+    "file": "shanxi.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 438974,
+    "originalBytes": 3310403,
+    "sha256": "2f0e9fb9a19b7107e3e23d33414ec5e8bb94ac85006f1df528178a41dc0b3a30",
+    "originalSha256": "be253d1ad50fa0653a1b5f0b9e20b2caedaf6311046037403b8d087ed1572119"
+  },
+  "sichuan": {
+    "file": "sichuan.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 284512,
+    "originalBytes": 2884766,
+    "sha256": "11463ea65b3262ea8f9f81dc3b87284844011e16775b940345ba391a9e64ae10",
+    "originalSha256": "be8af13c2598e47b214298eea398d647b53bd4df8132cda6337a6ca83049ca06"
+  },
+  "beijing": {
+    "file": "beijing.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 370418,
+    "originalBytes": 3107623,
+    "sha256": "284092fcd951637c9c4e55960d68872dc31a457c6ad4af9d34f2aa6ffd8266c8",
+    "originalSha256": "2f06dc2d148d3875bd6ccb7b666196091cef754c4bda907c1807efaa8b6c1cb7"
+  },
+  "gansu": {
+    "file": "gansu.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 452350,
+    "originalBytes": 3321698,
+    "sha256": "cfdb4b322dedc87d50b47a4a00721bf7fb2e096155db5b154acae013328a4146",
+    "originalSha256": "fccc9c0c9e0559f037dd37c881bd7652ea71eaade3585fb48eb4e06f58c42df8"
+  },
+  "guangxi": {
+    "file": "guangxi.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 367656,
+    "originalBytes": 3101616,
+    "sha256": "500b08fa7491ea5212fd11e27099f6ec55a361f8ef86f4f2eeccc8c54c07d8dd",
+    "originalSha256": "fb45e00f1fdaa4162b1ff1fe9d4420a7d0dfdc405d45b0230047eead436a06ad"
+  },
+  "guizhou": {
+    "file": "guizhou.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 433254,
+    "originalBytes": 3306406,
+    "sha256": "114b25d97c91b7dbc98c14618e1cdbccb6206489f7749418a92b59494c14ba85",
+    "originalSha256": "0bc7b70cfd422ce67f4f88bc7b4ee548905172c2b9b00ad1e9403238bcf3bacd"
+  },
+  "heilongjiang": {
+    "file": "heilongjiang.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 466464,
+    "originalBytes": 3361646,
+    "sha256": "2984a656eba5dc511317074daf129a46b8ccac1d3451fae7afb6d90b47963640",
+    "originalSha256": "7bb21da6a096d4e00a2a4376b6cab92863da6b6795e24a04e726cd500d06df8e"
+  },
+  "jilin": {
+    "file": "jilin.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 349914,
+    "originalBytes": 3100047,
+    "sha256": "6d527b0e0cbecba391cef24423cc1b931b0e1712e3196186e46f3c83e97424ba",
+    "originalSha256": "de2829a48f51fcc59d11afd89ac6d7c240be745ec8ef341f08efe76efd39de20"
+  },
+  "neimenggu": {
+    "file": "neimenggu.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 241434,
+    "originalBytes": 2730237,
+    "sha256": "29c6712f9e5cf760edd67a049f90f0b5945f1c73772e059201a97a40117ab576",
+    "originalSha256": "bf2d2cc55c2bec854930cc8fe303c0b66a5ff69e440dcc6b11afea5ca100bd0d"
+  },
+  "ningxia": {
+    "file": "ningxia.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 350166,
+    "originalBytes": 3040509,
+    "sha256": "e8a674923721b4a912205038519678101388174dacd38df3d08ab606ba4cf15b",
+    "originalSha256": "d0e2c666f76c331641a12c884f03f7656aae19b3b3b70ce5f1c34b51dfab5e3e"
+  },
+  "tianjin": {
+    "file": "tianjin.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 442020,
+    "originalBytes": 3382676,
+    "sha256": "cdfeb68d22c08c65dd6182dfa075e9f691f0781da81fcbc2e4b5b5fa1320a37e",
+    "originalSha256": "1d87b7517e720f68068632f8ec4fbda31b7aeab24111721a904a17b1f964d8b4"
+  },
+  "xinjiang": {
+    "file": "xinjiang.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 423658,
+    "originalBytes": 3219872,
+    "sha256": "b6c990fc5386920e5ec2b421a00cb94c3fafdb1f4e1f19c75c834cce0e99c83d",
+    "originalSha256": "e663c96786b1754365a1712a26929477e5984cb10ec5210cc07ee6da1cd3f275"
+  },
+  "xizang": {
+    "file": "xizang.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 402084,
+    "originalBytes": 3197683,
+    "sha256": "fd932d803ed13783cee4438fc57b5bdb53268d010c016503231a451598ff7426",
+    "originalSha256": "d39e7cf7f2cfddaebb8a099b03c6a342bea942c8c73893c3f475f498764e77b6"
+  },
+  "yunnan": {
+    "file": "yunnan.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 427996,
+    "originalBytes": 3274426,
+    "sha256": "015e1ecb90e91100df105bb4fcb861200bd7b22f8f789ccf9d94e92c10642d14",
+    "originalSha256": "e0077410c89313f6f34bc7ca17d00cce04f0c8b9b7321da65066c9030b399b62"
+  },
+  "zhejiang": {
+    "file": "zhejiang.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 356864,
+    "originalBytes": 3099383,
+    "sha256": "66d73531f4482039373059b5800eeae57740f460222038057a7c0d640849808e",
+    "originalSha256": "07b075c4935729fd769553efd17331355127117a243a520ad90f256eb3e914b9"
+  },
+  "hainan": {
+    "file": "hainan.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 370374,
+    "originalBytes": 3134393,
+    "sha256": "e9842e6696823bf0cedd4d4eec22b0a1ff24b4df586388841d4cfa0a55e8c913",
+    "originalSha256": "1e686010b2c8ab29c9470fafe921fccf9c9586927c7db03a2a90ab970726eb36"
+  },
+  "shanghai": {
+    "file": "shanghai.webp",
+    "generator": "built-in image_gen",
+    "encoding": "WebP q88; original dimensions retained",
+    "bytes": 518436,
+    "originalBytes": 3585701,
+    "sha256": "950cc866ace80580e3e686458dcd31480b8123fa450dca9a20dc6abd22aa5a41",
+    "originalSha256": "32d99ff2eec8603acdb31ac18dc36bb7ad6daf7ad56407214f82bb1e08f5de9c"
+  }
+}

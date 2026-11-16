@@ -1,0 +1,7080 @@
+[
+  {
+    "id": "p0033",
+    "name": "郭天民",
+    "changes": {
+      "birth": {
+        "before": 1905,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 郭天民",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/127857/7538747.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 郭天民",
+        "url": "https://zh.wikipedia.org/wiki/%E9%83%AD%E5%A4%A9%E6%B0%91"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 郭天民",
+        "url": "https://taihangsummit.com/47460-2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8299269"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0045",
+    "name": "吕正操",
+    "changes": {
+      "birth": {
+        "before": 1904,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 吕正操",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/127857/7537803.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 吕正操",
+        "url": "https://zh.wikipedia.org/wiki/%E5%90%95%E6%AD%A3%E6%93%8D"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 吕正操",
+        "url": "https://taihangsummit.com/47460-2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q576272"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0062",
+    "name": "杨得志",
+    "changes": {
+      "birth": {
+        "before": 1911,
+        "after": null,
+        "status": "withheld"
+      },
+      "province": {
+        "before": "江西",
+        "after": "湖南",
+        "status": "corrected-or-refined"
+      },
+      "hometown": {
+        "before": "江西萍乡安源煤矿当工",
+        "after": "湖南省醴陵县南洋桥（今属株洲）",
+        "status": "corrected-or-refined"
+      },
+      "hometownType": {
+        "before": "籍贯",
+        "after": "出生地",
+        "status": "corrected-or-refined"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 杨得志",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/127857/7538144.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 杨得志",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%A8%E5%BE%97%E5%BF%97"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 杨得志",
+        "url": "https://taihangsummit.com/47460-2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q1926859"
+      },
+      {
+        "title": "人民网 · 杨得志上将专题（生年另载1910年）",
+        "url": "https://dangshi.people.com.cn/GB/170835/175802/"
+      },
+      {
+        "title": "环球人物 · 杨得志（生年载1911年）",
+        "url": "https://paper.people.com.cn/hqrw/html/2014-04/26/content_1422526.htm"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0072",
+    "name": "周桓",
+    "changes": {
+      "birth": {
+        "before": 1909,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 周桓",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/127857/7538696.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 周桓",
+        "url": "https://zh.wikipedia.org/wiki/%E5%91%A8%E6%A1%93"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 周桓",
+        "url": "https://taihangsummit.com/47460-2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8299284"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0078",
+    "name": "丁秋生",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 丁秋生",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7586661.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 丁秋生",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%81%E7%A7%8B%E7%94%9F"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 丁秋生",
+        "url": "https://taihangsummit.com/47460-2/2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8317863"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0088",
+    "name": "王辉球",
+    "changes": {
+      "death": {
+        "before": 2003,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 王辉球",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7586733.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王辉球",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%BE%89%E7%90%83"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王辉球",
+        "url": "https://taihangsummit.com/47460-2/2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8318663"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0108",
+    "name": "向仲华",
+    "changes": {
+      "birth": {
+        "before": 1911,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 向仲华",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7586833.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 向仲华",
+        "url": "https://zh.wikipedia.org/wiki/%E5%90%91%E4%BB%B2%E5%8D%8E"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 向仲华",
+        "url": "https://taihangsummit.com/47460-2/2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8318115"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0116",
+    "name": "刘先胜",
+    "changes": {
+      "province": {
+        "before": "江西",
+        "after": "湖南",
+        "status": "corrected-or-refined"
+      },
+      "hometown": {
+        "before": "江西省安源路矿当工",
+        "after": "湖南省湘潭县石潭区",
+        "status": "corrected-or-refined"
+      },
+      "hometownType": {
+        "before": "籍贯",
+        "after": "出生地",
+        "status": "corrected-or-refined"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 刘先胜",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7586935.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 刘先胜",
+        "url": "https://zh.wikipedia.org/wiki/%E5%88%98%E5%85%88%E8%83%9C"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 刘先胜",
+        "url": "https://taihangsummit.com/47460-2/2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8317921"
+      }
+    ],
+    "pendingFields": []
+  },
+  {
+    "id": "p0147",
+    "name": "吴富善",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 吴富善",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7587198.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 吴富善",
+        "url": "https://zh.wikipedia.org/wiki/%E5%90%B4%E5%AF%8C%E5%96%84"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 吴富善",
+        "url": "https://taihangsummit.com/47460-2/2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8318176"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0165",
+    "name": "张南生",
+    "changes": {
+      "death": {
+        "before": 1989,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 张南生",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7587527.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张南生",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%8D%97%E7%94%9F"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张南生",
+        "url": "https://taihangsummit.com/47460-2/2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8318416"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0181",
+    "name": "周仁杰",
+    "changes": {
+      "death": {
+        "before": 1977,
+        "after": 2001,
+        "status": "corrected-or-refined"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 周仁杰",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7587642.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 周仁杰",
+        "url": "https://zh.wikipedia.org/wiki/%E5%91%A8%E4%BB%81%E6%9D%B0"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 周仁杰",
+        "url": "https://taihangsummit.com/47460-2/2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8319004"
+      }
+    ],
+    "pendingFields": []
+  },
+  {
+    "id": "p0203",
+    "name": "聂凤智",
+    "changes": {
+      "birth": {
+        "before": 1913,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 聂凤智",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7587729.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 聂凤智",
+        "url": "https://zh.wikipedia.org/wiki/%E8%81%82%E5%87%A4%E6%99%BA"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 聂凤智",
+        "url": "https://taihangsummit.com/47460-2/2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q4315353"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0229",
+    "name": "韩练成",
+    "changes": {
+      "birth": {
+        "before": 1909,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 韩练成",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7587809.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 韩练成",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9F%A9%E7%BB%83%E6%88%90"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 韩练成",
+        "url": "https://taihangsummit.com/47460-2/2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8296643"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0251",
+    "name": "谭冠三",
+    "changes": {
+      "birth": {
+        "before": 1901,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 谭冠三",
+        "url": "https://cpc.people.com.cn/GB/64162/126778/130393/7587887.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 谭冠三",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B0%AD%E5%86%A0%E4%B8%89"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 谭冠三",
+        "url": "https://taihangsummit.com/47460-2/2/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q2692279"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0262",
+    "name": "于权伸",
+    "changes": {
+      "province": {
+        "before": "吉林",
+        "after": "地域待核实",
+        "status": "withheld"
+      },
+      "hometown": {
+        "before": "吉林省辽源市东辽县建安镇香泉村",
+        "after": "籍贯待核实",
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 于权伸",
+        "url": "https://www.krzzjn.com/show-2872-128440.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 于权伸",
+        "url": "https://www.krzzjn.com/show-3156-160543.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 于权伸",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%8E%E6%AC%8A%E4%BC%B8"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 于权伸",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8321282"
+      }
+    ],
+    "pendingFields": [
+      "hometown",
+      "province"
+    ]
+  },
+  {
+    "id": "p0264",
+    "name": "马龙",
+    "changes": {
+      "birth": {
+        "before": 1911,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 马龙",
+        "url": "https://www.krzzjn.com/show-3156-160799.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 马龙",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A9%AC%E9%BE%99_%28%E8%A7%A3%E6%94%BE%E5%86%9B%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 马龙",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0276",
+    "name": "王谦",
+    "changes": {
+      "hometown": {
+        "before": "河北深泽",
+        "after": "河北永年",
+        "status": "corrected-or-refined"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 王谦",
+        "url": "https://www.krzzjn.com/show-3156-160673.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王谦",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%AC%99_%281900%E5%B9%B4%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王谦",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": []
+  },
+  {
+    "id": "p0282",
+    "name": "王凤梧",
+    "changes": {
+      "grantYear": {
+        "before": 1955,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 王凤梧",
+        "url": "https://www.krzzjn.com/show-3156-160688.html"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王凤梧",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "中国政府网 · 开国少将名录",
+        "url": "https://www.gov.cn/test/2009-02/02/content_1219470.htm"
+      }
+    ],
+    "pendingFields": [
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p0296",
+    "name": "王远芬",
+    "changes": {
+      "birth": {
+        "before": 1907,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 王远芬",
+        "url": "https://www.krzzjn.com/show-3156-160658.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王远芬",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%BF%9C%E8%8A%AC"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王远芬",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327755"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0301",
+    "name": "王其梅",
+    "changes": {
+      "birth": {
+        "before": 1913,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 王其梅",
+        "url": "https://www.krzzjn.com/show-3156-160676.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王其梅",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%85%B6%E6%A2%85"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王其梅",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327460"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0313",
+    "name": "王建青",
+    "changes": {
+      "hometown": {
+        "before": "山东新泰",
+        "after": "山东新泰县羊流镇官桥村",
+        "status": "corrected-or-refined"
+      },
+      "hometownType": {
+        "before": "籍贯",
+        "after": "出生地",
+        "status": "corrected-or-refined"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 王建青",
+        "url": "https://www.krzzjn.com/show-3156-160684.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王建青",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%81%A5%E9%9D%92"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王建青",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327416"
+      }
+    ],
+    "pendingFields": []
+  },
+  {
+    "id": "p0324",
+    "name": "方正",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 方正",
+        "url": "https://www.krzzjn.com/show-3156-161071.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 方正",
+        "url": "https://zh.wikipedia.org/wiki/%E6%96%B9%E6%AD%A3_%28%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 方正",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0326",
+    "name": "方之中",
+    "changes": {
+      "birth": {
+        "before": 1908,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 方之中",
+        "url": "https://www.krzzjn.com/show-2872-135309.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 方之中",
+        "url": "https://www.krzzjn.com/show-3156-161070.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 方之中",
+        "url": "https://zh.wikipedia.org/wiki/%E6%96%B9%E4%B9%8B%E4%B8%AD"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 方之中",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8320872"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0345",
+    "name": "石志本",
+    "changes": {
+      "birth": {
+        "before": 1911,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 石志本",
+        "url": "https://www.krzzjn.com/show-3156-160751.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 石志本",
+        "url": "https://zh.wikipedia.org/wiki/%E7%9F%B3%E5%BF%97%E6%9C%AC"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 石志本",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327836"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0353",
+    "name": "龙道权",
+    "changes": {
+      "death": {
+        "before": 2000,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 龙道权",
+        "url": "https://www.krzzjn.com/show-3156-160829.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 龙道权",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BE%99%E9%81%93%E6%9D%83"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 龙道权",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8331130"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0355",
+    "name": "帅荣",
+    "changes": {
+      "birth": {
+        "before": 1908,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 帅荣",
+        "url": "https://www.krzzjn.com/show-3156-160747.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 帅荣",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B8%85%E8%8D%A3"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 帅荣",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8324506"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0359",
+    "name": "叶青山",
+    "changes": {
+      "birth": {
+        "before": 1905,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 叶青山",
+        "url": "https://www.krzzjn.com/show-3156-160550.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 叶青山",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8F%B6%E9%9D%92%E5%B1%B1"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 叶青山",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8323567"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0369",
+    "name": "白天",
+    "changes": {
+      "grantYear": {
+        "before": 1955,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 白天",
+        "url": "https://www.krzzjn.com/show-3156-161159.html"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 白天",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "中国政府网 · 开国少将名录",
+        "url": "https://www.gov.cn/test/2009-02/02/content_1219470.htm"
+      }
+    ],
+    "pendingFields": [
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p0376",
+    "name": "乔信明",
+    "changes": {
+      "birth": {
+        "before": 1909,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 乔信明",
+        "url": "https://www.krzzjn.com/show-3156-160767.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 乔信明",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B9%94%E4%BF%A1%E6%98%8E"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 乔信明",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8322275"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0377",
+    "name": "朱光",
+    "changes": {
+      "hometown": {
+        "before": "山东长清",
+        "after": "山东聊城",
+        "status": "corrected-or-refined"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 朱光",
+        "url": "https://www.krzzjn.com/show-3156-160417.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 朱光",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9C%B1%E5%85%89_%281914%E5%B9%B4%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 朱光",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "山东宣传网 · 朱光将军纪念活动（郑家镇）",
+        "url": "https://www.sdxc.gov.cn/jzyl/agzyjyjd/202010/t20201028_11627682.htm"
+      }
+    ],
+    "pendingFields": []
+  },
+  {
+    "id": "p0389",
+    "name": "任昌辉",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 任昌辉",
+        "url": "https://www.krzzjn.com/show-3156-160759.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 任昌辉",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BB%BB%E6%98%8C%E8%BE%89"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 任昌辉",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8322310"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0416",
+    "name": "刘贤权",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 刘贤权",
+        "url": "https://www.krzzjn.com/show-2872-135379.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 刘贤权",
+        "url": "https://www.krzzjn.com/show-3156-160844.html"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 刘贤权",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0417",
+    "name": "刘居英",
+    "changes": {
+      "death": {
+        "before": 2015,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 刘居英",
+        "url": "https://www.krzzjn.com/show-3156-160854.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 刘居英",
+        "url": "https://zh.wikipedia.org/wiki/%E5%88%98%E5%B1%85%E8%8B%B1"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 刘居英",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8321881"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0421",
+    "name": "刘振国",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 刘振国",
+        "url": "https://www.krzzjn.com/show-3156-160834.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 刘振国",
+        "url": "https://zh.wikipedia.org/wiki/%E5%88%98%E6%8C%AF%E5%9B%BD_%28%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 刘振国",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0436",
+    "name": "江文",
+    "changes": {
+      "death": {
+        "before": 2010,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 江文",
+        "url": "https://www.krzzjn.com/show-3156-160972.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 江文",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%9F%E6%96%87_%281914%E5%B9%B4%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 江文",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0438",
+    "name": "江勇为",
+    "changes": {
+      "birth": {
+        "before": 1913,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 江勇为",
+        "url": "https://www.krzzjn.com/show-3156-160969.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 江勇为",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%9F%E5%8B%87%E4%B8%BA"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 江勇为",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327088"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0440",
+    "name": "江燮元",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 江燮元",
+        "url": "https://www.krzzjn.com/show-3156-160971.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 江燮元",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%9F%E7%87%AE%E5%85%83"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 江燮元",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327108"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0455",
+    "name": "孙端夫",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 孙端夫",
+        "url": "https://www.krzzjn.com/show-3156-160734.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 孙端夫",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AD%99%E7%AB%AF%E5%A4%AB"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 孙端夫",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8324309"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0459",
+    "name": "严政",
+    "changes": {
+      "birth": {
+        "before": 1917,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 严政",
+        "url": "https://www.krzzjn.com/show-3156-160574.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 严政",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E6%94%BF"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 严政",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8298592"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0468",
+    "name": "李平",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      },
+      "province": {
+        "before": "山东",
+        "after": "福建",
+        "status": "corrected-or-refined"
+      },
+      "hometown": {
+        "before": "山东蓬莱",
+        "after": "福建上杭",
+        "status": "corrected-or-refined"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 李平",
+        "url": "https://www.krzzjn.com/show-3156-160914.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 李平",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%B9%B3_%28%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 李平",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "上杭县人民政府 · 白砂镇乡镇介绍",
+        "url": "https://www.shanghang.gov.cn/xz/bsz/xzjs/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0497",
+    "name": "李光辉",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 李光辉",
+        "url": "https://www.krzzjn.com/show-3156-160930.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 李光辉",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%85%89%E8%BE%89_%28%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E8%A7%A3%E6%94%BE%E5%86%9B%E5%BC%80%E5%9B%BD%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 李光辉",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0503",
+    "name": "李佐玉",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 李佐玉",
+        "url": "https://www.krzzjn.com/show-3156-160887.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 李佐玉",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E4%BD%90%E7%8E%89"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 李佐玉",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8326115"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0506",
+    "name": "李良汉",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 李良汉",
+        "url": "https://www.krzzjn.com/show-3156-160917.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 李良汉",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E8%89%AF%E6%B1%89"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 李良汉",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8326632"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0509",
+    "name": "李钟奇",
+    "changes": {
+      "birth": {
+        "before": 1913,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 李钟奇",
+        "url": "https://www.krzzjn.com/show-3156-160889.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 李钟奇",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%92%9F%E5%A5%87"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 李钟奇",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8326702"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0510",
+    "name": "李俭珠",
+    "changes": {
+      "birth": {
+        "before": 1906,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 李俭珠",
+        "url": "https://www.krzzjn.com/show-3156-160923.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 李俭珠",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E4%BF%AD%E7%8F%A0"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 李俭珠",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8326135"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0539",
+    "name": "杨嘉瑞",
+    "changes": {
+      "birth": {
+        "before": 1905,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 杨嘉瑞",
+        "url": "https://www.krzzjn.com/show-3156-160567.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 杨嘉瑞",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%A8%E5%98%89%E7%91%9E"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 杨嘉瑞",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8326802"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0549",
+    "name": "肖思明",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 肖思明",
+        "url": "https://www.krzzjn.com/show-3156-160623.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 肖思明",
+        "url": "https://zh.wikipedia.org/wiki/%E8%90%A7%E6%80%9D%E6%98%8E"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 肖思明",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0560",
+    "name": "吴自立",
+    "changes": {
+      "birth": {
+        "before": 1899,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 吴自立",
+        "url": "https://www.krzzjn.com/show-3156-160629.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 吴自立",
+        "url": "https://zh.wikipedia.org/wiki/%E5%90%B4%E8%87%AA%E7%AB%8B"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 吴自立",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0575",
+    "name": "何运洪",
+    "changes": {
+      "birth": {
+        "before": 1911,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 何运洪",
+        "url": "https://www.krzzjn.com/show-3156-161025.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 何运洪",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BD%95%E8%BF%90%E6%B4%AA"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 何运洪",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8322514"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0593",
+    "name": "余非",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 余非",
+        "url": "https://www.krzzjn.com/show-3156-160541.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 余非",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BD%99%E9%9D%9E_%28%E8%A7%A3%E6%94%BE%E5%86%9B%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 余非",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0617",
+    "name": "沙克",
+    "changes": {
+      "death": {
+        "before": 1993,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 沙克",
+        "url": "https://www.krzzjn.com/show-3156-160756.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 沙克",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B2%99%E5%85%8B"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 沙克",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8321986"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0618",
+    "name": "沈启贤",
+    "changes": {
+      "birth": {
+        "before": 1911,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 沈启贤",
+        "url": "https://www.krzzjn.com/show-3156-160754.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 沈启贤",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B2%88%E5%90%AF%E8%B4%A4"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 沈启贤",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327203"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0619",
+    "name": "宋文",
+    "changes": {
+      "death": {
+        "before": 1992,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 宋文",
+        "url": "https://www.krzzjn.com/show-3156-160743.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 宋文",
+        "url": "https://www.krzzjn.com/show-2872-135412.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 宋文",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%8B%E6%96%87"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 宋文",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8324372"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0623",
+    "name": "宋维栻",
+    "changes": {
+      "birth": {
+        "before": 1917,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 宋维栻",
+        "url": "https://www.krzzjn.com/show-3156-160744.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 宋维栻",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%8B%E7%BB%B4%E8%BD%BC"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8324425"
+      },
+      {
+        "title": "太行英雄网 · 宋维轼（栻）籍贯资料",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0635",
+    "name": "张开基",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张开基",
+        "url": "https://www.krzzjn.com/show-3156-160493.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张开基",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%BC%80%E5%9F%BA"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张开基",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8324849"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0637",
+    "name": "张日清",
+    "changes": {
+      "birth": {
+        "before": 1917,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张日清",
+        "url": "https://www.krzzjn.com/show-3156-160488.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张日清",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E6%97%A5%E6%B8%85"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张日清",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8293032"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0639",
+    "name": "张文碧",
+    "changes": {
+      "birth": {
+        "before": 1910,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张文碧",
+        "url": "https://www.krzzjn.com/show-3156-160478.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张文碧",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E6%96%87%E7%A2%A7"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张文碧",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8324907"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0643",
+    "name": "张世珍",
+    "changes": {
+      "birth": {
+        "before": 1902,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张世珍",
+        "url": "https://www.krzzjn.com/show-3156-160485.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张世珍",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E4%B8%96%E7%8F%8D_%28%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张世珍",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0645",
+    "name": "张吉厚",
+    "changes": {
+      "birth": {
+        "before": 1910,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张吉厚",
+        "url": "https://www.krzzjn.com/show-3156-160496.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张吉厚",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%90%89%E5%8E%9A"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张吉厚",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8324723"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0655",
+    "name": "张秀龙",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张秀龙",
+        "url": "https://www.krzzjn.com/show-3156-160470.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张秀龙",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E7%A7%80%E9%BE%99"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张秀龙",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325074"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0660",
+    "name": "张明远",
+    "changes": {
+      "birth": {
+        "before": 1909,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张明远",
+        "url": "https://www.krzzjn.com/show-3156-160491.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张明远",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E6%98%8E%E8%BF%9C_%281911%E5%B9%B4%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张明远",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0662",
+    "name": "张宗胜",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张宗胜",
+        "url": "https://www.krzzjn.com/show-3156-160457.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张宗胜",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%AE%97%E8%83%9C"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张宗胜",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8324771"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0667",
+    "name": "张贻祥",
+    "changes": {
+      "birth": {
+        "before": 1909,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张贻祥",
+        "url": "https://www.krzzjn.com/show-3156-160467.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张贻祥",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%B4%BB%E7%A5%A5"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张贻祥",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325135"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0676",
+    "name": "张雍耿",
+    "changes": {
+      "death": {
+        "before": 1995,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张雍耿",
+        "url": "https://www.krzzjn.com/show-3156-160465.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张雍耿",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E9%9B%8D%E8%80%BF"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张雍耿",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325169"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0678",
+    "name": "张潮夫",
+    "changes": {
+      "birth": {
+        "before": 1908,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张潮夫",
+        "url": "https://www.krzzjn.com/show-3156-160506.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张潮夫",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E6%BD%AE%E5%A4%AB"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张潮夫",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325053"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0682",
+    "name": "陈奇",
+    "changes": {
+      "birth": {
+        "before": 1910,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 陈奇",
+        "url": "https://www.krzzjn.com/show-3156-161124.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 陈奇",
+        "url": "https://zh.wikipedia.org/wiki/%E9%99%88%E5%A5%87_%28%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 陈奇",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0683",
+    "name": "陈波",
+    "changes": {
+      "death": {
+        "before": 2009,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 陈波",
+        "url": "https://www.krzzjn.com/show-3156-161141.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 陈波",
+        "url": "https://zh.wikipedia.org/wiki/%E9%99%88%E6%B3%A2_%28%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 陈波",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0704",
+    "name": "陈宜贵",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 陈宜贵",
+        "url": "https://www.krzzjn.com/show-3156-161113.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 陈宜贵",
+        "url": "https://zh.wikipedia.org/wiki/%E9%99%88%E5%AE%9C%E8%B4%B5"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 陈宜贵",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8330091"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0713",
+    "name": "陈德先",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 陈德先",
+        "url": "https://www.krzzjn.com/show-3156-161138.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 陈德先",
+        "url": "https://zh.wikipedia.org/wiki/%E9%99%88%E5%BE%B7%E5%85%88"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 陈德先",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8330098"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0724",
+    "name": "范忠祥",
+    "changes": {
+      "birth": {
+        "before": 1911,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 范忠祥",
+        "url": "https://www.krzzjn.com/show-3156-161077.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 范忠祥",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8C%83%E5%BF%A0%E7%A5%A5"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 范忠祥",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8328716"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0728",
+    "name": "欧致富",
+    "changes": {
+      "birth": {
+        "before": 1913,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 欧致富",
+        "url": "https://www.krzzjn.com/show-3156-160788.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 欧致富",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AC%A7%E8%87%B4%E5%AF%8C"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 欧致富",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327017"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0729",
+    "name": "易耀彩",
+    "changes": {
+      "birth": {
+        "before": 1917,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 易耀彩",
+        "url": "https://www.krzzjn.com/show-2872-135458.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 易耀彩",
+        "url": "https://www.krzzjn.com/show-3156-160547.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 易耀彩",
+        "url": "https://zh.wikipedia.org/wiki/%E6%98%93%E8%80%80%E5%BD%A9"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 易耀彩",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8322062"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0731",
+    "name": "罗通",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 罗通",
+        "url": "https://www.krzzjn.com/show-3156-160811.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 罗通",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BD%97%E9%80%9A_%28%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 罗通",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0736",
+    "name": "罗成德",
+    "changes": {
+      "birth": {
+        "before": 1909,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 罗成德",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BD%97%E6%88%90%E5%BE%B7"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 罗成德",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8321903"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0744",
+    "name": "罗维道",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 罗维道",
+        "url": "https://www.krzzjn.com/show-3156-160810.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 罗维道",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BD%97%E7%BB%B4%E9%81%93"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 罗维道",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8328169"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0749",
+    "name": "金绍山",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 金绍山",
+        "url": "https://www.krzzjn.com/show-3156-160963.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 金绍山",
+        "url": "https://zh.wikipedia.org/wiki/%E9%87%91%E7%BB%8D%E5%B1%B1"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 金绍山",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8329709"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0755",
+    "name": "周长胜",
+    "changes": {
+      "birth": {
+        "before": 1911,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 周长胜",
+        "url": "https://www.krzzjn.com/show-3156-160427.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 周长胜",
+        "url": "https://zh.wikipedia.org/wiki/%E5%91%A8%E9%95%BF%E8%83%9C"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 周长胜",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8323998"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0758",
+    "name": "周志刚",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 周志刚",
+        "url": "https://www.krzzjn.com/show-3156-160419.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 周志刚",
+        "url": "https://zh.wikipedia.org/wiki/%E5%91%A8%E5%BF%97%E5%88%9A"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 周志刚",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8323927"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0759",
+    "name": "周纯麟",
+    "changes": {
+      "birth": {
+        "before": 1913,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 周纯麟",
+        "url": "https://www.krzzjn.com/show-3156-160426.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 周纯麟",
+        "url": "https://zh.wikipedia.org/wiki/%E5%91%A8%E7%BA%AF%E9%BA%9F"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 周纯麟",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8323966"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0781",
+    "name": "赵俊",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 赵俊",
+        "url": "https://www.krzzjn.com/show-3156-160451.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 赵俊",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B5%B5%E4%BF%8A_%28%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 赵俊",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0784",
+    "name": "赵正洪",
+    "changes": {
+      "death": {
+        "before": 1991,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 赵正洪",
+        "url": "https://www.krzzjn.com/show-3156-160446.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 赵正洪",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B5%B5%E6%AD%A3%E6%B4%AA"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 赵正洪",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8329413"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0791",
+    "name": "钟伟",
+    "changes": {
+      "birth": {
+        "before": 1911,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 钟伟",
+        "url": "https://www.krzzjn.com/show-2872-135416.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 钟伟",
+        "url": "https://www.krzzjn.com/show-3156-160433.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 钟伟",
+        "url": "https://zh.wikipedia.org/wiki/%E9%94%BA%E4%BC%9F"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 钟伟",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8322131"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0797",
+    "name": "钟发宗",
+    "changes": {
+      "death": {
+        "before": 1997,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 钟发宗",
+        "url": "https://www.krzzjn.com/show-3156-160440.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 钟发宗",
+        "url": "https://zh.wikipedia.org/wiki/%E9%92%9F%E5%8F%91%E5%AE%97"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 钟发宗",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8329749"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0806",
+    "name": "洪水",
+    "changes": {
+      "birth": {
+        "before": 1906,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 洪水",
+        "url": "https://www.krzzjn.com/show-2872-135382.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 洪水",
+        "url": "https://www.krzzjn.com/show-3156-161011.html"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 洪水",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0809",
+    "name": "姜茂生",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 姜茂生",
+        "url": "https://www.krzzjn.com/show-3156-160968.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 姜茂生",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A7%9C%E8%8C%82%E7%94%9F"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 姜茂生",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8324220"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0815",
+    "name": "姚国民",
+    "changes": {
+      "death": {
+        "before": 2005,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 姚国民",
+        "url": "https://www.krzzjn.com/show-3156-160557.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 姚国民",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A7%9A%E5%9B%BD%E6%B0%91"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 姚国民",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8324151"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0817",
+    "name": "贺健",
+    "changes": {
+      "birth": {
+        "before": 1910,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 贺健",
+        "url": "https://www.krzzjn.com/show-3156-161016.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 贺健",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B4%BA%E5%81%A5"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 贺健",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8329177"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0831",
+    "name": "袁也烈",
+    "changes": {
+      "birth": {
+        "before": 1899,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 袁也烈",
+        "url": "https://www.krzzjn.com/show-3156-160527.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 袁也烈",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A2%81%E4%B9%9F%E7%83%88"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 袁也烈",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8328885"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0834",
+    "name": "袁学凯",
+    "changes": {
+      "birth": {
+        "before": 1911,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 袁学凯",
+        "url": "https://www.krzzjn.com/show-3156-160528.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 袁学凯",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A2%81%E5%AD%A6%E5%87%AF"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 袁学凯",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8328925"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0842",
+    "name": "徐斌",
+    "changes": {
+      "death": {
+        "before": 2002,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 徐斌",
+        "url": "https://www.krzzjn.com/show-3156-160588.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 徐斌",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%96%8C_%281920%E5%B9%B4%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 徐斌",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0852",
+    "name": "徐德操",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 徐德操",
+        "url": "https://www.krzzjn.com/show-2872-135464.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 徐德操",
+        "url": "https://www.krzzjn.com/show-3156-160587.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 徐德操",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%BE%B7%E6%93%8D"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 徐德操",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325411"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0854",
+    "name": "翁祥初",
+    "changes": {
+      "birth": {
+        "before": 1907,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 翁祥初",
+        "url": "https://www.krzzjn.com/show-3156-160645.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 翁祥初",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BF%81%E7%A5%A5%E5%88%9D"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 翁祥初",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8328254"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0860",
+    "name": "郭宝珊",
+    "changes": {
+      "birth": {
+        "before": 1905,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 郭宝珊",
+        "url": "https://www.krzzjn.com/show-3156-161046.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 郭宝珊",
+        "url": "https://zh.wikipedia.org/wiki/%E9%83%AD%E5%AE%9D%E7%8F%8A"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 郭宝珊",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8329597"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0867",
+    "name": "高朗亭",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 高朗亭",
+        "url": "https://www.krzzjn.com/show-3156-161057.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 高朗亭",
+        "url": "https://zh.wikipedia.org/wiki/%E9%AB%98%E6%9C%97%E4%BA%AD"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 高朗亭",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8330642"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0870",
+    "name": "唐铎",
+    "changes": {
+      "hometown": {
+        "before": "湖南益阳",
+        "after": "湖南省益阳县岳家桥乡",
+        "status": "corrected-or-refined"
+      },
+      "hometownType": {
+        "before": "籍贯",
+        "after": "出生地",
+        "status": "corrected-or-refined"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 唐铎",
+        "url": "https://www.krzzjn.com/show-3156-160717.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 唐铎",
+        "url": "https://zh.wikipedia.org/wiki/%E5%94%90%E9%93%8E_%28%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 唐铎",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": []
+  },
+  {
+    "id": "p0872",
+    "name": "唐青山",
+    "changes": {
+      "birth": {
+        "before": 1918,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 唐青山",
+        "url": "https://www.krzzjn.com/show-3156-160712.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 唐青山",
+        "url": "https://zh.wikipedia.org/wiki/%E5%94%90%E9%9D%92%E5%B1%B1"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 唐青山",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8324104"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0891",
+    "name": "黄立清",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 黄立清",
+        "url": "https://www.krzzjn.com/show-3156-160994.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 黄立清",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E7%AB%8B%E6%B8%85"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 黄立清",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8330930"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0900",
+    "name": "黄荣海",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 黄荣海",
+        "url": "https://www.krzzjn.com/show-2872-135386.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 黄荣海",
+        "url": "https://www.krzzjn.com/show-3156-160990.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 黄荣海",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E8%8D%A3%E6%B5%B7"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 黄荣海",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8330964"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0901",
+    "name": "黄思沛",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 黄思沛",
+        "url": "https://www.krzzjn.com/show-3156-160988.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 黄思沛",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E6%80%9D%E6%B2%9B"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 黄思沛",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8330782"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0907",
+    "name": "黄鹄显",
+    "changes": {
+      "grantYear": {
+        "before": 1956,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 黄鹄显",
+        "url": "https://www.krzzjn.com/show-3156-160998.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 黄鹄显",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E9%B9%84%E6%98%BE"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 黄鹄显",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8331011"
+      }
+    ],
+    "pendingFields": [
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p0925",
+    "name": "梁玉振",
+    "changes": {
+      "birth": {
+        "before": 1903,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 梁玉振",
+        "url": "https://www.krzzjn.com/show-3156-160883.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 梁玉振",
+        "url": "https://zh.wikipedia.org/wiki/%E6%A2%81%E7%8E%89%E6%8C%AF"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 梁玉振",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8326957"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0928",
+    "name": "韩东山",
+    "changes": {
+      "birth": {
+        "before": 1905,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 韩东山",
+        "url": "https://www.krzzjn.com/show-3156-161038.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 韩东山",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9F%A9%E4%B8%9C%E5%B1%B1"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 韩东山",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8330434"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0931",
+    "name": "彭寿生",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 彭寿生",
+        "url": "https://www.krzzjn.com/show-3156-160774.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 彭寿生",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BD%AD%E5%AF%BF%E7%94%9F"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 彭寿生",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325252"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0936",
+    "name": "彭德清",
+    "changes": {
+      "birth": {
+        "before": 1910,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 彭德清",
+        "url": "https://www.krzzjn.com/show-3156-160780.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 彭德清",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BD%AD%E5%BE%B7%E6%B8%85"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 彭德清",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8298771"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0940",
+    "name": "覃士冕",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 覃士冕",
+        "url": "https://www.krzzjn.com/show-3156-160727.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 覃士冕",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A6%83%E5%A3%AB%E5%86%95"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 覃士冕",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8328952"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0947",
+    "name": "程悦长",
+    "changes": {
+      "birth": {
+        "before": 1911,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 程悦长",
+        "url": "https://www.krzzjn.com/show-3156-161104.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 程悦长",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A8%8B%E6%82%A6%E9%95%BF"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 程悦长",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327883"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0948",
+    "name": "程儒珍",
+    "changes": {
+      "birth": {
+        "before": 1900,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 程儒珍",
+        "url": "https://www.krzzjn.com/show-3156-161106.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 程儒珍",
+        "url": "https://www.krzzjn.com/show-2872-135483.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 程儒珍",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A8%8B%E5%84%92%E7%8F%8D"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 程儒珍",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327879"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0954",
+    "name": "傅崇碧",
+    "changes": {
+      "birth": {
+        "before": 1917,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 傅崇碧",
+        "url": "https://www.krzzjn.com/show-3156-161067.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 傅崇碧",
+        "url": "https://zh.wikipedia.org/wiki/%E5%82%85%E5%B4%87%E7%A2%A7"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 傅崇碧",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q11970472"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0955",
+    "name": "舒行",
+    "changes": {
+      "birth": {
+        "before": 1910,
+        "after": null,
+        "status": "withheld"
+      },
+      "death": {
+        "before": 2000,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 舒行",
+        "url": "https://www.krzzjn.com/show-3156-160748.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 舒行",
+        "url": "https://zh.wikipedia.org/wiki/%E8%88%92%E8%A1%8C"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 舒行",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8328608"
+      }
+    ],
+    "pendingFields": [
+      "birth",
+      "death"
+    ]
+  },
+  {
+    "id": "p0957",
+    "name": "鲁瑞林",
+    "changes": {
+      "birth": {
+        "before": 1911,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 鲁瑞林",
+        "url": "https://www.krzzjn.com/show-3156-160818.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 鲁瑞林",
+        "url": "https://zh.wikipedia.org/wiki/%E9%B2%81%E7%91%9E%E6%9E%97"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 鲁瑞林",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8295083"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0961",
+    "name": "游好扬",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 游好扬",
+        "url": "https://www.krzzjn.com/show-2872-135428.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 游好扬",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B8%B8%E5%A5%BD%E6%89%AC"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 游好扬",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327250"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0962",
+    "name": "游胜华",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 游胜华",
+        "url": "https://www.krzzjn.com/show-3156-160544.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 游胜华",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B8%B8%E8%83%9C%E5%8D%8E"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 游胜华",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327257"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0967",
+    "name": "曾涤",
+    "changes": {
+      "death": {
+        "before": 1972,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 曾涤",
+        "url": "https://www.krzzjn.com/show-3156-160524.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 曾涤",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9B%BE%E6%B6%A4"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 曾涤",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325825"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0969",
+    "name": "曾如清",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 曾如清",
+        "url": "https://www.krzzjn.com/show-2872-135591.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 曾如清",
+        "url": "https://www.krzzjn.com/show-3156-160519.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 曾如清",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9B%BE%E5%A6%82%E6%B8%85"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 曾如清",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325719"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0972",
+    "name": "曾保堂",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 曾保堂",
+        "url": "https://www.krzzjn.com/show-3156-160525.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 曾保堂",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9B%BE%E4%BF%9D%E5%A0%82"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 曾保堂",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325671"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0973",
+    "name": "曾宪池",
+    "changes": {
+      "birth": {
+        "before": 1910,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 曾宪池",
+        "url": "https://www.krzzjn.com/show-3156-160516.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 曾宪池",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9B%BE%E5%AE%AA%E6%B1%A0"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 曾宪池",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325770"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0975",
+    "name": "曾敬凡",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 曾敬凡",
+        "url": "https://www.krzzjn.com/show-3156-160522.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 曾敬凡",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9B%BE%E6%95%AC%E5%87%A1"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 曾敬凡",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325808"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0981",
+    "name": "谢云晖",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 谢云晖",
+        "url": "https://www.krzzjn.com/show-3156-160602.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 谢云晖",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B0%A2%E4%BA%91%E6%99%96"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 谢云晖",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8328975"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0985",
+    "name": "谢锡玉",
+    "changes": {
+      "death": {
+        "before": 1995,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 谢锡玉",
+        "url": "https://www.krzzjn.com/show-3156-160603.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 谢锡玉",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B0%A2%E9%94%A1%E7%8E%89"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 谢锡玉",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8329061"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0987",
+    "name": "谢振华",
+    "changes": {
+      "death": {
+        "before": 2011,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 谢振华",
+        "url": "https://www.krzzjn.com/show-2872-135306.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 谢振华",
+        "url": "https://www.krzzjn.com/show-3156-160601.html"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 谢振华",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p0990",
+    "name": "谢镗忠",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 谢镗忠",
+        "url": "https://www.krzzjn.com/show-2872-135442.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 谢镗忠",
+        "url": "https://www.krzzjn.com/show-3156-160604.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 谢镗忠",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B0%A2%E9%95%97%E5%BF%A0"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 谢镗忠",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8329072"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p0992",
+    "name": "蓝侨",
+    "changes": {
+      "death": {
+        "before": 1998,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 蓝侨",
+        "url": "https://www.krzzjn.com/show-3156-160952.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 蓝侨",
+        "url": "https://zh.wikipedia.org/wiki/%E8%93%9D%E4%BE%A8"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 蓝侨",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8322790"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1002",
+    "name": "蔡长元",
+    "changes": {
+      "birth": {
+        "before": 1918,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 蔡长元",
+        "url": "https://www.krzzjn.com/show-3156-161153.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 蔡长元",
+        "url": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%95%BF%E5%85%83"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 蔡长元",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8328833"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1005",
+    "name": "蔡爱卿",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 蔡爱卿",
+        "url": "https://www.krzzjn.com/show-3156-161156.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 蔡爱卿",
+        "url": "https://zh.wikipedia.org/wiki/%E8%94%A1%E7%88%B1%E5%8D%BF"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 蔡爱卿",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8328816"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1016",
+    "name": "廖鼎琳",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 廖鼎琳",
+        "url": "https://www.krzzjn.com/show-3156-160881.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 廖鼎琳",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BB%96%E9%BC%8E%E7%90%B3"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 廖鼎琳",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8324600"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1018",
+    "name": "谭开云",
+    "changes": {
+      "birth": {
+        "before": 1913,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 谭开云",
+        "url": "https://www.krzzjn.com/show-3156-160726.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 谭开云",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B0%AD%E5%BC%80%E4%BA%91"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 谭开云",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8329110"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1020",
+    "name": "谭友林",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      },
+      "death": {
+        "before": 2006,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 谭友林",
+        "url": "https://www.krzzjn.com/show-2872-135396.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 谭友林",
+        "url": "https://www.krzzjn.com/show-3156-160722.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 谭友林",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B0%AD%E5%8F%8B%E6%9E%97"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 谭友林",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8295951"
+      }
+    ],
+    "pendingFields": [
+      "birth",
+      "death"
+    ]
+  },
+  {
+    "id": "p1021",
+    "name": "谭文邦",
+    "changes": {
+      "birth": {
+        "before": 1909,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 谭文邦",
+        "url": "https://www.krzzjn.com/show-3156-160724.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 谭文邦",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B0%AD%E6%96%87%E5%B8%AE"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 谭文邦",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8329127"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1036",
+    "name": "黎有章",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 黎有章",
+        "url": "https://www.krzzjn.com/show-3156-160944.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 黎有章",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%8E%E6%9C%89%E7%AB%A0"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 黎有章",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8331065"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1037",
+    "name": "黎锡福",
+    "changes": {
+      "birth": {
+        "before": 1910,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 黎锡福",
+        "url": "https://www.krzzjn.com/show-3156-160945.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 黎锡福",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%8E%E9%94%A1%E7%A6%8F"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 黎锡福",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8331077"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1047",
+    "name": "潘振武",
+    "changes": {
+      "birth": {
+        "before": 1908,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 潘振武",
+        "url": "https://www.krzzjn.com/show-3156-160783.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 潘振武",
+        "url": "https://zh.wikipedia.org/wiki/%E6%BD%98%E6%8C%AF%E6%AD%A6"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 潘振武",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8327304"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1056",
+    "name": "王赤军",
+    "changes": {
+      "grantYear": {
+        "before": 1958,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 王赤军",
+        "url": "https://www.krzzjn.com/show-3156-160691.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王赤军",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%B5%A4%E5%86%9B"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王赤军",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q109173789"
+      }
+    ],
+    "pendingFields": [
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1057",
+    "name": "张震东",
+    "changes": {
+      "birth": {
+        "before": 1907,
+        "after": null,
+        "status": "withheld"
+      },
+      "grantYear": {
+        "before": 1955,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张震东",
+        "url": "https://www.krzzjn.com/show-2872-135187.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张震东",
+        "url": "https://www.krzzjn.com/show-3156-160462.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张震东",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E9%9C%87%E4%B8%9C"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张震东",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325187"
+      }
+    ],
+    "pendingFields": [
+      "birth",
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1058",
+    "name": "曾旭清",
+    "changes": {
+      "grantYear": {
+        "before": 1955,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 曾旭清",
+        "url": "https://www.krzzjn.com/show-3156-160514.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 曾旭清",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9B%BE%E6%97%AD%E6%B8%85"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 曾旭清",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8325819"
+      }
+    ],
+    "pendingFields": [
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1059",
+    "name": "赖光勋",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      },
+      "grantYear": {
+        "before": 1955,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 赖光勋",
+        "url": "https://www.krzzjn.com/show-3156-160953.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 赖光勋",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B5%96%E5%85%89%E5%8B%8B"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 赖光勋",
+        "url": "https://taihangsummit.com/47460-2/3/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8329326"
+      }
+    ],
+    "pendingFields": [
+      "birth",
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1061",
+    "name": "王亢",
+    "changes": {
+      "grantYear": {
+        "before": 1961,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 王亢",
+        "url": "https://www.krzzjn.com/show-3157-161292.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王亢",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E4%BA%A2"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王亢",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      }
+    ],
+    "pendingFields": [
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1062",
+    "name": "侯正果",
+    "changes": {
+      "birth": {
+        "before": 1910,
+        "after": null,
+        "status": "withheld"
+      },
+      "grantYear": {
+        "before": 1961,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 侯正果",
+        "url": "https://www.krzzjn.com/show-3157-161441.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 侯正果",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BE%AF%E6%AD%A3%E6%9E%9C"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 侯正果",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      }
+    ],
+    "pendingFields": [
+      "birth",
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1076",
+    "name": "王绍渊",
+    "changes": {
+      "birth": {
+        "before": 1920,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 王绍渊",
+        "url": "https://www.krzzjn.com/show-3157-161286.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王绍渊",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E7%BB%8D%E6%B8%8A"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王绍渊",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1079",
+    "name": "王黎生",
+    "changes": {
+      "birth": {
+        "before": 1901,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王黎生",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E9%BB%8E%E7%94%9F"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王黎生",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1092",
+    "name": "史进前",
+    "changes": {
+      "grantYear": {
+        "before": 1955,
+        "after": 1961,
+        "status": "corrected-or-refined"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 史进前",
+        "url": "https://www.krzzjn.com/show-3157-161311.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 史进前",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8F%B2%E8%BF%9B%E5%89%8D"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 史进前",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782507"
+      },
+      {
+        "title": "人民网 · 史进前（原名蒲恒温）",
+        "url": "https://politics.people.com.cn/n/2015/0203/c1001-26500875-24.html"
+      }
+    ],
+    "pendingFields": []
+  },
+  {
+    "id": "p1094",
+    "name": "冯仁恩",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 冯仁恩",
+        "url": "https://www.krzzjn.com/show-3157-161463.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 冯仁恩",
+        "url": "https://zh.wikipedia.org/wiki/%E5%86%AF%E4%BB%81%E6%81%A9"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 冯仁恩",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q20062905"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1096",
+    "name": "冯维精",
+    "changes": {
+      "birth": {
+        "before": 1919,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 冯维精",
+        "url": "https://www.krzzjn.com/show-3157-161462.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 冯维精",
+        "url": "https://zh.wikipedia.org/wiki/%E5%86%AF%E7%BB%B4%E7%B2%BE"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 冯维精",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782901"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1107",
+    "name": "邬兰亭",
+    "changes": {
+      "birth": {
+        "before": 1918,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 邬兰亭",
+        "url": "https://zh.wikipedia.org/wiki/%E9%82%AC%E5%85%B0%E4%BA%AD"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 邬兰亭",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104783059"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1110",
+    "name": "刘瑄",
+    "changes": {
+      "birth": {
+        "before": 1918,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 刘瑄",
+        "url": "https://www.krzzjn.com/show-3157-161354.html"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 刘瑄",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1117",
+    "name": "刘静海",
+    "changes": {
+      "death": {
+        "before": 2002,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 刘静海",
+        "url": "https://www.krzzjn.com/show-3157-161361.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 刘静海",
+        "url": "https://zh.wikipedia.org/wiki/%E5%88%98%E9%9D%99%E6%B5%B7"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 刘静海",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104722219"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1121",
+    "name": "江鸿海",
+    "changes": {
+      "birth": {
+        "before": 1913,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 江鸿海",
+        "url": "https://www.krzzjn.com/show-3157-161426.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 江鸿海",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%9F%E9%B8%BF%E6%B5%B7"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 江鸿海",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q18654169"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1124",
+    "name": "阮汉清",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 阮汉清",
+        "url": "https://www.krzzjn.com/show-3157-161315.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 阮汉清",
+        "url": "https://zh.wikipedia.org/wiki/%E9%98%AE%E6%B1%89%E6%B8%85"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 阮汉清",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q48907293"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1138",
+    "name": "李际泰",
+    "changes": {
+      "province": {
+        "before": "山东",
+        "after": "地域待核实",
+        "status": "withheld"
+      },
+      "hometown": {
+        "before": "山东省武城县城关三里庄",
+        "after": "籍贯待核实",
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 李际泰",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%99%85%E6%B3%B0"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 李际泰",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8331388"
+      }
+    ],
+    "pendingFields": [
+      "hometown",
+      "province"
+    ]
+  },
+  {
+    "id": "p1141",
+    "name": "李振邦",
+    "changes": {
+      "death": {
+        "before": 2000,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 李振邦",
+        "url": "https://www.krzzjn.com/show-3157-161382.html"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 李振邦",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1143",
+    "name": "李懋之",
+    "changes": {
+      "birth": {
+        "before": 1907,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 李懋之",
+        "url": "https://www.krzzjn.com/show-3157-161391.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 李懋之",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%87%8B%E4%B9%8B"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 李懋之",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782488"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1185",
+    "name": "陈祥",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 陈祥",
+        "url": "https://www.krzzjn.com/show-2872-135454.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 陈祥",
+        "url": "https://www.krzzjn.com/show-3157-161493.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 陈祥",
+        "url": "https://zh.wikipedia.org/wiki/%E9%99%88%E7%A5%A5_%28%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 陈祥",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1191",
+    "name": "林茂源",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 林茂源",
+        "url": "https://www.krzzjn.com/show-3157-161373.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 林茂源",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9E%97%E8%8C%82%E6%BA%90"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 林茂源",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q109175324"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1195",
+    "name": "罗洪标",
+    "changes": {
+      "birth": {
+        "before": 1917,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 罗洪标",
+        "url": "https://www.krzzjn.com/show-3157-161338.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 罗洪标",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BD%97%E6%B4%AA%E6%A0%87"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 罗洪标",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782494"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1205",
+    "name": "胡友之",
+    "changes": {
+      "grantYear": {
+        "before": 1960,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 胡友之",
+        "url": "https://web.archive.org/web/20120111205952id_/http://dangshi.people.com.cn/GB/165617/165618/166491/167909/12288304.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 胡友之",
+        "url": "https://zh.wikipedia.org/wiki/%E8%83%A1%E5%8F%8B%E4%B9%8B"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 胡友之",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104783128"
+      }
+    ],
+    "pendingFields": [
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1206",
+    "name": "胡立声",
+    "changes": {
+      "death": {
+        "before": 2010,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 胡立声",
+        "url": "https://www.krzzjn.com/show-3157-161439.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 胡立声",
+        "url": "https://zh.wikipedia.org/wiki/%E8%83%A1%E7%AB%8B%E5%A3%B0"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 胡立声",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782465"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1209",
+    "name": "赵汇川",
+    "changes": {
+      "death": {
+        "before": 1996,
+        "after": null,
+        "status": "withheld"
+      },
+      "grantYear": {
+        "before": 1961,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 赵汇川",
+        "url": "https://www.krzzjn.com/show-3157-161183.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 赵汇川",
+        "url": "https://www.krzzjn.com/show-2872-135175.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 赵汇川",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B5%B5%E6%B1%87%E5%B7%9D"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 赵汇川",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8332051"
+      }
+    ],
+    "pendingFields": [
+      "death",
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1224",
+    "name": "柴成文",
+    "changes": {
+      "death": {
+        "before": 2011,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 柴成文",
+        "url": "https://www.krzzjn.com/show-3157-161499.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 柴成文",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9F%B4%E6%88%90%E6%96%87"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 柴成文",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8321520"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1243",
+    "name": "康庄",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 康庄",
+        "url": "https://www.krzzjn.com/show-3157-161418.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 康庄",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BA%B7%E5%BA%84_%28%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 康庄",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1244",
+    "name": "康林",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      },
+      "grantYear": {
+        "before": 1955,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 康林",
+        "url": "https://www.krzzjn.com/show-3157-161419.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 康林",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BA%B7%E6%9E%97"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 康林",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q15951938"
+      }
+    ],
+    "pendingFields": [
+      "birth",
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1253",
+    "name": "董启强",
+    "changes": {
+      "birth": {
+        "before": 1917,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 董启强",
+        "url": "https://www.krzzjn.com/show-3157-161475.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 董启强",
+        "url": "https://zh.wikipedia.org/wiki/%E8%91%A3%E5%90%AF%E5%BC%BA"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 董启强",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782822"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1262",
+    "name": "谢忠良",
+    "changes": {
+      "birth": {
+        "before": 1913,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 谢忠良",
+        "url": "https://www.krzzjn.com/show-3157-161252.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 谢忠良",
+        "url": "https://zh.wikipedia.org/wiki/%E8%B0%A2%E5%BF%A0%E8%89%AF_%28%E5%B0%91%E5%B0%86%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 谢忠良",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1266",
+    "name": "雷钦",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      },
+      "death": {
+        "before": 2014,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 雷钦",
+        "url": "https://www.krzzjn.com/show-3157-161410.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 雷钦",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9B%B7%E9%92%A6"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 雷钦",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q19825858"
+      }
+    ],
+    "pendingFields": [
+      "birth",
+      "death"
+    ]
+  },
+  {
+    "id": "p1272",
+    "name": "鲍奇辰",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      },
+      "province": {
+        "before": "山东",
+        "after": "地域待核实",
+        "status": "withheld"
+      },
+      "hometown": {
+        "before": "山东临清",
+        "after": "籍贯待核实",
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 鲍奇辰",
+        "url": "https://www.krzzjn.com/show-3157-161505.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 鲍奇辰",
+        "url": "https://zh.wikipedia.org/wiki/%E9%B2%8D%E5%A5%87%E8%BE%B0"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 鲍奇辰",
+        "url": "https://taihangsummit.com/47460-2/4/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782579"
+      }
+    ],
+    "pendingFields": [
+      "birth",
+      "hometown",
+      "province"
+    ]
+  },
+  {
+    "id": "p1299",
+    "name": "马洪山",
+    "changes": {
+      "death": {
+        "before": 2010,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 马洪山",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A9%AC%E6%B4%AA%E5%B1%B1"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 马洪山",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782473"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1306",
+    "name": "王子修",
+    "changes": {
+      "birth": {
+        "before": 1918,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 王子修",
+        "url": "https://web.archive.org/web/20120111204959id_/http://dangshi.people.com.cn/GB/165617/165618/166491/167909/12291075.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王子修",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%AD%90%E4%BF%AE_%281918%E5%B9%B4%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王子修",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1307",
+    "name": "王文英",
+    "changes": {
+      "birth": {
+        "before": 1918,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 王文英",
+        "url": "https://www.krzzjn.com/show-3157-161283.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王文英",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E6%96%87%E8%8B%B1"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王文英",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q16590861"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1308",
+    "name": "王世仁",
+    "changes": {
+      "birth": {
+        "before": 1907,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 王世仁",
+        "url": "https://www.krzzjn.com/show-3157-161285.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王世仁",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E4%B8%96%E4%BB%81_%281907%E5%B9%B4%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王世仁",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1312",
+    "name": "王茂全",
+    "changes": {
+      "birth": {
+        "before": 1910,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 王茂全",
+        "url": "https://www.krzzjn.com/show-3157-161291.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 王茂全",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8C%82%E5%85%A8"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 王茂全",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q16906200"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1322",
+    "name": "韦统泰",
+    "changes": {
+      "birth": {
+        "before": 1922,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 韦统泰",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9F%A6%E7%BB%9F%E6%B3%B0"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 韦统泰",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q16077550"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1335",
+    "name": "石瑛",
+    "changes": {
+      "grantYear": {
+        "before": 1965,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "人民网 · 人物资料 · 石瑛",
+        "url": "https://web.archive.org/web/20120111085828id_/http://dangshi.people.com.cn/GB/165617/165618/166491/167909/12291760.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 石瑛",
+        "url": "https://www.krzzjn.com/show-3157-161312.html"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 石瑛",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      }
+    ],
+    "pendingFields": [
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1350",
+    "name": "吕展",
+    "changes": {
+      "grantYear": {
+        "before": 1965,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 吕展",
+        "url": "https://www.krzzjn.com/show-3157-161340.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 吕展",
+        "url": "https://zh.wikipedia.org/wiki/%E5%90%95%E5%B1%95"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 吕展",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104783156"
+      }
+    ],
+    "pendingFields": [
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1365",
+    "name": "任茂如",
+    "changes": {
+      "death": {
+        "before": 2001,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 任茂如",
+        "url": "https://www.krzzjn.com/show-3157-161316.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 任茂如",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BB%BB%E8%8C%82%E5%A6%82"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 任茂如",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q109175494"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1385",
+    "name": "刘德才",
+    "changes": {
+      "death": {
+        "before": 1986,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 刘德才",
+        "url": "https://www.krzzjn.com/show-2872-135305.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 刘德才",
+        "url": "https://www.krzzjn.com/show-3157-161369.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 刘德才",
+        "url": "https://zh.wikipedia.org/wiki/%E5%88%98%E5%BE%B7%E6%89%8D"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 刘德才",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1390",
+    "name": "许诚",
+    "changes": {
+      "death": {
+        "before": 1999,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 许诚",
+        "url": "https://www.krzzjn.com/show-3157-161246.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 许诚",
+        "url": "https://zh.wikipedia.org/wiki/%E8%AE%B8%E8%AF%9A"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 许诚",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782862"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1394",
+    "name": "纪亭榭",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 纪亭榭",
+        "url": "https://www.krzzjn.com/show-3157-161429.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 纪亭榭",
+        "url": "https://zh.wikipedia.org/wiki/%E7%BA%AA%E4%BA%AD%E6%A6%AD"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 纪亭榭",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8331155"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1398",
+    "name": "扶廷修",
+    "changes": {
+      "birth": {
+        "before": 1910,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 扶廷修",
+        "url": "https://www.krzzjn.com/show-3157-161461.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 扶廷修",
+        "url": "https://zh.wikipedia.org/wiki/%E6%89%B6%E5%BB%B7%E4%BF%AE"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 扶廷修",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q109173640"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1403",
+    "name": "李伟",
+    "changes": {
+      "province": {
+        "before": "河南",
+        "after": "河北",
+        "status": "corrected-or-refined"
+      },
+      "hometown": {
+        "before": "河南济源",
+        "after": "河北沧州",
+        "status": "corrected-or-refined"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 李伟",
+        "url": "https://www.krzzjn.com/show-3157-161386.html"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 李伟",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      }
+    ],
+    "pendingFields": []
+  },
+  {
+    "id": "p1411",
+    "name": "李文一",
+    "changes": {
+      "grantYear": {
+        "before": 1955,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 李文一",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%96%87%E4%B8%80"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 李文一",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q8326368"
+      }
+    ],
+    "pendingFields": [
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1433",
+    "name": "杨有山",
+    "changes": {
+      "birth": {
+        "before": 1905,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 杨有山",
+        "url": "https://www.krzzjn.com/show-3157-161232.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 杨有山",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%A8%E6%9C%89%E5%B1%B1"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 杨有山",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1436",
+    "name": "杨明山",
+    "changes": {
+      "birth": {
+        "before": 1905,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 杨明山",
+        "url": "https://www.krzzjn.com/show-3157-161237.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 杨明山",
+        "url": "https://zh.wikipedia.org/wiki/%E6%A5%8A%E6%98%8E%E5%B1%B1"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 杨明山",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1457",
+    "name": "汪运祖",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 汪运祖",
+        "url": "https://www.krzzjn.com/show-3157-161299.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 汪运祖",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%AA%E8%BF%90%E7%A5%96"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 汪运祖",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q19516443"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1470",
+    "name": "张水发",
+    "changes": {
+      "death": {
+        "before": 2007,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张水发",
+        "url": "https://www.krzzjn.com/show-3157-161206.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张水发",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E6%B0%B4%E5%8F%91"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张水发",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782511"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1477",
+    "name": "张志毅",
+    "changes": {
+      "death": {
+        "before": 1998,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 张志毅",
+        "url": "https://www.krzzjn.com/show-3157-161190.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张志毅",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%BF%97%E6%AF%85"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张志毅",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q11067093"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1480",
+    "name": "张贤良",
+    "changes": {
+      "death": {
+        "before": 1998,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 张贤良",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%B4%A4%E8%89%AF"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 张贤良",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104783121"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1496",
+    "name": "陈炎清",
+    "changes": {
+      "birth": {
+        "before": 1908,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 陈炎清",
+        "url": "https://www.krzzjn.com/show-3157-161491.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 陈炎清",
+        "url": "https://zh.wikipedia.org/wiki/%E9%99%88%E7%82%8E%E6%B8%85"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 陈炎清",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104783244"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1500",
+    "name": "林乃清",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 林乃清",
+        "url": "https://www.krzzjn.com/show-3157-161372.html"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 林乃清",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1504",
+    "name": "范富山",
+    "changes": {
+      "death": {
+        "before": 1998,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 范富山",
+        "url": "https://zh.wikipedia.org/wiki/%E8%8C%83%E5%AF%8C%E5%B1%B1"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 范富山",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104783131"
+      }
+    ],
+    "pendingFields": [
+      "death"
+    ]
+  },
+  {
+    "id": "p1505",
+    "name": "郁文",
+    "changes": {
+      "birth": {
+        "before": 1919,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 郁文",
+        "url": "https://zh.wikipedia.org/wiki/%E9%83%81%E6%96%87_%28%E5%B0%91%E5%B0%87%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 郁文",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1524",
+    "name": "胡立信",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB_2.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 胡立信",
+        "url": "https://www.krzzjn.com/show-3157-161438.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 胡立信",
+        "url": "https://zh.wikipedia.org/wiki/%E8%83%A1%E7%AB%8B%E4%BF%A1"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 胡立信",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782334"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1562",
+    "name": "高林",
+    "changes": {
+      "birth": {
+        "before": 1917,
+        "after": null,
+        "status": "withheld"
+      },
+      "grantYear": {
+        "before": 1964,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB_2.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 高林",
+        "url": "https://www.krzzjn.com/show-3157-161457.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 高林",
+        "url": "https://zh.wikipedia.org/wiki/%E9%AB%98%E6%9E%97_%28%E8%A7%A3%E6%94%BE%E8%BB%8D%29"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 高林",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      }
+    ],
+    "pendingFields": [
+      "birth",
+      "grantYear"
+    ]
+  },
+  {
+    "id": "p1566",
+    "name": "涂学忠",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB_2.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 涂学忠",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B6%82%E5%AD%A6%E5%BF%A0"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 涂学忠",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q109175375"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1574",
+    "name": "龚兴贵",
+    "changes": {
+      "birth": {
+        "before": 1914,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB_2.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 龚兴贵",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BE%9A%E5%85%B4%E8%B4%B5"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 龚兴贵",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782988"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1575",
+    "name": "戚先初",
+    "changes": {
+      "birth": {
+        "before": 1913,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB_2.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 戚先初",
+        "url": "https://www.krzzjn.com/show-3157-161321.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 戚先初",
+        "url": "https://zh.wikipedia.org/wiki/%E6%88%9A%E5%85%88%E5%88%9D"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 戚先初",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104722671"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1593",
+    "name": "靳来川",
+    "changes": {
+      "birth": {
+        "before": 1912,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB_2.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 靳来川",
+        "url": "https://www.krzzjn.com/show-3157-161421.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 靳来川",
+        "url": "https://zh.wikipedia.org/wiki/%E9%9D%B3%E6%9D%A5%E5%B7%9D"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 靳来川",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q109175380"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1597",
+    "name": "慕湘",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB_2.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 慕湘",
+        "url": "https://zh.wikipedia.org/wiki/%E6%85%95%E6%B9%98"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 慕湘",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q109175381"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1607",
+    "name": "颜文斌",
+    "changes": {
+      "birth": {
+        "before": 1917,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB_2.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 颜文斌",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A2%9C%E6%96%87%E6%96%8C"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 颜文斌",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q23296702"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  },
+  {
+    "id": "p1608",
+    "name": "颜吉连",
+    "changes": {
+      "birth": {
+        "before": 1916,
+        "after": null,
+        "status": "withheld"
+      },
+      "death": {
+        "before": 2011,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB_2.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 颜吉连",
+        "url": "https://zh.wikipedia.org/wiki/%E9%A2%9C%E5%90%89%E8%BF%9E"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 颜吉连",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q104782439"
+      }
+    ],
+    "pendingFields": [
+      "birth",
+      "death"
+    ]
+  },
+  {
+    "id": "p1611",
+    "name": "戴克明",
+    "changes": {
+      "birth": {
+        "before": 1915,
+        "after": null,
+        "status": "withheld"
+      }
+    },
+    "sources": [
+      {
+        "title": "中红网 · 开国将帅名录（姓名与军衔）",
+        "url": "https://crt.com.cn/news2007/news/yxbd20220324/2023/4/234313943F1GBCKK4E066CJJD0FB_2.html"
+      },
+      {
+        "title": "抗日战争纪念网 · 人物资料 · 戴克明",
+        "url": "https://www.krzzjn.com/show-3157-161482.html"
+      },
+      {
+        "title": "维基百科 · 生平资料 · 戴克明",
+        "url": "https://zh.wikipedia.org/wiki/%E6%88%B4%E5%85%8B%E6%98%8E"
+      },
+      {
+        "title": "太行英雄网 · 籍贯名录（补充资料） · 戴克明",
+        "url": "https://taihangsummit.com/47460-2/5/"
+      },
+      {
+        "title": "维基数据 · 基本资料（CC0）",
+        "url": "https://www.wikidata.org/wiki/Q110407568"
+      }
+    ],
+    "pendingFields": [
+      "birth"
+    ]
+  }
+]
