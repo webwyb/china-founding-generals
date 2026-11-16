@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "dist/weapp/",
+  "projectname": "shanhe-youming",
+  "description": "山河有名 · 开国将帅纪念馆",
+  "appid": "touristappid",
+  "compileType": "miniprogram",
+  "setting": {
+    "es6": false,
+    "minified": true,
+    "urlCheck": true,
+    "postcss": false
+  }
+}
