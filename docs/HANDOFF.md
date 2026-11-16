@@ -40,6 +40,8 @@
 
 H5采用hash路由，例如 `/#/pages/person/index?id=suyu`。公开目录肖像在 `public/portraits/`，构建复制到 `dist/h5/static/portraits/`；原有8张精选肖像由Vite从 `src/assets/portraits/` 打包。`config/index.ts` 的复制源使用配置文件位置解析，勿改回依赖调用目录的相对路径。
 
+H5图片、字体和媒体的输出名显式使用POSIX斜杠，这是浏览器URL；不能改为平台默认 `path.join`。Taro4.3.2默认配置在Windows上会生成反斜杠并破坏JavaScript中的图片URL，远程Windows构建已暴露该问题。
+
 ## 当前资料状态与不能丢失的约束
 
 名录1614人；本地真实肖像1172张；442人使用明确标注的占位图。53张原图短边不足200像素。已比较并升级37张肖像来源，前后记录见 `data/design/portrait-upgrades.json`；不通过AI重绘人脸伪造清晰细节。

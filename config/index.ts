@@ -1,5 +1,10 @@
 import { defineConfig } from '@tarojs/cli'
-import { resolve } from 'node:path'
+import { posix, resolve } from 'node:path'
+
+// These are browser URLs, not filesystem paths. Taro's default path.join
+// emits backslashes on Windows, which can become JS string escapes.
+const assetName = (directory: string) => (filename: string) =>
+  posix.join('static', directory, posix.basename(filename.replace(/\\/g, '/')))
 
 export default defineConfig<'vite'>({
   projectName: 'shanhe-youming',
@@ -33,6 +38,9 @@ export default defineConfig<'vite'>({
   h5: {
     publicPath: './',
     staticDirectory: 'static',
+    imageUrlLoaderOption: { name: assetName('images') },
+    fontUrlLoaderOption: { name: assetName('fonts') },
+    mediaUrlLoaderOption: { name: assetName('media') },
     router: { mode: 'hash' },
     devServer: {
       host: '0.0.0.0',
