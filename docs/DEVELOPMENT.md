@@ -50,7 +50,7 @@ npm run check
 
 静态成图在 `.cache/design-review/`，测试中间文件在 `.cache/`，可删除后重跑。`data/design/` 与 `data/testing/` 中已提交的报告描述实际覆盖范围，不能代替 `QA.md` 中尚未完成的浏览器与真机验收。
 
-`.github/workflows/ci.yml` 使用相同安装和检查命令，在Linux、macOS、Windows上验证恢复流程。CI的结果是构建与自动校验结果，不代表浏览器兼容或事实全量审校通过。
+`.github/workflows/ci.yml` 使用相同安装和检查命令，在Ubuntu24.04、macOS15、Windows2022上验证恢复流程。运行镜像随GitHub支持周期维护，可用标签见[官方镜像列表](https://github.com/actions/runner-images#available-images)。CI的结果是构建与自动校验结果，不代表浏览器兼容或事实全量审校通过。
 
 ## 修改资料、字体和景观
 
@@ -69,6 +69,8 @@ node scripts/python.mjs scripts/build_design_font.py
 ## 环境与故障排查
 
 没有必需的环境变量或 `.env`。Git提交身份、远程仓库认证、浏览器存储和个人编辑器设置由目标机器自行配置，不应写进代码。
+
+若GitHub HTTPS连接超时，可按[GitHub官方SSH 443端口指引](https://docs.github.com/en/authentication/troubleshooting-ssh/using-ssh-over-the-https-port)使用 `ssh.github.com` 与目标机器自己的GitHub认证。首次连接应核对官方主机指纹。本次远程提交已使用该连接成功上传，仓库保存的默认远程地址仍为HTTPS。
 
 若提示无法加载原生模块，确认使用目标机器的Node与全新安装的依赖；若Python导入失败，重跑 `npm run setup:python`。若资料快照哈希不符，从Git恢复 `data/catalog/evidence/`，不要通过删除校验来继续生成。
 
