@@ -1,0 +1,107 @@
+{
+  "releaseCommit": "bb635062e0900a521cf63c53a8ff63e5ce13d708",
+  "miniProgramVersion": "1.1.0",
+  "scope": "Public HTTPS checks; not a browser/device or WeChat review result",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "名在山河｜1614位开国将帅人物档案与生平故事",
+      "oldBrandAbsent": true,
+      "tagline": true
+    },
+    {
+      "path": "/generals/",
+      "status": 200,
+      "title": "开国将帅名录｜1614位将帅姓名、军衔与家乡｜名在山河",
+      "oldBrandAbsent": true,
+      "tagline": true
+    },
+    {
+      "path": "/people/zhude/",
+      "status": 200,
+      "title": "朱德 · 元帅 · 四川 · 仪陇 · 1886年生｜生平、人生足迹与史料｜名在山河",
+      "oldBrandAbsent": true,
+      "tagline": true
+    },
+    {
+      "path": "/card/?id=zhude",
+      "status": 200,
+      "title": "制作人物纪念卡｜名在山河",
+      "oldBrandAbsent": true,
+      "tagline": true
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "title": "名录口径与资料来源｜关于名在山河",
+      "oldBrandAbsent": true,
+      "tagline": true
+    },
+    {
+      "asset": "icon",
+      "status": 200,
+      "url": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/9f1b3546710679cc7afea2cd4c38d22ca7b2e49bf2af729545dbe739bddc37f6/icon.png",
+      "sha256": "9f1b3546710679cc7afea2cd4c38d22ca7b2e49bf2af729545dbe739bddc37f6",
+      "bytes": 35186
+    },
+    {
+      "asset": "favicon",
+      "status": 200,
+      "url": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/0cd5f4a527422dfe628ac925f0ec8413289aa1bb6fe0d82b1757783864066e15/favicon.png",
+      "sha256": "0cd5f4a527422dfe628ac925f0ec8413289aa1bb6fe0d82b1757783864066e15",
+      "bytes": 1785
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "entries": 1618
+    }
+  ],
+  "productionVersion": {
+    "sha": "bb635062e0900a521cf63c53a8ff63e5ce13d708",
+    "run": "44123125177",
+    "attempt": "1"
+  },
+  "status": "passed",
+  "verifiedAt": "2026-11-18T00:30:47.070282+08:00",
+  "workflows": [
+    {
+      "id": 44123125483,
+      "name": "Sync COS assets",
+      "conclusion": "success",
+      "html_url": "https://github.com/webwyb/china-founding-generals/actions/runs/44123125483",
+      "head_sha": "bb635062e0900a521cf63c53a8ff63e5ce13d708"
+    },
+    {
+      "id": 44123125177,
+      "name": "H5 checks and deployment",
+      "conclusion": "success",
+      "html_url": "https://github.com/webwyb/china-founding-generals/actions/runs/44123125177",
+      "head_sha": "bb635062e0900a521cf63c53a8ff63e5ce13d708"
+    }
+  ],
+  "weapp": {
+    "version": "1.1.0",
+    "appId": "wx2652a3141486dd4d",
+    "upload": "success",
+    "evidence": "WeChat developer tool upload dialog showed 代码上传成功 after uploading 1.1.0 from the isolated release snapshot.",
+    "review": "not_submitted_in_this_task",
+    "production": "not_verified",
+    "blocker": "Existing WeChat version-management browser tab is owned by another session; tool refused to claim it. No alternate tab or access path was used.",
+    "pages": [
+      "pages/index/index",
+      "pages/explore/index",
+      "pages/person/index",
+      "pages/card/index",
+      "pages/about/index"
+    ],
+    "appJsonSha256": "313f2421ceea9bc3337aaa1062cd2ba07d96635d876937ed6454aa0482d2d6a3"
+  },
+  "checksBeforeRelease": [
+    "Production COS npm run check: passed in original workspace",
+    "Production COS npm run check: passed again in isolated staged-tree snapshot aca05873099aaf9625051818de9cad1970792259",
+    "12 deployment/rollback regressions: passed",
+    "Online WeChat resource preflight: passed, data version 1cc8d4e396ed7359607e"
+  ]
+}
