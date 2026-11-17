@@ -31,7 +31,7 @@ await build({
   } }],
 })
 const { people, lifeYears } = require(resolve(output, 'data/people.cjs'))
-const { filterPeople, regionFromQuery } = require(resolve(output, 'services/catalogue.cjs'))
+const { filterPeople, regionFromQuery, provinceFacets, applyCatalogueFilters } = require(resolve(output, 'services/catalogue.cjs'))
 const state = require(resolve(output, 'services/catalogueState.cjs'))
 const collection = require(resolve(output, 'services/collection.cjs'))
 const navigation = require(resolve(output, 'components/Shell.cjs'))
@@ -77,12 +77,33 @@ check('铭记增删、持久保存与损坏数据恢复', () => {
   assert.throws(() => collection.toggleRemembered('missing'))
   failStorage = true; assert.deepEqual(collection.getRemembered(), []); assert.throws(() => collection.toggleRemembered('suyu')); failStorage = false
 })
-check('名录状态、阅读位置与禁用存储', () => {
+check('家乡数量随军衔、检索与铭记范围联动', () => {
+  for (const rank of ['全部','元帅','大将','上将','中将','少将']) {
+    const facets = provinceFacets(people, { ...base, rank, province: '湖南' }, [])
+    const expected = people.filter(person => rank === '全部' || person.rank === rank)
+    assert.equal(facets.reduce((sum, item) => sum + item.count, 0), expected.length)
+    for (const province of provinces) assert.equal(facets.find(item => item.province === province)?.count || 0, expected.filter(person => person.province === province).length)
+    assert.ok(facets.every(item => item.count > 0))
+  }
+  assert.deepEqual(provinceFacets(people, { ...base, rememberedOnly: true }, []), [])
+  assert.deepEqual(provinceFacets(people, { ...base, rememberedOnly: true, search: '李贞' }, ['lizhen','zhude']), [{ province: '湖南', count: 1 }])
+})
+check('切换军衔清除无效家乡、保留仍有效家乡并重置批次', () => {
+  const old = { ...base, province: '山西', visibleCount: 96, scrollTop: 1750 }
+  const next = applyCatalogueFilters(people, old, { rank: '大将' }, [])
+  assert.equal(next.province, '全部'); assert.equal(next.visibleCount, 24); assert.equal(next.scrollTop, 0)
+  assert.equal(filterPeople(people, next, []).length, 10)
+  assert.equal(applyCatalogueFilters(people, { ...base, province: '湖南' }, { rank: '大将' }, []).province, '湖南')
+  assert.equal(applyCatalogueFilters(people, { ...base, province: '湖北' }, { search: '李贞' }, []).province, '湖北', '搜索不应悄悄放宽用户选择的家乡')
+})
+check('名录仅保留本次返回位置，刷新不读取旧存储', () => {
   const view = { ...base, rank: '少将', province: '湖北', search: '湖南', visibleCount: 96, scrollTop: 1750, rememberedOnly: true }
   state.saveCatalogueState(view); assert.deepEqual(state.readCatalogueState(), view)
-  storage.set('shanhe-catalogue-view-v1', { visibleCount: 1e9, search: 'x'.repeat(500), rank: '错误', scrollTop: -5 })
-  const normalized = state.readCatalogueState(); assert.equal(normalized.visibleCount, 1614); assert.equal(normalized.search.length, 100); assert.equal(normalized.rank, '全部'); assert.equal(normalized.scrollTop, 0)
-  failStorage = true; assert.doesNotThrow(() => state.saveCatalogueState(view)); assert.deepEqual(state.readCatalogueState(), base); failStorage = false
+  storage.set('shanhe-catalogue-view-v1', view)
+  delete require.cache[require.resolve(resolve(output, 'services/catalogueState.cjs'))]
+  const fresh = require(resolve(output, 'services/catalogueState.cjs'))
+  assert.deepEqual(fresh.readCatalogueState(), base, '新页面生命周期必须恢复全部，旧持久化筛选不再生效')
+  failStorage = true; assert.doesNotThrow(() => fresh.saveCatalogueState(view)); assert.deepEqual(fresh.readCatalogueState(), view); failStorage = false
 })
 check('来源冲突在列表和导出资料中统一待核实', () => {
   for (const person of people) for (const field of person.pendingFields || []) {

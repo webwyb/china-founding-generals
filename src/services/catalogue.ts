@@ -28,3 +28,20 @@ export function filterPeople(people: readonly Person[], state: CatalogueState, r
   }
   return matches.sort((a,b) => relevance(b) - relevance(a))
 }
+
+/** Home-region counts reflect the current scope, before choosing a region. */
+export function provinceFacets(people: readonly Person[], state: CatalogueState, remembered: readonly string[]) {
+  const counts = new Map<string, number>()
+  for (const person of filterPeople(people, { ...state, province: '全部' }, remembered)) {
+    counts.set(person.province, (counts.get(person.province) || 0) + 1)
+  }
+  return [...counts].map(([province, count]) => ({ province, count })).sort((a, b) => b.count - a.count)
+}
+
+export function applyCatalogueFilters(people: readonly Person[], state: CatalogueState, changes: Partial<CatalogueState>, remembered: readonly string[]): CatalogueState {
+  const next = { ...state, ...changes, visibleCount: 24, scrollTop: 0 }
+  // Changing rank must not leave an impossible home-region selection behind.
+  if (changes.rank !== undefined && changes.rank !== state.rank && next.province !== '全部' &&
+      !provinceFacets(people, next, remembered).some(item => item.province === next.province)) next.province = '全部'
+  return next
+}

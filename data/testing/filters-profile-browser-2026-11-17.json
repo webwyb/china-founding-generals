@@ -1,0 +1,203 @@
+{
+  "date": "2026-11-17",
+  "status": "passed",
+  "base": "http://127.0.0.1:5173",
+  "observations": [
+    {
+      "case": "marshal-facets",
+      "height": 1064,
+      "rank": "元帅",
+      "regions": [
+        "全部",
+        "四川4",
+        "湖南3",
+        "湖北1",
+        "山西1",
+        "广东1"
+      ],
+      "result": "元帅名录共 10 位清除筛选",
+      "width": 2133
+    },
+    {
+      "case": "invalid-region-cleared",
+      "ranks": [
+        "大将"
+      ],
+      "regions": [
+        {
+          "selected": "true",
+          "text": "全部"
+        },
+        {
+          "selected": "false",
+          "text": "湖南6"
+        },
+        {
+          "selected": "false",
+          "text": "湖北2"
+        },
+        {
+          "selected": "false",
+          "text": "四川1"
+        },
+        {
+          "selected": "false",
+          "text": "广东1"
+        }
+      ],
+      "result": "大将名录共 10 位清除筛选"
+    },
+    {
+      "case": "refresh-defaults",
+      "result": "将帅名录共 1,614 位",
+      "search": "",
+      "selected": [
+        "全部",
+        "全部"
+      ],
+      "url": "http://127.0.0.1:5173/generals/"
+    },
+    {
+      "case": "search-linked-facets",
+      "regions": [
+        "全部",
+        "湖南1"
+      ],
+      "result": "将帅名录共 1 位清除筛选"
+    },
+    {
+      "case": "remembered-tab-refresh-reset",
+      "result": "将帅名录共 1,614 位",
+      "search": "",
+      "selectedTabs": [
+        "全部名录1,614"
+      ]
+    },
+    {
+      "case": "home-region-entry",
+      "region": "山东88",
+      "result": "山东的名字共 88 位清除筛选",
+      "url": "http://127.0.0.1:5173/generals/"
+    },
+    {
+      "case": "home-region-refresh-cleared",
+      "region": "全部",
+      "result": "将帅名录共 1,614 位",
+      "url": "http://127.0.0.1:5173/generals/"
+    },
+    {
+      "case": "timeline-nav-390",
+      "current": "人生足迹",
+      "focusedId": "profile-timeline",
+      "height": 844,
+      "navTop": 0,
+      "scrollWidth": 390,
+      "targetTop": 76.171875,
+      "width": 390
+    },
+    {
+      "case": "sources-nav-390",
+      "current": "资料出处",
+      "focusedId": "profile-sources",
+      "navTop": 0,
+      "sourcesOpen": true,
+      "targetTop": 76.171875
+    },
+    {
+      "case": "long-name-320",
+      "height": 812,
+      "name": "马尔果夫·伊斯哈科夫",
+      "nameWidth": 143,
+      "photoFit": "contain",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "case": "pending-region-320",
+      "hasLandscape": false,
+      "height": 812,
+      "pending": "资料待核实：籍贯或出生地、地域归属。记载差异与出处见下方说明。",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "case": "manual-batch",
+      "focusedHref": "/people/p0279/",
+      "status": "已呈现 48 / 1,360 位",
+      "visible": 48
+    },
+    {
+      "case": "return-keeps-current-visit",
+      "rank": "少将",
+      "result": "少将名录共 1,360 位清除筛选",
+      "scrollTop": 3398.888916015625,
+      "visible": 48
+    },
+    {
+      "case": "missing-portrait-320",
+      "caption": "历史肖像待补",
+      "height": 812,
+      "portraitDisabled": true,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "case": "tablet-reading-768",
+      "height": 900,
+      "readingDisplay": "block",
+      "scrollWidth": 768,
+      "storyWidth": 654,
+      "width": 768
+    },
+    {
+      "case": "profile-desktop",
+      "height": 1064,
+      "landscapeHeight": 250.00001525878903,
+      "photoFit": "contain",
+      "scrollWidth": 2133,
+      "width": 2133
+    },
+    {
+      "case": "profile-390",
+      "height": 844,
+      "landscapeHeight": 156,
+      "loaded": true,
+      "scrollWidth": 390,
+      "storyTop": 739.4921875,
+      "width": 390
+    },
+    {
+      "case": "portrait-dialog-escape",
+      "dialogClosed": true,
+      "focusReturnedToPortrait": true,
+      "originalPixels": "1024 × 1430",
+      "method": "Observed dialog, pressed Escape on close control, then inspected DOM focus."
+    },
+    {
+      "case": "empty-search-390",
+      "empty": "暂未找到匹配的人物",
+      "height": 844,
+      "regions": [
+        "全部"
+      ],
+      "result": "元帅名录共 0 位清除筛选",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "case": "clear-search-focus",
+      "focused": "search",
+      "result": "元帅名录共 10 位清除筛选",
+      "value": ""
+    },
+    {
+      "case": "keyboard-timeline-final",
+      "current": "人生足迹",
+      "focusedId": "profile-timeline",
+      "navTop": 0,
+      "targetTop": 76.171875,
+      "appReady": true
+    }
+  ],
+  "method": "Real interactions on the local production build: Chrome at measured 2133×1064; Codex in-app browser at measured 320×812,390×844 and768×900. Static logical regressions are recorded separately. One stale lazy chunk failed while the build directory was being regenerated; after final build completed, refreshed and repeated catalogue→profile→return successfully. No production deployment, physical phone, native IME, screen reader or WeChat test. Keyboard activation was repeated after the prerender shell had been replaced by the interactive app; an earlier press during initial loading was not counted as validation."
+}

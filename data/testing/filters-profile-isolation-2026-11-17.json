@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-17",
+  "status": "passed",
+  "baseCommit": "eaa2f5849e147ea2e628d9687bfe7b78fa3047c1",
+  "checkedTree": "47ee870b62319df7ed1283d79759db0f5fadcbf6",
+  "files": 26,
+  "fullCheck": {
+    "command": "npm run check",
+    "exitCode": 0,
+    "peopleHtml": 1614,
+    "sitemapUrls": 1618
+  },
+  "method": "Isolated Git tree includes only the reviewed filter/profile scope; concurrent compliance changes remain in original working files. Installed dependencies reused via symlinks; not a fresh dependency restore.",
+  "scope": "Only the reviewed filter/profile changes, 12 screenshots and local acceptance records. Concurrent compliance edits remain outside this release. No person facts, portraits or assets changed.",
+  "sourceSha256": {
+    "scripts/validate_design.mjs": "d98d9bbe174505e9e6f617fb15dbb36b131721af0b3b00bb7ab6f618ae037d64",
+    "scripts/validate_functionality.mjs": "6f41d848b31762db378fbb529dae56f4fb756ee485421be5dfd909bc0544d022",
+    "src/app.scss": "bba5207756b2bd714115259dd648b4ffd4bcb545d69f219a28470f63cf01021c",
+    "src/components/Button.tsx": "8cdc21ed1960c348278270073de4b419ac07429e12fe07605559ee38cc1839b4",
+    "src/pages/explore/index.tsx": "597484d7fbc0d02c5cce506564779421fee896ab4435b69f81ad2c0d3ea93d1e",
+    "src/pages/person/index.tsx": "76466efdfb38cb9fe08e990ea35fc84765fb2b05513a55f18a134e39c63d42c6",
+    "src/services/catalogue.ts": "4e9c378ef6dcb76f0b3a311f1134fc6c26901fa44d5efcc3d0a49147f348a6d4",
+    "src/services/catalogueState.ts": "c578c3c274fcb7bc5a2e7cf5e480b1955fc17c0799268c2d2e74eda23b47630d"
+  }
+}

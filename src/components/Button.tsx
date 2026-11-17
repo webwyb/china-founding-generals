@@ -12,7 +12,7 @@ type ButtonProps = PropsWithChildren<{
   'aria-pressed'?: boolean
   'aria-expanded'?: boolean
   'aria-controls'?: string
-  'aria-current'?: 'page'
+  'aria-current'?: 'page' | 'location'
 }>
 
 /** Browser buttons retain native keyboard, focus, and accessibility behavior. */

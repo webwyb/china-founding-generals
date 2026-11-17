@@ -10,13 +10,11 @@ import { people } from '../../data/people'
 import { getProvinceLandscape } from '../../data/landscapes'
 import { getRemembered } from '../../services/collection'
 import { defaultCatalogueState, readCatalogueState, saveCatalogueState, type CatalogueState } from '../../services/catalogueState'
-import { filterPeople, regionFromQuery } from '../../services/catalogue'
+import { applyCatalogueFilters, filterPeople, provinceFacets, regionFromQuery } from '../../services/catalogue'
 import { usePageMetadata } from '../../seo/usePageMetadata'
 
 const ranks = ['全部', '元帅', '大将', '上将', '中将', '少将']
 const provinces = Array.from(new Set(people.map(person => person.province)))
-const counts = new Map(provinces.map(province => [province, people.filter(person => person.province === province).length]))
-provinces.sort((a, b) => counts.get(b)! - counts.get(a)!)
 
 export default function Explore() {
   const { params } = useRouter()
@@ -40,12 +38,18 @@ export default function Explore() {
   const composing = useRef(false)
   const current = useRef(state)
   current.current = state
-  // Avoid synchronous storage writes on each keystroke and retain the last
-  // actual scroll position, including refreshes and browser back navigation.
+  // Keep this visit's return position in memory; never persist filter tabs.
   useEffect(() => {
-    const timer = setTimeout(() => saveCatalogueState({ ...current.current, scrollTop: scrollPosition.current }), 220)
-    return () => clearTimeout(timer)
+    saveCatalogueState({ ...current.current, scrollTop: scrollPosition.current })
   }, [state])
+  useEffect(() => {
+    if (process.env.TARO_ENV !== 'h5' || (!params.province && !params.focus)) return
+    // Home-region links are entry hints, not saved filter state. Consume the
+    // hint so refreshing this catalogue also starts at “全部”.
+    const url = new URL(window.location.href)
+    url.searchParams.delete('province'); url.searchParams.delete('focus')
+    window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash)
+  }, [])
   useEffect(() => {
     if (process.env.TARO_ENV !== 'h5') return
     const page = catalogueRoot.current?.closest<HTMLElement>('.taro_page')
@@ -88,6 +92,7 @@ export default function Explore() {
     firstShow.current = false
   })
   const filtered = useMemo(() => filterPeople(people, state, remembered), [state.rank, state.province, state.search, state.rememberedOnly, remembered])
+  const regions = useMemo(() => provinceFacets(people, state, remembered), [state.rank, state.search, state.rememberedOnly, remembered])
   const visiblePeople = filtered.slice(0, state.visibleCount)
   const hasMore = visiblePeople.length < filtered.length
   useEffect(() => {
@@ -106,12 +111,15 @@ export default function Explore() {
     focusNewBatch.current = null
     firstNew?.focus({ preventScroll: true })
   }, [state.visibleCount])
-  const visibleProvinces = provinceExpanded ? provinces : [...new Set([...provinces.slice(0, 6), ...(state.province !== '全部' ? [state.province] : [])])]
+  const regionOptions = state.province !== '全部' && !regions.some(item => item.province === state.province)
+    ? [...regions, { province: state.province, count: 0 }] : regions
+  const collapsedProvinces = regionOptions.filter((item, index) => index < 6 || item.province === state.province)
+  const visibleProvinces = provinceExpanded ? regionOptions : collapsedProvinces
   const landscape = getProvinceLandscape(state.province)
   function change(value: Partial<CatalogueState>) {
     scrollPosition.current = 0
     if (value.search !== undefined) setSearchDraft(value.search)
-    setState(previous => ({ ...previous, ...value, visibleCount: 24, scrollTop: 0 }))
+    setState(previous => applyCatalogueFilters(people, previous, value, remembered))
   }
   function reset() { scrollPosition.current = 0; setSearchDraft(''); setState({ ...defaultCatalogueState }) }
   function capturePosition() {
@@ -128,10 +136,10 @@ export default function Explore() {
       <View className='search-bar' id='catalogue-search'><Icon name='search' />{process.env.TARO_ENV === 'h5' ? <input ref={searchInput} type='search' className='search-input' value={searchDraft} onChange={event => { setSearchDraft(event.target.value); if (!composing.current) change({ search: event.target.value }) }} onCompositionStart={() => { composing.current = true }} onCompositionEnd={event => { composing.current = false; change({ search: event.currentTarget.value }) }} onKeyDown={event => { if (event.key === 'Enter' && !event.nativeEvent.isComposing) event.currentTarget.blur() }} placeholder='搜索姓名、家乡或关键词' maxLength={100} enterKeyHint='search' autoComplete='off' aria-label='搜索姓名、家乡或生平' /> : <Input className='search-input' value={state.search} onInput={event => change({ search: event.detail.value })} placeholder='搜索姓名、家乡或关键词' maxlength={100} confirmType='search' aria-label='搜索姓名、家乡或生平' />}{searchDraft && <Button className='search-clear' aria-label='清空搜索' onClick={() => { change({ search: '' }); searchInput.current?.focus({ preventScroll: true }) }}><Icon name='close' /></Button>}</View>
       <View className='directory-filters'>
         <View className='filter-row'><Text className='filter-label'>军衔</Text><View className='filter-options'>{ranks.map(item => <Button className={`filter-button ${state.rank === item ? 'selected' : ''}`} key={item} onClick={() => change({ rank: item })} aria-pressed={state.rank === item}>{item}</Button>)}</View></View>
-        <View className='filter-row province-filter' id='province-filter'><Text className='filter-label'>家乡</Text><View className='filter-options' id='region-options'><Button className={`filter-button ${state.province === '全部' ? 'selected' : ''}`} onClick={() => change({ province: '全部' })} aria-pressed={state.province === '全部'}>全部</Button>{visibleProvinces.map(item => <Button className={`filter-button ${state.province === item ? 'selected' : ''}`} key={item} onClick={() => change({ province: item })} aria-pressed={state.province === item}>{item}<Text className='region-filter-count'>{counts.get(item)}</Text></Button>)}<Button className='region-expand-button' aria-expanded={provinceExpanded} aria-controls='region-options' onClick={() => setProvinceExpanded(value => !value)} aria-label={provinceExpanded ? '收起地区列表' : `展开全部${provinces.length}个地区`}>{provinceExpanded ? '收起' : '全部地区'}<Icon name='down' className={provinceExpanded ? 'rotated' : ''} /></Button></View></View>
+        <View className='filter-row province-filter' id='province-filter'><Text className='filter-label'>家乡</Text><View className='filter-options' id='region-options'><Button className={`filter-button ${state.province === '全部' ? 'selected' : ''}`} onClick={() => change({ province: '全部' })} aria-pressed={state.province === '全部'}>全部</Button>{visibleProvinces.map(({province, count}) => <Button className={`filter-button ${state.province === province ? 'selected' : ''}`} key={province} onClick={() => change({ province })} aria-pressed={state.province === province}>{province}<Text className='region-filter-count'>{count}</Text></Button>)}{regionOptions.length > collapsedProvinces.length && <Button className='region-expand-button' aria-expanded={provinceExpanded} aria-controls='region-options' onClick={() => setProvinceExpanded(value => !value)} aria-label={provinceExpanded ? '收起地区列表' : `展开全部${regionOptions.length}个地区`}>{provinceExpanded ? '收起' : '全部地区'}<Icon name='down' className={provinceExpanded ? 'rotated' : ''} /></Button>}</View></View>
       </View>
       {landscape && <View className='directory-landscape'><Landscape landscape={landscape} /><View><Text className='directory-landscape-province serif'>{landscape.province}</Text><Text>{landscape.landmark} · 家乡山河意象</Text></View></View>}
-      <View className='results-heading'><p aria-live='polite'>{state.rememberedOnly ? '我的铭记' : state.province === '全部' ? '将帅名录' : `${state.province}的名字`}<span className='results-count'>共 {filtered.length.toLocaleString()} 位</span></p>{hasFilters && <Button className='clear-filters text-link' onClick={() => change({ rank: '全部', province: '全部', search: '' })}>清除筛选<Icon name='close' /></Button>}</View>
+      <View className='results-heading'><p aria-live='polite'>{state.rememberedOnly ? '我的铭记' : state.province === '全部' ? state.rank === '全部' ? '将帅名录' : `${state.rank}名录` : `${state.province}的${state.rank === '全部' ? '名字' : state.rank}`}<span className='results-count'>共 {filtered.length.toLocaleString()} 位</span></p>{hasFilters && <Button className='clear-filters text-link' onClick={() => change({ rank: '全部', province: '全部', search: '' })}>清除筛选<Icon name='close' /></Button>}</View>
       {filtered.length ? <>
         <View className='directory-grid'>{visiblePeople.map((person, index) => <PersonTile key={person.id} person={person} index={index} onNavigate={capturePosition} />)}</View>
         <div className='load-more-section' ref={loadTrigger}><p className='scope-note' role='status' aria-live='polite'>已呈现 {visiblePeople.length.toLocaleString()} / {filtered.length.toLocaleString()} 位{!hasMore && '，已浏览全部结果'}</p>{hasMore && <Button className='outline-button load-more-button' onClick={() => { focusNewBatch.current = visiblePeople.length; setState(previous => ({ ...previous, visibleCount: Math.min(previous.visibleCount + 24, filtered.length) })) }}>再认识 {Math.min(24, filtered.length - state.visibleCount)} 位<Icon name='down' /></Button>}<Button className='text-link return-filters' onClick={() => { if (process.env.TARO_ENV !== 'h5') { void Taro.pageScrollTo({ scrollTop: 0 }); return }; document.getElementById('catalogue-search')?.scrollIntoView({ block: 'start', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); searchInput.current?.focus({ preventScroll: true }) }}>返回搜索与筛选<Icon name='back' /></Button></div>
