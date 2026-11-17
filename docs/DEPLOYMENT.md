@@ -18,6 +18,8 @@
 
 素材失败时只重跑 **Sync COS assets** 的失败 job；素材就绪后可单独重跑原网页运行的 **deploy**，无需重做三系统检查。构建制品固定 SHA、运行 ID 和代码／素材清单摘要；部署时先验证摘要，再用当前 `GITHUB_RUN_ATTEMPT` 写入 `version.json`，接收器参数与公网校验使用同一编号。若7天制品已过期，改为 **Run workflow → main** 完整重建。普通应用更新无需登录服务器或更换证书；`version.json` 的 SHA 可能落后于仅增加文档的 main，表示实际发布的应用提交。
 
+流程拆分、制品测量、重试回归及远程验收见 [本轮记录](reviews/deployment-pipeline-2026-11-17/REVIEW.md)。
+
 ## COS 素材
 
 复用北京地域 `media-1301987491`，网站素材范围为 `shanhe/assets/`。肖像、景观、字体、图标都使用 `https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/<sha256>/<文件名>`，同一内容地址保持不变，更新资源产生新地址。部署只列举该前缀，并上传尚不存在的对象，保留旧资源供旧页面与回滚使用。该目录的存储与流量使用现有 COS 计费及资源包规则。
@@ -26,7 +28,7 @@ CAM 专用身份关联 `ShanheAssetsPublish`，策略原稿为 `scripts/deploy/c
 
 独立素材工作流上传使用300秒请求超时、最多4个文件并发，保留 SDK 网络重试。可回退文件流传递已校验的原图字节，让 HTTP 按块读取请求体；仍使用单次 PutObject、MD5与原有目录权限，接口见 [官方 SDK](https://cloud.tencent.com/document/product/436/12269)。日志保留具体文件、大小和原始错误；网络错误排除后只重跑素材 job，已上传内容按哈希复用。本轮拆分不宣称解决所有 GitHub 到 COS 的大文件网络问题。
 
-首次大量素材上传持续出现 COS `UserNetworkTooSlow` 时，可一次性初始化缺失对象：检出对应网页运行的同一源码提交，执行 `npm ci`，设置公开的 `SHANHE_ASSET_BASE_URL`，执行 `npm run build:h5` 和 `node scripts/deploy/prepare-assets.mjs`。新 `h5-production` 已不含素材，不能从中恢复原图。从本地 `dist/h5/static/` 按清单 `key` 组织 `assets/<sha256>/<文件名>`，通过 COS 控制台上传到 `media-1301987491/shanhe/`。最终对象键须为 `shanhe/assets/<sha256>/<文件名>`；保持标准存储、继承桶权限，设置 `Cache-Control: public,max-age=31536000,immutable`，Content-Type 保留原类型。补齐后核对对象长度、SHA-256、缓存及 HTTPS CORS，再重跑网页 deploy。原始文件及内容地址保持一致。140项存量初始化见 [历史记录](reviews/domain-https-2026-11-17/REVIEW.md#后续素材初始化与上传排障)。
+首次大量素材上传持续出现 COS `UserNetworkTooSlow` 时，可一次性初始化缺失对象：检出对应网页运行的同一源码提交，执行 `npm ci`，设置公开的 `SHANHE_ASSET_BASE_URL`，执行 `npm run build:h5` 和 `node scripts/deploy/prepare-assets.mjs`。新 `h5-production` 已不含素材，不能从中恢复原图。从本地 `dist/h5/static/` 按清单 `key` 组织 `assets/<sha256>/<文件名>`，通过 COS 控制台上传到 `media-1301987491/shanhe/`。最终对象键须为 `shanhe/assets/<sha256>/<文件名>`；保持标准存储、继承桶权限，设置 `Cache-Control: public,max-age=31536000,immutable`，Content-Type 保留原类型。补齐后核对对象长度、SHA-256、缓存及 HTTPS CORS，先重跑素材工作流生成匹配的就绪标记，再单独重跑网页 deploy。原始文件及内容地址保持一致。140项存量初始化见 [历史记录](reviews/domain-https-2026-11-17/REVIEW.md#后续素材初始化与上传排障)。
 
 本地普通 `npm run build` 仍生成完整自包含资源。仅生产工作流设置 `SHANHE_ASSET_BASE_URL`，构建时生成公开素材地址表，`prepare-assets.mjs` 再处理 Vite 输出的图片、字体和图标引用；原始文件继续随 Git 保留。代码包通过 tar 排除 `static/*`，首版独立快照的包体约477 KiB，COS 素材约218.9 MiB。
 
