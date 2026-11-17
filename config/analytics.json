@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "provider": "tencent-rum",
+  "applicationId": 160162,
+  "reportId": "8lvjRHo7adEqGeEVd5",
+  "hostUrl": "https://rumt-zh.com",
+  "sdkVersion": "1.41.17"
+}

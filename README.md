@@ -148,4 +148,6 @@ src/app.scss            共用视觉与响应式样式
 
 线上入口：[山河有名](https://shanhe.binnwu.top)。应用推送 `main` 后，GitHub Actions 完成三系统检查并发布网页代码小包；肖像、景观、字体由独立素材工作流增量同步到腾讯云 COS。网页发布只读确认素材就绪，可独立重试；纯文档修改跳过构建部署。权限边界、版本与回滚见 [部署说明](docs/DEPLOYMENT.md)，实际验收范围见 [QA.md](QA.md)。
 
+访问统计使用腾讯云RUM，页面访问不抽样，基础性能采样10%，仅正式HTTPS域名启用。统计口径、费用、隐私说明和停用方法见 [访问统计维护](docs/ANALYTICS.md)。
+
 `shanhe.binnwu.top` 由 DNSPod 的 A 记录指向 `49.233.60.125`，域名 HTTP 请求自动跳转 HTTPS。免费证书由 Let's Encrypt 签发，服务器 `certbot.timer` 自动续期，成功后通过部署钩子检查并重载 Nginx；日常推送无需手工上传证书。续期检查、迁移恢复和排障命令见 [域名与免费 HTTPS](docs/DEPLOYMENT.md#域名与免费-https)，接入时的实测记录见 [域名验收](docs/reviews/domain-https-2026-11-17/REVIEW.md)。

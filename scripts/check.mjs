@@ -9,7 +9,7 @@ const lock=JSON.parse(readFileSync(new URL('../package-lock.json',import.meta.ur
 for(const [name,item] of Object.entries(lock.packages)) {
   if(item.resolved && new URL(item.resolved).origin!=='https://registry.npmjs.org') throw Error(`依赖安装源必须是公共npm官方地址：${name}`)
 }
-for(const task of ['typecheck','data:verify','validate:data','validate:functions','validate:design','test:catalog','test:biographies','validate:portraits','validate:cards','build']){
+for(const task of ['typecheck','data:verify','validate:data','validate:functions','validate:design','test:catalog','test:biographies','test:analytics','validate:portraits','validate:cards','build']){
   console.log(`\n检查 ${task}`)
   const result=spawnSync(process.execPath,[npm,'run',task],{cwd:root,stdio:'inherit'})
   if(result.status!==0)process.exit(result.status ?? 1)

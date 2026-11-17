@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "sdk": "1.41.17",
+  "pvRequests": 3,
+  "pages": [
+    "https://shanhe.binnwu.top/",
+    "https://shanhe.binnwu.top/people/zhude/",
+    "https://shanhe.binnwu.top/"
+  ],
+  "checks": [
+    {
+      "name": "首屏只发送一次PV",
+      "passed": true
+    },
+    {
+      "name": "查询和段落锚点不增加PV",
+      "passed": true
+    },
+    {
+      "name": "人物页面切换增加一次PV",
+      "passed": true
+    },
+    {
+      "name": "浏览器返回增加一次PV",
+      "passed": true
+    },
+    {
+      "name": "各次PV使用同一非空AID",
+      "passed": true
+    },
+    {
+      "name": "真实SDK线上格式中没有查询词、锚点或UIN",
+      "passed": true
+    },
+    {
+      "name": "开启不跟踪后不再发送PV",
+      "passed": true
+    }
+  ],
+  "externalReports": 0
+}

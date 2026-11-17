@@ -24,8 +24,8 @@ for(const [page,path,person] of pages){
   const metadata=pageMetadata(page,person)
   let html=template.replace(/<title>[\s\S]*?<\/title>/,'').replace(/<meta\s+name="description"[^>]*>/,'')
   html=html.replace('</head>',head(metadata)+'</head>').replace('<div id="app"></div>',`<div id="prerender">${renderPage(page)}</div><div id="app"></div>`)
-  // These two fully linked reference pages need no application JavaScript.
-  if(page==='directory'||page==='about') html=html.replace(/<script(?![^>]*application\/ld\+json)[^>]*>[\s\S]*?<\/script>/g,'').replace(/<link[^>]*rel="modulepreload"[^>]*>/g,'')
+  // Reference pages retain only the privacy-gated analytics entry, without the app runtime.
+  if(page==='directory'||page==='about') html=html.replace(/<script(?![^>]*(?:application\/ld\+json|data-shanhe-analytics))[^>]*>[\s\S]*?<\/script>/g,'').replace(/<link[^>]*rel="modulepreload"[^>]*>/g,'')
   const directory=resolve(output,'.'+path)
   await mkdir(directory,{recursive:true})
   await writeFile(resolve(directory,'index.html'),html)
