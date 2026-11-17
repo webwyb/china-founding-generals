@@ -19,7 +19,7 @@ export default function Button(props: ButtonProps) {
   if (process.env.TARO_ENV === 'h5') {
     return <button
       type='button'
-      className={`${props.className || ''} h5-button`}
+      className={`ui-button ${props.className || ''} h5-button`}
       disabled={props.disabled || props.loading}
       aria-label={props['aria-label']}
       aria-pressed={props['aria-pressed']}
@@ -30,5 +30,5 @@ export default function Button(props: ButtonProps) {
       onClick={event => { void props.onClick?.(event) }}
     >{props.children}</button>
   }
-  return <TaroButton {...props} onClick={event => { void props.onClick?.(event) }} />
+  return <TaroButton {...props} className={`ui-button ${props.className || ''}`} onClick={event => { void props.onClick?.(event) }} />
 }

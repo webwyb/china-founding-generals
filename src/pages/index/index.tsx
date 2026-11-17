@@ -17,7 +17,7 @@ export default function Index() {
     <View className='home-hero container'>
       <View className='hero-copy'>
         <View className='hero-eyebrow'><View className='red-rule' /><Text>共和国开国将帅 · 数字纪念馆</Text></View>
-        <Text className='hero-heading serif'>他们的名字，<Text className='hero-heading-line'>我们记得。</Text></Text>
+        <h1 className='hero-heading serif'>他们的名字，<span className='hero-heading-line'>我们记得。</span></h1>
         <Text className='hero-description'>从一张面孔，走近一段历史。<Text className='block'>致敬开国将帅，铭记一代人的理想与担当。</Text></Text>
         <View className='hero-actions'>
           <Button className='primary-button' onClick={() => openPage('explore')}>走进纪念馆<Icon name='arrow' /></Button>
@@ -56,7 +56,7 @@ export default function Index() {
     </View>
 
     <View className='featured-section container'>
-      <View className='section-heading'><View><Text className='eyebrow'>人物故事</Text><Text className='section-title serif'>一人一页，一生一事</Text></View><Button className='text-link section-more' onClick={() => openPage('explore')}>认识更多名字<Icon name='external' /></Button></View>
+      <View className='section-heading'><View><Text className='eyebrow'>人物故事</Text><Text className='section-title serif'><Text className='title-phrase'>一人一页，</Text><Text className='title-phrase'>一生一事</Text></Text></View><Button className='text-link section-more' onClick={() => openPage('explore')}>认识更多名字<Icon name='external' /></Button></View>
       <View className='featured-grid'>{[people.find(p => p.name === '李贞'), people.find(p => p.name === '朱德'), people.find(p => p.name === '粟裕')].filter(Boolean).map((person, index) => <PersonTile key={person!.id} person={person!} index={index} />)}</View>
     </View>
     <View className='closing-section container'><Text className='closing-title serif'>记住，是致敬的开始。</Text><Text className='closing-copy'>让一个名字被看见，让一段真实的往事被传递。</Text><Button className='primary-button' onClick={() => openPage('explore')}>认识一位将帅<Icon name='external' /></Button></View>

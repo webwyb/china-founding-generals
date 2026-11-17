@@ -59,10 +59,12 @@ export default function CardPage() {
           <Text className='card-preview-caption'>{theme === 'landscape' && region ? `${region.province} · ${region.landmark}山河意象` : '素笺留影，记住这个名字'}<Text>1200 × 1800 PNG</Text></Text>
         </View>
         <View className='card-instructions'>
+          <View className='card-controls'>
           <Text className='eyebrow'>把铭记，传递下去</Text>
           <h1 className='page-title serif'>把这个名字，<span className='block'>留在山河之间。</span></h1>
           <Text className='page-description'>为{person.name}留下一张纪念卡。<Text className='block'>让熟悉的山川，陪伴一个值得记住的名字。</Text></Text>
           {process.env.TARO_ENV === 'h5' && <fieldset className='card-theme-picker'><legend>纪念卡样式</legend><View className='card-theme-options'><Button className={theme === 'landscape' ? 'selected' : ''} aria-pressed={theme === 'landscape'} disabled={!region} onClick={() => setTheme('landscape')}><span className='theme-swatch scenic' />家乡山河{theme === 'landscape' && <Icon name='check' />}</Button><Button className={theme === 'portrait' ? 'selected' : ''} aria-pressed={theme === 'portrait'} onClick={() => setTheme('portrait')}><span className='theme-swatch plain' />素笺肖像{theme === 'portrait' && <Icon name='check' />}</Button></View></fieldset>}
+          </View>
           <Button className='primary-button card-save-button' loading={busy} disabled={process.env.TARO_ENV === 'h5' && !preview} onClick={save}>{busy ? '正在生成纪念卡' : '保存这张纪念卡'}<Icon name='download' /></Button>
           {process.env.TARO_ENV === 'weapp' ? <Button className='outline-button' openType='share'>分享人物故事<Icon name='share' /></Button> : <Button className='outline-button' onClick={copy}>{copied ? '人物链接已复制' : '复制人物故事链接'}<Icon name={copied ? 'check' : 'share'} /></Button>}
           <View className='card-saving-guide'><Text>一份可以带走的纪念</Text><p>手机长按生成的图片保存；电脑点击下载 PNG。人物资料与历史肖像出处保留在人物页。</p><Text className='scope-note'>{!region ? '家乡地域待核实，当前使用素笺肖像。' : '风景为地域文化意象绘制，历史肖像保持原貌。'}{person.portraitMissing ? '本人物历史肖像暂缺，卡片使用已标注的占位图。' : ''}</Text></View>
@@ -70,12 +72,12 @@ export default function CardPage() {
       </View>
       <Canvas className='export-canvas' canvasId='memorial-canvas' id='memorial-canvas' style={{ width: '600px', height: '900px' }} />
       {showImage && preview && <Dialog onClose={() => setShowImage(false)} titleId='export-title' className='export-dialog'>
-        <View className='export-dialog-heading'><Text id='export-title' className='serif'>这个名字，值得被记住。</Text><Button className='export-close' aria-label='关闭纪念卡图片' onClick={() => setShowImage(false)}><Icon name='close' /></Button></View>
+        <View className='export-dialog-heading'><Text id='export-title' className='serif'>保存纪念卡</Text><Button className='export-close' aria-label='关闭纪念卡图片' onClick={() => setShowImage(false)}><Icon name='close' /></Button></View>
         <img className='generated-card-image' src={preview} alt={`${person.name}的纪念卡，可长按保存`} />
         <Text className='export-image-hint'>手机长按图片保存，电脑点击下方下载。<Text className='block'>1200 × 1800 · PNG 图片</Text></Text>
         <a className='primary-button image-download-link' href={preview} download={`山河有名-${person.name}-${theme === 'landscape' ? '家乡山河' : '素笺肖像'}.png`}>下载 PNG 图片<Icon name='download' /></a>
       </Dialog>}
     </View>
-    <View className='card-mobile-actions'><Button className='remember-button' onClick={copy} aria-label='复制人物故事链接'><Icon name='share' />分享故事</Button><Button className='primary-button' disabled={busy || (!preview && !error)} onClick={error ? () => setRetry(value => value + 1) : save}>{error ? '重新生成预览' : busy ? '正在生成' : '保存纪念卡'}<Icon name='download' /></Button></View>
+    <View className='card-mobile-actions'><Button className='remember-button' onClick={copy} aria-label='复制人物故事链接'><Icon name={copied ? 'check' : 'share'} />{copied ? '已复制' : '复制链接'}</Button><Button className='primary-button' loading={busy} disabled={!preview && !error} onClick={error ? () => setRetry(value => value + 1) : save}>{error ? '重新生成预览' : busy ? '正在生成' : '保存纪念卡'}<Icon name='download' /></Button></View>
   </Shell>
 }

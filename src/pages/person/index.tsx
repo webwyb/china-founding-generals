@@ -47,12 +47,12 @@ export default function PersonPage() {
         <View className='person-photo-frame'>
           <Button className='portrait-open' disabled={person.portraitMissing} onClick={() => setShowPortrait(true)} aria-label={`查看${person.name}的完整历史肖像`} aria-expanded={showPortrait} aria-controls='portrait-dialog'>
             <Portrait className='person-main-photo' src={person.portrait} name={person.name} eager onLoad={setPortraitSize} />
+            <View className='photo-frame-caption'><Text>{person.portraitMissing ? '历史肖像待补' : '历史肖像'}</Text>{!person.portraitMissing && <Text className='portrait-view-link'>查看原图<Icon name='search' /></Text>}</View>
           </Button>
-          <View className='photo-frame-caption'><Text>{person.portraitMissing ? '历史肖像待补' : '历史肖像'}</Text>{!person.portraitMissing && <Button className='portrait-view-link' onClick={() => setShowPortrait(true)}>查看原图<Icon name='search' /></Button>}</View>
         </View>
         <View className='person-feature-copy'>
           <Text className='profile-introduction'>记住一个名字，走近一段历史</Text>
-          <View className='person-name-row'><Text className='person-name serif'>{person.name}</Text><Text className='rank-stamp'>{person.rank}</Text></View>
+          <View className={`person-name-row ${person.name.length > 4 ? 'long-name' : ''}`}><h1 className='person-name serif'>{person.name.split('·').map((part, index, parts) => <span key={index}>{part}{index < parts.length - 1 ? '·' : ''}</span>)}</h1><Text className='rank-stamp'>{person.rank}</Text></View>
           <Text className='person-years'>{lifeYears(person)}</Text>
           <View className='person-hometown'><Text className='detail-label'>{person.hometownType || '家乡'}</Text><Text>{person.hometown}</Text>{!person.pendingFields?.includes('province') && <Button className='hometown-jump text-link' onClick={() => openPage('explore', `province=${encodeURIComponent(person.province)}`)} aria-label={`浏览${person.province}籍将帅`}><Icon name='external' /></Button>}</View>
           <Text className='person-tagline serif'>{person.tagline}</Text>
@@ -75,11 +75,11 @@ export default function PersonPage() {
         </View>
         <View className='timeline-column'><Text className='timeline-title serif'>人生足迹</Text><View className='timeline'>{person.timeline.map((item, index) => <View className='timeline-item' key={`${item.year}-${index}`}><View className='timeline-dot' /><Text className='timeline-year'>{item.year}</Text><Text className='timeline-text'>{item.text}</Text></View>)}</View></View>
       </View>
-      <View className='related-section'><View className='section-heading'><View><Text className='eyebrow'>继续认识</Text><Text className='section-title serif'>山河之间，还有这些名字</Text></View></View><View className='featured-grid'>{related.map((item, index) => <PersonTile key={item.id} person={item} index={index} />)}</View></View>
+      <View className='related-section'><View className='section-heading'><View><Text className='eyebrow'>继续认识</Text><Text className='section-title serif'><Text className='title-phrase'>山河之间，</Text><Text className='title-phrase'>还有这些名字</Text></Text></View></View><View className='featured-grid'>{related.map((item, index) => <PersonTile key={item.id} person={item} index={index} />)}</View></View>
     </View>
     <View className='profile-action-bar'><Button className={`remember-button ${remembered ? 'remembered' : ''}`} onClick={remember} aria-pressed={remembered}><Icon name={remembered ? 'check' : 'bookmark'} />{remembered ? '已铭记' : '铭记'}</Button><Button className='primary-button' onClick={makeCard}>制作纪念卡<Icon name='external' /></Button></View>
     {showPortrait && <Dialog className='portrait-dialog' titleId='portrait-dialog-title' onClose={() => setShowPortrait(false)}>
-      <View className='portrait-dialog-heading'><Text id='portrait-dialog-title'>{person.name} · 历史肖像</Text><Button className='export-close' onClick={() => setShowPortrait(false)} aria-label='关闭历史肖像'><Icon name='close' /></Button></View>
+      <View className='portrait-dialog-heading'><View id='portrait-dialog-title'><Text className='portrait-dialog-name'>{person.name}</Text><Text className='portrait-dialog-label'>历史肖像</Text></View><Button className='export-close' onClick={() => setShowPortrait(false)} aria-label='关闭历史肖像'><Icon name='close' /></Button></View>
       <View id='portrait-dialog' className='portrait-original-stage'><Portrait className='portrait-original' src={person.portrait} name={person.name} eager /></View>
       <View className='portrait-original-caption'><Text>完整原图{portraitSize ? ` · ${portraitSize.width} × ${portraitSize.height} 像素` : ''}</Text><Text>保留历史影像原貌，清晰度取决于原始资料。</Text></View>
       <a className='portrait-original-link text-link' href={person.portrait} target='_blank' rel='noreferrer'>打开原图查看细节<Icon name='external' /></a>
