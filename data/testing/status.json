@@ -10,7 +10,15 @@
     "portraitCompositions": 2350,
     "build": "passed"
   },
-  "browserInteraction": "not-run-awaiting-explicit-local-access-authorization",
+  "browserInteraction": "not-run-blocked-by-saved-browser-permission",
+  "browserAuthorization": {
+    "date": "2026-11-17",
+    "userConsent": "granted-for-local-browser-testing",
+    "origin": "http://127.0.0.1:5173",
+    "toolPermission": "denied-by-saved-setting-or-managed-policy",
+    "retryAfterUserReportedUnblocked": "denied-by-the-same-policy",
+    "result": "No page opened; no screenshot or browser interaction tests executed."
+  },
   "realDevices": "not-run",
   "factReview": {
     "complete": false,
