@@ -10,6 +10,14 @@ import sys
 import tarfile
 
 OPS = Path(__file__).resolve().parent
+ARCHIVE_NAME = 'code.tar.xz'
+
+
+def archive_path(release, metadata):
+    name = metadata.get('archive_name', 'code.tar.gz')
+    if name not in {'code.tar.gz', ARCHIVE_NAME}:
+        raise ValueError('Unexpected archive format')
+    return release / name
 
 
 def digest(path):
@@ -33,29 +41,33 @@ def build(root, release, sha, run):
         if not (root / name).exists():
             raise ValueError('Missing checked build entry: ' + name)
     release.mkdir(parents=True, exist_ok=True)
-    with tarfile.open(release / 'code.tar.gz', 'w:gz') as output:
+    with tarfile.open(release / ARCHIVE_NAME, 'w:xz', preset=6) as output:
         for entry in sorted(root.iterdir()):
             if entry.name != 'version.json':
                 output.add(entry, arcname=entry.name, recursive=entry.name != 'static')
     shutil.copyfile('release-assets.json', release / 'release-assets.json')
-    metadata['archive_sha256'] = digest(release / 'code.tar.gz')
+    metadata['archive_name'] = ARCHIVE_NAME
+    metadata['archive_sha256'] = digest(release / ARCHIVE_NAME)
     metadata['assets_sha256'] = digest(release / 'release-assets.json')
     (release / 'build.json').write_text(json.dumps(metadata) + '\n')
     for name in ('publish.sh', 'known_hosts', 'check-assets.py', 'asset_readiness.py', 'package-release.py', 'check-superseded.py'):
         shutil.copyfile(OPS / name, release / name)
-    print(f'Code-only archive: {(release / "code.tar.gz").stat().st_size} bytes; no static file payloads.')
+    print(f'Code-only archive: {(release / ARCHIVE_NAME).stat().st_size} bytes (xz); no static file payloads.')
 
 
 def stamp(release, sha, run, attempt):
     version = identity(sha, run, attempt)
     metadata = json.loads((release / 'build.json').read_text())
+    archive = archive_path(release, metadata)
     if (metadata.get('sha') != sha or metadata.get('run') != run
-            or metadata.get('archive_sha256') != digest(release / 'code.tar.gz')
+            or metadata.get('archive_sha256') != digest(archive)
             or metadata.get('assets_sha256') != digest(release / 'release-assets.json')):
         raise ValueError('Checked artifact identity or digest mismatch')
-    temporary = release / 'stamped.tar.gz'
+    temporary = release / ('stamped-' + archive.name)
     try:
-        with tarfile.open(release / 'code.tar.gz', 'r:gz') as source, tarfile.open(temporary, 'w:gz') as output:
+        mode = 'w:xz' if archive.suffix == '.xz' else 'w:gz'
+        options = {'preset': 6} if mode == 'w:xz' else {}
+        with tarfile.open(archive, 'r:*') as source, tarfile.open(temporary, mode, **options) as output:
             seen = set()
             for member in source:
                 path = PurePosixPath(member.name)
@@ -71,7 +83,7 @@ def stamp(release, sha, run, attempt):
             member.mode = 0o644
             member.size = len(data)
             output.addfile(member, io.BytesIO(data))
-        temporary.replace(release / 'code.tar.gz')
+        temporary.replace(archive)
     finally:
         temporary.unlink(missing_ok=True)
     print(f'Stamped deployment {sha} / {run} / attempt {attempt}.')

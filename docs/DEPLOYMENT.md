@@ -4,9 +4,11 @@
 
 ## 自动发布
 
-应用或发布脚本推送到 `main` 后，`.github/workflows/ci.yml` 在 Ubuntu、macOS、Windows 上执行完整 `npm run check`。Ubuntu 先重写 COS 地址，再生成 `h5-production` artifact（保留7天）：只包含代码包、素材清单、构建标识及发布脚本，不包含图片、字体等静态文件。三系统全部成功后，deploy job 直接下载此小制品，不再检出整个仓库、恢复 npm／COS SDK 或上传素材；读取与完整素材清单匹配的公开就绪标记，确认后才通过受限 SSH 发布网页，最后核对公网 `version.json`。其他分支与 PR 只检查，不部署。
+本节描述本轮待发布的新流程。2026-11-17已在用户明确授权后升级root持有的接收器，旧gzip兼容和5项隔离测试通过，当前应用版本未变；新工作流待推送启用。实际验收与限制见 [部署提速记录](reviews/deployment-performance-2026-11-17/REVIEW.md)。
 
-素材由 `.github/workflows/assets.yml` 的 **Sync COS assets** 独立工作流处理：main 中可能影响输出素材的源码、public、构建配置、依赖或素材脚本变更会触发。源码导入关系变化也可能启用此前未打包的文件，因此包括 `src/**`。它只构建并增量同步 COS，不登录服务器；与网页检查并行，失败可单独重跑。两条流程均支持 Actions 页面 **Run workflow → main**。
+应用或发布脚本推送到 `main` 后，`.github/workflows/ci.yml` 在与生产一致的 Ubuntu 上执行一次完整 `npm run check`，重写 COS 地址并生成 `h5-production` artifact（保留7天）：只包含代码包、素材清单、构建标识及发布脚本，不包含图片、字体等静态文件。deploy job 直接复用此制品，确认素材就绪后通过受限SSH发布并核对公网版本。macOS／Windows完整检查移到手动运行的 **Optional cross-platform checks**，日常发布不再等待两份重复构建。其他分支与PR只检查，不部署；本地 `npm run check` 仍保留全部项目检查。
+
+素材由 `.github/workflows/assets.yml` 的 **Sync COS assets** 独立工作流处理：main 中可能影响输出素材的源码、public、构建配置、依赖或素材脚本变更会触发。它使用 `npm run build:assets` 只生成打包素材，省去重复的统计入口构建、1619页SEO生成和校验；应用CI仍完整执行这些检查。两种构建的1644项素材哈希与长度已经逐项对照一致。该流程只增量同步COS，不登录服务器；失败可单独重跑。
 
 纯文档变更（所有 `*.md`、`docs/**` 及 `data/testing/**` 验收记录）不触发网页检查／发布，也不触发素材同步；混合提交仍按代码变更运行。GitHub 路径过滤规则见 [官方说明](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow#using-filters-to-target-specific-paths-for-pull-request-or-push-events)。若构建期间 main 只增加这些文档，允许已检查的应用提交完成发布；若有更新的应用变更，则跳过旧版本。比较结果达到300个文件或超过250个提交时保守跳过，避免 GitHub 响应截断导致误判。
 
@@ -14,11 +16,17 @@
 
 网页部署并发组为 `shanhe-production`，素材同步并发组为 `shanhe-cos-assets`，均不会中途取消正在运行的任务。日志出现 `Skipping superseded commit` 表示该次网页运行未更新网站，当前实际版本以公网 `version.json` 为准。
 
-日常发布在 [网页工作流](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml) 查看三系统 `check` 和 `deploy`，在 [素材工作流](https://github.com/webwyb/china-founding-generals/actions/workflows/assets.yml) 查看 COS 同步。素材流程通过限定前缀列举核对已有对象长度，新对象校验本地 SHA-256／长度并等待 PUT 成功；全部完成后，写入 `shanhe/assets/_ready/<清单摘要>.json`。摘要来自排序去重后的对象键与长度，约百字节的标记使用相同不可变缓存，不增加现有 COS 权限。网页发布只读取这一个公开标记并核对正文，不逐个访问1600余份素材。未生成匹配标记或持续网络错误时最多等待180秒，在 SSH 之前停止并保留旧站点。该确认依赖素材不可变约定：不要手工覆盖或删除已发布对象及标记。
+日常在 [网页工作流](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml) 查看Ubuntu检查与deploy，在 [素材工作流](https://github.com/webwyb/china-founding-generals/actions/workflows/assets.yml) 查看COS同步。素材流程通过限定前缀列举核对已有对象长度，新对象校验本地SHA-256／长度并等待PUT成功，最后写入约百字节的就绪标记。网页发布只确认这一个标记，不逐个访问1600余份素材；最多等待180秒，未就绪则保留旧站点。该确认依赖素材不可变约定，不手工覆盖或删除已发布对象及标记。
 
-素材失败时只重跑 **Sync COS assets** 的失败 job；素材就绪后可单独重跑原网页运行的 **deploy**，无需重做三系统检查。构建制品固定 SHA、运行 ID 和代码／素材清单摘要；部署时先验证摘要，再用当前 `GITHUB_RUN_ATTEMPT` 写入 `version.json`，接收器参数与公网校验使用同一编号。若7天制品已过期，改为 **Run workflow → main** 完整重建。普通应用更新无需登录服务器或更换证书；`version.json` 的 SHA 可能落后于仅增加文档的 main，表示实际发布的应用提交。
+素材失败时只重跑 **Sync COS assets** 的失败 job；素材就绪后可单独重跑原网页运行的 **deploy**，无需重做检查和构建。构建制品固定 SHA、运行 ID 和代码／素材清单摘要；部署时先验证摘要，再用当前 `GITHUB_RUN_ATTEMPT` 写入 `version.json`，接收器参数与公网校验使用同一编号。若7天制品已过期，改为 **Run workflow → main** 完整重建。普通应用更新无需登录服务器或更换证书；`version.json` 的 SHA 可能落后于仅增加文档的 main，表示实际发布的应用提交。
 
 流程拆分、制品测量、重试回归及远程验收见 [本轮记录](reviews/deployment-pipeline-2026-11-17/REVIEW.md)。
+
+## XZ接收器的一次升级
+
+在已授权的服务器管理通道中，将本次已核对的 `receive.py`、`test_receive.py` 和 `update-receiver.sh` 放在同一目录后，以root执行 `bash update-receiver.sh`。脚本先运行临时目录回归，按旧文件哈希备份，只原子替换 `/usr/local/libexec/shanhe-receive`，保留root:root及755，并确认当前应用版本未改变。不重复运行首次安装脚本，不改公钥、Nginx或证书。
+
+新接收器兼容原gzip和新XZ，生产包名为 `code.tar.xz`。Python标准库即可解压，不需安装xz程序。旧资源使用硬链接复用；收到同名新文件时先断开链接，保证上个版本和回滚内容不被修改。更新成功后才推送本轮发布脚本。旧gzip制品仍可重试；制品摘要、attempt、公网版本和回滚检查继续执行。
 
 ## COS 素材
 
@@ -43,7 +51,7 @@ CAM 专用身份关联 `ShanheAssetsPublish`，策略原稿为 `scripts/deploy/c
 
 ## 运维
 
-查看 Actions 的 `deploy` 日志及 `https://shanhe.binnwu.top/version.json` 定位当前版本。发布失败先检查三系统检查结果、SSH 可达性、Environment 分支与 secret、磁盘空间、`nginx -t`。不关闭主机指纹或 TLS 校验来重试。
+查看 Actions 的 `deploy` 日志及 `https://shanhe.binnwu.top/version.json` 定位当前版本。发布失败先检查Ubuntu检查结果、SSH 可达性、Environment 分支与 secret、磁盘空间、`nginx -t`。不关闭主机指纹或 TLS 校验来重试。
 
 从任意可访问公网的维护机器检查入口与版本：
 

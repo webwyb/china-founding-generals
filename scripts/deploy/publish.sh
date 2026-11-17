@@ -15,18 +15,29 @@ if [[ "$main_sha" != "$GITHUB_SHA" ]]; then
 fi
 python3 "$ops_dir/check-assets.py" --manifest release/release-assets.json --wait-seconds 180
 python3 "$ops_dir/package-release.py" stamp
-test -s release/code.tar.gz
+archive=$(python3 - <<'PY'
+import json
+name = json.load(open('release/build.json')).get('archive_name', 'code.tar.gz')
+if name not in {'code.tar.gz', 'code.tar.xz'}:
+    raise ValueError('Unexpected archive format')
+print('release/' + name)
+PY
+)
+test -s "$archive"
 test -n "$DEPLOY_SSH_KEY"
 chmod 700 "$ssh_dir"
 printf '%s\n' "$DEPLOY_SSH_KEY" > "$ssh_dir/key"
 chmod 600 "$ssh_dir/key"
 unset DEPLOY_SSH_KEY
 cp "$ops_dir/known_hosts" "$ssh_dir/known_hosts"
+transfer_started=$SECONDS
+echo "Sending checked archive ($(wc -c < "$archive") bytes)."
 ssh -i "$ssh_dir/key" -o BatchMode=yes -o IdentitiesOnly=yes \
   -o StrictHostKeyChecking=yes -o UserKnownHostsFile="$ssh_dir/known_hosts" \
   -o ConnectTimeout=20 -o ServerAliveInterval=15 -o ServerAliveCountMax=4 \
   shanhe-deploy@49.233.60.125 \
-  "deploy $GITHUB_SHA $GITHUB_RUN_ID $GITHUB_RUN_ATTEMPT" < release/code.tar.gz
+  "deploy $GITHUB_SHA $GITHUB_RUN_ID $GITHUB_RUN_ATTEMPT" < "$archive"
+echo "Transfer and receiver completed in $((SECONDS - transfer_started))s."
 
 for attempt in {1..6}; do
   if curl --fail --silent --show-error --connect-timeout 10 --max-time 30 \

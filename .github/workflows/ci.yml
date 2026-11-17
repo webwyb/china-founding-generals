@@ -21,11 +21,7 @@ env:
 
 jobs:
   check:
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-24.04, macos-15, windows-2022]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
@@ -44,18 +40,17 @@ jobs:
       - run: npm run setup:python
       - run: npm run check
       - name: Check deployment archive and rollback behavior
-        if: runner.os != 'Windows'
         run: |
           python3 scripts/deploy/test_receive.py
           python3 scripts/deploy/test_assets.py
           python3 scripts/deploy/test_release.py
       - name: Package checked H5 build
-        if: matrix.os == 'ubuntu-24.04' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         run: |
           node scripts/deploy/prepare-assets.mjs
           python3 scripts/deploy/package-release.py build
       - uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
-        if: matrix.os == 'ubuntu-24.04' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           name: h5-production
           path: release/

@@ -1,0 +1,71 @@
+{
+  "status": "receiver-upgraded-release-pending",
+  "baselineRun": 44053264687,
+  "jobs": [
+    {
+      "name": "check (ubuntu-24.04)",
+      "seconds": 127
+    },
+    {
+      "name": "check (macos-15)",
+      "seconds": 252
+    },
+    {
+      "name": "check (windows-2022)",
+      "seconds": 168
+    },
+    {
+      "name": "deploy",
+      "seconds": 699
+    }
+  ],
+  "changes": [
+    "Daily Ubuntu validation once; optional manual macOS/Windows compatibility checks",
+    "Assets-only build omits duplicate analytics/SEO generation and validation",
+    "XZ6 archive; gzip retry compatibility retained",
+    "Hard-linked cached files with unlink-before-write to preserve rollback",
+    "Stage timing logs added"
+  ],
+  "localValidation": {
+    "fullCheck": "passed with production COS base",
+    "deploymentTests": 12,
+    "seoPages": 1614,
+    "runtimeJson": 1615,
+    "xzPackageBytes": 2082280,
+    "assetsEquivalent": 1644
+  },
+  "benchmark": {
+    "rawTarBytes": 69826560,
+    "gzip9": {
+      "bytes": 8939899,
+      "compressionSeconds": 0.585
+    },
+    "xz3": {
+      "bytes": 2446760,
+      "compressionSeconds": 0.746
+    },
+    "xz6": {
+      "bytes": 2079892,
+      "compressionSeconds": 4.289
+    }
+  },
+  "limitations": [
+    "Optimized workflow not yet pushed or remotely timed.",
+    "Console access was initially rejected, then user explicitly authorized the narrow receiver upgrade; no alternate access was used."
+  ],
+  "receiver": {
+    "host": "49.233.60.125",
+    "installedPath": "/usr/local/libexec/shanhe-receive",
+    "sha256": "56f41a02ec42ced714524bea1bcc6acc36eff9eb2e2ed53d2e7a466393d7e5b0",
+    "owner": "root:root",
+    "mode": "755",
+    "isolatedTests": 5,
+    "exitCode": 0,
+    "upgradeTimeUTC8": "2026-11-17 18:00:41–18:00:42",
+    "applicationVersionUnchanged": {
+      "sha": "bcfcf3a95956d6c02df5c16332e96385e8b41e93",
+      "run": "44057318287",
+      "attempt": "1"
+    }
+  }
+}

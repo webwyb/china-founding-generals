@@ -53,7 +53,8 @@ jobs:
         with:
           python-version: '3.11'
       - run: npm ci
-      - run: npm run build:h5
+      # Only emitted assets are needed here; application/SEO checks run once in CI.
+      - run: npm run build:assets
       - run: node scripts/deploy/prepare-assets.mjs
       - name: Upload only missing immutable assets
         env:

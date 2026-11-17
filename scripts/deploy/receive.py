@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Root-owned forced SSH command; accepts only a bounded static H5 archive."""
 import fcntl
+import errno
 import json
 import os
 from pathlib import Path, PurePosixPath
@@ -9,6 +10,7 @@ import shutil
 import sys
 import tarfile
 import tempfile
+import time
 import urllib.request
 
 ROOT = Path('/srv/shanhe')
@@ -18,7 +20,8 @@ HOST = '49.233.60.125'
 
 def extract(stream, target):
     count = total = 0
-    with tarfile.open(fileobj=stream, mode='r|gz') as archive:
+    # Auto-detect compression so previously checked gzip releases remain retryable.
+    with tarfile.open(fileobj=stream, mode='r|*') as archive:
         for member in archive:
             path = PurePosixPath(member.name)
             if path == PurePosixPath('.') and member.isdir():
@@ -52,9 +55,22 @@ def extract(stream, target):
                 destination.mkdir(parents=True, exist_ok=True, mode=0o755)
             else:
                 destination.parent.mkdir(parents=True, exist_ok=True, mode=0o755)
+                # Retained files can be hard links to the previous release.
+                # Break that link before writing, including for mutable filenames.
+                destination.unlink(missing_ok=True)
                 with archive.extractfile(member) as source, destination.open('wb') as output:
                     shutil.copyfileobj(source, output)
                 destination.chmod(0o644)
+    return {'files': count, 'bytes': total}
+
+
+def retain_file(source, target):
+    try:
+        os.link(source, target)
+    except OSError as error:
+        if error.errno not in {errno.EXDEV, errno.EPERM, errno.ENOTSUP}:
+            raise
+        shutil.copy2(source, target)
 
 
 def switch(target):
@@ -72,12 +88,16 @@ def deploy(stream, sha, run, attempt):
         raise ValueError('Less than 2 GiB free; deployment stopped before changing the site')
     with tempfile.TemporaryDirectory(prefix='.incoming-', dir=releases) as staging:
         stage = Path(staging)
+        started = time.monotonic()
         # Preserve content-addressed chunks for clients already reading the old page.
         if previous:
             for directory in ('js', 'css', 'static'):
                 if (previous / directory).is_dir():
-                    shutil.copytree(previous / directory, stage / directory)
-        extract(stream, stage)
+                    shutil.copytree(previous / directory, stage / directory, copy_function=retain_file)
+        print(f'Retained existing assets in {time.monotonic() - started:.2f}s', flush=True)
+        started = time.monotonic()
+        received = extract(stream, stage)
+        print(f'Received/extracted {received["files"]} entries, {received["bytes"]} bytes in {time.monotonic() - started:.2f}s', flush=True)
         version = json.loads((stage / 'version.json').read_text())
         if version != {'sha': sha, 'run': run, 'attempt': attempt}:
             raise ValueError('Build identity mismatch')

@@ -7,6 +7,7 @@
     "dev:h5": "taro build --type h5 --watch",
     "dev:weapp": "taro build --type weapp --watch",
     "build:h5": "taro build --type h5 && node scripts/build_analytics.mjs && node scripts/build_seo.mjs && node scripts/validate_seo.mjs",
+    "build:assets": "taro build --type h5",
     "build:weapp": "taro build --type weapp",
     "build": "npm run build:h5",
     "preview": "node scripts/python.mjs -m http.server 5173 --bind 127.0.0.1 --directory dist/h5",

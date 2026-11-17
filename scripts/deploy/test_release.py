@@ -43,7 +43,7 @@ class ReleaseTests(unittest.TestCase):
                 package.build(root, work / 'release', 'a' * 40, '123')
             finally:
                 os.chdir(previous)
-            checked = (work / 'release/code.tar.gz').read_bytes()
+            checked = (work / 'release/code.tar.xz').read_bytes()
             commands = work / 'bin'
             commands.mkdir()
             fakes = {
@@ -54,7 +54,7 @@ else:
     print('b'*40)
 """,
                 'ssh': """import io, json, os, sys, tarfile
-with tarfile.open(fileobj=io.BytesIO(sys.stdin.buffer.read()), mode='r:gz') as archive:
+with tarfile.open(fileobj=io.BytesIO(sys.stdin.buffer.read()), mode='r:*') as archive:
     version=json.load(archive.extractfile('version.json'))
 assert sys.argv[-1] == 'deploy ' + version['sha'] + ' ' + version['run'] + ' ' + version['attempt']
 assert version['attempt'] == os.environ['GITHUB_RUN_ATTEMPT']
@@ -72,7 +72,7 @@ open('published.json','w').write(json.dumps(version))
                    'CHANGED_FILE': 'docs/DEPLOYMENT.md'}
             # No repository scripts, node_modules, SDK or media exist in the downloaded bundle.
             for attempt in ('1', '2'):
-                (work / 'release/code.tar.gz').write_bytes(checked)
+                (work / 'release/code.tar.xz').write_bytes(checked)
                 result = subprocess.run(['bash', 'release/publish.sh'], cwd=work,
                                         env={**env, 'GITHUB_RUN_ATTEMPT': attempt},
                                         check=True, capture_output=True, text=True)
@@ -101,7 +101,7 @@ open('published.json','w').write(json.dumps(version))
             try:
                 os.chdir(work)
                 package.build(root, work / 'release', 'a' * 40, '123')
-                archive = work / 'release/code.tar.gz'
+                archive = work / 'release/code.tar.xz'
                 checked = archive.read_bytes()
                 self.assertLess(len(checked), 4096)
                 with tarfile.open(archive) as tar:
@@ -165,6 +165,21 @@ open('published.json','w').write(json.dumps(version))
             with self.assertRaises(ValueError):
                 readiness.wait_for_assets([{**asset, 'url': 'https://other.example/file'}], 0)
             request.assert_not_called()
+
+    def test_legacy_checked_gzip_artifacts_remain_retryable(self):
+        with tempfile.TemporaryDirectory() as folder:
+            release = Path(folder)
+            archive = release / 'code.tar.gz'
+            with tarfile.open(archive, 'w:gz') as tar:
+                item = tarfile.TarInfo('index.html')
+                item.size = 4
+                tar.addfile(item, io.BytesIO(b'home'))
+            (release / 'release-assets.json').write_text('[]')
+            (release / 'build.json').write_text(json.dumps({'sha': 'a' * 40, 'run': '123',
+                'archive_sha256': package.digest(archive), 'assets_sha256': package.digest(release / 'release-assets.json')}))
+            package.stamp(release, 'a' * 40, '123', '2')
+            with tarfile.open(archive) as tar:
+                self.assertEqual(json.load(tar.extractfile('version.json'))['attempt'], '2')
 
     def test_docs_after_build_do_not_suppress_application_deployment(self):
         compare = {'status': 'ahead', 'total_commits': 1,

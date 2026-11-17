@@ -49,8 +49,8 @@ with tempfile.TemporaryDirectory(prefix='shanhe-seo-release-') as folder:
         assert not entity.get('image') or entity['image'].split('?')[0] in asset_urls
         assert origin + 'https:' not in html
     assert photos == 1609
-    archive = work / 'code.tar.gz'
-    with tarfile.open(archive, 'w:gz') as output:
+    archive = work / 'code.tar.xz'
+    with tarfile.open(archive, 'w:xz', preset=6) as output:
         for entry in build.iterdir():
             output.add(entry, arcname=entry.name, recursive=entry.name != 'static')
     extracted = work / 'accepted'
@@ -64,7 +64,7 @@ with tempfile.TemporaryDirectory(prefix='shanhe-seo-release-') as folder:
     for resource in runtime.glob('*.json'):
         assert (extracted / resource.relative_to(build)).read_bytes() == resource.read_bytes()
     report = {'status': 'passed', 'profileHtmlAccepted': len(people), 'socialImagesOnCos': photos,
-              'archiveBytes': archive.stat().st_size, 'assets': len(assets), 'runtimeJsonAccepted': 1615,
+              'archiveBytes': archive.stat().st_size, 'archiveFormat': 'xz', 'assets': len(assets), 'runtimeJsonAccepted': 1615,
               'method': 'Production-style URL rewrite and code archive in temporary copied build; extracted by repository receive.py. No cloud upload, server mutation, installed-receiver update or production deployment.'}
 (ROOT / 'data/testing/seo-release-2026-11-17.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print(f'离线部署包通过：{len(people)}份人物HTML、{photos}个COS分享图地址，代码包{report["archiveBytes"]}字节。')
