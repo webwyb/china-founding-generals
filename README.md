@@ -139,4 +139,4 @@ src/app.scss            共用视觉与响应式样式
 
 ## 自动发布
 
-线上入口：[山河有名](http://49.233.60.125)。推送 `main` 后，GitHub Actions 完成三系统检查，增量同步肖像、景观、字体等素材到腾讯云 COS，再自动部署网页代码到腾讯云轻量服务器。权限边界、版本与回滚见 [部署说明](docs/DEPLOYMENT.md)，实际验收范围见 [QA.md](QA.md)。
+线上入口：[山河有名](https://shanhe.binnwu.top)。推送 `main` 后，GitHub Actions 完成三系统检查，增量同步肖像、景观、字体等素材到腾讯云 COS，再自动部署网页代码到腾讯云轻量服务器。权限边界、版本与回滚见 [部署说明](docs/DEPLOYMENT.md)，实际验收范围见 [QA.md](QA.md)。

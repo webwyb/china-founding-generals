@@ -1,6 +1,6 @@
 # GitHub Actions 与腾讯云发布
 
-目标实例：腾讯云轻量服务器 `lhins-afrwanuu`（北京），Ubuntu 24.04，公网 `49.233.60.125`。当前按用户选择使用 `http://49.233.60.125`；域名及 HTTPS 另行接入。
+目标实例：腾讯云轻量服务器 `lhins-afrwanuu`（北京），Ubuntu 24.04，公网 `49.233.60.125`。正式入口为 [https://shanhe.binnwu.top](https://shanhe.binnwu.top)。域名 HTTP 请求自动跳转 HTTPS；原 IP 入口保留供已有链接及发布接收器的本机健康检查使用。
 
 ## 自动发布
 
@@ -14,13 +14,13 @@
 
 复用北京地域 `media-1301987491`，网站素材范围为 `shanhe/assets/`。肖像、景观、字体、图标都使用 `https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/<sha256>/<文件名>`，同一内容地址保持不变，更新资源产生新地址。部署只列举该前缀，并上传尚不存在的对象，保留旧资源供旧页面与回滚使用。该目录的存储与流量使用现有 COS 计费及资源包规则。
 
-CAM 专用身份关联 `ShanheAssetsPublish`，策略原稿为 `scripts/deploy/cos-policy.json`：只有该目录的 `PutObject` 和限定 prefix 的 `GetBucket`。存储桶原有公共读取模式沿用；CORS 增加 `http://49.233.60.125` 的 GET/HEAD，支持跨域字体与 Canvas 图片导出。
+CAM 专用身份关联 `ShanheAssetsPublish`，策略原稿为 `scripts/deploy/cos-policy.json`：只有该目录的 `PutObject` 和限定 prefix 的 `GetBucket`。存储桶原有公共读取模式沿用；CORS 允许 `https://shanhe.binnwu.top` 与原 `http://49.233.60.125` 的 GET/HEAD，支持跨域字体与 Canvas 图片导出。
 
 本地普通 `npm run build` 仍生成完整自包含资源。仅生产工作流设置 `SHANHE_ASSET_BASE_URL`，构建时生成公开素材地址表，`prepare-assets.mjs` 再处理 Vite 输出的图片、字体和图标引用；原始文件继续随 Git 保留。代码包通过 tar 排除 `static/*`，首版独立快照的包体约477 KiB，COS 素材约218.9 MiB。
 
 ## 服务器边界
 
-- Nginx 站点：`/etc/nginx/sites-available/shanhe`，只匹配 IP 的 Host，独立访问日志沿用 Nginx 全局设置；其他应用与默认拒绝规则保留。
+- Nginx 站点：`/etc/nginx/sites-available/shanhe`，匹配原 IP 的 Host；域名站点为 `/etc/nginx/sites-available/shanhe-domain`。两者使用同一发布目录，独立访问日志沿用 Nginx 全局设置；其他应用与默认拒绝规则保留。
 - 网站目录：`/srv/shanhe/releases/<sha>-<run>-<attempt>`，`/srv/shanhe/current` 原子链接当前发布。
 - 发布用户：`shanhe-deploy`，没有 sudo 权限。SSH 公钥由 root 管理，使用 `restrict,command="/usr/local/libexec/shanhe-receive"` 强制接收器，不能执行交互 shell、SFTP、端口转发或任意远程命令。
 - 接收器源文件：`scripts/deploy/receive.py`，服务器安装位置由 root 持有。只接受静态构建目录、普通文件和目录，拒绝越界路径、链接、特殊文件与超限包；不执行包内程序。
@@ -29,7 +29,7 @@ CAM 专用身份关联 `ShanheAssetsPublish`，策略原稿为 `scripts/deploy/c
 
 ## 运维
 
-查看 Actions 的 `deploy` 日志及 `http://49.233.60.125/version.json` 定位当前版本。发布失败先检查三系统检查结果、SSH 可达性、Environment 分支与 secret、磁盘空间、`nginx -t`。不关闭主机指纹或 TLS 校验来重试。
+查看 Actions 的 `deploy` 日志及 `https://shanhe.binnwu.top/version.json` 定位当前版本。发布失败先检查三系统检查结果、SSH 可达性、Environment 分支与 secret、磁盘空间、`nginx -t`。不关闭主机指纹或 TLS 校验来重试。
 
 需要回滚时，在服务器控制台确认目标目录确实来自 `releases/`，以 root 执行：
 
@@ -42,6 +42,28 @@ curl -fsS -H 'Host: 49.233.60.125' http://127.0.0.1/version.json
 需要撤销自动部署时，删除 `production` 环境中的 `DEPLOY_SSH_KEY` 并移除服务器 `/home/shanhe-deploy/.ssh/authorized_keys` 中对应公钥。重新配置时生成新的专用密钥，不复用管理员私钥。不要把私钥、云 API 凭据或服务器应用配置提交仓库。
 
 修改 Nginx 或接收器源文件后，需要通过已授权的服务器管理通道单独更新 root 持有的副本，普通推送仅更新网页。
+
+## 域名与免费 HTTPS
+
+- DNSPod 的 `binnwu.top` 域名新增 `shanhe` 的 A 记录，值 `49.233.60.125`，默认线路、TTL 600；未配置 AAAA。
+- Nginx 域名站点源文件为 `scripts/deploy/nginx-domain.conf`，只处理 `shanhe.binnwu.top`。80端口保留 `/.well-known/acme-challenge/` 验证目录，其余请求以308跳转同路径的 HTTPS。
+- 免费证书通过 Ubuntu 软件源的 Certbot 与 Let's Encrypt HTTP-01 签发；私钥仅保留在服务器 `/etc/letsencrypt/`，不保存到 GitHub 或 COS。2026-11-17签发的首张证书到期日为2027-02-15；以后以实际自动续期结果为准。
+- `certbot.timer` 定时检查续期。`scripts/deploy/certbot-reload.sh` 安装为 root 持有的 `/etc/letsencrypt/renewal-hooks/deploy/shanhe-nginx`（755），只有本域名成功续期后，先检查 Nginx 配置，再重载证书。
+- GitHub production 的入口与发布后的公网版本校验均使用 HTTPS 域名，继续严格验证 TLS；SSH连接仍使用固定服务器 IP 和已核对的主机公钥。
+
+重新安装时，先保留现有IP站点并建立本域名的80端口虚拟主机，将 `/.well-known/acme-challenge/` 指向 `/var/www/letsencrypt`，确认公网DNS及验证路径可达。安装发行版 `certbot` 后，先审阅并同意签发机构当前订户协议，再申请单域名证书。证书到位后，以 root 安装：
+
+```sh
+install -m 644 scripts/deploy/nginx-domain.conf /etc/nginx/sites-available/shanhe-domain
+ln -sfn /etc/nginx/sites-available/shanhe-domain /etc/nginx/sites-enabled/shanhe-domain
+install -m 755 scripts/deploy/certbot-reload.sh /etc/letsencrypt/renewal-hooks/deploy/shanhe-nginx
+nginx -t
+systemctl reload nginx
+systemctl enable --now certbot.timer
+certbot renew --cert-name shanhe.binnwu.top --dry-run --run-deploy-hooks --no-random-sleep-on-renew
+```
+
+续期失败时查看 `journalctl -u certbot.service` 与 `/var/log/letsencrypt/letsencrypt.log`，检查DNS、80端口、验证目录及443端口。不要删除HTTP验证目录、替换为自签名证书或关闭校验。应用推送不会覆盖证书和Nginx配置。
 
 ## 验证范围
 

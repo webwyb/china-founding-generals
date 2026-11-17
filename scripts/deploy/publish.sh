@@ -24,7 +24,7 @@ ssh -i "$ssh_dir/key" -o BatchMode=yes -o IdentitiesOnly=yes \
 
 for attempt in {1..6}; do
   if curl --fail --silent --show-error --connect-timeout 10 --max-time 30 \
-      "http://49.233.60.125/version.json?run=$GITHUB_RUN_ID" > "$ssh_dir/version.json" \
+      "https://shanhe.binnwu.top/version.json?run=$GITHUB_RUN_ID" > "$ssh_dir/version.json" \
       && python3 - "$ssh_dir/version.json" <<'PY'
 import json, os, sys
 version = json.load(open(sys.argv[1]))
@@ -33,8 +33,8 @@ assert version['run'] == os.environ['GITHUB_RUN_ID'], version
 assert version['attempt'] == os.environ['GITHUB_RUN_ATTEMPT'], version
 PY
   then
-    echo "Published http://49.233.60.125 ($GITHUB_SHA)."
-    printf 'Deployed [%s](http://49.233.60.125) from `%s`.\n' '山河有名' "$GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
+    echo "Published https://shanhe.binnwu.top ($GITHUB_SHA)."
+    printf 'Deployed [%s](https://shanhe.binnwu.top) from `%s`.\n' '山河有名' "$GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
     exit 0
   fi
   sleep 5

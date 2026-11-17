@@ -69,7 +69,7 @@ jobs:
     timeout-minutes: 15
     environment:
       name: production
-      url: http://49.233.60.125
+      url: https://shanhe.binnwu.top
     concurrency:
       group: shanhe-production
       cancel-in-progress: false
