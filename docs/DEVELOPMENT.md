@@ -2,7 +2,7 @@
 
 ## 克隆与安装
 
-仓库：`https://github.com/webwyb/china-founding-generals.git`。默认开发成果在 `main`。代码、1172张肖像、29张WebP、29张PNG原稿、网页字体、完整事实快照和校验脚本均随Git保留。仓库包含较多历史图片和设计原稿，首次克隆需要下载约300MB素材；不使用Git LFS。
+仓库：`https://github.com/webwyb/china-founding-generals.git`。默认开发成果在 `main`。代码、1343张肖像、29张WebP、29张PNG原稿、网页字体、完整事实快照和校验脚本均随Git保留。仓库包含较多历史图片和设计原稿，首次克隆需下载数百MB素材；不使用Git LFS。
 
 需要Git、Node22与npm、Python3.10+（推荐3.11）。`.nvmrc` 记录Node主版本。原开发机使用Node22.9.0、npm10.8.3；以 `npm ci` 安装锁定依赖，不要用不同依赖随意覆盖锁文件。
 

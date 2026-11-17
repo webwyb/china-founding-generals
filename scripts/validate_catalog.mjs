@@ -7,6 +7,19 @@ import { fileURLToPath } from 'node:url'
 const root = fileURLToPath(new URL('..', import.meta.url))
 const people = JSON.parse(await readFile(resolve(root, 'src/data/catalog.generated.json'), 'utf8'))
 const portraitManifest = JSON.parse(await readFile(resolve(root, 'data/catalog/portraits.json'), 'utf8'))
+const portraitReview = JSON.parse(await readFile(resolve(root, 'data/catalog/portrait-supplements.json'), 'utf8'))
+const portraitCandidates = JSON.parse(await readFile(resolve(root, 'data/catalog/portrait-candidates.json'), 'utf8')).candidates
+const approvedPortraits = portraitReview.records.filter(record => record.decision === 'approved')
+assert.equal(new Set(approvedPortraits.map(record => record.id)).size, approvedPortraits.length, '肖像审核不可重复录入同一人物')
+assert.equal(portraitReview.addedPortraits, approvedPortraits.length, '补充肖像数量与审核记录不符')
+for (const record of approvedPortraits) {
+  const original = portraitManifest[record.id]
+  assert.ok(original, `${record.id}的审核肖像未录入`)
+  assert.ok(record.identityEvidence && record.review && record.license, `${record.id}缺少肖像身份核对或许可说明`)
+  assert.ok(portraitCandidates.some(candidate => candidate.id === record.id && candidate.source === record.source && candidate.downloadUrl === record.downloadUrl), `${record.id}的审核来源未保存在候选清单`)
+  for (const field of ['source', 'downloadUrl', 'sha256', 'width', 'height', 'license']) assert.equal(original[field], record[field], `${record.id}的肖像与审核记录不一致：${field}`)
+  assert.equal(people.find(person => person.id === record.id)?.name, record.name, `${record.id}的审核姓名不匹配`)
+}
 const disputes = JSON.parse(await readFile(resolve(root, 'data/catalog/source-conflicts.json'), 'utf8'))
 const provenance = JSON.parse(await readFile(resolve(root, 'data/catalog/field-provenance.json'), 'utf8'))
 assert.equal(provenance.length, 1614, '每个人物应保留字段级出处')

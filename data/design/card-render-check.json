@@ -32,20 +32,20 @@
     "file": ".cache/design-review/lizhen-portrait.png"
   },
   {
-    "id": "p0260",
-    "name": "丁莱夫",
+    "id": "p0097",
+    "name": "孔庆德",
     "province": "山东",
     "theme": "landscape",
     "labels": 12,
-    "file": ".cache/design-review/p0260-landscape.png"
+    "file": ".cache/design-review/p0097-landscape.png"
   },
   {
-    "id": "p0260",
-    "name": "丁莱夫",
+    "id": "p0097",
+    "name": "孔庆德",
     "province": "山东",
     "theme": "portrait",
     "labels": 11,
-    "file": ".cache/design-review/p0260-portrait.png"
+    "file": ".cache/design-review/p0097-portrait.png"
   },
   {
     "id": "p0208",
@@ -80,20 +80,20 @@
     "file": ".cache/design-review/p0272-portrait.png"
   },
   {
-    "id": "p0080",
-    "name": "王诤",
-    "province": "江苏",
+    "id": "p0272",
+    "name": "马尔果夫·伊斯哈科夫",
+    "province": "新疆",
     "theme": "landscape",
     "labels": 12,
-    "file": ".cache/design-review/p0080-landscape.png"
+    "file": ".cache/design-review/p0272-landscape.png"
   },
   {
-    "id": "p0080",
-    "name": "王诤",
-    "province": "江苏",
+    "id": "p0272",
+    "name": "马尔果夫·伊斯哈科夫",
+    "province": "新疆",
     "theme": "portrait",
     "labels": 11,
-    "file": ".cache/design-review/p0080-portrait.png"
+    "file": ".cache/design-review/p0272-portrait.png"
   },
   {
     "id": "p0262",

@@ -6,8 +6,9 @@
     "functionality": "passed",
     "filterCombinations": 186,
     "parserRegressions": 9,
+    "portraitSourceRegressions": 3,
     "cardCompositions": 3228,
-    "portraitCompositions": 2350,
+    "portraitCompositions": 2692,
     "build": "passed"
   },
   "browserInteraction": "not-run-blocked-by-saved-browser-permission",

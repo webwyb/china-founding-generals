@@ -1596,24 +1596,6 @@
     ]
   },
   {
-    "id": "p0080",
-    "name": "王诤",
-    "candidates": [
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Wang_Zheng.jpg?utm_source=zh.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-        "source": "https://commons.wikimedia.org/wiki/File:Wang_Zheng.jpg",
-        "priority": 0,
-        "license": "Wikimedia PageImages free image"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wang%20Zheng.jpg?width=500",
-        "source": "https://commons.wikimedia.org/wiki/File:Wang%20Zheng.jpg",
-        "priority": 0,
-        "license": "Wikimedia Commons free content; see file description"
-      }
-    ]
-  },
-  {
     "id": "p0082",
     "name": "王近山",
     "candidates": [
@@ -3428,12 +3410,6 @@
         "source": "https://commons.wikimedia.org/wiki/File:Niefengzhi.jpg",
         "priority": 0,
         "license": "Wikimedia PageImages free image"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nie%20Fengzhi%20group%20photo%20during%20Second%20Sino-Japanese%20War.jpg?width=500",
-        "source": "https://commons.wikimedia.org/wiki/File:Nie%20Fengzhi%20group%20photo%20during%20Second%20Sino-Japanese%20War.jpg",
-        "priority": 0,
-        "license": "Wikimedia Commons free content; see file description"
       }
     ]
   },
@@ -16094,24 +16070,6 @@
         "source": "https://www.krzzjn.com/show-3156-160533.html",
         "priority": 2,
         "license": "来源页未标明开放许可"
-      }
-    ]
-  },
-  {
-    "id": "p0944",
-    "name": "凯墨·索南旺堆",
-    "candidates": [
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/George_Merrell_and_Tibetan_officials.jpeg/500px-George_Merrell_and_Tibetan_officials.jpeg?utm_source=zh.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-        "source": "https://commons.wikimedia.org/wiki/File:George_Merrell_and_Tibetan_officials.jpeg",
-        "priority": 0,
-        "license": "Wikimedia PageImages free image"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Tibet%20Victory%20Congratulations%20mission%20in%20India.jpg?width=500",
-        "source": "https://commons.wikimedia.org/wiki/File:The%20Tibet%20Victory%20Congratulations%20mission%20in%20India.jpg",
-        "priority": 0,
-        "license": "Wikimedia Commons free content; see file description"
       }
     ]
   },

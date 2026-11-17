@@ -15,6 +15,7 @@ from urllib.parse import urlparse
 import requests
 from PIL import Image
 from catalog_sources import ROOT, OUT
+from portrait_sources import portrait_is_rejected, rejected_portrait_sources
 
 DEST=ROOT/'public/portraits'
 DEST.mkdir(parents=True,exist_ok=True)
@@ -33,6 +34,9 @@ def main():
         if (DEST/entry['file']).exists(): manifest[file.stem]=entry
     seen={entry['sha256']:pid for pid,entry in manifest.items()}
     jobs=json.loads((OUT/'image-jobs.json').read_text())
+    rejected=rejected_portrait_sources()
+    for job in jobs:
+        job['candidates']=[candidate for candidate in job['candidates'] if not portrait_is_rejected(job['id'],candidate,rejected)]
     jobs=[job for job in jobs if job['id'] not in manifest or not (DEST/manifest[job['id']]['file']).exists()]
     jobs.sort(key=lambda job:all('wikimedia.org' in candidate['url'] for candidate in job['candidates']))
     errors=[]

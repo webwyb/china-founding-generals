@@ -58,6 +58,29 @@ npm run check
 
 本地原始肖像和来源清单共同入Git。`collect_portraits.py` 只收集已有身份匹配的候选，缺失、重复、无法确认或下载受限时保留占位；文件哈希不同不等于人物身份已核实。
 
+缺图补充采用“发现—暂存—查看原图—审核—录入”的流程，不直接让搜索结果进入人物页：
+
+```sh
+# 可选：联网扫描有明确分页上限的人物栏目，只写研究缓存
+node scripts/python.mjs scripts/discover_portrait_sources.py
+# 整理带ID、全名、来源、图片URL、许可说明、身份依据的候选后下载
+node scripts/python.mjs scripts/supplement_portraits.py stage data/catalog/portrait-candidates.json
+# 生成联系表；仅供人工查看，不修改原图
+node scripts/python.mjs scripts/supplement_portraits.py sheet
+# 逐图核对后才将相应记录设为approved
+node scripts/python.mjs scripts/supplement_portraits.py apply data/catalog/portrait-supplements.json
+npm run data:build
+npm run check
+```
+
+`discover_portrait_sources.py` 只对无重名且军衔对应的全名做候选匹配。少数民族简称、别名和同名人物须人工核对完整正文，不通过缩短姓名或猜测自动对应。它的分页上限按2026-11-17源站核查，后续栏目变化需重新确认；其他渠道可在相同候选结构中手工补充。
+
+候选文件只保存元数据，不提交网页全文；下载原件、联系表与收据在忽略的 `.cache/portrait-supplements/`。下载按真实文件格式保存，保留字节原样；限制尺寸、体积，拒绝不同人物复用同一哈希。网站返回401、403或429后停止该来源本轮下载，不换域名绕过。暂存成功和哈希唯一不等于身份已经核准。
+
+审核文件保留采用和排除项、原图SHA、尺寸、许可说明及人工核对依据。`apply` 仅为缺图人物添加明确批准且与下载收据匹配的原图，不覆盖已有不同肖像。已录入的同一审核文件再次执行只核对现有文件，不依赖旧缓存；正常开发与 `npm run check` 均不联网采图。版本化原图与 `portraits.json` 足以恢复现有展示。
+
+`scripts/portrait_sources.py` 在目录再生成与旧采图入口过滤已经拒绝的文件，例如文件名与说明姓名冲突、多人合影。本轮保留5个排除记录和171个采用记录；3项回归检查防止URL编码或文件名分隔符变化后误用。补图统计及肖像之外字段未变的比较记录在 `data/testing/portrait-supplements.json`。
+
 `upgrade_portraits.py` 分阶段下载和应用较高分辨率来源，需先比较照片内容；只有在审阅记录中标为 `approved` 的候选会应用，历史升级记录保留在 `data/design/portrait-upgrades.json`。原机器的旧照片缓存不属于当前展示输入；已提交的当前照片足以继续开发。
 
 29张景观PNG原稿在 `design/landscapes/`，WebP在 `public/landscapes/`，生成提示词和原稿／发布文件哈希在 `data/design/`。这些是现代地域意象，不能当人物经历的史料。网页素材许可见 `source-notes.md` 和各清单；不要将全部素材统一改称公共领域。

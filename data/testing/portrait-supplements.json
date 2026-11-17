@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-17",
+  "beforePortraits": 1172,
+  "addedPortraits": 171,
+  "afterPortraits": 1343,
+  "remainingPlaceholders": 271,
+  "catalogueFieldsChanged": [
+    "imageSource",
+    "missingFields",
+    "portraitFile",
+    "portraitVersion"
+  ],
+  "historicalFieldsUnchanged": true,
+  "pendingFieldsUnchanged": true,
+  "biographyChanges": [],
+  "method": "Compared every generated person before and after supplement import; only portrait fields and removal of the portrait missing marker were allowed. Inspected 170 selected original portraits in six contact sheets plus the individual original for Saifuddin Azizi. No browser testing was performed.",
+  "sourceReview": "data/catalog/portrait-supplements.json",
+  "candidateImages": 330,
+  "selectedPeople": 171,
+  "lowResolutionPublicPortraits": 52,
+  "addedByRank": {
+    "中将": 163,
+    "少将": 8
+  },
+  "remainingByRank": {
+    "少将": 271
+  },
+  "repeatApplyAddedPortraits": 0,
+  "repeatApplyWithoutDownloadCache": "passed",
+  "newBuiltOriginalsDecoded": 171,
+  "automatedCheck": {
+    "command": "npm run check",
+    "result": "passed",
+    "portraits": 1343,
+    "portraitCompositionsIncludingExtremeRatios": 2692,
+    "cardTextCompositions": 3228,
+    "factualParserRegressions": 9,
+    "portraitSourceRegressions": 3,
+    "h5Build": "passed"
+  }
+}

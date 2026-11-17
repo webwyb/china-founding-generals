@@ -16,6 +16,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 from catalog_sources import CACHE, OUT, ROOT, clean_name
+from portrait_sources import portrait_is_rejected, rejected_portrait_sources
 from opencc import OpenCC
 SIMPLIFY = OpenCC('t2s')
 
@@ -232,6 +233,7 @@ def index_sources(raw):
 
 def build(refresh_evidence=False):
     roster=json.loads((OUT/'roster-crt.json').read_text())
+    rejected_portraits=rejected_portrait_sources()
     curated=load_curated()
     raw=load_source_records(refresh_evidence)
     by_name=index_sources(raw)
@@ -392,6 +394,7 @@ def build(refresh_evidence=False):
         image_candidates.sort(key=lambda image:image['priority'])
         if wd.get('imageUrl') and not re.search(r'flag|emblem|insignia|shoulder|rank|军衔|肩章|国徽|党徽|旗|logo|map|arms',wd.get('imageFile',''),re.I):
             image_candidates.append({'url':wd['imageUrl'],'source':wd['imageSource'],'priority':0,'license':'Wikimedia Commons free content; see file description'})
+        image_candidates=[candidate for candidate in image_candidates if not portrait_is_rejected(person_id,candidate,rejected_portraits)]
         if image_candidates and name not in curated: image_jobs.append({'id':person_id,'name':name,'candidates':image_candidates})
         if missing: unresolved.append({'id':person_id,'name':name,'rank':row['rank'],'grantYear':grant,'missing':missing})
     assert len(result)==1614
