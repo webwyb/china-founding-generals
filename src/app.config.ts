@@ -3,7 +3,9 @@ export default defineAppConfig({
     'pages/index/index',
     'pages/explore/index',
     'pages/person/index',
-    'pages/card/index'
+    'pages/card/index',
+    'pages/directory/index',
+    'pages/about/index'
   ],
   window: {
     navigationStyle: 'custom',

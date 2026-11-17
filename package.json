@@ -6,7 +6,7 @@
   "scripts": {
     "dev:h5": "taro build --type h5 --watch",
     "dev:weapp": "taro build --type weapp --watch",
-    "build:h5": "taro build --type h5",
+    "build:h5": "taro build --type h5 && node scripts/build_seo.mjs && node scripts/validate_seo.mjs",
     "build:weapp": "taro build --type weapp",
     "build": "npm run build:h5",
     "preview": "node scripts/python.mjs -m http.server 5173 --bind 127.0.0.1 --directory dist/h5",
@@ -21,6 +21,9 @@
     "data:build": "node scripts/python.mjs scripts/build_catalog.py",
     "data:verify": "node scripts/verify_catalog.mjs",
     "validate:cards": "node scripts/render_design_cards.mjs",
+    "validate:seo": "node scripts/validate_seo.mjs",
+    "validate:seo:http": "node scripts/python.mjs scripts/test_seo_http.py",
+    "validate:seo:release": "node scripts/python.mjs scripts/deploy/verify-seo-package.py",
     "check": "node scripts/check.mjs"
   },
   "engines": {
@@ -32,6 +35,7 @@
     "@tarojs/runtime": "4.3.2",
     "@tarojs/shared": "4.3.2",
     "@tarojs/taro": "4.3.2",
+    "qrcode-generator": "2.0.4",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
@@ -50,6 +54,7 @@
     "@vitejs/plugin-react": "4.3.4",
     "babel-preset-taro": "4.3.2",
     "esbuild": "0.21.5",
+    "jsqr": "1.4.0",
     "postcss": "^8.4.49",
     "sass": "^1.83.0",
     "typescript": "~5.7.3",

@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-17",
+  "environment": "Codex in-app browser; local built H5; no camera or physical device test",
+  "cases": [
+    {
+      "id": "zhude",
+      "theme": "landscape",
+      "previewEqualsSaved": true,
+      "savedEqualsDownload": true,
+      "width": 1200,
+      "height": 1800,
+      "viewport": {
+        "width": 495,
+        "height": 852
+      }
+    },
+    {
+      "id": "zhude",
+      "theme": "portrait",
+      "previewEqualsSaved": true,
+      "savedEqualsDownload": true,
+      "width": 1200,
+      "height": 1800,
+      "viewport": {
+        "width": 495,
+        "height": 852
+      }
+    },
+    {
+      "id": "xuxiangqian",
+      "theme": "landscape",
+      "previewEqualsSaved": true,
+      "savedEqualsDownload": true,
+      "width": 1200,
+      "height": 1800,
+      "viewportRequested": {
+        "width": 375,
+        "height": 812
+      },
+      "viewportActual": {
+        "width": 405,
+        "height": 852
+      },
+      "horizontalOverflow": false
+    }
+  ],
+  "viewportRestored": true
+}

@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "base": "http://127.0.0.1:5173",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 19203,
+      "sha256": "0526c7b32075c22114380955aa159671da4d215ca6b610936cb9f24f829c5ad9",
+      "userAndCrawlerResponsesEqual": true,
+      "matchesBuiltFile": true
+    },
+    {
+      "path": "/generals/",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 30118,
+      "sha256": "75371636b33caa0129226ab9bb260368e04cbd26b5a8baa3561e2b1b7b60ff83",
+      "userAndCrawlerResponsesEqual": true,
+      "matchesBuiltFile": true
+    },
+    {
+      "path": "/people/",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 223279,
+      "sha256": "cfec8c25fc952b703f2f48d7dd50964cce38eb19d50ab5d2a216fd2a8ac75467",
+      "userAndCrawlerResponsesEqual": true,
+      "matchesBuiltFile": true
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 5501,
+      "sha256": "375f949291e8a7b8acadc91e7b05e0dd3ddbe7a340faec04a818e4d8e4b3ffcb",
+      "userAndCrawlerResponsesEqual": true,
+      "matchesBuiltFile": true
+    },
+    {
+      "path": "/people/suyu/",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 24974,
+      "sha256": "e29b174a531b0fd56feb9969df3917d35a09dc9b4a00dfdd33dd50d43d9a0d63",
+      "userAndCrawlerResponsesEqual": true,
+      "matchesBuiltFile": true
+    },
+    {
+      "path": "/people/p0262/",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 22342,
+      "sha256": "5be1589262ad4e9305b96c31b1fa9a83ada1ec9e998cab2e9aa5bba2a9ac2d2e",
+      "userAndCrawlerResponsesEqual": true,
+      "matchesBuiltFile": true
+    },
+    {
+      "path": "/card/?id=lizhen",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 4018,
+      "sha256": "47af2d4e1470ab466bc7788418455826dd5ef6826ace1d2305c59a7978a03d31",
+      "userAndCrawlerResponsesEqual": true,
+      "matchesBuiltFile": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "bytes": 71,
+      "sha256": "f65f72b52645f67d44f34560a902c4f9d0f150691f5833e9e84004c8a5a4b798",
+      "userAndCrawlerResponsesEqual": true,
+      "matchesBuiltFile": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "contentType": "application/xml",
+      "bytes": 103655,
+      "sha256": "8584b2e2fcc47e9533753b6917009ec6084b656e34afa5d718d84938788138e5",
+      "userAndCrawlerResponsesEqual": true,
+      "matchesBuiltFile": true
+    }
+  ],
+  "unknownProfileStatus": 404,
+  "method": "Raw HTTP against local static preview, no JavaScript or browser. User-agent label comparison is not a real Googlebot crawl. No production request or search-engine submission."
+}

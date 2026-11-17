@@ -1,18 +1,21 @@
-import { useState, type PropsWithChildren } from 'react'
+import { useEffect, useState, type PropsWithChildren } from 'react'
 import { Text, View } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import Button from './Button'
 import { catalogueStats } from '../data/people'
 import Dialog from './Dialog'
 import Icon from './Icon'
+import { pageHref } from '../services/personLinks'
+
+const logicalRoute = (route = '') => route.startsWith('/people/') ? 'pages/person/index' : route.replace(/^\//, '').replace(/^generals\/?$/, 'pages/explore/index').replace(/^card\/?$/, 'pages/card/index')
 
 export function openPage(page: 'index' | 'explore' | 'person' | 'card', query = '') {
-  const url = `/pages/${page}/index${query ? `?${query}` : ''}`
+  const url = process.env.TARO_ENV === 'h5' ? pageHref(page, query) : `/pages/${page}/index${query ? `?${query}` : ''}`
   const pages = Taro.getCurrentPages()
   if (page === 'index' || page === 'explore') return Taro.reLaunch({ url })
   // Replacing a sibling profile, or navigating near the native stack limit,
   // keeps repeated browsing working within WeChat's page-stack constraints.
-  const route = pages[pages.length - 1]?.route || ''
+  const route = logicalRoute(pages[pages.length - 1]?.route)
   if (route === `pages/${page}/index` || pages.length >= 8) return Taro.redirectTo({ url })
   return Taro.navigateTo({ url })
 }
@@ -24,15 +27,15 @@ export function returnTo(page: 'explore' | 'person', query = '') {
   // Embedded H5 browsers may not traverse history for a background page.
   // A card has an exact parent profile URL, so replace it directly.
   if (process.env.TARO_ENV === 'h5' && page === 'person') {
-    return Taro.redirectTo({ url: `/${route}${query ? `?${query}` : ''}` })
+    return Taro.redirectTo({ url: pageHref(page, query) })
   }
   const pages = Taro.getCurrentPages()
-  const normalize = (value?: string) => (value || '').replace(/^\//, '')
+  const normalize = logicalRoute
   if (!query && normalize(pages[pages.length - 1]?.route) === route) return Promise.resolve()
   for (let index = pages.length - 2; index >= 0; index--) {
     if (normalize(pages[index].route) === route) return Taro.navigateBack({ delta: pages.length - 1 - index })
   }
-  return Taro.redirectTo({ url: `/${route}${query ? `?${query}` : ''}` })
+  return Taro.redirectTo({ url: process.env.TARO_ENV === 'h5' ? pageHref(page, query) : `/${route}${query ? `?${query}` : ''}` })
 }
 
 export function openSource(url: string) {
@@ -61,7 +64,8 @@ function About({ close }: { close: () => void }) {
 
 export default function Shell({ children, active = 'index', fixedActions = false }: PropsWithChildren<{ active?: string; fixedActions?: boolean }>) {
   const [about, setAbout] = useState(false)
-  const home = () => Taro.reLaunch({ url: '/pages/index/index' })
+  const home = () => openPage('index')
+  useEffect(() => { if (process.env.TARO_ENV === 'h5') document.getElementById('prerender')?.remove() }, [])
   let statusBarHeight = 24
   if (process.env.TARO_ENV === 'weapp') {
     try { statusBarHeight = Taro.getWindowInfo().statusBarHeight || 24 } catch { /* Keep a safe default on older clients. */ }
@@ -69,14 +73,14 @@ export default function Shell({ children, active = 'index', fixedActions = false
   return <View className={`app-shell platform-${process.env.TARO_ENV}${fixedActions ? ' has-fixed-actions' : ''}`}>
     <View className='site-header' style={process.env.TARO_ENV === 'weapp' ? { paddingTop: `${statusBarHeight}px` } : undefined}>
       <View className='header-inner'>
-        <Button className='brand' onClick={home} aria-label='山河有名首页'>
+        <Button href='/' className='brand' onClick={home} aria-label='山河有名首页'>
           <View className='brand-seal'><Text>山河</Text><Text>有名</Text></View>
           <View className='brand-wordmark'><Text className='brand-title serif'>山河有名</Text><Text className='brand-subtitle'>开国将帅纪念馆</Text></View>
         </Button>
         <View className='header-nav'>
-          <Button className={`nav-item ${active === 'index' ? 'active' : ''}`} aria-current={active === 'index' ? 'page' : undefined} onClick={home}>纪念馆</Button>
-          <Button className={`nav-item ${active === 'explore' ? 'active' : ''}`} aria-current={active === 'explore' ? 'page' : undefined} onClick={() => returnTo('explore')}>将帅名录</Button>
-          <Button className='nav-item nav-about' onClick={() => setAbout(true)}>关于纪念馆</Button>
+          <Button href='/' className={`nav-item ${active === 'index' ? 'active' : ''}`} aria-current={active === 'index' ? 'page' : undefined} onClick={home}>纪念馆</Button>
+          <Button href='/generals/' className={`nav-item ${active === 'explore' ? 'active' : ''}`} aria-current={active === 'explore' ? 'page' : undefined} onClick={() => returnTo('explore')}>将帅名录</Button>
+          <Button href='/about/' className='nav-item nav-about' onClick={() => setAbout(true)}>关于纪念馆</Button>
         </View>
         <Text className='header-date'>铭记来路 · 致敬先辈</Text>
       </View>
@@ -86,7 +90,8 @@ export default function Shell({ children, active = 'index', fixedActions = false
       <View className='footer-inner'>
         <Text className='footer-brand serif'>山河有名</Text>
         <Text className='footer-note'>以史料为依据，让记忆有来处。</Text>
-        <Button className='footer-about text-link' onClick={() => setAbout(true)}>名录说明与资料来源<Icon name='external' /></Button>
+        <a className='text-link footer-index' href='/people/'>全部人物档案</a>
+        <Button href='/about/' className='footer-about text-link' onClick={() => setAbout(true)}>名录说明与资料来源<Icon name='external' /></Button>
       </View>
     </View>
     {about && <About close={() => setAbout(false)} />}

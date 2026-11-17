@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Canvas, Image, Text, View } from '@tarojs/components'
-import Taro, { useDidShow, useShareAppMessage } from '@tarojs/taro'
+import Taro, { useShareAppMessage } from '@tarojs/taro'
 import Button from '../../components/Button'
 import Dialog from '../../components/Dialog'
 import Icon from '../../components/Icon'
@@ -10,6 +10,7 @@ import { getProvinceLandscape } from '../../data/landscapes'
 import { renderMemorialCard, type CardTheme } from '../../services/cardRenderer'
 import { copyPersonLink, saveMemorialCard } from '../../services/share'
 import { usePersonRouteId } from '../../services/usePersonRouteId'
+import { usePageMetadata } from '../../seo/usePageMetadata'
 
 export default function CardPage() {
   const personId = usePersonRouteId('card')
@@ -21,10 +22,9 @@ export default function CardPage() {
   const [retry, setRetry] = useState(0)
   const [showImage, setShowImage] = useState(false)
   const [copied, setCopied] = useState(false)
-  useDidShow(() => { if (process.env.TARO_ENV === 'h5' && person) document.title = `${person.name}的纪念卡｜山河有名` })
+  usePageMetadata('card', person)
   useEffect(() => {
     if (!person || process.env.TARO_ENV !== 'h5') return
-    document.title = `${person.name}的纪念卡｜山河有名`
     let active = true
     setBusy(true); setError(''); setPreview(''); setShowImage(false)
     renderMemorialCard(person, theme).then(image => { if (active) setPreview(image) }).catch(reason => { if (active) setError(reason instanceof Error ? reason.message : '纪念卡未能生成，请重试。') }).finally(() => { if (active) setBusy(false) })
@@ -68,7 +68,7 @@ export default function CardPage() {
           </View>
           <Button className='primary-button card-save-button' loading={busy} disabled={process.env.TARO_ENV === 'h5' && !preview} onClick={save}>{busy ? '正在生成纪念卡' : '保存这张纪念卡'}<Icon name='download' /></Button>
           {process.env.TARO_ENV === 'weapp' ? <Button className='outline-button' openType='share'>分享人物故事<Icon name='share' /></Button> : <Button className='outline-button' onClick={copy}>{copied ? '人物链接已复制' : '复制人物故事链接'}<Icon name={copied ? 'check' : 'share'} /></Button>}
-          <View className='card-saving-guide'><Text>一份可以带走的纪念</Text><p>手机长按生成的图片保存；电脑点击下载 PNG。人物资料与历史肖像出处保留在人物页。</p><Text className='scope-note'>{!region ? '家乡地域待核实，当前使用素笺肖像。' : '风景为地域文化意象绘制，历史肖像保持原貌。'}{person.portraitMissing ? '本人物历史肖像暂缺，卡片使用已标注的占位图。' : ''}</Text></View>
+          <View className='card-saving-guide'><Text>一份可以带走的纪念</Text><p>卡片附有人物档案二维码，分享后可扫码阅读{person.name}的完整生平与史料出处。手机长按图片保存，电脑下载 PNG。</p><Text className='scope-note'>{!region ? '家乡地域待核实，当前使用素笺肖像。' : '风景为地域文化意象绘制，历史肖像保持原貌。'}{person.portraitMissing ? '本人物历史肖像暂缺，卡片使用已标注的占位图。' : ''}</Text></View>
         </View>
       </View>
       <Canvas className='export-canvas' canvasId='memorial-canvas' id='memorial-canvas' style={{ width: '600px', height: '900px' }} />

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "people": 1614,
+  "decodedPeople": 1614,
+  "publicOrigin": "https://shanhe.binnwu.top",
+  "fullPngScans": 18,
+  "compressedJpegScans": 18,
+  "sharedJpeg": {
+    "width": 800,
+    "height": 1200,
+    "quality": 75
+  },
+  "method": "Production Canvas composition rasterized with Skia and decoded by independent jsQR. All 1614 footer codes decoded at 600px card width; selected complete 1200×1800 PNG and compressed 800×1200 JPEG compositions decoded in both themes. No camera, browser or physical-device scan implied."
+}

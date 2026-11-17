@@ -90,12 +90,15 @@ check('来源冲突在列表和导出资料中统一待核实', () => {
     if (field === 'birth' || field === 'death') assert.ok(lifeYears(person).includes(field === 'birth' ? '出生年待核实' : '逝世年待核实'))
   }
 })
-await navigation.openPage('explore', 'province=山东'); assert.deepEqual(calls.pop(), ['reLaunch', { url: '/pages/explore/index?province=山东' }])
+await navigation.openPage('explore', 'province=山东'); assert.deepEqual(calls.pop(), ['reLaunch', { url: '/generals/?province=%E5%B1%B1%E4%B8%9C' }])
 pages = [{ route: 'pages/explore/index' }]; await navigation.openPage('person', 'id=suyu'); assert.equal(calls.pop()[0], 'navigateTo')
 pages.push({ route: 'pages/person/index' }); await navigation.openPage('person', 'id=zhude'); assert.equal(calls.pop()[0], 'redirectTo')
 pages.push({ route: 'pages/card/index' }); await navigation.returnTo('explore'); assert.deepEqual(calls.pop(), ['navigateBack', { delta: 2 }])
 pages = []; await navigation.returnTo('explore'); assert.equal(calls.pop()[0], 'redirectTo')
-await navigation.returnTo('person', 'id=suyu'); assert.deepEqual(calls.pop(), ['redirectTo', { url: '/pages/person/index?id=suyu' }])
+await navigation.returnTo('person', 'id=suyu'); assert.deepEqual(calls.pop(), ['redirectTo', { url: '/people/suyu/' }])
+pages = [{ route: '/generals/' }, { route: '/people/suyu/' }]
+await navigation.openPage('person', 'id=zhude'); assert.deepEqual(calls.pop(), ['redirectTo', { url: '/people/zhude/' }])
+await navigation.returnTo('explore'); assert.deepEqual(calls.pop(), ['navigateBack', { delta: 1 }])
 checks.push('导航、连续浏览与直达页返回逻辑')
 
 let copied = '', removed = false, focused = false, copyResult = true, throwCopy = false
@@ -106,7 +109,7 @@ globalThis.document = {
   createElement: () => ({ value: '', style: {}, setAttribute() {}, select() {}, setSelectionRange() {}, remove() { removed = true } }),
   execCommand: () => { if (throwCopy) throw Error('clipboard disabled'); return copyResult },
 }
-await share.copyPersonLink('suyu'); assert.equal(copied, 'https://example.org/memorial/#/pages/person/index?id=suyu')
+await share.copyPersonLink('suyu'); assert.equal(copied, 'https://example.org/people/suyu/')
 navigator.clipboard.writeText = async () => { throw Error('denied') }
 await share.copyPersonLink('suyu'); assert.ok(removed && focused)
 copyResult = false; await assert.rejects(share.copyPersonLink('suyu'), /地址栏/)

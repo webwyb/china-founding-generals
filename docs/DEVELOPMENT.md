@@ -36,7 +36,7 @@ npm run preview
 
 预览地址为 `http://127.0.0.1:5173`，只绑定本机。一次只保留一个5173端口服务。更换端口可直接使用Python HTTP服务命令；静态根目录必须是 `dist/h5`。微信或其他手机不能直接访问另一台电脑的127.0.0.1；外部分享需要可访问的域名或同网段开发地址。
 
-构建输出 `dist/h5/`，不提交生成目录。hash路由不需要服务端路由回退；资源使用相对路径，可放在域名子目录。推送 `main` 后由 GitHub Actions 完成三系统检查，并将 Ubuntu 构建自动部署到腾讯云独立站点；入口、环境与回滚见 [DEPLOYMENT.md](DEPLOYMENT.md)。
+构建输出 `dist/h5/`，不提交生成目录。H5采用普通路径和构建时静态生成：`/people/人物id/`、`/generals/`、`/people/`、`/about/`、`/card/?id=人物id`。文件布局自带各路径的 `index.html`，普通静态服务器可直接读取，不把未知路径回退为首页；资源使用域名根目录路径，当前不支持直接搬到子目录。旧hash链接由浏览器迁移。正式域名在 `config/site.json` 统一维护。推送 `main` 后由 GitHub Actions 完成三系统检查，并将 Ubuntu 构建自动部署到腾讯云独立站点；SEO首次上线需先更新服务器接收器，入口及要求见 [DEPLOYMENT.md](DEPLOYMENT.md)。
 
 生产入口为 [https://shanhe.binnwu.top](https://shanhe.binnwu.top)。普通本地构建包含完整静态资源；生产 CI 通过 `SHANHE_ASSET_BASE_URL` 使用 COS 内容地址，并只向服务器发布网页代码。HTTPS 证书由服务器独立自动续期，应用构建和推送不会替换证书、Nginx 配置或 root 持有的发布接收器。维护这些服务器文件、检查续期和迁移新机时，按 [部署说明](DEPLOYMENT.md) 操作；换机开发不需要下载生产私钥或云 API 凭据。
 
@@ -46,9 +46,11 @@ npm run preview
 npm run check
 ```
 
-依次执行类型检查、事实快照逐字节再生成检查、全量目录、功能逻辑、景观与字体、事实解析、人像完整性、全部卡片构图及H5构建。不会启动浏览器、调用图像生成、访问历史人物源站或申请相册权限。
+依次执行类型检查、事实快照逐字节再生成检查、全量目录、功能逻辑、景观与字体、事实解析、人像完整性、全部卡片构图及H5构建；构建末尾生成并校验1614份完整人物HTML、1618条站点地图地址、元信息和真实链接。不会启动浏览器、调用图像生成、访问历史人物源站或申请相册权限。
 
 单项入口：`npm run typecheck`、`npm run data:verify`、`npm run validate:data`、`npm run validate:functions`、`npm run validate:design`、`npm run test:catalog`、`npm run validate:portraits`、`npm run validate:cards`、`npm run build`。
+
+SEO单项：已有构建后执行 `npm run validate:seo`；先启动本地 `npm run preview`，另一个终端运行 `npm run validate:seo:http` 验证原始HTTP与404；`npm run validate:seo:release` 在临时副本中模拟COS资源重写和接收器解包，全程离线，不上传或修改服务器。细节见 [SEO.md](SEO.md)。
 
 静态成图在 `.cache/design-review/`，测试中间文件在 `.cache/`，可删除后重跑。`data/design/` 与 `data/testing/` 中已提交的报告描述实际覆盖范围，不能代替 `QA.md` 中尚未完成的浏览器与真机验收。
 

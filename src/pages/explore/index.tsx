@@ -11,6 +11,7 @@ import { getProvinceLandscape } from '../../data/landscapes'
 import { getRemembered } from '../../services/collection'
 import { defaultCatalogueState, readCatalogueState, saveCatalogueState, type CatalogueState } from '../../services/catalogueState'
 import { filterPeople, regionFromQuery } from '../../services/catalogue'
+import { usePageMetadata } from '../../seo/usePageMetadata'
 
 const ranks = ['全部', '元帅', '大将', '上将', '中将', '少将']
 const provinces = Array.from(new Set(people.map(person => person.province)))
@@ -67,12 +68,11 @@ export default function Explore() {
       window.removeEventListener('pagehide', onPageHide)
     }
   }, [])
-  useEffect(() => { if (process.env.TARO_ENV === 'h5') document.title = '将帅名录｜山河有名' }, [])
+  usePageMetadata('explore')
   useDidShow(() => {
     const focusHometown = firstShow.current && params.focus === 'hometown'
     restoring.current = true
     setRemembered(getRemembered())
-    if (process.env.TARO_ENV === 'h5') document.title = '将帅名录｜山河有名'
     if (process.env.TARO_ENV === 'h5' && (!firstShow.current || !params.province)) {
       const saved = readCatalogueState()
       const active = current.current
@@ -102,7 +102,7 @@ export default function Explore() {
   }, [state.visibleCount, filtered])
   useEffect(() => {
     if (focusNewBatch.current === null) return
-    const firstNew = catalogueRoot.current?.querySelectorAll<HTMLButtonElement>('.directory-grid .person-tile')[focusNewBatch.current]
+    const firstNew = catalogueRoot.current?.querySelectorAll<HTMLElement>('.directory-grid .person-tile')[focusNewBatch.current]
     focusNewBatch.current = null
     firstNew?.focus({ preventScroll: true })
   }, [state.visibleCount])

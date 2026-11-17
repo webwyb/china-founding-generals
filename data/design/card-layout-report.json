@@ -2,7 +2,7 @@
   "people": 1614,
   "themes": 2,
   "compositions": 3228,
-  "textLabels": 37307,
+  "textLabels": 43763,
   "clippingErrors": 0,
   "method": "Shared production Canvas drawing function with native Skia text measurement; no browser access"
 }

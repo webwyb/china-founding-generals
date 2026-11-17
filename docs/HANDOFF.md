@@ -38,7 +38,7 @@
 | 景观映射、素材与原稿 | `src/data/landscapes.ts`、`public/landscapes/`、`design/landscapes/` |
 | 字体与许可 | `src/assets/fonts/`、`public/fonts/OFL-NotoSerifSC.txt` |
 
-H5采用hash路由，例如 `/#/pages/person/index?id=suyu`。公开目录肖像在 `public/portraits/`，构建复制到 `dist/h5/static/portraits/`；原有8张精选肖像由Vite从 `src/assets/portraits/` 打包。`config/index.ts` 的复制源使用配置文件位置解析，勿改回依赖调用目录的相对路径。
+H5现采用普通路径，例如 `/people/suyu/`，构建时生成完整人物HTML；旧hash链接由浏览器迁移。名录 `/generals/`，完整索引 `/people/`，资料说明 `/about/`，卡片 `/card/?id=suyu`。资源按域名根目录寻址，当前不直接支持子目录托管。公开目录肖像在 `public/portraits/`，构建复制到 `dist/h5/static/portraits/`；原有8张精选肖像由Vite从 `src/assets/portraits/` 打包。`config/index.ts` 的复制源使用配置文件位置解析，勿改回依赖调用目录的相对路径。
 
 H5图片、字体和媒体的输出名显式使用POSIX斜杠，这是浏览器URL；不能改为平台默认 `path.join`。Taro4.3.2默认配置在Windows上会生成反斜杠并破坏JavaScript中的图片URL，远程Windows构建已暴露该问题。
 
@@ -127,6 +127,22 @@ H5图片、字体和媒体的输出名显式使用POSIX斜杠，这是浏览器U
 本次肖像提交将此前另266张已审核原图及来源、候选、采用／排除记录、研究与验收报告一并纳入Git。当前完整工作版本共有1609张真实肖像，5位仍明确占位；此前 `21f9df7` 仅带1343张素材的边界属于上一轮生平提交记录。换机从本轮之后的main恢复，即包含全部现有照片、字体、景观与生平代码，无需复制研究缓存。
 
 266张文件均已逐一解码，核对SHA-256、尺寸、来源和审核记录，原有肖像未改；全1614人的生平、节点、来源及待核实状态与上一提交一致。完整检查通过，最新交付与Git副本恢复报告见 `../data/testing/portrait-completion-2026-11-17.json`。确切来源、低清说明及5位缺口见 `PORTRAIT_AUDIT.md`，历史检查保留各自实际范围，不作为本轮新浏览器实测。
+
+## 纪念卡二维码（2026-11-17）
+
+H5“家乡山河”和“素笺肖像”均已在最终PNG右下角绘入人物档案二维码，附扫码提示和正式域名。SEO调整后公开目标为 `https://shanhe.binnwu.top/people/人物id/`，域名在 `config/site.json`、路径在 `src/services/personLinks.ts` 统一维护，不读取本地origin；早期hash二维码仍通过浏览器迁移兼容。更换正式域名后应保留已分享图片所用旧域名及人物路径的跳转。预览、保存弹层与下载继续共用同一PNG；肖像、生平、待核实状态未改，小程序码仍未接入。
+
+运行依赖新增锁定版本 `qrcode-generator@2.0.4`，MIT原文在 `public/licenses/qrcode-generator-MIT.txt`；开发依赖 `jsqr@1.4.0` 独立解码校验。`npm ci` 后完整检查会覆盖1614个码和18张PNG／18张压缩JPEG，不依赖已保存的浏览器截图或旧缓存。完整 `npm run check` 通过，本地内置浏览器验证两人三种成图与保存同图，详细证据见 `reviews/card-qr-2026-11-17/REVIEW.md` 和 `../data/testing/card-qr-browser-2026-11-17.json`。本轮未部署线上、未验证微信或手机相机实扫；继续工作时以实际Git和部署状态为准。
+
+## SEO静态生成与路由（2026-11-17）
+
+`npm run build` 先构建Taro，再复用实际React页面生成1619个HTML和1618条站点地图网址，最后执行全量SEO校验。1614人均有无需JavaScript即可读取的完整生平、人生节点、背景和来源；独立标题区分同名人物，缺图与待核实字段保留原状态。统一的标题、摘要、canonical、Open Graph、WebPage／Person及面包屑元信息在初始HTML与应用切换时同步。纪念卡为noindex，筛选参数与旧hash不进入站点地图。SSR中间文件会自动重建，无需迁移 `.cache`。
+
+实现入口：`src/seo/metadata.ts`、`usePageMetadata.ts`、`src/seo/render.tsx`、`scripts/build_seo.mjs`、`seo_bundle.mjs`、`test_seo.py`；原有 `people.ts` 仍是合并事实与精选来源的唯一入口。`config/index.ts` 的浏览器路由别名从目录ID生成，人物链接和二维码统一使用新地址。完整索引与说明页在开发路由中也有对应页面。
+
+首次发布需由服务器管理通道更新root持有的 `/usr/local/libexec/shanhe-receive`，以接收新增人物目录、robots及sitemap；正常推送不会替换此文件，旧副本会拒绝新包。接收器及COS地址重写已做离线回归，尚未更新生产副本或部署。具体维护步骤见 [SEO.md](SEO.md) 和 [DEPLOYMENT.md](DEPLOYMENT.md#seo静态页面的首次发布)；实际浏览器范围和截图见 `reviews/seo-2026-11-17/REVIEW.md`。未提交站长平台，不能把本地检查通过写成搜索收录成功。
+
+最终完整检查通过；新增HTML／XML全量校验、本地9个HTTP入口及404、实际代码包的COS重写／安全解包通过（约4.05MB，不含COS素材）。内置浏览器实际320、405、1440px宽，旧链接迁移、人物切换／刷新、搜索、卡片与元信息同步通过；李贞实际卡片识别到新地址。历史二维码截图仍记录当时hash地址，当前新生成图片使用普通路径，旧图仍兼容。详细范围以 `QA.md` 和SEO验收记录为准；本轮成果当前在工作区，未执行提交、推送或上线。
 
 Git恢复验证已通过：暂存树导出的1873个文件逐个哈希匹配，没有复制研究缓存或旧dist；复用已安装依赖执行完整 `npm run check` 及H5构建通过，266张新增构建副本与原件哈希一致。此项为同一台机器的独立目录验证，不冒称另一物理设备实测。
 

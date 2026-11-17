@@ -2,6 +2,8 @@ import Taro from '@tarojs/taro'
 import { renderMemorialCard } from './cardRenderer'
 import { containImage } from './imageGeometry'
 import { lifeYears } from '../data/historyLabels'
+import { personMiniProgramPath, personPath } from './personLinks'
+export { personMiniProgramPath } from './personLinks'
 
 /** Keep the exporter independent from the catalogue so it works with future data sources. */
 export interface ShareCardData {
@@ -213,10 +215,6 @@ export async function saveMemorialCard(person: ShareCardData): Promise<ShareResu
   }
 }
 
-export function personMiniProgramPath(id: string): string {
-  return `/pages/person/index?id=${encodeURIComponent(id)}`
-}
-
 async function browserCopy(value: string): Promise<void> {
   if (navigator.clipboard && window.isSecureContext) {
     try {
@@ -245,11 +243,13 @@ async function browserCopy(value: string): Promise<void> {
   if (!copied) throw new Error('浏览器未允许复制，请从地址栏复制人物页链接。')
 }
 
-/** H5 uses the configured hash router; mini-program paths stay inside WeChat. */
+/** H5 shares a crawlable person URL; mini-program paths stay inside WeChat. */
 export async function copyPersonLink(id: string): Promise<ShareResult> {
   if (process.env.TARO_ENV === 'h5') {
     const url = new URL(window.location.href)
-    url.hash = personMiniProgramPath(id)
+    url.pathname = personPath(id)
+    url.search = ''
+    url.hash = ''
     await browserCopy(url.href)
     const localHost = /^(localhost|127(?:\.\d{1,3}){3}|0\.0\.0\.0|\[?::1\]?|10(?:\.\d{1,3}){3}|192\.168(?:\.\d{1,3}){2}|172\.(?:1[6-9]|2\d|3[01])(?:\.\d{1,3}){2})$/.test(url.hostname)
     return {

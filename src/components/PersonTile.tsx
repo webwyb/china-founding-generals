@@ -4,9 +4,10 @@ import { lifeYears, type Person } from '../data/people'
 import { openPage } from './Shell'
 import Icon from './Icon'
 import Portrait from './Portrait'
+import { personPath } from '../services/personLinks'
 
 export default function PersonTile({ person, compact = false, index = 0, onNavigate }: { person: Person; compact?: boolean; index?: number; onNavigate?: () => void }) {
-  return <Button className={`person-tile ${compact ? 'compact-tile' : ''}`} onClick={() => { onNavigate?.(); return openPage('person', `id=${person.id}`) }} aria-label={`了解${person.name}，${person.rank}，${person.hometown}`}>
+  return <Button href={personPath(person.id)} className={`person-tile ${compact ? 'compact-tile' : ''}`} onClick={() => { onNavigate?.(); return openPage('person', `id=${person.id}`) }} aria-label={`了解${person.name}，${person.rank}，${person.hometown}`}>
     <View className='tile-photo'>
       <Portrait className='portrait-image' src={person.portrait} name={person.name} eager={index < 4} />
       {person.portraitMissing && <Text className='portrait-status'>肖像待补</Text>}

@@ -6,6 +6,7 @@ import json
 import os
 from pathlib import Path
 import runpy
+import subprocess
 import sys
 import tempfile
 import types
@@ -16,6 +17,33 @@ SCRIPT = Path(__file__).with_name('upload-assets.py')
 
 
 class AssetTests(unittest.TestCase):
+    def test_prepare_nested_html_and_absolute_seo_image_urls(self):
+        with tempfile.TemporaryDirectory() as folder:
+            work = Path(folder)
+            root = work / 'dist/h5'
+            images = root / 'static/images'
+            images.mkdir(parents=True)
+            (images / 'person.jpg').write_bytes(b'portrait')
+            page = root / 'people/suyu/index.html'
+            page.parent.mkdir(parents=True)
+            page.write_text('<link rel="canonical" href="https://shanhe.binnwu.top/people/suyu/">'
+                            '<meta property="og:image" content="https://shanhe.binnwu.top/static/images/person.jpg">'
+                            '<img src="/static/images/person.jpg">'
+                            '<img src="https://elsewhere.example/static/images/person.jpg">')
+            (root / 'app.js').write_text('const image="/static/images/person.jpg";')
+            (root / 'app.css').write_text('body{background:url("../static/images/person.jpg")}')
+            with patch.dict(os.environ, {'SHANHE_ASSET_BASE_URL': 'https://assets.example/objects'}):
+                subprocess.run(['node', str(Path(__file__).with_name('prepare-assets.mjs'))],
+                               cwd=work, check=True, capture_output=True)
+            asset = json.loads((work / 'release-assets.json').read_text())[0]['url']
+            content = page.read_text()
+            self.assertEqual(content.count(asset), 2)
+            self.assertIn('https://shanhe.binnwu.top/people/suyu/', content)
+            self.assertIn('https://elsewhere.example/static/images/person.jpg', content)
+            self.assertNotIn('shanhe.binnwu.tophttps:', content)
+            self.assertIn(asset, (root / 'app.js').read_text())
+            self.assertIn(asset, (root / 'app.css').read_text())
+
     def test_only_missing_objects_are_uploaded_with_immutable_cache(self):
         calls = []
         class Client:

@@ -34,11 +34,24 @@ class DeploymentTests(unittest.TestCase):
     def test_reject_traversal_links_and_unexpected_files(self):
         for name, value in [('../escape', 'x'), ('/absolute', 'x'),
                             ('static/link', None), ('.ssh/authorized_keys', 'x'),
-                            ('receive.py', 'x')]:
+                            ('receive.py', 'x'), ('people/unsafe.js', 'x'),
+                            ('people/suyu/run.py', 'x'), ('robots.txt/nested', 'x')]:
             with self.subTest(name=name), tempfile.TemporaryDirectory() as folder:
                 with self.assertRaises(ValueError):
                     receive.extract(archive({name: value}), Path(folder))
                 self.assertEqual(list(Path(folder).iterdir()), [])
+
+    def test_accept_only_generated_seo_documents(self):
+        entries = {'robots.txt': 'User-agent: *', 'sitemap.xml': '<urlset/>',
+                   'people/index.html': '<h1>全部档案</h1>',
+                   'people/suyu/index.html': '<h1>粟裕</h1>',
+                   'generals/index.html': '<h1>名录</h1>',
+                   'about/index.html': '<h1>说明</h1>',
+                   'card/index.html': '<h1>纪念卡</h1>'}
+        with tempfile.TemporaryDirectory() as folder:
+            receive.extract(archive(entries), Path(folder))
+            for path, content in entries.items():
+                self.assertEqual((Path(folder) / path).read_text(), content)
 
     def test_reject_arbitrary_ssh_commands(self):
         with patch.dict(receive.os.environ, {'SSH_ORIGINAL_COMMAND': 'bash -c id'}):

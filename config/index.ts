@@ -2,6 +2,7 @@ import { defineConfig } from '@tarojs/cli'
 import { posix, resolve } from 'node:path'
 const { manifest } = require('../scripts/deploy/asset-manifest.cjs')
 const assetUrls = Object.fromEntries(manifest(resolve(__dirname, '../public'), process.env.SHANHE_ASSET_BASE_URL || '').map((asset: { path: string; url: string }) => [asset.path, asset.url]))
+const catalogue = require('../src/data/catalog.generated.json') as { id: string }[]
 
 // These are browser URLs, not filesystem paths. Taro's default path.join
 // emits backslashes on Windows, which can become JS string escapes.
@@ -38,12 +39,22 @@ export default defineConfig<'vite'>({
     }
   },
   h5: {
-    publicPath: './',
+    publicPath: '/',
     staticDirectory: 'static',
     imageUrlLoaderOption: { name: assetName('images') },
     fontUrlLoaderOption: { name: assetName('fonts') },
     mediaUrlLoaderOption: { name: assetName('media') },
-    router: { mode: 'hash' },
+    router: {
+      mode: 'browser',
+      customRoutes: {
+        '/pages/index/index': '/',
+        '/pages/explore/index': '/generals/',
+        '/pages/person/index': catalogue.map(person => `/people/${encodeURIComponent(person.id)}/`),
+        '/pages/card/index': '/card/',
+        '/pages/directory/index': '/people/',
+        '/pages/about/index': '/about/'
+      }
+    },
     devServer: {
       host: '0.0.0.0',
       port: 5173

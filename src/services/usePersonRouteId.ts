@@ -6,8 +6,13 @@ export function usePersonRouteId(page: 'person' | 'card') {
   const { params } = useRouter()
   const readId = () => {
     if (process.env.TARO_ENV === 'h5') {
-      const [path, query = ''] = window.location.hash.slice(1).split('?')
-      if (path === `/pages/${page}/index`) return new URLSearchParams(query).get('id') || undefined
+      if (page === 'person') {
+        const match = /^\/people\/([^/]+)\/?$/.exec(window.location.pathname)
+        if (match) {
+          try { return decodeURIComponent(match[1]) } catch { return undefined }
+        }
+      }
+      return new URLSearchParams(window.location.search).get('id') || undefined
     }
     return params.id
   }

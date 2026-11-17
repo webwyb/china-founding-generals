@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "people": 1614,
+  "uniquePersonTitles": 1614,
+  "staticHtmlPages": 1619,
+  "sitemapUrls": 1618,
+  "checks": [
+    "HTML parsed without JavaScript",
+    "Complete biographies, timelines, context and citation links",
+    "Single canonical, description, Open Graph and JSON-LD",
+    "Distinct homonym titles",
+    "Missing photos and pending fields retained",
+    "Absolute local assets exist",
+    "Full directory links to all 1614 profiles",
+    "Card is noindex and excluded from sitemap",
+    "Legacy hash migration function",
+    "Sitemap matches canonical files"
+  ],
+  "method": "Python HTMLParser and XML parser on production build; explicit Node assertions for legacy routes. No browser or search-engine indexing implied."
+}

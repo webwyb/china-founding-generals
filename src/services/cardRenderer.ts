@@ -2,6 +2,8 @@ import { getProvinceLandscape } from '../data/landscapes'
 import type { ShareCardData } from './share'
 import { containImage } from './imageGeometry'
 import { lifeYears } from '../data/historyLabels'
+import { drawCardQrCode } from './cardQrCode'
+import { PUBLIC_SITE_HOST } from './personLinks'
 
 export type CardTheme = 'landscape' | 'portrait'
 export const CARD_WIDTH = 600
@@ -118,13 +120,18 @@ export function drawMemorialCard(context: CanvasRenderingContext2D, person: Shar
   lines(context, person.tagline, 460, 2).forEach((line, index) => context.fillText(line, 300, 711 + index * 32))
   context.strokeStyle = palette.line
   context.lineWidth = 1
-  context.beginPath(); context.moveTo(46, 792); context.lineTo(554, 792); context.stroke()
+  context.beginPath(); context.moveTo(46, 770); context.lineTo(554, 770); context.stroke()
+  context.textAlign = 'left'
   context.fillStyle = palette.ink
   font(context, 16, true, 500)
-  context.fillText('我想让你记住这个名字。', 300, 825)
+  context.fillText('我想让你记住这个名字。', 46, 805)
   context.fillStyle = palette.muted
+  font(context, 12)
+  context.fillText('扫码阅读完整生平', 46, 829)
   font(context, 10)
-  context.fillText(person.pendingFields?.length ? '部分资料尚待核实，详见人物页说明' : '生平与历史肖像出处，详见人物档案', 300, 850)
+  context.fillText(PUBLIC_SITE_HOST, 46, 848)
+  context.fillText(person.pendingFields?.length ? '部分资料尚待核实，详见人物页说明' : '生平与历史肖像出处，详见人物档案', 46, 866)
+  drawCardQrCode(context, person.id)
 }
 
 const imageCache = new Map<string, Promise<HTMLImageElement>>()

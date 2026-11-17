@@ -7,12 +7,17 @@ if (!base) throw Error('SHANHE_ASSET_BASE_URL is required for production packagi
 const root = resolve('dist/h5')
 const assets = manifest(resolve(root, 'static'), base)
 const urls = new Map(assets.map(asset => [asset.path, asset.url]))
+const { origin } = JSON.parse(readFileSync(new URL('../../config/site.json', import.meta.url), 'utf8'))
+const escapedOrigin = origin.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 for (const path of files(root)) {
   if (!['.html', '.js', '.css'].includes(extname(path)) || path.startsWith('static/')) continue
   const file = resolve(root, path)
   const before = readFileSync(file, 'utf8')
-  const after = before.replace(/(?:\.\.\/|\.\/|\/)static\/([A-Za-z0-9_.\/-]+)/g,
-    (match, key) => urls.get(key) || match)
+  const replaceAsset = (match, key) => urls.get(key) || match
+  // SEO image metadata contains absolute site URLs. Replace the entire URL,
+  // then handle local references without matching another host's /static/ path.
+  const after = before.replace(new RegExp(`${escapedOrigin}/static/([A-Za-z0-9_.\\/-]+)`, 'g'), replaceAsset)
+    .replace(/(?<![A-Za-z0-9:/.-])(?:\.\.\/|\.\/|\/)static\/([A-Za-z0-9_.\/-]+)/g, replaceAsset)
   writeFileSync(file, after)
 }
 writeFileSync('release-assets.json', JSON.stringify(assets, null, 2) + '\n')

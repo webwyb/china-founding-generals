@@ -1,6 +1,8 @@
 import { Text, View } from '@tarojs/components'
 import Button from '../../components/Button'
-import { useDidShow, useShareAppMessage } from '@tarojs/taro'
+import { pageHref } from '../../services/personLinks'
+import { usePageMetadata } from '../../seo/usePageMetadata'
+import { useShareAppMessage } from '@tarojs/taro'
 import Shell, { openPage } from '../../components/Shell'
 import PersonTile from '../../components/PersonTile'
 import { people, featuredPeople } from '../../data/people'
@@ -9,7 +11,7 @@ import Landscape from '../../components/Landscape'
 import { getProvinceLandscape } from '../../data/landscapes'
 
 export default function Index() {
-  useDidShow(() => { if (process.env.TARO_ENV === 'h5') document.title = '山河有名 · 开国将帅纪念馆' })
+  usePageMetadata('index')
   useShareAppMessage(() => ({ title: '山河有名｜记住一个名字，走近一段历史', path: '/pages/index/index' }))
   const provinces = Array.from(new Set(people.map(person => person.province))).filter(province => getProvinceLandscape(province)).sort((a, b) => people.filter(person => person.province === b).length - people.filter(person => person.province === a).length).slice(0, 6)
   const heroPeople = [...featuredPeople, ...people.filter(person => !person.portraitMissing && !featuredPeople.some(featured => featured.id === person.id))].slice(0, 12)
@@ -20,8 +22,8 @@ export default function Index() {
         <h1 className='hero-heading serif'>他们的名字，<span className='hero-heading-line'>我们记得。</span></h1>
         <Text className='hero-description'>从一张面孔，走近一段历史。<Text className='block'>致敬开国将帅，铭记一代人的理想与担当。</Text></Text>
         <View className='hero-actions'>
-          <Button className='primary-button' onClick={() => openPage('explore')}>走进纪念馆<Icon name='arrow' /></Button>
-          <Button className='secondary-link' onClick={() => openPage('explore', 'focus=hometown')}>寻找家乡的名字<Icon name='pin' /></Button>
+          <Button className='primary-button' href='/generals/' onClick={() => openPage('explore')}>走进纪念馆<Icon name='arrow' /></Button>
+          <Button className='secondary-link' href={pageHref('explore', 'focus=hometown')} onClick={() => openPage('explore', 'focus=hometown')}>寻找家乡的名字<Icon name='pin' /></Button>
         </View>
         <View className='hero-facts'>
           <View className='hero-fact'><Text className='fact-number'>1,614<Text className='fact-unit'>位</Text></Text><Text className='fact-label'>开国将帅 · 统计口径见说明</Text></View>
@@ -48,17 +50,17 @@ export default function Index() {
         </View>
         <View className='hometown-options'>
           <Text className='hometown-intro'>选择一个地方，认识一位从这里走出的将帅。</Text>
-          <View className='province-grid'>{provinces.map(province => <Button key={province} className='province-button' onClick={() => openPage('explore', `province=${encodeURIComponent(province)}`)}><Text className='province-name serif'>{province}</Text><Icon name='external' /></Button>)}</View>
-          <Button className='text-link all-provinces' onClick={() => openPage('explore')}>浏览全部已收录人物<Icon name='arrow' /></Button>
+          <View className='province-grid'>{provinces.map(province => <Button key={province} className='province-button' href={pageHref('explore', `province=${encodeURIComponent(province)}`)} onClick={() => openPage('explore', `province=${encodeURIComponent(province)}`)}><Text className='province-name serif'>{province}</Text><Icon name='external' /></Button>)}</View>
+          <Button className='text-link all-provinces' href='/generals/' onClick={() => openPage('explore')}>浏览全部已收录人物<Icon name='arrow' /></Button>
           <Text className='scope-note'>完整姓名名录已收录 {people.length.toLocaleString()} 位，籍贯按已获取资料记载。</Text>
         </View>
       </View>
     </View>
 
     <View className='featured-section container'>
-      <View className='section-heading'><View><Text className='eyebrow'>人物故事</Text><Text className='section-title serif'><Text className='title-phrase'>一人一页，</Text><Text className='title-phrase'>一生一事</Text></Text></View><Button className='text-link section-more' onClick={() => openPage('explore')}>认识更多名字<Icon name='external' /></Button></View>
+      <View className='section-heading'><View><Text className='eyebrow'>人物故事</Text><Text className='section-title serif'><Text className='title-phrase'>一人一页，</Text><Text className='title-phrase'>一生一事</Text></Text></View><Button className='text-link section-more' href='/generals/' onClick={() => openPage('explore')}>认识更多名字<Icon name='external' /></Button></View>
       <View className='featured-grid'>{[people.find(p => p.name === '李贞'), people.find(p => p.name === '朱德'), people.find(p => p.name === '粟裕')].filter(Boolean).map((person, index) => <PersonTile key={person!.id} person={person!} index={index} />)}</View>
     </View>
-    <View className='closing-section container'><Text className='closing-title serif'>记住，是致敬的开始。</Text><Text className='closing-copy'>让一个名字被看见，让一段真实的往事被传递。</Text><Button className='primary-button' onClick={() => openPage('explore')}>认识一位将帅<Icon name='external' /></Button></View>
+    <View className='closing-section container'><Text className='closing-title serif'>记住，是致敬的开始。</Text><Text className='closing-copy'>让一个名字被看见，让一段真实的往事被传递。</Text><Button className='primary-button' href='/generals/' onClick={() => openPage('explore')}>认识一位将帅<Icon name='external' /></Button></View>
   </Shell>
 }

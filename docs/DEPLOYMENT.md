@@ -60,6 +60,23 @@ curl -fsS https://shanhe.binnwu.top/version.json
 
 修改 Nginx 或接收器源文件后，需要通过已授权的服务器管理通道单独更新 root 持有的副本，普通推送仅更新网页。
 
+## SEO静态页面的首次发布
+
+SEO构建新增根目录 `robots.txt`、`sitemap.xml`，以及 `people/`、`generals/`、`about/`、`card/` 下的HTML。**首次发布此版本前，需先通过服务器管理通道更新root持有的接收器**；旧副本只接受原来的目录，会以 `Unexpected build entry` 拒绝新包，网站不会被切换到不完整版本。仓库的 `scripts/deploy/receive.py` 已加入限定的静态HTML路径，继续拒绝任意程序、越界路径、链接和超限包；普通部署身份的权限不变。
+
+在服务器上一份已核对的本轮源码目录中，以root执行：
+
+```sh
+python3 scripts/deploy/test_receive.py
+install -o root -g root -m 755 scripts/deploy/receive.py /usr/local/libexec/shanhe-receive
+```
+
+不重复运行首次安装脚本，不改部署公钥或证书。完成后再推送／发布应用，并核对 `version.json`、`/robots.txt`、`/sitemap.xml`、`/people/suyu/` 的原始响应，以及不存在人物的404。2026-11-17已通过腾讯云实例命令更新生产接收器，远端4项测试通过，root:root、755及文件SHA-256与仓库源文件一致，旧文件按哈希备份；证据见 [本轮发布记录](reviews/seo-deployment-2026-11-17/REVIEW.md)。
+
+现有Nginx的 `index index.html` 和 `try_files $uri $uri/ =404` 已适配生成目录，不需要全站SPA回退。代码包仍排除 `static/*`，但保留所有人物HTML与站点地图。`prepare-assets.mjs` 会同时将嵌套HTML、Open Graph及JSON-LD中的本域图片地址转换到COS，保留规范网页网址；离线验证入口为 `npm run validate:seo:release`。完整档案HTML合计约38MiB，代码包大小以该命令报告为准，首版477KiB仅是历史部署快照。
+
+上线后再按 [SEO维护](SEO.md) 提交站点地图、检查搜索引擎实际抓取结果；本地通过和HTTP200均不代表已经收录。
+
 ## 域名与免费 HTTPS
 
 - DNSPod 的 `binnwu.top` 域名新增 `shanhe` 的 A 记录，值 `49.233.60.125`，默认线路、TTL 600；未配置 AAAA。

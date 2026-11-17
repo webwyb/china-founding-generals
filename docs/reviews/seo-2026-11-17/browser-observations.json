@@ -1,0 +1,464 @@
+{
+  "date": "2026-11-17",
+  "environment": "Codex in-app browser, local production H5 build",
+  "cases": [
+    {
+      "label": "旧纪念卡hash迁移",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/zhude/"
+      ],
+      "description": "朱德，元帅，四川 · 仪陇。从保存起义部队到统率人民军队，经历战争与建军的漫长历程。查阅分段生平、人生足迹及历史肖像出处。",
+      "h1s": [
+        "把这个名字，留在山河之间。"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "朱德的纪念卡｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/zhude/",
+      "prerenderPresent": false,
+      "robots": "noindex, follow",
+      "structuredDataCount": 1,
+      "title": "朱德的纪念卡｜山河有名",
+      "url": "http://127.0.0.1:5173/card/?id=zhude",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "纪念卡返回人物档案",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/zhude/"
+      ],
+      "description": "朱德，元帅，四川 · 仪陇。从保存起义部队到统率人民军队，经历战争与建军的漫长历程。查阅分段生平、人生足迹及历史肖像出处。",
+      "h1s": [
+        "朱德"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "朱德 · 元帅 · 四川 · 仪陇 · 1886年生｜生平、人生足迹与史料｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/zhude/",
+      "prerenderPresent": false,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "朱德 · 元帅 · 四川 · 仪陇 · 1886年生｜生平、人生足迹与史料｜山河有名",
+      "url": "http://127.0.0.1:5173/people/zhude/",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "人物间切换",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/p0004/"
+      ],
+      "description": "刘伯承，元帅，四川省开县赵家场。把战场指挥与军事教育贯通一生的军事家。查阅分段生平、人生足迹及历史肖像出处。",
+      "h1s": [
+        "刘伯承"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "刘伯承 · 元帅 · 四川省开县赵家场 · 1892年生｜生平、人生足迹与史料｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/p0004/",
+      "prerenderPresent": false,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "刘伯承 · 元帅 · 四川省开县赵家场 · 1892年生｜生平、人生足迹与史料｜山河有名",
+      "url": "http://127.0.0.1:5173/people/p0004/",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "独立人物地址刷新",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/p0004/"
+      ],
+      "description": "刘伯承，元帅，四川省开县赵家场。把战场指挥与军事教育贯通一生的军事家。查阅分段生平、人生足迹及历史肖像出处。",
+      "h1s": [
+        "刘伯承"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "刘伯承 · 元帅 · 四川省开县赵家场 · 1892年生｜生平、人生足迹与史料｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/p0004/",
+      "prerenderPresent": false,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "刘伯承 · 元帅 · 四川省开县赵家场 · 1892年生｜生平、人生足迹与史料｜山河有名",
+      "url": "http://127.0.0.1:5173/people/p0004/",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "返回名录元信息恢复",
+      "canonicals": [
+        "https://shanhe.binnwu.top/generals/"
+      ],
+      "description": "山河有名开国将帅数字纪念馆，收录1614位开国将帅，包括10位元帅、10位大将、57位上将、177位中将和1360位少将。按姓名、军衔与家乡查阅人物生平、人生足迹、历史肖像及资料出处。",
+      "h1s": [
+        "每一个名字，都值得被记住。"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "开国将帅名录｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/generals/",
+      "prerenderPresent": false,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "开国将帅名录｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "url": "http://127.0.0.1:5173/generals/",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "姓名搜索进入人物",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/lizhen/"
+      ],
+      "description": "李贞，少将，湖南 · 浏阳。参加秋收起义与长征，长期从事军队政治工作的首位女将军。查阅分段生平、人生足迹及历史肖像出处。",
+      "h1s": [
+        "每一个名字，都值得被记住。",
+        "李贞"
+      ],
+      "horizontalOverflow": true,
+      "ogTitle": "李贞 · 少将 · 湖南 · 浏阳 · 1908年生｜生平、人生足迹与史料｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/lizhen/",
+      "prerenderPresent": false,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "李贞 · 少将 · 湖南 · 浏阳 · 1908年生｜生平、人生足迹与史料｜山河有名",
+      "url": "http://127.0.0.1:5173/people/lizhen/",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "新地址进入纪念卡",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/lizhen/"
+      ],
+      "description": "李贞，少将，湖南 · 浏阳。参加秋收起义与长征，长期从事军队政治工作的首位女将军。查阅分段生平、人生足迹及历史肖像出处。",
+      "h1s": [
+        "每一个名字，都值得被记住。",
+        "李贞",
+        "把这个名字，留在山河之间。"
+      ],
+      "horizontalOverflow": true,
+      "ogTitle": "李贞的纪念卡｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/lizhen/",
+      "prerenderPresent": false,
+      "robots": "noindex, follow",
+      "structuredDataCount": 1,
+      "title": "李贞的纪念卡｜山河有名",
+      "url": "http://127.0.0.1:5173/card/?id=lizhen",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "静态完整档案索引",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/"
+      ],
+      "description": "山河有名开国将帅数字纪念馆，收录1614位开国将帅，包括10位元帅、10位大将、57位上将、177位中将和1360位少将。按姓名、军衔与家乡查阅人物生平、人生足迹、历史肖像及资料出处。",
+      "h1s": [
+        "全部人物档案"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "全部人物档案索引｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/",
+      "prerenderPresent": true,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "全部人物档案索引｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "url": "http://127.0.0.1:5173/people/",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "地域待核实人物",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/p0262/"
+      ],
+      "description": "于权伸，少将，籍贯待核实。参加百团大战，曾任河北省军区副司令员。查阅分段生平、人生足迹及历史肖像出处。部分资料待核实，详见档案说明。",
+      "h1s": [
+        "于权伸"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "于权伸 · 少将 · 籍贯待核实 · 1904年生｜生平、人生足迹与史料｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/p0262/",
+      "prerenderPresent": false,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "于权伸 · 少将 · 籍贯待核实 · 1904年生｜生平、人生足迹与史料｜山河有名",
+      "url": "http://127.0.0.1:5173/people/p0262/",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "已完成页面切换后的布局",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/lizhen/"
+      ],
+      "description": "李贞，少将，湖南 · 浏阳。参加秋收起义与长征，长期从事军队政治工作的首位女将军。查阅分段生平、人生足迹及历史肖像出处。",
+      "h1s": [
+        "每一个名字，都值得被记住。",
+        "李贞"
+      ],
+      "horizontalOverflow": true,
+      "ogTitle": "李贞 · 少将 · 湖南 · 浏阳 · 1908年生｜生平、人生足迹与史料｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/lizhen/",
+      "prerenderPresent": false,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "李贞 · 少将 · 湖南 · 浏阳 · 1908年生｜生平、人生足迹与史料｜山河有名",
+      "url": "http://127.0.0.1:5173/people/lizhen/",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "过渡结束后的李贞档案",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/lizhen/"
+      ],
+      "description": "李贞，少将，湖南 · 浏阳。参加秋收起义与长征，长期从事军队政治工作的首位女将军。查阅分段生平、人生足迹及历史肖像出处。",
+      "h1s": [
+        "每一个名字，都值得被记住。",
+        "李贞"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "李贞 · 少将 · 湖南 · 浏阳 · 1908年生｜生平、人生足迹与史料｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/lizhen/",
+      "prerenderPresent": false,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "李贞 · 少将 · 湖南 · 浏阳 · 1908年生｜生平、人生足迹与史料｜山河有名",
+      "url": "http://127.0.0.1:5173/people/lizhen/",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "默认405宽档案索引复核",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/"
+      ],
+      "description": "山河有名开国将帅数字纪念馆，收录1614位开国将帅，包括10位元帅、10位大将、57位上将、177位中将和1360位少将。按姓名、军衔与家乡查阅人物生平、人生足迹、历史肖像及资料出处。",
+      "h1s": [
+        "全部人物档案"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "全部人物档案索引｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/",
+      "prerenderPresent": true,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "全部人物档案索引｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "url": "http://127.0.0.1:5173/people/",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "静态资料来源说明",
+      "canonicals": [
+        "https://shanhe.binnwu.top/about/"
+      ],
+      "description": "了解山河有名的1614位开国将帅统计口径、人物资料与肖像出处、待核实字段及影像使用说明。人物档案保留可查阅的史料来源。",
+      "h1s": [
+        "让记忆，有来处。"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "名录口径与资料来源｜关于山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/about/",
+      "prerenderPresent": true,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "名录口径与资料来源｜关于山河有名",
+      "url": "http://127.0.0.1:5173/about/",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    },
+    {
+      "label": "1440桌面资料说明",
+      "canonicals": [
+        "https://shanhe.binnwu.top/about/"
+      ],
+      "description": "了解山河有名的1614位开国将帅统计口径、人物资料与肖像出处、待核实字段及影像使用说明。人物档案保留可查阅的史料来源。",
+      "h1s": [
+        "让记忆，有来处。"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "名录口径与资料来源｜关于山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/about/",
+      "prerenderPresent": true,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "名录口径与资料来源｜关于山河有名",
+      "url": "http://127.0.0.1:5173/about/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "label": "1440桌面完整档案索引",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/"
+      ],
+      "description": "山河有名开国将帅数字纪念馆，收录1614位开国将帅，包括10位元帅、10位大将、57位上将、177位中将和1360位少将。按姓名、军衔与家乡查阅人物生平、人生足迹、历史肖像及资料出处。",
+      "h1s": [
+        "全部人物档案"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "全部人物档案索引｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/",
+      "prerenderPresent": true,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "全部人物档案索引｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "url": "http://127.0.0.1:5173/people/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "label": "320窄屏完整档案索引",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/"
+      ],
+      "description": "山河有名开国将帅数字纪念馆，收录1614位开国将帅，包括10位元帅、10位大将、57位上将、177位中将和1360位少将。按姓名、军衔与家乡查阅人物生平、人生足迹、历史肖像及资料出处。",
+      "h1s": [
+        "全部人物档案"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "全部人物档案索引｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/",
+      "prerenderPresent": true,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "全部人物档案索引｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "url": "http://127.0.0.1:5173/people/",
+      "viewport": {
+        "height": 812,
+        "width": 320
+      }
+    },
+    {
+      "label": "320资料说明与页脚",
+      "canonicals": [
+        "https://shanhe.binnwu.top/about/"
+      ],
+      "description": "了解山河有名的1614位开国将帅统计口径、人物资料与肖像出处、待核实字段及影像使用说明。人物档案保留可查阅的史料来源。",
+      "h1s": [
+        "让记忆，有来处。"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "名录口径与资料来源｜关于山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/about/",
+      "prerenderPresent": true,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "名录口径与资料来源｜关于山河有名",
+      "url": "http://127.0.0.1:5173/about/",
+      "viewport": {
+        "height": 812,
+        "width": 320
+      }
+    },
+    {
+      "label": "首页元信息恢复",
+      "canonicals": [
+        "https://shanhe.binnwu.top/"
+      ],
+      "description": "山河有名开国将帅数字纪念馆，收录1614位开国将帅，包括10位元帅、10位大将、57位上将、177位中将和1360位少将。按姓名、军衔与家乡查阅人物生平、人生足迹、历史肖像及资料出处。",
+      "h1s": [
+        "他们的名字，我们记得。"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "山河有名｜1614位开国将帅人物档案与生平故事",
+      "ogUrl": "https://shanhe.binnwu.top/",
+      "prerenderPresent": false,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "山河有名｜1614位开国将帅人物档案与生平故事",
+      "url": "http://127.0.0.1:5173/",
+      "viewport": {
+        "height": 812,
+        "width": 320
+      }
+    },
+    {
+      "label": "旧人物hash迁移",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/suyu/"
+      ],
+      "description": "粟裕，大将，湖南 · 会同。从南方游击战争到苏中、孟良崮与淮海战场。查阅分段生平、人生足迹及历史肖像出处。",
+      "h1s": [
+        "粟裕"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "粟裕 · 大将 · 湖南 · 会同 · 1907年生｜生平、人生足迹与史料｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/suyu/",
+      "prerenderPresent": false,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "粟裕 · 大将 · 湖南 · 会同 · 1907年生｜生平、人生足迹与史料｜山河有名",
+      "url": "http://127.0.0.1:5173/people/suyu/",
+      "viewport": {
+        "height": 812,
+        "width": 320
+      }
+    },
+    {
+      "label": "恢复默认视口后的档案索引",
+      "canonicals": [
+        "https://shanhe.binnwu.top/people/"
+      ],
+      "description": "山河有名开国将帅数字纪念馆，收录1614位开国将帅，包括10位元帅、10位大将、57位上将、177位中将和1360位少将。按姓名、军衔与家乡查阅人物生平、人生足迹、历史肖像及资料出处。",
+      "h1s": [
+        "全部人物档案"
+      ],
+      "horizontalOverflow": false,
+      "ogTitle": "全部人物档案索引｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "ogUrl": "https://shanhe.binnwu.top/people/",
+      "prerenderPresent": true,
+      "robots": "index, follow, max-image-preview:large",
+      "structuredDataCount": 1,
+      "title": "全部人物档案索引｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "url": "http://127.0.0.1:5173/people/",
+      "viewport": {
+        "height": 852,
+        "width": 405
+      }
+    }
+  ],
+  "staticDirectory": {
+    "profileLinks": 1614,
+    "executableScripts": 0
+  },
+  "viewportRestored": true,
+  "notes": [
+    "Raw h1s includes cached display:none Taro pages after SPA navigation. Initial static HTML was independently checked to contain one h1.",
+    "Intermediate horizontalOverflow during Taro page-slide transitions was observed; after transitions ended the active page x=0, width=405 and document had no horizontal overflow.",
+    "Actual viewports 320x812, 405x852 and 1440x900 were measured; an initial viewport control on the earlier Chrome handle was reset and excluded from desktop claims."
+  ],
+  "physicalDeviceTest": false,
+  "searchConsoleSubmission": false,
+  "productionDeployment": false
+}

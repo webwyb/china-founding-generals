@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-17",
+  "instanceId": "lhins-afrwanuu",
+  "region": "ap-beijing",
+  "exitCode": 0,
+  "executionStarted": "2026-11-17 14:39:38",
+  "method": "Tencent Cloud Lighthouse execution dialog observed via CUA; reviewed source and regression tests supplied as an inline payload; no shell access granted to deployment identity.",
+  "status": "receiver_updated",
+  "oldSha256": "52a2a4f1aac3080c07b0aafe6d82d638ce03ba23829afea5d9f59f4533827c02",
+  "sha256": "7cd6fde5eb6f9d3238d79e2ba0a6dad212c75f47ac6319ed691d294a5febb1b0",
+  "backup": "/usr/local/libexec/shanhe-receive.pre-seo-52a2a4f1aac3080c",
+  "owner": 0,
+  "group": 0,
+  "mode": "0o755",
+  "testsPassed": 4,
+  "activeReleaseUnchanged": true,
+  "activeRelease": "/srv/shanhe/releases/ea4efd84c01207c9765994ed96b59b27f738ed43-44020443262-1"
+}
