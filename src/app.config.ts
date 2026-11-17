@@ -10,7 +10,7 @@ export default defineAppConfig({
   ],
   window: {
     navigationStyle: 'custom',
-    navigationBarTitleText: '山河有名',
+    navigationBarTitleText: '名在山河',
     navigationBarBackgroundColor: '#f4f7f3',
     navigationBarTextStyle: 'black',
     backgroundColor: '#f4f7f3',

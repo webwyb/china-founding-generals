@@ -5,9 +5,13 @@ import { resolve } from 'node:path'
 import { root, loadSeoRenderer } from './seo_bundle.mjs'
 const { people, pageMetadata, legacyDestination } = await loadSeoRenderer()
 const assert = (await import('node:assert/strict')).default
+const brand = JSON.parse(await readFile(resolve(root, 'config/brand.json'), 'utf8'))
 for (const path of ['index.html', 'generals/index.html', 'about/index.html', 'people/index.html', 'card/index.html',
   ...people.map(person => `people/${person.id}/index.html`)]) {
   const html = await readFile(resolve(root, 'dist/h5', path), 'utf8')
+  assert.ok(html.includes(brand.name) && html.includes(brand.tagline), `${path}: unified brand and tagline`)
+  assert.ok(!html.includes('山河有名'), `${path}: stale public brand`)
+  assert.ok(html.includes('/static/brand/favicon.png') || html.includes('/favicon.png'), `${path}: approved avatar favicon`)
   assert.equal((html.match(/data-shanhe-analytics/g) || []).length, 1, `${path}: exactly one analytics entry`)
   assert.ok(html.includes('name="referrer" content="strict-origin-when-cross-origin"'), `${path}: cross-origin referrer policy`)
   if (path === 'about/index.html' || path === 'people/index.html') {

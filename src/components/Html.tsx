@@ -1,0 +1,14 @@
+export const Box = 'div' as const
+export const Inline = 'span' as const
+export const Heading = 'h1' as const
+export const Heading2 = 'h2' as const
+export const Heading3 = 'h3' as const
+export const Paragraph = 'p' as const
+export const Nav = 'nav' as const
+export const Main = 'main' as const
+export const Section = 'section' as const
+export const Link = 'a' as const
+export const Disclosure = 'details' as const
+export const Summary = 'summary' as const
+export const Fieldset = 'fieldset' as const
+export const Legend = 'legend' as const

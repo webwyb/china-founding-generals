@@ -17,52 +17,52 @@
       "gzipBytes": 1269
     },
     {
-      "name": "app.346104af.js",
+      "name": "app.9b47f164.js",
       "bytes": 32203,
-      "gzipBytes": 5471
+      "gzipBytes": 5466
     },
     {
-      "name": "common.c3f0bba8.js",
-      "bytes": 1025923,
-      "gzipBytes": 172132
+      "name": "common.f6c151c8.js",
+      "bytes": 1027365,
+      "gzipBytes": 172330
     },
     {
-      "name": "index.1138711f.js",
-      "bytes": 14882,
-      "gzipBytes": 4418
+      "name": "index.21349b4b.js",
+      "bytes": 7117,
+      "gzipBytes": 2181
     },
     {
-      "name": "index.26545f01.js",
-      "bytes": 14268,
-      "gzipBytes": 4621
+      "name": "index.475e3b15.js",
+      "bytes": 14348,
+      "gzipBytes": 4655
     },
     {
-      "name": "index.47cb96cc.js",
-      "bytes": 12113,
-      "gzipBytes": 3955
+      "name": "index.7c30acae.js",
+      "bytes": 11978,
+      "gzipBytes": 3991
     },
     {
-      "name": "index.70a58ad0.js",
-      "bytes": 9503,
-      "gzipBytes": 2904
+      "name": "index.b1748431.js",
+      "bytes": 1811,
+      "gzipBytes": 778
     },
     {
-      "name": "index.8ca1768c.js",
-      "bytes": 7087,
-      "gzipBytes": 2163
+      "name": "index.c5ca5c31.js",
+      "bytes": 9429,
+      "gzipBytes": 2946
     },
     {
-      "name": "index.b0edba2f.js",
-      "bytes": 1808,
-      "gzipBytes": 762
+      "name": "index.ff7e995f.js",
+      "bytes": 14987,
+      "gzipBytes": 4449
     },
     {
-      "name": "vendors.ce3f8be8.js",
-      "bytes": 308385,
-      "gzipBytes": 99331
+      "name": "vendors.c9f0ebf0.js",
+      "bytes": 307626,
+      "gzipBytes": 99168
     }
   ],
-  "totalBytes": 1562361,
-  "totalGzipBytes": 340393,
+  "totalBytes": 1563053,
+  "totalGzipBytes": 340600,
   "method": "Production JavaScript bytes and gzip sizes, excluding separately loaded profile/search JSON; size budgets only, not browser timing."
 }

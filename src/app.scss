@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'Shanhe Serif';
-  src: url('./assets/fonts/shanhe-serif.woff2') format('woff2');
-  font-weight: 400 600;
-  font-style: normal;
-  font-display: swap;
-}
-
 $paper: #f4f7f3;
 $ink: #203d43;
 $muted: #60736c;
@@ -49,7 +41,7 @@ a { color: inherit; }
 .header-nav { display: flex; align-items: center; gap: 32px; }
 .nav-item { min-height: 44px; display: inline-flex; align-items: center; font-size: 14px; position: relative; }
 .nav-item.active { color: $red; }
-.nav-item.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: $red; }
+.nav-item.active::after { top: auto; content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: $red; }
 .header-date { color: $muted; font-size: 12px; letter-spacing: 2px; }
 .site-footer { border-top: 1px solid $line; }
 .footer-inner { width: calc(100% - 96px); max-width: 1160px; margin: 0 auto; padding: 26px 0; display: flex; align-items: center; gap: 24px; }
@@ -166,7 +158,7 @@ a { color: inherit; }
 .catalogue-tabs .ui-button { display: flex; align-items: center; gap: 9px; min-height: 50px; padding-bottom: 15px; position: relative; font-size: 15px; color: $muted; }
 .catalogue-tabs .ui-button > text, .catalogue-tabs .ui-button > taro-text-core { font-size: 11px; color: $muted; }
 .catalogue-tabs .ui-button.selected { color: $ink; }
-.catalogue-tabs .ui-button.selected::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 2px; background: $red; }
+.catalogue-tabs .ui-button.selected::after { top: auto; content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 2px; background: $red; }
 .catalogue-tabs .icon { --icon-size: 17px; }
 .search-bar { display: flex; align-items: center; gap: 14px; min-height: 58px; padding: 0 18px; border: 1px solid #bacbbd; background: #fff9; }
 .search-bar:focus-within { border-color: $ink; box-shadow: 0 0 0 1px $ink; }
@@ -342,7 +334,7 @@ a { color: inherit; }
 .portrait-dialog { width: min(100%, 920px); max-height: 90vh; max-height: 90dvh; overflow-y: auto; overscroll-behavior: contain; background: $paper; padding: 14px 22px 24px; }
 .portrait-dialog:focus { outline: none; }
 .portrait-dialog-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 17px; }
-.portrait-dialog-heading > :first-child { min-width: 0; overflow-wrap: anywhere; }
+.portrait-dialog-identity { min-width: 0; overflow-wrap: anywhere; }
 .portrait-dialog-name { display: block; }
 .portrait-dialog-label { display: block; margin-top: 3px; color: $muted; font-size: 11px; }
 .portrait-original-stage { display: flex; align-items: center; justify-content: center; min-height: 160px; margin-top: 10px; padding: 16px; background: #e8ede6; }
@@ -583,3 +575,8 @@ a { color: inherit; }
 
 .route-status { position: fixed; z-index: 60; top: 12px; right: 16px; max-width: calc(100% - 32px); padding: 7px 12px; background: $paper; border: 1px solid $line; color: $muted; font-size: 12px; pointer-events: none; box-shadow: 0 3px 12px #203d430a; }
 .catalogue-search-status { display: flex; align-items: center; gap: 16px; padding: 24px 0; color: $muted; font-size: 13px; }
+
+/* The same approved avatar identifies the web and native mini program. */
+.brand-icon { display: block; width: 40px; height: 40px; border-radius: 6px; flex: 0 0 auto; object-fit: contain; }
+@media (max-width: 760px) { .brand-icon { width: 36px; height: 36px; border-radius: 5px; } }
+@media (max-width: 374px) { .brand-icon { width: 32px; height: 32px; } }

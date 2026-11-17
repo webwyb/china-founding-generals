@@ -1,0 +1,25 @@
+@use './app.scss';
+/* Only native rendering differences live here. Layout, type, colour and page
+   classes come from the same stylesheet as H5. */
+view, text, button, input, image { box-sizing: border-box; }
+.html-h1, .html-h2, .html-h3, .html-p { margin: 0; }
+.html-a { display: inline-flex; min-height: 44px; text-align: left; font-size: inherit; }
+.platform-weapp .header-inner { padding-right: 20px; height: 64px; }
+.platform-weapp .header-nav { display: flex; }
+.platform-weapp .nav-about { display: none; }
+.platform-weapp .site-header { padding-top: 0; }
+.platform-weapp .tile-photo { height: 190px; }
+.platform-weapp .compact-tile .tile-photo { height: 92px; }
+.platform-weapp .featured-grid .tile-photo { height: 125px; }
+.platform-weapp .portrait-image { top: 6px; left: 6px; }
+.platform-weapp .person-main-photo { height: 143px; }
+.platform-weapp .is-closed > .source-row, .platform-weapp .is-closed > .source-note { display: none; }
+.platform-weapp .native-summary .ui-button { width: 100%; }
+.platform-weapp .card-theme-picker .html-legend { font-size: 12px; color: #60736c; margin-bottom: 11px; }
+.platform-weapp .card-preview-frame { min-height: 480px; }
+.platform-weapp .card-preview-placeholder { min-height: 480px; }
+.platform-weapp .live-card-preview { height: auto; }
+.platform-weapp .profile-reading-nav .native-reading-active { color: #a23f32; }
+
+.platform-weapp .ui-button[disabled] { color: inherit; }
+.platform-weapp .primary-button[disabled] { color: #fff; }

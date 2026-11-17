@@ -20,7 +20,7 @@ export async function loadSeoRenderer() {
       builder.onResolve({filter:/^@tarojs\/taro$/},()=>({path:'taro',namespace:'ssg'}))
       builder.onResolve({filter:/^@tarojs\/components$/},()=>({path:'components',namespace:'ssg'}))
       builder.onLoad({filter:/.*/,namespace:'ssg'},args=>({loader:'js',resolveDir:root,contents:args.path==='taro'
-        ? `export const useDidShow=()=>{},useShareAppMessage=()=>{},useRouter=()=>({params:Object.fromEntries(new URLSearchParams(window.location.search))}); export default {getStorageSync(){},setStorageSync(){}};`
+        ? `export const usePageScroll=()=>{},useReachBottom=()=>{},useDidShow=()=>{},useShareAppMessage=()=>{},useRouter=()=>({params:Object.fromEntries(new URLSearchParams(window.location.search))}); export default {getStorageSync(){},setStorageSync(){}};`
         : `import React from 'react'; export const View=({children,...props})=>React.createElement('div',props,children),Text=({children,...props})=>React.createElement('span',props,children),Button=()=>null,Input=()=>null,Canvas=()=>null,Image=()=>null;`}))
       builder.onResolve({filter:/\.(jpg|svg)$/},args=>({path:resolve(args.resolveDir,args.path),namespace:'ssg-image'}))
       builder.onLoad({filter:/.*/,namespace:'ssg-image'},async args=>{

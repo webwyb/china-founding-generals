@@ -11,6 +11,7 @@ const { createCanvas, loadImage, GlobalFonts } = require('@napi-rs/canvas')
 const jsQR = require('jsqr')
 await build({ entryPoints: [resolve(root,'src/services/cardRenderer.ts')], bundle: true, platform: 'node', format: 'cjs', outfile: resolve(root,'.cache/design-render/renderer.cjs') })
 const { drawMemorialCard } = require(resolve(root,'.cache/design-render/renderer.cjs'))
+const brandImage = await loadImage(resolve(root, 'public/brand/icon.png'))
 assert.ok(GlobalFonts.registerFromPath(resolve(root,'src/assets/fonts/shanhe-serif.woff2'), 'Shanhe Serif'), '仓库内中文字体应成功加载')
 const people = JSON.parse(await readFile(resolve(root,'src/data/catalog.generated.json'),'utf8'))
 const regions = JSON.parse(await readFile(resolve(root,'data/design/landscape-prompts.json'),'utf8')).regions
@@ -38,7 +39,7 @@ textContext.fillText=(text,x,y,...rest)=>{
 }
 for(const person of people)for(const theme of ['landscape','portrait']) {
  const beforeAiLabels=aiLabels
- drawMemorialCard(textContext,person,sampleImage,sampleImage,theme)
+ drawMemorialCard(textContext,person,sampleImage,sampleImage,theme,brandImage)
  assert.equal(aiLabels-beforeAiLabels,theme==='landscape'&&regions.some(region=>region.province===person.province)?1:0,`${person.name}的AI标识须与实际景观一致并写入同一成图`)
  if(theme==='landscape') {
   // Scan the actual rasterized footer at a reduced 600px card width. Full
@@ -61,7 +62,7 @@ for (const person of selected) {
   const canvas=createCanvas(1200,1800),context=canvas.getContext('2d');context.scale(2,2)
   const fill=context.fillText.bind(context);let labels=0
   context.fillText=(text,x,y,...rest)=>{const width=context.measureText(text).width;const left=context.textAlign==='center'?x-width/2:context.textAlign==='right'?x-width:x;assert.ok(left>=20&&left+width<=580,`${person.name}的文字溢出：${text}`);assert.ok(y>=20&&y<=875);labels++;return fill(text,x,y,...rest)}
-  drawMemorialCard(context,person,portrait,scenery,theme)
+  drawMemorialCard(context,person,portrait,scenery,theme,brandImage)
   scan(context,1200,1800,person,`${theme}完整PNG`)
   const shared=createCanvas(800,1200),sharedContext=shared.getContext('2d')
   sharedContext.drawImage(canvas,0,0,800,1200)

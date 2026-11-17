@@ -1,3 +1,4 @@
+import { BRAND_NAME, BRAND_TAGLINE, BRAND_ICON } from './brand'
 import { getProvinceLandscape } from '../data/landscapes'
 import type { ShareCardData } from './share'
 import { containImage } from './imageGeometry'
@@ -50,7 +51,7 @@ function fullPortrait(context: CanvasRenderingContext2D, image: CanvasImageSourc
 }
 
 /** A single composition powers the on-page preview and the downloaded PNG. */
-export function drawMemorialCard(context: CanvasRenderingContext2D, person: ShareCardData, portrait: CanvasImageSource, scenery: CanvasImageSource | null, theme: CardTheme = 'landscape') {
+export function drawMemorialCard(context: CanvasRenderingContext2D, person: ShareCardData, portrait: CanvasImageSource, scenery: CanvasImageSource | null, theme: CardTheme = 'landscape', brandImage?: CanvasImageSource) {
   const region = getProvinceLandscape(person.province)
   const scenic = theme === 'landscape' && scenery && region
   context.fillStyle = palette.paper
@@ -62,10 +63,11 @@ export function drawMemorialCard(context: CanvasRenderingContext2D, person: Shar
   context.fillStyle = palette.ink
   context.textAlign = 'left'
   font(context, 25, true, 600)
-  context.fillText('山河有名', 46, 69)
+  if (brandImage) context.drawImage(brandImage, 46, 45, 44, 44)
+  context.fillText(BRAND_NAME, brandImage ? 103 : 46, 69)
   context.fillStyle = palette.muted
   font(context, 11)
-  context.fillText('开国将帅纪念馆', 47, 91)
+  context.fillText('开国将帅纪念馆', brandImage ? 104 : 47, 91)
   context.strokeStyle = palette.red
   context.strokeRect(509.5, 45.5, 42, 48)
   context.textAlign = 'center'
@@ -131,8 +133,8 @@ export function drawMemorialCard(context: CanvasRenderingContext2D, person: Shar
   context.beginPath(); context.moveTo(46, 770); context.lineTo(554, 770); context.stroke()
   context.textAlign = 'left'
   context.fillStyle = palette.ink
-  font(context, 16, true, 500)
-  context.fillText('我想让你记住这个名字。', 46, 805)
+  font(context, 15, true, 500)
+  context.fillText(BRAND_TAGLINE, 46, 805)
   context.fillStyle = palette.muted
   font(context, 12)
   context.fillText('扫码阅读完整生平', 46, 829)
@@ -161,7 +163,7 @@ function loadImage(src: string, label: string): Promise<HTMLImageElement> {
 
 export async function renderMemorialCard(person: ShareCardData, theme: CardTheme = 'landscape'): Promise<string> {
   const region = getProvinceLandscape(person.province)
-  const [portrait, scenery] = await Promise.all([loadImage(person.portrait, '历史肖像'), theme === 'landscape' && region ? loadImage(region.image, '家乡景观') : Promise.resolve(null)])
+  const [portrait, scenery, brandImage] = await Promise.all([loadImage(person.portrait, '历史肖像'), theme === 'landscape' && region ? loadImage(region.image, '家乡景观') : Promise.resolve(null), loadImage(BRAND_ICON, '品牌图标')])
   if (document.fonts) await Promise.race([Promise.all([document.fonts.load('600 48px "Shanhe Serif"', person.name), document.fonts.load('500 21px "Shanhe Serif"', person.tagline)]).catch(() => undefined), new Promise(resolve => setTimeout(resolve, 5000))])
   const canvas = document.createElement('canvas')
   canvas.width = CARD_WIDTH * 2
@@ -169,6 +171,6 @@ export async function renderMemorialCard(person: ShareCardData, theme: CardTheme
   const context = canvas.getContext('2d')
   if (!context) throw new Error('当前浏览器暂不支持生成纪念卡。')
   context.scale(2, 2)
-  drawMemorialCard(context, person, portrait, scenery, theme)
+  drawMemorialCard(context, person, portrait, scenery, theme, brandImage)
   return canvas.toDataURL('image/png')
 }

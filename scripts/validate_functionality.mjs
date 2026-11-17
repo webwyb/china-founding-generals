@@ -25,7 +25,7 @@ await build({
   define: { 'process.env.TARO_ENV': '"h5"' }, loader: { '.jpg': 'file', '.svg': 'file' },
   plugins: [{ name: 'taro-test-adapter', setup(builder) {
     builder.onResolve({ filter: /^@tarojs\/taro$/ }, () => ({ path: 'taro', namespace: 'test' }))
-    builder.onLoad({ filter: /.*/, namespace: 'test' }, () => ({ contents: 'export default globalThis.testTaro; export const useDidShow=()=>{},useRouter=()=>({params:{}}),useShareAppMessage=()=>{}', loader: 'js' }))
+    builder.onLoad({ filter: /.*/, namespace: 'test' }, () => ({ contents: 'export default globalThis.testTaro; export const usePageScroll=()=>{},useReachBottom=()=>{},useDidShow=()=>{},useRouter=()=>({params:{}}),useShareAppMessage=()=>{}', loader: 'js' }))
     builder.onResolve({ filter: /^@tarojs\/components$/ }, () => ({ path: 'components', namespace: 'test-components' }))
     builder.onLoad({ filter: /.*/, namespace: 'test-components' }, () => ({ contents: 'export const Button=()=>null,Text=()=>null,View=()=>null,Input=()=>null,Canvas=()=>null,Image=()=>null', loader: 'js' }))
   } }],

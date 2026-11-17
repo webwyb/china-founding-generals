@@ -17,7 +17,7 @@ const escape = text => String(text).replace(/[&<>"']/g,character=>({'&':'&amp;',
 function head(data) {
   const meta=(name,content,property=false)=>content ? `<meta ${property?'property':'name'}="${name}" content="${escape(content)}">` : ''
   return `<title>${escape(data.title)}</title>${meta('description',data.description)}${meta('robots',data.robots)}${data.canonical?`<link rel="canonical" href="${escape(data.canonical)}">`:''}`+
-    Object.entries({title:data.title,description:data.description,url:data.canonical,type:'website',site_name:'山河有名',locale:'zh_CN',image:data.image}).map(([key,value])=>meta('og:'+key,value,true)).join('')+
+    Object.entries({title:data.title,description:data.description,url:data.canonical,type:'website',site_name:'名在山河',locale:'zh_CN',image:data.image}).map(([key,value])=>meta('og:'+key,value,true)).join('')+
     Object.entries({card:'summary',title:data.title,description:data.description,image:data.image}).map(([key,value])=>meta('twitter:'+key,value)).join('')+
     `<script id="page-structured-data" type="application/ld+json">${serializeStructuredData(data.structuredData)}</script>`
 }

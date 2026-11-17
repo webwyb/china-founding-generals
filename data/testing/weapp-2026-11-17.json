@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-17",
+  "baseCommit": "640b9a1",
+  "branch": "codex/weapp",
+  "scope": "编译、API适配器、Skia静态成图、HTTPS公开服务预检；不是微信运行环境验收",
+  "checks": {
+    "npm run check": "passed",
+    "npm run check:weapp": "passed after final AppID configuration; generated project AppID and urlCheck verified",
+    "git diff --check": "passed"
+  },
+  "mainPackage": {
+    "bytes": 1351690,
+    "MiB": 1.29,
+    "maximumCheckedBytes": 2097152,
+    "pages": 5
+  },
+  "catalogue": {
+    "people": 1614,
+    "portraits": 1609,
+    "pendingPeople": 190,
+    "missingPortraits": 5
+  },
+  "adapterCoverage": [
+    "人物请求合并、缓存、身份冲突拒绝及重试",
+    "全文检索结构验证与重试",
+    "原生导航返回与同级替换",
+    "Canvas两种样式1200×1800静态PNG",
+    "相册保存复用预览文件",
+    "相册权限拒绝、取消、其他失败"
+  ],
+  "online": {
+    "dataVersion": "1cc8d4e396ed7359607e",
+    "records": [
+      {
+        "id": "suyu",
+        "status": 200,
+        "biographySections": 3
+      },
+      {
+        "id": "zhude",
+        "status": 200,
+        "biographySections": 3
+      },
+      {
+        "id": "p0262",
+        "status": 200,
+        "biographySections": 4
+      },
+      {
+        "id": "p1138",
+        "status": 200,
+        "biographySections": 4
+      },
+      {
+        "id": "p1272",
+        "status": 200,
+        "biographySections": 6
+      }
+    ],
+    "searchRecords": 1614,
+    "assets": [
+      {
+        "url": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/b62e527f9f75430e82a23ce2c220819237f3118b10fb8e0d5caa449a858d5888/suyu.jpg",
+        "status": 200,
+        "type": "image/jpeg",
+        "cors": null
+      },
+      {
+        "url": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/9eacd1d770c50eee7b52f4c641490d1d93894e2255bee081af526ebe5bcdf42b/zhude.jpg",
+        "status": 200,
+        "type": "image/jpeg",
+        "cors": null
+      },
+      {
+        "url": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/0d9899709909fc9e4f1103c185643cdb14ecc974da783de7865879b4c88b08bb/shanhe-serif.woff2",
+        "status": 200,
+        "type": "font/woff2",
+        "cors": null
+      },
+      {
+        "url": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/029f77f982d68b81e80ef73aad8567a228db7370a617320b3d2cc2f844ef35f9/hunan.webp",
+        "status": 200,
+        "type": "image/webp",
+        "cors": null
+      }
+    ],
+    "scope": "HTTPS preflight only; no WeChat runtime or device testing"
+  },
+  "notTested": [
+    "微信开发者工具未安装",
+    "未使用真实AppID验收合法域名",
+    "iOS/Android微信真机",
+    "真实原生转发、相册落盘及权限",
+    "客户端字体、返回位置与布局"
+  ],
+  "knownSetup": [
+    "已按用户提供的信息配置wx2652a3141486dd4d；微信后台合法域名待配置与验收",
+    "公开素材HTTP HEAD响应对https://servicewechat.com未提供CORS允许头，字体回退系统字体；需配置后真机确认"
+  ],
+  "release": "未提交、推送、上传或发布小程序；未修改H5生产服务",
+  "appId": "wx2652a3141486dd4d"
+}

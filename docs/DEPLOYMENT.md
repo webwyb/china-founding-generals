@@ -32,7 +32,7 @@
 
 复用北京地域 `media-1301987491`，网站素材范围为 `shanhe/assets/`。肖像、景观、字体、图标都使用 `https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/<sha256>/<文件名>`，同一内容地址保持不变，更新资源产生新地址。部署只列举该前缀，并上传尚不存在的对象，保留旧资源供旧页面与回滚使用。该目录的存储与流量使用现有 COS 计费及资源包规则。
 
-CAM 专用身份关联 `ShanheAssetsPublish`，策略原稿为 `scripts/deploy/cos-policy.json`：只有该目录的 `PutObject` 和限定 prefix 的 `GetBucket`。存储桶原有公共读取模式沿用；CORS 允许 `https://shanhe.binnwu.top` 与原 `http://49.233.60.125` 的 GET/HEAD，支持跨域字体与 Canvas 图片导出。
+CAM 专用身份关联 `ShanheAssetsPublish`，策略原稿为 `scripts/deploy/cos-policy.json`：只有该目录的 `PutObject` 和限定 prefix 的 `GetBucket`。存储桶原有公共读取模式沿用；CORS 允许 `https://shanhe.binnwu.top`、原 `http://49.233.60.125` 和微信来源 `https://servicewechat.com` 的 GET/HEAD，支持跨域字体与 Canvas 图片导出。
 
 独立素材工作流上传使用300秒请求超时、最多4个文件并发，保留 SDK 网络重试。可回退文件流传递已校验的原图字节，让 HTTP 按块读取请求体；仍使用单次 PutObject、MD5与原有目录权限，接口见 [官方 SDK](https://cloud.tencent.com/document/product/436/12269)。日志保留具体文件、大小和原始错误；网络错误排除后只重跑素材 job，已上传内容按哈希复用。本轮拆分不宣称解决所有 GitHub 到 COS 的大文件网络问题。
 

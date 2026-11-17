@@ -1,0 +1,10 @@
+生成方式：内置 image_gen 工具；新图生成；不透明背景。
+
+Use case: logo-brand.
+Asset type: finished square avatar for a Chinese WeChat mini program named 名在山河, a public digital memorial and biographical archive of China's founding marshals and generals.
+Create ONE polished 1024x1024 square app avatar, a finished standalone bitmap image, not a presentation or device mockup.
+Design: a bold, memorable compact emblem combining a mountain range, a flowing river and an open archival book into ONE unified symbol. The two open pages gently become two broad mountain ridges; a single porcelain-white river is the negative space running from the valley toward the viewer. A small cinnabar-red sun above the right ridge provides the only bright accent. Three or fewer mountain forms. The visual must feel like a modern Chinese cultural archive, dignified, human, calm, enduring, not a military game.
+Palette: solid deep pine-green #203d43 field extending edge to edge; the large central emblem uses porcelain-white #f4f7f3 and restrained muted jade #9eafa0; one cinnabar-red #a23f32 sun.
+Style: refined Chinese woodcut and seal-carving inspired graphic design, bold confident silhouettes, crisp edges, almost flat color with only an extremely subtle print texture inside forms. Balanced rhythm and elegant negative space. No thin outlines. No realistic scenery or gradients.
+Composition: emblem centered, fills about 68 percent of the square, generous clear margins; all important content inside the central 76 percent so it survives a circular crop and reads clearly at 48x48 pixels. No enclosing circular border. Square background, no rounded outer corners.
+Constraints: NO text, NO lettering, NO numbers, NO watermark, NO human figures or portraits, NO faces, NO flags, NO military or official badges, NO stars, NO weapons, NO intricate ornaments. Deliver a single beautiful professional app avatar.

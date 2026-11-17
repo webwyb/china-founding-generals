@@ -64,7 +64,7 @@ for (const region of regions) {
 const counts = Object.fromEntries(Object.keys(labels).map(status => [status, records.filter(row => row.evidenceCategory === status).length]))
 records.sort((a, b) => a.priority - b.priority)
 const report = {
-  date: '2026-11-17', title: '山河有名 · 图片授权待核实清单',
+  date: '2026-11-17', title: '名在山河 · 图片授权待核实清单',
   scope: '覆盖1609张实际历史肖像（含8张精选肖像）和29张AI景观；5位占位人物单列。未纳入字体、代码图标等非人物／景观素材。',
   note: '清单只整理现有来源与许可标记，不是逐图法律结论；身份审核通过不等于版权授权通过。未向权利人发信，未将任何条目标为已取得授权。',
   summary: { total: records.length, portraits: records.filter(row => row.category === '历史肖像').length, landscapes: regions.length, missingPortraits: missingPortraits.length, counts },

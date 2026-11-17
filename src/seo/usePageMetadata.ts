@@ -16,7 +16,7 @@ export function updatePageMetadata(page: SeoPage, person?: Person) {
   }
   meta('description', data.description)
   meta('robots', data.robots)
-  for (const [key, value] of Object.entries({ title: data.title, description: data.description, url: data.canonical, type: 'website', site_name: '山河有名', locale: 'zh_CN', image: data.image, 'image:alt': data.image ? `${person!.name}历史肖像` : undefined })) meta(`og:${key}`, value, true)
+  for (const [key, value] of Object.entries({ title: data.title, description: data.description, url: data.canonical, type: 'website', site_name: '名在山河', locale: 'zh_CN', image: data.image, 'image:alt': data.image ? person && !person.portraitMissing ? `${person.name}历史肖像` : '名在山河图标' : undefined })) meta(`og:${key}`, value, true)
   for (const [key, value] of Object.entries({ card: 'summary', title: data.title, description: data.description, image: data.image })) meta(`twitter:${key}`, value)
   let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]')
   if (!data.canonical) canonical?.remove()

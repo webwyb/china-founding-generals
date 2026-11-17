@@ -2,7 +2,7 @@
   "name": "shanhe-youming",
   "version": "0.1.0",
   "private": true,
-  "description": "山河有名 · 开国将帅纪念馆，基于 Taro 的 H5 原型",
+  "description": "名在山河 · 开国将帅纪念馆，基于 Taro 的 H5 与微信小程序",
   "scripts": {
     "dev:h5": "taro build --type h5 --watch",
     "dev:weapp": "taro build --type weapp --watch",
@@ -28,7 +28,10 @@
     "validate:seo": "node scripts/validate_seo.mjs",
     "validate:seo:http": "node scripts/python.mjs scripts/test_seo_http.py",
     "validate:seo:release": "node scripts/python.mjs scripts/deploy/verify-seo-package.py",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "validate:weapp": "node scripts/validate_weapp.mjs",
+    "check:weapp": "npm run typecheck && npm run build:weapp && npm run validate:weapp",
+    "validate:weapp:online": "node scripts/validate_weapp_online.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -83,7 +83,7 @@ function paintCard(painter: CardPainter, person: ShareCardData): void {
   painter.align('left')
   painter.fill(COLORS.ink)
   painter.font(25, 'serif')
-  painter.text('山河有名', 48, 69)
+  painter.text('名在山河', 48, 69)
   painter.fill(COLORS.muted)
   painter.font(12)
   painter.text('开国将帅纪念馆', 49, 93)

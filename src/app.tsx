@@ -1,4 +1,5 @@
 import type { PropsWithChildren } from 'react'
+import './fonts.scss'
 import './app.scss'
 import './seo/bootstrap'
 

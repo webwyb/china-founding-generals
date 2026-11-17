@@ -51,7 +51,7 @@ assert version['attempt'] == os.environ['GITHUB_RUN_ATTEMPT'], version
 PY
   then
     echo "Published https://shanhe.binnwu.top ($GITHUB_SHA)."
-    printf 'Deployed [%s](https://shanhe.binnwu.top) from `%s`.\n' '山河有名' "$GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
+    printf 'Deployed [%s](https://shanhe.binnwu.top) from `%s`.\n' '名在山河' "$GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
     exit 0
   fi
   sleep 5

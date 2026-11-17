@@ -1,3 +1,5 @@
+import { BRAND_ICON } from '../../services/brand'
+import { Inline, Heading } from '../../components/Html'
 import { Text, View } from '@tarojs/components'
 import Button from '../../components/Button'
 import { pageHref } from '../../services/personLinks'
@@ -17,12 +19,12 @@ const heroPeople = [...featuredPeople, ...people.filter(person => !person.portra
 
 export default function Index() {
   usePageMetadata('index')
-  useShareAppMessage(() => ({ title: '山河有名｜记住一个名字，走近一段历史', path: '/pages/index/index' }))
+  useShareAppMessage(() => ({ title: '名在山河｜名字留在山河，记忆有其来处。', path: '/pages/index/index', imageUrl: BRAND_ICON }))
   return <Shell>
     <View className='home-hero container'>
       <View className='hero-copy'>
         <View className='hero-eyebrow'><View className='red-rule' /><Text>共和国开国将帅 · 数字纪念馆</Text></View>
-        <h1 className='hero-heading serif'>他们的名字，<span className='hero-heading-line'>我们记得。</span></h1>
+        <Heading className='hero-heading serif'>他们的名字，<Inline className='hero-heading-line'>我们记得。</Inline></Heading>
         <Text className='hero-description'>从一张面孔，走近一段历史。<Text className='block'>致敬开国将帅，铭记一代人的理想与担当。</Text></Text>
         <View className='hero-actions'>
           <Button className='primary-button' href='/generals/' onClick={() => openPage('explore')}>走进纪念馆<Icon name='arrow' /></Button>
@@ -41,7 +43,7 @@ export default function Index() {
     </View>
 
     <View className='memory-band'>
-      <View className='container memory-band-inner'><Text className='band-index'>铭记来路</Text><Text className='memory-quote serif'>山河留住足迹，<Text className='quote-break'>我们记住名字。</Text></Text><Text className='memory-subtitle'>在时代的群像里，看见每一个具体的人。</Text></View>
+      <View className='container memory-band-inner'><Text className='band-index'>铭记来路</Text><Text className='memory-quote serif'>名字留在山河，<Text className='quote-break'>记忆有其来处。</Text></Text><Text className='memory-subtitle'>在时代的群像里，看见每一个具体的人。</Text></View>
     </View>
 
     <View className='hometown-section container'>

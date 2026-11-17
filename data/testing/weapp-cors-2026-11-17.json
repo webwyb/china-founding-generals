@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-17",
+  "bucket": "media-1301987491",
+  "region": "ap-beijing",
+  "newRule": {
+    "origins": [
+      "https://servicewechat.com"
+    ],
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "allowedHeaders": [
+      "*"
+    ],
+    "exposedHeaders": [
+      "ETag",
+      "Content-Length",
+      "x-cos-request-id"
+    ],
+    "maxAgeSeconds": 600,
+    "varyOrigin": true
+  },
+  "existingRulePreserved": {
+    "origins": [
+      "https://shanhe.binnwu.top",
+      "http://49.233.60.125"
+    ],
+    "methods": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "font": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/0d9899709909fc9e4f1103c185643cdb14ecc974da783de7865879b4c88b08bb/shanhe-serif.woff2",
+  "checks": [
+    {
+      "method": "HEAD",
+      "origin": "https://servicewechat.com",
+      "status": 200,
+      "allowOrigin": "https://servicewechat.com",
+      "contentType": "font/woff2"
+    },
+    {
+      "method": "HEAD",
+      "origin": "https://shanhe.binnwu.top",
+      "status": 200,
+      "allowOrigin": "https://shanhe.binnwu.top"
+    },
+    {
+      "method": "HEAD",
+      "origin": "http://49.233.60.125",
+      "status": 200,
+      "allowOrigin": "http://49.233.60.125"
+    },
+    {
+      "method": "HEAD",
+      "origin": "https://cors-negative.example",
+      "status": 200,
+      "allowOrigin": null
+    },
+    {
+      "method": "OPTIONS",
+      "origin": "https://servicewechat.com",
+      "requestedMethod": "GET",
+      "status": 200,
+      "allowOrigin": "https://servicewechat.com",
+      "allowMethods": "GET,HEAD",
+      "maxAge": "600"
+    }
+  ],
+  "screenshot": "data/testing/weapp-cors-2026-11-17.jpg",
+  "scope": "腾讯云控制台保存及公开字体HEAD/OPTIONS响应检查；未执行微信真机字体渲染。完整validate:weapp:online在受限网络中因DNS失败未完成，不计为通过。"
+}

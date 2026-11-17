@@ -18,5 +18,5 @@ export function feedbackUrl(kind: 'copyright' | 'correction', person?: { id: str
       : ['发现的问题：', '建议更正内容：', '依据来源（网址或书刊名称、版本、页码）：']),
     '便于回复的联系方式：',
   ].join('\n')
-  return `mailto:${settings.feedbackEmail}?subject=${encodeURIComponent(`山河有名｜${title}${person ? `｜${person.name}` : ''}`)}&body=${encodeURIComponent(body)}`
+  return `mailto:${settings.feedbackEmail}?subject=${encodeURIComponent(`名在山河｜${title}${person ? `｜${person.name}` : ''}`)}&body=${encodeURIComponent(body)}`
 }

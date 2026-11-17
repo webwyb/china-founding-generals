@@ -11,6 +11,7 @@ const { build } = require('esbuild')
 await mkdir(resolve(root, '.cache/design-render'), { recursive: true })
 await build({ entryPoints: [resolve(root, 'src/services/cardRenderer.ts')], bundle: true, platform: 'node', format: 'cjs', outfile: resolve(root, '.cache/design-render/portrait-check.cjs') })
 const { drawMemorialCard } = require(resolve(root, '.cache/design-render/portrait-check.cjs'))
+const brandImage = await loadImage(resolve(root, 'public/brand/icon.png'))
 assert.ok(GlobalFonts.registerFromPath(resolve(root, 'src/assets/fonts/shanhe-serif.woff2'), 'Shanhe Serif'), '仓库内中文字体应成功加载')
 const manifest = JSON.parse(await readFile(resolve(root, 'data/catalog/portraits.json'), 'utf8'))
 const people = JSON.parse(await readFile(resolve(root, 'src/data/catalog.generated.json'), 'utf8'))
@@ -28,7 +29,7 @@ context.drawImage = (image, ...args) => { if (image === currentPortrait) calls.p
 
 function check(person, image, theme) {
   currentPortrait = image; calls = []
-  drawMemorialCard(context, person, image, scenery, theme)
+  drawMemorialCard(context, person, image, scenery, theme, brandImage)
   assert.equal(calls.length, 1, `${person.id}: 肖像应完整绘制一次`)
   const args = calls[0]
   assert.equal(args.length, 4, `${person.id}: 不应使用源图裁切`)

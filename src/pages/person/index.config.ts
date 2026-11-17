@@ -1,1 +1,1 @@
-export default definePageConfig({ navigationBarTitleText: '人物故事 · 山河有名', enableShareAppMessage: true })
+export default definePageConfig({ navigationBarTitleText: '人物故事 · 名在山河', enableShareAppMessage: true })

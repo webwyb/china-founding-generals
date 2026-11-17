@@ -89,3 +89,7 @@ node scripts/python.mjs scripts/build_design_font.py
 
 
 2026-11-17完整素材交付包含此前另266张已审核肖像，累计1609张照片。原件、逐图来源／许可说明、采用及排除记录、研究和验收报告一起保留；另5人仍有明确占位。`21f9df7` 的1343张记录为上一轮独立提交边界，恢复本轮后的main即可取得全部现有代码与素材。最新Git副本恢复验证见 `../data/testing/portrait-completion-2026-11-17.json`。
+
+## 微信小程序
+
+`npm run check:weapp` 执行类型检查、小程序构建、适配器回归与主包限制检查；`npm run dev:weapp` 监听编译。完整 `npm run check` 现也包含这些步骤。开发者工具导入、真实AppID、合法域名、发布版本依赖与待验收清单见 [WEAPP.md](WEAPP.md)。网络预检是独立的 `npm run validate:weapp:online`，普通检查保持离线可执行。
