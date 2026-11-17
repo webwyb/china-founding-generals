@@ -18,6 +18,8 @@
 
 CAM 专用身份关联 `ShanheAssetsPublish`，策略原稿为 `scripts/deploy/cos-policy.json`：只有该目录的 `PutObject` 和限定 prefix 的 `GetBucket`。存储桶原有公共读取模式沿用；CORS 允许 `https://shanhe.binnwu.top` 与原 `http://49.233.60.125` 的 GET/HEAD，支持跨域字体与 Canvas 图片导出。
 
+素材上传使用300秒请求超时、最多4个文件并发，并保留 SDK 的网络重试。日志在请求前记录文件路径及大小；失败时保留具体文件和原始错误，便于定位首次上传的大图。若遇到暂时网络超时，可在失败的 `deploy` 页面选择 **Re-run this job**；已成功上传的内容会按哈希复用，三系统检查也可沿用该次已成功的结果。
+
 本地普通 `npm run build` 仍生成完整自包含资源。仅生产工作流设置 `SHANHE_ASSET_BASE_URL`，构建时生成公开素材地址表，`prepare-assets.mjs` 再处理 Vite 输出的图片、字体和图标引用；原始文件继续随 Git 保留。代码包通过 tar 排除 `static/*`，首版独立快照的包体约477 KiB，COS 素材约218.9 MiB。
 
 ## 服务器边界
@@ -146,6 +148,7 @@ certbot renew --cert-name shanhe.binnwu.top --dry-run --run-deploy-hooks --no-ra
 | 新域名暂不能解析 | DNSPod A 记录、递归 DNS 缓存；保留既有 `www` 等记录，等待正常传播 |
 | 浏览器证书过期或续期验证失败 | 上述证书日期、定时器、服务日志；确认域名仍指向本机且 HTTP 验证路径可达 |
 | 网页能读但字体或卡片生成失败 | COS CORS 包含 `https://shanhe.binnwu.top` 的 GET/HEAD，响应 `Access-Control-Allow-Origin` 与来源一致 |
+| COS 首次上传出现写入超时 | 查看上传文件、大小及原始网络错误；重试失败的 deploy，复用已经完成的素材，避免反复运行全部检查 |
 | Actions 检查成功但发布失败 | `deploy` 日志、production Secrets、SSH 连通性、磁盘及公网版本；服务器配置由管理员单独维护 |
 
 ## 验证范围

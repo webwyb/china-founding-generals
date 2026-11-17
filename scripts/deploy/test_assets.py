@@ -24,6 +24,8 @@ class AssetTests(unittest.TestCase):
                 return {'Contents': [{'Key': 'shanhe/assets/existing/old.jpg'}], 'IsTruncated': 'false'}
             def put_object(self, **kwargs):
                 calls.append(kwargs)
+                if getattr(self, 'fail', False):
+                    raise ConnectionError('simulated write timeout')
         fake = types.ModuleType('qcloud_cos')
         client = Client()
         fake.CosConfig = lambda **kwargs: None
@@ -58,6 +60,13 @@ class AssetTests(unittest.TestCase):
                     with self.assertRaises(ValueError):
                         runpy.run_path(str(SCRIPT), run_name='__main__')
                     self.assertEqual(len(calls), 1)
+                    # A failed write identifies the asset and preserves its cause.
+                    (target / 'new.jpg').write_bytes(b'new portrait')
+                    client.fail = True
+                    with self.assertRaisesRegex(RuntimeError, 'portraits/new.jpg') as failure:
+                        runpy.run_path(str(SCRIPT), run_name='__main__')
+                    self.assertIsInstance(failure.exception.__cause__, ConnectionError)
+                    self.assertEqual(len(calls), 2)
             finally:
                 os.chdir(previous)
 

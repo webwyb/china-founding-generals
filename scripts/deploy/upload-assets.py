@@ -11,7 +11,7 @@ bucket = os.environ['COS_BUCKET']
 region = os.environ['COS_REGION']
 prefix = 'shanhe/assets/'
 client = CosS3Client(CosConfig(Region=region, SecretId=os.environ['COS_SECRET_ID'],
-    SecretKey=os.environ['COS_SECRET_KEY'], Scheme='https', Timeout=60))
+    SecretKey=os.environ['COS_SECRET_KEY'], Scheme='https', Timeout=300))
 assets = json.loads(Path('release-assets.json').read_text())
 existing = set()
 marker = ''
@@ -35,12 +35,16 @@ def upload(asset):
     if asset['url'] != expected:
         raise ValueError('Unexpected COS destination')
     content_type = mimetypes.guess_type(path.name)[0] or 'application/octet-stream'
-    client.put_object(Bucket=bucket, Key=key, Body=data, ContentType=content_type,
-                      CacheControl='public,max-age=31536000,immutable', EnableMD5=True)
+    print(f"Uploading {asset['path']} ({len(data)} bytes)", flush=True)
+    try:
+        client.put_object(Bucket=bucket, Key=key, Body=data, ContentType=content_type,
+                          CacheControl='public,max-age=31536000,immutable', EnableMD5=True)
+    except Exception as error:
+        raise RuntimeError('COS upload failed for ' + asset['path']) from error
     print('Uploaded ' + asset['path'], flush=True)
     return 1
 
 
-with ThreadPoolExecutor(max_workers=8) as pool:
+with ThreadPoolExecutor(max_workers=4) as pool:
     uploaded = sum(pool.map(upload, assets))
 print(f'COS assets ready: {uploaded} uploaded; {len(assets) - uploaded} reused.')
