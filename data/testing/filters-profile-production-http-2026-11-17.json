@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-17",
+  "status": "passed",
+  "base": "https://shanhe.binnwu.top",
+  "version": {
+    "sha": "4186f87c05a274a121f07db1d1dcab44e10034cc",
+    "run": "44042777764",
+    "attempt": "1"
+  },
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 21116,
+      "sha256": "6a2c0cc3150cd9959b5ab9047848524750029eb054b3f8ce1800bace2b05f369",
+      "contentType": "text/html; charset=utf-8",
+      "canonical": "https://shanhe.binnwu.top/"
+    },
+    {
+      "path": "/generals/",
+      "status": 200,
+      "bytes": 32683,
+      "sha256": "ccaf9d56eab58c09a4056f6bb14cd3b59ea2a604f56f6aea3d368b4108c7aed7",
+      "contentType": "text/html; charset=utf-8",
+      "canonical": "https://shanhe.binnwu.top/generals/"
+    },
+    {
+      "path": "/people/",
+      "status": 200,
+      "bytes": 223396,
+      "sha256": "41282b096d4edc80a06c2243714509fcf02173433e021b808f1faee8d1fd3ee8",
+      "contentType": "text/html; charset=utf-8",
+      "canonical": "https://shanhe.binnwu.top/people/"
+    },
+    {
+      "path": "/people/zhude/",
+      "status": 200,
+      "bytes": 24616,
+      "sha256": "d68cf0791454a15b34a7fc3109000f60013dd5def48067c9dc20696064d3a774",
+      "contentType": "text/html; charset=utf-8",
+      "canonical": "https://shanhe.binnwu.top/people/zhude/",
+      "completeBiographyTimelineAndSources": true
+    },
+    {
+      "path": "/people/p0272/",
+      "status": 200,
+      "bytes": 22774,
+      "sha256": "cf3e4cfcc3740653ed2e5e223a4d8d17c7cf328ae8d9762c37139e54532f7e36",
+      "contentType": "text/html; charset=utf-8",
+      "canonical": "https://shanhe.binnwu.top/people/p0272/",
+      "completeBiographyTimelineAndSources": true
+    },
+    {
+      "path": "/people/p0262/",
+      "status": 200,
+      "bytes": 22907,
+      "sha256": "8d57a4c32da5c90a0aec2797960e9899926a755c735e34f0ac8c676b56056fe3",
+      "contentType": "text/html; charset=utf-8",
+      "canonical": "https://shanhe.binnwu.top/people/p0262/",
+      "completeBiographyTimelineAndSources": true
+    },
+    {
+      "path": "/people/p1295/",
+      "status": 200,
+      "bytes": 26591,
+      "sha256": "8811e2895fb0518235f52618502bab4108d640814cbe4710c65dfd3c7df0c5ff",
+      "contentType": "text/html; charset=utf-8",
+      "canonical": "https://shanhe.binnwu.top/people/p1295/",
+      "completeBiographyTimelineAndSources": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 71,
+      "sha256": "f65f72b52645f67d44f34560a902c4f9d0f150691f5833e9e84004c8a5a4b798",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 103655,
+      "sha256": "8584b2e2fcc47e9533753b6917009ec6084b656e34afa5d718d84938788138e5",
+      "contentType": "text/xml; charset=utf-8"
+    }
+  ],
+  "sitemapUrls": 1618,
+  "unknownProfileStatus": 404,
+  "method": "Public HTTPS raw responses checked against the independently checked release snapshot. Four full profile biographies, timelines, sources, pending/missing states and updated profile markup verified. Browser interactions are recorded separately. No physical-device or search-indexing claim."
+}

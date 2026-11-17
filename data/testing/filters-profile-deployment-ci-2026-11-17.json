@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-17",
+  "status": "passed",
+  "sha": "4186f87c05a274a121f07db1d1dcab44e10034cc",
+  "run": 44042777764,
+  "url": "https://github.com/webwyb/china-founding-generals/actions/runs/44042777764",
+  "jobs": [
+    {
+      "id": 133901118704,
+      "name": "check (ubuntu-24.04)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 133901118970,
+      "name": "check (windows-2022)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 133901119011,
+      "name": "check (macos-15)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 133902651370,
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "assetRun": 44042777683,
+  "assetUrl": "https://github.com/webwyb/china-founding-generals/actions/runs/44042777683",
+  "assetJobs": [
+    {
+      "id": 133901118949,
+      "name": "sync",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "publishedAt": "2026-11-17T08:08:06Z",
+  "assets": {
+    "uploaded": 0,
+    "reused": 1642,
+    "readinessMarker": "_ready/a61543dc4acdbb0817a1f96e5012951755bcf78bdd2d44e2bd71e51a2fbafcdf.json"
+  },
+  "method": "GitHub job conclusions and completed logs retrieved through the connected GitHub tool. Publication identity verified separately through public HTTPS. This release did not change the root-owned receiver or server configuration."
+}

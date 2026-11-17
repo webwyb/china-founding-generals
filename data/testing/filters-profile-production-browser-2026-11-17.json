@@ -1,0 +1,197 @@
+{
+  "date": "2026-11-17",
+  "status": "passed_with_stated_scope",
+  "base": "https://shanhe.binnwu.top",
+  "sha": "4186f87c05a274a121f07db1d1dcab44e10034cc",
+  "observations": [
+    {
+      "case": "legacy-before-release",
+      "regions": [
+        "全部",
+        "江西325",
+        "湖北238",
+        "湖南202",
+        "安徽122",
+        "河南111",
+        "四川99"
+      ],
+      "result": "将帅名录共 1 位清除筛选",
+      "search": "李贞",
+      "url": "https://shanhe.binnwu.top/generals/"
+    },
+    {
+      "case": "legacy-state-ignored-after-release",
+      "height": 844,
+      "result": "将帅名录共 1,614 位",
+      "search": "",
+      "selected": [
+        "全部",
+        "全部"
+      ],
+      "url": "https://shanhe.binnwu.top/generals/",
+      "width": 390
+    },
+    {
+      "case": "marshal-linked",
+      "regions": [
+        "全部",
+        "四川4",
+        "湖南3",
+        "湖北1",
+        "山西1",
+        "广东1"
+      ],
+      "result": "元帅名录共 10 位清除筛选",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "case": "hunan-marshals",
+      "result": "湖南的元帅共 3 位\n\n清除筛选"
+    },
+    {
+      "case": "invalid-home-reset",
+      "rank": "大将",
+      "region": "全部",
+      "result": "大将名录共 10 位清除筛选"
+    },
+    {
+      "case": "refresh-reset",
+      "result": "将帅名录共 1,614 位",
+      "search": "",
+      "selected": [
+        "全部",
+        "全部"
+      ]
+    },
+    {
+      "case": "search-linked",
+      "regions": [
+        "全部",
+        "湖南1"
+      ],
+      "result": "将帅名录共 1 位清除筛选"
+    },
+    {
+      "case": "remembered-tab-reset",
+      "result": "将帅名录共 1,614 位",
+      "search": "",
+      "selectedTab": "全部名录1,614"
+    },
+    {
+      "case": "home-entry",
+      "region": "山东88",
+      "result": "山东的名字共 88 位清除筛选",
+      "url": "https://shanhe.binnwu.top/generals/"
+    },
+    {
+      "case": "home-entry-refresh",
+      "result": "将帅名录共 1,614 位"
+    },
+    {
+      "case": "profile-390",
+      "height": 844,
+      "landscapeHeight": 156,
+      "portraitFit": "contain",
+      "portraitLoaded": true,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "case": "marshal-desktop",
+      "height": 958,
+      "regions": [
+        "全部",
+        "四川4",
+        "湖南3",
+        "湖北1",
+        "山西1",
+        "广东1"
+      ],
+      "result": "元帅名录共 10 位清除筛选",
+      "scrollWidth": 1920,
+      "width": 1920
+    },
+    {
+      "case": "keyboard-timeline-390",
+      "current": "人生足迹",
+      "focusedId": "profile-timeline",
+      "navTop": 0,
+      "targetTop": 76.171875
+    },
+    {
+      "case": "manual-batch-before-profile",
+      "focusedHref": "/people/p0279/",
+      "scrollTop": 3140.5,
+      "visible": 48
+    },
+    {
+      "case": "sources-nav-390",
+      "current": "资料出处",
+      "focusedId": "profile-sources",
+      "sourcesOpen": true,
+      "targetTop": 76.171875
+    },
+    {
+      "case": "return-keeps-batch-and-position",
+      "rank": "少将",
+      "scrollTop": 3454.5,
+      "visible": 48
+    },
+    {
+      "case": "portrait-escape",
+      "dialogClosed": true,
+      "focusReturned": true
+    },
+    {
+      "case": "card-primary-action",
+      "previewHeight": 1800,
+      "previewWidth": 1200,
+      "url": "https://shanhe.binnwu.top/card/?id=zhude"
+    },
+    {
+      "case": "long-name-320",
+      "height": 812,
+      "name": "马尔果夫·伊斯哈科夫",
+      "portraitFit": "contain",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "case": "pending-region-320",
+      "hasLandscape": false,
+      "height": 812,
+      "pending": "资料待核实：籍贯或出生地、地域归属。记载差异与出处见下方说明。",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "case": "missing-portrait-320",
+      "caption": "历史肖像待补",
+      "height": 812,
+      "portraitDisabled": true,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "case": "tablet-768",
+      "display": "block",
+      "height": 900,
+      "scrollWidth": 768,
+      "storyWidth": 654,
+      "width": 768
+    },
+    {
+      "case": "profile-refresh-desktop",
+      "canonical": "https://shanhe.binnwu.top/people/zhude/",
+      "height": 958,
+      "landscapeHeight": 250,
+      "scrollWidth": 1920,
+      "title": "朱德 · 元帅 · 四川 · 仪陇 · 1886年生｜生平、人生足迹与史料｜山河有名",
+      "url": "https://shanhe.binnwu.top/people/zhude/",
+      "width": 1920
+    }
+  ],
+  "navigationObservation": "An immediate return attempt right after opening a profile did not change the route; after the route settled, the same control returned successfully with 48 people, the rank and a nonzero reading position retained. No rapid-navigation stress coverage claimed.",
+  "method": "Real public HTTPS interactions in Chrome at measured1920×958 and Codex in-app browser at390×844,320×812,768×900. Waited for the prerender shell to be replaced by the interactive app before acting. Captured old persisted filter behavior before deployment, then verified refresh ignored it after release. No device, WeChat, screen-reader or native IME test; card check covers entry and1200×1800 preview, not download landing."
+}
