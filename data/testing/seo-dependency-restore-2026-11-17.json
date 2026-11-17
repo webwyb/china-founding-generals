@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-17",
+  "status": "passed",
+  "failedRun": "https://github.com/webwyb/china-founding-generals/actions/runs/44033310525",
+  "cause": "Two newly added dependencies retained a developer-network registry URL; public CI could not download them.",
+  "fix": "Both resolved URLs and the project registry now use https://registry.npmjs.org/; package versions and integrity hashes unchanged. Full check rejects non-public registry URLs.",
+  "resolvedUrlCount": 99,
+  "allResolvedUrlsPublicNpm": true,
+  "cleanRestore": {
+    "command": "npm ci --cache ./npm-cache --no-audit --no-fund",
+    "environment": "Darwin",
+    "newTemporaryDirectory": true,
+    "initialCacheEmpty": true,
+    "exitCode": 0,
+    "packagesAdded": 812
+  },
+  "fullCheck": {
+    "command": "npm run check",
+    "exitCode": 0,
+    "peopleHtml": 1614,
+    "sitemapUrls": 1618
+  },
+  "scope": "Clean dependency restore on this Mac, with separate cross-platform GitHub CI still required."
+}

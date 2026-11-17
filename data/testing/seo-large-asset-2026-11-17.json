@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "url": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/8440e4b75a486854096d16c79146a5f05a3c42586c1a271a1b45416d969cc1d7/p1296.jpg",
+  "bytes": 5106876,
+  "sha256": "8440e4b75a486854096d16c79146a5f05a3c42586c1a271a1b45416d969cc1d7",
+  "cacheControl": "public,max-age=31536000,immutable",
+  "allowOrigin": "https://shanhe.binnwu.top",
+  "method": "Public HTTPS GET with normal TLS validation; bytes match repository original; no object was uploaded or changed by this check."
+}
