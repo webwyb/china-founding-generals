@@ -1,6 +1,7 @@
 """Upload only missing content-addressed objects; never delete or overwrite assets."""
 from concurrent.futures import ThreadPoolExecutor
 import hashlib
+import io
 import json
 import mimetypes
 import os
@@ -37,8 +38,10 @@ def upload(asset):
     content_type = mimetypes.guess_type(path.name)[0] or 'application/octet-stream'
     print(f"Uploading {asset['path']} ({len(data)} bytes)", flush=True)
     try:
-        client.put_object(Bucket=bucket, Key=key, Body=data, ContentType=content_type,
-                          CacheControl='public,max-age=31536000,immutable', EnableMD5=True)
+        # A seekable stream lets HTTP write bounded blocks and SDK retries rewind.
+        with io.BytesIO(data) as body:
+            client.put_object(Bucket=bucket, Key=key, Body=body, ContentType=content_type,
+                              CacheControl='public,max-age=31536000,immutable', EnableMD5=True)
     except Exception as error:
         raise RuntimeError('COS upload failed for ' + asset['path']) from error
     print('Uploaded ' + asset['path'], flush=True)

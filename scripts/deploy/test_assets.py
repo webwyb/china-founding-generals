@@ -23,6 +23,9 @@ class AssetTests(unittest.TestCase):
                 self.prefix = kwargs['Prefix']
                 return {'Contents': [{'Key': 'shanhe/assets/existing/old.jpg'}], 'IsTruncated': 'false'}
             def put_object(self, **kwargs):
+                payload = kwargs['Body'].read()
+                kwargs['Body'].seek(0)
+                kwargs['Payload'] = payload
                 calls.append(kwargs)
                 if getattr(self, 'fail', False):
                     raise ConnectionError('simulated write timeout')
@@ -55,6 +58,7 @@ class AssetTests(unittest.TestCase):
                     self.assertTrue(calls[0]['Key'].startswith('shanhe/assets/' + digest))
                     self.assertIn('immutable', calls[0]['CacheControl'])
                     self.assertTrue(calls[0]['EnableMD5'])
+                    self.assertEqual(calls[0]['Payload'], b'new portrait')
                     # Corrupt local bytes must fail before another network upload.
                     (target / 'new.jpg').write_bytes(b'corrupt')
                     with self.assertRaises(ValueError):
