@@ -2,7 +2,7 @@
   "status": "passed",
   "profileHtmlAccepted": 1614,
   "socialImagesOnCos": 1609,
-  "archiveBytes": 9142464,
+  "archiveBytes": 9131558,
   "assets": 1644,
   "runtimeJsonAccepted": 1615,
   "method": "Production-style URL rewrite and code archive in temporary copied build; extracted by repository receive.py. No cloud upload, server mutation, installed-receiver update or production deployment."

@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "applicationCommit": "12222cf9ea02727e66b805752060bdbe2652f295",
+  "run": {
+    "id": 44053264687,
+    "sha": "12222cf9ea02727e66b805752060bdbe2652f295",
+    "status": "completed",
+    "conclusion": "success",
+    "attempt": 1,
+    "url": "https://github.com/webwyb/china-founding-generals/actions/runs/44053264687",
+    "updatedAt": "2026-11-17T09:27:26Z"
+  },
+  "jobs": [
+    {
+      "id": 133936080565,
+      "name": "check (ubuntu-24.04)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 133936081133,
+      "name": "check (macos-15)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 133936081287,
+      "name": "check (windows-2022)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 133938333218,
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "assets": {
+    "runId": 44053264684,
+    "jobs": [
+      {
+        "id": 133936080550,
+        "name": "sync",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "uploaded": 1,
+    "reused": 1643,
+    "total": 1644
+  },
+  "deployedAtUTC": "2026-11-17T09:27:24Z",
+  "notes": [
+    "First application commit822543d was rejected by production-size checks and never deployed.",
+    "Fix12222cf removed a duplicate271537-byte asset URL table; common-script budget was retained.",
+    "Remote receive stage lasted approximately11m30s; first deployment attempt completed successfully.",
+    "Source CI run and artifact identity match the live version."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "images": [
+    {
+      "name": "live-card-scenic.png",
+      "width": 1200,
+      "height": 1800,
+      "sha256": "43a8f21e10c4bf60bd6a953c778b48426ca5828332641222a343eda933fccea7",
+      "qr": "https://shanhe.binnwu.top/people/p0897/"
+    },
+    {
+      "name": "live-card-portrait.png",
+      "width": 1200,
+      "height": 1800,
+      "sha256": "bace37f19a7f7fd52d1f5aec67f76fb49dba2398c01f808f289a62d476a82d40",
+      "qr": "https://shanhe.binnwu.top/people/p0897/"
+    }
+  ],
+  "method": "Two actual production-browser PNGs decoded locally; not phone camera or physical-device testing."
+}

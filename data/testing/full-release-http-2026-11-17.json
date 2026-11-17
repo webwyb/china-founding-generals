@@ -1,0 +1,258 @@
+{
+  "status": "passed",
+  "base": "https://shanhe.binnwu.top",
+  "version": {
+    "sha": "12222cf9ea02727e66b805752060bdbe2652f295",
+    "run": "44053264687",
+    "attempt": "1"
+  },
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 21679,
+      "wireBytes": 5663,
+      "encoding": "gzip",
+      "cacheControl": "no-cache",
+      "sha256": "56ce4d2991fb0c6d7a28540175e85f92de3869d5c2a3909e6f7d083a1150d7d1",
+      "userAndCrawlerResponsesEqual": true
+    },
+    {
+      "path": "/generals/",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 33220,
+      "wireBytes": 7318,
+      "encoding": "gzip",
+      "cacheControl": null,
+      "sha256": "16a4c91d25f354c17b1287ad2bd575cb05756e414e67a9b745f715d37717e318",
+      "userAndCrawlerResponsesEqual": true
+    },
+    {
+      "path": "/people/",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 223933,
+      "wireBytes": 43017,
+      "encoding": "gzip",
+      "cacheControl": null,
+      "sha256": "22af605733c110c460846903800e8164f72dfa28c9027e9283e8a6450294c01c",
+      "userAndCrawlerResponsesEqual": true
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 11221,
+      "wireBytes": 4731,
+      "encoding": "gzip",
+      "cacheControl": null,
+      "sha256": "118157dc3b332fe084af3dec9c0503f38edb1c56fb9520731ebbff3553c54f44",
+      "userAndCrawlerResponsesEqual": true
+    },
+    {
+      "path": "/card/?id=lizhen",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 4672,
+      "wireBytes": 2180,
+      "encoding": "gzip",
+      "cacheControl": null,
+      "sha256": "9c8f081fb37f8bd54382d93af6c9eddb387cc7daa00dbf835386990eaa06af4d",
+      "userAndCrawlerResponsesEqual": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "bytes": 71,
+      "wireBytes": 71,
+      "encoding": null,
+      "cacheControl": null,
+      "sha256": "f65f72b52645f67d44f34560a902c4f9d0f150691f5833e9e84004c8a5a4b798",
+      "userAndCrawlerResponsesEqual": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "contentType": "text/xml",
+      "bytes": 103655,
+      "wireBytes": 103655,
+      "encoding": null,
+      "cacheControl": null,
+      "sha256": "8584b2e2fcc47e9533753b6917009ec6084b656e34afa5d718d84938788138e5",
+      "userAndCrawlerResponsesEqual": true
+    }
+  ],
+  "profiles": [
+    {
+      "id": "zhude",
+      "page": {
+        "path": "/people/zhude/",
+        "status": 200,
+        "contentType": "text/html",
+        "bytes": 31980,
+        "wireBytes": 7752,
+        "encoding": "gzip",
+        "cacheControl": null,
+        "sha256": "570a44e87d569b1168f7dc4973a123083cd8a500a903066c1ac272068d71ccd3"
+      },
+      "data": {
+        "path": "/js/person-data/1cc8d4e396ed7359607e/zhude.json",
+        "status": 200,
+        "contentType": "application/json",
+        "bytes": 4962,
+        "wireBytes": 2087,
+        "encoding": "gzip",
+        "cacheControl": null,
+        "sha256": "5a52fbec77431f68a23784a1cbf995121270634fddbe44e8d3fc4be695d53e3e"
+      },
+      "biographySections": 3,
+      "timeline": 6
+    },
+    {
+      "id": "suyu",
+      "page": {
+        "path": "/people/suyu/",
+        "status": 200,
+        "contentType": "text/html",
+        "bytes": 33121,
+        "wireBytes": 7871,
+        "encoding": "gzip",
+        "cacheControl": null,
+        "sha256": "049aa316cca8592d99713065c687c9efec8380beec768b62a9fb3e7c6bdd386d"
+      },
+      "data": {
+        "path": "/js/person-data/1cc8d4e396ed7359607e/suyu.json",
+        "status": 200,
+        "contentType": "application/json",
+        "bytes": 5015,
+        "wireBytes": 2102,
+        "encoding": "gzip",
+        "cacheControl": null,
+        "sha256": "341b9ec64b522e38682cf21615a54a3b78510b65800c7072a950a70031e8ea45"
+      },
+      "biographySections": 3,
+      "timeline": 9
+    },
+    {
+      "id": "p0262",
+      "page": {
+        "path": "/people/p0262/",
+        "status": 200,
+        "contentType": "text/html",
+        "bytes": 29228,
+        "wireBytes": 7337,
+        "encoding": "gzip",
+        "cacheControl": null,
+        "sha256": "542e2fc6245c72d1847096db9def715090553378135007600095f9904ed94597"
+      },
+      "data": {
+        "path": "/js/person-data/1cc8d4e396ed7359607e/p0262.json",
+        "status": 200,
+        "contentType": "application/json",
+        "bytes": 3899,
+        "wireBytes": 1890,
+        "encoding": "gzip",
+        "cacheControl": null,
+        "sha256": "c95f18df246b929f93cd7faff7483999724a2104be78bae6ae6d80199c3850c8"
+      },
+      "biographySections": 4,
+      "timeline": 3
+    },
+    {
+      "id": "p0897",
+      "page": {
+        "path": "/people/p0897/",
+        "status": 200,
+        "contentType": "text/html",
+        "bytes": 38787,
+        "wireBytes": 8132,
+        "encoding": "gzip",
+        "cacheControl": null,
+        "sha256": "fcc2ee73e2926c2ab5600012f7ae43fd1d9f3e37fb6089355fe6ae3980fb408d"
+      },
+      "data": {
+        "path": "/js/person-data/1cc8d4e396ed7359607e/p0897.json",
+        "status": 200,
+        "contentType": "application/json",
+        "bytes": 6013,
+        "wireBytes": 2066,
+        "encoding": "gzip",
+        "cacheControl": null,
+        "sha256": "dabc885f400d98957a24a9534a5bb152ad53336e9fe079e0186ad71bba39b226"
+      },
+      "biographySections": 7,
+      "timeline": 11
+    },
+    {
+      "id": "p0305",
+      "page": {
+        "path": "/people/p0305/",
+        "status": 200,
+        "contentType": "text/html",
+        "bytes": 39421,
+        "wireBytes": 8477,
+        "encoding": "gzip",
+        "cacheControl": null,
+        "sha256": "ebc53f448bee856e7af8950352de1e5440b58fb0a262c23b1f13fb1f8cc8db05"
+      },
+      "data": {
+        "path": "/js/person-data/1cc8d4e396ed7359607e/p0305.json",
+        "status": 200,
+        "contentType": "application/json",
+        "bytes": 6661,
+        "wireBytes": 2447,
+        "encoding": "gzip",
+        "cacheControl": null,
+        "sha256": "0b379aaede9b990e49d24c340d886994f62540ed06370dcd64b95e119c337ec2"
+      },
+      "biographySections": 6,
+      "timeline": 11
+    }
+  ],
+  "runtimeVersion": "1cc8d4e396ed7359607e",
+  "search": {
+    "path": "/js/person-data/1cc8d4e396ed7359607e/search.json",
+    "status": 200,
+    "contentType": "application/json",
+    "bytes": 967598,
+    "wireBytes": 287218,
+    "encoding": "gzip",
+    "cacheControl": null,
+    "sha256": "11cc25ab6a776d5e2923ad2843af52e153e2c1fd8ffbe58d6a94879763a71298"
+  },
+  "searchPeople": 1614,
+  "sitemapUrls": 1618,
+  "unknownProfileStatus": 404,
+  "commonBefore": {
+    "version": {
+      "sha": "f4e1012e248803b23646f5f6b002a8a909ec41ab",
+      "run": "44047129613",
+      "attempt": "1"
+    },
+    "common": {
+      "path": "/js/common.c9d88e10.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "bytes": 8403052,
+      "wireBytes": 1188462,
+      "encoding": "gzip",
+      "cacheControl": null,
+      "sha256": "6c0b0f6047e22ffa8b68ef6f9297b1fb86cc77884a9095040b76e3ad9958698c"
+    }
+  },
+  "commonAfter": {
+    "path": "/js/common.712a920c.js",
+    "status": 200,
+    "contentType": "application/javascript",
+    "bytes": 1030143,
+    "wireBytes": 220414,
+    "encoding": "gzip",
+    "cacheControl": null,
+    "sha256": "0998b7d146264d398c6fbcbb8ae9bf72ca4620da2e33076842e0cfefa15a3930"
+  },
+  "commonRawReduction": 0.8774084701606035,
+  "method": "Live HTTPS raw responses, gzip wire/body bytes, five complete biographies and matching inline/versioned JSON, full search index; no browser timing or search-engine indexing implied."
+}

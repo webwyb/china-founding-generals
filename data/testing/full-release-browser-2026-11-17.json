@@ -1,0 +1,335 @@
+{
+  "status": "passed",
+  "base": "https://shanhe.binnwu.top",
+  "applicationCommit": "12222cf9ea02727e66b805752060bdbe2652f295",
+  "environment": "ChatGPT in-app browser; measured390x844 and1280x720. A requested320x812 override did not take effect and is not counted.",
+  "initialRounds": [
+    {
+      "href": "/people/zhude/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "href": "/people/p0002/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "href": "/people/p0003/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "href": "/people/p0004/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "href": "/people/p0005/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "href": "/people/p0006/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "href": "/people/p0007/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "href": "/people/xuxiangqian/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "href": "/people/p0009/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "href": "/people/p0010/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    }
+  ],
+  "mobileImmediateSamples": [
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "path": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军",
+      "selected": [
+        "少将",
+        "湖南31"
+      ]
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "path": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军",
+      "selected": [
+        "少将",
+        "湖南31"
+      ]
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "path": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军",
+      "selected": [
+        "少将",
+        "湖南31"
+      ]
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "path": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军",
+      "selected": [
+        "少将",
+        "湖南31"
+      ]
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "path": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军",
+      "selected": [
+        "少将",
+        "湖南31"
+      ]
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "path": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军",
+      "selected": [
+        "少将",
+        "湖南31"
+      ]
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "path": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军",
+      "selected": [
+        "少将",
+        "湖南31"
+      ]
+    },
+    {
+      "count": 31,
+      "focus": null,
+      "path": "/generals/",
+      "scroll": 0,
+      "search": "红军",
+      "selected": [
+        "少将",
+        "湖南31"
+      ]
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "path": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军",
+      "selected": [
+        "少将",
+        "湖南31"
+      ]
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "path": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军",
+      "selected": [
+        "少将",
+        "湖南31"
+      ]
+    }
+  ],
+  "mobileAfterNavigationComplete": [
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "scroll": 4659.5,
+      "search": "红军"
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "scroll": 4659.5,
+      "search": "红军"
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "scroll": 4659.5,
+      "search": "红军"
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "scroll": 4659.5,
+      "search": "红军"
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "scroll": 4659.5,
+      "search": "红军"
+    }
+  ],
+  "additional390Rounds": [
+    {
+      "overflow": false,
+      "path": "/generals/",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "path": "/generals/",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "path": "/generals/",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "path": "/generals/",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "path": "/generals/",
+      "width": 390
+    }
+  ],
+  "additionalDesktopRounds": [
+    {
+      "height": 720,
+      "overflow": false,
+      "path": "/generals/",
+      "width": 1280
+    },
+    {
+      "height": 720,
+      "overflow": false,
+      "path": "/generals/",
+      "width": 1280
+    },
+    {
+      "height": 720,
+      "overflow": false,
+      "path": "/generals/",
+      "width": 1280
+    },
+    {
+      "height": 720,
+      "overflow": false,
+      "path": "/generals/",
+      "width": 1280
+    },
+    {
+      "height": 720,
+      "overflow": false,
+      "path": "/generals/",
+      "width": 1280
+    }
+  ],
+  "filter": {
+    "overflow": false,
+    "results": "湖南的少将共 31 位清除筛选",
+    "search": "红军",
+    "selected": [
+      "少将",
+      "湖南31"
+    ],
+    "width": 390
+  },
+  "about": {
+    "analyticsScripts": 1,
+    "appScripts": [
+      "/js/analytics.ZPACQPJ6.js"
+    ],
+    "overflow": false,
+    "sections": [
+      {
+        "exists": true,
+        "id": "copyright"
+      },
+      {
+        "exists": true,
+        "id": "correction"
+      },
+      {
+        "exists": true,
+        "id": "ai-landscapes"
+      },
+      {
+        "exists": true,
+        "id": "site-info"
+      },
+      {
+        "exists": true,
+        "id": "analytics"
+      }
+    ],
+    "url": "https://shanhe.binnwu.top/about/#copyright",
+    "width": 390
+  },
+  "home": {
+    "height": 720,
+    "overflow": false,
+    "title": "山河有名｜1614位开国将帅人物档案与生平故事",
+    "url": "https://shanhe.binnwu.top/",
+    "width": 1280
+  },
+  "refresh": {
+    "search": "",
+    "selected": [
+      "全部",
+      "全部"
+    ],
+    "count": 24
+  },
+  "errors": [],
+  "notes": [
+    "Enter and return actions consecutive without an intentional transition wait.",
+    "One immediate mobile observation captured scroll=0 before restoration; five additional rounds waited for navigation completion after return, all retained4659.5 CSS px and tile focus.",
+    "Both actual1200x1800 card themes exported and independently decoded with jsQR.",
+    "Footer mouse automation encountered a moved target as the list auto-appended; keyboard Enter then opened the correct copyright anchor.",
+    "No feedback email sent, download file-save confirmation, phone camera, physical device, WeChat, LCP or search-engine indexing test."
+  ]
+}
