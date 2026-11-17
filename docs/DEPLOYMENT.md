@@ -4,7 +4,7 @@
 
 ## 自动发布
 
-本节描述本轮待发布的新流程。2026-11-17已在用户明确授权后升级root持有的接收器，旧gzip兼容和5项隔离测试通过，当前应用版本未变；新工作流待推送启用。实际验收与限制见 [部署提速记录](reviews/deployment-performance-2026-11-17/REVIEW.md)。
+本节为已启用的新流程。2026-11-17在用户明确授权后升级root接收器，旧gzip兼容及5项隔离测试通过；随后9c1ea7a成功发布。本次工作流16分02秒→4分33秒，发布步骤695秒→124秒，准确范围与网络限制见 [部署提速记录](reviews/deployment-performance-2026-11-17/REVIEW.md)。
 
 应用或发布脚本推送到 `main` 后，`.github/workflows/ci.yml` 在与生产一致的 Ubuntu 上执行一次完整 `npm run check`，重写 COS 地址并生成 `h5-production` artifact（保留7天）：只包含代码包、素材清单、构建标识及发布脚本，不包含图片、字体等静态文件。deploy job 直接复用此制品，确认素材就绪后通过受限SSH发布并核对公网版本。macOS／Windows完整检查移到手动运行的 **Optional cross-platform checks**，日常发布不再等待两份重复构建。其他分支与PR只检查，不部署；本地 `npm run check` 仍保留全部项目检查。
 

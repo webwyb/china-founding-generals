@@ -1,0 +1,160 @@
+{
+  "status": "deployed-and-verified",
+  "applicationCommit": "9c1ea7ab208970b55e21a877ad132d110a227f7b",
+  "runId": 44061183048,
+  "runUrl": "https://github.com/webwyb/china-founding-generals/actions/runs/44061183048",
+  "previousSlowRun": {
+    "id": 44053264687,
+    "url": "https://github.com/webwyb/china-founding-generals/actions/runs/44053264687",
+    "totalSeconds": 962,
+    "deployJobSeconds": 699,
+    "publishStepSeconds": 695,
+    "transferAndReceiverSeconds": 690,
+    "checkedArchiveBytes": 9132851
+  },
+  "optimizedRun": {
+    "totalSeconds": 273,
+    "checkedArchiveBytes": 2064752,
+    "transferredArchiveBytes": 2064860,
+    "transferAndReceiverSeconds": 110,
+    "retainedAssetsSeconds": 0.04,
+    "receivedAndExtractedSeconds": 103.24,
+    "receivedEntries": 4874,
+    "receivedFileBytes": 61826654,
+    "jobs": [
+      {
+        "name": "check",
+        "seconds": 136,
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "seconds": 4,
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+            "seconds": 13,
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+            "seconds": 8,
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+            "seconds": 6,
+            "conclusion": "success"
+          },
+          {
+            "name": "Run npm ci",
+            "seconds": 15,
+            "conclusion": "success"
+          },
+          {
+            "name": "Run npm run setup:python",
+            "seconds": 7,
+            "conclusion": "success"
+          },
+          {
+            "name": "Run npm run check",
+            "seconds": 69,
+            "conclusion": "success"
+          },
+          {
+            "name": "Check deployment archive and rollback behavior",
+            "seconds": 1,
+            "conclusion": "success"
+          },
+          {
+            "name": "Package checked H5 build",
+            "seconds": 7,
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f",
+            "seconds": 3,
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+            "seconds": 0,
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+            "seconds": 0,
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+            "seconds": 0,
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "seconds": 0,
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "deploy",
+        "seconds": 128,
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "seconds": 1,
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/download-artifact@70fc10c6e5e1ce46ad2ea6f2b72d43f7d47b13c3",
+            "seconds": 1,
+            "conclusion": "success"
+          },
+          {
+            "name": "Publish checked build and verify public version",
+            "seconds": 124,
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "seconds": 0,
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "additionalPriorRun": {
+    "id": 44057318287,
+    "deployJobSeconds": 543,
+    "checks": [
+      {
+        "name": "check (macos-15)",
+        "seconds": 155
+      },
+      {
+        "name": "check (ubuntu-24.04)",
+        "seconds": 109
+      },
+      {
+        "name": "check (windows-2022)",
+        "seconds": 187
+      }
+    ]
+  },
+  "reductions": {
+    "overallPercent": 71.62162162162163,
+    "publishStepPercent": 82.15827338129496,
+    "checkedArchivePercent": 77.39203234564978
+  },
+  "assets": {
+    "runId": 44061183024,
+    "uploaded": 0,
+    "reused": 1644
+  },
+  "method": "GitHub run/step timestamps and receiver stdout from one real production release, compared with recorded prior runs. Durations include runner/network variation; future wall-clock time is not guaranteed."
+}

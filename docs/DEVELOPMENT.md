@@ -36,7 +36,7 @@ npm run preview
 
 预览地址为 `http://127.0.0.1:5173`，只绑定本机。一次只保留一个5173端口服务。更换端口可直接使用Python HTTP服务命令；静态根目录必须是 `dist/h5`。微信或其他手机不能直接访问另一台电脑的127.0.0.1；外部分享需要可访问的域名或同网段开发地址。
 
-构建输出 `dist/h5/`，不提交生成目录。H5采用普通路径和构建时静态生成：`/people/人物id/`、`/generals/`、`/people/`、`/about/`、`/card/?id=人物id`。文件布局自带各路径的 `index.html`，普通静态服务器可直接读取，不把未知路径回退为首页；资源使用域名根目录路径，当前不支持直接搬到子目录。旧hash链接由浏览器迁移。正式域名在 `config/site.json` 统一维护。日常推送 `main` 后由 GitHub Actions 完成一份Ubuntu全量检查并部署；macOS／Windows兼容检查通过独立手动工作流运行。启用本轮XZ发布前须按部署说明升级接收器；SEO首次上线需先更新服务器接收器，入口及要求见 [DEPLOYMENT.md](DEPLOYMENT.md)。
+构建输出 `dist/h5/`，不提交生成目录。H5采用普通路径和构建时静态生成：`/people/人物id/`、`/generals/`、`/people/`、`/about/`、`/card/?id=人物id`。文件布局自带各路径的 `index.html`，普通静态服务器可直接读取，不把未知路径回退为首页；资源使用域名根目录路径，当前不支持直接搬到子目录。旧hash链接由浏览器迁移。正式域名在 `config/site.json` 统一维护。日常推送 `main` 后由 GitHub Actions 完成一份Ubuntu全量检查并部署；macOS／Windows兼容检查通过独立手动工作流运行。现有生产接收器已支持XZ和旧gzip；新服务器或旧接收器恢复时按 [DEPLOYMENT.md](DEPLOYMENT.md) 安装兼容版本。
 
 生产入口为 [https://shanhe.binnwu.top](https://shanhe.binnwu.top)。普通本地构建包含完整静态资源；生产 CI 通过 `SHANHE_ASSET_BASE_URL` 使用 COS 内容地址。素材由独立 **Sync COS assets** 工作流增量同步；网页工作流只传输代码制品并只读确认素材就绪，可单独重跑 deploy。纯 Markdown、`docs/` 与 `data/testing/` 变更跳过两类构建部署。HTTPS 证书由服务器独立自动续期，应用构建和推送不会替换证书、Nginx 配置或 root 持有的发布接收器。维护这些服务器文件、检查续期和迁移新机时，按 [部署说明](DEPLOYMENT.md) 操作；换机开发不需要下载生产私钥或云 API 凭据。
 

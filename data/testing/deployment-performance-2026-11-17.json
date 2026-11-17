@@ -1,5 +1,5 @@
 {
-  "status": "receiver-upgraded-release-pending",
+  "status": "deployed-and-verified",
   "baselineRun": 44053264687,
   "jobs": [
     {
@@ -50,8 +50,8 @@
     }
   },
   "limitations": [
-    "Optimized workflow not yet pushed or remotely timed.",
-    "Console access was initially rejected, then user explicitly authorized the narrow receiver upgrade; no alternate access was used."
+    "One measured production deployment; runner and network conditions can change subsequent durations.",
+    "No new physical device, WeChat, LCP or search-engine indexing test."
   ],
   "receiver": {
     "host": "49.233.60.125",
@@ -67,5 +67,15 @@
       "run": "44057318287",
       "attempt": "1"
     }
+  },
+  "release": {
+    "sha": "9c1ea7ab208970b55e21a877ad132d110a227f7b",
+    "run": "44061183048",
+    "attempt": "1",
+    "totalSeconds": 273,
+    "publishStepSeconds": 124,
+    "transferAndReceiverSeconds": 110,
+    "retainedAssetsSeconds": 0.04,
+    "archiveBytes": 2064860
   }
 }

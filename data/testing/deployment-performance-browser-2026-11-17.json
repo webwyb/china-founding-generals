@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "applicationCommit": "9c1ea7ab208970b55e21a877ad132d110a227f7b",
+  "result": {
+    "height": 720,
+    "overflow": false,
+    "peopleShown": 24,
+    "ready": "/generals/",
+    "title": "开国将帅名录｜1614位将帅姓名、军衔与家乡｜山河有名",
+    "url": "https://shanhe.binnwu.top/generals/",
+    "width": 1280
+  },
+  "method": "Production browser home→catalogue→profile→immediate return; no physical-device or page-speed timing implied."
+}

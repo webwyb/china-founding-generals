@@ -1,0 +1,146 @@
+{
+  "status": "passed",
+  "version": {
+    "sha": "9c1ea7ab208970b55e21a877ad132d110a227f7b",
+    "run": "44061183048",
+    "attempt": "1"
+  },
+  "previousVersion": {
+    "sha": "bcfcf3a95956d6c02df5c16332e96385e8b41e93",
+    "run": "44057318287",
+    "attempt": "1"
+  },
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 21679,
+      "contentType": "text/html",
+      "sha256": "08f553458c03013d01453f79de8385426a44f406a85d714b66e26873d726ae3a"
+    },
+    {
+      "path": "/generals/",
+      "status": 200,
+      "bytes": 33220,
+      "contentType": "text/html",
+      "sha256": "00d068dede7fa18bbf090c016490d782515b927ef1725689bfe64639803b388c"
+    },
+    {
+      "path": "/people/",
+      "status": 200,
+      "bytes": 223933,
+      "contentType": "text/html",
+      "sha256": "22af605733c110c460846903800e8164f72dfa28c9027e9283e8a6450294c01c"
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "bytes": 11197,
+      "contentType": "text/html",
+      "sha256": "e226bb1c5396bbf772f452f080fd0b49d35cd184fa16dc2531e94ba9c8d10932"
+    },
+    {
+      "path": "/card/?id=suyu",
+      "status": 200,
+      "bytes": 4672,
+      "contentType": "text/html",
+      "sha256": "cfe9e7151237667ef11869b4881895f93c3f1bc2064c4ffc787792e08a76ec0a"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 71,
+      "contentType": "text/plain",
+      "sha256": "f65f72b52645f67d44f34560a902c4f9d0f150691f5833e9e84004c8a5a4b798"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 103655,
+      "contentType": "text/xml",
+      "sha256": "8584b2e2fcc47e9533753b6917009ec6084b656e34afa5d718d84938788138e5"
+    }
+  ],
+  "profiles": [
+    {
+      "page": {
+        "path": "/people/suyu/",
+        "status": 200,
+        "bytes": 33121,
+        "contentType": "text/html",
+        "sha256": "0915fc96c910343fc3c488b86ce0e0456029ea750bc191dcd58677c47ca30014"
+      },
+      "data": {
+        "path": "/js/person-data/1cc8d4e396ed7359607e/suyu.json",
+        "status": 200,
+        "bytes": 5015,
+        "contentType": "application/json",
+        "sha256": "341b9ec64b522e38682cf21615a54a3b78510b65800c7072a950a70031e8ea45"
+      }
+    },
+    {
+      "page": {
+        "path": "/people/p0262/",
+        "status": 200,
+        "bytes": 29228,
+        "contentType": "text/html",
+        "sha256": "5cbce6c73d8b52532aada249af7b2e2d59c8e2fa4cf4c287836a014b269e1733"
+      },
+      "data": {
+        "path": "/js/person-data/1cc8d4e396ed7359607e/p0262.json",
+        "status": 200,
+        "bytes": 3899,
+        "contentType": "application/json",
+        "sha256": "c95f18df246b929f93cd7faff7483999724a2104be78bae6ae6d80199c3850c8"
+      }
+    }
+  ],
+  "searchPeople": 1614,
+  "sitemapUrls": 1618,
+  "retainedAssets": [
+    {
+      "path": "/js/app.346104af.js",
+      "status": 200,
+      "bytes": 32203,
+      "contentType": "application/javascript",
+      "sha256": "552c316358aa88dfc962e67b31d790cef0cc414908dc1d8fb85334800b56cf12"
+    },
+    {
+      "path": "/js/vendors.ce3f8be8.js",
+      "status": 200,
+      "bytes": 308385,
+      "contentType": "application/javascript",
+      "sha256": "560a10d312ee889998421978429bff66623b23b839963fbd0880bb959468d18c"
+    },
+    {
+      "path": "/js/common.c3f0bba8.js",
+      "status": 200,
+      "bytes": 1030107,
+      "contentType": "application/javascript",
+      "sha256": "4ba35611ab18e1123d2d12f9baee4b96b57c6f4e935d63ac081e61e5b17d7ea3"
+    },
+    {
+      "path": "/css/vendors.bdf6fb55.css",
+      "status": 200,
+      "bytes": 8339,
+      "contentType": "text/css",
+      "sha256": "bdf6fb552b5a1440084a12868f47f7b7358bb7c4e7cb911dbd3e7eb76e6e2b9d"
+    },
+    {
+      "path": "/css/index.4cd97251.css",
+      "status": 200,
+      "bytes": 39639,
+      "contentType": "text/css",
+      "sha256": "38046c50afb1eaca102045bba30be6f5392c427369423962d7d79ffb3b9ccc9e"
+    },
+    {
+      "path": "/js/analytics.ZPACQPJ6.js",
+      "status": 200,
+      "bytes": 2584,
+      "contentType": "application/javascript",
+      "sha256": "d37ffd4be87deecc12e496ddddb84d7b173e05d160cbf7cdd542903682d7ff98"
+    }
+  ],
+  "unknownPersonStatus": 404,
+  "method": "Live HTTPS, two complete inline/versioned profiles, full search count and sitemap, six previously referenced assets retain identical bytes; no browser or physical-device timing implied."
+}
