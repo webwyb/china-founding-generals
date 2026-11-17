@@ -4,6 +4,7 @@ import { basename, resolve } from 'node:path'
 import { readFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 const require = createRequire(import.meta.url)
+const { dataVersion } = require('./data-version.cjs')
 export const root = fileURLToPath(new URL('..', import.meta.url))
 const { manifest } = require('./deploy/asset-manifest.cjs')
 
@@ -14,7 +15,7 @@ export async function loadSeoRenderer() {
   const outfile = resolve(root,'.cache/seo/renderer.cjs')
   await build({
     entryPoints:[resolve(root,'src/seo/render.tsx')], outfile, bundle:true, platform:'node', format:'cjs', jsx:'automatic',
-    packages:'external', define:{'process.env.TARO_ENV':'"h5"',__SHANHE_ASSET_URLS__:JSON.stringify(assetUrls)},
+    packages:'external', define:{'process.env.TARO_ENV':'"h5"',__SHANHE_CLIENT__:'false',__SHANHE_DATA_VERSION__:JSON.stringify(dataVersion(root)),__SHANHE_ASSET_URLS__:JSON.stringify(assetUrls)},
     plugins:[{ name:'static-html-adapters',setup(builder){
       builder.onResolve({filter:/^@tarojs\/taro$/},()=>({path:'taro',namespace:'ssg'}))
       builder.onResolve({filter:/^@tarojs\/components$/},()=>({path:'components',namespace:'ssg'}))

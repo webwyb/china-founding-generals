@@ -135,7 +135,7 @@ npm run validate:data
 | `src/assets/portraits/zhangzhen.jpg` | 张震 | [Wikimedia Commons · Zhang Zhen 1955.jpg](https://commons.wikimedia.org/wiki/File:Zhang_Zhen_1955.jpg) |
 | `src/assets/portraits/lizhen.jpg` | 李贞 | [湖南省档案局 · 李贞](https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200810/t20081017_1977961.html) |
 
-李贞图片来自湖南省档案局人物生平页的真实历史肖像（原图 123 × 150），来源页未给出明确开放许可，仅用于这一轮原型展示。正式公开发行、推广或商业化前，应替换为许可清楚的档案肖像或取得相应授权。其他 7 张保留 Commons 文件页及本次公共领域标记供复核。
+李贞图片来自湖南省档案局人物生平页的真实历史肖像（原图 123 × 150），来源页未给出明确开放许可，具体使用依据仍待核实。其他7张保留Commons文件页供复核，来源或既有公共领域标记不等于本轮已复核授权。网站已公开运行，不能继续将其描述为仅限原型展示；当前图片授权待核实范围见 [合规维护说明](docs/COMPLIANCE.md) 及 [逐图清单](data/compliance/image-rights-review.html)。
 
 李贞原图地址：`https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200810/10453081/images/3532511761f04aa191f37526dc4b8f3b.jpg`。下载后未进行 AI 修复或重绘，前台使用同一套图片样式处理。
 

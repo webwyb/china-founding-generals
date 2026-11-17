@@ -10,7 +10,7 @@ const urls = new Map(assets.map(asset => [asset.path, asset.url]))
 const { origin } = JSON.parse(readFileSync(new URL('../../config/site.json', import.meta.url), 'utf8'))
 const escapedOrigin = origin.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 for (const path of files(root)) {
-  if (!['.html', '.js', '.css'].includes(extname(path)) || path.startsWith('static/')) continue
+  if (!['.html', '.js', '.css', '.json'].includes(extname(path)) || path.startsWith('static/')) continue
   const file = resolve(root, path)
   const before = readFileSync(file, 'utf8')
   const replaceAsset = (match, key) => urls.get(key) || match

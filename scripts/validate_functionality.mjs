@@ -25,9 +25,9 @@ await build({
   define: { 'process.env.TARO_ENV': '"h5"' }, loader: { '.jpg': 'file', '.svg': 'file' },
   plugins: [{ name: 'taro-test-adapter', setup(builder) {
     builder.onResolve({ filter: /^@tarojs\/taro$/ }, () => ({ path: 'taro', namespace: 'test' }))
-    builder.onLoad({ filter: /.*/, namespace: 'test' }, () => ({ contents: 'export default globalThis.testTaro', loader: 'js' }))
+    builder.onLoad({ filter: /.*/, namespace: 'test' }, () => ({ contents: 'export default globalThis.testTaro; export const useDidShow=()=>{},useRouter=()=>({params:{}}),useShareAppMessage=()=>{}', loader: 'js' }))
     builder.onResolve({ filter: /^@tarojs\/components$/ }, () => ({ path: 'components', namespace: 'test-components' }))
-    builder.onLoad({ filter: /.*/, namespace: 'test-components' }, () => ({ contents: 'export const Button=()=>null,Text=()=>null,View=()=>null', loader: 'js' }))
+    builder.onLoad({ filter: /.*/, namespace: 'test-components' }, () => ({ contents: 'export const Button=()=>null,Text=()=>null,View=()=>null,Input=()=>null,Canvas=()=>null,Image=()=>null', loader: 'js' }))
   } }],
 })
 const { people, lifeYears } = require(resolve(output, 'data/people.cjs'))
@@ -95,6 +95,7 @@ check('切换军衔清除无效家乡、保留仍有效家乡并重置批次', (
   assert.equal(filterPeople(people, next, []).length, 10)
   assert.equal(applyCatalogueFilters(people, { ...base, province: '湖南' }, { rank: '大将' }, []).province, '湖南')
   assert.equal(applyCatalogueFilters(people, { ...base, province: '湖北' }, { search: '李贞' }, []).province, '湖北', '搜索不应悄悄放宽用户选择的家乡')
+  assert.equal(applyCatalogueFilters(people, { ...base, province: '湖南', search: '不存在abc' }, { rank: '大将' }, []).province, '湖南', '检索暂无匹配时不应清除仍有效的家乡')
 })
 check('名录仅保留本次返回位置，刷新不读取旧存储', () => {
   const view = { ...base, rank: '少将', province: '湖北', search: '湖南', visibleCount: 96, scrollTop: 1750, rememberedOnly: true }

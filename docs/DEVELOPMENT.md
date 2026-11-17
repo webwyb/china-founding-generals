@@ -48,9 +48,13 @@ npm run check
 
 依次执行类型检查、事实快照逐字节再生成检查、全量目录、功能逻辑、景观与字体、事实解析、人像完整性、全部卡片构图及H5构建；构建末尾生成并校验1614份完整人物HTML、1618条站点地图地址、元信息和真实链接。不会启动浏览器、调用图像生成、访问历史人物源站或申请相册权限。
 
-单项入口：`npm run typecheck`、`npm run data:verify`、`npm run validate:data`、`npm run validate:functions`、`npm run validate:design`、`npm run test:catalog`、`npm run validate:portraits`、`npm run validate:cards`、`npm run build`。
+单项入口：`npm run typecheck`、`npm run data:verify`、`npm run validate:data`、`npm run validate:functions`、`npm run validate:compliance`、`npm run validate:design`、`npm run test:catalog`、`npm run validate:portraits`、`npm run validate:cards`、`npm run build`。
+
+公示及公开邮箱统一配置在 `config/compliance.json`；修改素材来源后运行 `npm run audit:images` 重建图片授权待核实清单。真实备案信息、反馈入口、AI显式标识及仍待核实事项见 [COMPLIANCE.md](COMPLIANCE.md)。
 
 SEO单项：已有构建后执行 `npm run validate:seo`；先启动本地 `npm run preview`，另一个终端运行 `npm run validate:seo:http` 验证原始HTTP与404；`npm run validate:seo:release` 在临时副本中模拟COS资源重写和接收器解包，全程离线，不上传或修改服务器。细节见 [SEO.md](SEO.md)。
+
+生产 H5 使用 `src/data/catalogue-lite.generated.json` 作为浏览名录，随 `npm run data:build` 从完整目录生成并纳入一致性检查；不要单独修改轻量文件。构建时输出 `/js/person-data/<版本>/<id>.json` 和按需读取的 `search.json`，直达人物 HTML 同时内联完整当前人物。版本包含资料、肖像版本、转换代码及素材基址；JSON与代码一起发布、旧版本随既有js目录保留，不能只上传HTML／JS文件。COS重写同时覆盖JSON。`dev:h5`不运行静态生成，使用完整资料保证监听开发可用；发布性能以 `npm run build` 后的静态预览为准。
 
 静态成图在 `.cache/design-review/`，测试中间文件在 `.cache/`，可删除后重跑。`data/design/` 与 `data/testing/` 中已提交的报告描述实际覆盖范围，不能代替 `QA.md` 中尚未完成的浏览器与真机验收。
 

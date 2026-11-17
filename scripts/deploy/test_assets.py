@@ -32,6 +32,9 @@ class AssetTests(unittest.TestCase):
                             '<img src="https://elsewhere.example/static/images/person.jpg">')
             (root / 'app.js').write_text('const image="/static/images/person.jpg";')
             (root / 'app.css').write_text('body{background:url("../static/images/person.jpg")}')
+            profile = root / 'js/person-data/fixture/suyu.json'
+            profile.parent.mkdir(parents=True)
+            profile.write_text(json.dumps({'portrait': '/static/images/person.jpg'}))
             with patch.dict(os.environ, {'SHANHE_ASSET_BASE_URL': 'https://assets.example/objects'}):
                 subprocess.run(['node', str(Path(__file__).with_name('prepare-assets.mjs'))],
                                cwd=work, check=True, capture_output=True)
@@ -43,6 +46,7 @@ class AssetTests(unittest.TestCase):
             self.assertNotIn('shanhe.binnwu.tophttps:', content)
             self.assertIn(asset, (root / 'app.js').read_text())
             self.assertIn(asset, (root / 'app.css').read_text())
+            self.assertEqual(json.loads(profile.read_text())['portrait'], asset)
 
     def test_only_missing_objects_are_uploaded_with_immutable_cache(self):
         calls = []

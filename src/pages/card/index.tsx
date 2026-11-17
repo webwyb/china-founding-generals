@@ -11,10 +11,13 @@ import { renderMemorialCard, type CardTheme } from '../../services/cardRenderer'
 import { copyPersonLink, saveMemorialCard } from '../../services/share'
 import { usePersonRouteId } from '../../services/usePersonRouteId'
 import { usePageMetadata } from '../../seo/usePageMetadata'
+import { AI_LANDSCAPE_NOTE } from '../../services/compliance'
+import { usePersonDetails } from '../../services/usePersonDetails'
 
 export default function CardPage() {
   const personId = usePersonRouteId('card')
-  const person = people.find(item => item.id === personId)
+  const { person: detailedPerson } = usePersonDetails(personId)
+  const person = detailedPerson || people.find(item => item.id === personId)
   const [theme, setTheme] = useState<CardTheme>(() => getProvinceLandscape(person?.province) ? 'landscape' : 'portrait')
   const [busy, setBusy] = useState(process.env.TARO_ENV === 'h5')
   const [preview, setPreview] = useState('')
@@ -57,7 +60,7 @@ export default function CardPage() {
           <View className='card-preview-frame' aria-busy={busy}>
             {process.env.TARO_ENV === 'h5' ? preview ? <img className='live-card-preview' src={preview} alt={`${person.name}的${theme === 'landscape' ? '家乡山河' : '素笺肖像'}纪念卡，预览与下载图片一致`} /> : <View className='card-preview-placeholder'><View className={busy ? 'ink-spinner' : 'preview-error-mark'}>{!busy && <Icon name='close' />}</View><span role='status'>{busy ? '正在生成纪念卡…' : error}</span>{error && <Button className='text-link' onClick={() => setRetry(value => value + 1)}>重新生成</Button>}</View> : <Image className='card-portrait' src={person.portrait} mode='aspectFit' />}
           </View>
-          <Text className='card-preview-caption'>{theme === 'landscape' && region ? `${region.province} · ${region.landmark}山河意象` : '素笺留影，记住这个名字'}<Text>1200 × 1800 PNG</Text></Text>
+          <Text className='card-preview-caption'>{theme === 'landscape' && region ? `${region.province} · ${region.landmark} · AI生成景观` : '素笺留影，记住这个名字'}<Text>1200 × 1800 PNG</Text></Text>
         </View>
         <View className='card-instructions'>
           <View className='card-controls'>
@@ -68,7 +71,7 @@ export default function CardPage() {
           </View>
           <Button className='primary-button card-save-button' loading={busy} disabled={process.env.TARO_ENV === 'h5' && !preview} onClick={save}>{busy ? '正在生成纪念卡' : '保存这张纪念卡'}<Icon name='download' /></Button>
           {process.env.TARO_ENV === 'weapp' ? <Button className='outline-button' openType='share'>分享人物故事<Icon name='share' /></Button> : <Button className='outline-button' onClick={copy}>{copied ? '人物链接已复制' : '复制人物故事链接'}<Icon name={copied ? 'check' : 'share'} /></Button>}
-          <View className='card-saving-guide'><Text>一份可以带走的纪念</Text><p>卡片附有人物档案二维码，分享后可扫码阅读{person.name}的完整生平与史料出处。手机长按图片保存，电脑下载 PNG。</p><Text className='scope-note'>{!region ? '家乡地域待核实，当前使用素笺肖像。' : '风景为地域文化意象绘制，历史肖像保持原貌。'}{person.portraitMissing ? '本人物历史肖像暂缺，卡片使用已标注的占位图。' : ''}</Text></View>
+          <View className='card-saving-guide'><Text>一份可以带走的纪念</Text><p>卡片附有人物档案二维码，分享后可扫码阅读{person.name}的完整生平与史料出处。手机长按图片保存，电脑下载 PNG。</p><Text className='scope-note'>{!region ? '家乡地域待核实，当前使用素笺肖像。' : theme === 'landscape' ? AI_LANDSCAPE_NOTE : '素笺肖像样式不包含AI景观。'}{person.portraitMissing ? '本人物历史肖像暂缺，卡片使用已标注的占位图。' : ''}</Text><p className='compliance-note'>保存与分享前请核对影像使用范围。<a className='text-link' href='/about/#copyright'>查看图片版权说明</a></p></View>
         </View>
       </View>
       <Canvas className='export-canvas' canvasId='memorial-canvas' id='memorial-canvas' style={{ width: '600px', height: '900px' }} />

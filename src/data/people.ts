@@ -1,4 +1,5 @@
 import catalogue from './catalog.generated.json'
+import briefCatalogue from './catalogue-lite.generated.json'
 import historicalContexts from '../../data/catalog/historical-contexts.json'
 import { people as curatedPeople } from './featured'
 import placeholder from '../assets/portrait-placeholder.svg'
@@ -37,10 +38,13 @@ export interface Person {
 }
 
 const curatedByName = new Map(curatedPeople.map(person => [person.name, person]))
-const imported = catalogue as (Omit<Person, 'portrait'> & { historicalContextIds?: string[] })[]
-const contextById = new Map(historicalContexts.map(context => [context.id, context]))
+export const clientData = typeof __SHANHE_CLIENT__ !== 'undefined' && __SHANHE_CLIENT__
+type CatalogueRecord = Omit<Person, 'portrait' | 'story' | 'sources' | 'timeline' | 'imageSource'> & Partial<Pick<Person, 'story' | 'sources' | 'timeline' | 'imageSource'>> & { historicalContextIds?: string[] }
+const imported = (clientData ? briefCatalogue : catalogue) as unknown as CatalogueRecord[]
+const contextById = new Map((clientData ? [] : historicalContexts).map(context => [context.id, context]))
 
-export const people: Person[] = imported.length ? imported.map(record => {
+export const people: Person[] = imported.length ? imported.map(input => {
+  const record = { ...input, story: input.story || '', sources: input.sources || [], timeline: input.timeline || [], imageSource: input.imageSource || '' }
   const curated = curatedByName.get(record.name)
   const contexts = (record.historicalContextIds || []).map(id => contextById.get(id)).filter((context): context is typeof historicalContexts[number] => !!context)
   if (curated) return {

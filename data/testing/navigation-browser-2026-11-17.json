@@ -1,0 +1,397 @@
+{
+  "status": "passed",
+  "environment": "Local production H5; ChatGPT in-app browser; CSS viewports 1280x720,390x844,320x812. No physical device or production verification.",
+  "desktop": [
+    {
+      "round": 1,
+      "href": "/people/zhude/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 2,
+      "href": "/people/p0002/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 3,
+      "href": "/people/p0003/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 4,
+      "href": "/people/p0004/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 5,
+      "href": "/people/p0005/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 6,
+      "href": "/people/p0006/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 7,
+      "href": "/people/p0007/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 8,
+      "href": "/people/xuxiangqian/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 9,
+      "href": "/people/p0009/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 10,
+      "href": "/people/p0010/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 11,
+      "href": "/people/zhude/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 12,
+      "href": "/people/p0002/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 13,
+      "href": "/people/p0003/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 14,
+      "href": "/people/p0004/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 15,
+      "href": "/people/p0005/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 16,
+      "href": "/people/p0006/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 17,
+      "href": "/people/p0007/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 18,
+      "href": "/people/xuxiangqian/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 19,
+      "href": "/people/p0009/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "round": 20,
+      "href": "/people/p0010/",
+      "count": 24,
+      "path": "/generals/",
+      "ready": "/generals/"
+    }
+  ],
+  "mobile": {
+    "before": {
+      "count": 31,
+      "scroll": 4782,
+      "search": "红军",
+      "selected": [
+        "少将",
+        "湖南31"
+      ]
+    },
+    "rounds": [
+      {
+        "count": 31,
+        "focus": "/people/p0897/",
+        "path": "/generals/",
+        "scroll": 4659.5,
+        "search": "红军",
+        "selected": [
+          "少将",
+          "湖南31"
+        ]
+      },
+      {
+        "count": 31,
+        "focus": "/people/p0897/",
+        "path": "/generals/",
+        "scroll": 4659.5,
+        "search": "红军",
+        "selected": [
+          "少将",
+          "湖南31"
+        ]
+      },
+      {
+        "count": 31,
+        "focus": "/people/p0897/",
+        "path": "/generals/",
+        "scroll": 4659.5,
+        "search": "红军",
+        "selected": [
+          "少将",
+          "湖南31"
+        ]
+      },
+      {
+        "count": 31,
+        "focus": "/people/p0897/",
+        "path": "/generals/",
+        "scroll": 4659.5,
+        "search": "红军",
+        "selected": [
+          "少将",
+          "湖南31"
+        ]
+      },
+      {
+        "count": 31,
+        "focus": "/people/p0897/",
+        "path": "/generals/",
+        "scroll": 4659.5,
+        "search": "红军",
+        "selected": [
+          "少将",
+          "湖南31"
+        ]
+      },
+      {
+        "count": 31,
+        "focus": "/people/p0897/",
+        "path": "/generals/",
+        "scroll": 4659.5,
+        "search": "红军",
+        "selected": [
+          "少将",
+          "湖南31"
+        ]
+      },
+      {
+        "count": 31,
+        "focus": "/people/p0897/",
+        "path": "/generals/",
+        "scroll": 4659.5,
+        "search": "红军",
+        "selected": [
+          "少将",
+          "湖南31"
+        ]
+      },
+      {
+        "count": 31,
+        "focus": "/people/p0897/",
+        "path": "/generals/",
+        "scroll": 4659.5,
+        "search": "红军",
+        "selected": [
+          "少将",
+          "湖南31"
+        ]
+      },
+      {
+        "count": 31,
+        "focus": "/people/p0897/",
+        "path": "/generals/",
+        "scroll": 4659.5,
+        "search": "红军",
+        "selected": [
+          "少将",
+          "湖南31"
+        ]
+      },
+      {
+        "count": 31,
+        "focus": "/people/p0897/",
+        "path": "/generals/",
+        "scroll": 4659.5,
+        "search": "红军",
+        "selected": [
+          "少将",
+          "湖南31"
+        ]
+      }
+    ]
+  },
+  "narrow": [
+    {
+      "overflow": false,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "overflow": false,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "overflow": false,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "overflow": false,
+      "path": "/generals/",
+      "ready": "/generals/"
+    },
+    {
+      "overflow": false,
+      "path": "/generals/",
+      "ready": "/generals/"
+    }
+  ],
+  "nativeBack": [
+    {
+      "count": 31,
+      "focus": null,
+      "path": "/generals/",
+      "ready": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军"
+    },
+    {
+      "count": 31,
+      "focus": null,
+      "path": "/generals/",
+      "ready": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军"
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "path": "/generals/",
+      "ready": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军"
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "path": "/generals/",
+      "ready": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军"
+    },
+    {
+      "count": 31,
+      "focus": "/people/p0897/",
+      "path": "/generals/",
+      "ready": "/generals/",
+      "scroll": 4659.5,
+      "search": "红军"
+    }
+  ],
+  "card": [
+    {
+      "card": {
+        "card": true,
+        "path": "/card/"
+      },
+      "back": {
+        "h1": [
+          "黄忠诚"
+        ],
+        "path": "/people/p0897/",
+        "ready": "/people/p0897/"
+      }
+    },
+    {
+      "card": {
+        "card": true,
+        "path": "/card/"
+      },
+      "back": {
+        "h1": [
+          "黄忠诚"
+        ],
+        "path": "/people/p0897/",
+        "ready": "/people/p0897/"
+      }
+    },
+    {
+      "card": {
+        "card": true,
+        "path": "/card/"
+      },
+      "back": {
+        "h1": [
+          "黄忠诚"
+        ],
+        "path": "/people/p0897/",
+        "ready": "/people/p0897/"
+      }
+    }
+  ],
+  "directProfile": {
+    "body": "生平与经历",
+    "inline": true,
+    "overflow": false,
+    "prerender": false,
+    "ready": "/people/p0897/",
+    "sections": 7,
+    "timeline": 11,
+    "title": "黄忠诚 · 少将 · 湖南麻阳 · 1913年生｜生平、人生足迹与史料｜山河有名"
+  },
+  "notes": [
+    "Each enter/back pair used UI actions consecutively with no intentional transition wait.",
+    "The first mobile Enter focused and scrolled the tile before navigation; nine subsequent returns matched 4659.5 CSS px.",
+    "Search 红军, rank 少将, province 湖南,31 loaded results and tile focus restored.",
+    "My remembered scope retained after return; removal updated empty state; temporary remembered entry removed.",
+    "Reload restored all ranks/regions, blank search and24 initial people.",
+    "Performance API unavailable in read-only browser scope; no browser speed score claimed."
+  ]
+}

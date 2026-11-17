@@ -10,11 +10,14 @@ import Icon from '../../components/Icon'
 import Landscape from '../../components/Landscape'
 import { getProvinceLandscape } from '../../data/landscapes'
 
+const provinceCounts = new Map<string, number>()
+for (const person of people) provinceCounts.set(person.province, (provinceCounts.get(person.province) || 0) + 1)
+const provinces = Array.from(new Set(people.map(person => person.province))).filter(province => getProvinceLandscape(province)).sort((a, b) => provinceCounts.get(b)! - provinceCounts.get(a)!).slice(0, 6)
+const heroPeople = [...featuredPeople, ...people.filter(person => !person.portraitMissing && !featuredPeople.some(featured => featured.id === person.id))].slice(0, 12)
+
 export default function Index() {
   usePageMetadata('index')
   useShareAppMessage(() => ({ title: '山河有名｜记住一个名字，走近一段历史', path: '/pages/index/index' }))
-  const provinces = Array.from(new Set(people.map(person => person.province))).filter(province => getProvinceLandscape(province)).sort((a, b) => people.filter(person => person.province === b).length - people.filter(person => person.province === a).length).slice(0, 6)
-  const heroPeople = [...featuredPeople, ...people.filter(person => !person.portraitMissing && !featuredPeople.some(featured => featured.id === person.id))].slice(0, 12)
   return <Shell>
     <View className='home-hero container'>
       <View className='hero-copy'>
@@ -46,7 +49,7 @@ export default function Index() {
       <View className='hometown-content'>
         <View className='hometown-illustration'>
           <Landscape landscape={getProvinceLandscape('江西')!} />
-          <Text className='landscape-caption serif'>一方水土，<Text className='block'>一代将星。</Text></Text><Text className='landscape-footnote'>江西 · 庐山山河意象</Text>
+          <Text className='landscape-caption serif'>一方水土，<Text className='block'>一代将星。</Text></Text><Text className='landscape-footnote'>江西 · 庐山 · AI生成景观</Text>
         </View>
         <View className='hometown-options'>
           <Text className='hometown-intro'>选择一个地方，认识一位从这里走出的将帅。</Text>

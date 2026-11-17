@@ -1,8 +1,14 @@
 import { readFile, writeFile, mkdir, rm } from 'node:fs/promises'
 import { resolve } from 'node:path'
+import { createRequire } from 'node:module'
 import { root, loadSeoRenderer } from './seo_bundle.mjs'
 const { people, pageMetadata, serializeStructuredData, renderPage, PUBLIC_SITE_URL } = await loadSeoRenderer()
 const output = resolve(root,'dist/h5')
+const { dataVersion } = createRequire(import.meta.url)('./data-version.cjs')
+const dataDirectory = resolve(output,'js/person-data',dataVersion(root))
+await mkdir(dataDirectory,{recursive:true})
+for(const person of people)await writeFile(resolve(dataDirectory,person.id+'.json'),JSON.stringify(person)+'\n')
+await writeFile(resolve(dataDirectory,'search.json'),JSON.stringify(Object.fromEntries(people.map(person=>[person.id,`${person.name} ${person.aliases?.join(' ')||''} ${person.hometown} ${person.rank} ${person.story}`.toLocaleLowerCase()])))+'\n')
 const template = await readFile(resolve(output,'index.html'),'utf8')
 if(!template.includes('<div id="app"></div>')) throw Error('H5 HTML mount point changed; update the prerenderer before publishing.')
 if(template.includes('id="prerender"')) throw Error('Run npm run build to create a fresh application shell before prerendering.')
@@ -24,6 +30,7 @@ for(const [page,path,person] of pages){
   const metadata=pageMetadata(page,person)
   let html=template.replace(/<title>[\s\S]*?<\/title>/,'').replace(/<meta\s+name="description"[^>]*>/,'')
   html=html.replace('</head>',head(metadata)+'</head>').replace('<div id="app"></div>',`<div id="prerender">${renderPage(page)}</div><div id="app"></div>`)
+  if(person)html=html.replace('<div id="app"></div>',`<script id="page-person-data" type="application/json">${serializeStructuredData(person)}</script><div id="app"></div>`)
   // Reference pages retain only the privacy-gated analytics entry, without the app runtime.
   if(page==='directory'||page==='about') html=html.replace(/<script(?![^>]*(?:application\/ld\+json|data-shanhe-analytics))[^>]*>[\s\S]*?<\/script>/g,'').replace(/<link[^>]*rel="modulepreload"[^>]*>/g,'')
   const directory=resolve(output,'.'+path)

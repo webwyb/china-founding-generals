@@ -1,0 +1,143 @@
+{
+  "status": "passed",
+  "baseline": {
+    "commit": "4186f87c05a274a121f07db1d1dcab44e10034cc",
+    "sourceCheck": "55 tracked src/config/package files byte-matched the prior isolated release directory",
+    "bundles": [
+      {
+        "name": "app.014ef67b.js",
+        "bytes": 32185,
+        "gzipBytes": 5454
+      },
+      {
+        "name": "common.17281098.js",
+        "bytes": 7855798,
+        "gzipBytes": 668429
+      },
+      {
+        "name": "index.2807888c.js",
+        "bytes": 12723,
+        "gzipBytes": 4132
+      },
+      {
+        "name": "index.7c63b44f.js",
+        "bytes": 14405,
+        "gzipBytes": 4254
+      },
+      {
+        "name": "index.d2453310.js",
+        "bytes": 1808,
+        "gzipBytes": 762
+      },
+      {
+        "name": "index.d6d65fe6.js",
+        "bytes": 11824,
+        "gzipBytes": 3859
+      },
+      {
+        "name": "index.df31d33c.js",
+        "bytes": 7015,
+        "gzipBytes": 2070
+      },
+      {
+        "name": "index.e167b1ca.js",
+        "bytes": 3243,
+        "gzipBytes": 1239
+      },
+      {
+        "name": "vendors.39080848.js",
+        "bytes": 308955,
+        "gzipBytes": 99590
+      }
+    ]
+  },
+  "after": {
+    "state": "Current worktree including pre-existing compliance changes; no deployment",
+    "bundles": [
+      {
+        "name": "app.801fa2fc.js",
+        "bytes": 32203,
+        "gzipBytes": 5468
+      },
+      {
+        "name": "common.74776b1a.js",
+        "bytes": 754384,
+        "gzipBytes": 100659
+      },
+      {
+        "name": "index.050c0eef.js",
+        "bytes": 14268,
+        "gzipBytes": 4622
+      },
+      {
+        "name": "index.1d19f4da.js",
+        "bytes": 7087,
+        "gzipBytes": 2164
+      },
+      {
+        "name": "index.377b977b.js",
+        "bytes": 12113,
+        "gzipBytes": 3956
+      },
+      {
+        "name": "index.3e094eff.js",
+        "bytes": 14882,
+        "gzipBytes": 4421
+      },
+      {
+        "name": "index.8d0043b7.js",
+        "bytes": 7671,
+        "gzipBytes": 2414
+      },
+      {
+        "name": "index.be8d92c6.js",
+        "bytes": 1808,
+        "gzipBytes": 762
+      },
+      {
+        "name": "vendors.ce3f8be8.js",
+        "bytes": 308385,
+        "gzipBytes": 99331
+      }
+    ]
+  },
+  "common": {
+    "before": {
+      "name": "common.17281098.js",
+      "bytes": 7855798,
+      "gzipBytes": 668429
+    },
+    "after": {
+      "name": "common.74776b1a.js",
+      "bytes": 754384,
+      "gzipBytes": 100659
+    },
+    "rawReduction": 0.9039710542455394,
+    "gzipReduction": 0.8494095857600433
+  },
+  "allJavaScript": {
+    "beforeBytes": 8247956,
+    "afterBytes": 1152801,
+    "beforeGzipBytes": 789789,
+    "afterGzipBytes": 223797
+  },
+  "profileResources": {
+    "count": 1614,
+    "median": {
+      "name": "p0015.json",
+      "bytes": 4293,
+      "gzipBytes": 1740
+    },
+    "maximum": {
+      "name": "p0412.json",
+      "bytes": 9881,
+      "gzipBytes": 2902
+    },
+    "searchIndex": {
+      "bytes": 967598,
+      "gzipBytes": 213704,
+      "loading": "First search focus/query only; excluded from normal opening"
+    }
+  },
+  "scope": "Build artifact and gzip comparison. Does not measure wall-clock loading, CPU, LCP or mobile network speeds."
+}

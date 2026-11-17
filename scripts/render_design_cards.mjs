@@ -20,7 +20,7 @@ await mkdir(output,{recursive:true})
 const textCanvas=createCanvas(600,900),textContext=textCanvas.getContext('2d')
 const sampleImage=await loadImage(resolve(root,'src/assets/portrait-placeholder.svg'))
 const textFill=textContext.fillText.bind(textContext)
-let testedLabels=0, decodedPeople=0
+let testedLabels=0, decodedPeople=0, aiLabels=0
 const expectedPersonUrl = id => `https://shanhe.binnwu.top/people/${encodeURIComponent(id)}/`
 function scan(context,width,height,person,label,x=0,y=0) {
  const data=context.getImageData(x,y,width,height)
@@ -29,6 +29,7 @@ function scan(context,width,height,person,label,x=0,y=0) {
  return decoded.data
 }
 textContext.fillText=(text,x,y,...rest)=>{
+ if(text==='背景景观由AI生成') aiLabels++
  const width=textContext.measureText(text).width
  const left=textContext.textAlign==='center'?x-width/2:textContext.textAlign==='right'?x-width:x
  assert.ok(left>=20&&left+width<=580,`文字超出纪念卡边界：${text}`)
@@ -36,7 +37,9 @@ textContext.fillText=(text,x,y,...rest)=>{
  testedLabels++;return textFill(text,x,y,...rest)
 }
 for(const person of people)for(const theme of ['landscape','portrait']) {
+ const beforeAiLabels=aiLabels
  drawMemorialCard(textContext,person,sampleImage,sampleImage,theme)
+ assert.equal(aiLabels-beforeAiLabels,theme==='landscape'&&regions.some(region=>region.province===person.province)?1:0,`${person.name}的AI标识须与实际景观一致并写入同一成图`)
  if(theme==='landscape') {
   // Scan the actual rasterized footer at a reduced 600px card width. Full
   // composition PNG/JPEG scans below independently check both themes.

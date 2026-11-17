@@ -25,6 +25,10 @@ with tempfile.TemporaryDirectory(prefix='shanhe-seo-release-') as folder:
                    env={**os.environ, 'SHANHE_ASSET_BASE_URL': asset_base}, check=True)
     assets = json.loads((work / 'release-assets.json').read_text())
     asset_urls = {asset['url'] for asset in assets}
+    runtime = list((build / 'js/person-data').iterdir())
+    assert len(runtime) == 1
+    runtime = runtime[0]
+    assert len(list(runtime.glob('*.json'))) == 1615
     photos = 0
     for person in people:
         html = (build / 'people' / person['id'] / 'index.html').read_text()
@@ -35,6 +39,13 @@ with tempfile.TemporaryDirectory(prefix='shanhe-seo-release-') as folder:
             photos += 1
         graph = json.loads(re.search(r'<script id="page-structured-data" type="application/ld\+json">(.*?)</script>', html)[1])['@graph']
         entity = graph[1]['mainEntity']
+        payload = json.loads((runtime / (person['id'] + '.json')).read_text())
+        inline = json.loads(re.search(r'<script id="page-person-data" type="application/json">(.*?)</script>', html)[1])
+        assert payload == inline
+        if payload['portraitMissing']:
+            assert payload['portrait'].startswith('data:image/svg+xml;base64,')
+        else:
+            assert payload['portrait'].split('?')[0] in asset_urls, person['id']
         assert not entity.get('image') or entity['image'].split('?')[0] in asset_urls
         assert origin + 'https:' not in html
     assert photos == 1609
@@ -50,8 +61,10 @@ with tempfile.TemporaryDirectory(prefix='shanhe-seo-release-') as folder:
         path = Path('people') / person['id'] / 'index.html'
         assert (extracted / path).read_bytes() == (build / path).read_bytes()
     assert (extracted / 'robots.txt').is_file() and (extracted / 'sitemap.xml').is_file()
+    for resource in runtime.glob('*.json'):
+        assert (extracted / resource.relative_to(build)).read_bytes() == resource.read_bytes()
     report = {'status': 'passed', 'profileHtmlAccepted': len(people), 'socialImagesOnCos': photos,
-              'archiveBytes': archive.stat().st_size, 'assets': len(assets),
+              'archiveBytes': archive.stat().st_size, 'assets': len(assets), 'runtimeJsonAccepted': 1615,
               'method': 'Production-style URL rewrite and code archive in temporary copied build; extracted by repository receive.py. No cloud upload, server mutation, installed-receiver update or production deployment.'}
 (ROOT / 'data/testing/seo-release-2026-11-17.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print(f'离线部署包通过：{len(people)}份人物HTML、{photos}个COS分享图地址，代码包{report["archiveBytes"]}字节。')

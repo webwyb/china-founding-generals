@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": [
+    "加载期间立即返回取消过期跳转",
+    "转场期间50次连续操作合并为最后意图，重复返回共用提交",
+    "加载失败后队列可恢复",
+    "直达页同步读取内联人物资料，无重复下载",
+    "人物请求去重、版本路径和成功缓存",
+    "错误人物和失败请求不污染缓存，重试恢复",
+    "检索索引按需加载、去重、完整性校验和错误重试"
+  ],
+  "method": "Production queue and resource modules bundled with explicit deferred navigation, document and fetch adapters. No browser timing or device simulation."
+}

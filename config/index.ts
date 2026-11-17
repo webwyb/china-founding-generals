@@ -1,6 +1,7 @@
 import { defineConfig } from '@tarojs/cli'
 import { posix, resolve } from 'node:path'
 const { manifest } = require('../scripts/deploy/asset-manifest.cjs')
+const { dataVersion } = require('../scripts/data-version.cjs')
 const assetUrls = Object.fromEntries(manifest(resolve(__dirname, '../public'), process.env.SHANHE_ASSET_BASE_URL || '').map((asset: { path: string; url: string }) => [asset.path, asset.url]))
 const catalogue = require('../src/data/catalog.generated.json') as { id: string }[]
 
@@ -31,7 +32,9 @@ export default defineConfig<'vite'>({
     patterns: [{ from: resolve(__dirname, '../public'), to: 'static' }],
     options: {}
   },
-  defineConstants: { __SHANHE_ASSET_URLS__: JSON.stringify(assetUrls) },
+  // The watch server does not run the static-data generator. Keep complete
+  // records in development; release builds emit versioned JSON below /js/.
+  defineConstants: { __SHANHE_ASSET_URLS__: JSON.stringify(assetUrls), __SHANHE_CLIENT__: JSON.stringify(process.env.TARO_ENV === 'h5' && process.env.NODE_ENV === 'production'), __SHANHE_DATA_VERSION__: JSON.stringify(dataVersion(resolve(__dirname, '..'))) },
   mini: {
     postcss: {
       pxtransform: { enable: true },

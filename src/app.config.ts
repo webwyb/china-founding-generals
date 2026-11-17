@@ -1,4 +1,5 @@
 export default defineAppConfig({
+  animation: false,
   pages: [
     'pages/index/index',
     'pages/explore/index',

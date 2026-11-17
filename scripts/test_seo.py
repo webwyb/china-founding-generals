@@ -16,7 +16,8 @@ class Document(HTMLParser):
     def __init__(self, path):
         super().__init__(convert_charrefs=True)
         self.meta, self.canonical, self.links, self.assets = {}, [], [], []
-        self.text, self.titles, self.h1s, self.json_ld = [], [], [], []
+        self.text, self.titles, self.h1s, self.json_ld, self.person_data = [], [], [], [], []
+        self.script_type = None
         self.active = None
         self.buffer = []
         self.feed(path.read_text(encoding='utf-8'))
@@ -40,7 +41,9 @@ class Document(HTMLParser):
             self.assets.append(attrs['src'])
         if tag == 'link' and attrs.get('rel') in ('stylesheet', 'modulepreload', 'icon'):
             self.assets.append(attrs['href'])
-        if tag in ('title', 'h1') or (tag == 'script' and attrs.get('type') == 'application/ld+json'):
+        if tag == 'script':
+            self.script_type = attrs.get('type')
+        if tag in ('title', 'h1', 'script'):
             self.active, self.buffer = tag, []
 
     def handle_data(self, data):
@@ -57,8 +60,10 @@ class Document(HTMLParser):
             self.titles.append(value)
         elif tag == 'h1':
             self.h1s.append(value)
-        else:
+        elif self.script_type == 'application/ld+json':
             self.json_ld.append(json.loads(value))
+        elif self.script_type == 'application/json':
+            self.person_data.append(json.loads(value))
         self.active, self.buffer = None, []
 
 
@@ -88,12 +93,22 @@ def audit(path, canonical, indexed=True):
 
 people = json.loads(Path(sys.argv[1]).read_text(encoding='utf-8'))
 assert len(people) == 1614
+versions = list((OUTPUT / 'js/person-data').iterdir())
+assert len(versions) == 1
+resources = versions[0]
+assert len(list(resources.glob('*.json'))) == 1615
+search_index = json.loads((resources / 'search.json').read_text(encoding='utf-8'))
+assert set(search_index) == {person['id'] for person in people}
 expected_urls = {ORIGIN + path for path in ('/', '/generals/', '/people/', '/about/')}
 titles = set()
 for person in people:
     url = ORIGIN + '/people/' + person['id'] + '/'
     path = OUTPUT / 'people' / person['id'] / 'index.html'
     doc = audit(path, url)
+    assert doc.person_data == [person], f'Incorrect inline profile: {person["id"]}'
+    assert json.loads((resources / (person['id'] + '.json')).read_text(encoding='utf-8')) == person
+    expected_search = f'{person["name"]} {" ".join(person.get("aliases", []))} {person["hometown"]} {person["rank"]} {person["story"]}'.lower()
+    assert search_index[person['id']] == expected_search
     expected_urls.add(url)
     assert doc.h1s == [person['name']], person['id']
     assert person['name'] in doc.titles[0] and person['rank'] in doc.titles[0]
@@ -133,7 +148,7 @@ assert 'Sitemap: ' + ORIGIN + '/sitemap.xml' in (OUTPUT / 'robots.txt').read_tex
 assert 'Disallow: /' not in (OUTPUT / 'robots.txt').read_text()
 report = {'status': 'passed', 'people': len(people), 'uniquePersonTitles': len(titles),
           'staticHtmlPages': len(people) + 5, 'sitemapUrls': len(locations),
-          'checks': ['HTML parsed without JavaScript', 'Complete biographies, timelines, context and citation links',
+          'checks': ['HTML parsed without JavaScript; scripts excluded from visible text', '1614 versioned and inline profiles match complete source records', 'Lazy search index retains full biography search', 'Complete biographies, timelines, context and citation links',
                      'Single canonical, description, Open Graph and JSON-LD', 'Distinct homonym titles',
                      'Missing photos and pending fields retained', 'Absolute local assets exist',
                      'Full directory links to all 1614 profiles', 'Card is noindex and excluded from sitemap',

@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-17",
+  "status": "passed_with_documented_limits",
+  "environment": "Local production H5 in Chrome via CUA; no physical device or production deployment",
+  "check": {
+    "command": "npm run check",
+    "exitCode": 0,
+    "scope": "Complete project check, including compliance links/report, facts, biographies, portraits, 3228 card compositions, QR decoding, H5 and SEO"
+  },
+  "knownPublicInformation": {
+    "operator": "吴延彬",
+    "icpNumber": "京ICP备19002969号-2",
+    "icpVerification": "https://beian.miit.gov.cn/",
+    "email": "beijingwyb@163.com",
+    "policeNumber": null,
+    "policeReason": "Public query required CAPTCHA; user instructed to use existing information instead."
+  },
+  "imageAudit": {
+    "total": 1638,
+    "portraits": 1609,
+    "landscapes": 29,
+    "missingPortraits": 5,
+    "counts": {
+      "permission_required": 1,
+      "license_unknown": 1534,
+      "license_unspecified": 37,
+      "public_domain_claim": 36,
+      "cc0_claim": 1,
+      "ai_terms": 29
+    }
+  },
+  "staticHtml": {
+    "pages": 1619,
+    "footerIcpAndThreeLinks": "passed",
+    "aboutSectionsAndMailto": "passed",
+    "policeDisplay": "omitted_as_unverified_per_user",
+    "factBaselineSha256": {
+      "src/data/catalog.generated.json": "8778f83ed061acdbc6481cd75cd00e81ecee5064cb35468fcc41d0af41e2bec6",
+      "data/catalog/portraits.json": "d69cadf9bdd3b28c65faaf7554509984f768c8deba25625ca2f519da82799187",
+      "data/catalog/portrait-supplements.json": "28e46cc7173cd4076a1a4d4241b131f71500da8f56d7cb5beb8f0b990c3922ed"
+    }
+  },
+  "browser": {
+    "cssViewports": [
+      [
+        320,
+        812
+      ],
+      [
+        1440,
+        900
+      ]
+    ],
+    "cases": [
+      {
+        "page": "about",
+        "viewport": [
+          320,
+          812
+        ],
+        "checks": [
+          "copyright/correction anchors top about24px",
+          "public mail draft recipients and fields",
+          "long email wraps",
+          "footer ICP and three policy links",
+          "keyboard focus-visible on AI policy link",
+          "document scrollWidth equals innerWidth"
+        ]
+      },
+      {
+        "page": "home/person",
+        "viewport": [
+          1440,
+          900
+        ],
+        "checks": [
+          "AI landscape label and alternative text",
+          "Suyu person-specific feedback links",
+          "person scrollWidth equals innerWidth"
+        ]
+      },
+      {
+        "page": "card",
+        "viewport": [
+          1440,
+          900
+        ],
+        "checks": [
+          "scenic/plain switch and correct scoped notes",
+          "save dialog and Escape",
+          "actual PNG equality with preview and download href"
+        ]
+      },
+      {
+        "page": "card",
+        "viewport": [
+          320,
+          812
+        ],
+        "checks": [
+          "style picker and final PNG visible",
+          "AI badge in scenic output",
+          "document scrollWidth equals innerWidth"
+        ]
+      },
+      {
+        "page": "rights-report",
+        "viewport": [
+          1440,
+          900
+        ],
+        "checks": [
+          "Zhu De query 1 row",
+          "CC0 1 row",
+          "AI landscapes 29 rows",
+          "unmatched query 0 rows; both pagination controls disabled",
+          "second page of 33 has 50 rows",
+          "priority1 Zhang Yaoci 1 row",
+          "hash shown on its own line",
+          "document scrollWidth equals innerWidth"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "file": "docs/reviews/compliance-2026-11-17/suyu-ai-landscape.png",
+      "width": 1200,
+      "height": 1800,
+      "sha256": "9fe14bfc4f7ebc5068ec0021347bd3577e0a7ff8046779809bb0bbaf56a93d78",
+      "decoded": "https://shanhe.binnwu.top/people/suyu/",
+      "previewEqualsModalAndDownload": true
+    },
+    {
+      "file": "docs/reviews/compliance-2026-11-17/suyu-portrait.png",
+      "width": 1200,
+      "height": 1800,
+      "sha256": "758f0eb1b92b5d34d884a68c0460e8b689e2195234b10e70f966e71a679ed7c6",
+      "decoded": "https://shanhe.binnwu.top/people/suyu/",
+      "previewEqualsModalAndDownload": true
+    }
+  ],
+  "evidence": [
+    {
+      "file": "docs/reviews/compliance-2026-11-17/about-320.jpg",
+      "bytes": 20199,
+      "sha256": "c1601b2ee6fe8ddac6a8a50dec6a7ca9c6549869796e1918ca1493fa8d2be1a1"
+    },
+    {
+      "file": "docs/reviews/compliance-2026-11-17/about-contact-320.jpg",
+      "bytes": 36915,
+      "sha256": "3990596488d29499ee602fad70946c3a7157b809118327f03d27c9e47e434a8d"
+    },
+    {
+      "file": "docs/reviews/compliance-2026-11-17/card-320.jpg",
+      "bytes": 31386,
+      "sha256": "8d24b39617e9fdd0004a300561e4ceeeff64aec6c232d2d166a7c841dd5bbc96"
+    },
+    {
+      "file": "docs/reviews/compliance-2026-11-17/card-scenic-1440.jpg",
+      "bytes": 76186,
+      "sha256": "1b3d14548eb1030ca1c05b0e843cef392f1a68e459c2e40d3d86bcf6a974d98d"
+    },
+    {
+      "file": "docs/reviews/compliance-2026-11-17/person-1440.jpg",
+      "bytes": 105238,
+      "sha256": "b56a71374a01a1ca6908b02209ce6bfe617999953373ff07064e801dc576d4ab"
+    },
+    {
+      "file": "docs/reviews/compliance-2026-11-17/rights-priority-1440.jpg",
+      "bytes": 100644,
+      "sha256": "4ae1e22186e8b9a0cd73655b6e4cdafccb01bc572d4efccf8d5fb5d85ff7bfa3"
+    },
+    {
+      "file": "docs/reviews/compliance-2026-11-17/suyu-ai-landscape.png",
+      "bytes": 1370284,
+      "sha256": "9fe14bfc4f7ebc5068ec0021347bd3577e0a7ff8046779809bb0bbaf56a93d78"
+    },
+    {
+      "file": "docs/reviews/compliance-2026-11-17/suyu-portrait.png",
+      "bytes": 440183,
+      "sha256": "758f0eb1b92b5d34d884a68c0460e8b689e2195234b10e70f966e71a679ed7c6"
+    }
+  ],
+  "limits": [
+    "No email sent or delivery tested",
+    "No browser download button file-persistence check",
+    "No mobile device/WeChat/screenreader test",
+    "No newly acquired image permissions",
+    "Only explicit AI notices implemented; implicit metadata and service terms remain to verify",
+    "No commit/push/deploy"
+  ]
+}

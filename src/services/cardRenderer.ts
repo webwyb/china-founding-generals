@@ -4,6 +4,7 @@ import { containImage } from './imageGeometry'
 import { lifeYears } from '../data/historyLabels'
 import { drawCardQrCode } from './cardQrCode'
 import { PUBLIC_SITE_HOST } from './personLinks'
+import { AI_LANDSCAPE_LABEL } from './compliance'
 
 export type CardTheme = 'landscape' | 'portrait'
 export const CARD_WIDTH = 600
@@ -84,6 +85,13 @@ export function drawMemorialCard(context: CanvasRenderingContext2D, person: Shar
     context.fillStyle = palette.ink
     font(context, 16, true, 500)
     context.fillText(`${region.province} · ${region.landmark}`, 46, 149)
+    // Included in the shared bitmap, so downloaded and re-shared cards keep it.
+    font(context, 12)
+    const aiWidth = context.measureText(AI_LANDSCAPE_LABEL).width + 20
+    context.fillStyle = palette.paper
+    context.fillRect(560 - aiWidth, 362, aiWidth, 23)
+    context.fillStyle = palette.ink
+    context.fillText(AI_LANDSCAPE_LABEL, 570 - aiWidth, 378)
     context.fillStyle = palette.paper
     context.fillRect(188, 192, 224, 274)
     context.save()

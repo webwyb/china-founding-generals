@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Text, View } from '@tarojs/components'
 import Taro, { useShareAppMessage } from '@tarojs/taro'
 import Button from '../../components/Button'
@@ -14,12 +14,14 @@ import { getRemembered, toggleRemembered } from '../../services/collection'
 import { usePersonRouteId } from '../../services/usePersonRouteId'
 import { pageHref } from '../../services/personLinks'
 import { usePageMetadata } from '../../seo/usePageMetadata'
+import { feedbackUrl } from '../../services/compliance'
+import { usePersonDetails } from '../../services/usePersonDetails'
 
 const missingLabels: Record<string, string> = { birth: '出生年份', death: '逝世年份', grantYear: '授衔年份', hometown: '籍贯或出生地', province: '地域归属', biography: '详细生平', portrait: '历史肖像' }
 
 export default function PersonPage() {
   const personId = usePersonRouteId('person')
-  const person = people.find(item => item.id === personId)
+  const { person, error, retry } = usePersonDetails(personId)
   const [remembered, setRemembered] = useState(() => person ? getRemembered().includes(person.id) : false)
   const [showPortrait, setShowPortrait] = useState(false)
   const [portraitSize, setPortraitSize] = useState<{ width: number; height: number } | null>(null)
@@ -53,11 +55,11 @@ export default function PersonPage() {
   }, [person?.id])
   useEffect(() => { setShowPortrait(false); setPortraitSize(null) }, [person?.id])
   useEffect(() => { setRemembered(person ? getRemembered().includes(person.id) : false) }, [person?.id])
+  const related = useMemo(() => person ? people.filter(item => item.id !== person.id).sort((a, b) => Number(b.province === person.province) - Number(a.province === person.province)).slice(0, 3) : [], [person?.id])
   usePageMetadata('person', person)
   useShareAppMessage(() => ({ title: person ? `记住这个名字：${person.name}｜山河有名` : '山河有名', path: person ? `/pages/person/index?id=${person.id}` : '/pages/index/index' }))
-  if (!person) return <Shell><View className='container empty-state'><Text className='empty-title serif'>暂未找到这份人物档案</Text><Text className='empty-copy'>可以返回名录，按姓名或家乡重新查找。</Text><Button className='primary-button' href='/generals/' onClick={() => openPage('explore')}>返回将帅名录<Icon name='back' /></Button></View></Shell>
+  if (!person) return <Shell><View className='container empty-state'><Text className='empty-title serif'>{error || (personId && people.some(item => item.id === personId) ? '正在打开人物档案…' : '暂未找到这份人物档案')}</Text>{error && <Button className='text-link' onClick={retry}>重新加载</Button>}<Button className='primary-button' href='/generals/' onClick={() => returnTo('explore')}>返回将帅名录<Icon name='back' /></Button></View></Shell>
   const landscape = getProvinceLandscape(person.province)
-  const related = people.filter(item => item.id !== person.id).sort((a, b) => Number(b.province === person.province) - Number(a.province === person.province)).slice(0, 3)
   const makeCard = () => openPage('card', `id=${person.id}`)
   function remember() {
     try {
@@ -81,7 +83,7 @@ export default function PersonPage() {
       {landscape && <View className='profile-landscape'>
         <Landscape landscape={landscape} eager />
         <View className='landscape-heading'><Text className='landscape-overline'>家乡山河</Text><Text className='landscape-province serif'>{person.province}</Text><Text className='landscape-place'>{landscape.landmark}</Text></View>
-        <Text className='landscape-signature'>山河意象 · {landscape.landmark}</Text>
+        <Text className='landscape-signature'>{landscape.landmark} · AI生成景观</Text>
       </View>}
       <View className={`person-feature ${landscape ? 'with-landscape' : ''}`}>
         <View className='person-photo-frame'>
@@ -118,6 +120,7 @@ export default function PersonPage() {
             <Text className='context-title serif'>{context.title}</Text><Text>{context.text}</Text><Button className='text-link biography-source' href={context.source.url} onClick={() => openSource(context.source.url)} aria-label={`查阅${context.title}的背景资料`}>背景资料<Icon name='external' /></Button>
           </View>)}</View>}
           {person.fieldNote && <View className='historical-note'><Text className='historical-note-title'>资料说明</Text><Text>{person.fieldNote}</Text></View>}
+          <nav className='profile-feedback compliance-links' aria-label={`${person.name}的资料反馈`}><a href={feedbackUrl('correction', person)}>反馈{person.name}的资料勘误</a><a href={feedbackUrl('copyright', person)}>反馈图片权利问题</a></nav>
           <details className='source-section'><summary id='profile-sources' className='source-heading'>查阅史料与影像出处<span className='source-count'>{person.sources.length + (person.imageSource ? 1 : 0)} 项<Icon name='down' /></span></summary>
             {person.sources.map(source => <Button className='source-row' key={source.url} href={source.url} onClick={() => openSource(source.url)}><Text>{source.title}</Text><Icon name='external' /></Button>)}
             {person.imageSource && <Button className='source-row' href={person.imageSource} onClick={() => openSource(person.imageSource)}><Text>历史肖像来源</Text><Icon name='external' /></Button>}

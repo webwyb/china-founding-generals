@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useDidShow } from '@tarojs/taro'
 import type { Person } from '../data/people'
 import { pageMetadata, serializeStructuredData, type SeoPage } from './metadata'
+import { notifyNavigationReady } from '../services/navigation'
 
 export function updatePageMetadata(page: SeoPage, person?: Person) {
   const data = pageMetadata(page, person)
@@ -29,7 +30,7 @@ export function updatePageMetadata(page: SeoPage, person?: Person) {
 }
 
 export function usePageMetadata(page: SeoPage, person?: Person) {
-  const update = () => { if (process.env.TARO_ENV === 'h5') updatePageMetadata(page, person) }
+  const update = () => { if (process.env.TARO_ENV === 'h5') { updatePageMetadata(page, person); notifyNavigationReady(page, person?.id) } }
   useDidShow(update)
-  useEffect(update, [page, person?.id])
+  useEffect(update, [page, person])
 }
