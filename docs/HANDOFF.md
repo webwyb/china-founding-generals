@@ -23,20 +23,20 @@
 
 技术栈：Taro4.3.2、React18.3.1、TypeScript、Vite。日常使用Node22，Python研究／数据工具推荐3.11，最低3.10。依赖以锁文件为准。
 
-| 内容 | 入口 |
-| --- | --- |
-| 全量资料、精选故事合并 | `src/data/people.ts`、`catalog.generated.json`、`featured.ts` |
-| 事实快照与人工勘误 | `data/catalog/evidence/`、`reviewed-facts.json` |
-| 再生成与身份排除 | `scripts/build_catalog.py`、`rejected-identities.json` |
-| 来源差异与字段出处 | `source-conflicts.json`、`pending-review.json`、`field-provenance.json` |
-| 检索与本地阅读状态 | `src/services/catalogue.ts`、`catalogueState.ts` |
-| 铭记、导航、复制 | `collection.ts`、`src/components/Shell.tsx`、`share.ts` |
-| 卡片唯一绘制入口 | `src/services/cardRenderer.ts` |
-| 肖像完整等比展示 | `src/components/Portrait.tsx`、`src/services/imageGeometry.ts` |
-| 弹窗与无障碍行为 | `src/components/Dialog.tsx`、`Button.tsx` |
-| 风格与响应式 | `src/app.scss`、`docs/DESIGN.md` |
-| 景观映射、素材与原稿 | `src/data/landscapes.ts`、`public/landscapes/`、`design/landscapes/` |
-| 字体与许可 | `src/assets/fonts/`、`public/fonts/OFL-NotoSerifSC.txt` |
+| 内容                   | 入口                                                                    |
+| ---------------------- | ----------------------------------------------------------------------- |
+| 全量资料、精选故事合并 | `src/data/people.ts`、`catalog.generated.json`、`featured.ts`           |
+| 事实快照与人工勘误     | `data/catalog/evidence/`、`reviewed-facts.json`                         |
+| 再生成与身份排除       | `scripts/build_catalog.py`、`rejected-identities.json`                  |
+| 来源差异与字段出处     | `source-conflicts.json`、`pending-review.json`、`field-provenance.json` |
+| 检索与本地阅读状态     | `src/services/catalogue.ts`、`catalogueState.ts`                        |
+| 铭记、导航、复制       | `collection.ts`、`src/components/Shell.tsx`、`share.ts`                 |
+| 卡片唯一绘制入口       | `src/services/cardRenderer.ts`                                          |
+| 肖像完整等比展示       | `src/components/Portrait.tsx`、`src/services/imageGeometry.ts`          |
+| 弹窗与无障碍行为       | `src/components/Dialog.tsx`、`Button.tsx`                               |
+| 风格与响应式           | `src/app.scss`、`docs/DESIGN.md`                                        |
+| 景观映射、素材与原稿   | `src/data/landscapes.ts`、`public/landscapes/`、`design/landscapes/`    |
+| 字体与许可             | `src/assets/fonts/`、`public/fonts/OFL-NotoSerifSC.txt`                 |
 
 H5现采用普通路径，例如 `/people/suyu/`，构建时生成完整人物HTML；旧hash链接由浏览器迁移。名录 `/generals/`，完整索引 `/people/`，资料说明 `/about/`，卡片 `/card/?id=suyu`。资源按域名根目录寻址，当前不直接支持子目录托管。公开目录肖像在 `public/portraits/`，构建复制到 `dist/h5/static/portraits/`；原有8张精选肖像由Vite从 `src/assets/portraits/` 打包。`config/index.ts` 的复制源使用配置文件位置解析，勿改回依赖调用目录的相对路径。
 
@@ -96,7 +96,6 @@ H5图片、字体和媒体的输出名显式使用POSIX斜杠，这是浏览器U
 
 修改事实优先维护带出处的 `reviewed-facts.json`，再运行 `npm run data:build` 与校验；不要直接修改生成目录。若需修改原网页解析或重新采集，阅读 `DATA_PIPELINE.md`。不要用少量新网页覆盖完整事实快照。
 
-
 ## 自动发布与线上环境（2026-11-17）
 
 已接入 [GitHub Actions](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml)：应用推送 main 后三系统完整检查通过，向腾讯云轻量实例 `lhins-afrwanuu` 发布网页代码小包；素材由独立 **Sync COS assets** 工作流增量同步。网页发布不再传输大素材制品或执行上传，只读确认素材就绪；纯文档修改跳过两类构建部署。正式入口为 [https://shanhe.binnwu.top](https://shanhe.binnwu.top)，DNSPod A 记录指向 `49.233.60.125`（默认线路、TTL 600，未配置 AAAA）；域名 HTTP 请求以308跳转 HTTPS。原 IP 入口保留供已有链接及接收器本机健康检查使用。
@@ -106,7 +105,6 @@ H5图片、字体和媒体的输出名显式使用POSIX斜杠，这是浏览器U
 免费证书由 Let's Encrypt 经 HTTP-01 签发，私钥仅存服务器 `/etc/letsencrypt/`。首张证书于2026-11-17签发、2027-02-15到期；这是签发快照，当前有效期以服务器证书为准。`certbot.timer` 自动检查续期，成功后 `/etc/letsencrypt/renewal-hooks/deploy/shanhe-nginx` 先检查 Nginx 再重载；带部署钩子的续期演练已通过。HTTP 验证目录 `/var/www/letsencrypt/.well-known/acme-challenge/` 及80端口需保留。
 
 首次 COS 发布 `9bfc4cb` 见 [Actions #8](https://github.com/webwyb/china-founding-generals/actions/runs/44012159290)；域名接入提交 `ea4efd8` 见 [Actions #11](https://github.com/webwyb/china-founding-generals/actions/runs/44020443262)，三系统检查、部署与 HTTPS 公网版本校验均通过。新域名首页、字体和16张图片加载、两种1200×1800纪念卡成图及复制人物链接已在内置浏览器验证，未新增下载落盘或真机验收。截图和准确范围见 [域名验收](reviews/domain-https-2026-11-17/REVIEW.md) 及 `QA.md`；部署、续期检查、CORS、主机公钥、依赖锁定和回滚统一维护在 `DEPLOYMENT.md`。本地构建默认保留完整静态资源，仅生产 CI 设置 COS 地址；不要把生产密钥或生成目录提交Git。
-
 
 ## 2026-11-17 人物生平扩充
 
@@ -118,9 +116,7 @@ H5图片、字体和媒体的输出名显式使用POSIX斜杠，这是浏览器U
 
 生平扩充最终检查与Chrome验收已完成，见 `reviews/biographies-2026-11-17/REVIEW.md`。实际CSS视口320、390、768、1440px；人物阅读导航、原文入口、姓名搜索、卡片同图预览和人物直达切换通过。人物与卡片页使用 `usePersonRouteId` 同步H5复用页面的参数，避免URL切换后仍显示上一人。完整检查包含15项新增生平回归；新内容不替代史料人工审校。
 
-
 本轮生平提交已从 `ad60ec9` 远程素材基线独立组装，保留1343张已提交肖像；工作区并行新增266张肖像和补图研究保持未提交。10张截图记录原1609张素材工作区的实际观察，生平、来源、背景、时间轴和交互代码与提交版一致。提交边界及逐字段比较见 `data/testing/biographies-commit-2026-11-17.json`，换机不依赖未提交照片或研究缓存。
-
 
 ## 当前完整素材交付（2026-11-17）
 
@@ -148,7 +144,6 @@ Git恢复验证已通过：暂存树导出的1873个文件逐个哈希匹配，�
 
 推送前发现远端新增HTTPS部署提交 `ea4efd8`，已完整保留并整合。其应用、资料与肖像输入未变；部署归档／回滚3项、素材上传1项回归及发布／证书续期脚本语法检查通过。
 
-
 ## SEO与二维码已上线（2026-11-17）
 
 `30d842c`提交SEO、二维码与本地截图，`e4a9bda`修复两个新依赖带入开发网络镜像的问题；公共npm源、空缓存安装和来源预检已落实。保留并行远端COS与维护文档更新。Actions #19（44034510725）在Linux、macOS、Windows全量通过并成功部署，正式站版本于15:01:29（UTC+8）匹配 `e4a9bda3000f509bdafc4e60a23c850d45367a8d`。
@@ -156,7 +151,6 @@ Git恢复验证已通过：暂存树导出的1873个文件逐个哈希匹配，�
 root接收器SHA-256为 `7cd6fde5eb6f9d3238d79e2ba0a6dad212c75f47ac6319ed691d294a5febb1b0`，原所有者和755权限保留；版本切换由受限部署身份完成。正式站12个HTTP入口、五份完整人物正文、1618条站点地图、404及COS分享图通过；桌面1440px与内置浏览器320px、两种卡片实际PNG独立解码、旧hash迁移和搜索通过。
 
 交付证据、13张正式站截图和2张实际PNG见 [发布验收](reviews/seo-deployment-2026-11-17/REVIEW.md)。本轮下载事件超时且内部下载页受策略限制，未确认文件落盘；未做手机相机、微信真机或搜索平台提交，不宣称已被收录。当前线上版本应继续读取 `/version.json`，本段是此次验收快照。
-
 
 ## 筛选联动与详情页细调（2026-11-17）
 
@@ -166,12 +160,11 @@ root接收器SHA-256为 `7cd6fde5eb6f9d3238d79e2ba0a6dad212c75f47ac6319ed691d294
 
 ## 公示与图片使用入口整改（2026-11-17）
 
-腾讯云ICP备案管理页核对主办者吴延彬、`binnwu.top` 对应 `京ICP备19002969号-2`，用户再次确认备案号并指定公开邮箱 `beijingwyb@163.com`。公示配置统一在 `config/compliance.json`；全站页脚及静态HTML展示工信部查询链接，并进入说明页的版权、勘误和AI景观章节。人物反馈邮件自动附具体姓名与正式档案网址，由访客确认发送。
+`binnwu.top` 对应 `京ICP备19002969号-2`，用户再次确认备案号并指定公开邮箱 `beijingwyb@163.com`。公示配置统一在 `config/compliance.json`；全站页脚及静态HTML展示工信部查询链接，并进入说明页的版权、勘误和AI景观章节。人物反馈邮件自动附具体姓名与正式档案网址，由访客确认发送。
 
 公安公共查询遇到人机验证，用户要求先用已有数据，因此公安编号和核验链接同时留空，不展示占位号。首页、人物封面与纪念卡页面明确AI景观性质，家乡山河卡片在最终PNG中写入显式标识；素笺及地域待核实构图保持准确提示。原始肖像、景观、生平、资料争议均未改；隐式AI标识和服务条款仍待专项核实。
 
 `npm run audit:images` 生成1638张图片的授权待核实JSON及可搜索HTML（1609肖像、29景观，5位占位单列），包含路径、哈希、来源、原许可记录、优先级及待核验范围。没有将来源标签转成已获授权。新增合规校验已纳入完整 `npm run check`，本轮全量通过；1619份静态页、3228份邮件草稿与全部卡片构图检查通过。本地Chrome实际320×812、1440×900，卡片同图和2张实际PNG二维码复核通过。详细边界见 [合规维护](COMPLIANCE.md)、[验收记录](reviews/compliance-2026-11-17/REVIEW.md) 与 `../data/testing/compliance-2026-11-17.json`。本轮未提交、推送或部署，不代表已完成全量图片授权或全部法律合规审查。
-
 
 ## 筛选与详情已正式发布（2026-11-17）
 
