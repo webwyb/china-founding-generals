@@ -132,22 +132,24 @@ open('published.json','w').write(json.dumps(version))
             finally:
                 os.chdir(previous)
 
-    def test_public_head_deduplicates_and_checks_size_without_credentials(self):
+    def test_one_public_marker_confirms_manifest_without_credentials_or_media_scan(self):
         digest = hashlib.sha256(b'portrait').hexdigest()
         key = digest + '/portrait.jpg'
         asset = {'key': key, 'sha256': digest, 'path': 'images/portrait.jpg',
                  'url': readiness.BASE + key, 'size': 8}
-        response = io.BytesIO()
+        marker_key, marker_body = readiness.marker([asset])
+        self.assertEqual(readiness.marker([asset, asset]), (marker_key, marker_body))
+        self.assertNotEqual(readiness.marker([{**asset, 'size': 9}])[0], marker_key)
+        response = io.BytesIO(marker_body)
         response.status = 200
-        response.headers = {'Content-Length': '8'}
         with patch.object(readiness.urllib.request, 'urlopen', return_value=response) as request:
             readiness.wait_for_assets([asset, asset], 0)
             self.assertEqual(request.call_count, 1)
-            self.assertEqual(request.call_args.args[0].method, 'HEAD')
-        for headers in ({}, {'Content-Length': '9'}):
-            response = io.BytesIO()
+            self.assertEqual(request.call_args.args[0].get_method(), 'GET')
+            self.assertEqual(request.call_args.args[0].full_url, readiness.BASE + marker_key)
+        for content in (b'', b'wrong marker', marker_body + b'tampered'):
+            response = io.BytesIO(content)
             response.status = 200
-            response.headers = headers
             with patch.object(readiness.urllib.request, 'urlopen', return_value=response):
                 with self.assertRaisesRegex(RuntimeError, 'Sync COS assets'):
                     readiness.wait_for_assets([asset], 0)

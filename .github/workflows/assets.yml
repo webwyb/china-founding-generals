@@ -19,6 +19,7 @@ on:
       - 'scripts/deploy/asset-manifest.cjs'
       - 'scripts/deploy/prepare-assets.mjs'
       - 'scripts/deploy/upload-assets.py'
+      - 'scripts/deploy/asset_readiness.py'
       - 'scripts/requirements-deploy.lock'
       - '.github/workflows/assets.yml'
       - '!**/*.md'

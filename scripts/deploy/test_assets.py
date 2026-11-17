@@ -46,10 +46,13 @@ class AssetTests(unittest.TestCase):
 
     def test_only_missing_objects_are_uploaded_with_immutable_cache(self):
         calls = []
+        old_digest = hashlib.sha256(b'old portrait').hexdigest()
+        old_key = old_digest + '/old.jpg'
         class Client:
             def list_objects(self, **kwargs):
                 self.prefix = kwargs['Prefix']
-                return {'Contents': [{'Key': 'shanhe/assets/existing/old.jpg'}], 'IsTruncated': 'false'}
+                return {'Contents': [{'Key': 'shanhe/assets/' + old_key,
+                                      'Size': getattr(self, 'old_size', 12)}], 'IsTruncated': 'false'}
             def put_object(self, **kwargs):
                 payload = kwargs['Body'].read()
                 kwargs['Body'].seek(0)
@@ -68,8 +71,10 @@ class AssetTests(unittest.TestCase):
             (target / 'new.jpg').write_bytes(b'new portrait')
             digest = hashlib.sha256(b'new portrait').hexdigest()
             assets = [
-                {'key': 'existing/old.jpg', 'path': 'portraits/old.jpg'},
+                {'key': old_key, 'path': 'portraits/old.jpg', 'sha256': old_digest, 'size': 12,
+                 'url': 'https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/' + old_key},
                 {'key': digest + '/new.jpg', 'path': 'portraits/new.jpg', 'sha256': digest,
+                 'size': 12,
                  'url': 'https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/' + digest + '/new.jpg'},
             ]
             (work / 'release-assets.json').write_text(json.dumps(assets))
@@ -82,23 +87,32 @@ class AssetTests(unittest.TestCase):
                 }), contextlib.redirect_stdout(io.StringIO()):
                     runpy.run_path(str(SCRIPT), run_name='__main__')
                     self.assertEqual(client.prefix, 'shanhe/assets/')
-                    self.assertEqual(len(calls), 1)
+                    self.assertEqual(len(calls), 2)
                     self.assertTrue(calls[0]['Key'].startswith('shanhe/assets/' + digest))
                     self.assertIn('immutable', calls[0]['CacheControl'])
                     self.assertTrue(calls[0]['EnableMD5'])
                     self.assertEqual(calls[0]['Payload'], b'new portrait')
+                    self.assertTrue(calls[1]['Key'].startswith('shanhe/assets/_ready/'))
+                    self.assertEqual(json.loads(calls[1]['Payload'])['objects'], 2)
                     # Corrupt local bytes must fail before another network upload.
                     (target / 'new.jpg').write_bytes(b'corrupt')
                     with self.assertRaises(ValueError):
                         runpy.run_path(str(SCRIPT), run_name='__main__')
-                    self.assertEqual(len(calls), 1)
+                    self.assertEqual(len(calls), 2)
                     # A failed write identifies the asset and preserves its cause.
                     (target / 'new.jpg').write_bytes(b'new portrait')
                     client.fail = True
                     with self.assertRaisesRegex(RuntimeError, 'portraits/new.jpg') as failure:
                         runpy.run_path(str(SCRIPT), run_name='__main__')
                     self.assertIsInstance(failure.exception.__cause__, ConnectionError)
-                    self.assertEqual(len(calls), 2)
+                    self.assertEqual(len(calls), 3)
+                    self.assertFalse('/_ready/' in calls[-1]['Key'])
+                    # A wrong-size immutable object must not produce a readiness marker.
+                    client.old_size = 1
+                    (work / 'release-assets.json').write_text(json.dumps(assets[:1]))
+                    with self.assertRaisesRegex(ValueError, 'unexpected size'):
+                        runpy.run_path(str(SCRIPT), run_name='__main__')
+                    self.assertEqual(len(calls), 3)
             finally:
                 os.chdir(previous)
 

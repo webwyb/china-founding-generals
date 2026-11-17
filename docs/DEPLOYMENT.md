@@ -4,7 +4,7 @@
 
 ## 自动发布
 
-应用或发布脚本推送到 `main` 后，`.github/workflows/ci.yml` 在 Ubuntu、macOS、Windows 上执行完整 `npm run check`。Ubuntu 先重写 COS 地址，再生成 `h5-production` artifact（保留7天）：只包含代码包、素材清单、构建标识及发布脚本，不包含图片、字体等静态文件。三系统全部成功后，deploy job 直接下载此小制品，不再检出整个仓库、恢复 npm／COS SDK 或上传素材；通过公开 HEAD 核对清单中的对象长度，全部就绪后才通过受限 SSH 发布网页，最后核对公网 `version.json`。其他分支与 PR 只检查，不部署。
+应用或发布脚本推送到 `main` 后，`.github/workflows/ci.yml` 在 Ubuntu、macOS、Windows 上执行完整 `npm run check`。Ubuntu 先重写 COS 地址，再生成 `h5-production` artifact（保留7天）：只包含代码包、素材清单、构建标识及发布脚本，不包含图片、字体等静态文件。三系统全部成功后，deploy job 直接下载此小制品，不再检出整个仓库、恢复 npm／COS SDK 或上传素材；读取与完整素材清单匹配的公开就绪标记，确认后才通过受限 SSH 发布网页，最后核对公网 `version.json`。其他分支与 PR 只检查，不部署。
 
 素材由 `.github/workflows/assets.yml` 的 **Sync COS assets** 独立工作流处理：main 中可能影响输出素材的源码、public、构建配置、依赖或素材脚本变更会触发。源码导入关系变化也可能启用此前未打包的文件，因此包括 `src/**`。它只构建并增量同步 COS，不登录服务器；与网页检查并行，失败可单独重跑。两条流程均支持 Actions 页面 **Run workflow → main**。
 
@@ -14,7 +14,7 @@
 
 网页部署并发组为 `shanhe-production`，素材同步并发组为 `shanhe-cos-assets`，均不会中途取消正在运行的任务。日志出现 `Skipping superseded commit` 表示该次网页运行未更新网站，当前实际版本以公网 `version.json` 为准。
 
-日常发布在 [网页工作流](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml) 查看三系统 `check` 和 `deploy`，在 [素材工作流](https://github.com/webwyb/china-founding-generals/actions/workflows/assets.yml) 查看 COS 同步。网页发布最多等待180秒让尚未就绪的对象补齐；缺失、长度不符或持续网络错误会在 SSH 上传之前停止，保留旧站点，并提示先处理素材流程。每轮只重查未就绪的对象，不下载素材正文。
+日常发布在 [网页工作流](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml) 查看三系统 `check` 和 `deploy`，在 [素材工作流](https://github.com/webwyb/china-founding-generals/actions/workflows/assets.yml) 查看 COS 同步。素材流程通过限定前缀列举核对已有对象长度，新对象校验本地 SHA-256／长度并等待 PUT 成功；全部完成后，写入 `shanhe/assets/_ready/<清单摘要>.json`。摘要来自排序去重后的对象键与长度，约百字节的标记使用相同不可变缓存，不增加现有 COS 权限。网页发布只读取这一个公开标记并核对正文，不逐个访问1600余份素材。未生成匹配标记或持续网络错误时最多等待180秒，在 SSH 之前停止并保留旧站点。该确认依赖素材不可变约定：不要手工覆盖或删除已发布对象及标记。
 
 素材失败时只重跑 **Sync COS assets** 的失败 job；素材就绪后可单独重跑原网页运行的 **deploy**，无需重做三系统检查。构建制品固定 SHA、运行 ID 和代码／素材清单摘要；部署时先验证摘要，再用当前 `GITHUB_RUN_ATTEMPT` 写入 `version.json`，接收器参数与公网校验使用同一编号。若7天制品已过期，改为 **Run workflow → main** 完整重建。普通应用更新无需登录服务器或更换证书；`version.json` 的 SHA 可能落后于仅增加文档的 main，表示实际发布的应用提交。
 

@@ -41,7 +41,7 @@ def build(root, release, sha, run):
     metadata['archive_sha256'] = digest(release / 'code.tar.gz')
     metadata['assets_sha256'] = digest(release / 'release-assets.json')
     (release / 'build.json').write_text(json.dumps(metadata) + '\n')
-    for name in ('publish.sh', 'known_hosts', 'check-assets.py', 'package-release.py', 'check-superseded.py'):
+    for name in ('publish.sh', 'known_hosts', 'check-assets.py', 'asset_readiness.py', 'package-release.py', 'check-superseded.py'):
         shutil.copyfile(OPS / name, release / name)
     print(f'Code-only archive: {(release / "code.tar.gz").stat().st_size} bytes; no static file payloads.')
 
