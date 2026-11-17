@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-17",
+  "baseCommit": "ad60ec9f679d23eaf7d377e80ae8b5c5242f34be",
+  "total": 1614,
+  "coreFieldsCompared": [
+    "id",
+    "name",
+    "rank",
+    "province",
+    "hometown",
+    "hometownType",
+    "birth",
+    "death",
+    "grantYear",
+    "aliases",
+    "pendingFields",
+    "fieldNote",
+    "portraitFile",
+    "portraitVersion",
+    "imageSource",
+    "missingFields",
+    "dataStatus"
+  ],
+  "coreFieldChanges": [],
+  "biographyFieldsComparedWithBrowserWorkspace": [
+    "tagline",
+    "story",
+    "timeline",
+    "sources",
+    "biographySections",
+    "historicalContextIds",
+    "biographyStatus"
+  ],
+  "biographyDifferences": [],
+  "committedPortraits": 1343,
+  "browserWorkspacePortraits": 1609,
+  "excludedPortraitAdditions": 266,
+  "notes": "本轮提交仅生平、交互、截图与验收；并行补图及研究记录留在原工作区。浏览器截图记录其实际1609张素材环境，隔离提交以远程已提交1343张素材完成完整校验。",
+  "independentCheck": {
+    "command": "npm run check",
+    "result": "passed",
+    "portraits": 1343,
+    "portraitCompositions": 2692,
+    "cardTextCompositions": 3228,
+    "biographyRegressionTests": 15,
+    "generatedOutputsCompared": 10
+  }
+}

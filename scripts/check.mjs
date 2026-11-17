@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url'
 const npm=process.env.npm_execpath
 if(!npm)throw new Error('请通过npm run check启动完整校验。')
 const root=fileURLToPath(new URL('..',import.meta.url))
-for(const task of ['typecheck','data:verify','validate:data','validate:functions','validate:design','test:catalog','validate:portraits','validate:cards','build']){
+for(const task of ['typecheck','data:verify','validate:data','validate:functions','validate:design','test:catalog','test:biographies','validate:portraits','validate:cards','build']){
   console.log(`\n检查 ${task}`)
   const result=spawnSync(process.execPath,[npm,'run',task],{cwd:root,stdio:'inherit'})
   if(result.status!==0)process.exit(result.status ?? 1)

@@ -84,3 +84,9 @@ npm run check
 `upgrade_portraits.py` 分阶段下载和应用较高分辨率来源，需先比较照片内容；只有在审阅记录中标为 `approved` 的候选会应用，历史升级记录保留在 `data/design/portrait-upgrades.json`。原机器的旧照片缓存不属于当前展示输入；已提交的当前照片足以继续开发。
 
 29张景观PNG原稿在 `design/landscapes/`，WebP在 `public/landscapes/`，生成提示词和原稿／发布文件哈希在 `data/design/`。这些是现代地域意象，不能当人物经历的史料。网页素材许可见 `source-notes.md` 和各清单；不要将全部素材统一改称公共领域。
+
+## 分段生平、关键节点与背景
+
+生平扩充另用 `biography-evidence.json`、`biography-editorial.json`、`biography-supplement-sources.json` 与 `historical-contexts.json` 四份版本化输入。生成器据此输出列表简介、分段经历、时间轴及 `biography-coverage.json`，不从本机缓存读传记正文。源网页研究、身份核对、提取规则、纠错和已知局限见 [人物生平维护](BIOGRAPHIES.md)。
+
+旧 `career` 仍留在原事实快照中供追溯，但不再直接生成任职年份；新时间轴日期来自明确日期的传记事实或逐条编辑节点。不因扩充传记而自动核定生卒、授衔与籍贯争议。

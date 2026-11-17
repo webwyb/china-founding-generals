@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Canvas, Image, Text, View } from '@tarojs/components'
-import Taro, { useDidShow, useRouter, useShareAppMessage } from '@tarojs/taro'
+import Taro, { useDidShow, useShareAppMessage } from '@tarojs/taro'
 import Button from '../../components/Button'
 import Dialog from '../../components/Dialog'
 import Icon from '../../components/Icon'
@@ -9,10 +9,11 @@ import { people } from '../../data/people'
 import { getProvinceLandscape } from '../../data/landscapes'
 import { renderMemorialCard, type CardTheme } from '../../services/cardRenderer'
 import { copyPersonLink, saveMemorialCard } from '../../services/share'
+import { usePersonRouteId } from '../../services/usePersonRouteId'
 
 export default function CardPage() {
-  const { params } = useRouter()
-  const person = people.find(item => item.id === params.id)
+  const personId = usePersonRouteId('card')
+  const person = people.find(item => item.id === personId)
   const [theme, setTheme] = useState<CardTheme>(() => getProvinceLandscape(person?.province) ? 'landscape' : 'portrait')
   const [busy, setBusy] = useState(process.env.TARO_ENV === 'h5')
   const [preview, setPreview] = useState('')

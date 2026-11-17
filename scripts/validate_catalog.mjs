@@ -24,6 +24,10 @@ const disputes = JSON.parse(await readFile(resolve(root, 'data/catalog/source-co
 const provenance = JSON.parse(await readFile(resolve(root, 'data/catalog/field-provenance.json'), 'utf8'))
 assert.equal(provenance.length, 1614, '每个人物应保留字段级出处')
 const expected = { 元帅: 10, 大将: 10, 上将: 57, 中将: 177, 少将: 1360 }
+const biographyCoverage = JSON.parse(await readFile(resolve(root, 'data/catalog/biography-coverage.json'), 'utf8'))
+const biographyEvidence = JSON.parse(await readFile(resolve(root, 'data/catalog/biography-evidence.json'), 'utf8')).people
+const editorial = JSON.parse(await readFile(resolve(root, 'data/catalog/biography-editorial.json'), 'utf8')).people
+const contextById = new Map(JSON.parse(await readFile(resolve(root,'data/catalog/historical-contexts.json'),'utf8')).map(context=>[context.id,context]))
 assert.equal(people.length, 1614, '名录必须包含1614个独立档案')
 assert.equal(new Set(people.map(p => p.id)).size, 1614, '人物路由ID不可重复')
 for (const [rank, count] of Object.entries(expected)) assert.equal(people.filter(p => p.rank === rank).length, count, `${rank}人数不符`)
@@ -33,6 +37,25 @@ let photos = 0
 for (const person of people) {
   const label = `${person.id} ${person.name}`
   assert.ok(person.name && person.story && person.tagline && person.hometown, `${label}缺少展示字段`)
+  assert.ok(!/^从.+走出的开国/.test(person.tagline), `${label}仍在使用籍贯占位简介`)
+  assert.ok(['partial','expanded','editorial'].includes(person.biographyStatus), `${label}缺少生平补充状态`)
+  assert.ok(person.biographySections?.length, `${label}缺少分段生平`)
+  assert.equal(biographyEvidence[person.id]?.name,person.name,`${label}生平事实身份不匹配`)
+  const sourceUrls = new Set(person.sources.map(source=>source.url))
+  for (const section of person.biographySections) {
+    assert.ok(section.title && section.text && section.sourceUrls.length, `${label}分段生平缺少内容或出处`)
+    assert.ok(!/<(?:script|div|p)[\s>]/i.test(section.text), `${label}生平混入网页标记`)
+    for (const url of section.sourceUrls) assert.ok(sourceUrls.has(url), `${label}生平段落出处未汇总`)
+    const periodBounds={'红军时期':[1927,1936],'抗日战争时期':[1937,1945],'解放战争时期':[1945,1949],'军队与国防建设':[1949,2026]}
+    if (periodBounds[section.title]) {
+      const [start,end]=periodBounds[section.title]
+      for (const [,value] of section.text.matchAll(/(\d{4})年，任/g)) assert.ok(+value>=start && +value<=end,`${label}任职年份与阶段标题矛盾：${section.title} ${value}`)
+    }
+  }
+  for (const id of person.historicalContextIds || []) {
+    const context=contextById.get(id)
+    assert.ok(context?.title && context?.text && /^https:\/\//.test(context.source.url),`${label}事件背景缺少出处`)
+  }
   assert.ok(person.province !== '待补' && person.hometown !== '籍贯待补', `${label}的地域档案尚未录完`)
   for (const field of ['birth','death','grantYear']) {
     if (person[field] === null) assert.ok(person.pendingFields?.includes(field) || person.missingFields.includes(field), `${label}的${field}缺少状态说明`)
@@ -55,6 +78,7 @@ for (const person of people) {
     assert.ok(event.year >= previous, `${label}人生节点未排序`)
     if (person.birth) assert.ok(event.year >= person.birth, `${label}出现出生前的人生节点`)
     if (person.death) assert.ok(event.year <= person.death, `${label}出现逝世后的人生节点`)
+    if (event.sourceUrl) assert.ok(sourceUrls.has(event.sourceUrl), `${label}人生节点的出处未汇总`)
     previous = event.year
   }
   if (person.portraitFile) {
@@ -71,6 +95,14 @@ for (const person of people) {
   for (const field of ['birth', 'death', 'hometown']) {
     if ((field === 'hometown' ? person.hometown === '籍贯待补' : person[field] === null)) assert.ok(person.missingFields.includes(field) || person.pendingFields?.includes(field), `${label}未明确标记${field}缺项或争议`)
   }
+}
+assert.equal(biographyCoverage.total, people.length)
+assert.equal(biographyCoverage.withSections, people.filter(p=>p.biographySections?.length).length)
+assert.equal(biographyCoverage.templateHometownSummaries,0)
+for (const [id,content] of Object.entries(editorial)) {
+  const person=people.find(p=>p.id===id)
+  assert.equal(person?.name,content.name,`${id}原创编辑与人物身份不符`)
+  assert.equal(person.biographyStatus,'editorial')
 }
 for (const name of ['李元', '李道之', '罗斌', '张英']) {
   const pair = people.filter(p => p.name === name)

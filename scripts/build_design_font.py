@@ -15,6 +15,7 @@ for path in (ROOT/'src').rglob('*'):
     if path.suffix in ('.tsx','.ts','.json','.scss'):
         characters.update(path.read_text())
 characters.update(chr(code) for code in range(32,127))
+characters.update((ROOT/'data/catalog/historical-contexts.json').read_text())
 font=TTFont(source)
 options=subset.Options()
 options.name_IDs=[0,1,2,3,4,5,6,13,14,16,17]

@@ -16,6 +16,7 @@
     "validate:portraits": "node scripts/validate_portraits.mjs",
     "validate:functions": "node scripts/validate_functionality.mjs",
     "test:catalog": "node scripts/python.mjs scripts/test_catalog_parser.py",
+    "test:biographies": "node scripts/python.mjs scripts/test_biographies.py",
     "setup:python": "node scripts/python.mjs scripts/bootstrap.py",
     "data:build": "node scripts/python.mjs scripts/build_catalog.py",
     "data:verify": "node scripts/verify_catalog.mjs",

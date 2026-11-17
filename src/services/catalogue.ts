@@ -10,9 +10,21 @@ export function regionFromQuery(value: string, provinces: readonly string[]): st
 export function filterPeople(people: readonly Person[], state: CatalogueState, remembered: readonly string[]): Person[] {
   const words = state.search.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean)
   const rememberedIds = new Set(remembered)
-  return people.filter(person =>
+  const matches = people.filter(person =>
     (state.rank === '全部' || person.rank === state.rank) &&
     (state.province === '全部' || person.province === state.province) &&
     (!state.rememberedOnly || rememberedIds.has(person.id)) &&
     words.every(word => `${person.name} ${person.aliases?.join(' ') || ''} ${person.hometown} ${person.rank} ${person.story}`.toLocaleLowerCase().includes(word)))
+  // Longer biographies mention comrades. Keep the person explicitly searched
+  // for ahead of people who only mention that name in their life story.
+  if (!words.length) return matches
+  const query = state.search.trim().toLocaleLowerCase()
+  const relevance = (person: Person) => {
+    const names = [person.name, ...(person.aliases || [])].map(name => name.toLocaleLowerCase())
+    if (names.includes(query)) return 3
+    if (words.some(word => names.includes(word))) return 2
+    if (words.some(word => names.some(name => name.includes(word)))) return 1
+    return 0
+  }
+  return matches.sort((a,b) => relevance(b) - relevance(a))
 }

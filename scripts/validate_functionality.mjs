@@ -50,6 +50,7 @@ check('全部军衔与省份的组合筛选', () => {
 })
 check('姓名、异体写法、多词组合及无结果', () => {
   assert.equal(filterPeople(people, { ...base, search: '粟裕' }, [])[0].id, 'suyu')
+  assert.ok(filterPeople(people, { ...base, search: '粟裕' }, []).some(person => person.id === 'p0006'), '长传记中的战友也应可检索，但本人应优先')
   assert.ok(filterPeople(people, { ...base, search: '陈士渠' }, []).some(person => person.name === '陈士榘'))
   assert.deepEqual(filterPeople(people, { ...base, search: '  粟裕   会同  ' }, []).map(person => person.id), ['suyu'])
   assert.equal(filterPeople(people, { ...base, search: '不存在的人物abc123' }, []).length, 0)

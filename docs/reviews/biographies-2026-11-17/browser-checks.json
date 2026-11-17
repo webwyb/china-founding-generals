@@ -1,0 +1,148 @@
+{
+  "date": "2026-11-17",
+  "browser": "User Chrome, local H5 production build",
+  "viewportNote": "CSS viewport verified with innerWidth; browser zoom was 90%, temporary viewport overrides were calibrated and reset.",
+  "checks": [
+    {
+      "contexts": 2,
+      "focus": "profile-biography",
+      "height": 844,
+      "overflow": 0,
+      "page": "朱德 · 元帅｜山河有名",
+      "sectionCount": 3,
+      "width": 390
+    },
+    {
+      "action": "sources",
+      "expanded": true,
+      "focus": "profile-sources",
+      "page": "朱德 · 元帅｜山河有名",
+      "width": 390
+    },
+    {
+      "action": "open-source",
+      "title": "朱 德--资料中心--中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html",
+      "result": "opened in new Chrome tab"
+    },
+    {
+      "height": 844,
+      "nameWidth": 143.00347900390625,
+      "overflow": 0,
+      "page": "马尔果夫·伊斯哈科夫 · 少将｜山河有名",
+      "partial": true,
+      "width": 320
+    },
+    {
+      "contexts": 3,
+      "focus": "profile-biography",
+      "height": 844,
+      "overflow": 0,
+      "page": "潘世征 · 少将｜山河有名",
+      "sectionCount": 6,
+      "width": 390
+    },
+    {
+      "columns": "712.005px 280px",
+      "focus": "profile-biography",
+      "height": 900,
+      "overflow": 0,
+      "page": "王诤 · 中将｜山河有名",
+      "sectionCount": 3,
+      "width": 1440
+    },
+    {
+      "action": "search",
+      "overflow": 0,
+      "query": "粟裕",
+      "results": [
+        "了解粟裕，大将，湖南 · 会同",
+        "了解陈毅，元帅，四川乐至县复兴场张安井村",
+        "了解张震，中将，湖南 · 平江"
+      ],
+      "width": 1440
+    },
+    {
+      "action": "search-order",
+      "query": "粟裕",
+      "result": [
+        "粟裕大将湖南 · 会同 · 1907 — 1984从南方游击战争到苏中、孟良崮与淮海战场",
+        "陈毅元帅四川乐至县复兴场张安井村 · 1901 — 1972从南方游击战争到华东战场、城市治理与外交工作",
+        "张震中将湖南 · 平江 · 1914 — 2015从新四军参谋、淮海战场到军事院校与军队领导工作"
+      ]
+    },
+    {
+      "action": "curated-contexts",
+      "contextTitles": [
+        "南昌起义：武装斗争的重要起点",
+        "淮海战役：两大野战军的协同"
+      ],
+      "page": "粟裕 · 大将｜山河有名"
+    },
+    {
+      "action": "card-save-preview",
+      "images": [
+        {
+          "alt": "粟裕的家乡山河纪念卡，预览与下载图片一致",
+          "height": 1800,
+          "width": 1200
+        },
+        {
+          "alt": "粟裕的纪念卡，可长按保存",
+          "height": 1800,
+          "width": 1200
+        }
+      ],
+      "overflow": 0,
+      "width": 1440
+    },
+    {
+      "action": "card-same-image",
+      "equal": true,
+      "png": true
+    },
+    {
+      "action": "tablet-reading",
+      "heading": "王诤",
+      "height": 900,
+      "overflow": 0,
+      "title": "王诤 · 中将｜山河有名",
+      "width": 768
+    },
+    {
+      "action": "direct-person-after-card",
+      "heading": "粟裕",
+      "overflow": 0,
+      "title": "粟裕 · 大将｜山河有名",
+      "url": "http://127.0.0.1:5173/#/pages/person/index?id=suyu",
+      "width": 768
+    },
+    {
+      "action": "direct-card-person-sync",
+      "copy": "为王诤留下一张纪念卡。让熟悉的山川，陪伴一个值得记住的名字。",
+      "imageAlt": "王诤的家乡山河纪念卡，预览与下载图片一致",
+      "imageHeight": 1800,
+      "imageWidth": 1200,
+      "title": "王诤的纪念卡｜山河有名",
+      "url": "http://127.0.0.1:5173/#/pages/card/index?id=p0080"
+    },
+    {
+      "action": "final-pending-profile",
+      "height": 844,
+      "overflow": 0,
+      "pending": "出生年待核实 — 1996",
+      "stages": [
+        "早年与革命道路",
+        "早期军旅经历",
+        "抗日战争时期",
+        "解放战争时期",
+        "军队与国防建设",
+        "战役与行动",
+        "读懂这些经历"
+      ],
+      "title": "黄荣海 · 少将｜山河有名",
+      "url": "http://127.0.0.1:5173/#/pages/person/index?id=p0900",
+      "width": 320
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-17",
+  "total": 1614,
+  "originalCoreFieldsCompared": [
+    "id",
+    "name",
+    "rank",
+    "province",
+    "hometown",
+    "hometownType",
+    "birth",
+    "death",
+    "grantYear",
+    "aliases",
+    "pendingFields",
+    "fieldNote",
+    "portraitFile",
+    "portraitVersion",
+    "imageSource",
+    "missingFields",
+    "dataStatus"
+  ],
+  "coreFieldChanges": [],
+  "beforeCoreSha256": "71da5ff44325e94550b2aaaddb7d827f7e5b853a471bca5c0d86ac40fd1f6d2e",
+  "afterCoreSha256": "71da5ff44325e94550b2aaaddb7d827f7e5b853a471bca5c0d86ac40fd1f6d2e",
+  "selectedSourceArticles": 2321,
+  "uniqueSourceUrls": 2321,
+  "sourceKinds": {
+    "people": 251,
+    "wiki": 1006,
+    "encyclopedia": 702,
+    "memorial-prose": 202,
+    "memorial": 160
+  },
+  "facts": {
+    "appointments": 13834,
+    "operations": 2393,
+    "schools": 911,
+    "works": 354,
+    "honours": 485
+  },
+  "coverage": {
+    "total": 1614,
+    "status": {
+      "editorial": 25,
+      "expanded": 1248,
+      "partial": 341
+    },
+    "withSections": 1614,
+    "withContext": 1401,
+    "templateHometownSummaries": 0,
+    "sectionCount": 8779,
+    "timelineNodes": 8625,
+    "method": "按具名来源提取任职、战役、院校、著述事实并编排；重点人物另作有出处的原创编辑。不是全量人工史学审定。"
+  },
+  "bodyCharacters": {
+    "beforeMedian": 69,
+    "afterMedian": 187
+  },
+  "regressions": [
+    "不将前句年份附给后句任职",
+    "不为整串历任岗位设置同一年",
+    "短小阶段标题仍需重置时期",
+    "任职区间使用起年",
+    "亲属和其他指挥员不归入本人任职或参战",
+    "纪念文集不归作本人著述",
+    "生卒与地域待核实字段保持原状态",
+    "排除单位编号断裂的职务，合并重复任职表述"
+  ],
+  "limitations": [
+    "非1614人全量人工史学审校",
+    "partial档案仍需补充更具体事迹",
+    "百科和转载来源保留原始链接与正文哈希，机器提取不等于来源权威",
+    "原网页正文仅保存在忽略缓存，正常构建不联网"
+  ]
+}

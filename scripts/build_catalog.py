@@ -17,6 +17,7 @@ from pathlib import Path
 
 from catalog_sources import CACHE, OUT, ROOT, clean_name
 from portrait_sources import portrait_is_rejected, rejected_portrait_sources
+from biography_content import enrich_person
 from opencc import OpenCC
 SIMPLIFY = OpenCC('t2s')
 
@@ -244,6 +245,12 @@ def build(refresh_evidence=False):
     reviewed=json.loads(reviewed_file.read_text()) if reviewed_file.exists() else {}
     wd_file=OUT/'wikidata-facts.json'
     wd_facts=json.loads(wd_file.read_text()) if wd_file.exists() else {}
+    biography_file=OUT/'biography-evidence.json'
+    biographies=json.loads(biography_file.read_text()).get('people',{}) if biography_file.exists() else {}
+    contexts_file=OUT/'historical-contexts.json'
+    contexts=json.loads(contexts_file.read_text()) if contexts_file.exists() else []
+    editorial_file=OUT/'biography-editorial.json'
+    editorial=json.loads(editorial_file.read_text()).get('people',{}) if editorial_file.exists() else {}
     result=[]
     unresolved=[]
     image_jobs=[]
@@ -349,7 +356,8 @@ def build(refresh_evidence=False):
         if facts['birth']: timeline.append({'year':facts['birth'],'text':f'出生于{facts["hometown"]}。' if facts['hometown'] and facts['hometownType']=='出生地' else '出生。'})
         if facts['enlist']: timeline.append(facts['enlist'])
         if facts['partyYear']: timeline.append({'year':facts['partyYear'],'text':'加入中国共产党。'})
-        if facts['career']: timeline.append(facts['career'])
+        # The older single-career parser could attach a previous enlist/party
+        # year to an undated job. Dated roles now come from biography evidence.
         if grant: timeline.append({'year':grant,'text':f'获授{row["rank"]}军衔。'})
         if facts['death']: timeline.append({'year':facts['death'],'text':'逝世。'})
         timeline=sorted({(x['year'],x['text']):x for x in timeline}.values(),key=lambda x:x['year'])
@@ -383,6 +391,24 @@ def build(refresh_evidence=False):
         if name in curated:
             for field in ['tagline','imageSource']:person[field]=curated[name][field]
             if not pending:person['story']=curated[name]['story']
+        person=enrich_person(person,facts,fact_sources,biographies.get(person_id),contexts,curated[name]['story'] if name in curated and not pending else None)
+        if person_id in editorial:
+            content=editorial[person_id]
+            person['tagline']=content['tagline']
+            person['biographySections']=content['sections']
+            person['story']='\n\n'.join(section['text'] for section in content['sections'])
+            person['biographyStatus']='editorial'
+            # Editorial milestones replace automatically selected appointments;
+            # the independently reviewed birth/party/enlist/grant/death nodes stay.
+            milestones=content.get('milestones',[])
+            person['timeline']=sorted({(e['year'],e['text']):e for e in timeline+milestones}.values(),key=lambda e:e['year'])
+            own_text=''.join(s['text'] for s in content['sections'])
+            person['historicalContexts']=([c for c in contexts if c['id'] in content['contextIds']] if 'contextIds' in content else [c for c in contexts if any(term in own_text for term in c['keywords'])])[:3]
+        for section in person.get('biographySections',[]):
+            for url in section['sourceUrls']:
+                if url and url not in [s['url'] for s in person['sources']]:person['sources'].append({'title':'生平补充资料 · '+name,'url':url})
+        if person.get('historicalContexts'):
+            person['historicalContextIds']=[c['id'] for c in person.pop('historicalContexts')]
         result.append(person)
         image_candidates=[]
         for item in candidates:
@@ -412,6 +438,8 @@ def build(refresh_evidence=False):
     report['pendingPeople']=len({d['id'] for d in source_differences if d['status']=='pending'})
     report['rejectedIdentitySources']=len(rejected_sources)
     (OUT/'quality-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
+    coverage={'total':len(result),'status':dict(Counter(p.get('biographyStatus','partial') for p in result)),'withSections':sum(bool(p.get('biographySections')) for p in result),'withContext':sum(bool(p.get('historicalContextIds')) for p in result),'templateHometownSummaries':sum(p['tagline'].startswith('从') and '走出的开国' in p['tagline'] for p in result),'sectionCount':sum(len(p.get('biographySections',[])) for p in result),'timelineNodes':sum(len(p['timeline']) for p in result),'partialIds':[p['id'] for p in result if p.get('biographyStatus')=='partial'],'method':'按具名来源提取任职、战役、院校、著述事实并编排；重点人物另作有出处的原创编辑。不是全量人工史学审定。'}
+    (OUT/'biography-coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     with (OUT/'people.csv').open('w',encoding='utf-8-sig',newline='') as file:
         writer=csv.writer(file,lineterminator='\n'); writer.writerow(['id','姓名','军衔','授衔年','地点类别','籍贯或出生地','省份','出生年','逝世年','生平简述','资料说明','肖像文件','肖像来源','缺项','待核实字段','资料来源'])
         for person in result: writer.writerow([person['id'],person['name'],person['rank'],person['grantYear'],person['hometownType'],person['hometown'],person['province'],person['birth'],person['death'],person['story'],person.get('fieldNote',''),person['portraitFile'],person['imageSource'],';'.join(person['missingFields']),';'.join(person.get('pendingFields',[])),';'.join(s['url'] for s in person['sources'])])

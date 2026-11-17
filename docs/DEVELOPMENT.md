@@ -75,3 +75,5 @@ node scripts/python.mjs scripts/build_design_font.py
 若提示无法加载原生模块，确认使用目标机器的Node与全新安装的依赖；若Python导入失败，重跑 `npm run setup:python`。若资料快照哈希不符，从Git恢复 `data/catalog/evidence/`，不要通过删除校验来继续生成。
 
 原机器曾遇到macOS受限环境中的系统配置／本地服务权限问题；这是执行环境限制，不要为绕过权限而修改应用逻辑。真实浏览器访问需遵守用户与工具的当前授权。
+
+人物传记内容维护见 [BIOGRAPHIES.md](BIOGRAPHIES.md)。正常 `npm run check` 已包含 `npm run test:biographies` 的15项回归，不需要下载原网页；研究刷新和字体重制是可选维护步骤，不是换机运行的前置条件。
