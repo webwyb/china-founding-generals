@@ -38,7 +38,7 @@ npm run preview
 
 构建输出 `dist/h5/`，不提交生成目录。H5采用普通路径和构建时静态生成：`/people/人物id/`、`/generals/`、`/people/`、`/about/`、`/card/?id=人物id`。文件布局自带各路径的 `index.html`，普通静态服务器可直接读取，不把未知路径回退为首页；资源使用域名根目录路径，当前不支持直接搬到子目录。旧hash链接由浏览器迁移。正式域名在 `config/site.json` 统一维护。推送 `main` 后由 GitHub Actions 完成三系统检查，并将 Ubuntu 构建自动部署到腾讯云独立站点；SEO首次上线需先更新服务器接收器，入口及要求见 [DEPLOYMENT.md](DEPLOYMENT.md)。
 
-生产入口为 [https://shanhe.binnwu.top](https://shanhe.binnwu.top)。普通本地构建包含完整静态资源；生产 CI 通过 `SHANHE_ASSET_BASE_URL` 使用 COS 内容地址，并只向服务器发布网页代码。HTTPS 证书由服务器独立自动续期，应用构建和推送不会替换证书、Nginx 配置或 root 持有的发布接收器。维护这些服务器文件、检查续期和迁移新机时，按 [部署说明](DEPLOYMENT.md) 操作；换机开发不需要下载生产私钥或云 API 凭据。
+生产入口为 [https://shanhe.binnwu.top](https://shanhe.binnwu.top)。普通本地构建包含完整静态资源；生产 CI 通过 `SHANHE_ASSET_BASE_URL` 使用 COS 内容地址。素材由独立 **Sync COS assets** 工作流增量同步；网页工作流只传输代码制品并只读确认素材就绪，可单独重跑 deploy。纯 Markdown、`docs/` 与 `data/testing/` 变更跳过两类构建部署。HTTPS 证书由服务器独立自动续期，应用构建和推送不会替换证书、Nginx 配置或 root 持有的发布接收器。维护这些服务器文件、检查续期和迁移新机时，按 [部署说明](DEPLOYMENT.md) 操作；换机开发不需要下载生产私钥或云 API 凭据。
 
 ## 完整检查
 

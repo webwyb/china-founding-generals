@@ -99,7 +99,7 @@ H5图片、字体和媒体的输出名显式使用POSIX斜杠，这是浏览器U
 
 ## 自动发布与线上环境（2026-11-17）
 
-已接入 [GitHub Actions](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml)：推送 main 后三系统完整检查通过，自动增量上传 COS 素材并向腾讯云轻量实例 `lhins-afrwanuu` 发布网页。正式入口为 [https://shanhe.binnwu.top](https://shanhe.binnwu.top)，DNSPod A 记录指向 `49.233.60.125`（默认线路、TTL 600，未配置 AAAA）；域名 HTTP 请求以308跳转 HTTPS。原 IP 入口保留供已有链接及接收器本机健康检查使用。
+已接入 [GitHub Actions](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml)：应用推送 main 后三系统完整检查通过，向腾讯云轻量实例 `lhins-afrwanuu` 发布网页代码小包；素材由独立 **Sync COS assets** 工作流增量同步。网页发布不再传输大素材制品或执行上传，只读确认素材就绪；纯文档修改跳过两类构建部署。正式入口为 [https://shanhe.binnwu.top](https://shanhe.binnwu.top)，DNSPod A 记录指向 `49.233.60.125`（默认线路、TTL 600，未配置 AAAA）；域名 HTTP 请求以308跳转 HTTPS。原 IP 入口保留供已有链接及接收器本机健康检查使用。
 
 图片、景观、字体与图标使用北京 `media-1301987491/shanhe/assets/<sha256>/<文件名>`，版本化素材保留供旧页面和回滚引用；服务器仅接收 HTML、JS、CSS 和版本信息，首次独立基线的代码包约477 KiB，后续大小随构建变化。COS CORS 允许新 HTTPS 来源及原 IP 来源的 GET/HEAD，保证字体加载与卡片 Canvas 导出。发布目录 `/srv/shanhe/releases/`，原子入口 `/srv/shanhe/current`，专用受限 SSH 用户 `shanhe-deploy`。GitHub production 环境仅允许 main，保存三个发布 Secrets；凭据不在仓库中。COS API 身份仅拥有该素材目录的上传和列举权限。
 

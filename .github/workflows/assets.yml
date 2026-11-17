@@ -1,0 +1,66 @@
+name: Sync COS assets
+
+on:
+  push:
+    branches: [main]
+    # Imports, build configuration and dependencies can all change emitted assets.
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'config/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.npmrc'
+      - '.nvmrc'
+      - 'babel.config.*'
+      - 'tsconfig.json'
+      - 'scripts/build_seo.mjs'
+      - 'scripts/validate_seo.mjs'
+      - 'scripts/deploy/asset-manifest.cjs'
+      - 'scripts/deploy/prepare-assets.mjs'
+      - 'scripts/deploy/upload-assets.py'
+      - 'scripts/requirements-deploy.lock'
+      - '.github/workflows/assets.yml'
+      - '!**/*.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: shanhe-cos-assets
+  cancel-in-progress: false
+
+env:
+  SHANHE_ASSET_BASE_URL: https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets
+
+jobs:
+  sync:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment: production
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          python-version: '3.11'
+      - run: npm ci
+      - run: npm run build:h5
+      - run: node scripts/deploy/prepare-assets.mjs
+      - name: Upload only missing immutable assets
+        env:
+          COS_BUCKET: media-1301987491
+          COS_REGION: ap-beijing
+          COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}
+          COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install -r scripts/requirements-deploy.lock
+          .venv/bin/python scripts/deploy/upload-assets.py

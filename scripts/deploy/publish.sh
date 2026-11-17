@@ -1,21 +1,27 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# A delayed run must not replace a newer main commit.
-main_sha=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/main" --jq .object.sha)
-if [[ "$main_sha" != "$GITHUB_SHA" ]]; then
-  echo "Skipping superseded commit $GITHUB_SHA (main is $main_sha)."
-  exit 0
-fi
-test -s release/code.tar.gz
-test -n "$DEPLOY_SSH_KEY"
+ops_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 ssh_dir=$(mktemp -d)
 trap 'rm -rf "$ssh_dir"' EXIT
+# Documentation pushed during CI must not suppress a valid application release.
+main_sha=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/main" --jq .object.sha)
+if [[ "$main_sha" != "$GITHUB_SHA" ]]; then
+  gh api "repos/$GITHUB_REPOSITORY/compare/$GITHUB_SHA...$main_sha" > "$ssh_dir/compare.json"
+  if ! python3 "$ops_dir/check-superseded.py" "$ssh_dir/compare.json"; then
+    echo "Skipping superseded commit $GITHUB_SHA (main is $main_sha)."
+    exit 0
+  fi
+fi
+python3 "$ops_dir/check-assets.py" --manifest release/release-assets.json --wait-seconds 180
+python3 "$ops_dir/package-release.py" stamp
+test -s release/code.tar.gz
+test -n "$DEPLOY_SSH_KEY"
 chmod 700 "$ssh_dir"
 printf '%s\n' "$DEPLOY_SSH_KEY" > "$ssh_dir/key"
 chmod 600 "$ssh_dir/key"
 unset DEPLOY_SSH_KEY
-cp scripts/deploy/known_hosts "$ssh_dir/known_hosts"
+cp "$ops_dir/known_hosts" "$ssh_dir/known_hosts"
 ssh -i "$ssh_dir/key" -o BatchMode=yes -o IdentitiesOnly=yes \
   -o StrictHostKeyChecking=yes -o UserKnownHostsFile="$ssh_dir/known_hosts" \
   -o ConnectTimeout=20 -o ServerAliveInterval=15 -o ServerAliveCountMax=4 \

@@ -4,13 +4,19 @@
 
 ## 自动发布
 
-推送到 `main` 后，`.github/workflows/ci.yml` 在 Ubuntu、macOS、Windows 上恢复依赖并执行完整 `npm run check`。Ubuntu 构建打包为 `h5-production` artifact（保留7天）。三系统全部成功后，独立 deploy job 下载同一次运行的产物，先增量上传 COS 素材，再通过 SSH 上传仅含 HTML、JS、CSS 和版本信息的小包，最后核对公网 `version.json` 的提交 SHA、运行 ID 与重试编号。其他分支与 PR 只检查，不部署。Actions 页面可手动 Run workflow，选择 `main`。
+应用或发布脚本推送到 `main` 后，`.github/workflows/ci.yml` 在 Ubuntu、macOS、Windows 上执行完整 `npm run check`。Ubuntu 先重写 COS 地址，再生成 `h5-production` artifact（保留7天）：只包含代码包、素材清单、构建标识及发布脚本，不包含图片、字体等静态文件。三系统全部成功后，deploy job 直接下载此小制品，不再检出整个仓库、恢复 npm／COS SDK 或上传素材；通过公开 HEAD 核对清单中的对象长度，全部就绪后才通过受限 SSH 发布网页，最后核对公网 `version.json`。其他分支与 PR 只检查，不部署。
 
-`production` Environment 只允许 `main` 部署，不设置人工审核，使 push 后自动完成。私密配置为 `DEPLOY_SSH_KEY`、`COS_SECRET_ID`、`COS_SECRET_KEY`；构建 job 无法读取它们。官方 Actions 均固定完整 commit SHA，COS Python SDK 及其依赖固定在 `scripts/requirements-deploy.lock`。服务器 SSH ED25519 主机公钥由腾讯云控制台内读取，保存在 `scripts/deploy/known_hosts`，不在工作流中临时信任扫描结果。
+素材由 `.github/workflows/assets.yml` 的 **Sync COS assets** 独立工作流处理：main 中可能影响输出素材的源码、public、构建配置、依赖或素材脚本变更会触发。源码导入关系变化也可能启用此前未打包的文件，因此包括 `src/**`。它只构建并增量同步 COS，不登录服务器；与网页检查并行，失败可单独重跑。两条流程均支持 Actions 页面 **Run workflow → main**。
 
-部署并发组为 `shanhe-production`，不会中途取消上传。发布前检查 main 头提交，跳过已经落后的运行；日志出现 `Skipping superseded commit` 表示该次运行未更新网站，当前实际版本以公网 `version.json` 为准。
+纯文档变更（所有 `*.md`、`docs/**` 及 `data/testing/**` 验收记录）不触发网页检查／发布，也不触发素材同步；混合提交仍按代码变更运行。GitHub 路径过滤规则见 [官方说明](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow#using-filters-to-target-specific-paths-for-pull-request-or-push-events)。若构建期间 main 只增加这些文档，允许已检查的应用提交完成发布；若有更新的应用变更，则跳过旧版本。比较结果达到300个文件或超过250个提交时保守跳过，避免 GitHub 响应截断导致误判。
 
-日常发布只需提交并推送 `main`，在 [工作流页面](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml) 查看三系统 `check` 和 `deploy` 结果。需要重新发布或重试失败的发布时，在该页面选择 **Run workflow → main**，启动新一轮完整运行，使制品中的 `run`／`attempt` 与发布参数一致。单独重跑 deploy 会复用旧制品；若重试编号变化，接收器会拒绝编号不一致的包。普通应用更新无需登录服务器执行构建、上传图片或更换证书。发布后 `deploy` 摘要会链接到正式域名；`version.json` 的 `sha`、`run`、`attempt` 分别对应提交、Actions 运行与重试次数。
+`production` Environment 只允许 `main`，不设置人工审核。网页发布只引用 `DEPLOY_SSH_KEY`；素材同步只引用 `COS_SECRET_ID`、`COS_SECRET_KEY`；构建检查 job 不引用这些 Secrets。两类发布 job 仍处于同一个 production Environment，这不是两个不同的 IAM 身份。官方 Actions 均固定完整 commit SHA，COS SDK 依赖固定在 `scripts/requirements-deploy.lock`。服务器 SSH ED25519 主机公钥保存在 `scripts/deploy/known_hosts`，随已检查的脚本进入小制品，不在工作流中临时信任扫描结果。
+
+网页部署并发组为 `shanhe-production`，素材同步并发组为 `shanhe-cos-assets`，均不会中途取消正在运行的任务。日志出现 `Skipping superseded commit` 表示该次网页运行未更新网站，当前实际版本以公网 `version.json` 为准。
+
+日常发布在 [网页工作流](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml) 查看三系统 `check` 和 `deploy`，在 [素材工作流](https://github.com/webwyb/china-founding-generals/actions/workflows/assets.yml) 查看 COS 同步。网页发布最多等待180秒让尚未就绪的对象补齐；缺失、长度不符或持续网络错误会在 SSH 上传之前停止，保留旧站点，并提示先处理素材流程。每轮只重查未就绪的对象，不下载素材正文。
+
+素材失败时只重跑 **Sync COS assets** 的失败 job；素材就绪后可单独重跑原网页运行的 **deploy**，无需重做三系统检查。构建制品固定 SHA、运行 ID 和代码／素材清单摘要；部署时先验证摘要，再用当前 `GITHUB_RUN_ATTEMPT` 写入 `version.json`，接收器参数与公网校验使用同一编号。若7天制品已过期，改为 **Run workflow → main** 完整重建。普通应用更新无需登录服务器或更换证书；`version.json` 的 SHA 可能落后于仅增加文档的 main，表示实际发布的应用提交。
 
 ## COS 素材
 
@@ -18,9 +24,9 @@
 
 CAM 专用身份关联 `ShanheAssetsPublish`，策略原稿为 `scripts/deploy/cos-policy.json`：只有该目录的 `PutObject` 和限定 prefix 的 `GetBucket`。存储桶原有公共读取模式沿用；CORS 允许 `https://shanhe.binnwu.top` 与原 `http://49.233.60.125` 的 GET/HEAD，支持跨域字体与 Canvas 图片导出。
 
-素材上传使用300秒请求超时、最多4个文件并发，并保留 SDK 的网络重试。通过 SDK 支持的可回退文件流传递已校验的原图字节，让 HTTP 按块读取请求体，重试时从头发送；仍使用单次 PutObject、MD5与原有目录权限。接口用法见 [官方 Python SDK](https://cloud.tencent.com/document/product/436/12269)。日志在请求前记录文件路径及大小；失败时保留具体文件和原始错误，便于定位首次上传的大图。暂时网络错误排除后，通过 **Run workflow → main** 重发；已经成功上传的内容按哈希复用。
+独立素材工作流上传使用300秒请求超时、最多4个文件并发，保留 SDK 网络重试。可回退文件流传递已校验的原图字节，让 HTTP 按块读取请求体；仍使用单次 PutObject、MD5与原有目录权限，接口见 [官方 SDK](https://cloud.tencent.com/document/product/436/12269)。日志保留具体文件、大小和原始错误；网络错误排除后只重跑素材 job，已上传内容按哈希复用。本轮拆分不宣称解决所有 GitHub 到 COS 的大文件网络问题。
 
-首次大量素材上传若持续出现 COS `UserNetworkTooSlow`，仅增加请求超时无法保证完成。可一次性初始化未存在的对象：下载对应运行的 `h5-production`，将其中 `h5.tar.gz` 解包到对应源码版本的 `dist/h5/`；设置工作流中公开的 `SHANHE_ASSET_BASE_URL`，运行 `node scripts/deploy/prepare-assets.mjs` 生成 `release-assets.json`。从 `dist/h5/static/` 按清单 `key` 组织待补的本地 `assets/<sha256>/<文件名>` 目录，再通过 COS 控制台上传到 `media-1301987491/shanhe/`。选择的是本地 **assets 文件夹**，最终对象键须为 `shanhe/assets/<sha256>/<文件名>`；保持标准存储、继承桶权限，并统一设置 `Cache-Control: public,max-age=31536000,immutable`，Content-Type 按原文件类型保留。补齐后核对对象长度、SHA-256、缓存及 HTTPS CORS，再重新运行完整 main 工作流。原始文件和内容地址保持一致，后续 CI 继续增量同步。本次140项存量初始化及校验见 [验收记录](reviews/domain-https-2026-11-17/REVIEW.md#后续素材初始化与上传排障)。
+首次大量素材上传持续出现 COS `UserNetworkTooSlow` 时，可一次性初始化缺失对象：检出对应网页运行的同一源码提交，执行 `npm ci`，设置公开的 `SHANHE_ASSET_BASE_URL`，执行 `npm run build:h5` 和 `node scripts/deploy/prepare-assets.mjs`。新 `h5-production` 已不含素材，不能从中恢复原图。从本地 `dist/h5/static/` 按清单 `key` 组织 `assets/<sha256>/<文件名>`，通过 COS 控制台上传到 `media-1301987491/shanhe/`。最终对象键须为 `shanhe/assets/<sha256>/<文件名>`；保持标准存储、继承桶权限，设置 `Cache-Control: public,max-age=31536000,immutable`，Content-Type 保留原类型。补齐后核对对象长度、SHA-256、缓存及 HTTPS CORS，再重跑网页 deploy。原始文件及内容地址保持一致。140项存量初始化见 [历史记录](reviews/domain-https-2026-11-17/REVIEW.md#后续素材初始化与上传排障)。
 
 本地普通 `npm run build` 仍生成完整自包含资源。仅生产工作流设置 `SHANHE_ASSET_BASE_URL`，构建时生成公开素材地址表，`prepare-assets.mjs` 再处理 Vite 输出的图片、字体和图标引用；原始文件继续随 Git 保留。代码包通过 tar 排除 `static/*`，首版独立快照的包体约477 KiB，COS 素材约218.9 MiB。
 
