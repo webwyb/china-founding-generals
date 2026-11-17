@@ -1,0 +1,148 @@
+{
+  "date": "2026-11-17",
+  "status": "passed_with_stated_scope",
+  "base": "https://shanhe.binnwu.top",
+  "sha": "e4a9bda3000f509bdafc4e60a23c850d45367a8d",
+  "observations": [
+    {
+      "case": "home-1440",
+      "canonical": "https://shanhe.binnwu.top/",
+      "height": 900,
+      "loadedImages": 16,
+      "scrollWidth": 1440,
+      "title": "山河有名｜1614位开国将帅人物档案与生平故事",
+      "url": "https://shanhe.binnwu.top/",
+      "width": 1440
+    },
+    {
+      "case": "profile-refresh-1440",
+      "canonical": "https://shanhe.binnwu.top/people/xuxiangqian/",
+      "height": 900,
+      "jsonLdCount": 1,
+      "robots": "index, follow, max-image-preview:large",
+      "scrollWidth": 1440,
+      "title": "徐向前 · 元帅 · 山西 · 五台 · 1901年生｜生平、人生足迹与史料｜山河有名",
+      "url": "https://shanhe.binnwu.top/people/xuxiangqian/",
+      "width": 1440
+    },
+    {
+      "case": "landscape-export",
+      "canonical": "https://shanhe.binnwu.top/people/xuxiangqian/",
+      "height": 900,
+      "previewHeight": 1800,
+      "previewWidth": 1200,
+      "robots": "noindex, follow",
+      "samePreviewDialogDownload": true,
+      "scrollWidth": 1440,
+      "title": "徐向前的纪念卡｜山河有名",
+      "url": "https://shanhe.binnwu.top/card/?id=xuxiangqian",
+      "width": 1440
+    },
+    {
+      "case": "portrait-export",
+      "previewHeight": 1800,
+      "previewWidth": 1200,
+      "samePreviewDialogDownload": true,
+      "url": "https://shanhe.binnwu.top/card/?id=xuxiangqian"
+    },
+    {
+      "case": "pending-profile-1440",
+      "canonical": "https://shanhe.binnwu.top/people/p0262/",
+      "height": 900,
+      "pendingVisible": true,
+      "robots": "index, follow, max-image-preview:large",
+      "scrollWidth": 1440,
+      "title": "于权伸 · 少将 · 籍贯待核实 · 1904年生｜生平、人生足迹与史料｜山河有名",
+      "url": "https://shanhe.binnwu.top/people/p0262/",
+      "width": 1440
+    },
+    {
+      "case": "directory-1440",
+      "canonical": "https://shanhe.binnwu.top/people/",
+      "height": 900,
+      "profileLinks": 1615,
+      "scrollWidth": 1440,
+      "title": "全部人物档案索引｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "url": "https://shanhe.binnwu.top/people/",
+      "width": 1440
+    },
+    {
+      "case": "about-1440",
+      "canonical": "https://shanhe.binnwu.top/about/",
+      "height": 900,
+      "scrollWidth": 1440,
+      "title": "名录口径与资料来源｜关于山河有名",
+      "url": "https://shanhe.binnwu.top/about/",
+      "width": 1440
+    },
+    {
+      "case": "legacy-profile-link",
+      "canonical": "https://shanhe.binnwu.top/people/suyu/",
+      "title": "粟裕 · 大将 · 湖南 · 会同 · 1907年生｜生平、人生足迹与史料｜山河有名",
+      "url": "https://shanhe.binnwu.top/people/suyu/"
+    },
+    {
+      "case": "pending-profile-320",
+      "browser": "Codex in-app browser",
+      "height": 812,
+      "pendingVisible": true,
+      "scrollWidth": 320,
+      "title": "于权伸 · 少将 · 籍贯待核实 · 1904年生｜生平、人生足迹与史料｜山河有名",
+      "url": "https://shanhe.binnwu.top/people/p0262/",
+      "width": 320
+    },
+    {
+      "case": "directory-320",
+      "browser": "Codex in-app browser",
+      "height": 812,
+      "personLinkCount": 1614,
+      "scrollWidth": 320,
+      "url": "https://shanhe.binnwu.top/people/",
+      "width": 320
+    },
+    {
+      "case": "about-320",
+      "browser": "Codex in-app browser",
+      "height": 812,
+      "scrollWidth": 320,
+      "url": "https://shanhe.binnwu.top/about/",
+      "width": 320
+    },
+    {
+      "case": "legacy-card-pending-320",
+      "browser": "Codex in-app browser",
+      "height": 812,
+      "portraitHeight": 1800,
+      "portraitWidth": 1200,
+      "robots": "noindex, follow",
+      "scrollWidth": 320,
+      "title": "于权伸的纪念卡｜山河有名",
+      "url": "https://shanhe.binnwu.top/card/?id=p0262",
+      "width": 320
+    },
+    {
+      "case": "card-return-indexing-restored",
+      "robots": "index, follow, max-image-preview:large",
+      "title": "于权伸 · 少将 · 籍贯待核实 · 1904年生｜生平、人生足迹与史料｜山河有名",
+      "url": "https://shanhe.binnwu.top/people/p0262/"
+    },
+    {
+      "case": "name-search-320",
+      "browser": "Codex in-app browser",
+      "height": 812,
+      "resultCount": 1,
+      "scrollWidth": 320,
+      "status": "已呈现 1 / 1 位，已浏览全部结果",
+      "title": "开国将帅名录｜1614位将帅姓名、军衔与家乡｜山河有名",
+      "url": "https://shanhe.binnwu.top/generals/",
+      "width": 320
+    }
+  ],
+  "downloads": {
+    "clicked": true,
+    "downloadEvent": "Timed out after 20 seconds; file landing not confirmed",
+    "internalDownloadsPage": "Browser URL policy rejected chrome://downloads; no workaround attempted",
+    "previewDialogHrefSame": true
+  },
+  "method": "Real production page interactions in desktop Chrome at actual 1440×900 and Codex in-app browser at actual 320×812. Chrome viewport request for 320 did not change actual size, so those screenshots are correctly labeled desktop; narrow checks repeated in in-app browser. No physical phone, camera or WeChat verification. PNGs exported from observed image DOM for independent decoding."
+}

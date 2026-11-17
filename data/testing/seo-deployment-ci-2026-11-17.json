@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-17",
+  "status": "passed",
+  "sha": "e4a9bda3000f509bdafc4e60a23c850d45367a8d",
+  "run": 44034510725,
+  "url": "https://github.com/webwyb/china-founding-generals/actions/runs/44034510725",
+  "jobs": [
+    {
+      "id": 133874037074,
+      "name": "check (windows-2022)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 133874037488,
+      "name": "check (macos-15)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 133874037543,
+      "name": "check (ubuntu-24.04)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 133875367760,
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "deploy": {
+    "publishedAt": "2026-11-17T07:01:29Z",
+    "assetsUploaded": 1,
+    "assetsReused": 1641,
+    "receiverSha256": "7cd6fde5eb6f9d3238d79e2ba0a6dad212c75f47ac6319ed691d294a5febb1b0"
+  },
+  "method": "GitHub job conclusions retrieved through connector; publication and immutable asset counts verified from completed deployment log; HTTPS version independently verified."
+}

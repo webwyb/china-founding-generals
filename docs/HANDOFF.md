@@ -132,7 +132,7 @@ H5图片、字体和媒体的输出名显式使用POSIX斜杠，这是浏览器U
 
 H5“家乡山河”和“素笺肖像”均已在最终PNG右下角绘入人物档案二维码，附扫码提示和正式域名。SEO调整后公开目标为 `https://shanhe.binnwu.top/people/人物id/`，域名在 `config/site.json`、路径在 `src/services/personLinks.ts` 统一维护，不读取本地origin；早期hash二维码仍通过浏览器迁移兼容。更换正式域名后应保留已分享图片所用旧域名及人物路径的跳转。预览、保存弹层与下载继续共用同一PNG；肖像、生平、待核实状态未改，小程序码仍未接入。
 
-运行依赖新增锁定版本 `qrcode-generator@2.0.4`，MIT原文在 `public/licenses/qrcode-generator-MIT.txt`；开发依赖 `jsqr@1.4.0` 独立解码校验。`npm ci` 后完整检查会覆盖1614个码和18张PNG／18张压缩JPEG，不依赖已保存的浏览器截图或旧缓存。完整 `npm run check` 通过，本地内置浏览器验证两人三种成图与保存同图，详细证据见 `reviews/card-qr-2026-11-17/REVIEW.md` 和 `../data/testing/card-qr-browser-2026-11-17.json`。本轮未部署线上、未验证微信或手机相机实扫；继续工作时以实际Git和部署状态为准。
+运行依赖新增锁定版本 `qrcode-generator@2.0.4`，MIT原文在 `public/licenses/qrcode-generator-MIT.txt`；开发依赖 `jsqr@1.4.0` 独立解码校验。`npm ci` 后完整检查会覆盖1614个码和18张PNG／18张压缩JPEG，不依赖已保存的浏览器截图或旧缓存。完整 `npm run check` 通过，本地内置浏览器验证两人三种成图与保存同图，详细证据见 `reviews/card-qr-2026-11-17/REVIEW.md` 和 `../data/testing/card-qr-browser-2026-11-17.json`。该阶段尚未部署，后续已完成正式站发布；最新状态见下文“SEO与二维码已上线”。微信和手机相机实扫仍未完成。
 
 ## SEO静态生成与路由（2026-11-17）
 
@@ -140,10 +140,19 @@ H5“家乡山河”和“素笺肖像”均已在最终PNG右下角绘入人物
 
 实现入口：`src/seo/metadata.ts`、`usePageMetadata.ts`、`src/seo/render.tsx`、`scripts/build_seo.mjs`、`seo_bundle.mjs`、`test_seo.py`；原有 `people.ts` 仍是合并事实与精选来源的唯一入口。`config/index.ts` 的浏览器路由别名从目录ID生成，人物链接和二维码统一使用新地址。完整索引与说明页在开发路由中也有对应页面。
 
-首次发布需由服务器管理通道更新root持有的 `/usr/local/libexec/shanhe-receive`，以接收新增人物目录、robots及sitemap；正常推送不会替换此文件，旧副本会拒绝新包。接收器及COS地址重写已做离线回归，尚未更新生产副本或部署。具体维护步骤见 [SEO.md](SEO.md) 和 [DEPLOYMENT.md](DEPLOYMENT.md#seo静态页面的首次发布)；实际浏览器范围和截图见 `reviews/seo-2026-11-17/REVIEW.md`。未提交站长平台，不能把本地检查通过写成搜索收录成功。
+首次发布前已由服务器管理通道更新root持有的 `/usr/local/libexec/shanhe-receive`，远端4项回归通过，新人物目录、robots及sitemap已上线；正常推送不会替换此root文件。旧副本按哈希保留供恢复。具体维护步骤见 [SEO.md](SEO.md) 和 [DEPLOYMENT.md](DEPLOYMENT.md#seo静态页面的首次发布)；实际浏览器范围和截图见 `reviews/seo-2026-11-17/REVIEW.md`。未提交站长平台，不能把本地检查通过写成搜索收录成功。
 
-最终完整检查通过；新增HTML／XML全量校验、本地9个HTTP入口及404、实际代码包的COS重写／安全解包通过（约4.05MB，不含COS素材）。内置浏览器实际320、405、1440px宽，旧链接迁移、人物切换／刷新、搜索、卡片与元信息同步通过；李贞实际卡片识别到新地址。历史二维码截图仍记录当时hash地址，当前新生成图片使用普通路径，旧图仍兼容。详细范围以 `QA.md` 和SEO验收记录为准；本轮成果当前在工作区，未执行提交、推送或上线。
+最终完整检查通过；新增HTML／XML全量校验、本地9个HTTP入口及404、实际代码包的COS重写／安全解包通过（约4.05MB，不含COS素材）。内置浏览器实际320、405、1440px宽，旧链接迁移、人物切换／刷新、搜索、卡片与元信息同步通过；李贞实际卡片识别到新地址。历史二维码截图仍记录当时hash地址，当前新生成图片使用普通路径，旧图仍兼容。详细范围以 `QA.md` 和SEO验收记录为准；该阶段记录对应本地验收；后续提交、推送和上线已完成，见下节最新发布状态。
 
 Git恢复验证已通过：暂存树导出的1873个文件逐个哈希匹配，没有复制研究缓存或旧dist；复用已安装依赖执行完整 `npm run check` 及H5构建通过，266张新增构建副本与原件哈希一致。此项为同一台机器的独立目录验证，不冒称另一物理设备实测。
 
 推送前发现远端新增HTTPS部署提交 `ea4efd8`，已完整保留并整合。其应用、资料与肖像输入未变；部署归档／回滚3项、素材上传1项回归及发布／证书续期脚本语法检查通过。
+
+
+## SEO与二维码已上线（2026-11-17）
+
+`30d842c`提交SEO、二维码与本地截图，`e4a9bda`修复两个新依赖带入开发网络镜像的问题；公共npm源、空缓存安装和来源预检已落实。保留并行远端COS与维护文档更新。Actions #19（44034510725）在Linux、macOS、Windows全量通过并成功部署，正式站版本于15:01:29（UTC+8）匹配 `e4a9bda3000f509bdafc4e60a23c850d45367a8d`。
+
+root接收器SHA-256为 `7cd6fde5eb6f9d3238d79e2ba0a6dad212c75f47ac6319ed691d294a5febb1b0`，原所有者和755权限保留；版本切换由受限部署身份完成。正式站12个HTTP入口、五份完整人物正文、1618条站点地图、404及COS分享图通过；桌面1440px与内置浏览器320px、两种卡片实际PNG独立解码、旧hash迁移和搜索通过。
+
+交付证据、13张正式站截图和2张实际PNG见 [发布验收](reviews/seo-deployment-2026-11-17/REVIEW.md)。本轮下载事件超时且内部下载页受策略限制，未确认文件落盘；未做手机相机、微信真机或搜索平台提交，不宣称已被收录。当前线上版本应继续读取 `/version.json`，本段是此次验收快照。

@@ -173,3 +173,10 @@ certbot renew --cert-name shanhe.binnwu.top --dry-run --run-deploy-hooks --no-ra
 ## 验证范围
 
 部署配置验收结果记录在 `QA.md`。域名接入的 [Actions #11](https://github.com/webwyb/china-founding-generals/actions/runs/44020443262) 已通过三系统完整检查、自动部署和 HTTPS 公网版本校验；DNS、证书续期、首页与两种卡片的实际证据见 [域名验收记录](reviews/domain-https-2026-11-17/REVIEW.md)。自动构建和 HTTP 健康检查不代表史料全量审校或移动设备验收。
+
+
+## SEO与二维码首次上线验证（2026-11-17）
+
+接收器更新后，[Actions #19](https://github.com/webwyb/china-founding-generals/actions/runs/44034510725) 以 `e4a9bda` 完成三系统完整检查与发布，正式HTTPS版本一致。新接收器已实际接受1614份人物静态页及SEO清单；未知人物404、完整站点地图及两种卡片的线上二维码识别通过。COS本轮上传1个二维码许可文件、复用1641项。完整证据与准确浏览器范围见 [发布验收](reviews/seo-deployment-2026-11-17/REVIEW.md)。此处为历史验收快照，现行sha与run以公网 `/version.json` 和对应Actions为准。
+
+依赖来源固定为npm官方源。曾有两个新增依赖残留开发网络镜像，导致首轮CI安装超时；锁文件的版本和完整性哈希未变，改正下载地址后空缓存安装、三系统完整检查均通过，`npm run check` 会拒绝非公共npm的resolved地址。

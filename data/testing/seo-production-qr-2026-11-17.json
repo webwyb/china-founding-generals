@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-17",
+  "status": "passed",
+  "base": "https://shanhe.binnwu.top",
+  "sha": "e4a9bda3000f509bdafc4e60a23c850d45367a8d",
+  "results": [
+    {
+      "file": "docs/reviews/seo-deployment-2026-11-17/production-xuxiangqian-landscape.png",
+      "bytes": 1404038,
+      "sha256": "c7f96877e17cb1b432cf3bf6b4b1d1dcaf93dcd662df5b86793aacdef1803805",
+      "scans": [
+        {
+          "kind": "PNG",
+          "width": 1200,
+          "height": 1800,
+          "url": "https://shanhe.binnwu.top/people/xuxiangqian/"
+        },
+        {
+          "kind": "JPEG-800x1200-quality75",
+          "width": 800,
+          "height": 1200,
+          "url": "https://shanhe.binnwu.top/people/xuxiangqian/"
+        }
+      ]
+    },
+    {
+      "file": "docs/reviews/seo-deployment-2026-11-17/production-xuxiangqian-portrait.png",
+      "bytes": 507615,
+      "sha256": "c1d1adc92be64dac9c54e8214fa9bb55f34b75ceab190345689dd8a9351e96bb",
+      "scans": [
+        {
+          "kind": "PNG",
+          "width": 1200,
+          "height": 1800,
+          "url": "https://shanhe.binnwu.top/people/xuxiangqian/"
+        },
+        {
+          "kind": "JPEG-800x1200-quality75",
+          "width": 800,
+          "height": 1200,
+          "url": "https://shanhe.binnwu.top/people/xuxiangqian/"
+        }
+      ]
+    }
+  ],
+  "method": "Two real production browser-generated PNG image data URLs exported from observed DOM, decoded independently with jsQR; also decoded after 800×1200 JPEG quality75 rasterization. QR target was separately opened/refreshed in production browser and checked over HTTPS. Does not confirm OS download landing, phone camera or WeChat scan."
+}

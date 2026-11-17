@@ -1,0 +1,185 @@
+{
+  "status": "passed",
+  "date": "2026-11-17",
+  "base": "https://shanhe.binnwu.top",
+  "version": {
+    "sha": "e4a9bda3000f509bdafc4e60a23c850d45367a8d",
+    "run": "44034510725",
+    "attempt": "1"
+  },
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 21116,
+      "sha256": "9a8130667492c4bbf2646a3b8a890b64fa39d8cd7584f2310ea417962ce74d75",
+      "userAndCrawlerLabelBytesEqual": true,
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://shanhe.binnwu.top/"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "description": "山河有名开国将帅数字纪念馆，收录1614位开国将帅，包括10位元帅、10位大将、57位上将、177位中将和1360位少将。按姓名、军衔与家乡查阅人物生平、人生足迹、历史肖像及资料出处。",
+      "scriptCount": 1
+    },
+    {
+      "path": "/generals/",
+      "status": 200,
+      "bytes": 32683,
+      "sha256": "460ae6700053853dd590dc458c6f499c276cfd3b5180663c6e4de72ccb9b9b17",
+      "userAndCrawlerLabelBytesEqual": true,
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://shanhe.binnwu.top/generals/"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "description": "山河有名开国将帅数字纪念馆，收录1614位开国将帅，包括10位元帅、10位大将、57位上将、177位中将和1360位少将。按姓名、军衔与家乡查阅人物生平、人生足迹、历史肖像及资料出处。",
+      "scriptCount": 1
+    },
+    {
+      "path": "/people/",
+      "status": 200,
+      "bytes": 223396,
+      "sha256": "3b7a418bbc544303f30e0feb13a3b702715d914ad84e421ffbfa27ce4f6e6f69",
+      "userAndCrawlerLabelBytesEqual": true,
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://shanhe.binnwu.top/people/"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "description": "山河有名开国将帅数字纪念馆，收录1614位开国将帅，包括10位元帅、10位大将、57位上将、177位中将和1360位少将。按姓名、军衔与家乡查阅人物生平、人生足迹、历史肖像及资料出处。",
+      "scriptCount": 0
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "bytes": 5618,
+      "sha256": "a71e9a345e52b35dff0cef46905c5ec63037684075f8b9f807b418abfe129578",
+      "userAndCrawlerLabelBytesEqual": true,
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://shanhe.binnwu.top/about/"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "description": "了解山河有名的1614位开国将帅统计口径、人物资料与肖像出处、待核实字段及影像使用说明。人物档案保留可查阅的史料来源。",
+      "scriptCount": 0
+    },
+    {
+      "path": "/people/suyu/",
+      "status": 200,
+      "bytes": 25894,
+      "sha256": "4ab76d05a9a0f9138b3d2f94f1fd558079d090782c535ad527b3cc0c240b0859",
+      "userAndCrawlerLabelBytesEqual": true,
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://shanhe.binnwu.top/people/suyu/"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "description": "粟裕，大将，湖南 · 会同。从南方游击战争到苏中、孟良崮与淮海战场。查阅分段生平、人生足迹及历史肖像出处。",
+      "scriptCount": 1,
+      "completeBiographyTimelineSources": true,
+      "ogImage": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/b62e527f9f75430e82a23ce2c220819237f3118b10fb8e0d5caa449a858d5888/suyu.jpg",
+      "ogImageHttpCorsCachePassed": true
+    },
+    {
+      "path": "/people/p0262/",
+      "status": 200,
+      "bytes": 23095,
+      "sha256": "0aad60e7a1342309cdc42523276cf6d60b622e7f88348e50ea978b6323eedd91",
+      "userAndCrawlerLabelBytesEqual": true,
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://shanhe.binnwu.top/people/p0262/"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "description": "于权伸，少将，籍贯待核实。参加百团大战，曾任河北省军区副司令员。查阅分段生平、人生足迹及历史肖像出处。部分资料待核实，详见档案说明。",
+      "scriptCount": 1,
+      "completeBiographyTimelineSources": true,
+      "ogImage": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/6ff78ee2a98e7160de40b51e694582c3e0b2316c8c3c76f0bf3a421b18ff5fea/p0262.jpg",
+      "ogImageHttpCorsCachePassed": true
+    },
+    {
+      "path": "/people/lizhen/",
+      "status": 200,
+      "bytes": 27895,
+      "sha256": "b9f048e09491a5cf276d02dd0e4521d685ce1f237f2120dde582ff53b7e87b7b",
+      "userAndCrawlerLabelBytesEqual": true,
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://shanhe.binnwu.top/people/lizhen/"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "description": "李贞，少将，湖南 · 浏阳。参加秋收起义与长征，长期从事军队政治工作的首位女将军。查阅分段生平、人生足迹及历史肖像出处。",
+      "scriptCount": 1,
+      "completeBiographyTimelineSources": true,
+      "ogImage": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/68560f4827f9c5842b5e80d76365972d3b50d7375d128a64583714c4d68726a8/lizhen.jpg",
+      "ogImageHttpCorsCachePassed": true
+    },
+    {
+      "path": "/people/xuxiangqian/",
+      "status": 200,
+      "bytes": 24113,
+      "sha256": "0d10418e645be7e94fb59fdf06f50e4def5bbbfc269ef747f53acf3f35d988f6",
+      "userAndCrawlerLabelBytesEqual": true,
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://shanhe.binnwu.top/people/xuxiangqian/"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "description": "徐向前，元帅，山西 · 五台。从红四方面军、华北战场到国防和军队建设。查阅分段生平、人生足迹及历史肖像出处。",
+      "scriptCount": 1,
+      "completeBiographyTimelineSources": true,
+      "ogImage": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/01c531dc06c32d7161568c3a80c0c48bafa3f5adc4a3d449fa2708e5ea76a805/xuxiangqian.jpg",
+      "ogImageHttpCorsCachePassed": true
+    },
+    {
+      "path": "/people/p1296/",
+      "status": 200,
+      "bytes": 22658,
+      "sha256": "9898e88b768e2df54f72f3bfc93699f6f0f5a726d3df9c83b3cad5bd07a533d9",
+      "userAndCrawlerLabelBytesEqual": true,
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://shanhe.binnwu.top/people/p1296/"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "description": "于敬山，少将，安徽宿县。曾任陆军第38军副政治委员。查阅分段生平、人生足迹及历史肖像出处。",
+      "scriptCount": 1,
+      "completeBiographyTimelineSources": true,
+      "ogImage": "https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/8440e4b75a486854096d16c79146a5f05a3c42586c1a271a1b45416d969cc1d7/p1296.jpg",
+      "ogImageHttpCorsCachePassed": true
+    },
+    {
+      "path": "/card/?id=lizhen",
+      "status": 200,
+      "bytes": 4135,
+      "sha256": "39b2f9f2d5e1a37e4fbc31d4e17ca4c907738c5d76c6b0f161e7e0fc832b44d1",
+      "userAndCrawlerLabelBytesEqual": true,
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [],
+      "robots": "noindex, follow",
+      "description": "选择人物档案，制作带人物档案二维码的纪念卡。",
+      "scriptCount": 1
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 71,
+      "sha256": "f65f72b52645f67d44f34560a902c4f9d0f150691f5833e9e84004c8a5a4b798",
+      "userAndCrawlerLabelBytesEqual": true,
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 103655,
+      "sha256": "8584b2e2fcc47e9533753b6917009ec6084b656e34afa5d718d84938788138e5",
+      "userAndCrawlerLabelBytesEqual": true,
+      "contentType": "text/xml; charset=utf-8"
+    }
+  ],
+  "sitemapUrls": 1618,
+  "sitemapMatchesAllPeople": true,
+  "unknownProfileStatus": 404,
+  "method": "Public HTTPS raw HTTP, without JavaScript. Five complete profile bodies and source links checked against repository; all 1618 sitemap entries checked. User-agent labels do not represent a real search crawler. Independent browser acceptance recorded separately. No search-engine submission or indexing guarantee."
+}
