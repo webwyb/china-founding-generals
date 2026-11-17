@@ -87,3 +87,12 @@ H5图片、字体和媒体的输出名显式使用POSIX斜杠，这是浏览器U
 2026-11-17已在独立目录完成无旧缓存的恢复演练：全新安装Node与Python依赖，使用Node22.9.0、Python3.13.3执行完整检查及H5构建，退出码均为0。此项是同一台macOS机器的独立目录验证，不代表另一台物理设备或其他系统实测；记录见 `data/testing/migration.json`。Linux、macOS、Windows远程自动检查由仓库工作流另行执行，以实际CI记录为准。
 
 修改事实优先维护带出处的 `reviewed-facts.json`，再运行 `npm run data:build` 与校验；不要直接修改生成目录。若需修改原网页解析或重新采集，阅读 `DATA_PIPELINE.md`。不要用少量新网页覆盖完整事实快照。
+
+
+## 自动发布与线上环境（2026-11-17）
+
+已接入 [GitHub Actions](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml)：推送 main 后三系统完整检查通过，自动增量上传 COS 素材并向腾讯云轻量实例 `lhins-afrwanuu` 发布网页。入口为 `http://49.233.60.125`，尚未配置域名和 HTTPS。
+
+图片、景观、字体与图标使用北京 `media-1301987491/shanhe/assets/<sha256>/<文件名>`，版本化素材保留供旧页面和回滚引用；服务器只接收约477 KiB的网页代码包。发布目录 `/srv/shanhe/releases/`，原子入口 `/srv/shanhe/current`，专用受限 SSH 用户 `shanhe-deploy`。GitHub production 环境仅允许 main，保存三个发布 Secrets；凭据不在仓库中。COS API 身份仅拥有该素材目录的上传和列举权限。
+
+`9bfc4cb` 已通过 [Actions #8](https://github.com/webwyb/china-founding-generals/actions/runs/44012159290)，线上首页图片加载与两种纪念卡成图已在内置浏览器验证，下载落盘事件未由工具确认。部署配置、CORS、主机公钥、依赖锁定和回滚见 `DEPLOYMENT.md`；准确测试范围见 `QA.md`。本地构建默认保留完整静态资源，仅生产 CI 设置 COS 地址；不要把生产密钥或生成目录提交Git。

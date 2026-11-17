@@ -88,3 +88,16 @@ npm run build
 ```
 
 静态成图检查使用 `package-lock.json` 锁定的 `@napi-rs/canvas@1.1.1` 开发依赖和仓库内WOFF2；资料解析回归使用带出处的已提交测试样例。换机后执行 `npm ci`、`npm run setup:python`、`npm run check` 即可复现，无需原机器缓存。事实再生成使用已提交快照，原始网页仅在明确刷新研究证据时需要。完整迁移说明见 `docs/DEVELOPMENT.md`。
+
+
+## 2026-11-17 自动部署与 COS 线上验收
+
+部署提交 `9bfc4cb` 的 [Actions #8](https://github.com/webwyb/china-founding-generals/actions/runs/44012159290) 完成 Ubuntu 24.04、macOS 15、Windows 2022 全部 `npm run check`，部署任务成功，总耗时3分48秒，其中 deploy 1分10秒。独立本地快照也完成完整检查，以及启用 COS 地址的生产构建。归档越界/链接拒绝、非发布 SSH 命令拒绝、版本不符保护、失败回滚及 COS 增量/损坏文件拒绝测试通过。
+
+1375个素材首次写入北京 COS `media-1301987491/shanhe/assets/`（约218.9 MiB）；Actions 随后实际报告 `0 uploaded; 1375 reused`。资源使用 SHA-256 内容地址并设长期 immutable 缓存，服务器上传包约477 KiB。腾讯云控制台确认 `/srv/shanhe/current` 约3.7 MiB，`static/` 内文件数为0，版本 SHA/运行ID/重试编号与 CI 一致，`nginx -t` 通过；既有 kidpedia 站点跟随跳转后返回HTTP 200。
+
+专用 COS 身份实测可以列举限定前缀，桶根目录列举返回 `AccessDenied`。公开图标、字体、景观 HEAD 返回200，CORS仅允许网站来源 `http://49.233.60.125` 的 GET/HEAD，响应含正确 Allow-Origin 与 immutable Cache-Control。服务器部署密钥的 `id` 命令实测被强制接收器拒绝。
+
+线上入口为 [山河有名](http://49.233.60.125)。内置浏览器首次自动打开被客户端拦截；用户手动打开同一地址后，在同一内置浏览器继续验收，没有切换地址或浏览器绕过。首页16张图片均从 COS 成功加载；实际进入粟裕档案和纪念卡，两种样式均生成1200×1800 PNG，保存弹层显示同一成图。点击“下载 PNG 图片”后工具未回传 download 事件，故本轮不把文件落盘记为通过；该入口的 PNG data URL 与下载文件名已核对。未执行移动设备或其他引擎测试。
+
+截图和部署入口见 `docs/reviews/deployment-2026-11-17/`，运行、权限、资源版本与回滚说明见 `docs/DEPLOYMENT.md`。本轮仅提交部署及资源寻址代码，不包含工作区并行的未提交肖像资料更新。后续验收归档提交仅改文档与截图，执行差异空白检查及 JPEG 解码检查；应用代码沿用上述已通过的检查结果。
