@@ -4,11 +4,19 @@
 
 ## 自动发布
 
-推送到 `main` 后，`.github/workflows/ci.yml` 在 Ubuntu、macOS、Windows 上恢复依赖并执行完整 `npm run check`。Ubuntu 构建打包为 `h5-production` artifact（保留7天）。三系统全部成功后，独立 deploy job 下载同一次运行的产物，通过 SSH 上传，最后核对公网 `version.json` 的提交 SHA、运行 ID 与重试编号。其他分支与 PR 只检查，不部署。Actions 页面可手动 Run workflow，选择 `main`。
+推送到 `main` 后，`.github/workflows/ci.yml` 在 Ubuntu、macOS、Windows 上恢复依赖并执行完整 `npm run check`。Ubuntu 构建打包为 `h5-production` artifact（保留7天）。三系统全部成功后，独立 deploy job 下载同一次运行的产物，先增量上传 COS 素材，再通过 SSH 上传仅含 HTML、JS、CSS 和版本信息的小包，最后核对公网 `version.json` 的提交 SHA、运行 ID 与重试编号。其他分支与 PR 只检查，不部署。Actions 页面可手动 Run workflow，选择 `main`。
 
-`production` Environment 只允许 `main` 部署，不设置人工审核，使 push 后自动完成。唯一私密配置是该环境的 `DEPLOY_SSH_KEY`；构建 job 无法读取它。官方 Actions 均固定完整 commit SHA。服务器 SSH ED25519 主机公钥由腾讯云控制台内读取，保存在 `scripts/deploy/known_hosts`，不在工作流中临时信任扫描结果。
+`production` Environment 只允许 `main` 部署，不设置人工审核，使 push 后自动完成。私密配置为 `DEPLOY_SSH_KEY`、`COS_SECRET_ID`、`COS_SECRET_KEY`；构建 job 无法读取它们。官方 Actions 均固定完整 commit SHA，COS Python SDK 及其依赖固定在 `scripts/requirements-deploy.lock`。服务器 SSH ED25519 主机公钥由腾讯云控制台内读取，保存在 `scripts/deploy/known_hosts`，不在工作流中临时信任扫描结果。
 
 部署并发组为 `shanhe-production`，不会中途取消上传。发布前检查 main 头提交，跳过已经落后的运行。
+
+## COS 素材
+
+复用北京地域 `media-1301987491`，网站素材范围为 `shanhe/assets/`。肖像、景观、字体、图标都使用 `https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets/<sha256>/<文件名>`，同一内容地址保持不变，更新资源产生新地址。部署只列举该前缀，并上传尚不存在的对象，保留旧资源供旧页面与回滚使用。该目录的存储与流量使用现有 COS 计费及资源包规则。
+
+CAM 专用身份关联 `ShanheAssetsPublish`，策略原稿为 `scripts/deploy/cos-policy.json`：只有该目录的 `PutObject` 和限定 prefix 的 `GetBucket`。存储桶原有公共读取模式沿用；CORS 增加 `http://49.233.60.125` 的 GET/HEAD，支持跨域字体与 Canvas 图片导出。
+
+本地普通 `npm run build` 仍生成完整自包含资源。仅生产工作流设置 `SHANHE_ASSET_BASE_URL`，构建时生成公开素材地址表，`prepare-assets.mjs` 再处理 Vite 输出的图片、字体和图标引用；原始文件继续随 Git 保留。代码包通过 tar 排除 `static/*`，首版独立快照的包体约477 KiB，COS 素材约218.9 MiB。
 
 ## 服务器边界
 

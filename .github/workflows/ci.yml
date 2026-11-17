@@ -8,6 +8,9 @@ on:
 permissions:
   contents: read
 
+env:
+  SHANHE_ASSET_BASE_URL: https://media-1301987491.cos.ap-beijing.myqcloud.com/shanhe/assets
+
 jobs:
   check:
     strategy:
@@ -34,10 +37,13 @@ jobs:
       - run: npm run check
       - name: Check deployment archive and rollback behavior
         if: runner.os != 'Windows'
-        run: python3 scripts/deploy/test_receive.py
+        run: |
+          python3 scripts/deploy/test_receive.py
+          python3 scripts/deploy/test_assets.py
       - name: Package checked H5 build
         if: matrix.os == 'ubuntu-24.04' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         run: |
+          node scripts/deploy/prepare-assets.mjs
           python3 - <<'PY'
           import json, os
           from pathlib import Path
@@ -75,6 +81,23 @@ jobs:
         with:
           name: h5-production
           path: release
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          python-version: '3.11'
+      - name: Upload immutable COS assets
+        env:
+          COS_BUCKET: media-1301987491
+          COS_REGION: ap-beijing
+          COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}
+          COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install -r scripts/requirements-deploy.lock
+          mkdir -p dist/h5
+          tar -xzf release/h5.tar.gz -C dist/h5
+          node scripts/deploy/prepare-assets.mjs
+          .venv/bin/python scripts/deploy/upload-assets.py
+          tar --exclude='./static/*' -czf release/code.tar.gz -C dist/h5 .
       - name: Publish checked build and verify public version
         env:
           DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}

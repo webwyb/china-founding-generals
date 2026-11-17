@@ -7,7 +7,7 @@ if [[ "$main_sha" != "$GITHUB_SHA" ]]; then
   echo "Skipping superseded commit $GITHUB_SHA (main is $main_sha)."
   exit 0
 fi
-test -s release/h5.tar.gz
+test -s release/code.tar.gz
 test -n "$DEPLOY_SSH_KEY"
 ssh_dir=$(mktemp -d)
 trap 'rm -rf "$ssh_dir"' EXIT
@@ -20,7 +20,7 @@ ssh -i "$ssh_dir/key" -o BatchMode=yes -o IdentitiesOnly=yes \
   -o StrictHostKeyChecking=yes -o UserKnownHostsFile="$ssh_dir/known_hosts" \
   -o ConnectTimeout=20 -o ServerAliveInterval=15 -o ServerAliveCountMax=4 \
   shanhe-deploy@49.233.60.125 \
-  "deploy $GITHUB_SHA $GITHUB_RUN_ID $GITHUB_RUN_ATTEMPT" < release/h5.tar.gz
+  "deploy $GITHUB_SHA $GITHUB_RUN_ID $GITHUB_RUN_ATTEMPT" < release/code.tar.gz
 
 for attempt in {1..6}; do
   if curl --fail --silent --show-error --connect-timeout 10 --max-time 30 \

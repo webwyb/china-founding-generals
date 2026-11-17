@@ -1,0 +1,30 @@
+{
+  "version": "2.0",
+  "statement": [
+    {
+      "effect": "allow",
+      "action": [
+        "name/cos:PutObject"
+      ],
+      "resource": [
+        "qcs::cos:ap-beijing:uid/1301987491:media-1301987491/shanhe/assets/*"
+      ]
+    },
+    {
+      "effect": "allow",
+      "action": [
+        "name/cos:GetBucket"
+      ],
+      "resource": [
+        "qcs::cos:ap-beijing:uid/1301987491:media-1301987491/*"
+      ],
+      "condition": {
+        "string_equal": {
+          "cos:prefix": [
+            "shanhe%2Fassets%2F"
+          ]
+        }
+      }
+    }
+  ]
+}

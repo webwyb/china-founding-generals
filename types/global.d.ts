@@ -1,5 +1,7 @@
 /// <reference types="@tarojs/taro" />
 
+declare const __SHANHE_ASSET_URLS__: Record<string, string>
+
 declare module '*.scss'
 declare module '*.css'
 declare module '*.png' {

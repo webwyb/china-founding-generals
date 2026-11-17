@@ -1,6 +1,7 @@
 import catalogue from './catalog.generated.json'
 import { people as curatedPeople } from './featured'
 import placeholder from '../assets/portrait-placeholder.svg'
+import { assetUrl } from '../services/assets'
 export { lifeYears } from './historyLabels'
 
 export type Rank = '元帅' | '大将' | '上将' | '中将' | '少将'
@@ -42,7 +43,7 @@ export const people: Person[] = imported.length ? imported.map(record => {
     portraitMissing: false,
     sources: [...new Map([...curated.sources, ...record.sources].map(source => [source.url, source])).values()],
   }
-  return { ...record, portrait: record.portraitFile ? `./static/portraits/${record.portraitFile}${record.portraitVersion ? `?v=${record.portraitVersion}` : ''}` : placeholder, portraitMissing: !record.portraitFile }
+  return { ...record, portrait: record.portraitFile ? assetUrl(`./static/portraits/${record.portraitFile}${record.portraitVersion ? `?v=${record.portraitVersion}` : ''}`) : placeholder, portraitMissing: !record.portraitFile }
 }) : curatedPeople
 
 export const featuredPeople = curatedPeople.map(person => people.find(record => record.id === person.id)!).filter(Boolean)

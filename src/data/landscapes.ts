@@ -1,3 +1,5 @@
+import { assetUrl } from '../services/assets'
+
 export interface ProvinceLandscape { province: string; id: string; landmark: string; image: string }
 
 export const provinceLandscapes: ProvinceLandscape[] = [
@@ -175,7 +177,7 @@ export const provinceLandscapes: ProvinceLandscape[] = [
     "landmark": "豫园",
     "image": "./static/landscapes/shanghai.webp"
   }
-]
+].map(landscape => ({ ...landscape, image: assetUrl(landscape.image) }))
 
 export function getProvinceLandscape(province?: string): ProvinceLandscape | undefined {
   return provinceLandscapes.find(item => item.province === province)

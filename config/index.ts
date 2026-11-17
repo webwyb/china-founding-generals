@@ -1,5 +1,7 @@
 import { defineConfig } from '@tarojs/cli'
 import { posix, resolve } from 'node:path'
+const { manifest } = require('../scripts/deploy/asset-manifest.cjs')
+const assetUrls = Object.fromEntries(manifest(resolve(__dirname, '../public'), process.env.SHANHE_ASSET_BASE_URL || '').map((asset: { path: string; url: string }) => [asset.path, asset.url]))
 
 // These are browser URLs, not filesystem paths. Taro's default path.join
 // emits backslashes on Windows, which can become JS string escapes.
@@ -28,7 +30,7 @@ export default defineConfig<'vite'>({
     patterns: [{ from: resolve(__dirname, '../public'), to: 'static' }],
     options: {}
   },
-  defineConstants: {},
+  defineConstants: { __SHANHE_ASSET_URLS__: JSON.stringify(assetUrls) },
   mini: {
     postcss: {
       pxtransform: { enable: true },
