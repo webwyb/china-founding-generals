@@ -115,7 +115,7 @@ npm run validate:data
 
 以上生成命令默认使用已提交的 `data/catalog/evidence/` 事实快照，并校验条数和SHA，不依赖网页原文缓存。只有显式 `--refresh-evidence` 才重新解析研究缓存；完整重新采集需要网络及人工审阅。单项勘误维护 `reviewed-facts.json`。详见 `docs/DATA_PIPELINE.md` 和 `source-notes.md`。
 
-H5 正式发布前仍需：逐项复核资料差异、补充缺失肖像、完成影像使用核验、配置生产域名，并在手机与微信浏览器中验证阅读、分享和图片保存。H5 的微信原生分享文案/缩略图定制需要另行接入微信网页 SDK 与对应服务端签名；当前使用可复制的普通人物链接。
+H5 正式发布前仍需：逐项复核资料差异、补充缺失肖像、完成影像使用核验，并在手机与微信浏览器中验证阅读、分享和图片保存。生产域名及 HTTPS 已接入，维护方式见下文。H5 的微信原生分享文案/缩略图定制需要另行接入微信网页 SDK 与对应服务端签名；当前使用可复制的普通人物链接。
 
 ## 目录
 
@@ -140,3 +140,5 @@ src/app.scss            共用视觉与响应式样式
 ## 自动发布
 
 线上入口：[山河有名](https://shanhe.binnwu.top)。推送 `main` 后，GitHub Actions 完成三系统检查，增量同步肖像、景观、字体等素材到腾讯云 COS，再自动部署网页代码到腾讯云轻量服务器。权限边界、版本与回滚见 [部署说明](docs/DEPLOYMENT.md)，实际验收范围见 [QA.md](QA.md)。
+
+`shanhe.binnwu.top` 由 DNSPod 的 A 记录指向 `49.233.60.125`，域名 HTTP 请求自动跳转 HTTPS。免费证书由 Let's Encrypt 签发，服务器 `certbot.timer` 自动续期，成功后通过部署钩子检查并重载 Nginx；日常推送无需手工上传证书。续期检查、迁移恢复和排障命令见 [域名与免费 HTTPS](docs/DEPLOYMENT.md#域名与免费-https)，接入时的实测记录见 [域名验收](docs/reviews/domain-https-2026-11-17/REVIEW.md)。

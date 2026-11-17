@@ -38,6 +38,8 @@ npm run preview
 
 构建输出 `dist/h5/`，不提交生成目录。hash路由不需要服务端路由回退；资源使用相对路径，可放在域名子目录。推送 `main` 后由 GitHub Actions 完成三系统检查，并将 Ubuntu 构建自动部署到腾讯云独立站点；入口、环境与回滚见 [DEPLOYMENT.md](DEPLOYMENT.md)。
 
+生产入口为 [https://shanhe.binnwu.top](https://shanhe.binnwu.top)。普通本地构建包含完整静态资源；生产 CI 通过 `SHANHE_ASSET_BASE_URL` 使用 COS 内容地址，并只向服务器发布网页代码。HTTPS 证书由服务器独立自动续期，应用构建和推送不会替换证书、Nginx 配置或 root 持有的发布接收器。维护这些服务器文件、检查续期和迁移新机时，按 [部署说明](DEPLOYMENT.md) 操作；换机开发不需要下载生产私钥或云 API 凭据。
+
 ## 完整检查
 
 ```sh

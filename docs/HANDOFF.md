@@ -82,7 +82,7 @@ H5图片、字体和媒体的输出名显式使用POSIX斜杠，这是浏览器U
 
 实现注意：Taro H5会改写CSS中的button标签选择器，因此共用Button新增 `.ui-button`，控件样式必须使用组件类名。Icon统一由 `--icon-size` 同时确定宽高；人物按钮显式顶部布局，避免原生按钮内容垂直居中。名录IntersectionObserver提前480px追加24人，保留手动按钮和新增项键盘焦点；存储写入合并，记录实际Taro页面滚动。手机卡片样式选择在预览上方，保存仍复用同一PNG。资料文件与肖像另有并行更新，本轮UI不调整人物事实。
 
-后续优先事项：完成 `QA.md` 剩余跨浏览器与真机验收；逐项核定204个争议字段；补缺肖像和更清晰原图；正式发布前核实影像使用范围、生产域名和微信分享接入。当前不是已经完成全量人工史学审校的成品。
+后续优先事项：完成 `QA.md` 剩余跨浏览器与真机验收；逐项核定204个争议字段；补缺肖像和更清晰原图；正式发布前核实影像使用范围和微信分享接入。生产域名及自动续期已配置，维护入口见下文。当前不是已经完成全量人工史学审校的成品。
 
 安装时npm报告的依赖审计基线为34项（11中、17高、6严重），尚未逐项区分构建依赖与运行依赖。没有执行可能改变Taro工具链的强制升级；后续应按具体依赖影响单独处理，不能宣称已完成安全审计。
 
@@ -99,11 +99,13 @@ H5图片、字体和媒体的输出名显式使用POSIX斜杠，这是浏览器U
 
 ## 自动发布与线上环境（2026-11-17）
 
-已接入 [GitHub Actions](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml)：推送 main 后三系统完整检查通过，自动增量上传 COS 素材并向腾讯云轻量实例 `lhins-afrwanuu` 发布网页。入口为 `http://49.233.60.125`，尚未配置域名和 HTTPS。
+已接入 [GitHub Actions](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml)：推送 main 后三系统完整检查通过，自动增量上传 COS 素材并向腾讯云轻量实例 `lhins-afrwanuu` 发布网页。正式入口为 [https://shanhe.binnwu.top](https://shanhe.binnwu.top)，DNSPod A 记录指向 `49.233.60.125`（默认线路、TTL 600，未配置 AAAA）；域名 HTTP 请求以308跳转 HTTPS。原 IP 入口保留供已有链接及接收器本机健康检查使用。
 
-图片、景观、字体与图标使用北京 `media-1301987491/shanhe/assets/<sha256>/<文件名>`，版本化素材保留供旧页面和回滚引用；服务器只接收约477 KiB的网页代码包。发布目录 `/srv/shanhe/releases/`，原子入口 `/srv/shanhe/current`，专用受限 SSH 用户 `shanhe-deploy`。GitHub production 环境仅允许 main，保存三个发布 Secrets；凭据不在仓库中。COS API 身份仅拥有该素材目录的上传和列举权限。
+图片、景观、字体与图标使用北京 `media-1301987491/shanhe/assets/<sha256>/<文件名>`，版本化素材保留供旧页面和回滚引用；服务器仅接收 HTML、JS、CSS 和版本信息，首次独立基线的代码包约477 KiB，后续大小随构建变化。COS CORS 允许新 HTTPS 来源及原 IP 来源的 GET/HEAD，保证字体加载与卡片 Canvas 导出。发布目录 `/srv/shanhe/releases/`，原子入口 `/srv/shanhe/current`，专用受限 SSH 用户 `shanhe-deploy`。GitHub production 环境仅允许 main，保存三个发布 Secrets；凭据不在仓库中。COS API 身份仅拥有该素材目录的上传和列举权限。
 
-`9bfc4cb` 已通过 [Actions #8](https://github.com/webwyb/china-founding-generals/actions/runs/44012159290)，线上首页图片加载与两种纪念卡成图已在内置浏览器验证，下载落盘事件未由工具确认。部署配置、CORS、主机公钥、依赖锁定和回滚见 `DEPLOYMENT.md`；准确测试范围见 `QA.md`。本地构建默认保留完整静态资源，仅生产 CI 设置 COS 地址；不要把生产密钥或生成目录提交Git。
+免费证书由 Let's Encrypt 经 HTTP-01 签发，私钥仅存服务器 `/etc/letsencrypt/`。首张证书于2026-11-17签发、2027-02-15到期；这是签发快照，当前有效期以服务器证书为准。`certbot.timer` 自动检查续期，成功后 `/etc/letsencrypt/renewal-hooks/deploy/shanhe-nginx` 先检查 Nginx 再重载；带部署钩子的续期演练已通过。HTTP 验证目录 `/var/www/letsencrypt/.well-known/acme-challenge/` 及80端口需保留。
+
+首次 COS 发布 `9bfc4cb` 见 [Actions #8](https://github.com/webwyb/china-founding-generals/actions/runs/44012159290)；域名接入提交 `ea4efd8` 见 [Actions #11](https://github.com/webwyb/china-founding-generals/actions/runs/44020443262)，三系统检查、部署与 HTTPS 公网版本校验均通过。新域名首页、字体和16张图片加载、两种1200×1800纪念卡成图及复制人物链接已在内置浏览器验证，未新增下载落盘或真机验收。截图和准确范围见 [域名验收](reviews/domain-https-2026-11-17/REVIEW.md) 及 `QA.md`；部署、续期检查、CORS、主机公钥、依赖锁定和回滚统一维护在 `DEPLOYMENT.md`。本地构建默认保留完整静态资源，仅生产 CI 设置 COS 地址；不要把生产密钥或生成目录提交Git。
 
 
 ## 2026-11-17 人物生平扩充
