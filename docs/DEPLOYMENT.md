@@ -10,7 +10,7 @@
 
 部署并发组为 `shanhe-production`，不会中途取消上传。发布前检查 main 头提交，跳过已经落后的运行；日志出现 `Skipping superseded commit` 表示该次运行未更新网站，当前实际版本以公网 `version.json` 为准。
 
-日常发布只需提交并推送 `main`，在 [工作流页面](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml) 查看三系统 `check` 和 `deploy` 结果。需要重新发布当前 main 时，在该页面选择 **Run workflow → main**。普通应用更新无需登录服务器执行构建、上传图片或更换证书。发布后 `deploy` 摘要会链接到正式域名；`version.json` 的 `sha`、`run`、`attempt` 分别对应提交、Actions 运行与重试次数。
+日常发布只需提交并推送 `main`，在 [工作流页面](https://github.com/webwyb/china-founding-generals/actions/workflows/ci.yml) 查看三系统 `check` 和 `deploy` 结果。需要重新发布或重试失败的发布时，在该页面选择 **Run workflow → main**，启动新一轮完整运行，使制品中的 `run`／`attempt` 与发布参数一致。单独重跑 deploy 会复用旧制品；若重试编号变化，接收器会拒绝编号不一致的包。普通应用更新无需登录服务器执行构建、上传图片或更换证书。发布后 `deploy` 摘要会链接到正式域名；`version.json` 的 `sha`、`run`、`attempt` 分别对应提交、Actions 运行与重试次数。
 
 ## COS 素材
 
@@ -18,7 +18,9 @@
 
 CAM 专用身份关联 `ShanheAssetsPublish`，策略原稿为 `scripts/deploy/cos-policy.json`：只有该目录的 `PutObject` 和限定 prefix 的 `GetBucket`。存储桶原有公共读取模式沿用；CORS 允许 `https://shanhe.binnwu.top` 与原 `http://49.233.60.125` 的 GET/HEAD，支持跨域字体与 Canvas 图片导出。
 
-素材上传使用300秒请求超时、最多4个文件并发，并保留 SDK 的网络重试。通过 SDK 支持的可回退文件流传递已校验的原图字节，让 HTTP 按块读取请求体，重试时从头发送；仍使用单次 PutObject、MD5与原有目录权限。接口用法见 [官方 Python SDK](https://cloud.tencent.com/document/product/436/12269)。日志在请求前记录文件路径及大小；失败时保留具体文件和原始错误，便于定位首次上传的大图。若遇到暂时网络超时，可在失败的 `deploy` 页面选择 **Re-run this job**；已成功上传的内容会按哈希复用，三系统检查也可沿用该次已成功的结果。
+素材上传使用300秒请求超时、最多4个文件并发，并保留 SDK 的网络重试。通过 SDK 支持的可回退文件流传递已校验的原图字节，让 HTTP 按块读取请求体，重试时从头发送；仍使用单次 PutObject、MD5与原有目录权限。接口用法见 [官方 Python SDK](https://cloud.tencent.com/document/product/436/12269)。日志在请求前记录文件路径及大小；失败时保留具体文件和原始错误，便于定位首次上传的大图。暂时网络错误排除后，通过 **Run workflow → main** 重发；已经成功上传的内容按哈希复用。
+
+首次大量素材上传若持续出现 COS `UserNetworkTooSlow`，仅增加请求超时无法保证完成。可一次性从对应已检查构建的 `dist/h5/static/` 与 `release-assets.json` 中挑出未存在的对象，按清单 `key` 组织本地 `assets/<sha256>/<文件名>` 目录，再通过 COS 控制台上传到 `media-1301987491/shanhe/`。选择的是本地 **assets 文件夹**，最终对象键须为 `shanhe/assets/<sha256>/<文件名>`；保持标准存储、继承桶权限，并统一设置 `Cache-Control: public,max-age=31536000,immutable`，Content-Type 按原文件类型保留。补齐后核对对象长度、SHA-256、缓存及 HTTPS CORS，再重新运行完整 main 工作流。原始文件和内容地址保持一致，后续 CI 继续增量同步。本次140项存量初始化及校验见 [验收记录](reviews/domain-https-2026-11-17/REVIEW.md#后续素材初始化与上传排障)。
 
 本地普通 `npm run build` 仍生成完整自包含资源。仅生产工作流设置 `SHANHE_ASSET_BASE_URL`，构建时生成公开素材地址表，`prepare-assets.mjs` 再处理 Vite 输出的图片、字体和图标引用；原始文件继续随 Git 保留。代码包通过 tar 排除 `static/*`，首版独立快照的包体约477 KiB，COS 素材约218.9 MiB。
 
@@ -165,7 +167,7 @@ certbot renew --cert-name shanhe.binnwu.top --dry-run --run-deploy-hooks --no-ra
 | 新域名暂不能解析 | DNSPod A 记录、递归 DNS 缓存；保留既有 `www` 等记录，等待正常传播 |
 | 浏览器证书过期或续期验证失败 | 上述证书日期、定时器、服务日志；确认域名仍指向本机且 HTTP 验证路径可达 |
 | 网页能读但字体或卡片生成失败 | COS CORS 包含 `https://shanhe.binnwu.top` 的 GET/HEAD，响应 `Access-Control-Allow-Origin` 与来源一致 |
-| COS 首次上传出现写入超时 | 查看上传文件、大小及原始网络错误；重试失败的 deploy，复用已经完成的素材，避免反复运行全部检查 |
+| COS 首次上传出现写入超时／UserNetworkTooSlow | 查看具体文件、大小及运行机到 COS 的链路；必要时按上文补齐存量素材，再通过 Run workflow → main 重发 |
 | Actions 检查成功但发布失败 | `deploy` 日志、production Secrets、SSH 连通性、磁盘及公网版本；服务器配置由管理员单独维护 |
 
 ## 验证范围
