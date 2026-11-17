@@ -79,11 +79,14 @@ npm run check
 
 审核文件保留采用和排除项、原图SHA、尺寸、许可说明及人工核对依据。`apply` 仅为缺图人物添加明确批准且与下载收据匹配的原图，不覆盖已有不同肖像。已录入的同一审核文件再次执行只核对现有文件，不依赖旧缓存；正常开发与 `npm run check` 均不联网采图。版本化原图与 `portraits.json` 足以恢复现有展示。
 
-`scripts/portrait_sources.py` 在目录再生成与旧采图入口过滤已经拒绝的文件，例如文件名与说明姓名冲突、多人合影。本轮保留5个排除记录和171个采用记录；3项回归检查防止URL编码或文件名分隔符变化后误用。补图统计及肖像之外字段未变的比较记录在 `data/testing/portrait-supplements.json`。
+`scripts/portrait_sources.py` 在目录再生成与旧采图入口过滤已经拒绝的文件，例如文件名与说明姓名冲突、多人合影。第一轮保留5个排除记录和171个采用记录；继续补缺260张及再查剩余11位新增6张后，累计437个采用记录和19个排除记录（含剩余5位再查时确认的2张瓷板绘画）。3项回归检查防止URL编码或文件名分隔符变化后误用。两轮补图统计及肖像之外字段未变的比较分别记录在 `data/testing/portrait-supplements.json` 与 `data/testing/portrait-expansion-2026-11-17.json`；再查剩余11位新增6张的报告为 `data/testing/portrait-final11-2026-11-17.json`；当前1609张肖像、5个占位。
 
 `upgrade_portraits.py` 分阶段下载和应用较高分辨率来源，需先比较照片内容；只有在审阅记录中标为 `approved` 的候选会应用，历史升级记录保留在 `data/design/portrait-upgrades.json`。原机器的旧照片缓存不属于当前展示输入；已提交的当前照片足以继续开发。
 
 29张景观PNG原稿在 `design/landscapes/`，WebP在 `public/landscapes/`，生成提示词和原稿／发布文件哈希在 `data/design/`。这些是现代地域意象，不能当人物经历的史料。网页素材许可见 `source-notes.md` 和各清单；不要将全部素材统一改称公共领域。
+
+剩余5位再次公开检索未新增头像，仅补充研究证据及绘画排除元数据，详见 `data/testing/portrait-final5-2026-11-17.json`；未以不可靠配图改变人物占位。
+
 
 ## 分段生平、关键节点与背景
 

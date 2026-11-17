@@ -1,0 +1,276 @@
+{
+  "date": "2026-11-17",
+  "scope": "按用户要求，对剩余5位专项查公开军史书籍、现代地方志和历史照片报刊原版；能核验的单人原照方可录入。",
+  "beforePortraits": 1609,
+  "afterPortraits": 1609,
+  "addedPortraits": 0,
+  "beforeMissing": 5,
+  "remainingPlaceholders": 5,
+  "generatedCatalogByteIdentical": true,
+  "baselineCatalogSha256": "5d4ca3095eceff5680533c800809b6b071f734437d9ece34909dea0464740330",
+  "productionPortraitFilesChanged": false,
+  "historicalFieldsUnchanged": true,
+  "pendingFieldsUnchanged": true,
+  "candidateAndApprovalListsChanged": false,
+  "pdfReview": {
+    "newElectronicBooks": [
+      {
+        "title": "中国人民解放军将帅名录（第二集）·电子图书学校专集",
+        "source": "https://ivantsoi.myds.me/web/schoolebook/pdf/052036.pdf",
+        "pdfPages": 656,
+        "sha256": "ab372abeef1dacb4aa085cc29e0531e119e8e892f29b57764d5147349274481b",
+        "documentType": "重新排版的电子文本，不是原版图书逐页扫描；没有据此认定原纸书不配照片。",
+        "personPages": [
+          {
+            "name": "于侠",
+            "pdfPage": 13,
+            "portraitImagesOnPage": [],
+            "visualReview": "已渲染并查看完整页面，具名履历为纯文字，无照片。"
+          },
+          {
+            "name": "王万金",
+            "pdfPage": 44,
+            "portraitImagesOnPage": [],
+            "visualReview": "已渲染并查看完整页面，具名履历为纯文字，无照片。"
+          },
+          {
+            "name": "李镜如",
+            "pdfPage": 492,
+            "portraitImagesOnPage": [],
+            "visualReview": "已渲染并查看完整页面，具名履历为纯文字，无照片。"
+          }
+        ]
+      },
+      {
+        "title": "中国人民解放军将帅名录（第三集）·电子图书学校专集",
+        "source": "https://ivantsoi.myds.me/web/schoolebook/pdf/052037.pdf",
+        "pdfPages": 707,
+        "sha256": "4a4ecc6ef6726199f68c74e9c959efddeccde01f003ca21c21f062e14f5dbe1b",
+        "documentType": "重新排版的电子文本，不是原版图书逐页扫描；没有据此认定原纸书不配照片。",
+        "personPages": [
+          {
+            "name": "国林之",
+            "pdfPage": 205,
+            "portraitImagesOnPage": 0,
+            "visualReview": "已渲染并查看完整页面，具名履历为纯文字，无照片。"
+          },
+          {
+            "name": "曹孟朴",
+            "pdfPage": 483,
+            "portraitImagesOnPage": 0,
+            "visualReview": "已渲染并查看完整页面，具名履历为纯文字，无照片。"
+          }
+        ]
+      }
+    ],
+    "newRenderedPersonPages": 5,
+    "newRenderedNewspaperPages": 1,
+    "note": "电子书重新排版文本与原版扫描件分开记录；仅查到目录的地方志没有计作已翻阅正文。"
+  },
+  "sourceChecks": [
+    {
+      "channel": "军史书籍",
+      "title": "大学参考书馆藏《将帅名录》节选",
+      "people": [
+        "于侠",
+        "王万金",
+        "李镜如",
+        "国林之",
+        "曹孟朴"
+      ],
+      "source": "https://scalar.usc.edu/works/chinese-studies-reference-collection/media/-zhongguo-ren-min-jie-fang-jun-jiang-shuai-ming-lu",
+      "result": "核对公开书页及另一个明确链接的媒体页，仍指向先前4页节选；复查第3页为丁钊，第4页为版权页，未包含本轮5人对应图版，未推定已取得全书。",
+      "previousPdfSha256": "d194e741540d14e5081760325dc1e4bdd0cece72b569cfc64960c2ec142e6465"
+    },
+    {
+      "channel": "军史馆藏",
+      "title": "俄罗斯国家图书馆《将帅名录》第二卷书目",
+      "source": "https://search.rsl.ru/ru/record/01008612637",
+      "result": "实际书目读取成功；在线阅读链接区为空，只提供阅览室调阅、付费片段复制。搜索摘要的免费全文字样来自通用弹窗模板，不能当作已开放全书。未下单。"
+    },
+    {
+      "channel": "军史电子书目录",
+      "title": "Internet Archive公开电子书合集ts052024",
+      "source": "https://archive.org/metadata/ts052024",
+      "result": "公开元数据列有ts052036.pdf、ts052037.pdf及其派生OCR文件，属于学校电子图书合集线索，未取得另一本保留人物照片的原版扫描。"
+    },
+    {
+      "channel": "地方志",
+      "title": "湖北方志馆官方现行数字入口",
+      "people": [
+        "王万金"
+      ],
+      "source": "https://www.dfz.hb.cn/",
+      "reader": "https://ksdp.library.hb.cn:8082/localLiterature/index",
+      "result": "官网数字方志馆链接可打开；正常浏览器自动进入湖北省图书馆读者登录页，停止在登录页，未进入受限全文。"
+    },
+    {
+      "channel": "地方志",
+      "title": "湖北数字方志馆迁移启事",
+      "source": "https://wlt.hubei.gov.cn/zfxxgk/zc/qtzdgkwj/202301/t20230109_4481479.shtml",
+      "result": "公开迁移公告读取成功，结合现官网确认新入口；不能将旧域名连接失败解释为书内没有照片。"
+    },
+    {
+      "channel": "地方志",
+      "title": "洪湖县志·1992年12月版",
+      "people": [
+        "王万金"
+      ],
+      "source": "https://shizhiku.com/p/detail/wp9725245c4d/",
+      "result": "只读取开放书目和目录，内容时限1840—1987；有社会名人录、省军级以上人士栏目，未获取收费全文，尚不能判断人物是否配照。"
+    },
+    {
+      "channel": "地方志",
+      "title": "武邑县志·1998年1月版",
+      "people": [
+        "国林之"
+      ],
+      "source": "https://shizhiku.com/p/detail/wpab4c6ed0f4/",
+      "result": "只读取开放书目和目录，内容下限1993；公开目录未检出国林之或国锡庄，不等于正文没有记载；未获取收费全文或人物图版。"
+    },
+    {
+      "channel": "地方志",
+      "title": "辛集市志·1996年版公开目录",
+      "people": [
+        "李镜如"
+      ],
+      "source": "https://shizhiku.com/p/detail/wp22b455d085/",
+      "result": "本轮检索公开目录确认第七编人物、第二章人物简介列有李镜如；此前已记录收费全文，未取得条目原版图像，不能称已读全书。"
+    },
+    {
+      "channel": "地方志",
+      "title": "河北师范大学图书馆中国数字方志库资源说明",
+      "people": [
+        "国林之",
+        "李镜如"
+      ],
+      "source": "https://library.hebtu.edu.cn/a/2021/09/23/BB1E0FE9E84547A584B9F5E6CD2FE75A.html",
+      "result": "公开资源说明读取成功，学校购买北京、天津、河北地方志，校外访问需Enlink登录。没有使用机构身份或访问受限数据库。"
+    },
+    {
+      "channel": "地方志",
+      "title": "黑龙江史志网数字方志",
+      "people": [
+        "曹孟朴"
+      ],
+      "source": "https://www.hljszw.org.cn/booklist/42/1.html",
+      "result": "实际当前公开目录为省志及部分市县志，未取得现代宁安县志或牡丹江市志人物图版。检索到的民国宁安县志版本不适合作为目标人物的将军肖像来源，没有用旧志版本冒充现代县志。"
+    },
+    {
+      "channel": "地方志",
+      "title": "河北省史志官方入口",
+      "people": [
+        "国林之",
+        "李镜如"
+      ],
+      "source": "https://www.hebeidangshi.org.cn/",
+      "result": "按黑龙江史志网官方友情链接访问，连接失败，未取得书页。"
+    },
+    {
+      "channel": "地方志",
+      "title": "河北地方志旧官方入口",
+      "people": [
+        "国林之",
+        "李镜如"
+      ],
+      "source": "http://www.hebdfz.com/",
+      "result": "按官方友情链接首次访问返回403后停止；未改协议、域名、代理或其他路径绕过该限制。"
+    },
+    {
+      "channel": "地方史志",
+      "title": "安徽省委党史研究院官网",
+      "people": [
+        "于侠"
+      ],
+      "source": "http://www.anhuids.gov.cn/",
+      "result": "公开首页读取成功，未取得金寨县志人物图版；数字党史馆入口为展馆线索，不将展馆或文字文章当作书页原照。"
+    },
+    {
+      "channel": "历史报刊",
+      "title": "人民日报图文数据库公开首页",
+      "people": [
+        "于侠",
+        "王万金",
+        "李镜如",
+        "国林之",
+        "曹孟朴"
+      ],
+      "source": "https://data.people.com.cn/rmrb",
+      "result": "公开首页读取成功并提示未登录无法浏览全部内容；未获取目标历史期次扫描图版，没有使用未授权账号或绕过全文限制。"
+    },
+    {
+      "channel": "历史照片刊载",
+      "title": "老年生活报2022年7月22日第5版·家风家史",
+      "people": [
+        "于侠"
+      ],
+      "source": "https://epaper.qingdaonews.com/lnshb/resfile/2022-07-22/A05/A05.pdf",
+      "pdfPages": 1,
+      "sha256": "190174c399df9192ac82d04f7e83b65302398b982f70279ae31c2f0df237dec5",
+      "result": "取得报社公开整版PDF并渲染查看。左上为1997年于侠、薛翔夫妻金婚照，右下为1973年全家合影；另一张单人军装照图注明确为李新在海南岛当兵时的照片。没有于侠单人头像，不从夫妻或全家照裁人。此处为再次核对已有报刊线索，不计为新发现照片。"
+    }
+  ],
+  "remainingPeople": [
+    {
+      "id": "p1295",
+      "name": "于侠",
+      "hometown": "安徽金寨",
+      "grantYear": 1964,
+      "researchResult": "公开《将帅名录》第二集电子版PDF第13页为纯文字；《老年生活报》2022-07-22第5版确认夫妻照及全家合影，另一张单人照图注为其子李新。没有单人原照可录入，继续占位。"
+    },
+    {
+      "id": "p1305",
+      "name": "王万金",
+      "hometown": "湖北沔阳",
+      "grantYear": 1964,
+      "researchResult": "公开《将帅名录》第二集电子版PDF第44页为纯文字；《洪湖县志》仅核到1992年版公开目录，全文收费；湖北数字方志馆要求读者登录，未取得书内图版，继续占位。"
+    },
+    {
+      "id": "p1426",
+      "name": "李镜如",
+      "hometown": "河北束鹿",
+      "grantYear": 1964,
+      "researchResult": "公开《将帅名录》第二集电子版PDF第492页为纯文字；《辛集市志》1996年版公开目录有人物简介条目，未取得对应图版；河北方志旧官方入口403后停止，继续占位。"
+    },
+    {
+      "id": "p1511",
+      "name": "国林之",
+      "hometown": "河北武邑",
+      "grantYear": 1964,
+      "researchResult": "公开《将帅名录》第三集电子版PDF第205页为纯文字；现代《武邑县志》1998年版只取得公开目录，未取得人物图版。此前合影不另裁人，继续占位。"
+    },
+    {
+      "id": "p1572",
+      "name": "曹孟朴",
+      "hometown": "黑龙江宁安",
+      "grantYear": 1964,
+      "researchResult": "公开《将帅名录》第三集电子版PDF第483页为纯文字；黑龙江史志网当前公开数字方志目录未取得现代《宁安县志》或对应人物图版；民国同名县志不作为目标，继续占位。"
+    }
+  ],
+  "constraints": [
+    "未取得新的可靠单人原照，五人继续沿用现有占位；没有用文字页、绘画、纪念牌或合影替换头像。",
+    "人物原名与别名仅用于检索，没有据新材料改变生平或争议字段。",
+    "仅在正常浏览器查看湖北省图书馆登录门槛，未登录、未购买资料、未联系他人；没有新增应用页面或真机验收。",
+    "此前拒绝或限流的美篇、Commons、PICRYL及其他已记录来源未重试；本轮河北地方志入口403后停止。"
+  ],
+  "validation": {
+    "commands": [
+      {
+        "command": "npm run data:verify",
+        "result": "passed"
+      },
+      {
+        "command": "npm run validate:data",
+        "result": "passed"
+      },
+      {
+        "command": "npm run test:catalog",
+        "result": "passed"
+      }
+    ],
+    "fullCheckRunThisRound": false,
+    "reason": "只补充研究记录，没有新增照片、修改应用代码或候选审核规则；最近一次1609张完整H5检查见portrait-final11-2026-11-17.json。",
+    "catalogRegressionTests": 12,
+    "unchangedProductionAndReviewFilesVerified": 1612
+  }
+}

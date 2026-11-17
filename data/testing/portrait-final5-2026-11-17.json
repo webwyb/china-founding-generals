@@ -1,0 +1,200 @@
+{
+  "date": "2026-11-17",
+  "scope": "剩余5位再次换公开来源检索，重点追查于侠照片的独立刊载；研究与可用头像分开记录。",
+  "beforePortraits": 1609,
+  "afterPortraits": 1609,
+  "addedPortraits": 0,
+  "beforeMissing": 5,
+  "remainingPlaceholders": 5,
+  "generatedCatalogByteIdentical": true,
+  "baselineCatalogSha256": "5d4ca3095eceff5680533c800809b6b071f734437d9ece34909dea0464740330",
+  "productionPortraitFilesChanged": false,
+  "historicalFieldsUnchanged": true,
+  "pendingFieldsUnchanged": true,
+  "sourceChecks": [
+    {
+      "people": [
+        "于侠"
+      ],
+      "source": "https://tczx.luan.gov.cn/ztzl/jfjs/5345226.html",
+      "result": "正文身份信息相符，HTML只有站点功能图，无人物配图。"
+    },
+    {
+      "people": [
+        "于侠"
+      ],
+      "source": "https://cicnaw.cn/newsinfo/1007867.html",
+      "result": "正常浏览器展开公开文章并检查图片及邻接图注，相关活动照为其子李新等人与母亲相片，不是于侠单人照。"
+    },
+    {
+      "people": [
+        "于侠"
+      ],
+      "source": "https://www.zgwhcbs.com/NewsDetail/4072087.html",
+      "result": "为潜艇学院恢复后六任校长回忆录序言，正文所述起于1973年；未取得于侠对应单人配图。"
+    },
+    {
+      "people": [
+        "于侠"
+      ],
+      "source": "https://inf.news/en/history/3538f3c86ab0c51217b5314fca9c7edb.html",
+      "result": "新人物专题入口请求返回403，停止访问；未尝试其他路径或代理。"
+    },
+    {
+      "people": [
+        "于侠"
+      ],
+      "source": "https://www.5hmb.com/gzh/qzyzj/2022-08-11_%E4%BB%8E%E7%99%BB%E5%B7%9E%E8%B7%AF%E5%88%B0%E9%9D%92%E5%8F%B0%E5%B1%B1%20%20----%20%E5%BA%86%E7%A5%9D%E6%BD%9C%E8%89%87%E5%AD%A6%E9%99%A2%E6%88%90%E7%AB%8B69%E5%91%A8%E5%B9%B4.html",
+      "result": "新潜艇学院纪念文章的TLS证书过期，网页阅读工具亦502；未关闭TLS验证。"
+    },
+    {
+      "people": [
+        "于侠"
+      ],
+      "source": "https://jjwhw.30edu.com.cn/Article/d821c65d-4378-44a6-9c4b-37391bb81caf.shtml",
+      "result": "新独立公开配图已下载并查看，为树木旁的于侠绘画肖像牌及环境照片，未作头像，也未另行裁切。",
+      "downloadUrl": "https://cdn-portal-img.30edu.com.cn/artImg/8a2a2d05-8b5f-431c-98c3-e585b66de18d/97e6bfdc-57b9-4b41-8bbf-383b6b0cfc8e16.jpg"
+    },
+    {
+      "people": [
+        "于侠"
+      ],
+      "source": "https://jjwhw.30edu.com.cn/article/dce6dfab-6c3f-499c-bb08-841dd25607d9.shtml",
+      "result": "将帅后代纪念活动入口，相关图注为于侠之子李新，不据此将当代人物照当作父亲。"
+    },
+    {
+      "people": [
+        "王万金"
+      ],
+      "source": "https://people.isgoodgood.com/hubeiren/wangwanjin.html",
+      "result": "沿洪湖名录实际链接读取，身份为1911年洪湖籍少将，页面图片只有站点标志，无人物头像。"
+    },
+    {
+      "people": [
+        "李镜如"
+      ],
+      "source": "https://m1.rw.ttdm.cn/history/6/lijingru.html",
+      "result": "新地方人物页当前只返回加载提示，没有取得原图。"
+    },
+    {
+      "people": [
+        "李镜如"
+      ],
+      "source": "https://shizhiku.com/p/detail/wp22b455d085/",
+      "result": "公开目录列有李镜如，全文为收费资料；未购买、未访问收费正文或声称已检查书内照片。"
+    },
+    {
+      "people": [
+        "李镜如"
+      ],
+      "source": "https://35jituan.30edu.com.cn/article/ca59eb1a-a937-4725-91f0-f472c904e67f.shtml",
+      "result": "新页面对应图注明确为李镜如肖像瓷板画，未作为历史照片采用。"
+    },
+    {
+      "people": [
+        "曹孟朴"
+      ],
+      "source": "https://www.jendow.com.tw/wiki/%E6%9B%B9%E5%AD%9F%E6%9C%B4",
+      "result": "新百科入口能够检索到生平，但本机连接失败、网页阅读工具亦未取得页面，无法核实原图。"
+    },
+    {
+      "people": [
+        "于侠",
+        "王万金",
+        "李镜如",
+        "国林之",
+        "曹孟朴"
+      ],
+      "source": "https://www.laoziliao.net/cnmr/index",
+      "result": "网页阅读工具在完整公开5800余人索引中逐名查找，五人均无匹配条目；这只代表该索引未检出，不代表历史上没有照片。"
+    }
+  ],
+  "rejectedArtwork": [
+    {
+      "id": "p1295",
+      "name": "于侠",
+      "source": "https://35jituan.30edu.com.cn/Article/176d6a5a-ddc1-457d-b3e2-5d73f441d734.shtml",
+      "downloadUrl": "https://cdn-portal-img.30edu.com.cn/wxImg/8a2a2d05-8b5f-431c-98c3-e585b66de18d/2f68b4f3-fec8-4c94-a2cd-81766cae2fe113.jpg",
+      "decision": "rejected-artwork",
+      "reason": "具名陶瓷肖像绘画作品；不是可核实的历史原照片。已查看全幅原图，不据绘画反推或重建照片，不用于补缺。",
+      "width": 750,
+      "height": 1003,
+      "sha256": "0731cf688047516e69b3d951215567e5a575c589846dd1fa5e3408d353429313"
+    },
+    {
+      "id": "p1305",
+      "name": "王万金",
+      "source": "https://35jituan.30edu.com.cn/Article/176d6a5a-ddc1-457d-b3e2-5d73f441d734.shtml",
+      "downloadUrl": "https://cdn-portal-img.30edu.com.cn/wxImg/8a2a2d05-8b5f-431c-98c3-e585b66de18d/2f68b4f3-fec8-4c94-a2cd-81766cae2fe132.jpg",
+      "decision": "rejected-artwork",
+      "reason": "具名陶瓷肖像绘画作品；不是可核实的历史原照片。已查看全幅原图，不据绘画反推或重建照片，不用于补缺。",
+      "width": 592,
+      "height": 810,
+      "sha256": "bec47d5b6379b8eefb774e09caae0c49d411b77f57eef8b15e448eca25c31d52"
+    }
+  ],
+  "remainingPeople": [
+    {
+      "id": "p1295",
+      "name": "于侠",
+      "hometown": "安徽金寨",
+      "grantYear": 1964,
+      "researchResult": "新独立原照仍未取得；新增政府家风页只有文字，家属活动照片为李新等人；新树木纪念图为绘画肖像牌，瓷板图亦为绘画。新人物专题403，已停止。原美篇403图链未重试、未去水印或改域名。"
+    },
+    {
+      "id": "p1305",
+      "name": "王万金",
+      "hometown": "湖北沔阳",
+      "grantYear": 1964,
+      "researchResult": "新洪湖地方人物页只有文字和站点标志；实际取得的具名肖像为瓷板绘画，已查看并明确排除。"
+    },
+    {
+      "id": "p1426",
+      "name": "李镜如",
+      "hometown": "河北束鹿",
+      "grantYear": 1964,
+      "researchResult": "地方人物页未取得原图；新瓷板展览入口为绘画。辛集市志公开目录有其姓名，收费正文未获取，不能判断书内是否有照片。"
+    },
+    {
+      "id": "p1511",
+      "name": "国林之",
+      "hometown": "河北武邑",
+      "grantYear": 1964,
+      "researchResult": "公开人物图像索引未检出；新检索未取得具名可靠单人历史照。此前明确为合影的回忆录配图继续不裁人。"
+    },
+    {
+      "id": "p1572",
+      "name": "曹孟朴",
+      "hometown": "黑龙江宁安",
+      "grantYear": 1964,
+      "researchResult": "新增百科资料入口未取得可核查图像；公开人物图像索引未检出。先前无具名图注的游客照继续排除。"
+    }
+  ],
+  "constraints": [
+    "此前美篇图链403、Commons限流及PICRYL拒绝均未重试；新inf.news返回403后停止。",
+    "没有去水印、改域名、代理、关闭TLS验证、购买资料、联系他人或从绘画重建照片。",
+    "正常浏览器只用于展开公开家属活动文章；没有新增应用页面／真机验收。"
+  ],
+  "validation": {
+    "commands": [
+      {
+        "command": "npm run data:verify",
+        "result": "passed"
+      },
+      {
+        "command": "npm run validate:data",
+        "result": "passed"
+      },
+      {
+        "command": "npm run test:catalog",
+        "result": "passed"
+      }
+    ],
+    "fullCheckRunThisRound": false,
+    "reason": "本轮只更新研究记录及两条绘画排除元数据，没有新增照片或改动应用代码；完整H5检查的最近结果仍见portrait-final11-2026-11-17.json。",
+    "regressions": 12
+  },
+  "candidateImagesCumulative": 670,
+  "approvedCumulative": 437,
+  "rejectedCumulative": 19
+}

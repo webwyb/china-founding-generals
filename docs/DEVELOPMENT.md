@@ -2,7 +2,7 @@
 
 ## 克隆与安装
 
-仓库：`https://github.com/webwyb/china-founding-generals.git`。默认开发成果在 `main`。代码、1343张肖像、29张WebP、29张PNG原稿、网页字体、完整事实快照和校验脚本均随Git保留。仓库包含较多历史图片和设计原稿，首次克隆需下载数百MB素材；不使用Git LFS。
+仓库：`https://github.com/webwyb/china-founding-generals.git`。默认开发成果在 `main`。代码、1609张肖像、29张WebP、29张PNG原稿、网页字体、完整事实快照和校验脚本均随Git保留。仓库包含较多历史图片和设计原稿，首次克隆需下载数百MB素材；不使用Git LFS。
 
 需要Git、Node22与npm、Python3.10+（推荐3.11）。`.nvmrc` 记录Node主版本。原开发机使用Node22.9.0、npm10.8.3；以 `npm ci` 安装锁定依赖，不要用不同依赖随意覆盖锁文件。
 
@@ -76,4 +76,8 @@ node scripts/python.mjs scripts/build_design_font.py
 
 原机器曾遇到macOS受限环境中的系统配置／本地服务权限问题；这是执行环境限制，不要为绕过权限而修改应用逻辑。真实浏览器访问需遵守用户与工具的当前授权。
 
+
 人物传记内容维护见 [BIOGRAPHIES.md](BIOGRAPHIES.md)。正常 `npm run check` 已包含 `npm run test:biographies` 的15项回归，不需要下载原网页；研究刷新和字体重制是可选维护步骤，不是换机运行的前置条件。
+
+
+2026-11-17完整素材交付包含此前另266张已审核肖像，累计1609张照片。原件、逐图来源／许可说明、采用及排除记录、研究和验收报告一起保留；另5人仍有明确占位。`21f9df7` 的1343张记录为上一轮独立提交边界，恢复本轮后的main即可取得全部现有代码与素材。最新Git副本恢复验证见 `../data/testing/portrait-completion-2026-11-17.json`。

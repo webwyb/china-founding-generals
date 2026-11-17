@@ -80,20 +80,20 @@
     "file": ".cache/design-review/p0272-portrait.png"
   },
   {
-    "id": "p0272",
-    "name": "马尔果夫·伊斯哈科夫",
-    "province": "新疆",
+    "id": "p1295",
+    "name": "于侠",
+    "province": "安徽",
     "theme": "landscape",
     "labels": 12,
-    "file": ".cache/design-review/p0272-landscape.png"
+    "file": ".cache/design-review/p1295-landscape.png"
   },
   {
-    "id": "p0272",
-    "name": "马尔果夫·伊斯哈科夫",
-    "province": "新疆",
+    "id": "p1295",
+    "name": "于侠",
+    "province": "安徽",
     "theme": "portrait",
     "labels": 11,
-    "file": ".cache/design-review/p0272-portrait.png"
+    "file": ".cache/design-review/p1295-portrait.png"
   },
   {
     "id": "p0262",

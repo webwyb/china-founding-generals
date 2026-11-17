@@ -1,12 +1,12 @@
 {
-  "portraits": 1343,
+  "portraits": 1609,
   "themes": 2,
-  "portraitCompositions": 2686,
+  "portraitCompositions": 3218,
   "extremeRatioCompositions": 6,
-  "compositions": 2692,
+  "compositions": 3224,
   "clippingErrors": 0,
   "distortionErrors": 0,
-  "originalsWithShortSideBelow200": 53,
+  "originalsWithShortSideBelow200": 66,
   "lowResolutionOriginals": [
     {
       "id": "p0022",
@@ -371,6 +371,97 @@
       "width": 195,
       "height": 262,
       "source": "https://commons.wikimedia.org/wiki/File:Fangzhengping.jpg"
+    },
+    {
+      "id": "p1491",
+      "name": "张耀祠",
+      "width": 148,
+      "height": 200,
+      "source": "https://crt.com.cn/news2007/news/HStop/1169169253JCH7E571HC5G818HK7J.html"
+    },
+    {
+      "id": "p0287",
+      "name": "王平水",
+      "width": 160,
+      "height": 200,
+      "source": "https://www.xinzheng100.com/xuexiyuandishow-84-4990-1.html"
+    },
+    {
+      "id": "p0664",
+      "name": "张驾伍",
+      "width": 141,
+      "height": 183,
+      "source": "https://www.xinzheng100.com/xuexiyuandishow-84-4903-1.html"
+    },
+    {
+      "id": "p0295",
+      "name": "王兴纲",
+      "width": 154,
+      "height": 220,
+      "source": "https://www.xinzheng100.com/xuexiyuandishow-84-4795-1.html"
+    },
+    {
+      "id": "p0372",
+      "name": "吉合",
+      "width": 167,
+      "height": 199,
+      "source": "https://www.xinzheng100.com/xuexiyuandishow-84-4767-1.html"
+    },
+    {
+      "id": "p1067",
+      "name": "王文",
+      "width": 150,
+      "height": 207,
+      "source": "https://bkso.baidu.com/item/%E7%8E%8B%E6%96%87/6596"
+    },
+    {
+      "id": "p1091",
+      "name": "卢文新",
+      "width": 110,
+      "height": 140,
+      "source": "https://bkso.baidu.com/item/%E5%8D%A2%E6%96%87%E6%96%B0/3390078"
+    },
+    {
+      "id": "p1139",
+      "name": "李国良",
+      "width": 150,
+      "height": 220,
+      "source": "https://bkso.baidu.com/item/%E6%9D%8E%E5%9B%BD%E8%89%AF/9042"
+    },
+    {
+      "id": "p1163",
+      "name": "吴振挺",
+      "width": 158,
+      "height": 163,
+      "source": "https://bkso.baidu.com/item/%E5%90%B4%E6%8C%AF%E6%8C%BA/2373612"
+    },
+    {
+      "id": "p1349",
+      "name": "毕庆堂",
+      "width": 152,
+      "height": 215,
+      "source": "https://bkso.baidu.com/item/%E6%AF%95%E5%BA%86%E5%A0%82/3487969"
+    },
+    {
+      "id": "p1374",
+      "name": "刘世湘",
+      "width": 167,
+      "height": 220,
+      "source": "https://bkso.baidu.com/item/%E5%88%98%E4%B8%96%E6%B9%98/5678069"
+    },
+    {
+      "id": "p1419",
+      "name": "李忠信",
+      "width": 137,
+      "height": 200,
+      "source": "https://bkso.baidu.com/item/%E6%9D%8E%E5%BF%A0%E4%BF%A1/77035"
+    },
+    {
+      "id": "p1535",
+      "name": "钟池",
+      "width": 144,
+      "height": 200,
+      "source": "https://bkso.baidu.com/item/%E9%92%9F%E6%B1%A0/3552884"
     },
     {
       "id": "lizhen",

@@ -1,0 +1,236 @@
+{
+  "date": "2026-11-17",
+  "scope": "对上一轮剩余11人换渠道逐人复查；采用6张可确认单人原图，剩余5人保留占位。",
+  "beforePortraits": 1603,
+  "beforeMissing": 11,
+  "addedPortraits": 6,
+  "afterPortraits": 1609,
+  "remainingPlaceholders": 5,
+  "batch": "2026-11-17-final11",
+  "catalogueFieldsChanged": [
+    "imageSource",
+    "missingFields",
+    "portraitFile",
+    "portraitVersion"
+  ],
+  "historicalFieldsUnchanged": true,
+  "pendingFieldsUnchanged": true,
+  "biographyChanges": [],
+  "newOriginalsDecoded": 6,
+  "newOriginalsHashMatched": 6,
+  "sourceReview": "data/catalog/portrait-supplements.json",
+  "method": "Named source pages and image captions cross-checked against existing catalogue identities; original photos visually reviewed. Complete source frames and watermarks retained, no AI repair or new cropping. No biography updates. Macau commemorative article checked in normal browser; no local application browser/device test performed.",
+  "addedPeople": [
+    {
+      "id": "p0272",
+      "name": "马尔果夫·伊斯哈科夫",
+      "portraitFile": "p0272.jpg",
+      "source": "https://military-az.com/forum/viewtopic.php?p=155402",
+      "downloadUrl": "https://sun9-61.userapi.com/impg/9ig8F_nDUf2JDvHeuwzFPAfc3C2UfydxytyPSA/RSArfP9jlZE.jpg?size=447x640&quality=96&sign=1bb3176a48ca2b3d935205e7477cfa70&type=album",
+      "width": 447,
+      "height": 640,
+      "sha256": "29efdd587023264ca9a51840f4fbe6192cdc1103ce0a1e413ec184d754e02d83",
+      "license": "公开历史论坛具名配图，未标明开放许可；保留原图与具体帖子出处，不作公共领域声明"
+    },
+    {
+      "id": "p0390",
+      "name": "买买提伊敏·伊敏诺夫",
+      "portraitFile": "p0390.jpg",
+      "source": "https://baike.so.com/doc/6720066-6934113.html",
+      "downloadUrl": "https://so1.360tres.com/t01718d7ea646d193db.jpg",
+      "width": 268,
+      "height": 343,
+      "sha256": "6634ff0313300fcb4638de746447fd79915dce911b7a5d0813a054c103738c0d",
+      "license": "公开人物百科页面未标明开放许可；保留具体词条、原图及发布者文字水印，不作公共领域声明"
+    },
+    {
+      "id": "p0917",
+      "name": "曹德连",
+      "portraitFile": "p0917.jpg",
+      "source": "https://baike.so.com/doc/9294512-9629156.html",
+      "downloadUrl": "https://so1.360tres.com/t01f3233028196f6bd0.jpg",
+      "width": 519,
+      "height": 603,
+      "sha256": "a50208f48f1214888985ab241aaa1a01f7cb1ff77d4eb61feb2d1fed3c342aa2",
+      "license": "公开人物百科页面未标明开放许可；保留具体词条、原图及发布者文字水印，不作公共领域声明"
+    },
+    {
+      "id": "p0944",
+      "name": "凯墨·索南旺堆",
+      "portraitFile": "p0944.jpg",
+      "source": "https://baike.so.com/doc/7184087-7408197.html",
+      "downloadUrl": "https://so1.360tres.com/t019285b3e8f9e0a54a.jpg",
+      "width": 268,
+      "height": 341,
+      "sha256": "8e1ca32537c6d129cddda01a7ef2d8f9fd358dfa3bb2da09eadca7b80885e4bc",
+      "license": "公开人物百科页面未标明开放许可；保留具体词条、原图及发布者文字水印，不作公共领域声明"
+    },
+    {
+      "id": "p1101",
+      "name": "吕炳安",
+      "portraitFile": "p1101.jpg",
+      "source": "https://baike.so.com/doc/1524218-1611384.html",
+      "downloadUrl": "https://so1.360tres.com/t01018895aae7fb9f2b.jpg",
+      "width": 586,
+      "height": 857,
+      "sha256": "8f455f5bf304bec2b632d6da4088123a4455e30aa0ad473c23644e0a851b2e4a",
+      "license": "公开人物百科页面未标明开放许可；保留具体词条、原图及发布者文字水印，不作公共领域声明"
+    },
+    {
+      "id": "p1537",
+      "name": "段士楷",
+      "portraitFile": "p1537.jpg",
+      "source": "https://read01.com/zh-sg/0Mj7gB.html",
+      "downloadUrl": "https://i3.read01.com/jRsFKGaQV8sEjMo1fuGn/0.jpg",
+      "width": 226,
+      "height": 300,
+      "sha256": "634074de170783ffdd56d915f66e756770128088cc40855f1632e86229732af9",
+      "license": "转载人物专题及红潮网历史图片未标明开放许可；保留原文出处和图片水印，不作公共领域声明"
+    }
+  ],
+  "remainingPeople": [
+    {
+      "id": "p1295",
+      "name": "于侠",
+      "province": "安徽",
+      "hometown": "安徽金寨",
+      "grantYear": 1964,
+      "researchResult": "新找到海之影《老街老楼老海军》的具名于侠配图，但保持完整水印参数请求原图返回403，已停止；360词条无单人主图。夫妻、全家及其子李新的军装照均未采用。",
+      "researchSource": "https://freetalk.rocks/?p=13451"
+    },
+    {
+      "id": "p1305",
+      "name": "王万金",
+      "province": "湖北",
+      "hometown": "湖北沔阳",
+      "grantYear": 1964,
+      "researchResult": "新查洪湖地方人物名录及其他百科入口，名录页当前只返回加载页面，未取得具名可靠单人原图；明代同名人物和文旅IP不匹配。",
+      "researchSource": "https://m1.rw.ttdm.cn/celebrity/index732.html"
+    },
+    {
+      "id": "p1426",
+      "name": "李镜如",
+      "province": "河北",
+      "hometown": "河北束鹿",
+      "grantYear": 1964,
+      "researchResult": "新核对360人物词条及海军老前辈专题，没有对应单人原图；已有抗日战争纪念网页仍只有无图占位。",
+      "researchSource": "https://baike.so.com/doc/1312620-1387738.html"
+    },
+    {
+      "id": "p1511",
+      "name": "国林之",
+      "province": "河北",
+      "hometown": "河北武邑",
+      "grantYear": 1964,
+      "researchResult": "新核对360、地方名人页及老首长回忆录；前两者未见头像，回忆录标注国林之为前左，属于合影，不另行裁人。",
+      "researchSource": "https://kunlunce.com/llyj/fl11111111111/2021-07-27/153849.html"
+    },
+    {
+      "id": "p1572",
+      "name": "曹孟朴",
+      "province": "黑龙江",
+      "hometown": "黑龙江宁安",
+      "grantYear": 1964,
+      "researchResult": "新查360人物页和澳门法治报纪念文章；正常浏览器打开后确认为文字生平和通用题图，没有曹孟朴单人头像。此前无明确图注的天安门游客照继续排除。",
+      "researchSource": "https://www.macaulawnews.com/newsinfo/1080204.html"
+    }
+  ],
+  "unavailableCandidate": {
+    "id": "p1295",
+    "source": "https://freetalk.rocks/?p=13451",
+    "downloadUrl": "https://ss2.meipian.me/user/241330/c85c17d1cce00001bf421528da801460.jpg?meipian-watermark%2Fbucket%2Fivwen%2Fkey%2FdXNlci8yNDEzMzAvYzg1YzE3ZDFjY2UwMDAwMWJmNDIxNTI4ZGE4MDE0NjAuanBn%2Fnickname%2F5rW35LmL5b2x%2Fuserid%2FMjQxMzMw%2Fsign%2Ff51228751314b4e4ccdd7bd9d3c6f9b5%7CimageView2%2F2%2Fw%2F750%2Finterlace%2F0%2Fq%2F80=",
+    "httpStatus": 403,
+    "action": "stopped; retained original watermark parameters; no proxy, alternate image host or removal of watermark used"
+  },
+  "repeatApplyAddedPortraits": 0,
+  "newBuiltOriginalsDecoded": 6,
+  "newBuiltOriginalsHashMatched": 6,
+  "duplicateOriginalHashesIncludingFeatured": [],
+  "lowResolutionNewOriginals": 0,
+  "lowResolutionAllOriginals": 66,
+  "candidateImagesCumulative": 668,
+  "approvedCumulative": 437,
+  "automatedCheck": {
+    "command": "npm run check",
+    "result": "passed",
+    "portraits": 1609,
+    "portraitCompositionsIncludingExtremeRatios": 3224,
+    "cardTextCompositions": 3228,
+    "factualParserRegressions": 9,
+    "portraitSourceRegressions": 3,
+    "h5Build": "passed"
+  },
+  "research": [
+    {
+      "id": "p0272",
+      "name": "马尔果夫·伊斯哈科夫",
+      "result": "approved-and-applied",
+      "source": "https://military-az.com/forum/viewtopic.php?p=155402"
+    },
+    {
+      "id": "p0390",
+      "name": "买买提伊敏·伊敏诺夫",
+      "result": "approved-and-applied",
+      "source": "https://baike.so.com/doc/6720066-6934113.html"
+    },
+    {
+      "id": "p0917",
+      "name": "曹德连",
+      "result": "approved-and-applied",
+      "source": "https://baike.so.com/doc/9294512-9629156.html"
+    },
+    {
+      "id": "p0944",
+      "name": "凯墨·索南旺堆",
+      "result": "approved-and-applied",
+      "source": "https://baike.so.com/doc/7184087-7408197.html"
+    },
+    {
+      "id": "p1101",
+      "name": "吕炳安",
+      "result": "approved-and-applied",
+      "source": "https://baike.so.com/doc/1524218-1611384.html"
+    },
+    {
+      "id": "p1537",
+      "name": "段士楷",
+      "result": "approved-and-applied",
+      "source": "https://read01.com/zh-sg/0Mj7gB.html"
+    },
+    {
+      "id": "p1295",
+      "name": "于侠",
+      "result": "retained-placeholder",
+      "source": "https://freetalk.rocks/?p=13451",
+      "reason": "新找到海之影《老街老楼老海军》的具名于侠配图，但保持完整水印参数请求原图返回403，已停止；360词条无单人主图。夫妻、全家及其子李新的军装照均未采用。"
+    },
+    {
+      "id": "p1305",
+      "name": "王万金",
+      "result": "retained-placeholder",
+      "source": "https://m1.rw.ttdm.cn/celebrity/index732.html",
+      "reason": "新查洪湖地方人物名录及其他百科入口，名录页当前只返回加载页面，未取得具名可靠单人原图；明代同名人物和文旅IP不匹配。"
+    },
+    {
+      "id": "p1426",
+      "name": "李镜如",
+      "result": "retained-placeholder",
+      "source": "https://baike.so.com/doc/1312620-1387738.html",
+      "reason": "新核对360人物词条及海军老前辈专题，没有对应单人原图；已有抗日战争纪念网页仍只有无图占位。"
+    },
+    {
+      "id": "p1511",
+      "name": "国林之",
+      "result": "retained-placeholder",
+      "source": "https://kunlunce.com/llyj/fl11111111111/2021-07-27/153849.html",
+      "reason": "新核对360、地方名人页及老首长回忆录；前两者未见头像，回忆录标注国林之为前左，属于合影，不另行裁人。"
+    },
+    {
+      "id": "p1572",
+      "name": "曹孟朴",
+      "result": "retained-placeholder",
+      "source": "https://www.macaulawnews.com/newsinfo/1080204.html",
+      "reason": "新查360人物页和澳门法治报纪念文章；正常浏览器打开后确认为文字生平和通用题图，没有曹孟朴单人头像。此前无明确图注的天安门游客照继续排除。"
+    }
+  ]
+}

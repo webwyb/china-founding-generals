@@ -1,0 +1,1471 @@
+{
+  "date": "2026-11-17",
+  "beforePortraits": 1343,
+  "addedPortraits": 260,
+  "afterPortraits": 1603,
+  "remainingPlaceholders": 11,
+  "firstSixApplied": [
+    "p0325",
+    "p1126",
+    "p1383",
+    "p1438",
+    "p1482",
+    "p1491"
+  ],
+  "catalogueFieldsChanged": [
+    "imageSource",
+    "missingFields",
+    "portraitFile",
+    "portraitVersion"
+  ],
+  "historicalFieldsUnchanged": true,
+  "pendingFieldsUnchanged": true,
+  "biographyChanges": [],
+  "newOriginalsDecoded": 260,
+  "newOriginalsHashMatched": 260,
+  "newOriginalBytes": 179266641,
+  "lowResolutionNewOriginals": 13,
+  "addedByRank": {
+    "少将": 260
+  },
+  "newByChannel": {
+    "新华社讣告": 2,
+    "地方融媒体资料": 1,
+    "地方新闻媒体专访": 1,
+    "广州日报稿／新华网发布": 1,
+    "中红网人物报道": 1,
+    "抗日战争纪念网 · 开国少将与抗战": 8,
+    "心正教育 · 开国将军人物资料": 8,
+    "地方档案馆 · 政务公开展厅": 11,
+    "人民日报讣告": 1,
+    "百度百科 · 已匹配人物图册": 224,
+    "民族魂 · 历史英烈": 1,
+    "凤凰历史 · 照片中国供图": 1
+  },
+  "candidateImagesCumulative": 661,
+  "reviewRecordsCumulative": 448,
+  "approvedCumulative": 431,
+  "rejectedCumulative": 17,
+  "method": "Compared all 1614 generated people against the pre-turn catalogue; only portrait fields and removal of portrait missing markers changed. Selected originals visually reviewed in contact sheets or individually. No AI repair, extra cropping or fact reconciliation. Public originals hash matched and decoded. This portrait batch has no browser or device test.",
+  "remainingPeople": [
+    {
+      "id": "p0272",
+      "name": "马尔果夫·伊斯哈科夫",
+      "province": "新疆",
+      "hometown": "新疆伊宁",
+      "grantYear": 1955,
+      "researchResult": "有旧Commons候选，此前限流未重试；凤凰页取得的是合影，作者文章的三张配图与四方位图注不对应，尚不能逐张确认。",
+      "researchSource": "https://wudongfeng.blog.caixin.com/archives/201430?originReferrer=caixinsearch_wap"
+    },
+    {
+      "id": "p0390",
+      "name": "买买提伊敏·伊敏诺夫",
+      "province": "新疆",
+      "hometown": "新疆阿图什",
+      "grantYear": 1955,
+      "researchResult": "有旧Commons候选，此前限流未重试；作者文章配图与四方位图注不对应，未仅按排列猜测对应照片。",
+      "researchSource": "https://wudongfeng.blog.caixin.com/archives/201430?originReferrer=caixinsearch_wap"
+    },
+    {
+      "id": "p0917",
+      "name": "曹德连",
+      "province": "江西",
+      "hometown": "江西南康",
+      "grantYear": 1955,
+      "researchResult": "找到的美术院校作品为当代素描；已匹配人物词条无可用单人历史原图。",
+      "researchSource": "https://ysxy.xisu.edu.cn/info/1007/2930.htm"
+    },
+    {
+      "id": "p0944",
+      "name": "凯墨·索南旺堆",
+      "province": "西藏",
+      "hometown": "西藏拉萨",
+      "grantYear": 1955,
+      "researchResult": "已取得代表团合影，图注标为左二；不从合影额外裁人。",
+      "researchSource": "https://bkso.baidu.com/item/凯墨·索南旺堆"
+    },
+    {
+      "id": "p1101",
+      "name": "吕炳安",
+      "province": "河北",
+      "hometown": "河北省深泽县营里村",
+      "grantYear": 1961,
+      "researchResult": "已取得人物介绍文字，已匹配词条未取得可用单人历史原图。",
+      "researchSource": "https://m1.rw.ttdm.cn/history/6/lvbingan.html"
+    },
+    {
+      "id": "p1295",
+      "name": "于侠",
+      "province": "安徽",
+      "hometown": "安徽金寨",
+      "grantYear": 1964,
+      "researchResult": "报纸家史有夫妻、全家军装照，另一单人军装图明确是其子李新；不误配或裁出夫妻照。",
+      "researchSource": "https://epaper.qingdaonews.com/lnshb/h5/html5/2022-07/22/content_18745_6488771.htm"
+    },
+    {
+      "id": "p1305",
+      "name": "王万金",
+      "province": "湖北",
+      "hometown": "湖北沔阳",
+      "grantYear": 1964,
+      "researchResult": "已匹配人物词条及其他文字入口，尚未取得身份与画面均可确认的单人原图。",
+      "researchSource": "https://bkso.baidu.com/item/王万金"
+    },
+    {
+      "id": "p1426",
+      "name": "李镜如",
+      "province": "河北",
+      "hometown": "河北束鹿",
+      "grantYear": 1964,
+      "researchResult": "抗日战争纪念网人物页仅有无图占位，其他入口尚未取得可确认单人原图。",
+      "researchSource": "https://www.krzzjn.com/show-3157-161395.html"
+    },
+    {
+      "id": "p1511",
+      "name": "国林之",
+      "province": "河北",
+      "hometown": "河北武邑",
+      "grantYear": 1964,
+      "researchResult": "已匹配人物词条及名录，未取得可确认单人原图；未以生卒存在异文的自媒体文字替代图像核对。",
+      "researchSource": "https://bkso.baidu.com/item/国林之/3732977"
+    },
+    {
+      "id": "p1537",
+      "name": "段士楷",
+      "province": "山西",
+      "hometown": "山西霍县",
+      "grantYear": 1964,
+      "researchResult": "有具名旧照片候选；Commons此前限流，本轮独立PICRYL目录返回403，已停止访问，未绕过。",
+      "researchSource": "https://picryl.com/topics/chinese%2Bgeneral/man"
+    },
+    {
+      "id": "p1572",
+      "name": "曹孟朴",
+      "province": "黑龙江",
+      "hometown": "黑龙江宁安",
+      "grantYear": 1964,
+      "researchResult": "人物介绍首图为天安门广场游客照，缺少具名图注且人像小，不能确认，已拒绝采用。",
+      "researchSource": "https://www.chinaspirit.net.cn/lsyl/1904.html"
+    }
+  ],
+  "sourceReview": "data/catalog/portrait-supplements.json",
+  "candidateMetadata": "data/catalog/portrait-candidates.json",
+  "repeatApplyAddedPortraits": 0,
+  "newBuiltOriginalsDecoded": 260,
+  "newBuiltOriginalsHashMatched": 260,
+  "lowResolutionAllOriginals": 66,
+  "automatedCheck": {
+    "command": "npm run check",
+    "result": "passed",
+    "portraits": 1603,
+    "portraitCompositionsIncludingExtremeRatios": 3212,
+    "cardTextCompositions": 3228,
+    "factualParserRegressions": 9,
+    "portraitSourceRegressions": 3,
+    "h5Build": "passed",
+    "execution": "macOS系统配置访问所需的沙箱外本地构建；普通沙箱构建触发Rust系统配置异常后中止。"
+  },
+  "addedPeople": [
+    {
+      "id": "p0277",
+      "name": "王力生",
+      "portraitFile": "p0277.jpg"
+    },
+    {
+      "id": "p0279",
+      "name": "王之平",
+      "portraitFile": "p0279.jpg"
+    },
+    {
+      "id": "p0287",
+      "name": "王平水",
+      "portraitFile": "p0287.png"
+    },
+    {
+      "id": "p0295",
+      "name": "王兴纲",
+      "portraitFile": "p0295.jpg"
+    },
+    {
+      "id": "p0325",
+      "name": "方槐",
+      "portraitFile": "p0325.jpg"
+    },
+    {
+      "id": "p0355",
+      "name": "帅荣",
+      "portraitFile": "p0355.jpg"
+    },
+    {
+      "id": "p0372",
+      "name": "吉合",
+      "portraitFile": "p0372.jpg"
+    },
+    {
+      "id": "p0380",
+      "name": "朱火华",
+      "portraitFile": "p0380.jpg"
+    },
+    {
+      "id": "p0408",
+      "name": "刘永生",
+      "portraitFile": "p0408.jpg"
+    },
+    {
+      "id": "p0425",
+      "name": "刘辉山",
+      "portraitFile": "p0425.jpg"
+    },
+    {
+      "id": "p0432",
+      "name": "刘鹤孔",
+      "portraitFile": "p0432.jpg"
+    },
+    {
+      "id": "p0439",
+      "name": "江腾蛟",
+      "portraitFile": "p0439.jpg"
+    },
+    {
+      "id": "p0443",
+      "name": "安东",
+      "portraitFile": "p0443.png"
+    },
+    {
+      "id": "p0444",
+      "name": "安志敏",
+      "portraitFile": "p0444.jpg"
+    },
+    {
+      "id": "p0450",
+      "name": "孙文采",
+      "portraitFile": "p0450.jpg"
+    },
+    {
+      "id": "p0453",
+      "name": "孙润华",
+      "portraitFile": "p0453.jpg"
+    },
+    {
+      "id": "p0492",
+      "name": "李书茂",
+      "portraitFile": "p0492.jpg"
+    },
+    {
+      "id": "p0502",
+      "name": "李呈瑞",
+      "portraitFile": "p0502.jpg"
+    },
+    {
+      "id": "p0511",
+      "name": "李桂林",
+      "portraitFile": "p0511.jpg"
+    },
+    {
+      "id": "p0556",
+      "name": "吴习智",
+      "portraitFile": "p0556.jpg"
+    },
+    {
+      "id": "p0565",
+      "name": "吴荣正",
+      "portraitFile": "p0565.png"
+    },
+    {
+      "id": "p0569",
+      "name": "吴融锋",
+      "portraitFile": "p0569.jpg"
+    },
+    {
+      "id": "p0605",
+      "name": "邹善芳",
+      "portraitFile": "p0605.jpg"
+    },
+    {
+      "id": "p0610",
+      "name": "汪易",
+      "portraitFile": "p0610.jpg"
+    },
+    {
+      "id": "p0622",
+      "name": "宋承志",
+      "portraitFile": "p0622.jpg"
+    },
+    {
+      "id": "p0640",
+      "name": "张书祥",
+      "portraitFile": "p0640.jpg"
+    },
+    {
+      "id": "p0664",
+      "name": "张驾伍",
+      "portraitFile": "p0664.jpg"
+    },
+    {
+      "id": "p0685",
+      "name": "陈浩",
+      "portraitFile": "p0685.png"
+    },
+    {
+      "id": "p0686",
+      "name": "陈熙",
+      "portraitFile": "p0686.jpg"
+    },
+    {
+      "id": "p0720",
+      "name": "林接标",
+      "portraitFile": "p0720.jpg"
+    },
+    {
+      "id": "p0736",
+      "name": "罗成德",
+      "portraitFile": "p0736.jpg"
+    },
+    {
+      "id": "p0748",
+      "name": "金忠藩",
+      "portraitFile": "p0748.jpg"
+    },
+    {
+      "id": "p0762",
+      "name": "郑三生",
+      "portraitFile": "p0762.jpg"
+    },
+    {
+      "id": "p0802",
+      "name": "侯世奎",
+      "portraitFile": "p0802.jpg"
+    },
+    {
+      "id": "p0810",
+      "name": "祖农·太也夫",
+      "portraitFile": "p0810.jpg"
+    },
+    {
+      "id": "p0826",
+      "name": "秦化龙",
+      "portraitFile": "p0826.jpg"
+    },
+    {
+      "id": "p0841",
+      "name": "倪南山",
+      "portraitFile": "p0841.jpg"
+    },
+    {
+      "id": "p0913",
+      "name": "曹达诺夫·扎义尔",
+      "portraitFile": "p0913.jpg"
+    },
+    {
+      "id": "p0945",
+      "name": "程世清",
+      "portraitFile": "p0945.jpg"
+    },
+    {
+      "id": "p1011",
+      "name": "廖述云",
+      "portraitFile": "p1011.jpg"
+    },
+    {
+      "id": "p1022",
+      "name": "谭右铭",
+      "portraitFile": "p1022.jpg"
+    },
+    {
+      "id": "p1025",
+      "name": "熊飞",
+      "portraitFile": "p1025.jpg"
+    },
+    {
+      "id": "p1038",
+      "name": "樊学文",
+      "portraitFile": "p1038.jpg"
+    },
+    {
+      "id": "p1042",
+      "name": "颜德明",
+      "portraitFile": "p1042.jpg"
+    },
+    {
+      "id": "p1052",
+      "name": "魏镇",
+      "portraitFile": "p1052.jpg"
+    },
+    {
+      "id": "p1055",
+      "name": "魏洪亮",
+      "portraitFile": "p1055.jpg"
+    },
+    {
+      "id": "p1060",
+      "name": "桑颇·才旺仁增",
+      "portraitFile": "p1060.jpg"
+    },
+    {
+      "id": "p1064",
+      "name": "丁本淳",
+      "portraitFile": "p1064.jpg"
+    },
+    {
+      "id": "p1066",
+      "name": "马冠三",
+      "portraitFile": "p1066.jpg"
+    },
+    {
+      "id": "p1067",
+      "name": "王文",
+      "portraitFile": "p1067.jpg"
+    },
+    {
+      "id": "p1079",
+      "name": "王黎生",
+      "portraitFile": "p1079.jpg"
+    },
+    {
+      "id": "p1089",
+      "name": "叶泰清",
+      "portraitFile": "p1089.jpg"
+    },
+    {
+      "id": "p1091",
+      "name": "卢文新",
+      "portraitFile": "p1091.jpg"
+    },
+    {
+      "id": "p1102",
+      "name": "吕黎平",
+      "portraitFile": "p1102.jpg"
+    },
+    {
+      "id": "p1103",
+      "name": "朱士焕",
+      "portraitFile": "p1103.jpg"
+    },
+    {
+      "id": "p1104",
+      "name": "朱春和",
+      "portraitFile": "p1104.jpg"
+    },
+    {
+      "id": "p1106",
+      "name": "任思忠",
+      "portraitFile": "p1106.jpg"
+    },
+    {
+      "id": "p1107",
+      "name": "邬兰亭",
+      "portraitFile": "p1107.jpg"
+    },
+    {
+      "id": "p1108",
+      "name": "刘克",
+      "portraitFile": "p1108.jpg"
+    },
+    {
+      "id": "p1114",
+      "name": "刘发秀",
+      "portraitFile": "p1114.jpg"
+    },
+    {
+      "id": "p1115",
+      "name": "刘国柱",
+      "portraitFile": "p1115.jpg"
+    },
+    {
+      "id": "p1120",
+      "name": "江峰",
+      "portraitFile": "p1120.jpg"
+    },
+    {
+      "id": "p1126",
+      "name": "孙干卿",
+      "portraitFile": "p1126.jpg"
+    },
+    {
+      "id": "p1134",
+      "name": "李长如",
+      "portraitFile": "p1134.jpg"
+    },
+    {
+      "id": "p1137",
+      "name": "李君彦",
+      "portraitFile": "p1137.jpg"
+    },
+    {
+      "id": "p1138",
+      "name": "李际泰",
+      "portraitFile": "p1138.jpg"
+    },
+    {
+      "id": "p1139",
+      "name": "李国良",
+      "portraitFile": "p1139.jpg"
+    },
+    {
+      "id": "p1144",
+      "name": "杨力",
+      "portraitFile": "p1144.jpg"
+    },
+    {
+      "id": "p1147",
+      "name": "杨世荣",
+      "portraitFile": "p1147.jpg"
+    },
+    {
+      "id": "p1161",
+      "name": "吴纯仁",
+      "portraitFile": "p1161.jpg"
+    },
+    {
+      "id": "p1162",
+      "name": "吴树声",
+      "portraitFile": "p1162.jpg"
+    },
+    {
+      "id": "p1163",
+      "name": "吴振挺",
+      "portraitFile": "p1163.jpg"
+    },
+    {
+      "id": "p1164",
+      "name": "何家产",
+      "portraitFile": "p1164.jpg"
+    },
+    {
+      "id": "p1166",
+      "name": "汪祖美",
+      "portraitFile": "p1166.jpg"
+    },
+    {
+      "id": "p1170",
+      "name": "张明",
+      "portraitFile": "p1170.jpg"
+    },
+    {
+      "id": "p1173",
+      "name": "张迺更",
+      "portraitFile": "p1173.jpg"
+    },
+    {
+      "id": "p1186",
+      "name": "陈彬",
+      "portraitFile": "p1186.jpg"
+    },
+    {
+      "id": "p1190",
+      "name": "林真",
+      "portraitFile": "p1190.jpg"
+    },
+    {
+      "id": "p1196",
+      "name": "周涌",
+      "portraitFile": "p1196.jpg"
+    },
+    {
+      "id": "p1205",
+      "name": "胡友之",
+      "portraitFile": "p1205.jpg"
+    },
+    {
+      "id": "p1206",
+      "name": "胡立声",
+      "portraitFile": "p1206.jpg"
+    },
+    {
+      "id": "p1211",
+      "name": "赵承丰",
+      "portraitFile": "p1211.jpg"
+    },
+    {
+      "id": "p1212",
+      "name": "赵炳伦",
+      "portraitFile": "p1212.jpg"
+    },
+    {
+      "id": "p1222",
+      "name": "袁彬",
+      "portraitFile": "p1222.jpg"
+    },
+    {
+      "id": "p1226",
+      "name": "徐介藩",
+      "portraitFile": "p1226.jpg"
+    },
+    {
+      "id": "p1230",
+      "name": "郭延林",
+      "portraitFile": "p1230.jpg"
+    },
+    {
+      "id": "p1235",
+      "name": "唐明",
+      "portraitFile": "p1235.jpg"
+    },
+    {
+      "id": "p1236",
+      "name": "梅盛伟",
+      "portraitFile": "p1236.jpg"
+    },
+    {
+      "id": "p1238",
+      "name": "黄经耀",
+      "portraitFile": "p1238.jpg"
+    },
+    {
+      "id": "p1256",
+      "name": "程登志",
+      "portraitFile": "p1256.jpg"
+    },
+    {
+      "id": "p1258",
+      "name": "曾凡有",
+      "portraitFile": "p1258.jpg"
+    },
+    {
+      "id": "p1259",
+      "name": "曾庆良",
+      "portraitFile": "p1259.jpg"
+    },
+    {
+      "id": "p1261",
+      "name": "谢正浩",
+      "portraitFile": "p1261.jpg"
+    },
+    {
+      "id": "p1267",
+      "name": "雷英夫",
+      "portraitFile": "p1267.jpg"
+    },
+    {
+      "id": "p1270",
+      "name": "路扬",
+      "portraitFile": "p1270.jpg"
+    },
+    {
+      "id": "p1274",
+      "name": "廖仲符",
+      "portraitFile": "p1274.png"
+    },
+    {
+      "id": "p1276",
+      "name": "颜伏",
+      "portraitFile": "p1276.jpg"
+    },
+    {
+      "id": "p1277",
+      "name": "薛克忠",
+      "portraitFile": "p1277.png"
+    },
+    {
+      "id": "p1281",
+      "name": "宋烈",
+      "portraitFile": "p1281.jpg"
+    },
+    {
+      "id": "p1283",
+      "name": "严家安",
+      "portraitFile": "p1283.jpg"
+    },
+    {
+      "id": "p1290",
+      "name": "张世盖",
+      "portraitFile": "p1290.jpg"
+    },
+    {
+      "id": "p1292",
+      "name": "王阑西",
+      "portraitFile": "p1292.jpg"
+    },
+    {
+      "id": "p1294",
+      "name": "丁钊",
+      "portraitFile": "p1294.jpg"
+    },
+    {
+      "id": "p1296",
+      "name": "于敬山",
+      "portraitFile": "p1296.jpg"
+    },
+    {
+      "id": "p1297",
+      "name": "马宁",
+      "portraitFile": "p1297.jpg"
+    },
+    {
+      "id": "p1298",
+      "name": "马杰",
+      "portraitFile": "p1298.jpg"
+    },
+    {
+      "id": "p1299",
+      "name": "马洪山",
+      "portraitFile": "p1299.jpg"
+    },
+    {
+      "id": "p1304",
+      "name": "王璞",
+      "portraitFile": "p1304.jpg"
+    },
+    {
+      "id": "p1306",
+      "name": "王子修",
+      "portraitFile": "p1306.jpg"
+    },
+    {
+      "id": "p1309",
+      "name": "王扶之",
+      "portraitFile": "p1309.jpg"
+    },
+    {
+      "id": "p1310",
+      "name": "王希克",
+      "portraitFile": "p1310.jpg"
+    },
+    {
+      "id": "p1311",
+      "name": "王良恩",
+      "portraitFile": "p1311.jpg"
+    },
+    {
+      "id": "p1313",
+      "name": "王香雄",
+      "portraitFile": "p1313.jpg"
+    },
+    {
+      "id": "p1315",
+      "name": "王海廷",
+      "portraitFile": "p1315.jpg"
+    },
+    {
+      "id": "p1318",
+      "name": "王淮湘",
+      "portraitFile": "p1318.jpg"
+    },
+    {
+      "id": "p1319",
+      "name": "王道全",
+      "portraitFile": "p1319.jpg"
+    },
+    {
+      "id": "p1320",
+      "name": "王毓淮",
+      "portraitFile": "p1320.jpg"
+    },
+    {
+      "id": "p1322",
+      "name": "韦统泰",
+      "portraitFile": "p1322.jpg"
+    },
+    {
+      "id": "p1325",
+      "name": "毛和发",
+      "portraitFile": "p1325.jpg"
+    },
+    {
+      "id": "p1326",
+      "name": "牛化东",
+      "portraitFile": "p1326.jpg"
+    },
+    {
+      "id": "p1327",
+      "name": "牛明智",
+      "portraitFile": "p1327.jpg"
+    },
+    {
+      "id": "p1328",
+      "name": "文击",
+      "portraitFile": "p1328.jpg"
+    },
+    {
+      "id": "p1329",
+      "name": "方铭",
+      "portraitFile": "p1329.jpg"
+    },
+    {
+      "id": "p1330",
+      "name": "方震",
+      "portraitFile": "p1330.jpg"
+    },
+    {
+      "id": "p1331",
+      "name": "方明胜",
+      "portraitFile": "p1331.jpg"
+    },
+    {
+      "id": "p1332",
+      "name": "方毅华",
+      "portraitFile": "p1332.jpg"
+    },
+    {
+      "id": "p1336",
+      "name": "石一宸",
+      "portraitFile": "p1336.jpg"
+    },
+    {
+      "id": "p1337",
+      "name": "石敬平",
+      "portraitFile": "p1337.jpg"
+    },
+    {
+      "id": "p1338",
+      "name": "叶松盛",
+      "portraitFile": "p1338.jpg"
+    },
+    {
+      "id": "p1340",
+      "name": "田维新",
+      "portraitFile": "p1340.jpg"
+    },
+    {
+      "id": "p1343",
+      "name": "丛蓉滋",
+      "portraitFile": "p1343.jpg"
+    },
+    {
+      "id": "p1346",
+      "name": "白崇友",
+      "portraitFile": "p1346.jpg"
+    },
+    {
+      "id": "p1347",
+      "name": "司中峰",
+      "portraitFile": "p1347.jpg"
+    },
+    {
+      "id": "p1348",
+      "name": "邢荣杰",
+      "portraitFile": "p1348.jpg"
+    },
+    {
+      "id": "p1349",
+      "name": "毕庆堂",
+      "portraitFile": "p1349.jpg"
+    },
+    {
+      "id": "p1351",
+      "name": "吕义山",
+      "portraitFile": "p1351.jpg"
+    },
+    {
+      "id": "p1352",
+      "name": "吕士英",
+      "portraitFile": "p1352.jpg"
+    },
+    {
+      "id": "p1353",
+      "name": "吕作松",
+      "portraitFile": "p1353.jpg"
+    },
+    {
+      "id": "p1354",
+      "name": "曲竟济",
+      "portraitFile": "p1354.jpg"
+    },
+    {
+      "id": "p1355",
+      "name": "朱玉学",
+      "portraitFile": "p1355.jpg"
+    },
+    {
+      "id": "p1356",
+      "name": "朱玉庭",
+      "portraitFile": "p1356.jpg"
+    },
+    {
+      "id": "p1358",
+      "name": "朱启祥",
+      "portraitFile": "p1358.jpg"
+    },
+    {
+      "id": "p1360",
+      "name": "朱家璧",
+      "portraitFile": "p1360.jpg"
+    },
+    {
+      "id": "p1364",
+      "name": "伍国仲",
+      "portraitFile": "p1364.jpg"
+    },
+    {
+      "id": "p1366",
+      "name": "伊文",
+      "portraitFile": "p1366.jpg"
+    },
+    {
+      "id": "p1371",
+      "name": "刘友光",
+      "portraitFile": "p1371.jpg"
+    },
+    {
+      "id": "p1373",
+      "name": "刘世洪",
+      "portraitFile": "p1373.jpg"
+    },
+    {
+      "id": "p1374",
+      "name": "刘世湘",
+      "portraitFile": "p1374.jpg"
+    },
+    {
+      "id": "p1376",
+      "name": "刘光裕",
+      "portraitFile": "p1376.jpg"
+    },
+    {
+      "id": "p1381",
+      "name": "刘春山",
+      "portraitFile": "p1381.jpg"
+    },
+    {
+      "id": "p1383",
+      "name": "刘善本",
+      "portraitFile": "p1383.jpg"
+    },
+    {
+      "id": "p1384",
+      "name": "刘瑞方",
+      "portraitFile": "p1384.jpg"
+    },
+    {
+      "id": "p1387",
+      "name": "江民风",
+      "portraitFile": "p1387.jpg"
+    },
+    {
+      "id": "p1388",
+      "name": "江含章",
+      "portraitFile": "p1388.jpg"
+    },
+    {
+      "id": "p1389",
+      "name": "江学彬",
+      "portraitFile": "p1389.jpg"
+    },
+    {
+      "id": "p1392",
+      "name": "阳自碧",
+      "portraitFile": "p1392.jpg"
+    },
+    {
+      "id": "p1395",
+      "name": "杜彪",
+      "portraitFile": "p1395.jpg"
+    },
+    {
+      "id": "p1399",
+      "name": "苏克之",
+      "portraitFile": "p1399.jpg"
+    },
+    {
+      "id": "p1401",
+      "name": "苏锦章",
+      "portraitFile": "p1401.jpg"
+    },
+    {
+      "id": "p1405",
+      "name": "李明",
+      "portraitFile": "p1405.jpg"
+    },
+    {
+      "id": "p1409",
+      "name": "李大磊",
+      "portraitFile": "p1409.jpg"
+    },
+    {
+      "id": "p1410",
+      "name": "李元明",
+      "portraitFile": "p1410.jpg"
+    },
+    {
+      "id": "p1411",
+      "name": "李文一",
+      "portraitFile": "p1411.jpg"
+    },
+    {
+      "id": "p1414",
+      "name": "李东野",
+      "portraitFile": "p1414.jpg"
+    },
+    {
+      "id": "p1415",
+      "name": "李光军",
+      "portraitFile": "p1415.jpg"
+    },
+    {
+      "id": "p1416",
+      "name": "李仲麟",
+      "portraitFile": "p1416.jpg"
+    },
+    {
+      "id": "p1417",
+      "name": "李如洪",
+      "portraitFile": "p1417.jpg"
+    },
+    {
+      "id": "p1418",
+      "name": "李克忠",
+      "portraitFile": "p1418.jpg"
+    },
+    {
+      "id": "p1419",
+      "name": "李忠信",
+      "portraitFile": "p1419.jpg"
+    },
+    {
+      "id": "p1421",
+      "name": "李宏茂",
+      "portraitFile": "p1421.jpg"
+    },
+    {
+      "id": "p1422",
+      "name": "李铁砧",
+      "portraitFile": "p1422.jpg"
+    },
+    {
+      "id": "p1424",
+      "name": "李道之",
+      "portraitFile": "p1424.jpg"
+    },
+    {
+      "id": "p1427",
+      "name": "杨弃",
+      "portraitFile": "p1427.jpg"
+    },
+    {
+      "id": "p1428",
+      "name": "杨恬",
+      "portraitFile": "p1428.jpg"
+    },
+    {
+      "id": "p1430",
+      "name": "杨广立",
+      "portraitFile": "p1430.jpg"
+    },
+    {
+      "id": "p1431",
+      "name": "杨介人",
+      "portraitFile": "p1431.jpg"
+    },
+    {
+      "id": "p1437",
+      "name": "杨家保",
+      "portraitFile": "p1437.jpg"
+    },
+    {
+      "id": "p1438",
+      "name": "杨斯德",
+      "portraitFile": "p1438.jpg"
+    },
+    {
+      "id": "p1441",
+      "name": "肖选进",
+      "portraitFile": "p1441.jpg"
+    },
+    {
+      "id": "p1442",
+      "name": "肖剑飞",
+      "portraitFile": "p1442.jpg"
+    },
+    {
+      "id": "p1443",
+      "name": "别祖后",
+      "portraitFile": "p1443.jpg"
+    },
+    {
+      "id": "p1445",
+      "name": "吴恺",
+      "portraitFile": "p1445.jpg"
+    },
+    {
+      "id": "p1446",
+      "name": "吴彪",
+      "portraitFile": "p1446.jpg"
+    },
+    {
+      "id": "p1449",
+      "name": "吴效闵",
+      "portraitFile": "p1449.jpg"
+    },
+    {
+      "id": "p1450",
+      "name": "何云峰",
+      "portraitFile": "p1450.jpg"
+    },
+    {
+      "id": "p1453",
+      "name": "余致泉",
+      "portraitFile": "p1453.jpg"
+    },
+    {
+      "id": "p1459",
+      "name": "沈鸿林",
+      "portraitFile": "p1459.png"
+    },
+    {
+      "id": "p1461",
+      "name": "张午",
+      "portraitFile": "p1461.jpg"
+    },
+    {
+      "id": "p1463",
+      "name": "张政",
+      "portraitFile": "p1463.jpg"
+    },
+    {
+      "id": "p1464",
+      "name": "张峰",
+      "portraitFile": "p1464.jpg"
+    },
+    {
+      "id": "p1466",
+      "name": "张子珍",
+      "portraitFile": "p1466.jpg"
+    },
+    {
+      "id": "p1473",
+      "name": "张西鼎",
+      "portraitFile": "p1473.jpg"
+    },
+    {
+      "id": "p1478",
+      "name": "张伯祥",
+      "portraitFile": "p1478.jpg"
+    },
+    {
+      "id": "p1480",
+      "name": "张贤良",
+      "portraitFile": "p1480.jpg"
+    },
+    {
+      "id": "p1482",
+      "name": "张实杰",
+      "portraitFile": "p1482.jpg"
+    },
+    {
+      "id": "p1483",
+      "name": "张荣森",
+      "portraitFile": "p1483.jpg"
+    },
+    {
+      "id": "p1484",
+      "name": "张柱国",
+      "portraitFile": "p1484.jpg"
+    },
+    {
+      "id": "p1485",
+      "name": "张晓冰",
+      "portraitFile": "p1485.jpg"
+    },
+    {
+      "id": "p1486",
+      "name": "张清化",
+      "portraitFile": "p1486.jpg"
+    },
+    {
+      "id": "p1490",
+      "name": "张德贵",
+      "portraitFile": "p1490.jpg"
+    },
+    {
+      "id": "p1491",
+      "name": "张耀祠",
+      "portraitFile": "p1491.jpg"
+    },
+    {
+      "id": "p1493",
+      "name": "陈兴畴",
+      "portraitFile": "p1493.jpg"
+    },
+    {
+      "id": "p1497",
+      "name": "陈绍昆",
+      "portraitFile": "p1497.jpg"
+    },
+    {
+      "id": "p1499",
+      "name": "林毅",
+      "portraitFile": "p1499.jpg"
+    },
+    {
+      "id": "p1502",
+      "name": "范朝福",
+      "portraitFile": "p1502.jpg"
+    },
+    {
+      "id": "p1504",
+      "name": "范富山",
+      "portraitFile": "p1504.jpg"
+    },
+    {
+      "id": "p1505",
+      "name": "郁文",
+      "portraitFile": "p1505.jpg"
+    },
+    {
+      "id": "p1507",
+      "name": "罗平",
+      "portraitFile": "p1507.jpg"
+    },
+    {
+      "id": "p1513",
+      "name": "周九银",
+      "portraitFile": "p1513.jpg"
+    },
+    {
+      "id": "p1514",
+      "name": "周吉一",
+      "portraitFile": "p1514.jpg"
+    },
+    {
+      "id": "p1516",
+      "name": "周志飞",
+      "portraitFile": "p1516.jpg"
+    },
+    {
+      "id": "p1518",
+      "name": "周建平",
+      "portraitFile": "p1518.jpg"
+    },
+    {
+      "id": "p1520",
+      "name": "郑国",
+      "portraitFile": "p1520.jpg"
+    },
+    {
+      "id": "p1521",
+      "name": "郑本炎",
+      "portraitFile": "p1521.jpg"
+    },
+    {
+      "id": "p1526",
+      "name": "胡尚礼",
+      "portraitFile": "p1526.jpg"
+    },
+    {
+      "id": "p1527",
+      "name": "郝盛旺",
+      "portraitFile": "p1527.jpg"
+    },
+    {
+      "id": "p1528",
+      "name": "南萍",
+      "portraitFile": "p1528.jpg"
+    },
+    {
+      "id": "p1529",
+      "name": "茹夫一",
+      "portraitFile": "p1529.jpg"
+    },
+    {
+      "id": "p1530",
+      "name": "赵峰",
+      "portraitFile": "p1530.jpg"
+    },
+    {
+      "id": "p1531",
+      "name": "赵北源",
+      "portraitFile": "p1531.jpg"
+    },
+    {
+      "id": "p1532",
+      "name": "赵华青",
+      "portraitFile": "p1532.jpg"
+    },
+    {
+      "id": "p1533",
+      "name": "赵复兴",
+      "portraitFile": "p1533.jpg"
+    },
+    {
+      "id": "p1535",
+      "name": "钟池",
+      "portraitFile": "p1535.jpg"
+    },
+    {
+      "id": "p1539",
+      "name": "姜林东",
+      "portraitFile": "p1539.jpg"
+    },
+    {
+      "id": "p1544",
+      "name": "袁意奋",
+      "portraitFile": "p1544.jpg"
+    },
+    {
+      "id": "p1545",
+      "name": "莫春和",
+      "portraitFile": "p1545.jpg"
+    },
+    {
+      "id": "p1546",
+      "name": "聂济峰",
+      "portraitFile": "p1546.jpg"
+    },
+    {
+      "id": "p1547",
+      "name": "栗彬成",
+      "portraitFile": "p1547.jpg"
+    },
+    {
+      "id": "p1548",
+      "name": "贾乾瑞",
+      "portraitFile": "p1548.jpg"
+    },
+    {
+      "id": "p1550",
+      "name": "夏伯勋",
+      "portraitFile": "p1550.png"
+    },
+    {
+      "id": "p1551",
+      "name": "柴书林",
+      "portraitFile": "p1551.jpg"
+    },
+    {
+      "id": "p1552",
+      "name": "柴启琨",
+      "portraitFile": "p1552.jpg"
+    },
+    {
+      "id": "p1553",
+      "name": "钱春华",
+      "portraitFile": "p1553.jpg"
+    },
+    {
+      "id": "p1556",
+      "name": "徐文礼",
+      "portraitFile": "p1556.jpg"
+    },
+    {
+      "id": "p1557",
+      "name": "徐立行",
+      "portraitFile": "p1557.jpg"
+    },
+    {
+      "id": "p1558",
+      "name": "徐明德",
+      "portraitFile": "p1558.jpg"
+    },
+    {
+      "id": "p1559",
+      "name": "殷承祯",
+      "portraitFile": "p1559.jpg"
+    },
+    {
+      "id": "p1561",
+      "name": "郭玉峰",
+      "portraitFile": "p1561.jpg"
+    },
+    {
+      "id": "p1563",
+      "name": "高文智",
+      "portraitFile": "p1563.jpg"
+    },
+    {
+      "id": "p1566",
+      "name": "涂学忠",
+      "portraitFile": "p1566.jpg"
+    },
+    {
+      "id": "p1571",
+      "name": "曹宇光",
+      "portraitFile": "p1571.jpg"
+    },
+    {
+      "id": "p1573",
+      "name": "龚兴业",
+      "portraitFile": "p1573.jpg"
+    },
+    {
+      "id": "p1574",
+      "name": "龚兴贵",
+      "portraitFile": "p1574.jpg"
+    },
+    {
+      "id": "p1576",
+      "name": "常勇",
+      "portraitFile": "p1576.jpg"
+    },
+    {
+      "id": "p1578",
+      "name": "常树人",
+      "portraitFile": "p1578.jpg"
+    },
+    {
+      "id": "p1579",
+      "name": "康烈功",
+      "portraitFile": "p1579.jpg"
+    },
+    {
+      "id": "p1580",
+      "name": "麻志皓",
+      "portraitFile": "p1580.jpg"
+    },
+    {
+      "id": "p1582",
+      "name": "梁中玉",
+      "portraitFile": "p1582.jpg"
+    },
+    {
+      "id": "p1585",
+      "name": "蒋润观",
+      "portraitFile": "p1585.jpg"
+    },
+    {
+      "id": "p1586",
+      "name": "程坤源",
+      "portraitFile": "p1586.jpg"
+    },
+    {
+      "id": "p1587",
+      "name": "智生元",
+      "portraitFile": "p1587.jpg"
+    },
+    {
+      "id": "p1588",
+      "name": "焦玉山",
+      "portraitFile": "p1588.jpg"
+    },
+    {
+      "id": "p1589",
+      "name": "曾传芳",
+      "portraitFile": "p1589.jpg"
+    },
+    {
+      "id": "p1590",
+      "name": "曾昭墟",
+      "portraitFile": "p1590.jpg"
+    },
+    {
+      "id": "p1591",
+      "name": "曾鉴修",
+      "portraitFile": "p1591.jpg"
+    },
+    {
+      "id": "p1597",
+      "name": "慕湘",
+      "portraitFile": "p1597.jpg"
+    },
+    {
+      "id": "p1605",
+      "name": "黎原",
+      "portraitFile": "p1605.jpg"
+    },
+    {
+      "id": "p1607",
+      "name": "颜文斌",
+      "portraitFile": "p1607.png"
+    },
+    {
+      "id": "p1608",
+      "name": "颜吉连",
+      "portraitFile": "p1608.jpg"
+    },
+    {
+      "id": "p1609",
+      "name": "颜青云",
+      "portraitFile": "p1609.jpg"
+    }
+  ],
+  "duplicateOriginalHashesIncludingFeatured": []
+}
