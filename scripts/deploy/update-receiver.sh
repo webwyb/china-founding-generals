@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# One-time maintenance on the existing Ubuntu server, before enabling xz releases.
+# Root maintenance before a release requires new archive formats or page roots.
 set -euo pipefail
 test "$(id -u)" -eq 0 || { echo 'Run this maintenance script as root.' >&2; exit 1; }
 ops_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)

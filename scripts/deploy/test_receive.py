@@ -35,7 +35,10 @@ class DeploymentTests(unittest.TestCase):
         for name, value in [('../escape', 'x'), ('/absolute', 'x'),
                             ('static/link', None), ('.ssh/authorized_keys', 'x'),
                             ('receive.py', 'x'), ('people/unsafe.js', 'x'),
-                            ('people/suyu/run.py', 'x'), ('robots.txt/nested', 'x')]:
+                            ('people/suyu/run.py', 'x'), ('robots.txt/nested', 'x'),
+                            ('topics/run.py', 'x'), ('topics/marshals/run.py', 'x'),
+                            ('topics/marshals/deep/index.html', 'x'),
+                            ('topics/bad_slug/index.html', 'x'), ('topics/marshals/index.html', None)]:
             with self.subTest(name=name), tempfile.TemporaryDirectory() as folder:
                 with self.assertRaises(ValueError):
                     receive.extract(archive({name: value}), Path(folder))
@@ -47,7 +50,10 @@ class DeploymentTests(unittest.TestCase):
                    'people/suyu/index.html': '<h1>粟裕</h1>',
                    'generals/index.html': '<h1>名录</h1>',
                    'about/index.html': '<h1>说明</h1>',
-                   'card/index.html': '<h1>纪念卡</h1>'}
+                   'card/index.html': '<h1>纪念卡</h1>',
+                   'topics/index.html': '<h1>人物专题</h1>',
+                   'topics/marshals/index.html': '<h1>十位元帅</h1>',
+                   'topics/shanghai/index.html': '<h1>上海</h1>'}
         for compression in ('gz', 'xz'):
             with self.subTest(compression=compression), tempfile.TemporaryDirectory() as folder:
                 receive.extract(archive(entries, compression), Path(folder))

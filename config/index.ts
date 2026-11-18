@@ -67,7 +67,8 @@ export default defineConfig<'vite'>({
         '/pages/person/index': catalogue.map(person => `/people/${encodeURIComponent(person.id)}/`),
         '/pages/card/index': '/card/',
         '/pages/directory/index': '/people/',
-        '/pages/about/index': '/about/'
+        '/pages/about/index': '/about/',
+        '/pages/topics/index': ['/topics/', '/topics/marshals/', '/topics/shanghai/']
       }
     },
     devServer: {

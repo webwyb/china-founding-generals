@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "title": "上海市文旅推广网 · 黄道婆墓",
+      "url": "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/tomb-of-the-zodiac-po-091397/",
+      "checkedAt": "2026-11-18",
+      "method": "公开网页实际查阅；以下仅保存支持本专题的事实摘要，不保存网页全文。"
+    },
+    {
+      "title": "上海市绿化和市容管理局 · 徐光启和光启公园",
+      "url": "https://lhsr.sh.gov.cn/ywdt/20210916/6c6f6000-84b1-4758-a55c-d12110d421b4.html",
+      "checkedAt": "2026-11-18",
+      "method": "公开网页实际查阅；以下仅保存支持本专题的事实摘要，不保存网页全文。"
+    },
+    {
+      "title": "上海交通大学 · 钱学森与母校上海交通大学纪事",
+      "url": "https://news.sjtu.edu.cn/zhxw/20180405/33575.html",
+      "checkedAt": "2026-11-18",
+      "method": "公开网页实际查阅；以下仅保存支持本专题的事实摘要，不保存网页全文。"
+    },
+    {
+      "title": "上海图书馆 · 蔡元培旧居",
+      "url": "https://data.library.sh.cn/entity/physicalculturalheritage/evql1wgeems4a4mn",
+      "checkedAt": "2026-11-18",
+      "method": "公开网页实际查阅；以下仅保存支持本专题的事实摘要，不保存网页全文。"
+    },
+    {
+      "title": "复旦大学上海红色文化资源网 · 鲁迅故居",
+      "url": "https://shhongse.fudan.edu.cn/info/1024/1581.htm",
+      "checkedAt": "2026-11-18",
+      "method": "公开网页实际查阅；以下仅保存支持本专题的事实摘要，不保存网页全文。"
+    },
+    {
+      "title": "上海图书馆 · 巴金故居",
+      "url": "https://data.library.sh.cn/entity/architecture/if3k5yb021u3c4vd",
+      "checkedAt": "2026-11-18",
+      "method": "公开网页实际查阅；以下仅保存支持本专题的事实摘要，不保存网页全文。"
+    },
+    {
+      "title": "复旦大学上海红色文化资源网 · 邹韬奋故居",
+      "url": "https://shhongse.fudan.edu.cn/info/1019/1459.htm",
+      "checkedAt": "2026-11-18",
+      "method": "公开网页实际查阅；以下仅保存支持本专题的事实摘要，不保存网页全文。"
+    },
+    {
+      "title": "上海市文旅推广网 · 山海工学团遗址",
+      "url": "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/the-site-of-the-shanhai-engineering-group-727026/",
+      "checkedAt": "2026-11-18",
+      "method": "公开网页实际查阅；以下仅保存支持本专题的事实摘要，不保存网页全文。"
+    },
+    {
+      "title": "上海宋庆龄故居纪念馆 · 故居简介",
+      "url": "https://www.shsoong-chingling.com/",
+      "checkedAt": "2026-11-18",
+      "method": "公开网页实际查阅；以下仅保存支持本专题的事实摘要，不保存网页全文。"
+    },
+    {
+      "title": "中国共产党新闻网 · 陈毅人物资料",
+      "url": "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html",
+      "checkedAt": "2026-11-18",
+      "method": "公开网页实际查阅；以下仅保存支持本专题的事实摘要，不保存网页全文。"
+    },
+    {
+      "title": "上海市孙中山宋庆龄文物管理委员会 · 故居探秘游览书",
+      "url": "https://sswgw.org.cn/wcm.files/upload/CMSsszxw/202001/202001211110028.pdf",
+      "checkedAt": "2026-11-18",
+      "method": "搜索摘要显示1948年分配住宅；未核对PDF整版，不作为入住日期定值依据。"
+    },
+    {
+      "title": "上海图书馆 · 宋庆龄故居",
+      "url": "https://data.library.sh.cn/entity/architecture/4eqww5yazhokuxt6",
+      "checkedAt": "2026-11-18",
+      "method": "公开机构网页正文记1948年春迁居，与故居官网1949年春有差异；入住日期保留待核实。"
+    }
+  ],
+  "notes": [
+    "引用来源不代表机构为本站背书；不复制其图片与原文。",
+    "上海条目段落中的阅读建议是编辑引导，不作为新增历史事实。",
+    "元帅导览复用biography-editorial.json中的十人生平编辑段落与节点；本轮通过公开网页重新打开全部十篇人民网来源。",
+    "宋庆龄入住时间的分歧保留pendingFields，不写入日期节点；两种表述不能直接等同于同一个事件。",
+    "宋庆龄入住年份分歧以已打开的上海图书馆条目与故居官网正文对照；仅分配住宅的年份不足以证明实际入住年份。"
+  ]
+}

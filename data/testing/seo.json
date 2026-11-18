@@ -2,8 +2,8 @@
   "status": "passed",
   "people": 1614,
   "uniquePersonTitles": 1614,
-  "staticHtmlPages": 1619,
-  "sitemapUrls": 1618,
+  "staticHtmlPages": 1622,
+  "sitemapUrls": 1621,
   "checks": [
     "HTML parsed without JavaScript; scripts excluded from visible text",
     "1614 versioned and inline profiles match complete source records",

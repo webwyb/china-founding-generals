@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "topics": 2,
+  "entries": 20,
+  "cataloguePeople": 1614,
+  "checks": [
+    "十位元帅集合与现有档案一致",
+    "逐段及关键节点保留出处",
+    "十位跨领域地方人物地点关系独立",
+    "林彪后期历史结论保留",
+    "宋庆龄入住时间冲突保留",
+    "阅读标记去重及非法输入清理",
+    "专题存储隔离与恢复",
+    "存储拒绝不写入及可恢复重置"
+  ],
+  "method": "Offline source validation and Taro storage adapter tests; not browser, device, historical certification or real reader evidence."
+}

@@ -1,0 +1,377 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-11-18",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/157.0.8103.79",
+    "revision": "@6dc9bc3bdaea5c35ed6d41fceab2f7a3a2227c4f",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "jsVersion": "15.7.112.43"
+  },
+  "method": "Isolated headless desktop Chrome through CDP, actual DOM/layout, DOM click handlers, application navigation, local storage and dispatched keyboard events. Not a visible-browser session, pointer/touch hit-testing, mobile device, WeChat, screen reader, production visit or real reader study.",
+  "notes": [
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/",
+      "width": 320,
+      "dimensions": {
+        "width": 320,
+        "body": 320,
+        "scroll": 320,
+        "main": [],
+        "h1": [
+          "他们的名字，我们记得。"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/topics/",
+      "width": 320,
+      "dimensions": {
+        "width": 320,
+        "body": 320,
+        "scroll": 320,
+        "main": [
+          {
+            "scroll": 280,
+            "client": 280
+          }
+        ],
+        "h1": [
+          "从一个名字，读到一段历史。"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/topics/marshals/",
+      "width": 320,
+      "dimensions": {
+        "width": 320,
+        "body": 320,
+        "scroll": 320,
+        "main": [
+          {
+            "scroll": 280,
+            "client": 280
+          }
+        ],
+        "h1": [
+          "十位元帅：从战争到建设"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/topics/shanghai/",
+      "width": 320,
+      "dimensions": {
+        "width": 320,
+        "body": 320,
+        "scroll": 320,
+        "main": [
+          {
+            "scroll": 280,
+            "client": 280
+          }
+        ],
+        "h1": [
+          "上海：人物与城市"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/",
+      "width": 390,
+      "dimensions": {
+        "width": 390,
+        "body": 390,
+        "scroll": 390,
+        "main": [],
+        "h1": [
+          "他们的名字，我们记得。"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/topics/",
+      "width": 390,
+      "dimensions": {
+        "width": 390,
+        "body": 390,
+        "scroll": 390,
+        "main": [
+          {
+            "scroll": 350,
+            "client": 350
+          }
+        ],
+        "h1": [
+          "从一个名字，读到一段历史。"
+        ]
+      }
+    },
+    {
+      "check": "390px人物目录展开和收起"
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/topics/marshals/",
+      "width": 390,
+      "dimensions": {
+        "width": 390,
+        "body": 390,
+        "scroll": 390,
+        "main": [
+          {
+            "scroll": 350,
+            "client": 350
+          }
+        ],
+        "h1": [
+          "十位元帅：从战争到建设"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/topics/shanghai/",
+      "width": 390,
+      "dimensions": {
+        "width": 390,
+        "body": 390,
+        "scroll": 390,
+        "main": [
+          {
+            "scroll": 350,
+            "client": 350
+          }
+        ],
+        "h1": [
+          "上海：人物与城市"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/",
+      "width": 768,
+      "dimensions": {
+        "width": 768,
+        "body": 768,
+        "scroll": 768,
+        "main": [],
+        "h1": [
+          "他们的名字，我们记得。"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/topics/",
+      "width": 768,
+      "dimensions": {
+        "width": 768,
+        "body": 768,
+        "scroll": 768,
+        "main": [
+          {
+            "scroll": 704,
+            "client": 704
+          }
+        ],
+        "h1": [
+          "从一个名字，读到一段历史。"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/topics/marshals/",
+      "width": 768,
+      "dimensions": {
+        "width": 768,
+        "body": 768,
+        "scroll": 768,
+        "main": [
+          {
+            "scroll": 704,
+            "client": 704
+          }
+        ],
+        "h1": [
+          "十位元帅：从战争到建设"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/topics/shanghai/",
+      "width": 768,
+      "dimensions": {
+        "width": 768,
+        "body": 768,
+        "scroll": 768,
+        "main": [
+          {
+            "scroll": 704,
+            "client": 704
+          }
+        ],
+        "h1": [
+          "上海：人物与城市"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/",
+      "width": 1440,
+      "dimensions": {
+        "width": 1440,
+        "body": 1440,
+        "scroll": 1440,
+        "main": [],
+        "h1": [
+          "他们的名字，我们记得。"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/topics/",
+      "width": 1440,
+      "dimensions": {
+        "width": 1440,
+        "body": 1440,
+        "scroll": 1440,
+        "main": [
+          {
+            "scroll": 1160,
+            "client": 1160
+          }
+        ],
+        "h1": [
+          "从一个名字，读到一段历史。"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/topics/marshals/",
+      "width": 1440,
+      "dimensions": {
+        "width": 1440,
+        "body": 1440,
+        "scroll": 1440,
+        "main": [
+          {
+            "scroll": 1160,
+            "client": 1160
+          }
+        ],
+        "h1": [
+          "十位元帅：从战争到建设"
+        ]
+      }
+    },
+    {
+      "check": "实际CSS视口与无横向溢出",
+      "path": "/topics/shanghai/",
+      "width": 1440,
+      "dimensions": {
+        "width": 1440,
+        "body": 1440,
+        "scroll": 1440,
+        "main": [
+          {
+            "scroll": 1160,
+            "client": 1160
+          }
+        ],
+        "h1": [
+          "上海：人物与城市"
+        ]
+      }
+    },
+    {
+      "check": "首页进入专题、十节完整、标记后刷新恢复、下一节标题焦点与完整人像",
+      "portraits": [
+        {
+          "fit": "contain",
+          "width": 100,
+          "height": 125
+        },
+        {
+          "fit": "contain",
+          "width": 100,
+          "height": 125
+        },
+        {
+          "fit": "contain",
+          "width": 100,
+          "height": 125
+        },
+        {
+          "fit": "contain",
+          "width": 100,
+          "height": 125
+        },
+        {
+          "fit": "contain",
+          "width": 100,
+          "height": 125
+        },
+        {
+          "fit": "contain",
+          "width": 100,
+          "height": 125
+        },
+        {
+          "fit": "contain",
+          "width": 100,
+          "height": 125
+        },
+        {
+          "fit": "contain",
+          "width": 100,
+          "height": 125
+        },
+        {
+          "fit": "contain",
+          "width": 100,
+          "height": 125
+        },
+        {
+          "fit": "contain",
+          "width": 100,
+          "height": 125
+        }
+      ]
+    },
+    {
+      "check": "完整档案往返、两专题切换、重置、上海10人及资料冲突提示、反馈邮件草稿内容"
+    },
+    {
+      "check": "目录链接键盘Enter与目标标题焦点"
+    },
+    {
+      "check": "390px实际存储写入失败时原位提示、标记不误报、恢复存储后可重试",
+      "failure": {
+        "message": "已读标记未能保存。请检查当前浏览器或设备是否允许本地存储，内容仍可继续阅读。",
+        "marked": "false",
+        "top": 487.828125,
+        "bottom": 572.828125,
+        "viewport": 900,
+        "total": 1
+      }
+    },
+    {
+      "check": "实际清除存储失败时目录原位提示、保留已读计数、恢复后可清除"
+    }
+  ],
+  "exceptions": []
+}

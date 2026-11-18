@@ -2,7 +2,7 @@ import { readFile, writeFile, mkdir, rm } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { createRequire } from 'node:module'
 import { root, loadSeoRenderer } from './seo_bundle.mjs'
-const { people, pageMetadata, serializeStructuredData, renderPage, PUBLIC_SITE_URL } = await loadSeoRenderer()
+const { people, pageMetadata, serializeStructuredData, renderPage, PUBLIC_SITE_URL, topics, topicPath } = await loadSeoRenderer()
 const output = resolve(root,'dist/h5')
 const { dataVersion } = createRequire(import.meta.url)('./data-version.cjs')
 const dataDirectory = resolve(output,'js/person-data',dataVersion(root))
@@ -21,13 +21,13 @@ function head(data) {
     Object.entries({card:'summary',title:data.title,description:data.description,image:data.image}).map(([key,value])=>meta('twitter:'+key,value)).join('')+
     `<script id="page-structured-data" type="application/ld+json">${serializeStructuredData(data.structuredData)}</script>`
 }
-for(const directory of ['people','generals','about','card']) await rm(resolve(output,directory),{recursive:true,force:true})
-const pages=[['index','/'],['explore','/generals/'],['directory','/people/'],['about','/about/'],['card','/card/'],...people.map(person=>['person',`/people/${person.id}/`,person])]
+for(const directory of ['people','generals','about','card','topics']) await rm(resolve(output,directory),{recursive:true,force:true})
+const pages=[['index','/'],['explore','/generals/'],['directory','/people/'],['about','/about/'],['card','/card/'],['topics','/topics/'],...topics.map(topic=>['topics',topicPath(topic.id),undefined,topic]),...people.map(person=>['person',`/people/${person.id}/`,person])]
 const sitemap=[]
 let totalBytes=0
-for(const [page,path,person] of pages){
+for(const [page,path,person,topic] of pages){
   globalThis.window={location:new URL(path,PUBLIC_SITE_URL)}
-  const metadata=pageMetadata(page,person)
+  const metadata=pageMetadata(page,person,topic)
   let html=template.replace(/<title>[\s\S]*?<\/title>/,'').replace(/<meta\s+name="description"[^>]*>/,'')
   html=html.replace('</head>',head(metadata)+'</head>').replace('<div id="app"></div>',`<div id="prerender">${renderPage(page)}</div><div id="app"></div>`)
   if(person)html=html.replace('<div id="app"></div>',`<script id="page-person-data" type="application/json">${serializeStructuredData(person)}</script><div id="app"></div>`)

@@ -1,8 +1,9 @@
 import { BRAND_NAME, BRAND_DESCRIPTION, BRAND_TAGLINE, BRAND_ICON } from '../services/brand'
+import { topicPath, type Topic } from '../data/topics'
 import type { Person } from '../data/people'
 import { PUBLIC_SITE_URL, personPath } from '../services/personLinks'
 
-export type SeoPage = 'index' | 'explore' | 'person' | 'card' | 'directory' | 'about' | 'missing'
+export type SeoPage = 'index' | 'explore' | 'person' | 'card' | 'directory' | 'about' | 'topics' | 'missing'
 export interface PageMetadata {
   title: string
   description: string
@@ -16,7 +17,7 @@ const website = { description: BRAND_DESCRIPTION, slogan: BRAND_TAGLINE, '@type'
 const absolute = (path: string) => new URL(path, PUBLIC_SITE_URL).href
 const concise = (text: string, length = 150) => text.replace(/\s+/g, ' ').trim().slice(0, length)
 
-export function pageMetadata(page: SeoPage, person?: Person): PageMetadata {
+export function pageMetadata(page: SeoPage, person?: Person, topic?: Topic): PageMetadata {
   const missing = page === 'missing' || (page === 'person' && !person)
   let title = '名在山河｜1614位开国将帅人物档案与生平故事'
   let description = '名在山河开国将帅数字纪念馆，收录1614位开国将帅，包括10位元帅、10位大将、57位上将、177位中将和1360位少将。按姓名、军衔与家乡查阅人物生平、人生足迹、历史肖像及资料出处。'
@@ -40,6 +41,11 @@ export function pageMetadata(page: SeoPage, person?: Person): PageMetadata {
     path = personPath(person.id)
     if (page === 'card') title = `${person.name}的纪念卡｜名在山河`
   }
+  if (page === 'topics') {
+    title = `${topic?.title || '人物专题：沿着人物与地方读历史'}｜名在山河`
+    description = topic?.intro || '从十位元帅到上海人物，选择一条有明确出处的阅读路线，沿着具体往事认识人物与地方。将帅名录与地方专题分别编选。'
+    path = topicPath(topic?.id)
+  }
   if (missing) {
     title = '未找到这份档案｜名在山河'
     description = '未找到这份人物档案，可返回将帅名录按姓名、军衔或家乡查找。'
@@ -53,7 +59,7 @@ export function pageMetadata(page: SeoPage, person?: Person): PageMetadata {
     ...(personImage ? { image: personImage } : {})
   } : undefined
   const pageEntity = {
-    '@type': page === 'directory' || page === 'explore' ? 'CollectionPage' : page === 'about' ? 'AboutPage' : 'WebPage',
+    '@type': page === 'directory' || page === 'explore' || page === 'topics' ? 'CollectionPage' : page === 'about' ? 'AboutPage' : 'WebPage',
     ...(canonical ? { '@id': `${canonical}#webpage`, url: canonical } : {}),
     name: title, description, inLanguage: 'zh-CN', isPartOf: { '@id': website['@id'] },
     ...(entity ? { mainEntity: entity, citation: person!.sources.map(source => ({ '@type': 'CreativeWork', name: source.title, url: source.url })) } : {})
