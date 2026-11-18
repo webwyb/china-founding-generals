@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-11-18",
+  "authorization": "用户已明确授权提交发布H5及接收规则更新；不上传微信小程序。",
+  "commit": "6cad7186400cdbfe7827174c315c86f58804c93c",
+  "branch": "codex/topics",
+  "repository": "https://github.com/webwyb/china-founding-generals",
+  "githubOwnershipVerified": {
+    "accountId": 23635787,
+    "account": "webwyb",
+    "repositoryOwnerId": 23635787,
+    "admin": true,
+    "push": true
+  },
+  "receiverUpdate": {
+    "status": "waiting_for_management_access",
+    "cua": "inventory and direct Tencent Cloud tab initialization timed out",
+    "administratorSsh": "authentication failed; no server mutations",
+    "script": "/private/tmp/shanhe-topics-receiver-update.sh",
+    "scriptSha256": "4184cc713afcd119595da3be03eaca9dc50f7c7bf3e0eab5654fd1771e21e4c9",
+    "expectedInstalledSha256": "e493dc9b25b5fe3f66fb5b00f6dfc33fb225c2963a4858ba16cc6edc47b6715c",
+    "recovery": "Explicit CUA reset briefly allowed tab inventory; every attempt to bind/open the cloud tab or browser still timed out. No server mutation."
+  },
+  "productionDeployment": "not_started",
+  "notes": [
+    "首次推送自动审批拒绝未验证仓库归属；GitHub连接器验证登录用户与owner同ID且具admin/push权限后，同一操作自动审批通过。",
+    "HTTPS缺少本机Git认证；使用项目既有SSH443认证推送。主机公钥从官方HTTPS meta取得，逐项对照官方文档指纹，严格主机校验保持开启。",
+    "没有读取或打印任何私钥／令牌，没有更改SSH公钥、服务器Nginx或证书。"
+  ],
+  "remoteVerification": {
+    "branch": "codex/topics",
+    "headSha": "6cad7186400cdbfe7827174c315c86f58804c93c",
+    "mainUnchanged": "88f9caef3d8e9744b2ab64d9d53384f9cff48f9f"
+  },
+  "workflow": {
+    "runId": 44208434306,
+    "url": "https://github.com/webwyb/china-founding-generals/actions/runs/44208434306",
+    "check": "success",
+    "deploymentRegression": "success",
+    "deploy": "skipped (feature branch, by design)"
+  }
+}
