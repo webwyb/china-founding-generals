@@ -12,9 +12,9 @@ import { pageHref } from '../services/personLinks'
 import { siteCompliance } from '../services/compliance'
 import { navigate, navigationPending, subscribeNavigation } from '../services/navigation'
 
-const logicalRoute = (route = '') => route.startsWith('/people/') ? 'pages/person/index' : route.replace(/^\//, '').replace(/^generals\/?$/, 'pages/explore/index').replace(/^card\/?$/, 'pages/card/index')
+const logicalRoute = (route = '') => route.startsWith('/people/') ? 'pages/person/index' : route.replace(/^\//, '').replace(/^generals\/?$/, 'pages/explore/index').replace(/^card\/?$/, 'pages/card/index').replace(/^topics(?:\/.*)?$/, 'pages/topics/index')
 
-export function openPage(page: 'index' | 'explore' | 'person' | 'card', query = '') {
+export function openPage(page: 'index' | 'explore' | 'person' | 'card' | 'topics', query = '') {
   if (process.env.TARO_ENV === 'h5' && typeof document !== 'undefined') return navigate(page, query)
   const url = process.env.TARO_ENV === 'h5' ? pageHref(page, query) : `/pages/${page}/index${query ? `?${query}` : ''}`
   const pages = Taro.getCurrentPages()
@@ -86,11 +86,12 @@ export default function Shell({ children, active = 'index', fixedActions = false
       <View className='header-inner'>
         <Button href='/' className='brand' onClick={home} aria-label='名在山河首页'>
           <BrandMark />
-          <View className='brand-wordmark'><Text className='brand-title serif'>{BRAND_NAME}</Text><Text className='brand-subtitle'>开国将帅纪念馆</Text></View>
+          <View className='brand-wordmark'><Text className='brand-title serif'>{BRAND_NAME}</Text><Text className='brand-subtitle'>人物 · 地方 · 历史</Text></View>
         </Button>
         <View className='header-nav'>
           <Button href='/' className={`nav-item ${active === 'index' ? 'active' : ''}`} aria-current={active === 'index' ? 'page' : undefined} onClick={home}>纪念馆</Button>
           <Button href='/generals/' className={`nav-item ${active === 'explore' ? 'active' : ''}`} aria-current={active === 'explore' ? 'page' : undefined} onClick={() => returnTo('explore')}>将帅名录</Button>
+          <Button href='/topics/' className={`nav-item ${active === 'topics' ? 'active' : ''}`} aria-current={active === 'topics' ? 'page' : undefined} onClick={() => openPage('topics')}>人物专题</Button>
           <Button href='/about/' className='nav-item nav-about' onClick={() => setAbout(true)}>关于纪念馆</Button>
         </View>
         <Text className='header-date'>{BRAND_TAGLINE}</Text>

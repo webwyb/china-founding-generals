@@ -1,0 +1,662 @@
+{
+  "id": "marshals",
+  "title": "十位元帅：从战争到建设",
+  "subtitle": "沿着十段人生，认识战场、院校、城市与国防建设。",
+  "kind": "开国将帅专题",
+  "readMinutes": 20,
+  "intro": "元帅只有十位。他们的人生并不相同，贡献也不只发生在战场。这条路线从队伍的保存与发展出发，读到军事教育、组织工作、城市治理与国防科研；同时保留需要完整记述的人生转折与历史结论。",
+  "scopeNote": "本专题是十位元帅的入门导览，不替代完整人物档案。阅读顺序用于组织内容，不表示排名或人物之间必然存在直接交往。",
+  "updatedAt": "2026-11-18",
+  "entries": [
+    {
+      "id": "zhude",
+      "archiveId": "zhude",
+      "name": "朱德",
+      "field": "开国元帅",
+      "focus": "保存队伍，走向会师",
+      "question": "从南昌到井冈山，这支队伍经历了怎样的转折？",
+      "paragraphs": [
+        {
+          "text": "南昌起义部队南下受挫后，朱德与陈毅等整顿、保存部队，转战湘粤赣边。1928年，他参与领导湘南起义，随后率部到井冈山与毛泽东领导的部队会师。这段经历的关键，不只是一次会合，更是在困难中保留下继续斗争的武装力量。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+          ]
+        },
+        {
+          "text": "红军时期，他参与指挥中央苏区反“围剿”，并随中央红军长征。抗日战争爆发后任八路军总指挥，参与部署向华北敌后发展、开展游击战争。不同阶段的职务变化，连接着部队由根据地作战向更广区域发展的过程。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+          ]
+        },
+        {
+          "text": "解放战争时期，朱德担任人民解放军总司令，参与重大战略决策。新中国成立后，他继续参与国防和军队建设，并长期从事国家领导工作。认识他的生平，需要同时看到前线指挥、军事统筹与和平时期建设三个方面。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1928年",
+          "text": "率部到井冈山，与毛泽东领导的部队会师。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+        },
+        {
+          "label": "1930年",
+          "text": "任中国工农红军总司令。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+        },
+        {
+          "label": "1937年",
+          "text": "任八路军总指挥。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+        }
+      ],
+      "connection": null,
+      "pendingFields": [],
+      "relatedEntries": [
+        {
+          "id": "p0006",
+          "label": "共同经历",
+          "reason": "南昌起义部队南下受挫后，朱德与陈毅等共同整顿、保存队伍。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html",
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p0002",
+      "archiveId": "p0002",
+      "name": "彭德怀",
+      "field": "开国元帅",
+      "focus": "从西北战场到抗美援朝",
+      "question": "一个人的军事经历与人生遭际，为什么都需要被记述？",
+      "paragraphs": [
+        {
+          "text": "1928年，彭德怀参与领导平江起义，此后长期在红军担任军事指挥。中央苏区反“围剿”和长征中的作战，使他的经历与红三军团紧密相连。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490066.html"
+          ]
+        },
+        {
+          "text": "抗日战争时期，他任八路军副总指挥，1940年参与组织指挥百团大战，以交通线破袭打击日军。解放战争时期转战西北，指挥青化砭、羊马河、蟠龙、沙家店等战役，在兵力和物资条件困难的情况下组织作战。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490066.html"
+          ]
+        },
+        {
+          "text": "1950年任中国人民志愿军司令员兼政治委员，率部入朝作战。回国后主持军队日常工作，推进正规化建设，后任国防部长。1959年庐山会议上受到错误批判，晚年遭受迫害，1978年得到平反。战争功业与人生遭际，都是理解他不可省略的部分。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490066.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1928年",
+          "text": "参与领导平江起义。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490066.html"
+        },
+        {
+          "label": "1940年",
+          "text": "参与组织指挥百团大战。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490066.html"
+        },
+        {
+          "label": "1947年",
+          "text": "在西北战场指挥青化砭、羊马河、蟠龙等战役。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490066.html"
+        },
+        {
+          "label": "1950年",
+          "text": "任中国人民志愿军司令员兼政治委员。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490066.html"
+        },
+        {
+          "label": "1954年",
+          "text": "任国防部长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490066.html"
+        }
+      ],
+      "connection": null,
+      "pendingFields": [],
+      "relatedEntries": [
+        {
+          "id": "p0005",
+          "label": "延伸主题：后方保障",
+          "reason": "读过彭德怀的西北作战经历，再读贺龙承担的后方与财经工作。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490066.html",
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p0003",
+      "archiveId": "p0003",
+      "name": "林彪",
+      "field": "开国元帅",
+      "focus": "军事经历与历史结论",
+      "question": "怎样在同一份生平中同时认识军事经历与后期历史结论？",
+      "paragraphs": [
+        {
+          "text": "林彪从黄埔军校毕业后参加北伐，后随部参加南昌起义，经湘南起义到达井冈山。红军时期曾任红一军团军团长，参加长征。抗战初期任八路军第一一五师师长，1937年与聂荣臻指挥所部进行平型关战斗；次年负伤，随后长期治疗。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+          ]
+        },
+        {
+          "text": "1945年赴东北，先后担任东北民主联军、东北野战军的主要领导职务。1948年与罗荣桓等指挥辽沈战役，随后率部入关，与华北部队共同进行平津战役。1949年任第四野战军司令员，率部向中南地区进军。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+          ]
+        },
+        {
+          "text": "新中国成立后曾任国务院副总理、国防部长等职。“文化大革命”中结成反革命集团，迫害党和国家领导人。1971年九一三事件中乘机外逃，飞机在蒙古坠毁。1981年最高人民法院特别法庭判决确认其为反革命集团案主犯。记述其军事经历，也须保留这一历史结论。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1932年",
+          "text": "任红一军团总指挥，后称军团长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+        },
+        {
+          "label": "1937年",
+          "text": "任八路军第一一五师师长，参与指挥平型关战斗。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+        },
+        {
+          "label": "1948年",
+          "text": "与罗荣桓等指挥辽沈战役，随后参加平津战役。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+        },
+        {
+          "label": "1949年",
+          "text": "任第四野战军司令员。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+        },
+        {
+          "label": "1959年",
+          "text": "兼任国防部长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+        },
+        {
+          "label": "1971年",
+          "text": "九一三事件中乘机外逃，在蒙古机毁人亡。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+        }
+      ],
+      "connection": null,
+      "pendingFields": [],
+      "relatedEntries": [
+        {
+          "id": "p0007",
+          "label": "共同战役",
+          "reason": "两人的经历都涉及辽沈战役和平津战役，也分别承担军事指挥与政治工作。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html",
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490430.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p0004",
+      "archiveId": "p0004",
+      "name": "刘伯承",
+      "field": "开国元帅",
+      "focus": "把战争经验带进课堂",
+      "question": "战争中的经验，怎样转化成可以传授的知识？",
+      "paragraphs": [
+        {
+          "text": "刘伯承早年在四川从军，曾在作战中失去右眼。1927年参加领导南昌起义，后赴苏联学习军事。回国后从事军事教育和参谋工作，长征中参与组织渡江与行军作战，重视侦察、地形和协同。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+          ]
+        },
+        {
+          "text": "抗日战争时期任八路军第一二九师师长，与邓小平等共同领导晋冀鲁豫根据地的军事斗争。解放战争时期率部挺进大别山，后参与淮海、渡江等重大战役。其经历不仅是几场战役，也包括部队在敌后立足、发展和转入大规模作战的过程。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+          ]
+        },
+        {
+          "text": "新中国成立后主持筹办并领导南京军事学院，推动系统学习现代军事理论，培养中高级指挥人员。他还从事军事著作翻译和研究，努力把战争中积累的经验转化为能够学习、讨论和传授的知识。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1927年",
+          "text": "参加领导南昌起义。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+        },
+        {
+          "label": "1937年",
+          "text": "任八路军第一二九师师长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+        },
+        {
+          "label": "1947年",
+          "text": "与邓小平率部挺进大别山。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+        },
+        {
+          "label": "1948年",
+          "text": "参与组织指挥淮海战役。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+        },
+        {
+          "label": "1951年",
+          "text": "领导南京军事学院的办学工作。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+        }
+      ],
+      "connection": null,
+      "pendingFields": [],
+      "relatedEntries": [
+        {
+          "id": "xuxiangqian",
+          "label": "同一部队的不同岗位",
+          "reason": "抗战初期，刘伯承任第一二九师师长，徐向前任副师长。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html",
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p0005",
+      "archiveId": "p0005",
+      "name": "贺龙",
+      "field": "开国元帅",
+      "focus": "前线作战与后方保障",
+      "question": "除了战场指挥，部队还需要哪些长期工作？",
+      "paragraphs": [
+        {
+          "text": "1927年，贺龙任南昌起义军总指挥。起义部队受挫后回到湘鄂西地区开展武装斗争，参与创建根据地，后来担任红二方面军总指挥。红军时期的经历，将地方武装建设与长征中的部队行动联系在一起。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+          ]
+        },
+        {
+          "text": "抗日战争时期任八路军第一二〇师师长，率部进入晋西北，参与建设晋绥抗日根据地。除作战外，他还承担西北地区后方与财经工作，组织生产、保障部队和根据地需要。这些任务说明，战争不仅发生在前沿阵地，也依靠稳定的后方。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+          ]
+        },
+        {
+          "text": "新中国成立后参与西南地区建设，后任国务院副总理、国防工业委员会主任等职，关注军事训练、装备生产和产品质量。“文化大革命”中遭受迫害，1969年逝世，后来得到平反。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1927年",
+          "text": "任南昌起义军总指挥。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+        },
+        {
+          "label": "1936年",
+          "text": "任红二方面军总指挥。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+        },
+        {
+          "label": "1937年",
+          "text": "任八路军第一二〇师师长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+        },
+        {
+          "label": "1960年",
+          "text": "任国防工业委员会主任。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+        }
+      ],
+      "connection": null,
+      "pendingFields": [],
+      "relatedEntries": [
+        {
+          "id": "p0002",
+          "label": "延伸主题：西北战场",
+          "reason": "从后方保障转向阅读彭德怀在西北的作战经历，分别理解不同任务。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html",
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490066.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p0006",
+      "archiveId": "p0006",
+      "name": "陈毅",
+      "field": "开国元帅",
+      "focus": "从华东战场到城市治理",
+      "question": "上海解放后，陈毅承担的任务发生了什么变化？",
+      "paragraphs": [
+        {
+          "text": "中央红军长征后，陈毅留在南方坚持游击战争，经历部队分散、环境艰苦的长期斗争。抗战开始后参与新四军的组建和领导，随后在华中地区开展敌后抗战。南方游击战争是其生平中连接红军与新四军的重要一段。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+          ]
+        },
+        {
+          "text": "解放战争时期，陈毅与粟裕、谭震林等共同领导华东野战军作战，经历莱芜、孟良崮等战役。淮海战役中任总前委委员。理解这一阶段，需要把前线指挥与部队、根据地、支前力量之间的协同一起看待。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+          ]
+        },
+        {
+          "text": "上海解放后担任市长，参与城市接管与恢复工作。后来任国务院副总理、外交部长，长期参与对外事务。由军事指挥转向城市治理和外交，是他生涯中十分鲜明的变化。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1934年",
+          "text": "留在南方坚持游击战争。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+        },
+        {
+          "label": "1947年",
+          "text": "任华东野战军司令员兼政治委员。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+        },
+        {
+          "label": "1948年",
+          "text": "任淮海战役总前委委员。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+        },
+        {
+          "label": "1949年",
+          "text": "任上海市市长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+        },
+        {
+          "label": "1958年",
+          "text": "兼任外交部长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+        }
+      ],
+      "connection": null,
+      "pendingFields": [],
+      "relatedEntries": [
+        {
+          "id": "zhude",
+          "label": "共同经历",
+          "reason": "朱德的档案记述了南昌起义部队受挫后，与陈毅等整顿、保存队伍的经历。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html",
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p0007",
+      "archiveId": "p0007",
+      "name": "罗荣桓",
+      "field": "开国元帅",
+      "focus": "组织、干部与制度",
+      "question": "政治工作如何与军事行动、干部培养相互衔接？",
+      "paragraphs": [
+        {
+          "text": "罗荣桓参加秋收起义后到达井冈山，长期从事部队政治工作。抗日战争时期随第一一五师进入山东，后来任山东军区司令员兼政治委员，参与领导根据地建设、部队发展和反“扫荡”斗争。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490430.html"
+          ]
+        },
+        {
+          "text": "抗战胜利后赴东北，后任东北野战军政治委员，与林彪等共同指挥辽沈战役，随后参与平津战役。整训部队、组织动员和政策纪律，是这一时期政治工作与军事行动相互衔接的具体任务。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490430.html"
+          ]
+        },
+        {
+          "text": "新中国成立后任总政治部主任、总干部部部长等职，参与干部管理和政治工作制度建设，并领导政治学院办学。他的贡献并不只在某一场战役，也在于培养干部、组织部队和建设制度的长期工作。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490430.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1927年",
+          "text": "参加秋收起义。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490430.html"
+        },
+        {
+          "label": "1943年",
+          "text": "任山东军区司令员兼政治委员。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490430.html"
+        },
+        {
+          "label": "1948年",
+          "text": "任东北野战军政治委员，参与指挥辽沈战役。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490430.html"
+        },
+        {
+          "label": "1950年",
+          "text": "任总政治部主任。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490430.html"
+        }
+      ],
+      "connection": null,
+      "pendingFields": [],
+      "relatedEntries": [
+        {
+          "id": "p0003",
+          "label": "共同战役",
+          "reason": "沿着东北战场的经历，可对照阅读林彪与罗荣桓在辽沈、平津战役中的工作。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490430.html",
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xuxiangqian",
+      "archiveId": "xuxiangqian",
+      "name": "徐向前",
+      "field": "开国元帅",
+      "focus": "不同战场，不同任务",
+      "question": "根据地防御、野战与攻坚，对部队提出了哪些不同要求？",
+      "paragraphs": [
+        {
+          "text": "徐向前毕业于黄埔军校第一期，参加广州起义后转入鄂豫皖地区，逐步担任红军军事领导职务。任红四方面军总指挥期间，参与领导鄂豫皖、川陕根据地作战，后来率部长征。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+          ]
+        },
+        {
+          "text": "抗日战争时期任八路军第一二九师副师长，后在山东等地承担军事领导工作。解放战争时期在华北组织作战，参与临汾、晋中、太原等战役。其军事经历包含根据地防御、野战和攻坚等不同任务。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+          ]
+        },
+        {
+          "text": "新中国成立后被任命为总参谋长，因病没有到任，由聂荣臻代理。后来参与军队训练、国防建设和军事领导工作，并担任国防部长。前期部队作战经验，与和平时期的训练和建设任务，构成了其生平的两条重要线索。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1931年",
+          "text": "任红四方面军总指挥。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+        },
+        {
+          "label": "1937年",
+          "text": "任八路军第一二九师副师长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+        },
+        {
+          "label": "1948年",
+          "text": "在华北组织临汾、晋中等战役。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+        },
+        {
+          "label": "1949年",
+          "text": "被任命为总参谋长，因病未到任，由聂荣臻代理。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+        },
+        {
+          "label": "1978年",
+          "text": "任国防部长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+        }
+      ],
+      "connection": null,
+      "pendingFields": [],
+      "relatedEntries": [
+        {
+          "id": "p0004",
+          "label": "同一部队的不同岗位",
+          "reason": "对照第一二九师副师长徐向前与师长刘伯承的经历，继续读到军事院校建设。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html",
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p0009",
+      "archiveId": "p0009",
+      "name": "聂荣臻",
+      "field": "开国元帅",
+      "focus": "为国防科研搭建体系",
+      "question": "重大科研成果背后，组织、协调与保障分别意味着什么？",
+      "paragraphs": [
+        {
+          "text": "抗战初期，聂荣臻任八路军第一一五师副师长，参与指挥平型关战斗，随后留在五台山地区开展敌后工作。晋察冀根据地的建设，不仅包括作战，也包括建立地方组织、扩充武装、发展生产和保障军民生活。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490472.html"
+          ]
+        },
+        {
+          "text": "解放战争时期任华北军区司令员，参与组织华北地区作战。平津战役中与林彪、罗荣桓共同承担前线领导任务，并参与北平和平解放的工作。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490472.html"
+          ]
+        },
+        {
+          "text": "新中国成立后，他长期负责国防科技和装备有关工作，参与组织导弹、核武器等重大科研任务，推动研究机构、试验基地和技术队伍建设。这些成果来自大批科研人员与单位的协作；他的角色主要体现在组织、协调和保障科研条件。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490472.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1937年",
+          "text": "任晋察冀军区司令员兼政治委员。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490472.html"
+        },
+        {
+          "label": "1948年",
+          "text": "任华北军区司令员，参加平津战役领导工作。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490472.html"
+        },
+        {
+          "label": "1956年",
+          "text": "参与组织国防科技规划和重大科研任务。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490472.html"
+        }
+      ],
+      "connection": null,
+      "pendingFields": [],
+      "relatedEntries": [
+        {
+          "id": "p0003",
+          "label": "共同战斗",
+          "reason": "抗战初期，聂荣臻与林彪的经历都与第一一五师和平型关战斗有关。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490472.html",
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p0010",
+      "archiveId": "p0010",
+      "name": "叶剑英",
+      "field": "开国元帅",
+      "focus": "参谋、研究与训练",
+      "question": "怎样理解作战之外的参谋统筹和军事研究？",
+      "paragraphs": [
+        {
+          "text": "叶剑英参加北伐和南昌起义相关工作，曾任红军总参谋长，并随中央红军长征。西安事变前后参与联络与谈判，抗战期间从事八路军参谋、联络和军事教育工作。这些经历体现了战场之外参谋统筹和协调工作的分量。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html"
+          ]
+        },
+        {
+          "text": "新中国成立后参与华南地区工作，后来主持军事科学院建设，组织军事理论研究，并关注部队训练和经验总结。军事研究、院校教育和训练实践，是其长期投入的相互关联的任务。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html"
+          ]
+        },
+        {
+          "text": "此后历任中央军委、国防部和全国人大常委会等领导职务。1976年参与粉碎江青反革命集团的重大斗争。其生平跨越了战争年代的参谋工作与新中国成立后的军事、政治领导工作。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1931年",
+          "text": "任红军总参谋长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html"
+        },
+        {
+          "label": "1958年",
+          "text": "任军事科学院院长兼政治委员。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html"
+        },
+        {
+          "label": "1975年",
+          "text": "兼任国防部长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html"
+        },
+        {
+          "label": "1976年",
+          "text": "参与粉碎江青反革命集团。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html"
+        }
+      ],
+      "connection": null,
+      "pendingFields": [],
+      "relatedEntries": [
+        {
+          "id": "p0004",
+          "label": "延伸主题：军事知识的传承",
+          "reason": "把叶剑英的军事研究与训练工作，与刘伯承领导南京军事学院的经历联读。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html",
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+          ]
+        }
+      ]
+    }
+  ]
+}

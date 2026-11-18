@@ -196,3 +196,9 @@ certbot renew --cert-name shanhe.binnwu.top --dry-run --run-deploy-hooks --no-ra
 接收器更新后，[Actions #19](https://github.com/webwyb/china-founding-generals/actions/runs/44034510725) 以 `e4a9bda` 完成三系统完整检查与发布，正式HTTPS版本一致。新接收器已实际接受1614份人物静态页及SEO清单；未知人物404、完整站点地图及两种卡片的线上二维码识别通过。COS本轮上传1个二维码许可文件、复用1641项。完整证据与准确浏览器范围见 [发布验收](reviews/seo-deployment-2026-11-17/REVIEW.md)。此处为历史验收快照，现行sha与run以公网 `/version.json` 和对应Actions为准。
 
 依赖来源固定为npm官方源。曾有两个新增依赖残留开发网络镜像，导致首轮CI安装超时；锁文件的版本和完整性哈希未变，改正下载地址后空缓存安装、三系统完整检查均通过，`npm run check` 会拒绝非公共npm的resolved地址。
+
+## 专题页面发布前置（2026-11-18，本地待启用）
+
+新增H5根目录 `topics/`，包含入口及 `topics/<slug>/index.html`。代码包生成已自动包含新目录；root持有的旧接收器尚不在白名单中接受它，直接推送应用会在解包时失败。**先按既有 `scripts/deploy/update-receiver.sh` 更新接收器，再推送专题应用**。本地只扩展受限HTML目录形状；JS／任意文件、更深目录、路径穿越和符号链接继续拒绝，12项部署回归与完整生产式离线解包通过。
+
+此次没有改服务器、Nginx、证书或现行应用版本。实际启用需另记接收器哈希、root权限、健康版本不变检查及正式工作流／公网结果。品牌更新后的缺图人物使用品牌图标作OG分享图，离线验收明确核对1609张真实人像及5张品牌占位，不能把1614个OG图片地址误写成1614张真实人物肖像。完整证据见 `reviews/topics-2026-11-18/REVIEW.md`。

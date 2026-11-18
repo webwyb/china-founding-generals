@@ -1,0 +1,431 @@
+{
+  "id": "shanghai",
+  "title": "上海：人物与城市",
+  "subtitle": "从技艺、课堂、书页与城市治理，认识十个人的上海经历。",
+  "kind": "地方人物试点",
+  "readMinutes": 15,
+  "intro": "一座城市的历史，也在那些曾在这里求学、工作、生活的人生中。本专题选取十位不同领域人物，以能够核对的地点关系串联阅读；他们并不都出生于上海，也不属于同一个时代。",
+  "scopeNote": "这是一条线上阅读路线，不是上海籍人物排行榜，也不是实地步行路线。所列地点用于解释历史关系，开放信息请以场馆公告为准。未核验历史肖像的条目以姓名呈现。",
+  "updatedAt": "2026-11-18",
+  "entries": [
+    {
+      "id": "huang",
+      "name": "黄道婆",
+      "field": "纺织技艺",
+      "focus": "一门技艺，怎样在乡里传播",
+      "archiveId": null,
+      "paragraphs": [
+        {
+          "text": "黄道婆是宋末元初华亭县乌泥泾人，曾在海南崖州学习棉纺织技能，后来回到家乡传授。这里的人物与地方关系，既是家乡关系，也是一段跨地域的技术传播经历。",
+          "sourceUrls": [
+            "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/tomb-of-the-zodiac-po-091397/"
+          ]
+        },
+        {
+          "text": "从她的经历进入上海历史，可以先留意日常生活中的布与衣。技术的学习、改进和传授，也是理解一座城市生产生活的重要线索。",
+          "sourceUrls": [
+            "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/tomb-of-the-zodiac-po-091397/"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "宋末元初",
+          "text": "在崖州学习棉纺织技能，后回到乌泥泾传授。",
+          "sourceUrl": "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/tomb-of-the-zodiac-po-091397/"
+        }
+      ],
+      "connection": {
+        "kind": "家乡与技艺传播地",
+        "place": "乌泥泾",
+        "text": "黄道婆是宋末元初华亭县乌泥泾人，曾在海南崖州学习棉纺织技能，后来回到家乡传授。这里的人物与地方关系，既是家乡关系，也是一段跨地域的技术传播经历。",
+        "sourceUrls": [
+          "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/tomb-of-the-zodiac-po-091397/"
+        ]
+      },
+      "question": "她的技艺传播经历连接了哪两个地方？",
+      "pendingFields": [],
+      "fieldNote": null
+    },
+    {
+      "id": "xu",
+      "name": "徐光启",
+      "field": "科学与译介",
+      "focus": "从一本译著，走近中西知识交流",
+      "archiveId": null,
+      "paragraphs": [
+        {
+          "text": "徐光启出生于上海县。他与利玛窦合作翻译《几何原本》，前六卷于1607年译成付刻；研究还涉及农学、天文、历法等领域。",
+          "sourceUrls": [
+            "https://lhsr.sh.gov.cn/ywdt/20210916/6c6f6000-84b1-4758-a55c-d12110d421b4.html"
+          ]
+        },
+        {
+          "text": "今天的光启公园与徐光启墓，为理解他与上海的联系提供了入口。阅读时应区分人物出生、从事研究与身后纪念，不能把所有学术活动都定位在同一处。",
+          "sourceUrls": [
+            "https://lhsr.sh.gov.cn/ywdt/20210916/6c6f6000-84b1-4758-a55c-d12110d421b4.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1607年",
+          "text": "与利玛窦合作翻译的《几何原本》前六卷译成付刻。",
+          "sourceUrl": "https://lhsr.sh.gov.cn/ywdt/20210916/6c6f6000-84b1-4758-a55c-d12110d421b4.html"
+        }
+      ],
+      "connection": {
+        "kind": "出生地与纪念地",
+        "place": "上海县城与光启公园",
+        "text": "徐光启出生于上海县。他与利玛窦合作翻译《几何原本》，前六卷于1607年译成付刻；研究还涉及农学、天文、历法等领域。",
+        "sourceUrls": [
+          "https://lhsr.sh.gov.cn/ywdt/20210916/6c6f6000-84b1-4758-a55c-d12110d421b4.html"
+        ]
+      },
+      "question": "出生地与身后纪念地，分别能说明怎样的历史联系？",
+      "pendingFields": [],
+      "fieldNote": null
+    },
+    {
+      "id": "qian",
+      "name": "钱学森",
+      "field": "工程与科学",
+      "focus": "从大学课堂出发",
+      "archiveId": null,
+      "paragraphs": [
+        {
+          "text": "1929年，钱学森考入上海的交通大学机械工程学院。1934年，他从机械工程学院铁道工程门毕业。这段上海求学经历，是认识他早期工程训练的具体入口。",
+          "sourceUrls": [
+            "https://news.sjtu.edu.cn/zhxw/20180405/33575.html"
+          ]
+        },
+        {
+          "text": "校方纪事不仅记录专业学习，也记下他参加学生管弦乐活动。把这些资料放在一起，可以看到一位青年学生的日常，而不是只从后来的成就倒推其人生。",
+          "sourceUrls": [
+            "https://news.sjtu.edu.cn/zhxw/20180405/33575.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1929年",
+          "text": "考入交通大学机械工程学院。",
+          "sourceUrl": "https://news.sjtu.edu.cn/zhxw/20180405/33575.html"
+        },
+        {
+          "label": "1934年",
+          "text": "从机械工程学院铁道工程门毕业。",
+          "sourceUrl": "https://news.sjtu.edu.cn/zhxw/20180405/33575.html"
+        }
+      ],
+      "connection": {
+        "kind": "求学地",
+        "place": "交通大学上海本部",
+        "text": "1929年，钱学森考入上海的交通大学机械工程学院。1934年，他从机械工程学院铁道工程门毕业。这段上海求学经历，是认识他早期工程训练的具体入口。",
+        "sourceUrls": [
+          "https://news.sjtu.edu.cn/zhxw/20180405/33575.html"
+        ]
+      },
+      "question": "哪些具体记录，能让你看见成名之前的钱学森？",
+      "pendingFields": [],
+      "fieldNote": null
+    },
+    {
+      "id": "cai",
+      "name": "蔡元培",
+      "field": "教育与学术",
+      "focus": "一座城市里的学术组织工作",
+      "archiveId": null,
+      "paragraphs": [
+        {
+          "text": "1928年，蔡元培专任中央研究院院长，定居上海。他居住的慕尔鸣路住所，离中央研究院驻沪办事处不远；1929年底又迁居极司非而路。",
+          "sourceUrls": [
+            "https://data.library.sh.cn/entity/physicalculturalheritage/evql1wgeems4a4mn"
+          ]
+        },
+        {
+          "text": "这条线索把教育家的人生从大学校长延伸到研究机构建设。旧居的意义不仅在建筑本身，也在于它帮助读者理解人物当时投入的工作。",
+          "sourceUrls": [
+            "https://data.library.sh.cn/entity/physicalculturalheritage/evql1wgeems4a4mn"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1928年",
+          "text": "专任中央研究院院长，定居上海。",
+          "sourceUrl": "https://data.library.sh.cn/entity/physicalculturalheritage/evql1wgeems4a4mn"
+        },
+        {
+          "label": "1929年底",
+          "text": "迁居极司非而路，今万航渡路一带。",
+          "sourceUrl": "https://data.library.sh.cn/entity/physicalculturalheritage/evql1wgeems4a4mn"
+        }
+      ],
+      "connection": {
+        "kind": "工作与居住地",
+        "place": "中央研究院驻沪办事处及旧居",
+        "text": "1928年，蔡元培专任中央研究院院长，定居上海。他居住的慕尔鸣路住所，离中央研究院驻沪办事处不远；1929年底又迁居极司非而路。",
+        "sourceUrls": [
+          "https://data.library.sh.cn/entity/physicalculturalheritage/evql1wgeems4a4mn"
+        ]
+      },
+      "question": "除了学校课堂，学术研究还需要怎样的组织条件？",
+      "pendingFields": [],
+      "fieldNote": null
+    },
+    {
+      "id": "tao",
+      "name": "陶行知",
+      "field": "教育实践",
+      "focus": "让学习走近乡村生活",
+      "archiveId": null,
+      "paragraphs": [
+        {
+          "text": "1932年，陶行知在上海创办山海工学团。这是一种乡村教育机构，让我们把目光从城市中心的大学移向乡村教育。",
+          "sourceUrls": [
+            "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/the-site-of-the-shanhai-engineering-group-727026/"
+          ]
+        },
+        {
+          "text": "1937年淞沪抗战爆发，工学团因所在地成为战场而停办；1946年陶行知返沪后恢复办学，定名山海实验乡村学校。它的变迁也记录了教育实践受到时代环境影响的过程。",
+          "sourceUrls": [
+            "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/the-site-of-the-shanhai-engineering-group-727026/"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1932年",
+          "text": "创办山海工学团。",
+          "sourceUrl": "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/the-site-of-the-shanhai-engineering-group-727026/"
+        },
+        {
+          "label": "1937年",
+          "text": "所在地成为战场，工学团停办。",
+          "sourceUrl": "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/the-site-of-the-shanhai-engineering-group-727026/"
+        },
+        {
+          "label": "1946年",
+          "text": "返沪恢复办学，定名山海实验乡村学校。",
+          "sourceUrl": "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/the-site-of-the-shanhai-engineering-group-727026/"
+        }
+      ],
+      "connection": {
+        "kind": "办学地",
+        "place": "宝山大场的山海工学团",
+        "text": "1932年，陶行知在上海创办山海工学团。这是一种乡村教育机构，让我们把目光从城市中心的大学移向乡村教育。",
+        "sourceUrls": [
+          "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/the-site-of-the-shanhai-engineering-group-727026/"
+        ]
+      },
+      "question": "办学地点与战争环境，怎样影响了一所学校的经历？",
+      "pendingFields": [],
+      "fieldNote": null
+    },
+    {
+      "id": "lu",
+      "name": "鲁迅",
+      "field": "文学与编辑",
+      "focus": "沿着住所，读到写作与交往",
+      "archiveId": null,
+      "paragraphs": [
+        {
+          "text": "1927年10月，鲁迅与许广平来到上海，最初住在景云里；后来迁居拉摩斯公寓。1933年，他搬入大陆新村，在那里度过生命的最后几年。",
+          "sourceUrls": [
+            "https://shhongse.fudan.edu.cn/info/1024/1581.htm"
+          ]
+        },
+        {
+          "text": "在上海的不同住所中，鲁迅持续进行创作、翻译和编辑，并与文学青年交往。故居材料让作品背后的生活有了具体地点，也提醒我们不要把他在上海的经历缩成一处建筑。",
+          "sourceUrls": [
+            "https://shhongse.fudan.edu.cn/info/1024/1581.htm"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1927年",
+          "text": "来到上海，最初居住于景云里。",
+          "sourceUrl": "https://shhongse.fudan.edu.cn/info/1024/1581.htm"
+        },
+        {
+          "label": "1933年",
+          "text": "迁居大陆新村。",
+          "sourceUrl": "https://shhongse.fudan.edu.cn/info/1024/1581.htm"
+        }
+      ],
+      "connection": {
+        "kind": "写作与居住地",
+        "place": "景云里、拉摩斯公寓与大陆新村",
+        "text": "1927年10月，鲁迅与许广平来到上海，最初住在景云里；后来迁居拉摩斯公寓。1933年，他搬入大陆新村，在那里度过生命的最后几年。",
+        "sourceUrls": [
+          "https://shhongse.fudan.edu.cn/info/1024/1581.htm"
+        ]
+      },
+      "question": "一个作家的住所变迁，能帮助你理解哪些写作活动？",
+      "pendingFields": [],
+      "fieldNote": null
+    },
+    {
+      "id": "ba",
+      "name": "巴金",
+      "field": "文学",
+      "focus": "在武康路，继续写作",
+      "archiveId": null,
+      "paragraphs": [
+        {
+          "text": "1955年，巴金一家迁居武康路113号。他在这里长期生活，并创作《随想录》等作品。人物、作品与住所，在这处建筑中形成了可以核对的联系。",
+          "sourceUrls": [
+            "https://data.library.sh.cn/entity/architecture/if3k5yb021u3c4vd"
+          ]
+        },
+        {
+          "text": "上海图书馆的建筑资料同时记录了这所住宅在巴金入住前的用途。认识名人故居，也可以追问建筑自身的历史：一个人的人生只是它经历过的一个阶段。",
+          "sourceUrls": [
+            "https://data.library.sh.cn/entity/architecture/if3k5yb021u3c4vd"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1955年",
+          "text": "一家迁居武康路113号。",
+          "sourceUrl": "https://data.library.sh.cn/entity/architecture/if3k5yb021u3c4vd"
+        },
+        {
+          "label": "2011年",
+          "text": "故居纪念馆修缮后正式开馆。",
+          "sourceUrl": "https://data.library.sh.cn/entity/architecture/if3k5yb021u3c4vd"
+        }
+      ],
+      "connection": {
+        "kind": "写作与居住地",
+        "place": "武康路113号",
+        "text": "1955年，巴金一家迁居武康路113号。他在这里长期生活，并创作《随想录》等作品。人物、作品与住所，在这处建筑中形成了可以核对的联系。",
+        "sourceUrls": [
+          "https://data.library.sh.cn/entity/architecture/if3k5yb021u3c4vd"
+        ]
+      },
+      "question": "一本作品与一处住所之间，可以建立怎样有依据的联系？",
+      "pendingFields": [],
+      "fieldNote": null
+    },
+    {
+      "id": "zh",
+      "name": "邹韬奋",
+      "field": "新闻与出版",
+      "focus": "一本周刊与它的读者",
+      "archiveId": null,
+      "paragraphs": [
+        {
+          "text": "1926年10月，邹韬奋接任《生活》周刊主编，调整栏目，回应民众关心的问题。1932年，他又创办生活书店。上海因此也是理解其编辑与出版活动的重要地点。",
+          "sourceUrls": [
+            "https://shhongse.fudan.edu.cn/info/1019/1459.htm"
+          ]
+        },
+        {
+          "text": "从一份刊物到一家书店，可以沿着内容如何编辑、书刊如何流通的线索继续阅读。人物的影响不只留在自己的文字里，也通过出版与读者建立联系。",
+          "sourceUrls": [
+            "https://shhongse.fudan.edu.cn/info/1019/1459.htm"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1926年",
+          "text": "接任《生活》周刊主编。",
+          "sourceUrl": "https://shhongse.fudan.edu.cn/info/1019/1459.htm"
+        },
+        {
+          "label": "1932年",
+          "text": "创办生活书店。",
+          "sourceUrl": "https://shhongse.fudan.edu.cn/info/1019/1459.htm"
+        }
+      ],
+      "connection": {
+        "kind": "编辑与出版活动地",
+        "place": "《生活》周刊与生活书店",
+        "text": "1926年10月，邹韬奋接任《生活》周刊主编，调整栏目，回应民众关心的问题。1932年，他又创办生活书店。上海因此也是理解其编辑与出版活动的重要地点。",
+        "sourceUrls": [
+          "https://shhongse.fudan.edu.cn/info/1019/1459.htm"
+        ]
+      },
+      "question": "编辑一本刊物与创办书店，分别连接了哪些人？",
+      "pendingFields": [],
+      "fieldNote": null
+    },
+    {
+      "id": "song",
+      "name": "宋庆龄",
+      "field": "社会与公共事务",
+      "focus": "从故居文物读到公共活动",
+      "archiveId": null,
+      "paragraphs": [
+        {
+          "text": "上海宋庆龄故居既是她在上海的寓所，也是她开展公共活动的场所。馆内保存文稿、信函、照片与生活用品，为读者提供了不同类型的历史材料。",
+          "sourceUrls": [
+            "https://www.shsoong-chingling.com/"
+          ]
+        },
+        {
+          "text": "与只看建筑外观相比，关注一封信、一个手稿或一件生活用品，更容易提出具体问题：它由谁使用，写给谁，又记录了什么事情？这些问题需要继续回到馆藏说明与原始材料。",
+          "sourceUrls": [
+            "https://www.shsoong-chingling.com/"
+          ]
+        }
+      ],
+      "milestones": [],
+      "connection": {
+        "kind": "居住与公共活动地",
+        "place": "上海宋庆龄故居",
+        "text": "上海宋庆龄故居既是她在上海的寓所，也是她开展公共活动的场所。馆内保存文稿、信函、照片与生活用品，为读者提供了不同类型的历史材料。",
+        "sourceUrls": [
+          "https://www.shsoong-chingling.com/"
+        ]
+      },
+      "question": "一处住所怎样同时呈现个人生活和公共活动？",
+      "pendingFields": [
+        "residenceStart"
+      ],
+      "fieldNote": "故居入住年份存在来源差异，暂不写定。故居官网记为1949年春；上海图书馆条目记为1948年春，待进一步核定。",
+      "fieldSourceUrls": [
+        "https://www.shsoong-chingling.com/",
+        "https://data.library.sh.cn/entity/architecture/4eqww5yazhokuxt6"
+      ]
+    },
+    {
+      "id": "chen",
+      "name": "陈毅",
+      "field": "军政与城市治理",
+      "focus": "从战场转向城市",
+      "archiveId": "p0006",
+      "paragraphs": [
+        {
+          "text": "上海解放后，陈毅担任市长，参与城市接管与恢复工作。这段经历连接着军事指挥与城市治理，也是开国将帅专题进入地方历史的一个入口。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+          ]
+        },
+        {
+          "text": "本专题按“曾在此任职”收录陈毅，不将其归为上海籍。继续打开完整档案，可以把这段上海经历放回南方游击战争、华东战场和后来的外交工作中理解。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+          ]
+        }
+      ],
+      "milestones": [],
+      "connection": {
+        "kind": "任职与城市治理地",
+        "place": "上海",
+        "text": "上海解放后，陈毅担任市长，参与城市接管与恢复工作。这段经历连接着军事指挥与城市治理，也是开国将帅专题进入地方历史的一个入口。",
+        "sourceUrls": [
+          "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+        ]
+      },
+      "question": "进入一座城市的历史，为什么也要看人物此前与此后的经历？",
+      "pendingFields": [],
+      "fieldNote": null
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import { createNavigationQueue } from './navigationQueue'
 import { pageHref } from './personLinks'
 import { loadPerson } from './personData'
 
-type Page = 'index' | 'explore' | 'person' | 'card'
+type Page = 'index' | 'explore' | 'person' | 'card' | 'topics'
 type Target = { page: Page; query: string; returning: boolean }
 let busy = false
 const subscribers = new Set<() => void>()
@@ -16,7 +16,7 @@ function viewKey(url: string) {
   return value.pathname + (value.pathname === '/card/' ? `?id=${value.searchParams.get('id') || ''}` : '')
 }
 export function notifyNavigationReady(page: string, id?: string) {
-  if (typeof window === 'undefined' || typeof document === 'undefined' || !['index','explore','person','card'].includes(page)) return
+  if (typeof window === 'undefined' || typeof document === 'undefined' || !['index','explore','person','card','topics'].includes(page)) return
   if ((page === 'person' || page === 'card') && !id) return
   const key = viewKey(pageHref(page as Page, id ? `id=${encodeURIComponent(id)}` : ''))
   if (viewKey(window.location.href) !== key) return
@@ -35,7 +35,7 @@ const queue = createNavigationQueue<Target>({
   async prepare(target) {
     const id = new URLSearchParams(target.query).get('id')
     const data = id && (target.page === 'person' || target.page === 'card') ? loadPerson(id) : Promise.resolve()
-    const page = target.page === 'person' ? import('../pages/person/index') : target.page === 'card' ? import('../pages/card/index') : target.page === 'explore' ? import('../pages/explore/index') : import('../pages/index/index')
+    const page = target.page === 'topics' ? import('../pages/topics/index') : target.page === 'person' ? import('../pages/person/index') : target.page === 'card' ? import('../pages/card/index') : target.page === 'explore' ? import('../pages/explore/index') : import('../pages/index/index')
     await Promise.all([data, page])
   },
   async commit(target) {
@@ -53,7 +53,7 @@ const queue = createNavigationQueue<Target>({
       // Native history traversal may be ignored during rapid/background actions.
       // A new catalogue instance restores the same in-memory reading snapshot.
       const action = target.page === 'index' || target.page === 'explore' ? Taro.reLaunch({ url })
-        : target.returning || window.location.pathname.startsWith('/people/') || window.location.pathname === '/card/' || pages.length >= 8 ? Taro.redirectTo({ url }) : Taro.navigateTo({ url })
+        : target.returning || window.location.pathname.startsWith('/people/') || window.location.pathname === '/card/' || window.location.pathname.startsWith('/topics/') || pages.length >= 8 ? Taro.redirectTo({ url }) : Taro.navigateTo({ url })
       await Promise.all([action, mounted])
       await afterPaint()
     } finally { clearTimeout(timer!); readyListeners.delete(listener!) }

@@ -7,7 +7,7 @@ const { people, pageMetadata, legacyDestination } = await loadSeoRenderer()
 const assert = (await import('node:assert/strict')).default
 const brand = JSON.parse(await readFile(resolve(root, 'config/brand.json'), 'utf8'))
 for (const path of ['index.html', 'generals/index.html', 'about/index.html', 'people/index.html', 'card/index.html',
-  ...people.map(person => `people/${person.id}/index.html`)]) {
+  'topics/index.html', 'topics/marshals/index.html', 'topics/shanghai/index.html', ...people.map(person => `people/${person.id}/index.html`)]) {
   const html = await readFile(resolve(root, 'dist/h5', path), 'utf8')
   assert.ok(html.includes(brand.name) && html.includes(brand.tagline), `${path}: unified brand and tagline`)
   assert.ok(!html.includes('山河有名'), `${path}: stale public brand`)

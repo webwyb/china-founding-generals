@@ -30,17 +30,17 @@ def extract(stream, target):
                     or any(part.startswith('.') for part in path.parts)):
                 raise ValueError('Unsafe archive path')
             if path.parts[0] not in {'index.html', 'version.json', 'js', 'css', 'static',
-                                      'people', 'generals', 'about', 'card', 'robots.txt', 'sitemap.xml'}:
+                                      'people', 'generals', 'about', 'card', 'topics', 'robots.txt', 'sitemap.xml'}:
                 raise ValueError('Unexpected build entry')
             if path.parts[0] in {'robots.txt', 'sitemap.xml'} and (len(path.parts) != 1 or not member.isfile()):
                 raise ValueError('Invalid SEO manifest')
-            if path.parts[0] in {'people', 'generals', 'about', 'card'}:
+            if path.parts[0] in {'people', 'generals', 'about', 'card', 'topics'}:
                 allowed_directory = (len(path.parts) == 1 or
-                                     (path.parts[0] == 'people' and len(path.parts) == 2
+                                     (path.parts[0] in {'people', 'topics'} and len(path.parts) == 2
                                       and re.fullmatch(r'[a-z0-9-]+', path.parts[1])))
                 allowed_file = (path.name == 'index.html' and
                                 (len(path.parts) == 2 or
-                                 (path.parts[0] == 'people' and len(path.parts) == 3
+                                 (path.parts[0] in {'people', 'topics'} and len(path.parts) == 3
                                   and re.fullmatch(r'[a-z0-9-]+', path.parts[1]))))
                 if not ((member.isdir() and allowed_directory) or (member.isfile() and allowed_file)):
                     raise ValueError('Unexpected SEO page path')

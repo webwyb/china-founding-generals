@@ -1,3 +1,4 @@
+import { TopicLinks } from '../../components/TopicLinks'
 import { BRAND_ICON } from '../../services/brand'
 import { Inline, Heading } from '../../components/Html'
 import { Text, View } from '@tarojs/components'
@@ -41,6 +42,8 @@ export default function Index() {
         <View className='gallery-bottomline'><Text>点击肖像，走近他们的人生</Text><View className='sample-label'><View className='sample-dot' /><Text>{people.length.toLocaleString()} 位将帅 · 群像选辑</Text></View></View>
       </View>
     </View>
+
+    <View className='container home-topics'><View className='section-heading'><View><Text className='section-title serif'>沿着一条线，认识一些人。</Text><Text className='section-aside'>从十位元帅出发，也从一座城市走近历史。</Text></View><Button className='text-link' href='/topics/' onClick={() => openPage('topics')}>全部人物专题<Icon name='arrow' /></Button></View><TopicLinks /></View>
 
     <View className='memory-band'>
       <View className='container memory-band-inner'><Text className='band-index'>铭记来路</Text><Text className='memory-quote serif'>名字留在山河，<Text className='quote-break'>记忆有其来处。</Text></Text><Text className='memory-subtitle'>在时代的群像里，看见每一个具体的人。</Text></View>

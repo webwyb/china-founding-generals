@@ -16,9 +16,10 @@ export function personPath(id: string): string {
   return `/people/${encodeURIComponent(id)}/`
 }
 
-export function pageHref(page: 'index' | 'explore' | 'person' | 'card', query = ''): string {
+export function pageHref(page: 'index' | 'explore' | 'person' | 'card' | 'topics', query = ''): string {
   const params = new URLSearchParams(query)
   if (page === 'person') return params.get('id') ? personPath(params.get('id')!) : '/people/'
+  if (page === 'topics') return params.get('id') ? `/topics/${encodeURIComponent(params.get('id')!)}/` : '/topics/'
   const path = page === 'index' ? '/' : page === 'explore' ? '/generals/' : '/card/'
   const search = params.toString()
   return `${path}${search ? `?${search}` : ''}`

@@ -6,7 +6,8 @@ export default defineAppConfig({
     'pages/person/index',
     'pages/card/index',
     'pages/directory/index',
-    'pages/about/index'
+    'pages/about/index',
+    'pages/topics/index'
   ],
   window: {
     navigationStyle: 'custom',

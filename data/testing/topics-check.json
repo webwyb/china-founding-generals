@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-11-18",
+  "fullCheck": {
+    "command": "npm run check",
+    "exitCode": 0,
+    "steps": [
+      "typecheck",
+      "data:verify",
+      "validate:data",
+      "validate:functions",
+      "validate:topics",
+      "validate:compliance",
+      "validate:design",
+      "test:catalog",
+      "test:biographies",
+      "test:analytics",
+      "validate:portraits",
+      "validate:cards",
+      "build",
+      "build:weapp",
+      "validate:weapp"
+    ]
+  },
+  "deployRegression": {
+    "command": "node scripts/python.mjs -m unittest discover -s scripts/deploy -p 'test_*.py'",
+    "tests": 12,
+    "status": "passed"
+  },
+  "releasePackage": {
+    "status": "passed",
+    "profileHtmlAccepted": 1614,
+    "socialImagesOnCos": 1609,
+    "brandFallbackImages": 5,
+    "topicHtmlAccepted": 3,
+    "archiveBytes": 2118668,
+    "archiveFormat": "xz",
+    "assets": 1646,
+    "runtimeJsonAccepted": 1615,
+    "method": "Production-style URL rewrite and code archive in temporary copied build; extracted by repository receive.py. No cloud upload, server mutation, installed-receiver update or production deployment."
+  },
+  "browserObservations": 22,
+  "unchangedCatalogueComparedWithHead": {
+    "src/data/catalog.generated.json": "8778f83ed061acdbc6481cd75cd00e81ecee5064cb35468fcc41d0af41e2bec6",
+    "src/data/catalogue-lite.generated.json": "af29d032c6b3616129eb3e103ae6a88e769c1094b869f835e01d9aaf11992767",
+    "data/catalog/reviewed-facts.json": "4854894db3dad1ee36ed8a10a25918dc7edcf3c6d172d47768ec69ab96dfa7fa",
+    "data/catalog/pending-review.json": "8cf4be55f680108f6075c9c7ce61676b14b83b2f952ae7361d848fd65b8db8f8",
+    "data/catalog/portraits.json": "d69cadf9bdd3b28c65faaf7554509984f768c8deba25625ca2f519da82799187"
+  },
+  "notCompleted": [
+    "visible browser CUA (two initialization timeouts)",
+    "iOS/Android/WeChat devices",
+    "real reader interviews",
+    "production receiver update",
+    "commit/push/deployment",
+    "evidence-based product direction decision"
+  ],
+  "baseCommit": "88f9caef3d8e9744b2ab64d9d53384f9cff48f9f",
+  "verifiedInputSha256": {
+    "src/pages/topics/index.tsx": "b80323db098b9e0d52e598c186709a761949b27020c13bd8b960ee22a17f12c5",
+    "src/data/topics.ts": "116003e006a801fb6edba194c554c4bb7c27ad42d752dcc0795af9e7c6402b3d",
+    "src/services/topicReading.ts": "63097e958e4eccf54fea167d60840d99adf4db90962c3c48322a5a897986f096",
+    "src/app.scss": "83bc587cfcc7de055ccd99924f29be720d476adf5f30f5e2a35afa5ab34ef338",
+    "data/topics/marshals.json": "47f9c8b284324a7a9611c15fb4196a149b20d49a0a6ea6b9786008b396ff8874",
+    "data/topics/shanghai.json": "7d64f2b9658fb907593aff9e29813701fd1e96c0b23eef320655b3a49ad4186e",
+    "data/topics/sources.json": "bf20a1d1d7a403fdb9c13abdb7e771a4822f201316fc331db97ca309add78d74",
+    "scripts/test_topics_browser.mjs": "025cd8b451a931e20728ab165e20ac5869fb2b01d6b88906bc895de34f4c4ab3",
+    "scripts/deploy/receive.py": "e493dc9b25b5fe3f66fb5b00f6dfc33fb225c2963a4858ba16cc6edc47b6715c"
+  }
+}

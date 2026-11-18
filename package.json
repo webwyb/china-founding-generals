@@ -31,7 +31,8 @@
     "check": "node scripts/check.mjs",
     "validate:weapp": "node scripts/validate_weapp.mjs",
     "check:weapp": "npm run typecheck && npm run build:weapp && npm run validate:weapp",
-    "validate:weapp:online": "node scripts/validate_weapp_online.mjs"
+    "validate:weapp:online": "node scripts/validate_weapp_online.mjs",
+    "validate:topics": "node scripts/validate_topics.mjs"
   },
   "engines": {
     "node": ">=20"
