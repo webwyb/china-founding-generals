@@ -1,0 +1,106 @@
+{
+  "id": "military-schools",
+  "title": "军校开学：从学员到院长",
+  "subtitle": "跟随刘伯承、陈赓、张震，看三所军校怎样开课。",
+  "kind": "开国将帅专题",
+  "readMinutes": 4,
+  "intro": "一份教材由谁来译？第一批工程人才到哪里学？把南京、哈尔滨和北京三地的办学经历放在一起，可以看到，将领也会重新坐回课桌前。",
+  "scopeNote": "",
+  "updatedAt": "2026-11-18",
+  "entries": [
+    {
+      "id": "p0004",
+      "archiveId": "p0004",
+      "name": "刘伯承",
+      "field": "元帅",
+      "focus": "院长也要备课",
+      "paragraphs": [
+        {
+          "text": "1950年，刘伯承受命到南京筹建军事学院。学校要给有过战场经历的干部开课。面对这些学员，教员需要把过去各自领会的经验，变成一堂课上能共同讨论的问题。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+          ]
+        },
+        {
+          "text": "刘伯承亲自培训教员，也翻译、审定教材。学院陆续设立海军、空军等系科。对一名从陆军部队来的学员来说，认识其他军种的工作也成了功课。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1950年",
+          "text": "刘伯承在南京筹建军事学院。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+        }
+      ],
+      "connection": null,
+      "question": "如果要给有经验的指挥员上课，教员还需要准备什么？",
+      "pendingFields": []
+    },
+    {
+      "id": "p0016",
+      "archiveId": "p0016",
+      "name": "陈赓",
+      "field": "大将",
+      "focus": "在哈尔滨筹建工程学院",
+      "paragraphs": [
+        {
+          "text": "陈赓年轻时是黄埔军校第一期学员，后来担任过红军学校的校长。1952年回国后，他又接到一项办学任务，这次要在哈尔滨筹建军事工程学院。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7537031.html"
+          ]
+        },
+        {
+          "text": "陈赓担任院长兼政治委员。和南京军事学院着重培养指挥人员相比，这所学校的学生要学习工程技术。两位院长面对的都是军队建设，课表上要解决的问题却各有侧重。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7537031.html",
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1952年",
+          "text": "陈赓受命筹建哈尔滨军事工程学院。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/127855/7537031.html"
+        }
+      ],
+      "connection": null,
+      "question": "南京与哈尔滨的两所学校，各要培养怎样的毕业生？",
+      "pendingFields": []
+    },
+    {
+      "id": "zhangzhen",
+      "archiveId": "zhangzhen",
+      "name": "张震",
+      "field": "中将",
+      "focus": "从南京的课桌走上讲台",
+      "paragraphs": [
+        {
+          "text": "1954年，张震进入南京军事学院战役系学习。在此之前，他已经在华东做过多年参谋。毕业后留在学院任职，他还亲自走上讲台，把自己的战争经历带进有关军事著作的课程。",
+          "sourceUrls": [
+            "https://www.xinhuanet.com/politics/2015-09/09/c_1116514056.htm"
+          ]
+        },
+        {
+          "text": "1985年，张震牵头筹建国防大学，后来担任校长。从南京的一名学员读到北京的一位校长，同一个人的履历把学习、授课和办学连在了一起。",
+          "sourceUrls": [
+            "https://www.xinhuanet.com/politics/2015-09/09/c_1116514056.htm"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1985年",
+          "text": "张震牵头筹建国防大学，并于当年出任校长。",
+          "sourceUrl": "https://www.xinhuanet.com/politics/2015-09/09/c_1116514056.htm"
+        }
+      ],
+      "connection": null,
+      "question": "在张震的这段履历里，哪几次变化发生在同一所学校？",
+      "pendingFields": []
+    }
+  ]
+}

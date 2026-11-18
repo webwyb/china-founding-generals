@@ -64,12 +64,14 @@ with tempfile.TemporaryDirectory(prefix='shanhe-seo-release-') as folder:
         path = Path('people') / person['id'] / 'index.html'
         assert (extracted / path).read_bytes() == (build / path).read_bytes()
     assert (extracted / 'robots.txt').is_file() and (extracted / 'sitemap.xml').is_file()
-    for path in ('topics/index.html', 'topics/marshals/index.html', 'topics/shanghai/index.html'):
+    topic_pages = [Path('topics/index.html'), *(Path('topics') / file.stem / 'index.html'
+                   for file in (ROOT / 'data/topics').glob('*.json') if file.name != 'sources.json')]
+    for path in topic_pages:
         assert (extracted / path).read_bytes() == (build / path).read_bytes()
     for resource in runtime.glob('*.json'):
         assert (extracted / resource.relative_to(build)).read_bytes() == resource.read_bytes()
     report = {'status': 'passed', 'profileHtmlAccepted': len(people), 'socialImagesOnCos': photos,
-              'brandFallbackImages': fallback_images, 'topicHtmlAccepted': 3,
+              'brandFallbackImages': fallback_images, 'topicHtmlAccepted': len(topic_pages),
               'archiveBytes': archive.stat().st_size, 'archiveFormat': 'xz', 'assets': len(assets), 'runtimeJsonAccepted': 1615,
               'method': 'Production-style URL rewrite and code archive in temporary copied build; extracted by repository receive.py. No cloud upload, server mutation, installed-receiver update or production deployment.'}
 (ROOT / 'data/testing/seo-release-2026-11-17.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

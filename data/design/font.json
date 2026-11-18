@@ -3,8 +3,8 @@
   "upstream": "Noto Serif SC",
   "source": "https://github.com/google/fonts/tree/main/ofl/notoserifsc",
   "license": "SIL Open Font License 1.1",
-  "characters": 2202,
-  "bytes": 669936,
+  "characters": 2222,
+  "bytes": 676360,
   "weights": [
     400,
     600

@@ -9,6 +9,7 @@ import Portrait from '../../components/Portrait'
 import Dialog from '../../components/Dialog'
 import Shell, { openPage, openSource, returnTo } from '../../components/Shell'
 import PersonTile from '../../components/PersonTile'
+import { topics, topicPath } from '../../data/topics'
 import { people, lifeYears } from '../../data/people'
 import { getProvinceLandscape } from '../../data/landscapes'
 import { getRemembered, toggleRemembered } from '../../services/collection'
@@ -60,6 +61,7 @@ export default function PersonPage() {
   usePageMetadata('person', person)
   useShareAppMessage(() => ({ title: person ? `记住这个名字：${person.name}｜名在山河` : '名在山河', path: person ? `/pages/person/index?id=${person.id}` : '/pages/index/index' }))
   if (!person) return <Shell><View className='container empty-state'><Text className='empty-title serif'>{error || (personId && people.some(item => item.id === personId) ? '正在打开人物档案…' : '暂未找到这份人物档案')}</Text>{error && <Button className='text-link' onClick={retry}>重新加载</Button>}<Button className='primary-button' href='/generals/' onClick={() => returnTo('explore')}>返回将帅名录<Icon name='back' /></Button></View></Shell>
+  const readingTopics = topics.filter(topic => topic.entries.some(entry => entry.archiveId === person.id))
   const landscape = getProvinceLandscape(person.province)
   const makeCard = () => openPage('card', `id=${person.id}`)
   function remember() {
@@ -134,7 +136,7 @@ export default function PersonPage() {
         </View>
         <View className='timeline-column'><Heading2 id='profile-timeline' tabIndex={-1} className='timeline-title serif'>人生足迹</Heading2><View className='timeline'>{person.timeline.map((item, index) => <View className='timeline-item' key={`${item.year}-${index}`}><View className='timeline-dot' /><Text className='timeline-year'>{item.year}</Text><Text className='timeline-text'>{item.text}</Text>{item.sourceUrl && <Button className='text-link timeline-source' aria-label={`查阅${item.year}年这段经历的资料`} href={item.sourceUrl!} onClick={() => openSource(item.sourceUrl!)}>出处<Icon name='external' /></Button>}</View>)}</View></View>
       </View>
-      {person.rank === '元帅' && <View className='person-topic-entry'><Text className='scope-note'>把这段人生放进更大的历史里</Text><Button className='text-link' href='/topics/marshals/' onClick={() => openPage('topics', 'id=marshals')}>十位元帅：从战争到建设<Icon name='arrow' /></Button>{person.id === 'p0006' && <Button className='text-link' href='/topics/shanghai/' onClick={() => openPage('topics', 'id=shanghai')}>上海：人物与城市<Icon name='arrow' /></Button>}</View>}
+      {readingTopics.length > 0 && <View className='person-topic-entry'><Text className='detail-label'>收录这位人物的专题</Text>{readingTopics.map(topic => <Button key={topic.id} className='text-link' href={topicPath(topic.id)} onClick={() => openPage('topics', `id=${topic.id}`)}>{topic.title}<Icon name='arrow' /></Button>)}</View>}
       <View className='related-section'><View className='section-heading'><View><Text className='eyebrow'>继续认识</Text><Text className='section-title serif'><Text className='title-phrase'>山河之间，</Text><Text className='title-phrase'>还有这些名字</Text></Text></View></View><View className='featured-grid'>{related.map((item, index) => <PersonTile key={item.id} person={item} index={index} />)}</View></View>
     </Box>
     <View className='profile-action-bar'><Button className={`remember-button ${remembered ? 'remembered' : ''}`} onClick={remember} aria-pressed={remembered}><Icon name={remembered ? 'check' : 'bookmark'} />{remembered ? '已铭记' : '铭记'}</Button><Button className='primary-button' href={pageHref('card', `id=${person.id}`)} onClick={makeCard}>制作纪念卡<Icon name='arrow' /></Button></View>

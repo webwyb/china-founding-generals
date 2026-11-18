@@ -1,0 +1,105 @@
+{
+  "id": "reunions",
+  "title": "三次会师：队伍在哪里相遇",
+  "subtitle": "在井冈山、永坪和甘孜，分清会师的队伍与时间。",
+  "kind": "开国将帅专题",
+  "readMinutes": 4,
+  "intro": "“会师”是史书里常见的两个字，背后却有不同的出发地、队伍和年月。顺着朱德、徐海东、贺龙三人的足迹，看三次相遇怎样改变了部队的组织与行程。",
+  "scopeNote": "",
+  "updatedAt": "2026-11-18",
+  "entries": [
+    {
+      "id": "zhude",
+      "archiveId": "zhude",
+      "name": "朱德",
+      "field": "元帅",
+      "focus": "井冈山会合后的一支新军",
+      "paragraphs": [
+        {
+          "text": "南昌起义部队南下受挫，朱德和陈毅等人继续带领余部。经过湘南起义，1928年春，他们率领的队伍到了井冈山，与毛泽东领导的秋收起义部队会合。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+          ]
+        },
+        {
+          "text": "会师后，两支来路不同的队伍编成第四军，朱德任军长。井冈山这次相遇发生在红军长征之前，把它放回1928年，才能读清这支队伍的来历。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1928年",
+          "text": "朱德、陈毅率部到井冈山会师。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+        }
+      ],
+      "connection": null,
+      "question": "会合的两支队伍，各自与哪一次起义有关？",
+      "pendingFields": []
+    },
+    {
+      "id": "xuhaidong",
+      "archiveId": "xuhaidong",
+      "name": "徐海东",
+      "field": "大将",
+      "focus": "红二十五军到达永坪",
+      "paragraphs": [
+        {
+          "text": "1934年11月，红二十五军从河南罗山何家冲出发长征，徐海东任副军长。部队经过鄂豫陕地区，次年抵达陕北。这里已有当地红军活动。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7536984.html"
+          ]
+        },
+        {
+          "text": "1935年9月，徐海东率部到达延川永坪，与刘志丹等领导的红军会合。两支队伍随后合编为红十五军团，徐海东任军团长。永坪既是这一路长征的终点，也是新番号的起点。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7536984.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1935年9月",
+          "text": "红二十五军在永坪与陕北红军会合。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/127855/7536984.html"
+        }
+      ],
+      "connection": null,
+      "question": "红二十五军和红十五军团，在这段履历中是什么关系？",
+      "pendingFields": []
+    },
+    {
+      "id": "p0005",
+      "archiveId": "p0005",
+      "name": "贺龙",
+      "field": "元帅",
+      "focus": "在甘孜相遇，向北继续走",
+      "paragraphs": [
+        {
+          "text": "贺龙等率红二、六军团从湘鄂川黔根据地出发长征。1936年7月初，队伍在四川甘孜与红四方面军会师。到这里之后，长征仍要继续。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+          ]
+        },
+        {
+          "text": "红二方面军成立后，贺龙任总指挥。部队随后北上，同年10月又在将台堡与红一方面军会师。把甘孜和将台堡分开标在行程上，便能分辨两次相遇的先后。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1936年7月",
+          "text": "红二、六军团在甘孜与红四方面军会师。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+        }
+      ],
+      "connection": null,
+      "question": "贺龙这一路先后两次会师，会合的分别是哪支队伍？",
+      "pendingFields": []
+    }
+  ]
+}

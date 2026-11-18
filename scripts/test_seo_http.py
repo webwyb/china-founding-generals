@@ -8,7 +8,7 @@ import urllib.request
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'http://127.0.0.1:5173'
 paths = ['/', '/generals/', '/people/', '/about/', '/people/suyu/',
-         '/people/p0262/', '/card/?id=lizhen', '/topics/', '/topics/marshals/', '/topics/shanghai/', '/robots.txt', '/sitemap.xml']
+         '/people/p0262/', '/card/?id=lizhen', '/topics/', *(f'/topics/{file.stem}/' for file in sorted((ROOT / 'data/topics').glob('*.json')) if file.name != 'sources.json'), '/robots.txt', '/sitemap.xml']
 results = []
 for path in paths:
     responses = []

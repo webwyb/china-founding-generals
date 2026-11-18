@@ -1,6 +1,6 @@
 import { defineConfig } from '@tarojs/cli'
 import { createHash } from 'node:crypto'
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 import { posix, resolve } from 'node:path'
 const { manifest } = require('../scripts/deploy/asset-manifest.cjs')
 const { dataVersion } = require('../scripts/data-version.cjs')
@@ -14,6 +14,9 @@ if (isMini) {
     assetUrls[`featured/${name}.jpg`] = `${assetBase}/${hash}/${name}.jpg`
   }
 }
+const topicRoutes = readdirSync(resolve(__dirname, '../data/topics'))
+  .filter(file => file.endsWith('.json') && file !== 'sources.json')
+  .map(file => `/topics/${file.slice(0, -5)}/`)
 const catalogue = require('../src/data/catalog.generated.json') as { id: string }[]
 
 // These are browser URLs, not filesystem paths. Taro's default path.join
@@ -68,7 +71,7 @@ export default defineConfig<'vite'>({
         '/pages/card/index': '/card/',
         '/pages/directory/index': '/people/',
         '/pages/about/index': '/about/',
-        '/pages/topics/index': ['/topics/', '/topics/marshals/', '/topics/shanghai/']
+        '/pages/topics/index': ['/topics/', ...topicRoutes]
       }
     },
     devServer: {

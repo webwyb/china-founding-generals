@@ -43,7 +43,7 @@ export function pageMetadata(page: SeoPage, person?: Person, topic?: Topic): Pag
   }
   if (page === 'topics') {
     title = `${topic?.title || '人物专题：沿着人物与地方读历史'}｜名在山河`
-    description = topic?.intro || '从十位元帅到上海人物，选择一条有明确出处的阅读路线，沿着具体往事认识人物与地方。将帅名录与地方专题分别编选。'
+    description = topic?.intro || '从军校、后方供给、会师与城市工作读开国将帅，也可循上海地方专题认识一座城市中的人物。每节附资料出处。'
     path = topicPath(topic?.id)
   }
   if (missing) {

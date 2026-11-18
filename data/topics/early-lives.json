@@ -1,0 +1,105 @@
+{
+  "id": "early-lives",
+  "title": "军旅之前：教室、窑厂与乡村",
+  "subtitle": "回到徐向前、徐海东和李贞还没有军衔的年代。",
+  "kind": "开国将帅专题",
+  "readMinutes": 4,
+  "intro": "从一所山西小学、一家湖北窑厂和湖南浏阳的乡村读起。先把熟悉的军衔放到一旁，看看三个年轻人当时能接触到什么，又在哪一步走出了原来的生活。",
+  "scopeNote": "",
+  "updatedAt": "2026-11-18",
+  "entries": [
+    {
+      "id": "xuxiangqian",
+      "archiveId": "xuxiangqian",
+      "name": "徐向前",
+      "field": "元帅",
+      "focus": "小学教员的两处讲台",
+      "paragraphs": [
+        {
+          "text": "徐向前青年时在山西读书，1921年毕业后，先后在阳曲和五台河边村做小学教员。他在课堂上向学生讲爱国思想，两段教职都以遭到辞退告终。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+          ]
+        },
+        {
+          "text": "几年后，徐向前到广州进入黄埔军校第一期学习。从山西到广州，他的身份由教员变成军校学生。若从这段经历读起，讲台出现得比军装还要早。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1921年",
+          "text": "毕业后，徐向前先后在山西两地任教。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+        }
+      ],
+      "connection": null,
+      "question": "在去广州之前，徐向前曾用怎样的身份面对一群学生？",
+      "pendingFields": []
+    },
+    {
+      "id": "xuhaidong",
+      "archiveId": "xuhaidong",
+      "name": "徐海东",
+      "field": "大将",
+      "focus": "十二岁走进窑厂",
+      "paragraphs": [
+        {
+          "text": "徐海东出生在湖北黄陂一个窑工家庭，九岁进私塾，十二岁进窑厂做工。这两个年龄让人看见，在他后来漫长的军旅生涯之前，上学读书的时间相当有限。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7536984.html"
+          ]
+        },
+        {
+          "text": "他后来参加农民运动，又加入武装队伍。多年后谈起自己，徐海东仍会提到窑工这个身份。读他从鄂豫皖到陕北的故事之前，不妨先记住这家窑厂。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7536984.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "少年时期",
+          "text": "徐海东从私塾转入窑厂做工。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/127855/7536984.html"
+        }
+      ],
+      "connection": null,
+      "question": "为什么在一位将领的档案里，窑厂也是一个值得记住的地点？",
+      "pendingFields": []
+    },
+    {
+      "id": "lizhen",
+      "archiveId": "lizhen",
+      "name": "李贞",
+      "field": "少将",
+      "focus": "在浏阳参加妇女协会",
+      "paragraphs": [
+        {
+          "text": "李贞幼年被送去做童养媳。青年时，她剪去辫子，参加浏阳永和区的妇女协会。由家中的童养媳到参与乡村公共事务，这一步早于她后来为人熟知的军旅身份。",
+          "sourceUrls": [
+            "https://www.12371.cn/2022/03/13/ARTI1647136155695546.shtml"
+          ]
+        },
+        {
+          "text": "浏东游击队成立后，李贞成为其中的一名女队员。1955年她获授少将军衔。把授衔放回这条人生线上，最初那段在乡村和妇女们一起活动的经历，也有了位置。",
+          "sourceUrls": [
+            "https://www.12371.cn/2022/03/13/ARTI1647136155695546.shtml"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1955年",
+          "text": "李贞获授少将军衔。",
+          "sourceUrl": "https://www.12371.cn/2022/03/13/ARTI1647136155695546.shtml"
+        }
+      ],
+      "connection": null,
+      "question": "如果从妇女协会讲起，你会怎样向别人介绍青年李贞？",
+      "pendingFields": []
+    }
+  ]
+}

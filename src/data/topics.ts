@@ -1,4 +1,10 @@
 import marshals from '../../data/topics/marshals.json'
+import schools from '../../data/topics/military-schools.json'
+import supply from '../../data/topics/supply.json'
+import specialists from '../../data/topics/specialists.json'
+import service from '../../data/topics/public-service.json'
+import reunions from '../../data/topics/reunions.json'
+import earlyLives from '../../data/topics/early-lives.json'
 import shanghai from '../../data/topics/shanghai.json'
 import sourceRegistry from '../../data/topics/sources.json'
 
@@ -28,7 +34,19 @@ export interface Topic {
   updatedAt: string
   entries: TopicEntry[]
 }
-export const topics: Topic[] = [marshals, shanghai]
+export const topics: Topic[] = [marshals, schools, supply, specialists, service, reunions, earlyLives, shanghai]
+export const featuredTopic: Topic = schools
+export const homeTopics: Topic[] = [marshals, schools, shanghai]
+export function relatedTopics(current: Topic) {
+  const people = new Set(current.entries.map(entry => entry.archiveId).filter(Boolean))
+  const ranked = topics.filter(topic => topic !== current)
+    .map(topic => ({ topic, shared: topic.entries.filter(entry => entry.archiveId && people.has(entry.archiveId)).length }))
+    .sort((a, b) => b.shared - a.shared)
+  const localConnection = ranked.find(item => item.shared > 0 && item.topic.kind !== current.kind)
+  const suggested = ranked.slice(0, 2).map(item => item.topic)
+  if (localConnection && !suggested.includes(localConnection.topic)) suggested[1] = localConnection.topic
+  return suggested
+}
 export const getTopic = (id?: string) => topics.find(topic => topic.id === id)
 export function sourceTitle(url: string) {
   return sourceRegistry.sources.find(source => source.url === url)?.title

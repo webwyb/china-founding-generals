@@ -96,8 +96,8 @@ node scripts/python.mjs scripts/build_design_font.py
 
 ## 人物专题与读者验证（2026-11-18）
 
-专题入口 `/topics/`，正文 `/topics/marshals/` 与 `/topics/shanghai/`。维护 `data/topics/*.json`（独立编辑层）及来源登记 `sources.json`，不修改将帅生成目录来收录其他领域人物。元帅导览段落／节点取自既有生平编辑层，本轮重新查阅十篇人民网人物资料；上海条目逐人另行查阅机构来源。编辑专题后，新增字形按既有流程重建本地字体，再运行完整检查。普通检查、构建、浏览不需要原网页缓存或联网研究。
+专题入口为 `/topics/`，每篇正文可从 `/topics/<id>/` 直达。每篇在 `data/topics/<id>.json` 维护导读、人物、逐段出处和关键节点，在 `sources.json` 登记来源，并在 `src/data/topics.ts` 加入展示顺序。与将帅档案有关的条目填写 `archiveId`，以便双向联读。编辑后按既有流程补入新增字形，再运行完整检查。
 
-`npm run validate:topics` 已纳入 `npm run check`，覆盖十位元帅集合、两条路线的段落／节点出处、地方关系、冲突字段和阅读标记异常。H5静态生成现有1622份HTML及1621条站点地图地址。共享专题页面也编译到微信，主包仍由现有2MiB预算约束；这不代表原生体验已验收。
+`npm run validate:topics` 已纳入 `npm run check`，覆盖十位元帅集合、各专题逐段及关键节点出处、地方关系、冲突字段和阅读标记异常。现有8篇专题、38节人物内容，H5生成1628份HTML和1627条站点地图地址。共享页面也参与微信构建和2MiB主包检查。
 
-`node scripts/test_topics_browser.mjs` 是按需运行的独立无头Chrome验收，不纳入普通离线检查。默认macOS Chrome路径，可用 `SHANHE_CHROME` 指定已有Chrome可执行文件；测试使用临时独立配置，优先使用已存在的本项目5173预览，否则临时服务构建目录，结束后关闭自建服务和Chrome，不操作用户的标签页。它需要本机端口／浏览器执行权限，没有浏览器时不要宣称通过。计划及真实读者验证门槛见 `NEXT_PHASE.md`，结果和准确范围见 `reviews/topics-2026-11-18/REVIEW.md`。
+`node scripts/test_topics_browser.mjs` 使用独立的临时Chrome配置和本机临时端口加载 `dist/h5`，检查桌面和窄屏排版、阅读位置、鼠标与键盘操作。默认使用macOS Chrome，可用 `SHANHE_CHROME` 指定其他已安装的Chrome。测试结束后自动关闭临时服务和浏览器。本轮记录见 `QA.md`，读者验证计划见 `NEXT_PHASE.md`。

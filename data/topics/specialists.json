@@ -1,0 +1,105 @@
+{
+  "id": "specialists",
+  "title": "新的专业：从电台到舰艇",
+  "subtitle": "王诤、萧劲光和许光达怎样为新的专业培养人才。",
+  "kind": "开国将帅专题",
+  "readMinutes": 4,
+  "intro": "无线电要有人操作和修理，舰艇和装甲车辆也各有专门的学问。三位将领的履历里，都出现了学校或培训班。先沿着师生的线索，看看这些专业怎样有了第一批人才。",
+  "scopeNote": "",
+  "updatedAt": "2026-11-18",
+  "entries": [
+    {
+      "id": "p0080",
+      "archiveId": "p0080",
+      "name": "王诤",
+      "field": "中将",
+      "focus": "报务员怎样带出一批学员",
+      "paragraphs": [
+        {
+          "text": "王诤在学校学过无线电报务。1930年底参加红军后，他参与建立早期无线队，随后在中央苏区举办无线电培训班，还开办器材修理厂。报务和维修开始有人专门学习。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/130393/7586677.html"
+          ]
+        },
+        {
+          "text": "1940年，王诤在延安参与建设广播电台。把这件事和早先的无线队放在一起看，一种技术有了两种不同的听众：部队之间用它保持联系，广播则把声音送向更多人。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/130393/7586677.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1940年",
+          "text": "王诤在延安领导创建广播电台。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/130393/7586677.html"
+        }
+      ],
+      "connection": null,
+      "question": "培训班和修理厂，为早期无线队分别解决了什么问题？",
+      "pendingFields": []
+    },
+    {
+      "id": "p0014",
+      "archiveId": "p0014",
+      "name": "萧劲光",
+      "field": "大将",
+      "focus": "海军司令员兼任校长",
+      "paragraphs": [
+        {
+          "text": "萧劲光早年在陕甘宁边区任职，后来在东北指挥陆上部队。受命组建海军后，他既任海军司令员，也兼任第一海军学校校长。教室和舰艇由此出现在同一份履历中。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7537125.html"
+          ]
+        },
+        {
+          "text": "在他主持海军工作期间，陆续开办了多所海军院校和预备学校。读这段海军史，除了关注舰艇何时入列，也可以追问：操纵和维护舰艇的人在哪里受教育？",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7537125.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1949年冬",
+          "text": "萧劲光受命组建海军，承担海军学校的办学工作。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/127855/7537125.html"
+        }
+      ],
+      "connection": null,
+      "question": "从陆上部队转到海军，为什么学校成了重要的起点？",
+      "pendingFields": []
+    },
+    {
+      "id": "p0018",
+      "archiveId": "p0018",
+      "name": "许光达",
+      "field": "大将",
+      "focus": "从天津的学校到装甲兵学院",
+      "paragraphs": [
+        {
+          "text": "1950年，许光达出任装甲兵司令员。组建领导机关的同时，他在天津组建坦克学校。车辆和人员可以编在一起，驾驶、养护和教学却需要专门的训练。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7537271.html"
+          ]
+        },
+        {
+          "text": "1957年，许光达兼任装甲兵学院院长。他还参加教程的编写和审定。从第一所学校到后来的学院，这段履历留下了兵种教育从初建到逐渐成形的线索。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7537271.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1957年",
+          "text": "许光达兼任装甲兵学院院长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/127855/7537271.html"
+        }
+      ],
+      "connection": null,
+      "question": "一所学校从开班走向长期办学，需要留下哪些能传给后人的东西？",
+      "pendingFields": []
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "public-service",
+  "title": "新的公职：市长、体委主任与法官",
+  "subtitle": "从上海市政府、运动场和法院，读将帅履历的另一面。",
+  "kind": "开国将帅专题",
+  "readMinutes": 4,
+  "intro": "一座刚刚接管的城市，一届全国运动会，一所最高审判机关，分别把陈毅、贺龙、陈奇涵带到熟悉的军旅叙事之外。从这三个具体的岗位看他们怎样参与公共事务。",
+  "scopeNote": "",
+  "updatedAt": "2026-11-18",
+  "entries": [
+    {
+      "id": "p0006",
+      "archiveId": "p0006",
+      "name": "陈毅",
+      "field": "元帅",
+      "focus": "从华东到上海市政府",
+      "paragraphs": [
+        {
+          "text": "1949年5月上海解放，陈毅兼任上海市军管会主任和市长。此前他在华东指挥部队，从这时起，上海又作为一座需要接管、恢复运行的城市写进他的经历。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+          ]
+        },
+        {
+          "text": "后来陈毅担任国务院副总理，1958年兼任外交部长。若从上海这一站往后读，会看到他的工作对象进一步变化，从一座城市的事务延伸到国家间的交往。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1949年",
+          "text": "陈毅出任上海市市长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+        }
+      ],
+      "connection": null,
+      "question": "上海作为一处战场和作为一座城市，给陈毅带来了哪些不同的职责？",
+      "pendingFields": []
+    },
+    {
+      "id": "p0005",
+      "archiveId": "p0005",
+      "name": "贺龙",
+      "field": "元帅",
+      "focus": "从国家体委读贺龙",
+      "paragraphs": [
+        {
+          "text": "1952年，贺龙开始兼任国家体育运动委员会主任。全国运动会和基层体育组织都是他关注的工作，一端连接大赛，另一端连接普通人参加体育活动的机会。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+          ]
+        },
+        {
+          "text": "他也留意运动员怎样交流自己的心得。1965年，他向毛泽东推荐乒乓球运动员徐寅生谈打球的讲话。这个细节让人看见，一位体委主任的工作也包括把运动员的经验介绍给更多人。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1952年",
+          "text": "贺龙兼任国家体育运动委员会主任。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+        }
+      ],
+      "connection": null,
+      "question": "除了奖牌，还可以用哪些活动来了解当时的体育工作？",
+      "pendingFields": []
+    },
+    {
+      "id": "chenqihan",
+      "archiveId": "chenqihan",
+      "name": "陈奇涵",
+      "field": "上将",
+      "focus": "从军区机关到审判岗位",
+      "paragraphs": [
+        {
+          "text": "新中国成立后，陈奇涵曾任江西军区司令员。1953年工作转向军事审判，此后担任军事法院院长。只看到履历中的“军事”两个字，很容易错过这次岗位变化。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127857/7538650.html"
+          ]
+        },
+        {
+          "text": "1958年，陈奇涵任最高人民法院副院长。沿着军区、军事审判机构、最高人民法院这三个名称来读，更容易分清他在各个阶段供职于什么机构。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127857/7538650.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1958年",
+          "text": "陈奇涵出任最高人民法院副院长。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/127857/7538650.html"
+        }
+      ],
+      "connection": null,
+      "question": "哪一项任命，标志着陈奇涵开始专门从事审判工作？",
+      "pendingFields": []
+    }
+  ]
+}

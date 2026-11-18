@@ -100,13 +100,14 @@ assert len(list(resources.glob('*.json'))) == 1615
 search_index = json.loads((resources / 'search.json').read_text(encoding='utf-8'))
 assert set(search_index) == {person['id'] for person in people}
 expected_urls = {ORIGIN + path for path in ('/', '/generals/', '/people/', '/about/')}
-topics = [json.loads((ROOT / 'data/topics' / (name + '.json')).read_text()) for name in ('marshals', 'shanghai')]
+topics = [json.loads(file.read_text(encoding='utf-8')) for file in (ROOT / 'data/topics').glob('*.json') if file.name != 'sources.json']
 expected_urls.add(ORIGIN + '/topics/')
-audit(OUTPUT / 'topics/index.html', ORIGIN + '/topics/')
+topic_index = audit(OUTPUT / 'topics/index.html', ORIGIN + '/topics/')
 for topic in topics:
     url = ORIGIN + '/topics/' + topic['id'] + '/'
     doc = audit(OUTPUT / 'topics' / topic['id'] / 'index.html', url)
     expected_urls.add(url)
+    assert '/topics/' + topic['id'] + '/' in topic_index.links
     body = compact(''.join(doc.text))
     assert doc.h1s == [topic['title']]
     for entry in topic['entries']:
@@ -157,13 +158,13 @@ for path in ('/', '/generals/', '/people/', '/about/'):
 audit(OUTPUT / 'card/index.html', None, indexed=False)
 tree = ET.parse(OUTPUT / 'sitemap.xml')
 locations = [element.text for element in tree.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
-assert len(locations) == len(set(locations)) == 1621
+assert len(locations) == len(set(locations)) == len(expected_urls)
 assert set(locations) == expected_urls
 assert all('#' not in url and '?' not in url for url in locations)
 assert 'Sitemap: ' + ORIGIN + '/sitemap.xml' in (OUTPUT / 'robots.txt').read_text()
 assert 'Disallow: /' not in (OUTPUT / 'robots.txt').read_text()
 report = {'status': 'passed', 'people': len(people), 'uniquePersonTitles': len(titles),
-          'staticHtmlPages': len(people) + 8, 'sitemapUrls': len(locations),
+          'staticHtmlPages': len(expected_urls) + 1, 'sitemapUrls': len(locations),
           'checks': ['HTML parsed without JavaScript; scripts excluded from visible text', '1614 versioned and inline profiles match complete source records', 'Lazy search index retains full biography search', 'Complete biographies, timelines, context and citation links',
                      'Single canonical, description, Open Graph and JSON-LD', 'Distinct homonym titles',
                      'Missing photos and pending fields retained', 'Absolute local assets exist',

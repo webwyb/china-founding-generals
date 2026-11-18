@@ -1,0 +1,105 @@
+{
+  "id": "supply",
+  "title": "前线的给养：粮食从哪里来",
+  "subtitle": "从晋绥的生产、华东的支前，读到洪学智的后勤工作。",
+  "kind": "开国将帅专题",
+  "readMinutes": 4,
+  "intro": "读战争史时，粮食常常只出现在一句“运抵前线”里。在这句话前面，还有人组织生产，有人筹集经费，有人推车送粮。这三节把目光移到他们的工作上。",
+  "scopeNote": "",
+  "updatedAt": "2026-11-18",
+  "entries": [
+    {
+      "id": "p0005",
+      "archiveId": "p0005",
+      "name": "贺龙",
+      "field": "元帅",
+      "focus": "一本根据地的经济账",
+      "paragraphs": [
+        {
+          "text": "抗战期间，贺龙在晋绥承担军事和财经工作。根据地既要供养部队，也要维持居民的生产和生活。组织生产、经营盐和土产、协调财政，都进入他的职责范围。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+          ]
+        },
+        {
+          "text": "到了1947年，贺龙又兼任西北财经办事处主任，筹措经费、粮草和被服。沿着这些物品来读履历，就能看见同一位将领怎样同时面对军队与地方的需要。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1947年",
+          "text": "贺龙兼任西北财经办事处主任。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+        }
+      ],
+      "connection": null,
+      "question": "一支部队需要的粮食和衣服，会牵涉哪些地方工作？",
+      "pendingFields": []
+    },
+    {
+      "id": "p0020",
+      "archiveId": "p0020",
+      "name": "张云逸",
+      "field": "大将",
+      "focus": "小推车背后的组织工作",
+      "paragraphs": [
+        {
+          "text": "1947年，张云逸在华东军区任职，又兼任华东后方工作委员会书记。后方要把分散的人力和物资组织起来，还要精简开支，为支援前线腾出力量。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7537178.html"
+          ]
+        },
+        {
+          "text": "传记写到民工用小推车运送粮食和物资。把这项工作归入一位将领的履历时，值得分清两个角色：张云逸负责组织支前，而一车一车把粮食送出去的，是沿路参与的民众。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7537178.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1947年",
+          "text": "张云逸兼任华东后方工作委员会书记。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/127855/7537178.html"
+        }
+      ],
+      "connection": null,
+      "question": "在一辆送粮的小推车旁，哪些人的劳动容易被省略？",
+      "pendingFields": []
+    },
+    {
+      "id": "hongxuezhi",
+      "archiveId": "hongxuezhi",
+      "name": "洪学智",
+      "field": "上将",
+      "focus": "从志愿军后勤到总后勤部",
+      "paragraphs": [
+        {
+          "text": "洪学智入朝时任志愿军副司令员，1951年又兼管志愿军后勤。前线所需的物资要经历筹集、运送和接收，任何一环跟不上，都会影响日常供应。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127857/7538760.html"
+          ]
+        },
+        {
+          "text": "1954年回国以后，洪学智在总后勤部工作。多年以后，他再次担任总后勤部部长。把前后两段履历连起来看，战时后勤的一次任命，成了他长期工作的一个起点。",
+          "sourceUrls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127857/7538760.html"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "label": "1951年",
+          "text": "洪学智兼任志愿军后勤司令员。",
+          "sourceUrl": "https://cpc.people.com.cn/GB/64162/126778/127857/7538760.html"
+        }
+      ],
+      "connection": null,
+      "question": "从战时供应到日常建设，洪学智的工作场所怎样变了？",
+      "pendingFields": []
+    }
+  ]
+}

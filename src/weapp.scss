@@ -23,3 +23,5 @@ view, text, button, input, image { box-sizing: border-box; }
 
 .platform-weapp .ui-button[disabled] { color: inherit; }
 .platform-weapp .primary-button[disabled] { color: #fff; }
+
+.platform-weapp .topic-references.is-closed .topic-reference-list { display: none; }
