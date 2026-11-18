@@ -197,8 +197,12 @@ certbot renew --cert-name shanhe.binnwu.top --dry-run --run-deploy-hooks --no-ra
 
 依赖来源固定为npm官方源。曾有两个新增依赖残留开发网络镜像，导致首轮CI安装超时；锁文件的版本和完整性哈希未变，改正下载地址后空缓存安装、三系统完整检查均通过，`npm run check` 会拒绝非公共npm的resolved地址。
 
-## 专题页面发布前置（2026-11-18，本地待启用）
+## 专题页面首次发布（2026-11-18）
 
-新增H5根目录 `topics/`，包含入口及 `topics/<slug>/index.html`。代码包生成已自动包含新目录；root持有的旧接收器尚不在白名单中接受它，直接推送应用会在解包时失败。**先按既有 `scripts/deploy/update-receiver.sh` 更新接收器，再推送专题应用**。本地只扩展受限HTML目录形状；JS／任意文件、更深目录、路径穿越和符号链接继续拒绝，12项部署回归与完整生产式离线解包通过。
+合并提交 `273b620` 的构建和素材就绪检查通过，生产机上的旧接收器在解包 `topics/` 时返回 `Unexpected build entry`，网站继续运行 `bb63506`。以后新增静态页面根目录时，应先按 `scripts/deploy/update-receiver.sh` 更新生产接收器，再发布使用该目录的应用。[失败任务](https://github.com/webwyb/china-founding-generals/actions/runs/44222284299/job/134534663073)
 
-此次没有改服务器、Nginx、证书或现行应用版本。实际启用需另记接收器哈希、root权限、健康版本不变检查及正式工作流／公网结果。品牌更新后的缺图人物使用品牌图标作OG分享图，离线验收明确核对1609张真实人像及5张品牌占位，不能把1614个OG图片地址误写成1614张真实人物肖像。完整证据见 `reviews/topics-2026-11-18/REVIEW.md`。
+10:53（UTC+8），在实例 `lhins-afrwanuu` 上运行仓库维护脚本，5 项接收器测试通过。旧版备份的 SHA-256 为 `56f41a02ec42ced714524bea1bcc6acc36eff9eb2e2ed53d2e7a466393d7e5b0`，已核对备份内容。安装文件为 `root:root`、权限 `755`，SHA-256 为 `e493dc9b25b5fe3f66fb5b00f6dfc33fb225c2963a4858ba16cc6edc47b6715c`，与合并提交一致。维护脚本确认替换前后网站版本一致。专题目录仅接受入口及合法 slug 下的 `index.html`，本地 12 项部署回归通过。
+
+重跑原工作流的失败任务后，公网 `version.json` 与提交 `273b620`、运行 `44222284299`、第 3 次尝试匹配。`/topics/`、`/topics/marshals/` 和 `/topics/shanghai/` 均返回 HTTP 200，原始 HTML 的标题、规范网址及站点地图收录均已核对。未知专题路径返回 HTTP 404。[成功任务](https://github.com/webwyb/china-founding-generals/actions/runs/44222284299/job/134541439300)
+
+专题离线验收和 1609 张真实肖像、5 张品牌占位分享图的核对见[专题验收记录](reviews/topics-2026-11-18/REVIEW.md)。
